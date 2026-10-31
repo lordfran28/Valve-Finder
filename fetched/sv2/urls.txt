@@ -1,0 +1,15 @@
+lng-0.00025_h315 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390392&cbp=12,315,0,0,-4&source=embed&output=svembed
+lng-0.00025_h340 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390392&cbp=12,340,0,0,-4&source=embed&output=svembed
+lng-0.00025_h0 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390392&cbp=12,0,0,0,-4&source=embed&output=svembed
+lng-0.00025_h20 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390392&cbp=12,20,0,0,-4&source=embed&output=svembed
+lng-0.00025_h45 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390392&cbp=12,45,0,0,-4&source=embed&output=svembed
+lng+0.00000_h315 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390142&cbp=12,315,0,0,-4&source=embed&output=svembed
+lng+0.00000_h340 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390142&cbp=12,340,0,0,-4&source=embed&output=svembed
+lng+0.00000_h0 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390142&cbp=12,0,0,0,-4&source=embed&output=svembed
+lng+0.00000_h20 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390142&cbp=12,20,0,0,-4&source=embed&output=svembed
+lng+0.00000_h45 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.390142&cbp=12,45,0,0,-4&source=embed&output=svembed
+lng+0.00025_h315 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.389892&cbp=12,315,0,0,-4&source=embed&output=svembed
+lng+0.00025_h340 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.389892&cbp=12,340,0,0,-4&source=embed&output=svembed
+lng+0.00025_h0 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.389892&cbp=12,0,0,0,-4&source=embed&output=svembed
+lng+0.00025_h20 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.389892&cbp=12,20,0,0,-4&source=embed&output=svembed
+lng+0.00025_h45 https://maps.google.com/maps?q=&layer=c&cbll=43.052941,-91.389892&cbp=12,45,0,0,-4&source=embed&output=svembed
