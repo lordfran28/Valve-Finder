@@ -16,3 +16,6 @@ fonts/EB-Garamond-LICENSE.txt https://cdn.jsdelivr.net/npm/@fontsource-variable/
 fonts/im-fell-french-canon-latin-400-normal.woff2 https://cdn.jsdelivr.net/npm/@fontsource/im-fell-french-canon@5/files/im-fell-french-canon-latin-400-normal.woff2
 fonts/im-fell-french-canon-latin-400-italic.woff2 https://cdn.jsdelivr.net/npm/@fontsource/im-fell-french-canon@5/files/im-fell-french-canon-latin-400-italic.woff2
 fonts/IM-Fell-LICENSE.txt https://cdn.jsdelivr.net/npm/@fontsource/im-fell-french-canon@5/LICENSE
+# Mother-of-pearl, for valve-cap buttons
+met-185859-nautilus-shell.jpg met:185859
+met-205005-nautilus-shell-box.jpg met:205005
