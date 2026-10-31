@@ -1,0 +1,31 @@
+name: Fetch public-domain images
+
+# Downloads the images listed in assets/sources.txt into assets/source/
+# and commits them, so the site keeps its own copies.
+on:
+  push:
+    paths: ['assets/sources.txt']
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          mkdir -p assets/source
+          while read -r name url; do
+            case "$name" in ''|\#*) continue;; esac
+            curl -fsSL --retry 3 -A "ValveFinder/1.0 (https://github.com/lordfran28/Valve-Finder)" -o "assets/source/$name" "$url" && echo "ok $name" || echo "FAILED $name"
+          done < assets/sources.txt
+          ls -la assets/source
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add assets/source
+          git diff --cached --quiet || git commit -m "Download public-domain images"
+          git push

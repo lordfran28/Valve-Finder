@@ -1,0 +1,8 @@
+# name  url   (public-domain images; the workflow downloads them into assets/source/)
+met-216471-green-damask-venice-genoa-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/216471/1666378/main-image
+met-212993-silk-metal-italian-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/212993/446832/main-image
+met-229429-velvet-panel-italian-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/229429/457443/main-image
+met-222648-velvet-italian-spanish-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/222648/469569/main-image
+met-222358-silk-metal-genoa-17-18c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/222358/451210/main-image
+met-460810-cover-italian-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/460810/917056/main-image
+met-219780-silk-linen-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/219780/449307/main-image
