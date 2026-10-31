@@ -114,9 +114,21 @@ a{color:var(--brass)}
 .addlink{font-family:var(--display);font-size:1.6rem;line-height:1.1;color:var(--brass);cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;
   text-shadow:var(--emboss);opacity:.62;padding:4px 2px;background:linear-gradient(var(--brass),var(--brass)) left bottom/0 1px no-repeat;
   transition:opacity .7s ease,background-size .7s ease}
-.addlink:hover,.libhead:focus-within .addlink{opacity:1;background-size:100% 1px;text-shadow:var(--emboss-lift)}
+.addlink:hover,.addlink:focus-visible,.addlink[aria-expanded="true"]{opacity:1;background-size:100% 1px;text-shadow:var(--emboss-lift)}
 .addlink:active{opacity:.85}
-.libhead:focus-within .addlink{outline:2px solid var(--blue);outline-offset:4px}
+button.addlink{border:0;background-color:transparent;margin:0}
+.dropbox{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;margin:12px 0 4px;padding:30px 16px 28px;
+  border:3px double var(--line);border-radius:3px;background:var(--surface);cursor:pointer;-webkit-tap-highlight-color:transparent;
+  transition:border-color .5s ease,box-shadow .5s ease}
+.drop-title{font-family:var(--display);font-size:1.75rem;line-height:1.1;color:var(--brass);text-shadow:var(--emboss);opacity:.8;transition:opacity .5s ease}
+.drop-sub{font-size:1rem;color:var(--muted)}
+.drop-choose{margin-top:8px;font-style:italic;font-size:1.1rem;color:var(--ink);opacity:.7;text-decoration:underline 1px;text-underline-offset:4px;text-decoration-color:var(--line);transition:opacity .5s ease}
+.dropbox:hover .drop-title,.dropbox:hover .drop-choose,.dropbox.over .drop-title{opacity:1}
+.dropbox.over{border-color:var(--brass);box-shadow:inset 0 0 0 1px var(--brass-soft)}
+.dropbox:focus-within{outline:2px solid var(--blue);outline-offset:3px}
+.for-touch{display:none}
+@media (hover:none){.for-mouse{display:none}.for-touch{display:inline}}
+.addlink:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
 .syncline{margin:0;font-size:1rem;color:var(--muted);display:flex;gap:8px;align-items:baseline}
 .textlink{font:inherit;color:var(--brass);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;opacity:.85;transition:opacity .5s ease}
 .textlink:hover{opacity:1}
@@ -251,10 +263,15 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
   <section id="view-library" class="view" aria-label="Your songs">
     <div class="libhead">
       <h2>Your songs</h2>
-      <label class="addlink" for="file">Add a song</label>
-      <input id="file" type="file" class="vh">
+      <button type="button" id="addtoggle" class="addlink" aria-expanded="false" aria-controls="dropbox">Add a song</button>
     </div>
-    <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true"></span><span id="synctext"></span></p>
+    <label id="dropbox" class="dropbox" for="file" hidden>
+      <span class="drop-title"><span class="for-mouse">Drop songs here</span><span class="for-touch">Choose a song</span></span>
+      <span class="drop-sub">MIDI, MusicXML or Tony note list</span>
+      <span class="drop-choose for-mouse">or choose from your files</span>
+    </label>
+    <input id="file" type="file" class="vh" multiple>
+    <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true" hidden></span><span id="synctext" hidden></span></p>
     <p id="libmsg" class="error" role="alert" hidden></p>
     <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search your songs</label><input id="search" type="search" placeholder="Search your songs" autocomplete="off"></div>
     <ul id="songlist" class="songlist"></ul>
@@ -545,7 +562,7 @@ function phraseMeasures(mono, bpm, fifths){
   return groups.map(function(gr, i){
     var s0 = gr[0].ss, next = groups[i+1] ? groups[i+1][0].ss : gr[gr.length - 1].se;
     return {number:String(i+1), stamp:fmtTime(s0), repeatStart:false, repeatEnd:0, ending:null, len:Math.max((next - s0)*qps, 0.25),
-      notes: gr.map(function(n){ return mkNote(n.m, (n.ss - s0)*qps, (n.se - n.ss)*qps, fifths); })};
+      notes: gr.map(function(n){ var x = mkNote(n.m, (n.ss - s0)*qps, (n.se - n.ss)*qps, fifths); x.vel = n.v; return x; })};
   });
 }
 function parseMidi(buf){
@@ -619,7 +636,7 @@ function parseMidi(buf){
       var ts = timeSig || [4, 4], barQ = ts[0]*4/ts[1], barT = barQ*ppq, nb = Math.floor(mono[mono.length - 1].s / barT) + 1;
       measures = [];
       for (var b=0; b<nb; b++) measures.push({number:String(b+1), notes:[], repeatStart:false, repeatEnd:0, ending:null, len:barQ});
-      mono.forEach(function(n){ var bi = Math.floor(n.s/barT); measures[bi].notes.push(mkNote(n.m, (n.s - bi*barT)/ppq, (n.e - n.s)/ppq, fifths)); });
+      mono.forEach(function(n){ var bi = Math.floor(n.s/barT), x = mkNote(n.m, (n.s - bi*barT)/ppq, (n.e - n.s)/ppq, fifths); x.vel = n.v; measures[bi].notes.push(x); });
     } else measures = phraseMeasures(mono, bpm, fifths);
     return {name:tr.name, program:tr.program, measures:measures, transpose:null, tempo:bpm, unit: quant ? "Bar" : "Phrase"};
   });
@@ -769,7 +786,7 @@ function render(){
         (extras.length ? '<span class="extra">' + esc(extras.join(" · ")) + "</span>" : "") +
         (n.lyric ? '<span class="lyr">' + esc(n.lyric) + "</span>" : "") + "</button>" +
         '<input class="annot' + annClass(ann) + '" title="' + esc(ann) + '" type="text" list="techniques" maxlength="60" autocomplete="off" spellcheck="false" enterkeyhint="done" data-key="' + key + '" value="' + esc(ann) + '" aria-label="How to play ' + esc(noteWords(w)) + '"' + (locked ? " readonly" : "") + "></div>");
-      notes.push({t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2, key:key});
+      notes.push({t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2, key:key, vel:n.vel});
       sTok.push(n.tied ? "~" : f ? (f==="0" ? "0" : fingLabel(f)) : "?");
     });
     bars.push({len:m.len, notes:notes});
@@ -910,7 +927,7 @@ function voice(c, dest, x, at, live){
   var fx = x.fx || {}, smp = Horn.get(setFor(fx), x.midi), CR = 250;
   var d = Math.max(0.08, x.dur), slideTo = fx.slide && x.legatoOut && x.next != null ? x.next : null;
   var softFall = fx.slide && slideTo === null;
-  var hold = x.legatoOut ? d : fx.staccato ? Math.min(d*0.5, 0.18) : Math.max(0.07, d - Math.min(0.06, d*0.12));
+  var hold = x.legatoOut ? d : fx.staccato ? Math.min(d*0.5, 0.18) : x.connectedOut ? Math.max(0.07, d - 0.012) : Math.max(0.07, d - Math.min(0.05, d*0.1));
   var fs = 0, fe = 0;
   if (fx.fall || fx.doit || softFall){
     var room = x.nextWhen != null ? x.nextWhen - x.when - 0.02 : d + 0.7;
@@ -943,7 +960,7 @@ function voice(c, dest, x, at, live){
       if (fx.doit) v += 1000*Math.pow(u, 1.8); else v -= (fx.longfall ? 2000 : softFall ? 700 : 1500)*u*u;
       g *= Math.pow(1 - u, 1.4);
     }
-    g *= x.legatoIn ? Math.min(1, t/0.05) : (smp ? Math.min(1, t/0.004) : Math.min(1, t/0.03));
+    g *= x.legatoIn ? Math.min(1, t/0.05) : x.connectedIn ? Math.min(1, t/0.014) : (smp ? Math.min(1, t/0.004) : Math.min(1, t/0.03));
     if (fx.accent) g *= 1 + 0.35*Math.max(0, 1 - t/0.25);
     if (fx.ghost) g *= 0.6;
     if (fx.flutter) g *= 1 - 0.75*(0.5 - 0.5*Math.cos(2*Math.PI*23*t));
@@ -952,7 +969,7 @@ function voice(c, dest, x, at, live){
     if (fx.dim) g *= 1 - 0.65*Math.min(1, t/hold);
     if (fx.swell) g *= 0.45 + 0.75*Math.sin(Math.PI*Math.min(1, t/hold));
     if (t > hold) g *= Math.max(0, 1 - (t - hold)/rel);
-    P[i] = v; G[i] = g*(smp ? 0.85 : 0.2);
+    P[i] = v; G[i] = g*(smp ? 0.85 : 0.2)*(x.level || 1);
   }
   /* Signal path: source(s) → [colour] → note gain → room */
   var ng = c.createGain(); ng.gain.value = 0;
@@ -984,7 +1001,7 @@ function voice(c, dest, x, at, live){
   function track(src, outNode){ live.push(src); src.onended = function(){ var ix = live.indexOf(src); if (ix >= 0) live.splice(ix, 1); try { outNode.disconnect(); } catch(e){} }; }
 
   if (smp){
-    var B = smp.s, off = B.onset + (x.legatoIn ? 0.12 : 0), X = 0.1;
+    var B = smp.s, off = B.onset + (x.legatoIn ? 0.12 : x.connectedIn ? 0.022 : 0), X = 0.1;
     var segs = [], T = 0, first = true, from = off;
     while (T < span){
       var end = first ? B.loop[1] : B.loop[1], segLen = end - from;
@@ -1067,7 +1084,8 @@ function tick(){
    being played stays in view, so it turns like a page rather than creeping. */
 function follow(r, now){
   var t = Date.now(), cur = r.lastBar, el = r.lastEl;
-  if (!cur || !el || t - r.userAt < 3000 || t - (r.scrollAt || 0) < 600) return;
+  if (!cur || !el || t - r.userAt < 3000 || t - (r.scrollAt || 0) < 600 || t - (r.followAt || 0) < 140) return;
+  r.followAt = t;
   var k = r.h; while (k < r.ev.length && r.ev[k].when <= now + 1.0) k++;
   var ahead = r.ev[k - 1], abar = ahead && ahead.el && ahead.el.closest(".bar") || cur;
   var vh = window.innerHeight, room = vh - ($("nowplaying").classList.contains("on") ? $("nowplaying").offsetHeight : 0);
@@ -1118,7 +1136,11 @@ function linkEvents(ev){
   ev.forEach(function(x, i){
     var nx = ev[i + 1];
     if ((x.fx.slide || x.fx.slur) && nx && nx.when - (x.when + x.dur) < 0.15){ x.legatoOut = true; x.dur = nx.when - x.when; nx.legatoIn = true; }
+    else if (nx && !x.fx.staccato && nx.when - (x.when + x.dur) < 0.05){ x.connectedOut = true; nx.connectedIn = true; }
   });
+  var vs = ev.map(function(x){ return x.vel; }).filter(function(v){ return v > 0; }).sort(function(a, b){ return a - b; });
+  var mid = vs.length ? vs[vs.length >> 1] : 0, spread = vs.length ? vs[Math.floor(vs.length*0.9)] - vs[Math.floor(vs.length*0.1)] : 0;
+  ev.forEach(function(x){ x.level = mid && x.vel && spread >= 6 ? Math.max(0.6, Math.min(1.3, Math.pow(x.vel/mid, 0.7))) : 1; });
   return ev;
 }
 function buildEvents(from, to){
@@ -1131,7 +1153,7 @@ function buildEvents(from, to){
       var when = off + n.t*spq;
       if (!isFinite(when) || !isFinite(dur)) return;
       if (n.tied && last){ last.dur = when + dur - last.when; return; }
-      last = {midi:n.concert, when:when, dur:dur, el:el, fx:parseFx(anns[n.key])};
+      last = {midi:n.concert, when:when, dur:dur, el:el, fx:parseFx(anns[n.key]), vel:n.vel};
       ev.push(last);
     });
     off += Math.max(bar.len || 0, 0.25)*spq;
@@ -1160,7 +1182,7 @@ function prefetchHorn(){
 window.ValveFinder = {
   render: function(list, seconds){
     var oc = new OfflineAudioContext(1, Math.ceil(44100*seconds), 44100);
-    var ev = linkEvents(list.map(function(x){ return {midi: x.midi, when: x.when, dur: x.dur, fx: parseFx(x.play || "")}; }));
+    var ev = linkEvents(list.map(function(x){ return {midi: x.midi, when: x.when, dur: x.dur, fx: parseFx(x.play || ""), vel: x.vel}; }));
     return Horn.want(oc, hornNeeds(ev)).then(function(){
       var dest = bus(oc), live = [];
       ev.forEach(function(x){ voice(oc, dest, x, x.when + 0.05, live); });
@@ -1413,7 +1435,11 @@ function syncLibrary(){
       archive.forEach(function(m){ if (m.sha1) bySha[m.sha1] = m; byName[titleKey(String(m.file).split("/").pop().replace(/\.[^.]+$/, ""))] = m; });
       locals.forEach(function(r){
         var m = (r.sha1 && bySha[r.sha1]) || byName[titleKey(String(r.fileName || "").replace(/\.[^.]+$/, ""))];
-        if (m && !cache[m.id]) r.dupOf = m.id; else delete r.dupOf;
+        if (m && !cache[m.id]){
+          r.dupOf = m.id;
+          /* never renamed on this device: use the tidier title from the songs folder */
+          if (m.title && titleKey(r.title) === titleKey(String(r.fileName || "").replace(/\.[^.]+$/, "")) && r.title !== m.title){ r.title = m.title; Store.put(r); }
+        } else delete r.dupOf;
       });
       return uploadPending();
     });
@@ -1431,8 +1457,26 @@ function uploadPending(){
     .then(function(){ if (!$("view-library").hidden) renderLibrary(); });
 }
 function libMsg(text){ var m = $("libmsg"); m.textContent = text || ""; m.hidden = !text; }
-function addFile(f){
+function addFiles(list){
+  list = Array.prototype.slice.call(list || []);
+  if (!list.length) return Promise.resolve();
+  openDrop(false);
+  if (list.length === 1) return addFile(list[0]);
+  var failed = [];
   libMsg("");
+  return list.reduce(function(p, f){ return p.then(function(){ return addFile(f, true).then(function(ok){ if (!ok) failed.push(f.name); }); }); }, Promise.resolve())
+    .then(function(){
+      renderLibrary();
+      if (failed.length) libMsg(failed.length === 1 ? "This file couldn't be opened: " + failed[0] + ". Export it again as MusicXML or MIDI." : "These files couldn't be opened: " + failed.join(", ") + ". Export them again as MusicXML or MIDI.");
+    });
+}
+function openDrop(open){
+  var d = $("dropbox"), t = $("addtoggle");
+  d.hidden = !open; d.classList.remove("over");
+  t.setAttribute("aria-expanded", open ? "true" : "false");
+}
+function addFile(f, quiet){
+  if (!quiet) libMsg("");
   return f.arrayBuffer().then(function(ab){
     var bytes = new Uint8Array(ab);
     return parseBytes(bytes).then(function(res){
@@ -1442,14 +1486,17 @@ function addFile(f){
       cache[rec.id] = rec;
       requestPersist();
       return Store.put(rec).then(function(){
-        location.hash = "song-" + rec.id;
+        if (!quiet) location.hash = "song-" + rec.id;
         if (isOwner()){
           setSave("saving");
           enqueue(function(){ return pushSong(rec); }).then(function(){ if (state.rec === rec) setSave(""); }, function(e){ if (state.rec === rec) setSave("error", e.message); });
         }
       });
     });
-  }).catch(function(err){ libMsg(err && err.user ? err.message : "This file couldn't be opened. Export it again as MusicXML or MIDI and try that file."); });
+  }).then(function(){ return true; }).catch(function(err){
+    if (!quiet) libMsg(err && err.user ? err.message : "This file couldn't be opened. Export it again as MusicXML or MIDI and try that file.");
+    return false;
+  });
 }
 
 /* ---------- Song view ---------- */
@@ -1604,9 +1651,24 @@ function route(){
 }
 
 $("file").addEventListener("change", function(e){
-  var f = e.target.files && e.target.files[0]; if (!f) return;
-  addFile(f).then(function(){ e.target.value = ""; });
+  var files = e.target.files; if (!files || !files.length) return;
+  addFiles(files).then(function(){ e.target.value = ""; });
 });
+$("addtoggle").addEventListener("click", function(){ openDrop($("dropbox").hidden); });
+/* Drag songs anywhere onto the library: the box opens and takes them. */
+(function(){
+  var depth = 0;
+  function hasFiles(e){ var t = e.dataTransfer && e.dataTransfer.types; return t && Array.prototype.indexOf.call(t, "Files") >= 0; }
+  window.addEventListener("dragenter", function(e){ if ($("view-library").hidden || !hasFiles(e)) return; depth++; openDrop(true); $("dropbox").classList.add("over"); });
+  window.addEventListener("dragleave", function(e){ if ($("view-library").hidden || !hasFiles(e)) return; depth = Math.max(0, depth - 1); if (!depth) $("dropbox").classList.remove("over"); });
+  window.addEventListener("dragover", function(e){ if (hasFiles(e)) e.preventDefault(); });
+  window.addEventListener("drop", function(e){
+    if (!hasFiles(e)) return;
+    e.preventDefault(); depth = 0;
+    if ($("view-library").hidden) return;
+    addFiles(e.dataTransfer.files);
+  });
+})();
 $("search").addEventListener("input", renderLibrary);
 ["pitch","oct","repeats","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(); }); });
 $("part").addEventListener("change", function(){ state.part = parseInt($("part").value, 10) || 0; render(); scheduleSave(); });
