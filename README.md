@@ -2,7 +2,7 @@
 
 B♭ trumpet valve fingerings under every note of a song, with a song library.
 
-**Live site:** https://lordfran28.github.io/valve-finder/
+**Live site:** https://lordfran28.github.io/Valve-Finder/
 
 ## What it reads
 - **MusicXML** (`.musicxml`, `.xml`, `.mxl`) from Klangio, Scan2Notes, MuseScore and most notation apps
