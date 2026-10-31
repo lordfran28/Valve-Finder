@@ -1,22 +1,636 @@
 + cd fetched
-+ rm -rf sv2
-+ mkdir -p sv2
-+ pip install -q playwright
-+ python -m playwright install --with-deps chromium
-+ cat
-+ python shot2.py
-ok lng-0.00025_h315
-ok lng-0.00025_h340
-ok lng-0.00025_h0
-ok lng-0.00025_h20
-ok lng-0.00025_h45
-ok lng+0.00000_h315
-ok lng+0.00000_h340
-ok lng+0.00000_h0
-ok lng+0.00000_h20
-ok lng+0.00000_h45
-ok lng+0.00025_h315
-ok lng+0.00025_h340
-ok lng+0.00025_h0
-ok lng+0.00025_h20
-ok lng+0.00025_h45
++ rm -rf sv sv2 soft
++ mkdir -p soft/commons
++ UA='KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)'
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/curly_teddy_natural
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/curly_teddy_natural/curly_teddy_natural_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/curly_teddy_natural/curly_teddy_natural_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/curly_teddy_natural.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/curly_teddy_natural/curly_teddy_natural_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/curly_teddy_checkered
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/curly_teddy_checkered/curly_teddy_checkered_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/curly_teddy_checkered/curly_teddy_checkered_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/curly_teddy_checkered.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/curly_teddy_checkered/curly_teddy_checkered_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/faux_fur_geometric
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/faux_fur_geometric/faux_fur_geometric_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/faux_fur_geometric/faux_fur_geometric_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/faux_fur_geometric.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/faux_fur_geometric/faux_fur_geometric_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/polar_fleece
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/polar_fleece/polar_fleece_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/polar_fleece/polar_fleece_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/polar_fleece.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/polar_fleece/polar_fleece_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/knitted_fleece
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/knitted_fleece/knitted_fleece_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/knitted_fleece/knitted_fleece_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/knitted_fleece.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/knitted_fleece/knitted_fleece_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/wool_boucle
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/wool_boucle.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wool_boucle/wool_boucle_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/velour_velvet
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/velour_velvet/velour_velvet_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/velour_velvet/velour_velvet_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/velour_velvet.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/velour_velvet/velour_velvet_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/terry_cloth
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/terry_cloth/terry_cloth_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/terry_cloth/terry_cloth_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/terry_cloth.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/terry_cloth/terry_cloth_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/caban
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/caban/caban_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/caban/caban_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/caban.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/caban/caban_diff_2k.jpg
++ for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange
+++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' https://api.polyhaven.com/files/jogging_melange
+++ jq -r '.Diffuse["2k"].jpg.url // empty'
++ url=https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/jogging_melange/jogging_melange_diff_2k.jpg
++ '[' -n https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/jogging_melange/jogging_melange_diff_2k.jpg ']'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/jogging_melange.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/jogging_melange/jogging_melange_diff_2k.jpg
++ q 'shag carpet' shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode generator=search --data-urlencode gsrnamespace=6 --data-urlencode 'gsrsearch=shag carpet filetype:bitmap' --data-urlencode gsrlimit=20 --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata|size' --data-urlencode iiurlwidth=640 -o soft/commons/shag.json
++ q 'carpet pile close-up' pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode generator=search --data-urlencode gsrnamespace=6 --data-urlencode 'gsrsearch=carpet pile close-up filetype:bitmap' --data-urlencode gsrlimit=20 --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata|size' --data-urlencode iiurlwidth=640 -o soft/commons/pile.json
++ q 'sheepskin rug' sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode generator=search --data-urlencode gsrnamespace=6 --data-urlencode 'gsrsearch=sheepskin rug filetype:bitmap' --data-urlencode gsrlimit=20 --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata|size' --data-urlencode iiurlwidth=640 -o soft/commons/sheepskin.json
++ for f in soft/commons/*.json
++ jq -r '.query.pages[]? | [.title, .imageinfo[0].thumburl] | @tsv' soft/commons/pile.json
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Canadian forest industries 1882 (1882) (19900270844).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Canadian_forest_industries_1882__1882___19900270844_.jpg
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/Canadian_forest_industries_1882__1882___19900270844_.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Canadian_forest_industries_1882_%281882%29_%2819900270844%29.jpg/960px-Canadian_forest_industries_1882_%281882%29_%2819900270844%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Decorative textiles; an illustrated book on coverings for furniture, walls and floors, including damasks, brocades and velvets, tapestries, laces, embroideries, chintzes, cretones, drapery and (14598341917).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Decorative_textiles__an_illustrated_book_on_coverings_for_furniture__w
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/Decorative_textiles__an_illustrated_book_on_coverings_for_furniture__w 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Decorative_textiles%3B_an_illustrated_book_on_coverings_for_furniture%2C_walls_and_floors%2C_including_damasks%2C_brocades_and_velvets%2C_tapestries%2C_laces%2C_embroideries%2C_chintzes%2C_cretones%2C_drapery_and_%2814598341917%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Decorative textiles; an illustrated book on coverings for furniture, walls and floors, including damasks, brocades and velvets, tapestries, laces, embroideries, chintzes, cretonnes, drapery and (14783131662).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Decorative_textiles__an_illustrated_book_on_coverings_for_furniture__w
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/Decorative_textiles__an_illustrated_book_on_coverings_for_furniture__w 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Decorative_textiles%3B_an_illustrated_book_on_coverings_for_furniture%2C_walls_and_floors%2C_including_damasks%2C_brocades_and_velvets%2C_tapestries%2C_laces%2C_embroideries%2C_chintzes%2C_cretonnes%2C_drapery_and_%2814783131662%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Deep Pile Carpet (4895451333).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Deep_Pile_Carpet__4895451333_.jpg
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/Deep_Pile_Carpet__4895451333_.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Deep_Pile_Carpet_%284895451333%29.jpg/960px-Deep_Pile_Carpet_%284895451333%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Deep Pile Carpet Up Close.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Deep_Pile_Carpet_Up_Close.jpg
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/Deep_Pile_Carpet_Up_Close.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Deep_Pile_Carpet_Up_Close.jpg/960px-Deep_Pile_Carpet_Up_Close.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Pile it High - Lawrence Road.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Pile_it_High_-_Lawrence_Road.jpg
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/Pile_it_High_-_Lawrence_Road.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Pile_it_High_-_Lawrence_Road.jpg/960px-Pile_it_High_-_Lawrence_Road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:The Encyclopedia britannica; a dictionary of arts, sciences, and general literature. With new maps, and original American articles by eminent writers. With American revisions and additions, bringing (14800140693).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=The_Encyclopedia_britannica__a_dictionary_of_arts__sciences__and_gener
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/The_Encyclopedia_britannica__a_dictionary_of_arts__sciences__and_gener 'https://upload.wikimedia.org/wikipedia/commons/f/f0/The_Encyclopedia_britannica%3B_a_dictionary_of_arts%2C_sciences%2C_and_general_literature._With_new_maps%2C_and_original_American_articles_by_eminent_writers._With_American_revisions_and_additions%2C_bringing_%2814800140693%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:The natural history of plants, their forms, growth, reproduction, and distribution; (1902) (14596814160).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=The_natural_history_of_plants__their_forms__growth__reproduction__and_
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/The_natural_history_of_plants__their_forms__growth__reproduction__and_ 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_natural_history_of_plants%2C_their_forms%2C_growth%2C_reproduction%2C_and_distribution%3B_%281902%29_%2814596814160%29.jpg/960px-The_natural_history_of_plants%2C_their_forms%2C_growth%2C_reproduction%2C_and_distribution%3B_%281902%29_%2814596814160%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Winter India (1903) (14763267935).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Winter_India__1903___14763267935_.jpg
+++ basename soft/commons/pile.json .json
++ d=soft/commons/pile
++ mkdir -p soft/commons/pile
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/pile/Winter_India__1903___14763267935_.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Winter_India_%281903%29_%2814763267935%29.jpg/960px-Winter_India_%281903%29_%2814763267935%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
++ for f in soft/commons/*.json
++ jq -r '.query.pages[]? | [.title, .imageinfo[0].thumburl] | @tsv' soft/commons/shag.json
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Bali Shag Halfzware.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Bali_Shag_Halfzware.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Bali_Shag_Halfzware.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Bali_Shag_Halfzware.jpg/960px-Bali_Shag_Halfzware.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Bali shag halfzware.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Bali_shag_halfzware.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Bali_shag_halfzware.jpg 'https://upload.wikimedia.org/wikipedia/commons/d/df/Bali_shag_halfzware.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Brown shag blanket over brown patterned sheets.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Brown_shag_blanket_over_brown_patterned_sheets.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Brown_shag_blanket_over_brown_patterned_sheets.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Brown_shag_blanket_over_brown_patterned_sheets.jpg/960px-Brown_shag_blanket_over_brown_patterned_sheets.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Hunter Shag Auslese tin.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Hunter_Shag_Auslese_tin.JPG
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Hunter_Shag_Auslese_tin.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Hunter_Shag_Auslese_tin.JPG/960px-Hunter_Shag_Auslese_tin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Hunter Shag tin.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Hunter_Shag_tin.JPG
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Hunter_Shag_tin.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Hunter_Shag_tin.JPG/960px-Hunter_Shag_tin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Prothysana felderi (Shag-carpet caterpillar).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Prothysana_felderi__Shag-carpet_caterpillar_.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Prothysana_felderi__Shag-carpet_caterpillar_.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Prothysana_felderi_%28Shag-carpet_caterpillar%29.jpg/960px-Prothysana_felderi_%28Shag-carpet_caterpillar%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Prothysana felderi - Shag-carpet caterpillar.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Prothysana_felderi_-_Shag-carpet_caterpillar.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Prothysana_felderi_-_Shag-carpet_caterpillar.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Prothysana_felderi_-_Shag-carpet_caterpillar.jpg/960px-Prothysana_felderi_-_Shag-carpet_caterpillar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:SGI-2016-South Georgia–Shag Rocks 01.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=SGI-2016-South_Georgia_Shag_Rocks_01.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/SGI-2016-South_Georgia_Shag_Rocks_01.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/SGI-2016-South_Georgia%E2%80%93Shag_Rocks_01.jpg/960px-SGI-2016-South_Georgia%E2%80%93Shag_Rocks_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag-carpet Caterpillar.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag-carpet_Caterpillar.JPG
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag-carpet_Caterpillar.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Shag-carpet_Caterpillar.JPG/960px-Shag-carpet_Caterpillar.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Crawford 47901a lg.jpeg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Crawford_47901a_lg.jpeg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Crawford_47901a_lg.jpeg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Shag_Crawford_47901a_lg.jpeg/960px-Shag_Crawford_47901a_lg.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Crawford 47901c lg.jpeg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Crawford_47901c_lg.jpeg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Crawford_47901c_lg.jpeg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Shag_Crawford_47901c_lg.jpeg/960px-Shag_Crawford_47901c_lg.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Crawford 47901e lg.jpeg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Crawford_47901e_lg.jpeg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Crawford_47901e_lg.jpeg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Shag_Crawford_47901e_lg.jpeg/960px-Shag_Crawford_47901e_lg.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Point.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Point.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Point.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Shag_Point.jpg/960px-Shag_Point.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Rocks.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Rocks.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Rocks.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Shag_Rocks.jpg/960px-Shag_Rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Stone - geograph.org.uk - 6612038.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Stone_-_geograph.org.uk_-_6612038.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Stone_-_geograph.org.uk_-_6612038.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Shag_Stone_-_geograph.org.uk_-_6612038.jpg/960px-Shag_Stone_-_geograph.org.uk_-_6612038.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Thompson 1914 yearbook.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Thompson_1914_yearbook.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Thompson_1914_yearbook.jpg 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Shag_Thompson_1914_yearbook.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Thompson baseball uniform yearbook.png'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Thompson_baseball_uniform_yearbook.png
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Thompson_baseball_uniform_yearbook.png 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Shag_Thompson_baseball_uniform_yearbook.png/960px-Shag_Thompson_baseball_uniform_yearbook.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag Thompson newspaper.png'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_Thompson_newspaper.png
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_Thompson_newspaper.png 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Shag_Thompson_newspaper.png/960px-Shag_Thompson_newspaper.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shag rocks.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shag_rocks.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shag_rocks.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Shag_rocks.jpg/960px-Shag_rocks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Shags on Shag Rock (9061).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Shags_on_Shag_Rock__9061_.jpg
+++ basename soft/commons/shag.json .json
++ d=soft/commons/shag
++ mkdir -p soft/commons/shag
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/shag/Shags_on_Shag_Rock__9061_.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Shags_on_Shag_Rock_%289061%29.jpg/960px-Shags_on_Shag_Rock_%289061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
++ for f in soft/commons/*.json
++ jq -r '.query.pages[]? | [.title, .imageinfo[0].thumburl] | @tsv' soft/commons/sheepskin.json
++ IFS='	'
++ read -r title thumb
+++ echo 'File:1990 Jaguar VdP Majestic (US).jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=1990_Jaguar_VdP_Majestic__US_.jpg
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/1990_Jaguar_VdP_Majestic__US_.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/1990_Jaguar_VdP_Majestic_%28US%29.jpg/960px-1990_Jaguar_VdP_Majestic_%28US%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:HK CWB Park Lane basement shop IKEA Sheepskin carpet display Dec-2015 DSC.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_Dec-2015_
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_Dec-2015_ 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_Dec-2015_DSC.JPG/960px-HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_Dec-2015_DSC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:HK CWB Park Lane basement shop IKEA Sheepskin carpet display price label Dec-2015 DSC.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_price_lab
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_price_lab 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_price_label_Dec-2015_DSC.JPG/960px-HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_display_price_label_Dec-2015_DSC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:HK CWB Park Lane basement shop IKEA Sheepskin carpet milk white Dec-2015 DSC.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_milk_white_Dec-20
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_milk_white_Dec-20 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_milk_white_Dec-2015_DSC.JPG/960px-HK_CWB_Park_Lane_basement_shop_IKEA_Sheepskin_carpet_milk_white_Dec-2015_DSC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Johannes Rach and Odvardt Helmoldt von Lode - Sheepskin Rugs, Wool Blankets and Horn Spoon - NMK.2021.0112.078 - National Museum of Art, Architecture and Design.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Johannes_Rach_and_Odvardt_Helmoldt_von_Lode_-_Sheepskin_Rugs__Wool_Bla
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Johannes_Rach_and_Odvardt_Helmoldt_von_Lode_-_Sheepskin_Rugs__Wool_Bla 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Johannes_Rach_and_Odvardt_Helmoldt_von_Lode_-_Sheepskin_Rugs%2C_Wool_Blankets_and_Horn_Spoon_-_NMK.2021.0112.078_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Nabadi & Papakhi (ArtGene 2008).JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Nabadi___Papakhi__ArtGene_2008_.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Nabadi___Papakhi__ArtGene_2008_.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Nabadi_%26_Papakhi_%28ArtGene_2008%29.JPG/960px-Nabadi_%26_Papakhi_%28ArtGene_2008%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Nabadis & Papakhas (ArtGene 2008).JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Nabadis___Papakhas__ArtGene_2008_.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Nabadis___Papakhas__ArtGene_2008_.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Nabadis_%26_Papakhas_%28ArtGene_2008%29.JPG/960px-Nabadis_%26_Papakhas_%28ArtGene_2008%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Navajos raise the sheep which supply wool from which they weave blankets and rugs. Southern Navajo Agency, 1933 - NARA - 298597.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Navajos_raise_the_sheep_which_supply_wool_from_which_they_weave_blanke
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Navajos_raise_the_sheep_which_supply_wool_from_which_they_weave_blanke 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Navajos_raise_the_sheep_which_supply_wool_from_which_they_weave_blankets_and_rugs._Southern_Navajo_Agency%2C_1933_-_NARA_-_298597.jpg/960px-Navajos_raise_the_sheep_which_supply_wool_from_which_they_weave_blankets_and_rugs._Southern_Navajo_Agency%2C_1933_-_NARA_-_298597.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Reconstructed Stone Hut at Skara Brae - geograph.org.uk - 488578.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Reconstructed_Stone_Hut_at_Skara_Brae_-_geograph.org.uk_-_488578.jpg
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Reconstructed_Stone_Hut_at_Skara_Brae_-_geograph.org.uk_-_488578.jpg 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Reconstructed_Stone_Hut_at_Skara_Brae_-_geograph.org.uk_-_488578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 02.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_02.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_02.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ugg_boots_gnangarra_02.JPG/960px-Ugg_boots_gnangarra_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 03.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_03.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_03.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Ugg_boots_gnangarra_03.JPG/960px-Ugg_boots_gnangarra_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 04.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_04.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_04.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Ugg_boots_gnangarra_04.JPG/960px-Ugg_boots_gnangarra_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 05.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_05.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_05.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Ugg_boots_gnangarra_05.JPG/960px-Ugg_boots_gnangarra_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 06.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_06.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_06.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ugg_boots_gnangarra_06.JPG/960px-Ugg_boots_gnangarra_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 08.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_08.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_08.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Ugg_boots_gnangarra_08.JPG/960px-Ugg_boots_gnangarra_08.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 09.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_09.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_09.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Ugg_boots_gnangarra_09.JPG/960px-Ugg_boots_gnangarra_09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 10.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_10.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_10.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ugg_boots_gnangarra_10.JPG/960px-Ugg_boots_gnangarra_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 11.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_11.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_11.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Ugg_boots_gnangarra_11.JPG/960px-Ugg_boots_gnangarra_11.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Ugg boots gnangarra 12.JPG'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Ugg_boots_gnangarra_12.JPG
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Ugg_boots_gnangarra_12.JPG 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ugg_boots_gnangarra_12.JPG/960px-Ugg_boots_gnangarra_12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
+++ echo 'File:Uggs n rugs gnangarra.jpg'
+++ sed 's/^File://; s/[^A-Za-z0-9._-]/_/g'
+++ cut -c1-70
++ n=Uggs_n_rugs_gnangarra.jpg
+++ basename soft/commons/sheepskin.json .json
++ d=soft/commons/sheepskin
++ mkdir -p soft/commons/sheepskin
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o soft/commons/sheepskin/Uggs_n_rugs_gnangarra.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Uggs_n_rugs_gnangarra.jpg/960px-Uggs_n_rugs_gnangarra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
++ sleep 0.2
++ IFS='	'
++ read -r title thumb
++ ls -la soft
+total 30860
+drwxr-xr-x 3 runner runner    4096 Oct 31 09:28 .
+drwxr-xr-x 3 runner runner    4096 Oct 31 09:28 ..
+-rw-r--r-- 1 runner runner 2964872 Oct 31 09:28 caban.jpg
+drwxr-xr-x 5 runner runner    4096 Oct 31 09:29 commons
+-rw-r--r-- 1 runner runner 2405021 Oct 31 09:28 curly_teddy_checkered.jpg
+-rw-r--r-- 1 runner runner 2266933 Oct 31 09:28 curly_teddy_natural.jpg
+-rw-r--r-- 1 runner runner 2614002 Oct 31 09:28 faux_fur_geometric.jpg
+-rw-r--r-- 1 runner runner 3494010 Oct 31 09:28 jogging_melange.jpg
+-rw-r--r-- 1 runner runner 3531764 Oct 31 09:28 knitted_fleece.jpg
+-rw-r--r-- 1 runner runner 2616215 Oct 31 09:28 polar_fleece.jpg
+-rw-r--r-- 1 runner runner 3866360 Oct 31 09:28 terry_cloth.jpg
+-rw-r--r-- 1 runner runner 3195339 Oct 31 09:28 velour_velvet.jpg
+-rw-r--r-- 1 runner runner 4608820 Oct 31 09:28 wool_boucle.jpg

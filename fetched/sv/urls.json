@@ -1,7 +1,0 @@
-{
- "legacy_h0": "https://maps.google.com/maps?q=&layer=c&cbll=43.053021,-91.390142&cbp=11,0,0,0,0&source=embed&output=svembed",
- "legacy_h90": "https://maps.google.com/maps?q=&layer=c&cbll=43.053021,-91.390142&cbp=11,90,0,0,0&source=embed&output=svembed",
- "legacy_h180": "https://maps.google.com/maps?q=&layer=c&cbll=43.053021,-91.390142&cbp=11,180,0,0,0&source=embed&output=svembed",
- "legacy_h270": "https://maps.google.com/maps?q=&layer=c&cbll=43.053021,-91.390142&cbp=11,270,0,0,0&source=embed&output=svembed",
- "place_embed": "https://maps.google.com/maps?q=Knockel%27s%20Floor%20Covering%2C%20112%20W%20Center%20St%2C%20Monona%2C%20IA%2052159&t=k&z=19&output=embed"
-}
