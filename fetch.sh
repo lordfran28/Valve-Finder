@@ -1,25 +1,24 @@
 set -x
 cd fetched
-rm -rf carpet3 cand; mkdir -p cand/acg cand/ph cand/cm
+rm -rf cand; mkdir -p cand2/ov cand2/us full
 UA="KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)"
-# ambientCG carpets and fabrics with pile
-for q in carpet rug fabric; do
-  curl -fsSL -A "$UA" "https://ambientcg.com/api/v2/full_json?type=Material&q=$q&limit=200&include=imageData,dimensionsData" > cand/acg-$q.json
-  jq -r '.foundAssets[] | [.assetId, (.previewImage["256-PNG"] // .previewImage["128-PNG"] // "")] | @tsv' cand/acg-$q.json | while IFS=$'\t' read id url; do
-    [ -n "$url" ] && [ ! -f "cand/acg/$id.png" ] && curl -fsSL -A "$UA" -o "cand/acg/$id.png" "$url"
-  done
-done
-# Poly Haven textures tagged carpet, rug, fabric
-curl -fsSL -A "$UA" "https://api.polyhaven.com/assets?t=textures" > cand/ph.json
-jq -r 'to_entries[] | select(([.value.tags[]?, .value.categories[]?] | join(" ")) | test("carpet|rug|fabric|wool|felt|towel|fur"; "i")) | .key' cand/ph.json | while read id; do
-  curl -fsSL -A "$UA" -o "cand/ph/$id.png" "https://cdn.polyhaven.com/asset_img/thumbs/$id.png?width=256&height=256"
-done
-# Wikimedia Commons photos
-for q in "shag rug" "shag carpet" "pink carpet" "pink rug" "pastel rug" "fluffy rug" "flokati" "wool rug close" "carpet texture" "rug texture" "tufted rug" "yellow carpet" "green carpet close" "lavender rug" "mint rug" "blue shag" "plush carpet" "carpet macro" "carpet pile" "colorful carpet close-up"; do
+# the lavender shag on Commons, full size
+url=$(curl -fsSL -A "$UA" --get "https://commons.wikimedia.org/w/api.php" --data-urlencode "action=query" --data-urlencode "format=json" --data-urlencode "titles=File:Carpet (original).png" --data-urlencode "prop=imageinfo" --data-urlencode "iiprop=url|extmetadata" | tee full/lavender.json | jq -r '.query.pages[].imageinfo[0].url')
+curl -fsSL -A "$UA" -o full/lavender.png "$url"
+# Openverse (Flickr and others), licences that allow use on a business site
+for q in "shag rug" "shag carpet" "pink rug" "pink carpet" "pastel rug" "fluffy rug" "fluffy carpet" "plush carpet" "mint carpet" "green shag" "yellow shag" "lavender rug" "blue shag" "flokati" "rug texture" "carpet texture" "carpet closeup" "tufted rug" "wool rug closeup" "sheepskin rug"; do
   slug=$(echo "$q" | tr ' ' '_')
-  curl -fsSL -A "$UA" --get "https://commons.wikimedia.org/w/api.php" --data-urlencode "action=query" --data-urlencode "format=json" --data-urlencode "generator=search" --data-urlencode "gsrnamespace=6" --data-urlencode "gsrsearch=$q filetype:bitmap" --data-urlencode "gsrlimit=30" --data-urlencode "prop=imageinfo" --data-urlencode "iiprop=url|size|extmetadata" --data-urlencode "iiurlwidth=320" > "cand/cm-$slug.json"
+  curl -fsSL -A "$UA" --get "https://api.openverse.org/v1/images/" --data-urlencode "q=$q" --data-urlencode "license_type=commercial" --data-urlencode "page_size=40" --data-urlencode "size=large" > "cand2/ov-$slug.json" || echo "ov fail $q"
+  sleep 1
 done
-jq -s -r '[.[] | .query.pages? // {} | to_entries[] | .value] | unique_by(.title)[] | select(.imageinfo[0].width >= 1800 and .imageinfo[0].height >= 1200) | [.title, .imageinfo[0].thumburl, .imageinfo[0].width, .imageinfo[0].height, (.imageinfo[0].extmetadata.LicenseShortName.value // "?")] | @tsv' cand/cm-*.json > cand/cm-list.tsv
-n=0; while IFS=$'\t' read title thumb w h lic; do n=$((n+1)); curl -fsSL -A "$UA" -o "cand/cm/$(printf %03d $n).jpg" "$thumb"; echo -e "$(printf %03d $n)\t$title\t$w\t$h\t$lic" >> cand/cm-index.tsv; done < cand/cm-list.tsv
-ls cand/acg | wc -l; ls cand/ph | wc -l; ls cand/cm | wc -l
-du -sh cand
+jq -s -r '[.[] | .results[]?] | unique_by(.id)[] | [.id, .thumbnail, .url, (.width|tostring), (.height|tostring), .license, .license_version, .creator, .title, .foreign_landing_url] | @tsv' cand2/ov-*.json > cand2/ov-list.tsv
+n=0; while IFS=$'\t' read id thumb url w h lic ver creator title land; do n=$((n+1)); k=$(printf %03d $n); curl -fsSL -A "$UA" -o "cand2/ov/$k.jpg" "$thumb" && echo -e "$k\t$id\t$w\t$h\t$lic $ver\t$creator\t$title\t$url\t$land" >> cand2/ov-index.tsv; done < cand2/ov-list.tsv
+# Unsplash's own search (free licence; skip paid Unsplash+)
+for q in "pastel rug" "pink shag rug" "fluffy rug" "shag carpet" "carpet texture" "rug close up" "plush carpet" "colorful carpet"; do
+  slug=$(echo "$q" | tr ' ' '_')
+  curl -fsSL -A "Mozilla/5.0" --get "https://unsplash.com/napi/search/photos" --data-urlencode "query=$q" --data-urlencode "per_page=30" > "cand2/us-$slug.json" || echo "us fail $q"
+  sleep 1
+done
+jq -s -r '[.[] | .results[]?] | unique_by(.id)[] | select(.premium != true and .plus != true) | [.id, .urls.small, .urls.raw, (.width|tostring), (.height|tostring), .user.name, (.alt_description // ""), .links.html] | @tsv' cand2/us-*.json > cand2/us-list.tsv
+n=0; while IFS=$'\t' read id small raw w h user alt link; do n=$((n+1)); k=$(printf %03d $n); curl -fsSL -A "Mozilla/5.0" -o "cand2/us/$k.jpg" "$small" && echo -e "$k\t$id\t$w\t$h\t$user\t$alt\t$raw\t$link" >> cand2/us-index.tsv; done < cand2/us-list.tsv
+ls cand2/ov | wc -l; ls cand2/us | wc -l; ls -la full; du -sh cand2
