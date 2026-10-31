@@ -265,7 +265,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     </div>
 
     <footer class="foot">
-      <p class="credits">Clio from Vermeer's <a href="https://en.wikipedia.org/wiki/The_Art_of_Painting" target="_blank" rel="noopener">The Art of Painting</a> · Genoese silk, <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">The Met</a> · <a href="#example">Example song</a></p>
+      <p class="credits">Clio from Vermeer's <a href="https://en.wikipedia.org/wiki/The_Art_of_Painting" target="_blank" rel="noopener">The Art of Painting</a> · Genoese silk, <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">The Met</a> · Trumpet recordings, <a href="https://theremin.music.uiowa.edu/MISBbtrumpet.html" target="_blank" rel="noopener">University of Iowa</a> · <a href="#example">Example song</a></p>
     </footer>
   </section>
 
@@ -333,9 +333,13 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 
     <div id="bars" class="bars" aria-label="Notes"></div>
     <datalist id="techniques">
-      <option value="slide to next"></option><option value="scoop"></option><option value="fall"></option><option value="doit"></option>
-      <option value="shake"></option><option value="vibrato"></option><option value="bend"></option><option value="staccato"></option>
-      <option value="accent"></option><option value="growl"></option><option value="half-valve"></option><option value="breath before"></option>
+      <option value="slide to next"></option><option value="slur to next"></option><option value="scoop"></option><option value="rip"></option>
+      <option value="fall"></option><option value="long fall"></option><option value="doit"></option><option value="shake"></option>
+      <option value="trill"></option><option value="vibrato"></option><option value="wide vibrato"></option><option value="bend"></option>
+      <option value="staccato"></option><option value="accent"></option><option value="ghost"></option><option value="growl"></option>
+      <option value="flutter"></option><option value="half-valve"></option><option value="harmon mute"></option><option value="cup mute"></option>
+      <option value="plunger wah"></option><option value="wah-wah"></option><option value="swell"></option><option value="crescendo"></option>
+      <option value="diminuendo"></option><option value="fermata"></option><option value="breath before"></option>
     </datalist>
 
     <section class="strip-wrap" aria-label="Fingering strip">
@@ -785,6 +789,7 @@ function render(){
   $("strip").textContent = lines.join("\n");
   $("fmeta").textContent = plural(seq.length, unitL) + " · " + part.name + (state.rec && state.rec.kind ? " · " + state.rec.kind : "");
   $("jumps").hidden = !score.hasJumps;
+  prefetchHorn();
 }
 
 /* ---------- Sound ----------
@@ -802,39 +807,212 @@ function annClass(v){ return (v ? " has" : "") + (v.length > 15 ? " longer" : v.
 function annotations(){ return state.rec ? (state.rec.notes || {}) : (state.tempNotes || {}); }
 function parseFx(t){
   t = String(t || "").toLowerCase();
-  return {slide: /slide|gliss|portamento|smear/.test(t), scoop: /scoop/.test(t), fall: /fall|drop/.test(t), doit: /doit|doo-?it/.test(t),
-          shake: /shake|lip trill|trill/.test(t), vibrato: /vib/.test(t), bend: /bend|dip/.test(t), staccato: /stacc|short/.test(t),
-          accent: /accent|marcato|punch/.test(t), growl: /growl|flutter/.test(t), half: /half.?valve/.test(t)};
+  var f = {
+    slide: /slide|gliss|portamento|smear/.test(t), slur: /slur|legato/.test(t),
+    scoop: /scoop/.test(t), rip: /\brip\b/.test(t),
+    fall: /fall|drop/.test(t), longfall: /long (fall|drop)/.test(t), doit: /doit|doo-?it/.test(t),
+    shake: /shake|lip trill/.test(t), trill: /trill/.test(t) && !/lip trill/.test(t),
+    vibrato: /vib/.test(t), widevib: /(wide|big|heavy) vib/.test(t), bend: /bend|dip/.test(t),
+    staccato: /stacc|short/.test(t), accent: /accent|marcato|punch/.test(t), ghost: /ghost/.test(t),
+    growl: /growl/.test(t), flutter: /flutter/.test(t), half: /half.?valve/.test(t),
+    harmon: /harmon/.test(t), cup: /\bcup\b/.test(t), plunger: /plunger|\bwah\b|doo-?wah/.test(t), wahwah: /wah.?wah/.test(t),
+    cresc: /cresc|louder/.test(t), dim: /\bdim|decresc|softer/.test(t), swell: /swell/.test(t),
+    breath: /breath/.test(t), fermata: /fermata|\bhold\b/.test(t)
+  };
+  f.straight = /straight|\bmute/.test(t) && !f.harmon && !f.cup && !f.plunger;
+  if (f.wahwah) f.plunger = true;
+  if (f.longfall) f.fall = true;
+  return f;
 }
-function tone(r, midi, when, dur, fx, next){
-  fx = fx || {};
-  var o = ctx.createOscillator(), f = ctx.createBiquadFilter(), g = ctx.createGain(), det = o.detune;
-  o.type = "sawtooth"; o.frequency.value = 440*Math.pow(2, (midi-69)/12);
-  f.type = "lowpass"; f.frequency.value = fx.half ? 900 : 1800; f.Q.value = fx.half ? 2 : 0.7;
-  var d = Math.max(0.1, dur*0.94), peak = fx.accent ? 0.26 : 0.18;
-  if (fx.staccato) d = Math.min(d, 0.14);
-  det.setValueAtTime(0, when);
-  if (fx.scoop){ det.setValueAtTime(-250, when); det.linearRampToValueAtTime(0, when + Math.min(0.16, d*0.45)); }
-  if (fx.bend){ det.linearRampToValueAtTime(-110, when + d*0.35); det.linearRampToValueAtTime(0, when + d*0.75); }
-  if (fx.shake){ for (var t = when + 0.06, up = true; t < when + d - 0.05; t += 1/14, up = !up) det.linearRampToValueAtTime(up ? 320 : 0, t); }
-  if (fx.slide && next != null){ det.setValueAtTime(0, when + d*0.5); det.linearRampToValueAtTime((next - midi)*100, when + d); }
-  if (fx.fall){ var fs = when + Math.max(d*0.45, d - 0.28); det.setValueAtTime(0, fs); det.linearRampToValueAtTime(-900, when + d); }
-  if (fx.doit){ var ds = when + Math.max(d*0.45, d - 0.25); det.setValueAtTime(0, ds); det.linearRampToValueAtTime(800, when + d); }
-  if (fx.vibrato || fx.growl){
-    var lfo = ctx.createOscillator(), lg = ctx.createGain();
-    lfo.frequency.value = fx.growl ? 28 : 5.5; lg.gain.value = fx.growl ? 45 : 22;
-    lfo.connect(lg); lg.connect(det); lfo.start(when + (fx.growl ? 0 : Math.min(0.15, d*0.3))); lfo.stop(when + d + 0.03);
-    r.live.push(lfo);
+
+/* ---------- The trumpet ----------
+   Real recordings of a B♭ trumpet, one file per note: the University of Iowa Musical Instrument
+   Samples (Bach Stradivarius, played by Aren Van Houzen, 2003). Four sets: mf plain, mf with
+   vibrato, ff and pp. Only the notes a song uses are fetched. A playing note such as slide, fall or
+   shake reshapes the recording's pitch and loudness over time, the way a player would. */
+var Horn = (function(){
+  var base = "assets/trumpet/", man = null, manP = null, bufs = {}, loading = {};
+  function manifest(){
+    if (!manP) manP = fetch(base + "manifest.json").then(function(r){ return r.ok ? r.json() : null; }).then(function(j){ man = j; return j; }).catch(function(){ manP = null; return null; });
+    return manP;
   }
-  g.gain.setValueAtTime(0.0001, when);
-  g.gain.exponentialRampToValueAtTime(peak, when + 0.03);
-  g.gain.setValueAtTime(peak, when + Math.max(0.035, d - 0.06));
-  g.gain.exponentialRampToValueAtTime(0.0001, when + d);
-  o.connect(f); f.connect(g); g.connect(r.out);
-  o.start(when); o.stop(when + d + 0.03);
-  r.live.push(o);
-  o.onended = function(){ var i = r.live.indexOf(o); if (i >= 0) r.live.splice(i, 1); try { g.disconnect(); } catch(e){} };
+  function nearest(set, m){
+    var s = man && man.sets[set]; if (!s) return null; if (s[m]) return m;
+    var best = null; Object.keys(s).forEach(function(k){ k = +k; if (best === null || Math.abs(k - m) < Math.abs(best - m)) best = k; });
+    return best;
+  }
+  function decode(c, ab){ return new Promise(function(res, rej){ var p = c.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); }); }
+  function onsetOf(buf){
+    var d = buf.getChannelData(0), peak = 0, i, n = Math.min(d.length, buf.sampleRate);
+    for (i = 0; i < n; i++){ var v = d[i] < 0 ? -d[i] : d[i]; if (v > peak) peak = v; }
+    var thr = peak*0.05; for (i = 0; i < n && Math.abs(d[i]) < thr; i++);
+    return Math.max(0, i/buf.sampleRate - 0.004);
+  }
+  function load(c, set, m){
+    var key = set + ":" + m;
+    if (bufs[key]) return Promise.resolve(bufs[key]);
+    if (!loading[key]) loading[key] = fetch(base + set + "/" + m + ".mp3").then(function(r){ if (!r.ok) throw new Error("missing"); return r.arrayBuffer(); })
+      .then(function(ab){ return decode(c, ab); })
+      .then(function(buf){ var info = man.sets[set][m] || {}; return (bufs[key] = {buf: buf, onset: onsetOf(buf), tune: info.tune || 0, loop: info.loop || [0.9, buf.duration - 0.6]}); })
+      .catch(function(){ delete loading[key]; return null; });
+    return loading[key];
+  }
+  function want(c, list){
+    return manifest().then(function(){
+      if (!man) return;
+      return Promise.all(list.map(function(x){ var n = nearest(x.set, x.midi); return n === null ? null : load(c, x.set, n); }));
+    });
+  }
+  function get(set, m){
+    if (!man) return null;
+    var n = nearest(set, m);
+    var b = n !== null && Math.abs(n - m) <= 5 ? bufs[set + ":" + n] : null;
+    if (!b) return set !== "mf" ? get("mf", m) : null;
+    return {s: b, shift: (m - n)*100};
+  }
+  return {want: want, get: get};
+})();
+function setFor(fx){ return fx.accent ? "ff" : fx.ghost ? "pp" : fx.vibrato ? "vib" : "mf"; }
+function hornNeeds(ev){ var seen = {}, list = []; ev.forEach(function(x){ var s = setFor(x.fx || {}); [s, "mf"].forEach(function(set){ if (!seen[set + x.midi]){ seen[set + x.midi] = 1; list.push({set: set, midi: x.midi}); } }); }); return list; }
+
+/* A small room, so the dry recordings don't sound like they were made in a cupboard. */
+function bus(c){
+  if (c.__vfBus) return c.__vfBus;
+  var input = c.createGain(), comp = c.createDynamicsCompressor(), wet = c.createGain(), conv = c.createConvolver();
+  comp.threshold.value = -12; comp.knee.value = 8; comp.ratio.value = 4; comp.attack.value = 0.004; comp.release.value = 0.2;
+  var len = Math.floor(c.sampleRate*1.7), ir = c.createBuffer(2, len, c.sampleRate);
+  for (var ch = 0; ch < 2; ch++){
+    var d = ir.getChannelData(ch), lp = 0, seed = 1234 + ch*777;
+    for (var i = 0; i < len; i++){
+      seed = (seed*16807) % 2147483647;
+      var t = i/c.sampleRate, n = (seed/2147483647)*2 - 1, k = 0.25 + 0.6*Math.exp(-t*2.5);
+      lp += k*(n - lp);
+      d[i] = (t < 0.012 ? 0 : lp*Math.exp(-t*3.6));
+    }
+  }
+  conv.buffer = ir; wet.gain.value = 0.2;
+  input.connect(comp); input.connect(conv); conv.connect(wet); wet.connect(comp); comp.connect(c.destination);
+  return (c.__vfBus = input);
 }
+function brassWave(c){
+  if (c.__vfWave) return c.__vfWave;
+  var amps = [0, 1, 0.86, 0.72, 0.58, 0.47, 0.37, 0.29, 0.22, 0.16, 0.12, 0.085, 0.06, 0.04];
+  var re = new Float32Array(amps.length), im = new Float32Array(amps);
+  return (c.__vfWave = c.createPeriodicWave(re, im));
+}
+var growlCurve = (function(){ var n = 1024, a = new Float32Array(n); for (var i = 0; i < n; i++){ var x = i/(n - 1)*2 - 1; a[i] = Math.tanh(3.2*x)/Math.tanh(3.2); } return a; })();
+function ease(x){ return x <= 0 ? 0 : x >= 1 ? 1 : x*x*(3 - 2*x); }
+
+/* One note. x = {midi, when, dur, fx, next, nextWhen, legatoIn, legatoOut}; "at" is the audio-clock start. */
+function voice(c, dest, x, at, live){
+  var fx = x.fx || {}, smp = Horn.get(setFor(fx), x.midi), CR = 250;
+  var d = Math.max(0.08, x.dur), slideTo = fx.slide && x.legatoOut && x.next != null ? x.next : null;
+  var softFall = fx.slide && slideTo === null;
+  var hold = x.legatoOut ? d : fx.staccato ? Math.min(d*0.5, 0.18) : Math.max(0.07, d - Math.min(0.06, d*0.12));
+  var fs = 0, fe = 0;
+  if (fx.fall || fx.doit || softFall){
+    var room = x.nextWhen != null ? x.nextWhen - x.when - 0.02 : d + 0.7;
+    fe = Math.max(0.2, Math.min(room, d + (fx.longfall ? 0.5 : 0.3)));
+    fs = Math.max(Math.min(0.15, fe*0.35), fe - (fx.longfall ? 0.85 : fx.doit ? 0.38 : softFall ? 0.32 : 0.5));
+    hold = fe;
+  }
+  var rel = x.legatoOut ? 0.07 : fx.staccato ? 0.03 : 0.07, span = hold + rel;
+  var N = Math.max(2, Math.ceil(span*CR) + 1), P = new Float32Array(N), G = new Float32Array(N);
+  var shift = smp ? smp.shift + smp.s.tune : 0;
+  var lip = x.midi >= 70 ? 300 : x.midi >= 62 ? 400 : 500, phase = 0, prevT = 0;
+  var sStart = Math.min(0.1, d*0.2), glide = Math.max(0.1, Math.min(0.35, d*0.45));
+  for (var i = 0; i < N; i++){
+    var t = i/CR, v = shift, g = 1, u;
+    if (fx.scoop && t < 0.24){ u = 1 - t/0.24; v -= 400*u*u; g *= 0.55 + 0.45*(1 - u); }
+    if (fx.rip && t < 0.16){ u = 1 - t/0.16; v -= 1100*Math.pow(u, 2.2); g *= 0.5 + 0.5*(1 - u); }
+    if (fx.bend){ var b0 = Math.min(0.06, d*0.1), bl = Math.max(0.22, Math.min(0.6, d*0.6)); if (t > b0 && t < b0 + bl) v -= 220*Math.sin(Math.PI*(t - b0)/bl); }
+    if (fx.shake || fx.trill){
+      var rate = fx.trill ? 9 : 6 + 2.2*Math.min(1, Math.max(0, t - sStart)/1.2);
+      phase += rate*(t - prevT);
+      if (t > sStart && t < hold - 0.03){ var w = 0.5 - 0.5*Math.cos(2*Math.PI*(phase - rate*sStart)); w = ease(ease(w)); v += (fx.trill ? 200 : lip)*w; }
+    }
+    prevT = t;
+    if (fx.widevib) v += 45*Math.sin(2*Math.PI*5.4*t)*ease((t - 0.12)/0.3);
+    if (fx.half) v -= 30 + 8*Math.sin(2*Math.PI*3*t);
+    if (fx.growl) v += 14*Math.sin(2*Math.PI*31*t);
+    if (slideTo !== null && t > d - glide) v += (slideTo - x.midi)*100*ease((t - (d - glide))/glide);
+    if (fe && t > fs){
+      u = Math.min(1, (t - fs)/(fe - fs));
+      if (fx.doit) v += 1000*Math.pow(u, 1.8); else v -= (fx.longfall ? 2000 : softFall ? 700 : 1500)*u*u;
+      g *= Math.pow(1 - u, 1.4);
+    }
+    g *= x.legatoIn ? Math.min(1, t/0.05) : (smp ? Math.min(1, t/0.004) : Math.min(1, t/0.03));
+    if (fx.accent) g *= 1 + 0.35*Math.max(0, 1 - t/0.25);
+    if (fx.ghost) g *= 0.6;
+    if (fx.flutter) g *= 1 - 0.75*(0.5 - 0.5*Math.cos(2*Math.PI*23*t));
+    if (fx.growl) g *= 1 - 0.35*(0.5 - 0.5*Math.cos(2*Math.PI*31*t));
+    if (fx.cresc) g *= 0.4 + 0.75*Math.min(1, t/hold);
+    if (fx.dim) g *= 1 - 0.65*Math.min(1, t/hold);
+    if (fx.swell) g *= 0.45 + 0.75*Math.sin(Math.PI*Math.min(1, t/hold));
+    if (t > hold) g *= Math.max(0, 1 - (t - hold)/rel);
+    P[i] = v; G[i] = g*(smp ? 0.85 : 0.2);
+  }
+  /* Signal path: source(s) → [colour] → note gain → room */
+  var ng = c.createGain(); ng.gain.value = 0;
+  ng.gain.setValueCurveAtTime(G, at, (N - 1)/CR);
+  var head = ng, chain = [];
+  function add(node){ chain.push(node); return node; }
+  if (fx.half){ var h1 = add(c.createBiquadFilter()); h1.type = "lowpass"; h1.frequency.value = 1300; h1.Q.value = 4; }
+  if (fx.harmon){ var m1 = add(c.createBiquadFilter()); m1.type = "highpass"; m1.frequency.value = 1100; var m2 = add(c.createBiquadFilter()); m2.type = "peaking"; m2.frequency.value = 2000; m2.gain.value = 9; m2.Q.value = 2; }
+  if (fx.cup){ var cu = add(c.createBiquadFilter()); cu.type = "lowpass"; cu.frequency.value = 1700; cu.Q.value = 0.9; }
+  if (fx.straight){ var s1 = add(c.createBiquadFilter()); s1.type = "highpass"; s1.frequency.value = 700; var s2 = add(c.createBiquadFilter()); s2.type = "peaking"; s2.frequency.value = 2800; s2.gain.value = 6; s2.Q.value = 1.4; }
+  if (fx.plunger){
+    var wf = add(c.createBiquadFilter()); wf.type = "lowpass"; wf.Q.value = 7;
+    var W = new Float32Array(N); for (var j = 0; j < N; j++){ var tt = j/CR; W[j] = fx.wahwah ? 500 + 2100*(0.5 - 0.5*Math.cos(2*Math.PI*3*tt)) : 450 + 2350*ease(tt/0.25); }
+    wf.frequency.value = W[0]; wf.frequency.setValueCurveAtTime(W, at, (N - 1)/CR);
+  }
+  if (fe){ var ff = add(c.createBiquadFilter()); ff.type = "lowpass"; ff.Q.value = 0.7; ff.frequency.setValueAtTime(12000, at); ff.frequency.setValueAtTime(12000, at + fs); ff.frequency.exponentialRampToValueAtTime(fx.doit ? 3000 : 1200, at + fe); }
+  if (fx.growl){ var ws = add(c.createWaveShaper()); ws.curve = growlCurve; ws.oversample = "2x"; }
+  var entry = chain.length ? chain[0] : ng;
+  for (var k = 0; k < chain.length; k++) chain[k].connect(k + 1 < chain.length ? chain[k + 1] : ng);
+  ng.connect(dest);
+
+  function pitch(src, from, len){
+    var a = Math.max(0, Math.floor(from*CR)), b = Math.min(N, Math.ceil((from + len)*CR) + 1);
+    if (b - a < 2) return;
+    var slice = P.subarray(a, b);
+    if (src.detune) src.detune.setValueCurveAtTime(slice, at + a/CR, (b - a - 1)/CR);
+    else { var R = new Float32Array(slice.length); for (var q = 0; q < R.length; q++) R[q] = Math.pow(2, slice[q]/1200); src.playbackRate.setValueCurveAtTime(R, at + a/CR, (R.length - 1)/CR); }
+  }
+  function track(src, outNode){ live.push(src); src.onended = function(){ var ix = live.indexOf(src); if (ix >= 0) live.splice(ix, 1); try { outNode.disconnect(); } catch(e){} }; }
+
+  if (smp){
+    var B = smp.s, off = B.onset + (x.legatoIn ? 0.12 : 0), X = 0.1;
+    var segs = [], T = 0, first = true, from = off;
+    while (T < span){
+      var end = first ? B.loop[1] : B.loop[1], segLen = end - from;
+      if (segLen <= X*2 || T + (B.buf.duration - from - 0.05) >= span){ segs.push({T: T, from: from, len: Math.min(span - T, B.buf.duration - from - 0.02), last: true}); break; }
+      segs.push({T: T, from: from, len: segLen, last: false});
+      T += segLen - X; from = B.loop[0]; first = false;
+      if (segs.length > 40) break;
+    }
+    segs.forEach(function(sg, n){
+      var src = c.createBufferSource(), xf = c.createGain();
+      src.buffer = B.buf; src.connect(xf); xf.connect(entry);
+      xf.gain.setValueAtTime(n ? 0 : 1, at + sg.T);
+      if (n) xf.gain.linearRampToValueAtTime(1, at + sg.T + X);
+      if (!sg.last){ xf.gain.setValueAtTime(1, at + sg.T + sg.len - X); xf.gain.linearRampToValueAtTime(0, at + sg.T + sg.len); }
+      pitch(src, sg.T, sg.len);
+      src.start(at + sg.T, sg.from); src.stop(at + sg.T + sg.len + 0.02);
+      track(src, xf);
+    });
+  } else {
+    var o = c.createOscillator(), lf = c.createBiquadFilter();
+    o.setPeriodicWave(brassWave(c)); o.frequency.value = 440*Math.pow(2, (x.midi - 69)/12);
+    lf.type = "lowpass"; lf.Q.value = 1.2;
+    lf.frequency.setValueAtTime(x.legatoIn ? 2400 : 700, at); lf.frequency.exponentialRampToValueAtTime(3400, at + 0.05); lf.frequency.exponentialRampToValueAtTime(2400, at + 0.2);
+    o.connect(lf); lf.connect(entry);
+    pitch(o, 0, span);
+    o.start(at); o.stop(at + span + 0.02);
+    track(o, lf);
+  }
+}
+
 function clearPlaying(){ var ps = document.querySelectorAll(".note.playing"); for (var i=0;i<ps.length;i++) ps[i].classList.remove("playing"); }
 function setNowPlaying(on, label){
   var np = $("nowplaying");
@@ -847,9 +1025,8 @@ function stopRun(){
   run = null;
   clearInterval(r.timer); cancelAnimationFrame(r.raf);
   var now = ctx ? ctx.currentTime : 0;
-  r.live.slice().forEach(function(o){ try { o.stop(now); } catch(e){} });
-  try { r.out.gain.setTargetAtTime(0, now, 0.01); } catch(e){}
-  setTimeout(function(){ try { r.out.disconnect(); } catch(e){} }, 120);
+  r.live.slice().forEach(function(o){ try { o.stop(now + 0.03); } catch(e){} });
+  if (r.out){ try { r.out.gain.setTargetAtTime(0, now, 0.01); } catch(e){} var out = r.out; setTimeout(function(){ try { out.disconnect(); } catch(e){} }, 150); }
   clearPlaying();
   if (r.btn){ r.btn.textContent = r.btn.getAttribute("data-label") || "Play"; r.btn.classList.remove("on"); }
   setNowPlaying(false);
@@ -859,7 +1036,7 @@ function schedule(){
   var horizon = ctx.currentTime + 1.5;
   while (r.i < r.ev.length && r.t0 + r.ev[r.i].when < horizon){
     var x = r.ev[r.i++];
-    tone(r, x.midi, Math.max(r.t0 + x.when, ctx.currentTime + 0.01), x.dur, x.fx, x.next);
+    voice(ctx, r.out, x, Math.max(r.t0 + x.when, ctx.currentTime + 0.01), r.live);
   }
 }
 function tick(){
@@ -875,13 +1052,32 @@ function tick(){
       if (bar && bar !== r.lastBar){
         r.lastBar = bar;
         if (r.long) setNowPlaying(true, bar.querySelector("h3") ? bar.querySelector("h3").textContent : "");
-        if (r.follow && Date.now() - r.userAt > 3000) bar.scrollIntoView({block: "center", behavior: reduceMotion ? "auto" : "smooth"});
       }
     }
     r.lastEl = cur.el;
   }
-  if (now > r.end + 0.25){ stopRun(); return; }
+  if (r.follow) follow(r, now);
+  if (now > r.end + 0.6){ stopRun(); return; }
   r.raf = requestAnimationFrame(tick);
+}
+/* Turn the page early: before the next bar starts, the bar after it is already on screen.
+   When the page has to move, it moves as far as it can (up to three bars ahead) while the note
+   being played stays in view, so it turns like a page rather than creeping. */
+function follow(r, now){
+  var t = Date.now(), cur = r.lastBar, el = r.lastEl;
+  if (!cur || !el || t - r.userAt < 3000 || t - (r.scrollAt || 0) < 600) return;
+  var k = r.h; while (k < r.ev.length && r.ev[k].when <= now + 1.0) k++;
+  var ahead = r.ev[k - 1], abar = ahead && ahead.el && ahead.el.closest(".bar") || cur;
+  var vh = window.innerHeight, room = vh - ($("nowplaying").classList.contains("on") ? $("nowplaying").offsetHeight : 0);
+  var pinTop = Math.max(12, vh*0.06), nr = el.getBoundingClientRect();
+  var need1 = abar.nextElementSibling || abar, need2 = need1.nextElementSibling || need1;
+  var noteHidden = nr.top < 0 || nr.bottom > room;
+  if (!noteHidden && need1.getBoundingClientRect().bottom <= room) return;
+  var lo = cur.getBoundingClientRect().top - pinTop, hi = nr.top - pinTop;
+  var lift = Math.max(lo, Math.min(need2.getBoundingClientRect().bottom - room + 8, hi));
+  if (Math.abs(lift) < 8) return;
+  r.scrollAt = t;
+  window.scrollTo({top: Math.max(0, window.pageYOffset + lift), behavior: reduceMotion ? "auto" : "smooth"});
 }
 function startRun(ev, opts){
   opts = opts || {};
@@ -892,18 +1088,38 @@ function startRun(ev, opts){
   run = r;
   if (r.btn){ r.btn.textContent = "Stop"; r.btn.classList.add("on"); }
   if (r.long) setNowPlaying(true, "");
-  function go(){
+  /* resume() has to be called inside the tap itself, or phones keep the sound locked */
+  var resumed = c.state === "running" ? Promise.resolve() : Promise.resolve(c.resume()).catch(function(){});
+  var ready = Promise.race([Horn.want(c, hornNeeds(ev)), new Promise(function(res){ setTimeout(res, 6000); })]);
+  Promise.all([resumed, ready]).then(function(){
     if (run !== r) return;
-    r.out = c.createGain(); r.out.gain.value = 1; r.out.connect(c.destination);
+    r.out = c.createGain(); r.out.gain.value = 1; r.out.connect(bus(c));
     var lead = Math.max(0.12, (c.baseLatency || 0) + (c.outputLatency || 0) + 0.06);
     r.t0 = c.currentTime + lead;
     schedule();
     r.timer = setInterval(schedule, 120);
     r.raf = requestAnimationFrame(tick);
-  }
-  if (c.state !== "running") c.resume().then(go, go); else go();
+  });
 }
-function playBars(from, to, opts){
+/* Turns notes into timed events and works out how each playing note joins its neighbours. */
+function linkEvents(ev){
+  var shiftBy = 0;
+  ev.forEach(function(x){
+    x.when += shiftBy;
+    if (x.fx.fermata){ var add = Math.max(0.5, x.dur); x.dur += add; shiftBy += add; }
+  });
+  ev.forEach(function(x, i){
+    var nx = ev[i + 1], pv = ev[i - 1];
+    if (x.fx.breath && pv) pv.dur = Math.max(pv.dur*0.55, pv.dur - 0.2);
+    x.next = nx ? nx.midi : null; x.nextWhen = nx ? nx.when : null;
+  });
+  ev.forEach(function(x, i){
+    var nx = ev[i + 1];
+    if ((x.fx.slide || x.fx.slur) && nx && nx.when - (x.when + x.dur) < 0.15){ x.legatoOut = true; x.dur = nx.when - x.when; nx.legatoIn = true; }
+  });
+  return ev;
+}
+function buildEvents(from, to){
   var spq = 60/clampTempo($("tempo").value), ev = [], off = 0, last = null, anns = annotations();
   for (var b=from; b<=to; b++){
     var bar = state.bars[b];
@@ -918,9 +1134,28 @@ function playBars(from, to, opts){
     });
     off += Math.max(bar.len || 0, 0.25)*spq;
   }
-  ev.forEach(function(x, i){ x.next = ev[i+1] ? ev[i+1].midi : null; });
-  startRun(ev, opts);
+  return linkEvents(ev);
 }
+function playBars(from, to, opts){ startRun(buildEvents(from, to), opts); }
+function prefetchHorn(){
+  var c = audio(); if (!c || !state.bars) return;
+  var anns = annotations(), ev = [];
+  state.bars.forEach(function(bar){ bar.notes.forEach(function(n){ ev.push({midi: n.concert, fx: parseFx(anns[n.key])}); }); });
+  Horn.want(c, hornNeeds(ev));
+}
+/* For checking the sound without speakers: renders events to samples. */
+window.ValveFinder = {
+  render: function(list, seconds){
+    var oc = new OfflineAudioContext(1, Math.ceil(44100*seconds), 44100);
+    var ev = linkEvents(list.map(function(x){ return {midi: x.midi, when: x.when, dur: x.dur, fx: parseFx(x.play || "")}; }));
+    return Horn.want(oc, hornNeeds(ev)).then(function(){
+      var dest = bus(oc), live = [];
+      ev.forEach(function(x){ voice(oc, dest, x, x.when + 0.05, live); });
+      return oc.startRendering();
+    }).then(function(buf){ return buf.getChannelData(0); });
+  },
+  buildEvents: function(){ return buildEvents(0, state.bars.length - 1).map(function(x){ return {midi: x.midi, when: x.when, dur: x.dur, legatoIn: !!x.legatoIn, legatoOut: !!x.legatoOut}; }); }
+};
 ["wheel", "touchstart", "touchmove", "keydown"].forEach(function(t){
   window.addEventListener(t, function(){ if (run) run.userAt = Date.now(); }, {passive: true});
 });
@@ -1356,7 +1591,9 @@ $("bars").addEventListener("click", function(e){
     for (var k = b + 1; !nx && k < state.bars.length; k++) nx = state.bars[k].notes[0];
     var cells = document.querySelectorAll(".notecell.reveal"); for (var i = 0; i < cells.length; i++) cells[i].classList.remove("reveal");
     nb.parentNode.classList.add("reveal");
-    startRun([{midi:n.concert, when:0, dur:0.7, el:nb, fx:parseFx(annotations()[n.key]), next: nx ? nx.concert : null}], {});
+    var fx = parseFx(annotations()[n.key]), one = [{midi:n.concert, when:0, dur:0.7, el:nb, fx:fx}];
+    if (nx && (fx.slide || fx.slur)) one.push({midi:nx.concert, when:0.7, dur:0.6, el:null, fx:parseFx(annotations()[nx.key])});
+    startRun(linkEvents(one), {});
   }
 });
 $("bars").addEventListener("input", function(e){
