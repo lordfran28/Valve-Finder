@@ -1,0 +1,38 @@
++ cd fetched
++ UA='Mozilla/5.0 (Knockels site build)'
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://api.polyhaven.com/assets?t=textures' -o polyhaven-textures.json
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' https://api.polyhaven.com/categories/textures -o polyhaven-categories.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=WoodFloor&limit=100&include=downloadData,previewData' -o acg-WoodFloor.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Carpet&limit=100&include=downloadData,previewData' -o acg-Carpet.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Tiles&limit=100&include=downloadData,previewData' -o acg-Tiles.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Marble&limit=100&include=downloadData,previewData' -o acg-Marble.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Planks&limit=100&include=downloadData,previewData' -o acg-Planks.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Fabric&limit=100&include=downloadData,previewData' -o acg-Fabric.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Travertine&limit=100&include=downloadData,previewData' -o acg-Travertine.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Terrazzo&limit=100&include=downloadData,previewData' -o acg-Terrazzo.json
++ for q in WoodFloor Carpet Tiles Marble Planks Fabric Travertine Terrazzo Wood
++ curl -fsSL -A 'Mozilla/5.0 (Knockels site build)' 'https://ambientcg.com/api/v2/full_json?type=Material&q=Wood&limit=100&include=downloadData,previewData' -o acg-Wood.json
++ ls -la
+total 7136
+drwxr-xr-x 2 runner runner    4096 Oct 31 07:09 .
+drwxr-xr-x 5 runner runner    4096 Oct 31 07:08 ..
+-rw-r--r-- 1 runner runner    2649 Oct 31 07:09 RUN.log
+-rw-r--r-- 1 runner runner  304417 Oct 31 07:08 acg-Carpet.json
+-rw-r--r-- 1 runner runner 1201832 Oct 31 07:09 acg-Fabric.json
+-rw-r--r-- 1 runner runner  929817 Oct 31 07:09 acg-Marble.json
+-rw-r--r-- 1 runner runner  992476 Oct 31 07:09 acg-Planks.json
+-rw-r--r-- 1 runner runner  338897 Oct 31 07:09 acg-Terrazzo.json
+-rw-r--r-- 1 runner runner 1231747 Oct 31 07:08 acg-Tiles.json
+-rw-r--r-- 1 runner runner  176732 Oct 31 07:09 acg-Travertine.json
+-rw-r--r-- 1 runner runner 1233986 Oct 31 07:09 acg-Wood.json
+-rw-r--r-- 1 runner runner     654 Oct 31 07:08 acg-WoodFloor.json
+-rw-r--r-- 1 runner runner     753 Oct 31 07:08 polyhaven-categories.json
+-rw-r--r-- 1 runner runner  855246 Oct 31 07:08 polyhaven-textures.json

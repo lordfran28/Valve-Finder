@@ -1,0 +1,2571 @@
+{
+    "searchQuery": {
+        "forceSpecificAssetId": false,
+        "category": [],
+        "assetId": [],
+        "dataType": [
+            "Material"
+        ],
+        "creationMethod": null,
+        "queryString": "travertine",
+        "sort": "Popular",
+        "createdUsingAssetId": null,
+        "basedOnAssetId": null,
+        "variationsOfAssetId": null,
+        "limit": 100,
+        "offset": 0
+    },
+    "numberOfResults": 14,
+    "currentPageHttp": "https://ambientcg.com/api/v2/full_json?type=material&q=travertine&sort=popular&limit=100&include=statisticsData%2ClabelData%2CpreviewData%2CtechnicalData%2CfileData",
+    "foundAssets": [
+        {
+            "assetId": "Travertine009",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 127332,
+            "downloadCountMonth": 17495,
+            "downloadCountWeek": 5628,
+            "popularityScore": 25.286320537540075,
+            "tags": [
+                "9",
+                "beige",
+                "light",
+                "marble",
+                "stone",
+                "travertine",
+                "white"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 009",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine009",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_1K-JPG.zip",
+                                    "fileName": "Travertine009_1K-JPG.zip",
+                                    "size": 3292870,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_2K-JPG.zip",
+                                    "fileName": "Travertine009_2K-JPG.zip",
+                                    "size": 9116254,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_4K-JPG.zip",
+                                    "fileName": "Travertine009_4K-JPG.zip",
+                                    "size": 32850019,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_8K-JPG.zip",
+                                    "fileName": "Travertine009_8K-JPG.zip",
+                                    "size": 166964780,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_1K-PNG.zip",
+                                    "fileName": "Travertine009_1K-PNG.zip",
+                                    "size": 9299244,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_2K-PNG.zip",
+                                    "fileName": "Travertine009_2K-PNG.zip",
+                                    "size": 35288755,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_4K-PNG.zip",
+                                    "fileName": "Travertine009_4K-PNG.zip",
+                                    "size": 142842817,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine009_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine009_8K-PNG.zip",
+                                    "fileName": "Travertine009_8K-PNG.zip",
+                                    "size": 516610703,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_Color.jpg?77561&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_Displacement.jpg?4620&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_NormalDX.jpg?84254&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_Roughness.jpg?88186&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_AmbientOcclusion.jpg?57360",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_Color.jpg?70664,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_Displacement.jpg?38017,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_NormalDX.jpg?54384,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_Roughness.jpg?96465,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine009/Travertine009_SQ_AmbientOcclusion.jpg?72252&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine009.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine009.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine009.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine009.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine009.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine009.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine009.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine009.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine009.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine009.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine009.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine009.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine009.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine009.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine009.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine009.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine009.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine009.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine009.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine009.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine009.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine009.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine009.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine009.webp"
+            }
+        },
+        {
+            "assetId": "Travertine005",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 48798,
+            "downloadCountMonth": 3425,
+            "downloadCountWeek": 982,
+            "popularityScore": 10.307352979540733,
+            "tags": [
+                "5",
+                "brown",
+                "dark",
+                "marble",
+                "rough",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 005",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine005",
+            "dimensionX": 120,
+            "dimensionY": 0,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_1K-JPG.zip",
+                                    "fileName": "Travertine005_1K-JPG.zip",
+                                    "size": 5231316,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_2K-JPG.zip",
+                                    "fileName": "Travertine005_2K-JPG.zip",
+                                    "size": 14750102,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_4K-JPG.zip",
+                                    "fileName": "Travertine005_4K-JPG.zip",
+                                    "size": 49821062,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_8K-JPG.zip",
+                                    "fileName": "Travertine005_8K-JPG.zip",
+                                    "size": 230136600,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_1K-PNG.zip",
+                                    "fileName": "Travertine005_1K-PNG.zip",
+                                    "size": 11361207,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_2K-PNG.zip",
+                                    "fileName": "Travertine005_2K-PNG.zip",
+                                    "size": 40631690,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_4K-PNG.zip",
+                                    "fileName": "Travertine005_4K-PNG.zip",
+                                    "size": 159581320,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine005_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine005_8K-PNG.zip",
+                                    "fileName": "Travertine005_8K-PNG.zip",
+                                    "size": 576272987,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_Color.jpg?65895&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_Displacement.jpg?21362&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_NormalDX.jpg?14271&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_Roughness.jpg?11942&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_AmbientOcclusion.jpg?94383",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_Color.jpg?756,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_Displacement.jpg?22838,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_NormalDX.jpg?74231,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_Roughness.jpg?23813,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine005/Travertine005_SQ_AmbientOcclusion.jpg?86021&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine005.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine005.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine005.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine005.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine005.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine005.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine005.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine005.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine005.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine005.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine005.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine005.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine005.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine005.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine005.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine005.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine005.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine005.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine005.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine005.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine005.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine005.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine005.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine005.webp"
+            }
+        },
+        {
+            "assetId": "Travertine004",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 44176,
+            "downloadCountMonth": 3480,
+            "downloadCountWeek": 968,
+            "popularityScore": 9.425788459039127,
+            "tags": [
+                "4",
+                "brown",
+                "gray",
+                "marble",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 004",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine004",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_1K-JPG.zip",
+                                    "fileName": "Travertine004_1K-JPG.zip",
+                                    "size": 3487181,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_2K-JPG.zip",
+                                    "fileName": "Travertine004_2K-JPG.zip",
+                                    "size": 9507895,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_4K-JPG.zip",
+                                    "fileName": "Travertine004_4K-JPG.zip",
+                                    "size": 33409194,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_8K-JPG.zip",
+                                    "fileName": "Travertine004_8K-JPG.zip",
+                                    "size": 166045125,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_1K-PNG.zip",
+                                    "fileName": "Travertine004_1K-PNG.zip",
+                                    "size": 9711495,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_2K-PNG.zip",
+                                    "fileName": "Travertine004_2K-PNG.zip",
+                                    "size": 36634862,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_4K-PNG.zip",
+                                    "fileName": "Travertine004_4K-PNG.zip",
+                                    "size": 146818679,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine004_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine004_8K-PNG.zip",
+                                    "fileName": "Travertine004_8K-PNG.zip",
+                                    "size": 514928979,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_Color.jpg?71119&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_Displacement.jpg?41500&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_NormalDX.jpg?52721&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_Roughness.jpg?31928&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_AmbientOcclusion.jpg?81923",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_Color.jpg?80352,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_Displacement.jpg?26649,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_NormalDX.jpg?19833,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_Roughness.jpg?97892,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine004/Travertine004_SQ_AmbientOcclusion.jpg?51830&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine004.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine004.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine004.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine004.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine004.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine004.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine004.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine004.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine004.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine004.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine004.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine004.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine004.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine004.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine004.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine004.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine004.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine004.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine004.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine004.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine004.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine004.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine004.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine004.webp"
+            }
+        },
+        {
+            "assetId": "Travertine003",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 33715,
+            "downloadCountMonth": 3037,
+            "downloadCountWeek": 827,
+            "popularityScore": 7.430538253723837,
+            "tags": [
+                "3",
+                "brown",
+                "marble",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 003",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine003",
+            "dimensionX": 120,
+            "dimensionY": 0,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_1K-JPG.zip",
+                                    "fileName": "Travertine003_1K-JPG.zip",
+                                    "size": 3490841,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_2K-JPG.zip",
+                                    "fileName": "Travertine003_2K-JPG.zip",
+                                    "size": 9500311,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_4K-JPG.zip",
+                                    "fileName": "Travertine003_4K-JPG.zip",
+                                    "size": 33622964,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_8K-JPG.zip",
+                                    "fileName": "Travertine003_8K-JPG.zip",
+                                    "size": 168666911,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_1K-PNG.zip",
+                                    "fileName": "Travertine003_1K-PNG.zip",
+                                    "size": 9621859,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_2K-PNG.zip",
+                                    "fileName": "Travertine003_2K-PNG.zip",
+                                    "size": 36041017,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_4K-PNG.zip",
+                                    "fileName": "Travertine003_4K-PNG.zip",
+                                    "size": 145615857,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine003_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine003_8K-PNG.zip",
+                                    "fileName": "Travertine003_8K-PNG.zip",
+                                    "size": 531386025,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_Color.jpg?87049&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_Displacement.jpg?63607&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_NormalDX.jpg?6960&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_Roughness.jpg?94484&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_AmbientOcclusion.jpg?57692",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_Color.jpg?74331,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_Displacement.jpg?64324,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_NormalDX.jpg?11317,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_Roughness.jpg?46233,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine003/Travertine003_SQ_AmbientOcclusion.jpg?73622&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine003.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine003.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine003.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine003.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine003.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine003.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine003.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine003.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine003.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine003.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine003.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine003.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine003.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine003.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine003.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine003.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine003.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine003.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine003.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine003.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine003.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine003.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine003.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine003.webp"
+            }
+        },
+        {
+            "assetId": "Travertine013",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 31099,
+            "downloadCountMonth": 2427,
+            "downloadCountWeek": 604,
+            "popularityScore": 6.931582653197616,
+            "tags": [
+                "13",
+                "blue",
+                "marble",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 013",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine013",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_1K-JPG.zip",
+                                    "fileName": "Travertine013_1K-JPG.zip",
+                                    "size": 3915491,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_2K-JPG.zip",
+                                    "fileName": "Travertine013_2K-JPG.zip",
+                                    "size": 10889820,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_4K-JPG.zip",
+                                    "fileName": "Travertine013_4K-JPG.zip",
+                                    "size": 38336664,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_8K-JPG.zip",
+                                    "fileName": "Travertine013_8K-JPG.zip",
+                                    "size": 188748301,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_1K-PNG.zip",
+                                    "fileName": "Travertine013_1K-PNG.zip",
+                                    "size": 10139139,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_2K-PNG.zip",
+                                    "fileName": "Travertine013_2K-PNG.zip",
+                                    "size": 37733267,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_4K-PNG.zip",
+                                    "fileName": "Travertine013_4K-PNG.zip",
+                                    "size": 151481446,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine013_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine013_8K-PNG.zip",
+                                    "fileName": "Travertine013_8K-PNG.zip",
+                                    "size": 577350428,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_Color.jpg?76804&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_Displacement.jpg?76980&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_NormalDX.jpg?22199&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_Roughness.jpg?47026&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_AmbientOcclusion.jpg?66984",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_Color.jpg?98384,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_Displacement.jpg?78115,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_NormalDX.jpg?18255,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_Roughness.jpg?48343,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine013/Travertine013_SQ_AmbientOcclusion.jpg?92426&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine013.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine013.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine013.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine013.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine013.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine013.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine013.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine013.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine013.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine013.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine013.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine013.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine013.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine013.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine013.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine013.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine013.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine013.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine013.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine013.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine013.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine013.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine013.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine013.webp"
+            }
+        },
+        {
+            "assetId": "Travertine001",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 30667,
+            "downloadCountMonth": 4634,
+            "downloadCountWeek": 1374,
+            "popularityScore": 6.849186315496038,
+            "tags": [
+                "1",
+                "beige",
+                "marble",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 001",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine001",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_1K-JPG.zip",
+                                    "fileName": "Travertine001_1K-JPG.zip",
+                                    "size": 3515593,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_2K-JPG.zip",
+                                    "fileName": "Travertine001_2K-JPG.zip",
+                                    "size": 9619414,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_4K-JPG.zip",
+                                    "fileName": "Travertine001_4K-JPG.zip",
+                                    "size": 34045795,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_8K-JPG.zip",
+                                    "fileName": "Travertine001_8K-JPG.zip",
+                                    "size": 170298708,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_1K-PNG.zip",
+                                    "fileName": "Travertine001_1K-PNG.zip",
+                                    "size": 9705188,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_2K-PNG.zip",
+                                    "fileName": "Travertine001_2K-PNG.zip",
+                                    "size": 36388688,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_4K-PNG.zip",
+                                    "fileName": "Travertine001_4K-PNG.zip",
+                                    "size": 146344629,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine001_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine001_8K-PNG.zip",
+                                    "fileName": "Travertine001_8K-PNG.zip",
+                                    "size": 536755898,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_Color.jpg?65279&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_Displacement.jpg?81843&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_NormalDX.jpg?37028&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_Roughness.jpg?60794&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_AmbientOcclusion.jpg?25005",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_Color.jpg?54194,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_Displacement.jpg?3325,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_NormalDX.jpg?35801,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_Roughness.jpg?96148,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine001/Travertine001_SQ_AmbientOcclusion.jpg?60393&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine001.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine001.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine001.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine001.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine001.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine001.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine001.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine001.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine001.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine001.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine001.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine001.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine001.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine001.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine001.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine001.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine001.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine001.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine001.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine001.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine001.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine001.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine001.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine001.webp"
+            }
+        },
+        {
+            "assetId": "Travertine002",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 22344,
+            "downloadCountMonth": 1997,
+            "downloadCountWeek": 551,
+            "popularityScore": 5.261721688898277,
+            "tags": [
+                "2",
+                "blue",
+                "gray",
+                "marble",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 002",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine002",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_1K-JPG.zip",
+                                    "fileName": "Travertine002_1K-JPG.zip",
+                                    "size": 3220262,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_2K-JPG.zip",
+                                    "fileName": "Travertine002_2K-JPG.zip",
+                                    "size": 8547729,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_4K-JPG.zip",
+                                    "fileName": "Travertine002_4K-JPG.zip",
+                                    "size": 29945075,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_8K-JPG.zip",
+                                    "fileName": "Travertine002_8K-JPG.zip",
+                                    "size": 152718807,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_1K-PNG.zip",
+                                    "fileName": "Travertine002_1K-PNG.zip",
+                                    "size": 9178702,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_2K-PNG.zip",
+                                    "fileName": "Travertine002_2K-PNG.zip",
+                                    "size": 34619342,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_4K-PNG.zip",
+                                    "fileName": "Travertine002_4K-PNG.zip",
+                                    "size": 139652580,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine002_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine002_8K-PNG.zip",
+                                    "fileName": "Travertine002_8K-PNG.zip",
+                                    "size": 498190500,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_Color.jpg?61621&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_Displacement.jpg?32112&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_NormalDX.jpg?7871&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_Roughness.jpg?81700&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_AmbientOcclusion.jpg?47609",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_Color.jpg?72175,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_Displacement.jpg?47465,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_NormalDX.jpg?87169,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_Roughness.jpg?97153,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine002/Travertine002_SQ_AmbientOcclusion.jpg?73503&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine002.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine002.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine002.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine002.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine002.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine002.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine002.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine002.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine002.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine002.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine002.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine002.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine002.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine002.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine002.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine002.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine002.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine002.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine002.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine002.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine002.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine002.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine002.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine002.webp"
+            }
+        },
+        {
+            "assetId": "Travertine007",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 19568,
+            "downloadCountMonth": 2093,
+            "downloadCountWeek": 612,
+            "popularityScore": 4.732248926260359,
+            "tags": [
+                "7",
+                "brown",
+                "dark",
+                "gray",
+                "marble",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 007",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine007",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_1K-JPG.zip",
+                                    "fileName": "Travertine007_1K-JPG.zip",
+                                    "size": 3772363,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_2K-JPG.zip",
+                                    "fileName": "Travertine007_2K-JPG.zip",
+                                    "size": 10421902,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_4K-JPG.zip",
+                                    "fileName": "Travertine007_4K-JPG.zip",
+                                    "size": 36814116,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_8K-JPG.zip",
+                                    "fileName": "Travertine007_8K-JPG.zip",
+                                    "size": 183994011,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_1K-PNG.zip",
+                                    "fileName": "Travertine007_1K-PNG.zip",
+                                    "size": 10036542,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_2K-PNG.zip",
+                                    "fileName": "Travertine007_2K-PNG.zip",
+                                    "size": 37497666,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_4K-PNG.zip",
+                                    "fileName": "Travertine007_4K-PNG.zip",
+                                    "size": 150547815,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine007_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine007_8K-PNG.zip",
+                                    "fileName": "Travertine007_8K-PNG.zip",
+                                    "size": 573108438,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_Color.jpg?85663&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_Displacement.jpg?95211&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_NormalDX.jpg?29095&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_Roughness.jpg?12886&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_AmbientOcclusion.jpg?93922",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_Color.jpg?82844,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_Displacement.jpg?77515,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_NormalDX.jpg?58834,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_Roughness.jpg?77009,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine007/Travertine007_SQ_AmbientOcclusion.jpg?3611&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine007.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine007.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine007.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine007.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine007.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine007.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine007.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine007.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine007.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine007.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine007.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine007.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine007.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine007.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine007.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine007.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine007.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine007.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine007.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine007.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine007.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine007.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine007.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine007.webp"
+            }
+        },
+        {
+            "assetId": "Travertine014",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 19446,
+            "downloadCountMonth": 2013,
+            "downloadCountWeek": 491,
+            "popularityScore": 4.708979590150193,
+            "tags": [
+                "14",
+                "gray",
+                "marble",
+                "rough",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 014",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine014",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_1K-JPG.zip",
+                                    "fileName": "Travertine014_1K-JPG.zip",
+                                    "size": 6000853,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_2K-JPG.zip",
+                                    "fileName": "Travertine014_2K-JPG.zip",
+                                    "size": 17254100,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_4K-JPG.zip",
+                                    "fileName": "Travertine014_4K-JPG.zip",
+                                    "size": 58027305,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_8K-JPG.zip",
+                                    "fileName": "Travertine014_8K-JPG.zip",
+                                    "size": 263508351,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_1K-PNG.zip",
+                                    "fileName": "Travertine014_1K-PNG.zip",
+                                    "size": 12252526,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_2K-PNG.zip",
+                                    "fileName": "Travertine014_2K-PNG.zip",
+                                    "size": 43426659,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_4K-PNG.zip",
+                                    "fileName": "Travertine014_4K-PNG.zip",
+                                    "size": 169185024,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine014_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine014_8K-PNG.zip",
+                                    "fileName": "Travertine014_8K-PNG.zip",
+                                    "size": 645348858,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_Color.jpg?66635&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_Displacement.jpg?94633&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_NormalDX.jpg?49775&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_Roughness.jpg?16829&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_AmbientOcclusion.jpg?88304",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_Color.jpg?12269,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_Displacement.jpg?13520,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_NormalDX.jpg?73712,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_Roughness.jpg?33259,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine014/Travertine014_SQ_AmbientOcclusion.jpg?11637&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine014.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine014.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine014.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine014.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine014.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine014.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine014.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine014.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine014.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine014.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine014.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine014.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine014.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine014.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine014.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine014.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine014.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine014.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine014.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine014.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine014.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine014.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine014.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine014.webp"
+            }
+        },
+        {
+            "assetId": "Travertine010",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 17220,
+            "downloadCountMonth": 1644,
+            "downloadCountWeek": 397,
+            "popularityScore": 4.284409572271228,
+            "tags": [
+                "10",
+                "bright",
+                "marble",
+                "orange",
+                "red",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 010",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine010",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_1K-JPG.zip",
+                                    "fileName": "Travertine010_1K-JPG.zip",
+                                    "size": 3983542,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_2K-JPG.zip",
+                                    "fileName": "Travertine010_2K-JPG.zip",
+                                    "size": 11220853,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_4K-JPG.zip",
+                                    "fileName": "Travertine010_4K-JPG.zip",
+                                    "size": 39527530,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_8K-JPG.zip",
+                                    "fileName": "Travertine010_8K-JPG.zip",
+                                    "size": 191515408,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_1K-PNG.zip",
+                                    "fileName": "Travertine010_1K-PNG.zip",
+                                    "size": 10251293,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_2K-PNG.zip",
+                                    "fileName": "Travertine010_2K-PNG.zip",
+                                    "size": 38183469,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_4K-PNG.zip",
+                                    "fileName": "Travertine010_4K-PNG.zip",
+                                    "size": 151995006,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine010_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine010_8K-PNG.zip",
+                                    "fileName": "Travertine010_8K-PNG.zip",
+                                    "size": 549143306,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_Color.jpg?39267&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_Displacement.jpg?2115&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_NormalDX.jpg?36000&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_Roughness.jpg?71881&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_AmbientOcclusion.jpg?73202",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_Color.jpg?2115,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_Displacement.jpg?63341,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_NormalDX.jpg?51263,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_Roughness.jpg?33787,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine010/Travertine010_SQ_AmbientOcclusion.jpg?69163&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine010.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine010.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine010.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine010.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine010.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine010.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine010.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine010.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine010.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine010.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine010.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine010.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine010.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine010.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine010.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine010.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine010.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine010.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine010.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine010.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine010.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine010.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine010.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine010.webp"
+            }
+        },
+        {
+            "assetId": "Travertine011",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 16905,
+            "downloadCountMonth": 1612,
+            "downloadCountWeek": 392,
+            "popularityScore": 4.2243289093638285,
+            "tags": [
+                "11",
+                "green",
+                "marble",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 011",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine011",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_1K-JPG.zip",
+                                    "fileName": "Travertine011_1K-JPG.zip",
+                                    "size": 3830500,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_2K-JPG.zip",
+                                    "fileName": "Travertine011_2K-JPG.zip",
+                                    "size": 10661412,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_4K-JPG.zip",
+                                    "fileName": "Travertine011_4K-JPG.zip",
+                                    "size": 37602132,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_8K-JPG.zip",
+                                    "fileName": "Travertine011_8K-JPG.zip",
+                                    "size": 185910963,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_1K-PNG.zip",
+                                    "fileName": "Travertine011_1K-PNG.zip",
+                                    "size": 10010793,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_2K-PNG.zip",
+                                    "fileName": "Travertine011_2K-PNG.zip",
+                                    "size": 37379518,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_4K-PNG.zip",
+                                    "fileName": "Travertine011_4K-PNG.zip",
+                                    "size": 149757216,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine011_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine011_8K-PNG.zip",
+                                    "fileName": "Travertine011_8K-PNG.zip",
+                                    "size": 542825956,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_Color.jpg?25227&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_Displacement.jpg?57734&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_NormalDX.jpg?93591&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_Roughness.jpg?25984&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_AmbientOcclusion.jpg?68524",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_Color.jpg?37363,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_Displacement.jpg?5746,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_NormalDX.jpg?51968,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_Roughness.jpg?46308,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine011/Travertine011_SQ_AmbientOcclusion.jpg?81034&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine011.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine011.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine011.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine011.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine011.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine011.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine011.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine011.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine011.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine011.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine011.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine011.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine011.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine011.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine011.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine011.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine011.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine011.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine011.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine011.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine011.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine011.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine011.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine011.webp"
+            }
+        },
+        {
+            "assetId": "Travertine008",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 14613,
+            "downloadCountMonth": 1670,
+            "downloadCountWeek": 414,
+            "popularityScore": 3.78717056211379,
+            "tags": [
+                "8",
+                "marble",
+                "orange",
+                "stone",
+                "travertine",
+                "yellow"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 008",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine008",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_1K-JPG.zip",
+                                    "fileName": "Travertine008_1K-JPG.zip",
+                                    "size": 3677619,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_2K-JPG.zip",
+                                    "fileName": "Travertine008_2K-JPG.zip",
+                                    "size": 10220559,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_4K-JPG.zip",
+                                    "fileName": "Travertine008_4K-JPG.zip",
+                                    "size": 36220633,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_8K-JPG.zip",
+                                    "fileName": "Travertine008_8K-JPG.zip",
+                                    "size": 181760933,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_1K-PNG.zip",
+                                    "fileName": "Travertine008_1K-PNG.zip",
+                                    "size": 9734068,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_2K-PNG.zip",
+                                    "fileName": "Travertine008_2K-PNG.zip",
+                                    "size": 36889442,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_4K-PNG.zip",
+                                    "fileName": "Travertine008_4K-PNG.zip",
+                                    "size": 148890001,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine008_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine008_8K-PNG.zip",
+                                    "fileName": "Travertine008_8K-PNG.zip",
+                                    "size": 542338994,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_Color.jpg?14194&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_Displacement.jpg?93435&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_NormalDX.jpg?18418&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_Roughness.jpg?70311&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_AmbientOcclusion.jpg?25978",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_Color.jpg?10224,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_Displacement.jpg?69211,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_NormalDX.jpg?14507,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_Roughness.jpg?9193,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine008/Travertine008_SQ_AmbientOcclusion.jpg?63583&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine008.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine008.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine008.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine008.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine008.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine008.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine008.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine008.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine008.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine008.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine008.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine008.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine008.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine008.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine008.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine008.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine008.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine008.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine008.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine008.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine008.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine008.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine008.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine008.webp"
+            }
+        },
+        {
+            "assetId": "Travertine006",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 14225,
+            "downloadCountMonth": 1594,
+            "downloadCountWeek": 411,
+            "popularityScore": 3.7131664439929284,
+            "tags": [
+                "6",
+                "brown",
+                "marble",
+                "orange",
+                "rough",
+                "stone",
+                "travertine"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 006",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine006",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_1K-JPG.zip",
+                                    "fileName": "Travertine006_1K-JPG.zip",
+                                    "size": 6033782,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_2K-JPG.zip",
+                                    "fileName": "Travertine006_2K-JPG.zip",
+                                    "size": 17515115,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_4K-JPG.zip",
+                                    "fileName": "Travertine006_4K-JPG.zip",
+                                    "size": 59260668,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_8K-JPG.zip",
+                                    "fileName": "Travertine006_8K-JPG.zip",
+                                    "size": 265009798,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_1K-PNG.zip",
+                                    "fileName": "Travertine006_1K-PNG.zip",
+                                    "size": 12166728,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_2K-PNG.zip",
+                                    "fileName": "Travertine006_2K-PNG.zip",
+                                    "size": 43172131,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_4K-PNG.zip",
+                                    "fileName": "Travertine006_4K-PNG.zip",
+                                    "size": 168072682,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine006_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine006_8K-PNG.zip",
+                                    "fileName": "Travertine006_8K-PNG.zip",
+                                    "size": 617743410,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_Color.jpg?23362&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_Displacement.jpg?31716&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_NormalDX.jpg?77725&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_Roughness.jpg?63929&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_AmbientOcclusion.jpg?39752",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_Color.jpg?68004,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_Displacement.jpg?77151,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_NormalDX.jpg?94378,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_Roughness.jpg?45369,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine006/Travertine006_SQ_AmbientOcclusion.jpg?34995&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine006.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine006.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine006.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine006.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine006.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine006.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine006.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine006.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine006.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine006.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine006.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine006.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine006.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine006.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine006.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine006.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine006.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine006.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine006.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine006.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine006.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine006.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine006.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine006.webp"
+            }
+        },
+        {
+            "assetId": "Travertine012",
+            "releaseDate": "2023-12-20 12:00:00",
+            "earlyReleaseDate": "2023-12-14 22:00:00",
+            "dataType": "Material",
+            "creationMethod": "PBRProcedural",
+            "category": null,
+            "downloadCount": 10799,
+            "downloadCountMonth": 1458,
+            "downloadCountWeek": 367,
+            "popularityScore": 3.0597177102762485,
+            "tags": [
+                "12",
+                "brown",
+                "marble",
+                "stone",
+                "travertine",
+                "yellow"
+            ],
+            "dataTypeName": "Material",
+            "dataTypeDescription": "A photo texture with PBR maps.",
+            "creationMethodName": "Height field photogrammetry",
+            "creationMethodDescription": "Displacement generated using photogrammetry.",
+            "displayName": "Travertine 012",
+            "customDisplayName": "",
+            "description": "",
+            "displayCategory": "Travertine",
+            "shortLink": "https://ambientcg.com/a/Travertine012",
+            "dimensionX": 120,
+            "dimensionY": 120,
+            "dimensionZ": 0,
+            "createdUsing": [],
+            "basedOnThis": [],
+            "variations": [],
+            "nextVariationAssetId": null,
+            "previousVariationAssetId": null,
+            "nextAssetId": null,
+            "previousAssetId": null,
+            "downloadFolders": {
+                "default": {
+                    "title": "default",
+                    "downloadFiletypeCategories": {
+                        "zip": {
+                            "title": "zip",
+                            "downloads": [
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_1K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_1K-JPG.zip",
+                                    "fileName": "Travertine012_1K-JPG.zip",
+                                    "size": 3753289,
+                                    "filetype": "zip",
+                                    "attribute": "1K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_2K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_2K-JPG.zip",
+                                    "fileName": "Travertine012_2K-JPG.zip",
+                                    "size": 10441723,
+                                    "filetype": "zip",
+                                    "attribute": "2K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_4K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_4K-JPG.zip",
+                                    "fileName": "Travertine012_4K-JPG.zip",
+                                    "size": 36892829,
+                                    "filetype": "zip",
+                                    "attribute": "4K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_8K-JPG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_8K-JPG.zip",
+                                    "fileName": "Travertine012_8K-JPG.zip",
+                                    "size": 183157068,
+                                    "filetype": "zip",
+                                    "attribute": "8K-JPG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_1K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_1K-PNG.zip",
+                                    "fileName": "Travertine012_1K-PNG.zip",
+                                    "size": 9871647,
+                                    "filetype": "zip",
+                                    "attribute": "1K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_2K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_2K-PNG.zip",
+                                    "fileName": "Travertine012_2K-PNG.zip",
+                                    "size": 37198413,
+                                    "filetype": "zip",
+                                    "attribute": "2K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_4K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_4K-PNG.zip",
+                                    "fileName": "Travertine012_4K-PNG.zip",
+                                    "size": 150582616,
+                                    "filetype": "zip",
+                                    "attribute": "4K-PNG",
+                                    "zipContent": []
+                                },
+                                {
+                                    "fullDownloadPath": "https://ambientcg.com/get?file=Travertine012_8K-PNG.zip",
+                                    "downloadLink": "https://ambientcg.com/get?file=Travertine012_8K-PNG.zip",
+                                    "fileName": "Travertine012_8K-PNG.zip",
+                                    "size": 555587091,
+                                    "filetype": "zip",
+                                    "attribute": "8K-PNG",
+                                    "zipContent": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "previewLinks": [
+                {
+                    "url": "https://releases.pbr.one/main/material-shading.html#normal_type=directx&color_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_Color.jpg?98798&displacement_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_Displacement.jpg?36685&normal_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_NormalDX.jpg?63123&roughness_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_Roughness.jpg?42618&ambientocclusion_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_AmbientOcclusion.jpg?57168",
+                    "name": {
+                        "id": 4,
+                        "slug": "pbr-one-material-shading",
+                        "title": "3D Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                },
+                {
+                    "url": "https://releases.pbr.one/main/texture-tiling.html#texture_url=https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_Color.jpg?72177,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_Displacement.jpg?86939,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_NormalDX.jpg?24285,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_Roughness.jpg?53116,https://f003.backblazeb2.com/file/ambientCG-Web/media/surface-preview/Travertine012/Travertine012_SQ_AmbientOcclusion.jpg?43567&texture_name=Color,Displacement,Normal,Roughness,Ambient Occlusion",
+                    "name": {
+                        "id": 3,
+                        "slug": "pbr-one-material-maps",
+                        "title": "Tiling Preview",
+                        "description": "description"
+                    },
+                    "displayName": "",
+                    "iconName": ""
+                }
+            ],
+            "previewType": "Default",
+            "maps": [
+                "color",
+                "displacement",
+                "normal",
+                "roughness",
+                "ambient-occlusion"
+            ],
+            "hasUsd": false,
+            "previewImage": {
+                "64-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-PNG/Travertine012.png",
+                "128-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-PNG/Travertine012.png",
+                "256-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-PNG/Travertine012.png",
+                "512-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-PNG/Travertine012.png",
+                "1024-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-PNG/Travertine012.png",
+                "2048-PNG": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-PNG/Travertine012.png",
+                "64-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-FFFFFF/Travertine012.jpg",
+                "128-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-FFFFFF/Travertine012.jpg",
+                "256-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-FFFFFF/Travertine012.jpg",
+                "512-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-FFFFFF/Travertine012.jpg",
+                "1024-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-FFFFFF/Travertine012.jpg",
+                "2048-JPG-FFFFFF": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-FFFFFF/Travertine012.jpg",
+                "64-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-JPG-242424/Travertine012.jpg",
+                "128-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-JPG-242424/Travertine012.jpg",
+                "256-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-JPG-242424/Travertine012.jpg",
+                "512-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-JPG-242424/Travertine012.jpg",
+                "1024-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-JPG-242424/Travertine012.jpg",
+                "2048-JPG-242424": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-JPG-242424/Travertine012.jpg",
+                "64-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/64-WEBP/Travertine012.webp",
+                "128-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/128-WEBP/Travertine012.webp",
+                "256-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/256-WEBP/Travertine012.webp",
+                "512-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/512-WEBP/Travertine012.webp",
+                "1024-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/1024-WEBP/Travertine012.webp",
+                "2048-WEBP": "https://acg-media.struffelproductions.com/file/ambientCG-Web/media/thumbnail/2048-WEBP/Travertine012.webp"
+            }
+        }
+    ]
+}
