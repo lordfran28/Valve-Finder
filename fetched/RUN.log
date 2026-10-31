@@ -1,69 +1,31 @@
 + cd fetched
-+ rm -rf photos fonts old
-+ mkdir -p old/img
-+ UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
-+ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' https://knockelsfloorcovering.com/ -o old/index.html
-+ grep -oE '(src|data-src|href)="[^"]+\.(jpg|jpeg|png|webp|gif)[^"]*"' old/index.html
-+ sed -E 's/^[a-z-]+="//; s/"$//'
-+ grep -oE 'url\(['\''"]?[^)'\''"]+\.(jpg|jpeg|png|webp)[^)'\''"]*['\''"]?\)' old/index.html
-+ sed -E 's/^url\(['\''"]?//; s/['\''"]?\)$//'
-+ grep -oE '<iframe[^>]*>' old/index.html
-+ true
-+ grep -oE 'https://www\.google\.com/maps/embed\?pb=[^"'\'' ]+' old/index.html
-+ true
-+ sort -u old/urls.txt -o old/urls.txt
-+ i=0
-+ read -r u
-+ case "$u" in
-+ full=https://knockelsfloorcovering.com/Content/Templates/images/accessibility_icon.png
-+ i=1
-++ basename /Content/Templates/images/accessibility_icon.png
-+ n=accessibility_icon.png
-++ printf %02d 1
-+ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/01-accessibility_icon.png https://knockelsfloorcovering.com/Content/Templates/images/accessibility_icon.png
-+ read -r u
-+ case "$u" in
-+ full=https://knockelsfloorcovering.com/Content/Templates/images/chat_icon.png
-+ i=2
-++ basename /Content/Templates/images/chat_icon.png
-+ n=chat_icon.png
-++ printf %02d 2
-+ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/02-chat_icon.png https://knockelsfloorcovering.com/Content/Templates/images/chat_icon.png
-+ read -r u
-+ case "$u" in
-+ full=https://du9m0k402rjmo.cloudfront.net/images/P_46741/90689198-2681-483c-a9c7-d4bb6edc002d.jpg
-+ i=3
-++ basename https://du9m0k402rjmo.cloudfront.net/images/P_46741/90689198-2681-483c-a9c7-d4bb6edc002d.jpg
-+ n=90689198-2681-483c-a9c7-d4bb6edc002d.jpg
-++ printf %02d 3
-+ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/03-90689198-2681-483c-a9c7-d4bb6edc002d.jpg https://du9m0k402rjmo.cloudfront.net/images/P_46741/90689198-2681-483c-a9c7-d4bb6edc002d.jpg
-+ read -r u
-+ case "$u" in
-+ full=https://du9m0k402rjmo.cloudfront.net/images/P_46741/94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
-+ i=4
-++ basename https://du9m0k402rjmo.cloudfront.net/images/P_46741/94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
-+ n=94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
-++ printf %02d 4
-+ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/04-94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg https://du9m0k402rjmo.cloudfront.net/images/P_46741/94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
-+ read -r u
-+ case "$u" in
-+ full=https://du9m0k402rjmo.cloudfront.net/images/P_46741/cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
-+ i=5
-++ basename https://du9m0k402rjmo.cloudfront.net/images/P_46741/cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
-+ n=cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
-++ printf %02d 5
-+ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/05-cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg https://du9m0k402rjmo.cloudfront.net/images/P_46741/cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
-+ read -r u
-+ grep -oE 'href="[^"]+\.css[^"]*"' old/index.html
-+ sed -E 's/^href="//; s/"$//'
-+ ls -la old/img
-total 528
-drwxr-xr-x 2 runner runner   4096 Oct 31 08:23 .
-drwxr-xr-x 3 runner runner   4096 Oct 31 08:23 ..
--rw-r--r-- 1 runner runner  21669 Oct 31 08:23 01-accessibility_icon.png
--rw-r--r-- 1 runner runner  18768 Oct 31 08:23 02-chat_icon.png
--rw-r--r-- 1 runner runner 219684 Oct 31 08:23 03-90689198-2681-483c-a9c7-d4bb6edc002d.jpg
--rw-r--r-- 1 runner runner  55451 Oct 31 08:23 04-94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
--rw-r--r-- 1 runner runner 208232 Oct 31 08:23 05-cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
-+ cat old/iframes.txt
-+ head -20
++ rm -rf old sv
++ mkdir -p sv
++ UA='KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)'
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://nominatim.openstreetmap.org/search --data-urlencode 'q=112 West Center Street, Monona, Iowa 52159' --data-urlencode format=jsonv2 --data-urlencode addressdetails=1 -o sv/geo1.json
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://nominatim.openstreetmap.org/search --data-urlencode 'q=Knockel'\''s Floor Covering, Monona, Iowa' --data-urlencode format=jsonv2 -o sv/geo2.json
++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://nominatim.openstreetmap.org/search --data-urlencode 'street=112 W Center St' --data-urlencode city=Monona --data-urlencode state=Iowa --data-urlencode format=jsonv2 -o sv/geo3.json
++ cat sv/geo1.json sv/geo2.json sv/geo3.json
+[{"place_id":415096156,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":15864256,"lat":"43.0530206","lon":"-91.3901420","category":"place","type":"house","place_rank":30,"importance":9.99999999995449e-06,"addresstype":"place","name":"","display_name":"112, West Center Street, Monona, Monona Township, Clayton County, Iowa, 52159, United States","address":{"house_number":"112","road":"West Center Street","village":"Monona","municipality":"Monona Township","county":"Clayton County","state":"Iowa","ISO3166-2-lvl4":"US-IA","postcode":"52159","country":"United States","country_code":"us"},"boundingbox":["43.0529706","43.0530706","-91.3901920","-91.3900920"]}][][{"place_id":415096156,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":15864256,"lat":"43.0530206","lon":"-91.3901420","category":"place","type":"house","place_rank":30,"importance":9.99999999995449e-06,"addresstype":"place","name":"","display_name":"112, West Center Street, Monona, Monona Township, Clayton County, Iowa, 52159, United States","boundingbox":["43.0529706","43.0530706","-91.3901920","-91.3900920"]}]+ pip install -q playwright
++ python -m playwright install --with-deps chromium
++ cat
++ python shot.py
+geo (43.0530206, -91.390142)
+ok legacy_h0
+ok legacy_h90
+ok legacy_h180
+ok legacy_h270
+ok place_embed
++ ls -la sv
+total 3548
+drwxr-xr-x 2 runner runner   4096 Oct 31 09:00 .
+drwxr-xr-x 3 runner runner   4096 Oct 31 09:00 ..
+-rw-r--r-- 1 runner runner    721 Oct 31 08:59 geo1.json
+-rw-r--r-- 1 runner runner      2 Oct 31 08:59 geo2.json
+-rw-r--r-- 1 runner runner    477 Oct 31 08:59 geo3.json
+-rw-r--r-- 1 runner runner 939111 Oct 31 09:00 legacy_h0.png
+-rw-r--r-- 1 runner runner 660124 Oct 31 09:00 legacy_h180.png
+-rw-r--r-- 1 runner runner 661002 Oct 31 09:00 legacy_h270.png
+-rw-r--r-- 1 runner runner 659296 Oct 31 09:00 legacy_h90.png
+-rw-r--r-- 1 runner runner 676573 Oct 31 09:00 place_embed.png
+-rw-r--r-- 1 runner runner    674 Oct 31 09:00 urls.json
