@@ -9,15 +9,16 @@ B♭ trumpet valve fingerings under every note of a song, with a song library.
 - **MIDI** (`.mid`) from Basic Pitch or any notation app
 - **Tony note lists** (`.csv`: onset seconds, frequency in Hz, duration seconds)
 
-Files are read in the browser. Nothing is sent anywhere except your own GitHub song repository, if you turn on backup.
+## Your songs
+Every song is a file in the [`songs`](songs/) folder of this repository, so the site shows the same library on every phone and computer.
 
-## Song library and backup
-Every song you add is saved in the browser. With GitHub backup on, each song is also saved to the private repository `lordfran28/valve-finder-songs`:
+- **From your computer:** put MIDI, MusicXML or Tony files in `songs/` (subfolders are fine), then commit and push in GitHub Desktop.
+- **From the site:** on a device connected as owner, *Add a song* puts the file in `songs/` for you. Titles, settings and the notes typed under each note are saved beside it in `<file>.vf.json`.
 
-- `index.json`: the song list
-- `songs/<id>.json`: one file per song, holding the original file (base64), its title and its settings
+`.github/workflows/song-index.yml` rewrites `songs/index.json`, the list the site reads, after every change to the folder.
 
-Backup uses a fine-grained personal access token with **Contents: Read and write** on the song repository only. The token stays in the browser where you paste it.
+### Owner devices
+Anyone can open and play the songs. Only a connected device can add, rename or delete them, or save notes under the notes. To connect one, open `…/Valve-Finder/#owner`, make a key on GitHub (a fine-grained personal access token for the **Valve-Finder** repository with **Contents: Read and write**), and paste it. *Connect your phone* shows a QR code that connects a phone with the same key. The key stays in that browser. Songs added on a device that isn't connected stay on that device.
 
 ## Images and fonts
 Everything the page shows is stored in this repository, so the site keeps working on its own.
