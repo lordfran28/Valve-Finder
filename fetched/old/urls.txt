@@ -1,0 +1,5 @@
+/Content/Templates/images/accessibility_icon.png
+/Content/Templates/images/chat_icon.png
+https://du9m0k402rjmo.cloudfront.net/images/P_46741/90689198-2681-483c-a9c7-d4bb6edc002d.jpg
+https://du9m0k402rjmo.cloudfront.net/images/P_46741/94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
+https://du9m0k402rjmo.cloudfront.net/images/P_46741/cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg

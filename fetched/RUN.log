@@ -1,128 +1,69 @@
 + cd fetched
-+ rm -rf ph acg commons '*.json'
-+ UA='KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)'
-+ mkdir -p photos fonts
-+ big Mississippiatpikespeak.JPG river 2400
-++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode titles=File:Mississippiatpikespeak.JPG --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata' --data-urlencode iiurlwidth=2400
-++ tee photos/river.json
-++ jq -r '.query.pages[].imageinfo[0].thumburl'
-+ url='https://upload.wikimedia.org/wikipedia/commons/7/77/Mississippiatpikespeak.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o photos/river.jpg 'https://upload.wikimedia.org/wikipedia/commons/7/77/Mississippiatpikespeak.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ big '204-202-200 South Main Street, Monona, IA - c. 1925.jpg' monona-1925 1499
-++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode 'titles=File:204-202-200 South Main Street, Monona, IA - c. 1925.jpg' --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata' --data-urlencode iiurlwidth=1499
-++ tee photos/monona-1925.json
-++ jq -r '.query.pages[].imageinfo[0].thumburl'
-+ url='https://upload.wikimedia.org/wikipedia/commons/5/5f/204-202-200_South_Main_Street%2C_Monona%2C_IA_-_c._1925.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o photos/monona-1925.jpg 'https://upload.wikimedia.org/wikipedia/commons/5/5f/204-202-200_South_Main_Street%2C_Monona%2C_IA_-_c._1925.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ big 'Monona, Iowa.jpg' monona-aerial 2400
-++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode 'titles=File:Monona, Iowa.jpg' --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata' --data-urlencode iiurlwidth=2400
-++ tee photos/monona-aerial.json
-++ jq -r '.query.pages[].imageinfo[0].thumburl'
-+ url='https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Monona%2C_Iowa.jpg/3840px-Monona%2C_Iowa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o photos/monona-aerial.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Monona%2C_Iowa.jpg/3840px-Monona%2C_Iowa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
-+ big '9 Irving A 2014 hardwood floors living room and part of bedroom.JPG' room-bay 786
-++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode 'titles=File:9 Irving A 2014 hardwood floors living room and part of bedroom.JPG' --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata' --data-urlencode iiurlwidth=786
-++ tee photos/room-bay.json
-++ jq -r '.query.pages[].imageinfo[0].thumburl'
-+ url='https://upload.wikimedia.org/wikipedia/commons/d/d9/9_Irving_A_2014_hardwood_floors_living_room_and_part_of_bedroom.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o photos/room-bay.jpg 'https://upload.wikimedia.org/wikipedia/commons/d/d9/9_Irving_A_2014_hardwood_floors_living_room_and_part_of_bedroom.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ big 'Empty apartment room with corner windows.jpg' room-corner 2000
-++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode 'titles=File:Empty apartment room with corner windows.jpg' --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata' --data-urlencode iiurlwidth=2000
-++ tee photos/room-corner.json
-++ jq -r '.query.pages[].imageinfo[0].thumburl'
-+ url='https://upload.wikimedia.org/wikipedia/commons/0/05/Empty_apartment_room_with_corner_windows.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o photos/room-corner.jpg 'https://upload.wikimedia.org/wikipedia/commons/0/05/Empty_apartment_room_with_corner_windows.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ big 'CLASSEN Verlegung Laminat.jpg' laying 2000
-++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode 'titles=File:CLASSEN Verlegung Laminat.jpg' --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata' --data-urlencode iiurlwidth=2000
-++ tee photos/laying.json
-++ jq -r '.query.pages[].imageinfo[0].thumburl'
-+ url='https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/CLASSEN_Verlegung_Laminat.jpg/3840px-CLASSEN_Verlegung_Laminat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o photos/laying.jpg 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/CLASSEN_Verlegung_Laminat.jpg/3840px-CLASSEN_Verlegung_Laminat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
-+ big Gfp-iowa-pikes-peak-state-park-mississippi-river.jpg river2 2400
-++ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://commons.wikimedia.org/w/api.php --data-urlencode action=query --data-urlencode format=json --data-urlencode titles=File:Gfp-iowa-pikes-peak-state-park-mississippi-river.jpg --data-urlencode prop=imageinfo --data-urlencode 'iiprop=url|extmetadata' --data-urlencode iiurlwidth=2400
-++ tee photos/river2.json
-++ jq -r '.query.pages[].imageinfo[0].thumburl'
-+ url='https://upload.wikimedia.org/wikipedia/commons/e/ea/Gfp-iowa-pikes-peak-state-park-mississippi-river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' -o photos/river2.jpg 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Gfp-iowa-pikes-peak-state-park-mississippi-river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled'
-+ CSSUA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
-+ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' 'https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap' -o fonts/fonts.css
-+ grep -o 'https://fonts.gstatic.com[^)]*' fonts/fonts.css
-+ sort -u
-+ read u
-++ basename https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDckd1sdfg.woff2
-+ curl -fsSL -o fonts/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDckd1sdfg.woff2 https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDckd1sdfg.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcld1sdfg.woff2
-+ curl -fsSL -o fonts/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcld1sdfg.woff2 https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcld1sdfg.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcqd1s.woff2
-+ curl -fsSL -o fonts/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcqd1s.woff2 https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcqd1s.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2
-+ curl -fsSL -o fonts/ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2 https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNIfJ7Cww.woff2
-+ curl -fsSL -o fonts/ijwRs572Xtc6ZYQws9YVwnNIfJ7Cww.woff2 https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNIfJ7Cww.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNJfJ7Cww.woff2
-+ curl -fsSL -o fonts/ijwRs572Xtc6ZYQws9YVwnNJfJ7Cww.woff2 https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNJfJ7Cww.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYoEf6H2pW2hz.woff2
-+ curl -fsSL -o fonts/dFa5ZfeM_74wlPZtksIFYoEf6H2pW2hz.woff2 https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYoEf6H2pW2hz.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYoEf6HOpWw.woff2
-+ curl -fsSL -o fonts/dFa5ZfeM_74wlPZtksIFYoEf6HOpWw.woff2 https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYoEf6HOpWw.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYskZ6H2pW2hz.woff2
-+ curl -fsSL -o fonts/dFa5ZfeM_74wlPZtksIFYskZ6H2pW2hz.woff2 https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYskZ6H2pW2hz.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYskZ6HOpWw.woff2
-+ curl -fsSL -o fonts/dFa5ZfeM_74wlPZtksIFYskZ6HOpWw.woff2 https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYskZ6HOpWw.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYuUe6H2pW2hz.woff2
-+ curl -fsSL -o fonts/dFa5ZfeM_74wlPZtksIFYuUe6H2pW2hz.woff2 https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYuUe6H2pW2hz.woff2
-+ read u
-++ basename https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYuUe6HOpWw.woff2
-+ curl -fsSL -o fonts/dFa5ZfeM_74wlPZtksIFYuUe6HOpWw.woff2 https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYuUe6HOpWw.woff2
-+ read u
-+ curl -fsSL -o fonts/ZillaSlab-OFL.txt https://raw.githubusercontent.com/google/fonts/main/ofl/zillaslab/OFL.txt
-+ curl -fsSL -o fonts/PublicSans-OFL.txt https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt
-+ ls -la photos fonts
-fonts:
-total 268
-drwxr-xr-x 2 runner runner  4096 Oct 31 07:18 .
-drwxr-xr-x 4 runner runner  4096 Oct 31 07:18 ..
--rw-r--r-- 1 runner runner  4390 Oct 31 07:18 PublicSans-OFL.txt
--rw-r--r-- 1 runner runner  4342 Oct 31 07:18 ZillaSlab-OFL.txt
--rw-r--r-- 1 runner runner 18412 Oct 31 07:18 dFa5ZfeM_74wlPZtksIFYoEf6H2pW2hz.woff2
--rw-r--r-- 1 runner runner 26100 Oct 31 07:18 dFa5ZfeM_74wlPZtksIFYoEf6HOpWw.woff2
--rw-r--r-- 1 runner runner 18136 Oct 31 07:18 dFa5ZfeM_74wlPZtksIFYskZ6H2pW2hz.woff2
--rw-r--r-- 1 runner runner 26468 Oct 31 07:18 dFa5ZfeM_74wlPZtksIFYskZ6HOpWw.woff2
--rw-r--r-- 1 runner runner 18420 Oct 31 07:18 dFa5ZfeM_74wlPZtksIFYuUe6H2pW2hz.woff2
--rw-r--r-- 1 runner runner 26472 Oct 31 07:18 dFa5ZfeM_74wlPZtksIFYuUe6HOpWw.woff2
--rw-r--r-- 1 runner runner  7728 Oct 31 07:18 fonts.css
--rw-r--r-- 1 runner runner 10920 Oct 31 07:18 ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDckd1sdfg.woff2
--rw-r--r-- 1 runner runner  4872 Oct 31 07:18 ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcld1sdfg.woff2
--rw-r--r-- 1 runner runner 15644 Oct 31 07:18 ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgDcqd1s.woff2
--rw-r--r-- 1 runner runner 26832 Oct 31 07:18 ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2
--rw-r--r-- 1 runner runner 18472 Oct 31 07:18 ijwRs572Xtc6ZYQws9YVwnNIfJ7Cww.woff2
--rw-r--r-- 1 runner runner  7716 Oct 31 07:18 ijwRs572Xtc6ZYQws9YVwnNJfJ7Cww.woff2
-
-photos:
-total 9688
-drwxr-xr-x 2 runner runner    4096 Oct 31 07:18 .
-drwxr-xr-x 4 runner runner    4096 Oct 31 07:18 ..
--rw-r--r-- 1 runner runner 1183973 Oct 31 07:18 laying.jpg
--rw-r--r-- 1 runner runner    9612 Oct 31 07:18 laying.json
--rw-r--r-- 1 runner runner  368863 Oct 31 07:18 monona-1925.jpg
--rw-r--r-- 1 runner runner    2624 Oct 31 07:18 monona-1925.json
--rw-r--r-- 1 runner runner 2878131 Oct 31 07:18 monona-aerial.jpg
--rw-r--r-- 1 runner runner    2788 Oct 31 07:18 monona-aerial.json
--rw-r--r-- 1 runner runner  430106 Oct 31 07:18 river.jpg
--rw-r--r-- 1 runner runner    2637 Oct 31 07:18 river.json
--rw-r--r-- 1 runner runner 4252928 Oct 31 07:18 river2.jpg
--rw-r--r-- 1 runner runner    7761 Oct 31 07:18 river2.json
--rw-r--r-- 1 runner runner   98009 Oct 31 07:18 room-bay.jpg
--rw-r--r-- 1 runner runner    2849 Oct 31 07:18 room-bay.json
--rw-r--r-- 1 runner runner  640075 Oct 31 07:18 room-corner.jpg
--rw-r--r-- 1 runner runner    3106 Oct 31 07:18 room-corner.json
++ rm -rf photos fonts old
++ mkdir -p old/img
++ UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
++ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' https://knockelsfloorcovering.com/ -o old/index.html
++ grep -oE '(src|data-src|href)="[^"]+\.(jpg|jpeg|png|webp|gif)[^"]*"' old/index.html
++ sed -E 's/^[a-z-]+="//; s/"$//'
++ grep -oE 'url\(['\''"]?[^)'\''"]+\.(jpg|jpeg|png|webp)[^)'\''"]*['\''"]?\)' old/index.html
++ sed -E 's/^url\(['\''"]?//; s/['\''"]?\)$//'
++ grep -oE '<iframe[^>]*>' old/index.html
++ true
++ grep -oE 'https://www\.google\.com/maps/embed\?pb=[^"'\'' ]+' old/index.html
++ true
++ sort -u old/urls.txt -o old/urls.txt
++ i=0
++ read -r u
++ case "$u" in
++ full=https://knockelsfloorcovering.com/Content/Templates/images/accessibility_icon.png
++ i=1
+++ basename /Content/Templates/images/accessibility_icon.png
++ n=accessibility_icon.png
+++ printf %02d 1
++ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/01-accessibility_icon.png https://knockelsfloorcovering.com/Content/Templates/images/accessibility_icon.png
++ read -r u
++ case "$u" in
++ full=https://knockelsfloorcovering.com/Content/Templates/images/chat_icon.png
++ i=2
+++ basename /Content/Templates/images/chat_icon.png
++ n=chat_icon.png
+++ printf %02d 2
++ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/02-chat_icon.png https://knockelsfloorcovering.com/Content/Templates/images/chat_icon.png
++ read -r u
++ case "$u" in
++ full=https://du9m0k402rjmo.cloudfront.net/images/P_46741/90689198-2681-483c-a9c7-d4bb6edc002d.jpg
++ i=3
+++ basename https://du9m0k402rjmo.cloudfront.net/images/P_46741/90689198-2681-483c-a9c7-d4bb6edc002d.jpg
++ n=90689198-2681-483c-a9c7-d4bb6edc002d.jpg
+++ printf %02d 3
++ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/03-90689198-2681-483c-a9c7-d4bb6edc002d.jpg https://du9m0k402rjmo.cloudfront.net/images/P_46741/90689198-2681-483c-a9c7-d4bb6edc002d.jpg
++ read -r u
++ case "$u" in
++ full=https://du9m0k402rjmo.cloudfront.net/images/P_46741/94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
++ i=4
+++ basename https://du9m0k402rjmo.cloudfront.net/images/P_46741/94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
++ n=94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
+++ printf %02d 4
++ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/04-94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg https://du9m0k402rjmo.cloudfront.net/images/P_46741/94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
++ read -r u
++ case "$u" in
++ full=https://du9m0k402rjmo.cloudfront.net/images/P_46741/cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
++ i=5
+++ basename https://du9m0k402rjmo.cloudfront.net/images/P_46741/cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
++ n=cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
+++ printf %02d 5
++ curl -fsSL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' -o old/img/05-cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg https://du9m0k402rjmo.cloudfront.net/images/P_46741/cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
++ read -r u
++ grep -oE 'href="[^"]+\.css[^"]*"' old/index.html
++ sed -E 's/^href="//; s/"$//'
++ ls -la old/img
+total 528
+drwxr-xr-x 2 runner runner   4096 Oct 31 08:23 .
+drwxr-xr-x 3 runner runner   4096 Oct 31 08:23 ..
+-rw-r--r-- 1 runner runner  21669 Oct 31 08:23 01-accessibility_icon.png
+-rw-r--r-- 1 runner runner  18768 Oct 31 08:23 02-chat_icon.png
+-rw-r--r-- 1 runner runner 219684 Oct 31 08:23 03-90689198-2681-483c-a9c7-d4bb6edc002d.jpg
+-rw-r--r-- 1 runner runner  55451 Oct 31 08:23 04-94d4416b-3aeb-4124-b2b6-117e4c73f821.jpg
+-rw-r--r-- 1 runner runner 208232 Oct 31 08:23 05-cee184f5-b8f7-4a8f-ab8d-fc4d93113b13.jpg
++ cat old/iframes.txt
++ head -20
