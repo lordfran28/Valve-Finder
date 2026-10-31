@@ -12,7 +12,8 @@ B♭ trumpet valve fingerings under every note of a song, with a song library.
 ## Your songs
 Every song is a file in the [`songs`](songs/) folder of this repository, so the site shows the same library on every phone and computer.
 
-- **From your computer:** put MIDI, MusicXML or Tony files in `songs/` (subfolders are fine), then commit and push in GitHub Desktop.
+- **From your computer, automatically:** `tools/pc-upload/` is a small Windows script that watches a folder (on the PC: *Music Studio\MIDI Valve Finder Songs*) and adds every new song file to `songs/` within a minute or two. It only adds or updates, never deletes, and skips files whose contents are already on the site under any name. Run *Set up automatic upload* once; it starts with Windows after that.
+- **From your computer, by hand:** put MIDI, MusicXML or Tony files in `songs/` (subfolders are fine), then commit and push in GitHub Desktop, or upload them at https://github.com/lordfran28/Valve-Finder/upload/main/songs.
 - **From the site:** on a device connected as owner, *Add a song* puts the file in `songs/` for you. Titles, settings and the notes typed under each note are saved beside it in `<file>.vf.json`.
 
 `.github/workflows/song-index.yml` rewrites `songs/index.json`, the list the site reads, after every change to the folder.
