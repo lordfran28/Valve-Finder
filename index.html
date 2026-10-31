@@ -253,7 +253,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
       <label class="addlink" for="file">Add a song</label>
       <input id="file" type="file" class="vh">
     </div>
-    <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true"></span><span id="synctext"></span><button type="button" id="openarchive" class="textlink" hidden>Connect your archive</button></p>
+    <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true"></span><span id="synctext"></span></p>
     <p id="libmsg" class="error" role="alert" hidden></p>
     <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search your songs</label><input id="search" type="search" placeholder="Search your songs" autocomplete="off"></div>
     <ul id="songlist" class="songlist"></ul>
@@ -264,34 +264,30 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
       <a class="btn" href="#example">Open the example song</a>
     </div>
 
-    <details id="backup" class="panel">
-      <summary>Your archive</summary>
-      <div class="panel-body">
-        <p id="ghstate" class="small"></p>
-        <div id="ghform" class="panel-body" style="margin-top:0">
-          <input id="ghowner" type="hidden" value="lordfran28">
-          <input id="ghrepo" type="hidden" value="valve-finder-songs">
-          <div class="btnrow"><a id="ghmake" class="btn" href="https://github.com/settings/personal-access-tokens/new?name=Valve%20Finder&description=Saves%20songs%20from%20Valve%20Finder&target_name=lordfran28&expires_in=366&contents=write" target="_blank" rel="noopener">Make a key on GitHub</a></div>
-          <p class="small">On GitHub, choose valve-finder-songs under Repository access, then Generate.</p>
-          <div class="field"><label for="ghtoken">Paste the key</label><input id="ghtoken" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></div>
-          <div class="btnrow"><button type="button" id="ghconnect" class="btn primary">Connect</button></div>
-        </div>
-        <div id="ghconnected" class="btnrow" hidden>
-          <button type="button" id="ghpair" class="btn">Connect your phone</button>
-          <button type="button" id="ghsync" class="btn quiet">Back up now</button>
-          <button type="button" id="ghoff" class="btn link">Disconnect</button>
-        </div>
-        <div id="pairbox" class="pairbox" hidden>
-          <div id="qr" class="qr" role="img" aria-label="QR code that connects another device"></div>
-          <p class="small">Scan with your phone's camera. Anyone who scans it can reach your songs, so only show it to your own phone.</p>
-        </div>
-        <p id="ghmsg" class="msg" role="status" hidden></p>
-      </div>
-    </details>
-
     <footer class="foot">
       <p class="credits">Clio from Vermeer's <a href="https://en.wikipedia.org/wiki/The_Art_of_Painting" target="_blank" rel="noopener">The Art of Painting</a> · Genoese silk, <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">The Met</a> · <a href="#example">Example song</a></p>
     </footer>
+  </section>
+
+  <section id="view-owner" class="view" aria-label="Owner" hidden>
+    <div class="songbar"><a href="#" class="back">← Your songs</a></div>
+    <h2>Owner</h2>
+    <p id="ownerstate" class="small"></p>
+    <div id="ownerform" class="panel-body">
+      <div class="btnrow"><a id="ghmake" class="btn" href="https://github.com/settings/personal-access-tokens/new?name=Valve%20Finder&description=Adds%20and%20edits%20songs%20on%20Valve%20Finder&target_name=lordfran28&expires_in=366&contents=write" target="_blank" rel="noopener">Make a key on GitHub</a></div>
+      <p class="small">On GitHub, choose Valve-Finder under Repository access, then Generate.</p>
+      <div class="field"><label for="ghtoken">Paste the key</label><input id="ghtoken" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></div>
+      <div class="btnrow"><button type="button" id="ghconnect" class="btn primary">Connect</button></div>
+    </div>
+    <div id="ownerconnected" class="btnrow" hidden>
+      <button type="button" id="ghpair" class="btn">Connect your phone</button>
+      <button type="button" id="ghoff" class="btn link">Disconnect this device</button>
+    </div>
+    <div id="pairbox" class="pairbox" hidden>
+      <div id="qr" class="qr" role="img" aria-label="QR code that makes another device an owner"></div>
+      <p class="small">Scan with your phone's camera. Whoever scans it can change your songs, so only show it to your own phone.</p>
+    </div>
+    <p id="ghmsg" class="msg" role="status" hidden></p>
   </section>
 
   <section id="view-song" class="view" aria-label="Song" hidden>
@@ -378,7 +374,7 @@ var PLAY_ICON = '<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="tr
 var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 
 var state = {score:null, part:0, bars:[], rec:null};
-var cache = {}, remoteMetas = [], ctx = null, run = null, saveTimer = null, pendingIndex = false;
+var cache = {}, ctx = null, run = null, saveTimer = null;
 
 /* ---------- Small helpers ---------- */
 function $(id){ return document.getElementById(id); }
@@ -743,7 +739,7 @@ function render(){
   $("pitchnote").textContent = off.msg;
   var seq = $("repeats").checked ? unroll(part.measures) : part.measures.map(function(m){ return {m:m, pass:1}; });
   var mIndex = new Map(); part.measures.forEach(function(m, i){ mIndex.set(m, i); });
-  var anns = annotations(), locked = !!(state.rec && !isAdmin() && state.rec.inIndex);
+  var anns = annotations(), locked = isLocked(state.rec);
   var showAlt = $("alts").checked;
   var bars = [], html = [], stripBars = [];
   seq.forEach(function(item, bi){
@@ -755,7 +751,7 @@ function render(){
       var extras = [];
       if (n.tied) extras.push("held");
       if (n.grace) extras.push("grace");
-      if (f && SLIDE[wm] && !n.tied) extras.push("3rd slide");
+      if (f && SLIDE[wm] && !n.tied) extras.push("3rd slide out");
       if (showAlt && f && ALT[wm] && !n.tied) extras.push("alt " + fingLabel(ALT[wm]));
       var cls = "note" + (n.tied ? " tied" : "") + (f ? "" : " out");
       var dots = f ? '<span class="valves" aria-hidden="true">' + [1,2,3].map(function(k){ return '<i class="v' + (f.indexOf(String(k))>=0 ? " on" : "") + '"></i>'; }).join("") + "</span>" : "";
@@ -1000,148 +996,122 @@ var Store = (function(){
 })();
 function requestPersist(){ try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function(){}); } catch(e){} }
 
-/* ---------- GitHub backup (private song repository) ---------- */
-var GH = (function(){
-  var KEY = "vf.github";
-  function cfg(){ try { var c = JSON.parse(localStorage.getItem(KEY) || "null"); if (c && c.token && c.owner && c.repo) return c; } catch(e){} return null; }
-  function store(c){ try { if (c) localStorage.setItem(KEY, JSON.stringify(c)); else localStorage.removeItem(KEY); } catch(e){} }
+/* ---------- Songs on the site ----------
+   Every song is a real file in the songs folder of the Valve-Finder repository, which GitHub
+   Pages serves with the site. A GitHub Action keeps songs/index.json listing them. A song's
+   title, settings and playing notes sit beside it in "<file>.vf.json". Anyone can read; only a
+   device holding the owner key can add, change or delete. */
+var SITE = {owner: "lordfran28", repo: "Valve-Finder", branch: "main"};
+var KIND_EXT = {"MIDI": ".mid", "MusicXML": ".musicxml", "Note list": ".csv"};
+var archive = [], archiveAt = null;
+function siteUrl(path){ return path.split("/").map(encodeURIComponent).join("/") + "?v=" + Date.now(); }
+function fetchIndex(){ return fetch(siteUrl("songs/index.json"), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : (r.status === 404 ? {songs: []} : null); }).catch(function(){ return null; }); }
+function fetchBytes(path){ return fetch(siteUrl(path), {cache: "no-store"}).then(function(r){ if (!r.ok) throw userErr("This song isn't on the site anymore."); return r.arrayBuffer(); }).then(function(ab){ return new Uint8Array(ab); }); }
+function fetchSidecar(path){ return fetch(siteUrl(path + ".vf.json"), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }); }
+
+var Owner = (function(){
+  var KEY = "vf.owner";
+  function token(){ try { return localStorage.getItem(KEY) || null; } catch(e){ return null; } }
+  function store(t){ try { if (t) localStorage.setItem(KEY, t); else localStorage.removeItem(KEY); localStorage.removeItem("vf.github"); } catch(e){} }
   function err(code, msg){ var e = new Error(msg); e.code = code; e.user = true; return e; }
-  function name(c){ return c.owner + "/" + c.repo; }
-  function api(c, method, path, body, accept){
-    var url = "https://api.github.com/repos/" + encodeURIComponent(c.owner) + "/" + encodeURIComponent(c.repo) + path;
-    var opts = {method: method, cache: "no-store", headers: {"Authorization": "Bearer " + c.token, "Accept": accept || "application/vnd.github+json"}};
+  function api(method, path, body, tok){
+    var t = tok || token();
+    var opts = {method: method, cache: "no-store", headers: {"Authorization": "Bearer " + t, "Accept": "application/vnd.github+json"}};
     if (body){ opts.body = JSON.stringify(body); opts.headers["Content-Type"] = "application/json"; }
-    return fetch(url, opts).then(function(r){
+    return fetch("https://api.github.com/repos/" + SITE.owner + "/" + SITE.repo + path, opts).then(function(r){
       if (r.ok || r.status === 404) return r;
-      if (r.status === 401) throw err("auth", "GitHub didn't accept your token. It may have expired or been pasted wrong. Make a new one under GitHub backup.");
-      if (r.status === 403) throw err("forbidden", "GitHub refused the request. Check that your token has Contents set to Read and write for " + name(c) + ".");
+      if (r.status === 401) throw err("auth", "The owner key has expired or isn't valid. Make a new one on the owner page.");
+      if (r.status === 403) throw err("forbidden", "GitHub refused the change. The key needs Contents set to Read and write on Valve-Finder.");
       if (r.status === 409 || r.status === 422) throw err("conflict", "GitHub reported a conflict. Try again.");
       throw err("http", "GitHub returned an error (" + r.status + "). Try again in a minute.");
-    }, function(){ throw err("offline", "Couldn't reach GitHub. Your songs are saved on this device and will back up next time."); });
+    }, function(){ throw err("offline", "Couldn't reach GitHub. Changes are kept on this device and will be saved next time."); });
   }
-  function getFile(c, path){
-    return api(c, "GET", "/contents/" + path).then(function(r){
-      if (r.status === 404) return null;
-      return r.json().then(function(j){
-        if (j.encoding === "base64" && j.content) return {text: b64ToText(j.content), sha: j.sha};
-        return api(c, "GET", "/contents/" + path, null, "application/vnd.github.raw+json")
-          .then(function(r2){ return r2.text(); }).then(function(t){ return {text: t, sha: j.sha}; });
-      });
-    });
-  }
-  function putFile(c, path, text, sha, message){
-    var body = {message: message, content: textToB64(text)};
-    if (sha) body.sha = sha;
-    return api(c, "PUT", "/contents/" + path, body).then(function(r){
-      if (r.status === 404) throw err("missing", "Can't save to " + name(c) + ". Check that the repository exists and that your token has access to it.");
+  function cpath(p){ return "/contents/" + p.split("/").map(encodeURIComponent).join("/"); }
+  function getSha(path){ return api("GET", cpath(path)).then(function(r){ return r.status === 404 ? null : r.json().then(function(j){ return j.sha || null; }); }); }
+  function put(path, b64, message, sha){
+    var body = {message: message, content: b64, branch: SITE.branch}; if (sha) body.sha = sha;
+    return api("PUT", cpath(path), body).then(function(r){
+      if (r.status === 404) throw err("missing", "GitHub didn't accept the change. The key needs access to the Valve-Finder repository.");
       return r.json();
     }).then(function(j){ return j.content && j.content.sha; });
   }
-  function readIndex(c){
-    return getFile(c, "index.json").then(function(f){
-      var j = {};
-      if (f){ try { j = JSON.parse(f.text) || {}; } catch(e){ j = {}; } }
-      return {songs: Array.isArray(j.songs) ? j.songs : [], deleted: Array.isArray(j.deleted) ? j.deleted : [], sha: f ? f.sha : null};
+  function putRetry(path, b64, message, sha){
+    return put(path, b64, message, sha).catch(function(e){
+      if (e.code === "conflict") return getSha(path).then(function(s){ return put(path, b64, message, s); });
+      throw e;
     });
   }
-  function writeIndex(c, mutate, message){
-    function attempt(n){
-      return readIndex(c).then(function(ix){
-        var next = mutate({songs: ix.songs.slice(), deleted: ix.deleted.slice()});
-        next.songs.sort(function(a, b){ return String(a.addedAt).localeCompare(String(b.addedAt)); });
-        var text = JSON.stringify({app: "Valve Finder", version: 1, songs: next.songs, deleted: next.deleted}, null, 2) + "\n";
-        return putFile(c, "index.json", text, ix.sha, message).then(function(){ return next; });
-      }).catch(function(e){ if (e.code === "conflict" && n < 2) return attempt(n + 1); throw e; });
-    }
-    return attempt(0);
-  }
-  function saveSongFile(c, rec, fileObj){
-    var path = "songs/" + rec.id + ".json", text = JSON.stringify(fileObj, null, 1) + "\n", msg = (rec.inIndex ? "Update " : "Add ") + rec.title;
-    function put(n, sha){
-      return putFile(c, path, text, sha, msg).catch(function(e){
-        if (e.code === "conflict" && n < 2) return getFile(c, path).then(function(f){ return put(n + 1, f ? f.sha : null); });
-        throw e;
-      });
-    }
-    return put(0, rec.sha || null);
-  }
-  function upsertIndex(c, meta){
-    return writeIndex(c, function(ix){
-      ix.songs = ix.songs.filter(function(s){ return s.id !== meta.id; }); ix.songs.push(meta);
-      ix.deleted = ix.deleted.filter(function(id){ return id !== meta.id; });
-      return ix;
-    }, "List " + meta.title);
-  }
-  function removeSong(c, rec){
-    var path = "songs/" + rec.id + ".json";
-    return getFile(c, path).then(function(f){
-      if (f) return api(c, "DELETE", "/contents/" + path, {message: "Delete " + rec.title, sha: f.sha});
-    }).then(function(){
-      return writeIndex(c, function(ix){
-        ix.songs = ix.songs.filter(function(s){ return s.id !== rec.id; });
-        if (ix.deleted.indexOf(rec.id) < 0) ix.deleted.push(rec.id);
-        return ix;
-      }, "Remove " + rec.title);
+  function del(path, message){ return getSha(path).then(function(s){ if (s) return api("DELETE", cpath(path), {message: message, sha: s, branch: SITE.branch}); }); }
+  function check(t){
+    return api("GET", "", null, t).then(function(r){
+      if (r.status === 404) throw err("missing", "This key can't see the Valve-Finder repository. Make a new key and choose Valve-Finder under Repository access.");
     });
   }
-  function connect(c){
-    return api(c, "GET", "").then(function(r){
-      if (r.status === 404) throw err("missing", "Can't find " + name(c) + " with this token. Check the username and repository name, and that the token was given access to that repository.");
-      return readIndex(c);
-    }).then(function(ix){ if (!ix.sha) return writeIndex(c, function(i){ return i; }, "Start the Valve Finder song archive"); });
-  }
-  return {cfg: cfg, store: store, name: name, getFile: getFile, readIndex: readIndex, saveSongFile: saveSongFile, upsertIndex: upsertIndex, removeSong: removeSong, connect: connect};
+  return {token: token, store: store, getSha: getSha, putRetry: putRetry, del: del, check: check};
 })();
-
-/* Anyone can read the archive when its repository is public; only a device with the key can change it. */
-var PUBLIC_ARCHIVE = {owner: "lordfran28", repo: "valve-finder-songs", branch: "main"};
-function publicFetch(path){
-  var a = PUBLIC_ARCHIVE;
-  return fetch("https://raw.githubusercontent.com/" + a.owner + "/" + a.repo + "/" + a.branch + "/" + path + "?v=" + Date.now(), {cache: "no-store"})
-    .then(function(r){ return r.ok ? r.text() : null; }).catch(function(){ return null; });
+function isOwner(){ return !!Owner.token(); }
+/* A deleted song can stay in songs/index.json for a minute until GitHub rebuilds it. */
+function goneList(){ try { return JSON.parse(localStorage.getItem("vf.gone") || "{}") || {}; } catch(e){ return {}; } }
+function markGone(id){
+  var g = goneList(), now = Date.now(); g[id] = now;
+  Object.keys(g).forEach(function(k){ if (now - g[k] > 36e5) delete g[k]; });
+  try { localStorage.setItem("vf.gone", JSON.stringify(g)); } catch(e){}
 }
-function isAdmin(){ return !!GH.cfg(); }
-function recFromFile(o, id, sha){
-  return {id: o.id || id, title: o.title || "Untitled song", fileName: o.fileName, kind: o.kind, addedAt: o.addedAt, updatedAt: o.updatedAt, units: o.units, settings: o.settings, notes: o.notes || null, data: o.data, synced: true, inIndex: true, sha: sha || null};
-}
+function isLocked(rec){ return !!(rec && rec.inArchive && !isOwner()); }
 
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
-function metaOf(rec){ return {id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, units: rec.units}; }
-function fileOf(rec){ return {app: "Valve Finder", version: 1, id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units, settings: rec.settings || null, notes: rec.notes || null, data: rec.data}; }
-function pushRecord(c, rec, indexToo){
+function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null}; }
+function safeName(t){ return String(t || "").replace(/[\\/:*?"<>|#%\u0000-\u001f]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80) || "Song"; }
+function pickPath(rec){
+  var used = {};
+  archive.forEach(function(s){ used[String(s.file).toLowerCase()] = 1; });
+  Object.keys(cache).forEach(function(k){ if (cache[k].file) used[String(cache[k].file).toLowerCase()] = 1; });
+  var ext = (String(rec.fileName || "").match(/\.(musicxml|xml|mxl|midi?|csv)$/i) || [""])[0].toLowerCase() || KIND_EXT[rec.kind] || ".mid";
+  var base = safeName(rec.title), path = "songs/" + base + ext, n = 2;
+  while (used[path.toLowerCase()]) path = "songs/" + base + " " + (n++) + ext;
+  return path;
+}
+function saveSidecar(rec){
   var snapshot = rec.updatedAt;
-  return GH.saveSongFile(c, rec, fileOf(rec)).then(function(sha){
-    rec.sha = sha;
-    if (indexToo || !rec.inIndex) return GH.upsertIndex(c, metaOf(rec)).then(function(){ rec.inIndex = true; });
-  }).then(function(){
-    if (rec.updatedAt === snapshot) rec.synced = true;
-    return Store.put(rec);
+  return Owner.putRetry(rec.file + ".vf.json", textToB64(JSON.stringify(sidecarOf(rec), null, 1) + "\n"), "Update " + rec.title, rec.sideSha)
+    .then(function(sha){ rec.sideSha = sha; if (rec.updatedAt === snapshot) rec.dirty = false; return Store.put(rec); });
+}
+function pushSong(rec){
+  if (rec.inArchive) return rec.dirty ? saveSidecar(rec) : Promise.resolve();
+  var path = rec.file || pickPath(rec);
+  rec.file = path;
+  return Owner.putRetry(path, rec.data, "Add " + rec.title, null).then(function(){
+    rec.inArchive = true; rec.archivedAt = new Date().toISOString(); rec.dirty = true;
+    return saveSidecar(rec);
   });
 }
 
 /* ---------- Library view ---------- */
 function setSync(kind, msg){
-  var c = GH.cfg(), dot = $("syncdot"), t = $("synctext");
-  dot.className = "dot" + (kind === "ok" ? " ok" : kind === "error" ? " warn" : kind === "busy" ? " busy" : "");
-  $("openarchive").hidden = kind !== "local";
-  dot.hidden = kind === "local";
-  if (kind === "local") t.textContent = Store.ok() ? "" : "This browser isn't keeping songs between visits. ";
-  else if (kind === "busy") t.textContent = "Saving to your archive…";
-  else if (kind === "ok") t.textContent = "Every song is in your archive.";
-  else t.textContent = msg || "Your archive can't be reached right now.";
-  t.hidden = !t.textContent;
+  var dot = $("syncdot"), t = $("synctext"), show = kind === "busy" || kind === "error";
+  dot.hidden = !show; t.hidden = !show;
+  dot.className = "dot" + (kind === "error" ? " warn" : " busy");
+  t.textContent = kind === "busy" ? "Saving to the site…" : (msg || "");
 }
+function titleKey(t){ return String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, ""); }
 function renderLibrary(){
-  var list = Object.keys(cache).map(function(id){ return {rec: cache[id], meta: cache[id]}; });
-  remoteMetas.forEach(function(m){ if (!cache[m.id]) list.push({rec: null, meta: m}); });
+  var list = [], seen = {}, archTitles = {};
+  archive.forEach(function(m){ archTitles[titleKey(m.title)] = 1; });
+  archive.forEach(function(m){ seen[m.id] = 1; list.push({rec: cache[m.id] || null, meta: cache[m.id] || m}); });
+  Object.keys(cache).forEach(function(id){
+    var r = cache[id];
+    if (seen[id]) return;
+    if (!r.inArchive && !isOwner() && archTitles[titleKey(r.title)]) return;
+    list.push({rec: r, meta: r});
+  });
   list.sort(function(a, b){ return String(b.meta.addedAt).localeCompare(String(a.meta.addedAt)); });
   var q = $("search").value.trim().toLowerCase();
   $("searchwrap").hidden = list.length < 6;
   var shown = q ? list.filter(function(x){ return String(x.meta.title).toLowerCase().indexOf(q) >= 0; }) : list;
-  var hasGH = !!GH.cfg();
+  var owner = isOwner();
   $("songlist").innerHTML = shown.map(function(x){
-    var st = !hasGH ? null : !x.rec ? ["remote", "In archive"] : x.rec.synced ? null : ["warn", "Saving"];
+    var st = owner && x.rec && !x.rec.inArchive ? ["warn", "Not on the site yet"] : owner && x.rec && x.rec.dirty ? ["busy", "Saving"] : null;
     var u = x.meta.units, bits = [];
     var d = fmtDate(x.meta.addedAt); if (d) bits.push("Added " + d);
     if (u && u.count) bits.push(plural(u.count, String(u.unit).toLowerCase()));
@@ -1153,35 +1123,33 @@ function renderLibrary(){
   $("nomatch").hidden = !(list.length && !shown.length);
 }
 function syncLibrary(){
-  var c = GH.cfg();
-  if (!c){
-    setSync("local"); renderLibrary();
-    return publicFetch("index.json").then(function(t){
-      var ix = null; try { ix = t ? JSON.parse(t) : null; } catch(e){}
-      remoteMetas = ix && Array.isArray(ix.songs) ? ix.songs : [];
-      (ix && Array.isArray(ix.deleted) ? ix.deleted : []).forEach(function(id){
-        if (cache[id] && cache[id].inIndex){ delete cache[id]; Store.del(id); }
-      });
-      if (!$("view-library").hidden) renderLibrary();
-    });
-  }
-  setSync("busy");
-  return enqueue(function(){
-    return GH.readIndex(c).then(function(ix){
-      remoteMetas = ix.songs;
-      var gone = {}, listed = {};
-      ix.deleted.forEach(function(id){ gone[id] = 1; });
-      ix.songs.forEach(function(s){ listed[s.id] = 1; });
-      var chain = Promise.resolve();
+  return fetchIndex().then(function(ix){
+    if (ix){
+      var gone = goneList(), now = Date.now();
+      archive = (Array.isArray(ix.songs) ? ix.songs : []).filter(function(m){ return m && m.id && m.file && !(gone[m.id] && now - gone[m.id] < 36e5); });
+      archiveAt = ix.generatedAt || null;
+      var listed = {}; archive.forEach(function(m){ listed[m.id] = m; });
       Object.keys(cache).forEach(function(id){
-        var rec = cache[id];
-        if (gone[id] && rec.inIndex){ chain = chain.then(function(){ delete cache[id]; return Store.del(id); }); }
-        else if (!rec.synced || !listed[id]){ chain = chain.then(function(){ rec.inIndex = !!listed[id]; return pushRecord(c, rec, !listed[id]); }); }
+        var r = cache[id];
+        if (listed[id]){ if (!r.dirty && listed[id].title) r.title = listed[id].title; if (!r.file) r.file = listed[id].file; r.inArchive = true; return; }
+        /* Not listed: either too new for the list, or deleted elsewhere. Only a missing file settles it. */
+        if (r.inArchive && !r.dirty && r.file && now - Date.parse(r.archivedAt || 0) > 15 * 6e4){
+          fetch(siteUrl(r.file), {method: "HEAD", cache: "no-store"}).then(function(res){
+            if (res.status === 404 && cache[id] === r){ delete cache[id]; Store.del(id); if (!$("view-library").hidden) renderLibrary(); }
+          }).catch(function(){});
+        }
       });
-      return chain;
-    });
-  }).then(function(){ setSync("ok"); }, function(e){ setSync("error", e.user ? e.message : "GitHub backup didn't finish. It will try again next time."); })
-    .then(function(){ if (!$("view-library").hidden) renderLibrary(); });
+    }
+    if (!$("view-library").hidden) renderLibrary();
+    if (!isOwner()) return;
+    var pending = Object.keys(cache).map(function(k){ return cache[k]; }).filter(function(r){ return !r.inArchive || r.dirty; });
+    if (!pending.length){ setSync(""); return; }
+    setSync("busy");
+    return enqueue(function(){
+      return pending.reduce(function(p, r){ return p.then(function(){ return pushSong(r); }); }, Promise.resolve());
+    }).then(function(){ setSync(""); }, function(e){ setSync("error", e.user ? e.message : "Some songs couldn't be saved to the site. They'll be tried again next time."); })
+      .then(function(){ if (!$("view-library").hidden) renderLibrary(); });
+  });
 }
 function libMsg(text){ var m = $("libmsg"); m.textContent = text || ""; m.hidden = !text; }
 function addFile(f){
@@ -1191,13 +1159,15 @@ function addFile(f){
     return parseBytes(bytes).then(function(res){
       var now = new Date().toISOString();
       var title = res.score.title || f.name.replace(/\.(musicxml|xml|mxl|midi?|csv|txt)$/i, "").replace(/[_]+/g, " ").trim() || "Untitled song";
-      var rec = {id: newId(), title: title, fileName: f.name, kind: res.kind, addedAt: now, updatedAt: now, units: countUnits(res.score), settings: null, data: bytesToB64(bytes), synced: false, inIndex: false, sha: null};
+      var rec = {id: newId(), file: null, title: title, fileName: f.name, kind: res.kind, addedAt: now, updatedAt: now, units: countUnits(res.score), settings: null, notes: null, data: bytesToB64(bytes), inArchive: false, dirty: false};
       cache[rec.id] = rec;
       requestPersist();
       return Store.put(rec).then(function(){
         location.hash = "song-" + rec.id;
-        var c = GH.cfg();
-        if (c) enqueue(function(){ return pushRecord(c, rec, true); }).then(function(){ if (state.rec === rec) setSave("ok"); }, function(e){ if (state.rec === rec) setSave("error", e.message); });
+        if (isOwner()){
+          setSave("saving");
+          enqueue(function(){ return pushSong(rec); }).then(function(){ if (state.rec === rec) setSave(""); }, function(e){ if (state.rec === rec) setSave("error", e.message); });
+        }
       });
     });
   }).catch(function(err){ libMsg(err && err.user ? err.message : "This file couldn't be opened. Export it again as MusicXML or MIDI and try that file."); });
@@ -1205,7 +1175,7 @@ function addFile(f){
 
 /* ---------- Song view ---------- */
 function setSave(kind, msg){
-  var el = $("savestate"), labels = {example: ["plain", "Example"], saving: ["busy", "Saving…"], syncing: ["busy", "Saving…"], ok: ["ok", "In your archive"], pending: ["warn", "Not in archive yet"], error: ["warn", "Couldn't save"]};
+  var el = $("savestate"), labels = {example: ["plain", "Example"], saving: ["busy", "Saving…"], pending: ["warn", "Not on the site yet"], error: ["warn", "Couldn't save"]};
   var l = labels[kind];
   el.hidden = !l;
   if (l){ el.className = "status st-" + l[0]; el.textContent = l[1]; }
@@ -1213,51 +1183,50 @@ function setSave(kind, msg){
 }
 function songMsg(text, bad){ var m = $("songmsg"); m.textContent = text || ""; m.hidden = !text; m.className = "msg" + (bad ? " bad" : ""); }
 function showView(v){
-  document.body.classList.toggle("in-song", v === "song");
+  document.body.classList.toggle("in-song", v !== "library");
   $("view-library").hidden = v !== "library";
   $("view-song").hidden = v !== "song";
+  $("view-owner").hidden = v !== "owner";
   window.scrollTo(0, 0);
 }
 function showRecord(rec){
   state.rec = rec;
-  var locked = !isAdmin() && rec.inIndex;
+  var locked = isLocked(rec);
   setTitle(rec.title, locked);
   $("dangerzone").hidden = locked; $("delask").hidden = true;
   return parseBytes(b64ToBytes(rec.data)).then(function(res){
     if (state.rec !== rec) return;
+    if (!rec.units) rec.units = countUnits(res.score);
     loadScore(res.score, rec.settings);
-    setSave(rec.synced ? "ok" : GH.cfg() ? "pending" : "local");
-    var c = GH.cfg();
-    if (c && rec.inIndex) enqueue(function(){ return GH.getFile(c, "songs/" + rec.id + ".json"); }).then(function(f){
-      if (!f) return;
-      var o = JSON.parse(f.text);
-      rec.sha = f.sha;
-      if (o.updatedAt && rec.synced && String(o.updatedAt) > String(rec.updatedAt)){
-        rec.title = o.title; rec.settings = o.settings; rec.notes = o.notes || null; rec.updatedAt = o.updatedAt; rec.units = o.units || rec.units;
-        Store.put(rec);
-        if (state.rec === rec){ setTitle(rec.title, false); applySettings(rec.settings); render(); }
-      }
-    }).catch(function(){});
+    setSave(isOwner() && !rec.inArchive ? "pending" : "");
+    if (rec.inArchive && rec.file && !rec.dirty) fetchSidecar(rec.file).then(function(o){
+      if (!o || rec.dirty || !(String(o.updatedAt || "") > String(rec.updatedAt || ""))) return;
+      rec.title = o.title || rec.title; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.updatedAt = o.updatedAt;
+      Store.put(rec);
+      if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); }
+    });
   }).catch(function(e){ var m = $("error"); m.textContent = e.user ? e.message : "This song's file couldn't be read."; m.hidden = false; });
 }
 function openSong(id){
   showView("song");
   setSave(""); $("error").hidden = true;
   if (cache[id] && cache[id].data) return showRecord(cache[id]);
-  var c = GH.cfg();
   state.rec = null;
   setTitle("", true); $("bars").innerHTML = ""; $("strip").textContent = ""; $("fmeta").textContent = "";
-  songMsg("Opening\u2026");
-  var get = c ? enqueue(function(){ return GH.getFile(c, "songs/" + id + ".json"); })
-              : publicFetch("songs/" + id + ".json").then(function(t){ return t ? {text: t, sha: null} : null; });
-  return get.then(function(f){
-    if (!f) throw userErr("This song isn't in your archive anymore.");
-    var o = JSON.parse(f.text);
-    var rec = recFromFile(o, id, f.sha);
-    cache[rec.id] = rec;
-    songMsg("");
-    return Store.put(rec).then(function(){ if (location.hash === "#song-" + id) return showRecord(rec); });
-  }).catch(function(e){ songMsg(""); var m = $("error"); m.textContent = e.user ? e.message : "This song couldn't be downloaded."; m.hidden = false; });
+  songMsg("Opening…");
+  var meta = archive.filter(function(m){ return m.id === id; })[0];
+  var ready = meta ? Promise.resolve(meta) : fetchIndex().then(function(ix){ archive = ix && ix.songs || archive; return archive.filter(function(m){ return m.id === id; })[0]; });
+  return ready.then(function(m){
+    if (!m) throw userErr("This song isn't on the site anymore.");
+    return Promise.all([fetchBytes(m.file), fetchSidecar(m.file)]).then(function(got){
+      var o = got[1] || {};
+      var rec = {id: m.id, file: m.file, title: o.title || m.title, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
+                 units: null, settings: o.settings || null, notes: o.notes || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
+      cache[rec.id] = rec;
+      songMsg("");
+      return Store.put(rec).then(function(){ if (location.hash === "#song-" + id) return showRecord(rec); });
+    });
+  }).catch(function(e){ songMsg(""); var m = $("error"); m.textContent = e.user ? e.message : "This song couldn't be opened."; m.hidden = false; });
 }
 function openExample(){
   showView("song");
@@ -1267,34 +1236,30 @@ function openExample(){
   loadScore(parseScore(sampleXML()), null);
   setSave("example");
 }
-function scheduleSave(indexToo){
+function scheduleSave(){
   var rec = state.rec; if (!rec) return;
   rec.settings = readSettings();
-  if (!isAdmin() && rec.inIndex){ Store.put(rec); return; }
-  rec.updatedAt = new Date().toISOString(); rec.synced = false;
-  if (indexToo) pendingIndex = true;
+  if (isLocked(rec) || !isOwner()){ Store.put(rec); return; }
+  rec.updatedAt = new Date().toISOString(); rec.dirty = true;
   Store.put(rec);
-  setSave(GH.cfg() ? "saving" : "local");
+  setSave("saving");
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(flushSave, 1500);
+  saveTimer = setTimeout(flushSave, 4000);
 }
 function flushSave(){
   clearTimeout(saveTimer); saveTimer = null;
-  var rec = state.rec, c = GH.cfg();
-  if (!rec || !c || rec.synced) return Promise.resolve();
-  var idx = pendingIndex; pendingIndex = false;
-  setSave("syncing");
-  return enqueue(function(){ return pushRecord(c, rec, idx); }).then(function(){ if (state.rec === rec) setSave(rec.synced ? "ok" : "pending"); }, function(e){ if (state.rec === rec) setSave("error", e.message); });
+  var rec = state.rec;
+  if (!rec || !isOwner() || !rec.dirty) return Promise.resolve();
+  return enqueue(function(){ return pushSong(rec); }).then(function(){ if (state.rec === rec) setSave(rec.dirty ? "saving" : ""); }, function(e){ if (state.rec === rec) setSave("error", e.message); });
 }
 
-/* ---------- Backup panel ---------- */
+/* ---------- Owner page ---------- */
 function ghMsg(text, bad){ var m = $("ghmsg"); m.textContent = text || ""; m.hidden = !text; m.className = "msg" + (bad ? " bad" : ""); }
-function renderBackup(){
-  var c = GH.cfg();
-  $("ghform").hidden = !!c;
-  $("ghconnected").hidden = !c;
-  $("ghstate").textContent = c ? "Connected. Your songs are saved in " + GH.name(c) + " on GitHub." : "";
-  $("ghstate").hidden = !c;
+function renderOwner(){
+  var o = isOwner();
+  $("ownerform").hidden = o;
+  $("ownerconnected").hidden = !o;
+  $("ownerstate").textContent = o ? "This device can add, rename and delete songs, and save playing notes." : "Anyone can open and play your songs. To change them from this device, connect it with a key.";
 }
 
 /* ---------- Connecting another device ---------- */
@@ -1302,10 +1267,10 @@ function b64url(str){ return btoa(unescape(encodeURIComponent(str))).replace(/\+
 function unb64url(s){ s = s.replace(/-/g, "+").replace(/_/g, "/"); while (s.length % 4) s += "="; return decodeURIComponent(escape(atob(s))); }
 function loadScript(src){ return new Promise(function(res, rej){ if (window.qrcode) return res(); var el = document.createElement("script"); el.src = src; el.onload = res; el.onerror = rej; document.head.appendChild(el); }); }
 function showPair(){
-  var c = GH.cfg(); if (!c) return;
+  var t = Owner.token(); if (!t) return;
   var box = $("pairbox");
   if (!box.hidden){ box.hidden = true; $("qr").innerHTML = ""; return; }
-  var link = location.origin + location.pathname + "#connect=" + b64url(JSON.stringify({o: c.owner, r: c.repo, t: c.token}));
+  var link = location.origin + location.pathname + "#connect=" + b64url(JSON.stringify({t: t}));
   loadScript("assets/vendor/qrcode.js").then(function(){
     var q = window.qrcode(0, "M"); q.addData(link); q.make();
     $("qr").innerHTML = q.createSvgTag(4, 0);
@@ -1313,10 +1278,7 @@ function showPair(){
   }).catch(function(){ ghMsg("The QR code couldn't be made. Reload the page and try again.", true); });
 }
 function takeConnectLink(h){
-  try {
-    var o = JSON.parse(unb64url(h.slice("connect=".length)));
-    if (o && o.o && o.r && o.t){ GH.store({owner: o.o, repo: o.r, token: o.t}); return true; }
-  } catch(e){}
+  try { var o = JSON.parse(unb64url(h.slice("connect=".length))); if (o && o.t){ Owner.store(o.t); return true; } } catch(e){}
   return false;
 }
 
@@ -1350,16 +1312,16 @@ function route(){
   var h = decodeURIComponent(location.hash.replace(/^#/, ""));
   if (h.indexOf("connect=") === 0){
     var ok = takeConnectLink(h);
-    try { history.replaceState(null, "", location.pathname); } catch(e){ location.hash = ""; }
-    state.rec = null; showView("library"); renderBackup(); renderLibrary();
-    ghMsg(ok ? "This device is connected to your GitHub backup." : "That link didn't work. Make a new QR code and scan it again.", !ok);
-    if (ok) $("backup").open = true;
+    try { history.replaceState(null, "", location.pathname + "#owner"); } catch(e){ location.hash = "owner"; }
+    state.rec = null; showView("owner"); renderOwner();
+    ghMsg(ok ? "This device is now an owner." : "That code didn't work. Make a new one and scan it again.", !ok);
     syncLibrary();
     return;
   }
   if (h.indexOf("song-") === 0) openSong(h.slice(5));
   else if (h === "example") openExample();
-  else { state.rec = null; showView("library"); renderBackup(); renderLibrary(); syncLibrary(); }
+  else if (h === "owner"){ state.rec = null; showView("owner"); renderOwner(); }
+  else { state.rec = null; showView("library"); renderLibrary(); syncLibrary(); }
 }
 
 $("file").addEventListener("change", function(e){
@@ -1367,14 +1329,14 @@ $("file").addEventListener("change", function(e){
   addFile(f).then(function(){ e.target.value = ""; });
 });
 $("search").addEventListener("input", renderLibrary);
-["pitch","oct","repeats","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(false); }); });
-$("part").addEventListener("change", function(){ state.part = parseInt($("part").value, 10) || 0; render(); scheduleSave(false); });
-$("tempo").addEventListener("change", function(){ $("tempo").value = clampTempo($("tempo").value); scheduleSave(false); });
+["pitch","oct","repeats","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(); }); });
+$("part").addEventListener("change", function(){ state.part = parseInt($("part").value, 10) || 0; render(); scheduleSave(); });
+$("tempo").addEventListener("change", function(){ $("tempo").value = clampTempo($("tempo").value); scheduleSave(); });
 $("title").addEventListener("change", function(){
   var rec = state.rec; if (!rec) return;
   var v = $("title").value.trim();
   if (!v){ $("title").value = rec.title; return; }
-  if (v !== rec.title){ rec.title = v; scheduleSave(true); }
+  if (v !== rec.title){ rec.title = v; scheduleSave(); }
 });
 $("title").addEventListener("keydown", function(e){ if (e.key === "Enter"){ e.preventDefault(); $("title").blur(); } });
 $("title").addEventListener("input", fitTitle);
@@ -1403,7 +1365,7 @@ $("bars").addEventListener("input", function(e){
   a.className = "annot" + annClass(v); a.title = v;
   var store = state.rec ? (state.rec.notes = state.rec.notes || {}) : (state.tempNotes = state.tempNotes || {});
   if (v) store[key] = v; else delete store[key];
-  if (state.rec) scheduleSave(false);
+  if (state.rec) scheduleSave();
 });
 $("bars").addEventListener("keydown", function(e){ if (e.key === "Enter" && e.target.classList && e.target.classList.contains("annot")){ e.preventDefault(); e.target.blur(); } });
 $("playall").addEventListener("click", function(){
@@ -1420,48 +1382,49 @@ $("copy").addEventListener("click", function(){
 });
 $("del").addEventListener("click", function(){
   var rec = state.rec; if (!rec) return;
-  $("delq").textContent = "Delete “" + rec.title + "” from your library" + (GH.cfg() ? " and your GitHub archive" : "") + "?";
+  $("delq").textContent = "Delete “" + rec.title + "”" + (rec.inArchive ? " from the site?" : " from this device?");
   $("delask").hidden = false;
 });
 $("delno").addEventListener("click", function(){ $("delask").hidden = true; });
 $("delyes").addEventListener("click", function(){
-  var rec = state.rec, c = GH.cfg(); if (!rec) return;
+  var rec = state.rec; if (!rec) return;
   clearTimeout(saveTimer); saveTimer = null;
   $("delyes").disabled = true;
-  var p = (c && (rec.inIndex || rec.sha)) ? enqueue(function(){ return GH.removeSong(c, rec); }) : Promise.resolve();
+  var p = (rec.inArchive && rec.file && isOwner()) ? enqueue(function(){ return Owner.del(rec.file, "Delete " + rec.title).then(function(){ return Owner.del(rec.file + ".vf.json", "Delete notes for " + rec.title); }); }) : Promise.resolve();
   p.then(function(){
     delete cache[rec.id];
-    remoteMetas = remoteMetas.filter(function(m){ return m.id !== rec.id; });
+    if (rec.inArchive) markGone(rec.id);
+    archive = archive.filter(function(m){ return m.id !== rec.id; });
     return Store.del(rec.id);
   }).then(function(){ state.rec = null; location.hash = ""; })
     .catch(function(e){ songMsg(e.user ? e.message : "The song couldn't be deleted. Try again.", true); })
     .then(function(){ $("delyes").disabled = false; });
 });
 $("ghconnect").addEventListener("click", function(){
-  var c = {owner: $("ghowner").value.trim(), repo: $("ghrepo").value.trim(), token: $("ghtoken").value.trim()};
-  if (!c.token){ ghMsg("Paste your GitHub key first.", true); return; }
+  var t = $("ghtoken").value.trim();
+  if (!t){ ghMsg("Paste the key first.", true); return; }
   var btn = $("ghconnect"); btn.disabled = true;
-  ghMsg("Checking…");
-  GH.connect(c).then(function(){
-    GH.store(c); $("ghtoken").value = "";
-    ghMsg("Connected.");
-    renderBackup(); renderLibrary();
+  ghMsg("Checking\u2026");
+  Owner.check(t).then(function(){
+    Owner.store(t); $("ghtoken").value = "";
+    ghMsg("Connected. This device can now change your songs.");
+    renderOwner();
     return syncLibrary();
-  }).catch(function(e){ ghMsg(e.user ? e.message : "Couldn't connect. Check the details and try again.", true); })
+  }).catch(function(e){ ghMsg(e.user ? e.message : "Couldn't connect. Check the key and try again.", true); })
     .then(function(){ btn.disabled = false; });
 });
-$("ghsync").addEventListener("click", function(){ ghMsg(""); syncLibrary(); });
 $("ghpair").addEventListener("click", showPair);
-$("openarchive").addEventListener("click", function(){ var b = $("backup"); b.open = true; b.scrollIntoView({block: "start", behavior: reduceMotion ? "auto" : "smooth"}); });
 $("ghoff").addEventListener("click", function(){
-  GH.store(null); remoteMetas = []; $("pairbox").hidden = true; $("qr").innerHTML = "";
-  ghMsg("Disconnected on this device. Your GitHub archive is untouched.");
-  renderBackup(); renderLibrary(); setSync("local");
+  Owner.store(null); $("pairbox").hidden = true; $("qr").innerHTML = "";
+  ghMsg("This device is no longer an owner. Your songs are untouched.");
+  renderOwner();
 });
 window.addEventListener("hashchange", route);
 document.addEventListener("visibilitychange", function(){ if (document.visibilityState === "hidden" && saveTimer) flushSave(); });
 
-Store.all().then(function(recs){ (recs || []).forEach(function(r){ cache[r.id] = r; }); }).then(route);
+Store.all().then(function(recs){
+  (recs || []).forEach(function(r){ if (r.inArchive === undefined){ r.inArchive = false; r.dirty = false; delete r.inIndex; delete r.synced; delete r.sha; } cache[r.id] = r; });
+}).then(route);
 })();
 </script>
 </body>
