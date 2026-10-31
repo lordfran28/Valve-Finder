@@ -19,3 +19,6 @@ fonts/IM-Fell-LICENSE.txt https://cdn.jsdelivr.net/npm/@fontsource/im-fell-frenc
 # Mother-of-pearl, for valve-cap buttons
 met-185859-nautilus-shell.jpg met:185859
 met-205005-nautilus-shell-box.jpg met:205005
+# QR code generator (MIT licence) for connecting a phone by scanning
+vendor/qrcode.js https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js
+vendor/qrcode-LICENSE.txt https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/LICENSE
