@@ -4,155 +4,194 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Valve Finder</title>
+<meta name="theme-color" content="#EFE6D2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1626" media="(prefers-color-scheme: dark)">
 <meta name="description" content="B♭ trumpet valve fingerings for every note of your MusicXML, MIDI and Tony files, with a song library backed up to GitHub.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='8' cy='24' r='6.5' fill='%238F5F17'/%3E%3Ccircle cx='24' cy='24' r='5.5' fill='none' stroke='%238F5F17' stroke-width='2.5'/%3E%3Ccircle cx='40' cy='24' r='6.5' fill='%238F5F17'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preload" href="assets/fonts/eb-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/im-fell-french-canon-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-/* Layout: one music-stand column. Library view lists songs; song view shows settings, a legend, one card per bar or phrase, then the fingering strip. Brass dots = pressed valves. */
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:400 800;font-display:swap;src:url("assets/fonts/eb-garamond-latin-wght-normal.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:400 800;font-display:swap;src:url("assets/fonts/eb-garamond-latin-wght-italic.woff2") format("woff2")}
+@font-face{font-family:"IM Fell French Canon";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/im-fell-french-canon-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"IM Fell French Canon";font-style:italic;font-weight:400;font-display:swap;src:url("assets/fonts/im-fell-french-canon-latin-400-italic.woff2") format("woff2")}
+/* Layout: one music-stand column. A framed hero sets Vermeer's Clio into a 17th-century Genoese silk; below it, the library or a song on parchment cards; a band of the same silk closes the page. */
 :root{
-  --bg:#ECEFF2;
-  --surface:#FFFFFF;
-  --well:#F3F5F7;
-  --ink:#17202A;
-  --muted:#59636E;
-  --line:#D2D8DF;
-  --dot-line:#8994A0;
-  --brass:#8F5F17;
-  --brass-soft:#F4E7CF;
-  --on-brass:#FFFFFF;
-  --ok:#2F6B3A;
-  --ok-soft:#DDEEDF;
-  --warn:#A3392A;
-  --warn-soft:#F7E2DD;
-  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
-  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --bg:#EFE6D2;
+  --surface:#FBF7EE;
+  --well:#F4ECDA;
+  --ink:#2A2119;
+  --muted:#675948;
+  --line:#D5C39E;
+  --dot-line:#9B8A70;
+  --brass:#84560F;
+  --brass-soft:#F1E1BF;
+  --on-brass:#FFF8EA;
+  --blue:#2C5697;
+  --blue-soft:#DCE6F5;
+  --ok:#3D6B34;
+  --ok-soft:#E0ECD8;
+  --warn:#9C3424;
+  --warn-soft:#F6DFD7;
+  --veil:rgba(239,230,210,.94);
+  --textile:url("assets/textile-light.jpg");
+  --textile-alpha:.12;
+  --hero-alpha:.7;
+  --display:"IM Fell French Canon",Garamond,"Times New Roman",serif;
+  --body:"EB Garamond",Garamond,"Garamond Premier Pro",Georgia,serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --bg:#10151B;--surface:#182029;--well:#1F2833;--ink:#E5E9ED;--muted:#9BA6B2;--line:#2B3541;--dot-line:#6E7A87;
-    --brass:#E0A649;--brass-soft:#3A2D18;--on-brass:#1B1307;--ok:#86C893;--ok-soft:#1C3322;--warn:#F2907C;--warn-soft:#3B221D;color-scheme:dark;
+    --bg:#0D1626;--surface:#142034;--well:#1B2840;--ink:#EFE3C8;--muted:#B6A98E;--line:#34445F;--dot-line:#7E7766;
+    --brass:#D9AE55;--brass-soft:#3A3122;--on-brass:#1A1206;--blue:#9DBBEB;--blue-soft:#1E3152;
+    --ok:#8CC58A;--ok-soft:#1C3322;--warn:#EE9A85;--warn-soft:#3B221D;
+    --veil:rgba(13,22,38,.93);--textile:url("assets/textile-dark.jpg");--textile-alpha:.14;--hero-alpha:.85;color-scheme:dark;
   }
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.5 var(--body);
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
-.wrap{max-width:46rem;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+html{background:var(--bg);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{position:relative;z-index:0;margin:0;background:var(--bg);color:var(--ink);font:400 1.08rem/1.55 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 0}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--textile) center/cover no-repeat;opacity:var(--textile-alpha)}
+.wrap{max-width:46rem;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 .view{display:flex;flex-direction:column;gap:16px}
-.view[hidden]{display:none}
-h1,h2,h3{font-family:var(--display);font-weight:700;margin:0;text-wrap:balance}
-h1{font-size:2.1rem;line-height:1.05;letter-spacing:-0.01em}
-h2{font-size:1.45rem}
-h3{font-size:1.1rem;line-height:1.2}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;letter-spacing:.005em}
+h1{font-size:clamp(2.5rem,9vw,3.4rem);line-height:.95}
+h2{font-size:1.75rem;line-height:1.1}
+h3{font-size:1.25rem;line-height:1.15}
 a{color:var(--brass)}
-.top{display:flex;flex-direction:column;gap:6px}
-.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;align-self:flex-start}
-.mark{display:flex;gap:5px}
-.mark i{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--brass);display:block}
-.mark i.on{background:var(--brass)}
-.lede{margin:0;color:var(--muted);max-width:60ch}
+.sc{font-variant-caps:all-small-caps;letter-spacing:.08em}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;padding:0;margin:-1px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;isolation:isolate;height:27rem;background:var(--bg);border:1px solid var(--line)}
+.hero::after{content:"";position:absolute;inset:5px;border:1px solid var(--line);pointer-events:none;z-index:4}
+.hero-silk{position:absolute;inset:0;background:var(--textile) center 26%/cover no-repeat;opacity:var(--hero-alpha)}
+.hero-clio{position:absolute;right:-10%;top:-5%;height:84%;width:auto;max-width:none;
+  -webkit-mask-image:radial-gradient(ellipse 56% 62% at 56% 46%,#000 52%,transparent 100%);
+  mask-image:radial-gradient(ellipse 56% 62% at 56% 46%,#000 52%,transparent 100%)}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(to top,var(--veil) 0%,var(--veil) 30%,transparent 52%)}
+.hero-title{position:absolute;left:1.35rem;right:1.35rem;bottom:1.3rem;display:flex;flex-direction:column;gap:6px;color:var(--ink);text-decoration:none;z-index:3}
+@media (min-width:600px){
+  .hero{height:24rem}
+  .hero-clio{right:-4%;top:-4%;height:112%;
+    -webkit-mask-image:radial-gradient(ellipse 46% 60% at 64% 46%,#000 40%,transparent 100%);
+    mask-image:radial-gradient(ellipse 46% 60% at 64% 46%,#000 40%,transparent 100%)}
+  .hero-veil{background:radial-gradient(ellipse 70% 85% at 0% 100%,var(--veil) 0%,var(--veil) 38%,transparent 72%)}
+  .hero-title{right:auto;max-width:21rem;bottom:1.8rem;left:1.8rem}
+}
+.eyebrow{font-variant-caps:all-small-caps;letter-spacing:.12em;font-size:1.05rem;color:var(--brass);font-weight:600;line-height:1}
+.lede{margin:0;font-style:italic;color:var(--muted);font-size:1.08rem;line-height:1.3}
+
+/* Library */
 .libhead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.filebtn{display:inline-flex;align-items:center;background:var(--brass);color:var(--on-brass);border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer;user-select:none}
-.libhead:focus-within .filebtn{outline:2px solid var(--ink);outline-offset:2px}
-.syncline{margin:0;font-size:.92rem;color:var(--muted);display:flex;gap:8px;align-items:baseline}
+.btn,.filebtn{display:inline-flex;align-items:center;font:600 1.08rem/1.2 var(--body);font-variant-caps:all-small-caps;letter-spacing:.08em;border-radius:3px;padding:7px 16px;cursor:pointer;border:1px solid var(--brass);background:transparent;color:var(--brass);text-decoration:none;user-select:none}
+.btn.primary,.filebtn{background:var(--brass);color:var(--on-brass)}
+.btn.quiet{border-color:var(--line);color:var(--ink)}
+.btn.danger{border-color:var(--warn);color:var(--warn)}
+.btn[disabled]{opacity:.6;cursor:progress}
+.libhead:focus-within .filebtn{outline:2px solid var(--blue);outline-offset:2px}
+.syncline{margin:0;font-size:1rem;color:var(--muted);display:flex;gap:8px;align-items:baseline}
 .dot{width:9px;height:9px;border-radius:50%;background:var(--dot-line);display:inline-block;flex:0 0 auto;transform:translateY(-1px)}
 .dot.ok{background:var(--ok)}
 .dot.warn{background:var(--warn)}
 .dot.busy{background:var(--brass)}
 .songlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.song{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:var(--ink);text-decoration:none}
-.song:hover{border-color:var(--dot-line)}
+.song{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:12px 14px;color:var(--ink);text-decoration:none}
+.song:hover{border-color:var(--brass)}
 .song-main{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
-.song-title{font-family:var(--display);font-weight:700;font-size:1.15rem;line-height:1.2;overflow-wrap:anywhere}
-.song-meta{font-size:.82rem;color:var(--muted)}
-.status{font-family:var(--mono);font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;white-space:nowrap;flex:0 0 auto}
+.song-title{font-family:var(--display);font-size:1.35rem;line-height:1.15;overflow-wrap:anywhere}
+.song-meta{font-size:.95rem;color:var(--muted);font-variant-numeric:lining-nums}
+.status{font-size:.95rem;font-weight:600;font-variant-caps:all-small-caps;letter-spacing:.07em;padding:1px 9px 3px;border-radius:2px;white-space:nowrap;flex:0 0 auto}
 .st-ok{background:var(--ok-soft);color:var(--ok)}
 .st-warn{background:var(--warn-soft);color:var(--warn)}
 .st-local,.st-plain{background:var(--well);color:var(--muted)}
 .st-remote,.st-busy{background:var(--brass-soft);color:var(--brass)}
-.empty{background:var(--surface);border:1px dashed var(--dot-line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.empty{background:var(--surface);border:1px solid var(--line);outline:1px solid var(--line);outline-offset:3px;border-radius:2px;padding:20px;margin:4px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
 .empty p{margin:0;color:var(--muted);max-width:60ch}
-.empty[hidden]{display:none}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
-.panel summary{cursor:pointer;font-weight:700;font-size:1rem}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:12px 14px}
+.panel summary{cursor:pointer;font-family:var(--display);font-size:1.2rem}
 .panel-body{display:flex;flex-direction:column;gap:12px;margin-top:12px}
-.steps{margin:0;padding-left:1.3rem;display:flex;flex-direction:column;gap:4px;font-size:.93rem}
+.steps{margin:0;padding-left:1.3rem;display:flex;flex-direction:column;gap:4px}
 .fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:12px}
 .field{display:flex;flex-direction:column;gap:4px;min-width:0}
-.field label{font-size:.82rem;color:var(--muted);letter-spacing:.02em}
-.field[hidden]{display:none}
-select,input[type=number],input[type=text],input[type=password],input[type=search]{font:inherit;font-size:.95rem;color:var(--ink);background:var(--well);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:100%;min-width:0}
-select:focus-visible,input:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.field label{font-size:.98rem;color:var(--muted);font-variant-caps:all-small-caps;letter-spacing:.08em}
+select,input[type=number],input[type=text],input[type=password],input[type=search]{font:inherit;font-size:1.02rem;color:var(--ink);background:var(--well);border:1px solid var(--line);border-radius:3px;padding:7px 10px;width:100%;min-width:0;font-variant-numeric:lining-nums}
+select:focus-visible,input:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .btnrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.btn{display:inline-flex;align-items:center;font:inherit;font-weight:700;border-radius:999px;padding:8px 16px;cursor:pointer;border:1.5px solid var(--brass);background:transparent;color:var(--brass);text-decoration:none}
-.btn.primary{background:var(--brass);color:var(--on-brass)}
-.btn.quiet{border-color:var(--line);color:var(--ink)}
-.btn.danger{border-color:var(--warn);color:var(--warn)}
-.btn[disabled]{opacity:.6;cursor:progress}
-.msg{margin:0;font-size:.92rem;background:var(--well);border-radius:10px;padding:8px 12px}
+.msg{margin:0;font-size:1rem;background:var(--well);border-radius:3px;padding:8px 12px}
 .msg.bad{background:var(--warn-soft);color:var(--warn)}
-.error{margin:0;background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 14px}
-.small{margin:0;font-size:.85rem;color:var(--muted)}
+.error{margin:0;background:var(--warn-soft);color:var(--warn);border-radius:3px;padding:10px 14px}
+.small{margin:0;font-size:.98rem;color:var(--muted)}
+
+/* Song view */
 .songbar{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.back{font-weight:700;text-decoration:none}
+.back{font-weight:600;text-decoration:none;font-variant-caps:all-small-caps;letter-spacing:.08em;font-size:1.1rem}
 .songhead{display:flex;flex-direction:column;gap:2px}
-.titleinput{font-family:var(--display);font-weight:700;font-size:1.75rem;line-height:1.15;color:var(--ink);background:transparent;border:1px solid transparent;border-radius:10px;padding:4px 6px;margin-left:-7px;width:calc(100% + 7px)}
-.titleinput:not([readonly]):hover{border-color:var(--line)}
-.fmeta{font-family:var(--mono);font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
-.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
-.check{display:flex;align-items:center;gap:8px;font-size:.95rem;cursor:pointer}
+input[type=text].titleinput{font-family:var(--display);font-size:2.1rem;line-height:1.1;color:var(--ink);background:transparent;border:1px solid transparent;border-radius:3px;padding:2px 6px;margin-left:-7px;width:calc(100% + 7px)}
+input[type=text].titleinput:not([readonly]):hover{border-color:var(--line)}
+.fmeta{font-style:italic;font-size:1rem;color:var(--muted);overflow-wrap:anywhere;font-variant-numeric:lining-nums}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:14px}
+.check{display:flex;align-items:center;gap:8px;cursor:pointer}
 .check input{width:18px;height:18px;accent-color:var(--brass);margin:0}
-.pitchnote{grid-column:1/-1;margin:0;font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.pitchnote{grid-column:1/-1;margin:0;font-size:1rem;font-style:italic;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
 .playrow{grid-column:1/-1;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.hint{font-size:.85rem;color:var(--muted);flex:1 1 14rem;min-width:0}
-.legend{display:flex;flex-direction:column;gap:8px;font-size:.88rem;color:var(--muted);padding:0 2px}
+.hint{font-size:.98rem;color:var(--muted);flex:1 1 14rem;min-width:0}
+.legend{display:flex;flex-direction:column;gap:8px;color:var(--muted);padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:3px}
 .legend-row{display:flex;align-items:flex-start;gap:10px}
-.legend-row > :first-child{flex:0 0 4.6rem;display:flex;justify-content:center;padding-top:3px}
-.legend b{color:var(--ink);font-weight:700}
+.legend-row > :first-child{flex:0 0 4.6rem;display:flex;justify-content:center;padding-top:5px}
+.legend b{color:var(--ink);font-weight:600}
 .bars{display:flex;flex-direction:column;gap:10px}
-.bar{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px 12px}
+.bar{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:10px 12px 12px}
 .bar-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .bar-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;min-width:0}
-.bar-meta{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
-.play{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:.85rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
+.bar-title h3{font-family:var(--body);font-weight:600;font-size:1.15rem;font-variant-numeric:lining-nums}
+.bar-meta{font-style:italic;font-size:.98rem;color:var(--muted);font-variant-numeric:lining-nums tabular-nums}
+.play{display:inline-flex;align-items:center;gap:6px;font:600 1rem/1.2 var(--body);font-variant-caps:all-small-caps;letter-spacing:.07em;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:3px;padding:4px 11px;cursor:pointer}
 .notes{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.note{width:4.4rem;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 8px;border-radius:10px;border:1.5px solid transparent;background:var(--well);color:var(--ink);font:inherit;cursor:pointer;text-align:center}
-.reg{font-family:var(--mono);font-size:.69rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.name{font-family:var(--display);font-weight:700;font-size:1.65rem;line-height:1}
-.acc{font-family:var(--body);font-size:.72em;margin-left:1px;vertical-align:.28em}
+.note{width:4.5rem;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 8px;border-radius:3px;border:1px solid transparent;background:var(--well);color:var(--ink);font:inherit;cursor:pointer;text-align:center}
+.reg{font-size:.9rem;font-weight:600;font-variant-caps:all-small-caps;letter-spacing:.1em;color:var(--muted);line-height:1}
+.name{font-family:var(--display);font-size:1.9rem;line-height:1}
+.acc{font-family:var(--body);font-size:.7em;margin-left:1px;vertical-align:.32em}
 .valves{display:flex;gap:4px;margin-top:2px}
 .v{width:14px;height:14px;border-radius:50%;border:1.5px solid var(--dot-line);background:var(--surface);display:block}
 .v.on{background:var(--brass);border-color:var(--brass)}
-.fing{font-family:var(--mono);font-size:.78rem;font-weight:500}
-.extra{font-family:var(--mono);font-size:.69rem;color:var(--brass)}
-.lyr{font-size:.82rem;font-style:italic;color:var(--muted);max-width:100%;overflow-wrap:anywhere;line-height:1.2}
+.fing{font-size:1rem;font-weight:600;font-variant-numeric:lining-nums tabular-nums;line-height:1.1}
+.extra{font-size:.88rem;font-style:italic;color:var(--brass);line-height:1.1}
+.lyr{font-size:.95rem;font-style:italic;color:var(--muted);max-width:100%;overflow-wrap:anywhere;line-height:1.15}
 .note.tied .name,.note.tied .fing{color:var(--muted)}
 .note.tied .v.on{background:var(--dot-line);border-color:var(--dot-line)}
 .note.out .name,.note.out .fing{color:var(--warn)}
-.note.playing{border-color:var(--brass);background:var(--brass-soft)}
+.note.playing{border-color:var(--blue);background:var(--blue-soft)}
 .rest{margin:8px 0 0;color:var(--muted);font-style:italic}
-.strip-wrap{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.strip-wrap{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:12px 14px}
 .strip-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.strip{margin:0;font-family:var(--mono);font-size:.8rem;line-height:1.7;overflow-x:auto;background:var(--well);border-radius:10px;padding:10px 12px;font-variant-numeric:tabular-nums}
+.strip{margin:0;font-family:var(--body);font-size:1.02rem;line-height:1.7;overflow-x:auto;background:var(--well);border-radius:3px;padding:10px 12px;font-variant-numeric:lining-nums tabular-nums}
 .dangerzone{display:flex;flex-direction:column;gap:10px;align-items:flex-start;border-top:1px solid var(--line);padding-top:16px}
 .delask{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.delask[hidden]{display:none}
-.foot{font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+
+/* Footer */
+.foot{font-size:.98rem;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
 .foot p{margin:0;max-width:62ch}
+.credits{font-style:italic}
+.silk-band{height:6rem;margin:28px calc(-1 * max(16px, env(safe-area-inset-right,0px))) 0 calc(-1 * max(16px, env(safe-area-inset-left,0px)));background:var(--textile) center 72%/cover no-repeat;opacity:var(--hero-alpha);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 75%);mask-image:linear-gradient(to bottom,transparent,#000 75%)}
 @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="top">
-    <a class="brand" href="#"><span class="mark" aria-hidden="true"><i class="on"></i><i></i><i class="on"></i></span><h1>Valve Finder</h1></a>
-    <p class="lede">B♭ trumpet valve fingerings under every note of your songs.</p>
+  <header class="hero">
+    <div class="hero-silk" aria-hidden="true"></div>
+    <img class="hero-clio" src="assets/clio-vermeer.jpg" width="1000" height="980" alt="Clio, the muse of history, holding a trumpet and a book, from Vermeer's The Art of Painting">
+    <div class="hero-veil" aria-hidden="true"></div>
+    <a class="hero-title" href="#">
+      <span class="eyebrow">For the B♭ trumpet</span>
+      <h1>Valve Finder</h1>
+      <span class="lede">The fingering under every note of your songs.</span>
+    </a>
   </header>
 
   <section id="view-library" class="view" aria-label="Your songs">
@@ -203,6 +242,7 @@ select:focus-visible,input:focus-visible,button:focus-visible,a:focus-visible,su
     <footer class="foot">
       <p>Valve Finder reads MusicXML (.musicxml, .xml, .mxl), MIDI (.mid) and Tony note lists (.csv). Files are read on your device. With GitHub backup on, each song is also saved to your private song repository, with its full history.</p>
       <p>MIDI made from a recording has no real bar lines, so its notes are grouped into phrases, each marked with the time it starts in the recording.</p>
+      <p class="credits">Clio, from Johannes Vermeer's <a href="https://en.wikipedia.org/wiki/The_Art_of_Painting" target="_blank" rel="noopener">The Art of Painting</a>, c. 1666–68. The silk is a Genoese brocade of the 17th–18th century in <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">the Metropolitan Museum of Art</a>. Both are in the public domain.</p>
       <p><a href="#example">Example song</a> · <a href="https://github.com/lordfran28/Valve-Finder" target="_blank" rel="noopener">Source code</a></p>
     </footer>
   </section>
@@ -269,6 +309,7 @@ select:focus-visible,input:focus-visible,button:focus-visible,a:focus-visible,su
     </div>
   </section>
 </div>
+<div class="silk-band" aria-hidden="true"></div>
 
 <script>
 (function(){
