@@ -1,0 +1,16 @@
+Trumpet.novib.mf.E3B3.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.mf.E3B3.aiff
+Trumpet.novib.mf.C4B4.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.mf.C4B4.aiff
+Trumpet.novib.mf.C5B5.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.mf.C5B5.aiff
+Trumpet.vib.mf.E3B3.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.vib.mf.E3B3.aiff
+Trumpet.vib.mf.C4B4.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.vib.mf.C4B4.aiff
+Trumpet.vib.mf.C5B5.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.vib.mf.C5B5.aiff
+Trumpet.novib.ff.E3B3.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.ff.E3B3.aiff
+Trumpet.novib.ff.C4B4.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.ff.C4B4.aiff
+Trumpet.novib.ff.C5B5.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.ff.C5B5.aiff
+Trumpet.novib.pp.E3B3.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.pp.E3B3.aiff
+Trumpet.novib.pp.C4B4.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.pp.C4B4.aiff
+Trumpet.novib.pp.C5B5.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.pp.C5B5.aiff
+Trumpet.novib.mf.C6D6.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.mf.C6D6.aiff
+Trumpet.vib.mf.C6D6.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.vib.mf.C6D6.aiff
+Trumpet.novib.ff.C6Eb6.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.ff.C6Eb6.aiff
+Trumpet.novib.pp.C6Eb6.aiff https://theremin.music.uiowa.edu/sound%20files/MIS/Brass/Bbtrumpet/Trumpet.novib.pp.C6Eb6.aiff

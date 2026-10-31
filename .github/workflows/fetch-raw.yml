@@ -1,0 +1,30 @@
+name: Fetch raw files (temporary branch)
+
+on:
+  push:
+    branches: ["fetch/**"]
+    paths: ["fetch.txt"]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          mkdir -p fetched
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -fsSL --retry 3 -A "Mozilla/5.0 (Valve Finder sample fetch)" -o "fetched/$name" "$url" && echo "ok $name $(stat -c %s fetched/$name)" || echo "FAILED $name"
+          done < fetch.txt
+          ls -la fetched > fetched/LISTING.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fetched
+          git commit -m "Fetched files" || exit 0
+          git push origin HEAD:${GITHUB_REF_NAME}
