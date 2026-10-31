@@ -1,12 +1,21 @@
 set -x
 cd fetched
-rm -rf soft carpet
-mkdir -p carpet
-UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-for id in er1KJ1bvFGE C_ldv5csD-U hCzHhu1v0fA 2iAky1ttuHw YR68IEvkggo SqE-6SW9fO8 KAwP1Nwo5yQ W2M4dORIL7A ezWRDRxT6Tw dSy9191pcx4 PcMI_etcjYw; do
-  curl -fsSL -A "$UA" -o "carpet/$id.jpg" "https://unsplash.com/photos/$id/download?force=true&w=2400" && echo "ok $id $(stat -c %s carpet/$id.jpg)" || echo "fail $id"
-  curl -fsSL -A "$UA" "https://unsplash.com/photos/$id" -o "carpet/$id.html" || true
-  grep -oE '"(premium|plus)":(true|false)|Unsplash\+|Free to use under the Unsplash License|"username":"[^"]+"|"name":"[^"]{1,60}"' "carpet/$id.html" | head -6 > "carpet/$id.meta"
-  rm -f "carpet/$id.html"
+rm -rf carpet carpet2
+mkdir -p carpet2
+UA="KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)"
+q() { curl -fsSL -A "$UA" --get "https://commons.wikimedia.org/w/api.php" --data-urlencode "action=query" --data-urlencode "format=json" --data-urlencode "generator=search" --data-urlencode "gsrnamespace=6" --data-urlencode "gsrsearch=$1 filetype:bitmap" --data-urlencode "gsrlimit=30" --data-urlencode "prop=imageinfo" --data-urlencode "iiprop=url|extmetadata|size" --data-urlencode "iiurlwidth=500" -o "carpet2/$2.json"; }
+q "flokati" flokati
+q "Hochflorteppich" hochflor
+q "deep pile carpet" deeppile
+q "carpet macro" macro
+q "Teppich Detail" teppich
+q "wool rug texture" woolrug
+q "plush carpet" plush
+q "carpet fibres" fibres
+for f in carpet2/*.json; do
+  jq -r '.query.pages[]? | select(.imageinfo[0].width >= 1600) | [.title, .imageinfo[0].thumburl] | @tsv' "$f" | while IFS=$'\t' read -r title thumb; do
+    n=$(echo "$title" | sed 's/^File://; s/[^A-Za-z0-9._-]/_/g' | cut -c1-70); d="carpet2/$(basename "$f" .json)"; mkdir -p "$d"
+    curl -fsSL -A "$UA" -o "$d/$n" "$thumb" || true; sleep 0.15
+  done
 done
-ls -la carpet
+du -sh carpet2
