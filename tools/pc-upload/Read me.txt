@@ -1,0 +1,23 @@
+VALVE FINDER - AUTOMATIC UPLOAD
+
+Any MIDI, MusicXML or Tony .csv file you put in the "MIDI Valve Finder Songs" folder
+(or a folder inside it) is added to the website by itself, usually within a minute
+or two. The file name becomes the song's title.
+
+It only adds. Deleting or renaming a file on this computer never deletes anything
+from the website. To take a song off the website, delete it on the website.
+
+FIRST TIME
+  Double-click "Set up automatic upload" and follow the three steps it shows.
+  After that it starts by itself whenever you sign in to Windows.
+  If Windows says it protected your PC, click "More info", then "Run anyway".
+
+THE FILES HERE
+  Set up automatic upload   Run once. Run it again if the GitHub key ever expires.
+  Upload now                Uploads straight away, without waiting.
+  Stop automatic upload     Turns it off and removes the key from this computer.
+  Upload log.txt            What was added, and when.
+  upload.ps1, setup.ps1, stop.ps1   The scripts these run. Leave them here.
+
+The GitHub key is stored encrypted in your Windows account, not in this folder.
+A copy of these scripts is kept in the Valve-Finder repository under tools/pc-upload.
