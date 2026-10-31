@@ -1,0 +1,23 @@
+name: Fetch (temporary branch)
+on:
+  push:
+    branches: ["fetch/**"]
+    paths: ["fetch.sh"]
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run fetch.sh
+        run: |
+          mkdir -p fetched
+          bash fetch.sh > fetched/RUN.log 2>&1 || echo "fetch.sh exited $?" >> fetched/RUN.log
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A fetched
+          git commit -m "Fetched" || exit 0
+          git push origin HEAD:${GITHUB_REF_NAME}
