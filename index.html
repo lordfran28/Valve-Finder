@@ -40,7 +40,7 @@
   --emboss-lift:0 1px 0 rgba(255,250,235,.8),0 3px 7px rgba(70,45,10,.32);
   --textile:url("assets/textile-light.jpg");
   --textile-alpha:.12;
-  --angel:url("assets/art/angel-light.webp");--bell:url("assets/art/bell-light.webp");--art-alpha:.36;
+  --angel:url("assets/art/angel-light.webp");--trumpeter:url("assets/art/trumpeter-light.webp");--art-alpha:.36;
   --hero-alpha:.7;
   --display:"IM Fell French Canon",Garamond,"Times New Roman",serif;
   --body:"EB Garamond",Garamond,"Garamond Premier Pro",Georgia,serif;
@@ -51,7 +51,7 @@
     --bg:#0D1626;--surface:#142034;--well:#1B2840;--ink:#EFE3C8;--muted:#B6A98E;--line:#34445F;--dot-line:#7E7766;
     --brass:#D9AE55;--brass-hi:#EDCB7E;--brass-lo:#AF8434;--brass-soft:#3A3122;--on-brass:#1A1206;--blue:#9DBBEB;--blue-soft:#1E3152;
     --ok:#8CC58A;--ok-soft:#1C3322;--warn:#EE9A85;--warn-soft:#3B221D;
-    --veil:rgba(13,22,38,.93);--emboss:0 1px 0 rgba(0,0,0,.6),0 0 6px rgba(217,174,85,.12);--emboss-lift:0 1px 0 rgba(0,0,0,.7),0 0 12px rgba(217,174,85,.32);--textile:url("assets/textile-dark.jpg");--textile-alpha:.14;--angel:url("assets/art/angel-dark.webp");--bell:url("assets/art/bell-dark.webp");--art-alpha:.26;--hero-alpha:.85;color-scheme:dark;
+    --veil:rgba(13,22,38,.93);--emboss:0 1px 0 rgba(0,0,0,.6),0 0 6px rgba(217,174,85,.12);--emboss-lift:0 1px 0 rgba(0,0,0,.7),0 0 12px rgba(217,174,85,.32);--textile:url("assets/textile-dark.jpg");--textile-alpha:.14;--angel:url("assets/art/angel-dark.webp");--trumpeter:url("assets/art/trumpeter-dark.webp");--art-alpha:.26;--hero-alpha:.85;color-scheme:dark;
   }
 }
 *{box-sizing:border-box}
@@ -60,14 +60,15 @@ html{background:var(--bg);padding-top:env(safe-area-inset-top,0px);padding-botto
 body{position:relative;z-index:0;margin:0;background:var(--bg);color:var(--ink);font:400 1.08rem/1.55 var(--body);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 0}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--textile) center/cover no-repeat;opacity:var(--textile-alpha)}
-/* Two paintings, tinted into the silk: an angel with a natural trumpet (a Baroque fresco) and a modern trumpet bell in oils */
-.art{position:fixed;z-index:-1;pointer-events:none;background:no-repeat center/contain;opacity:var(--art-alpha)}
-.art-angel{left:max(-4vw,calc(50% - 23rem - 42vw));top:18vh;width:min(46vw,700px);aspect-ratio:1100/619;background-image:var(--angel)}
-.art-bell{right:max(-4vw,calc(50% - 23rem - 34vw));bottom:3vh;width:min(36vw,540px);aspect-ratio:820/789;background-image:var(--bell)}
+/* Two paintings tinted into the silk: an angel with a natural trumpet (a Baroque fresco) and Gerrit Dou's
+   Trumpet Player (c. 1660). They drift slowly upward as you scroll, slower than the page, and come round again. */
+.art{position:fixed;top:0;z-index:-1;pointer-events:none;background:no-repeat center/contain;opacity:var(--art-alpha);will-change:transform}
+.art-angel{left:max(-4vw,calc(50% - 23rem - 42vw));width:min(46vw,700px);aspect-ratio:1100/619;background-image:var(--angel);transform:translate3d(0,16vh,0)}
+.art-trumpeter{opacity:min(1,calc(var(--art-alpha)*1.35));right:max(-4vw,calc(50% - 23rem - 38vw));width:min(40vw,600px);aspect-ratio:900/811;background-image:var(--trumpeter);transform:translate3d(0,52vh,0)}
 @media (max-width:900px){
   .art{opacity:calc(var(--art-alpha)*.62)}
-  .art-angel{left:-26vw;top:auto;bottom:38vh;width:84vw}
-  .art-bell{right:-22vw;bottom:-3vh;width:72vw}
+  .art-angel{left:-26vw;width:84vw}
+  .art-trumpeter{right:-24vw;width:76vw}
 }
 .wrap{max-width:46rem;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 .view{display:flex;flex-direction:column;gap:16px}
@@ -258,7 +259,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 </style>
 </head>
 <body>
-<div class="art art-angel" aria-hidden="true"></div><div class="art art-bell" aria-hidden="true"></div>
+<div class="art art-angel" aria-hidden="true"></div><div class="art art-trumpeter" aria-hidden="true"></div>
 <div class="wrap">
   <header class="hero">
     <div class="hero-silk" aria-hidden="true"></div>
@@ -294,7 +295,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     </div>
 
     <footer class="foot">
-      <p class="credits">Clio from Vermeer's <a href="https://en.wikipedia.org/wiki/The_Art_of_Painting" target="_blank" rel="noopener">The Art of Painting</a> · Genoese silk, <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">The Met</a> · Trumpet recordings, <a href="https://theremin.music.uiowa.edu/MISBbtrumpet.html" target="_blank" rel="noopener">University of Iowa</a> · <a href="#example">Example song</a></p>
+      <p class="credits">Clio from Vermeer's <a href="https://en.wikipedia.org/wiki/The_Art_of_Painting" target="_blank" rel="noopener">The Art of Painting</a> · Genoese silk, <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">The Met</a> · Trumpet recordings, <a href="https://theremin.music.uiowa.edu/MISBbtrumpet.html" target="_blank" rel="noopener">University of Iowa</a> · The trumpeter, Gerrit Dou · <a href="#example">Example song</a></p>
     </footer>
   </section>
 
@@ -1779,6 +1780,24 @@ document.addEventListener("visibilitychange", function(){ if (document.visibilit
 Store.all().then(function(recs){
   (recs || []).forEach(function(r){ if (r.inArchive === undefined){ r.inArchive = false; r.dirty = false; delete r.inIndex; delete r.synced; delete r.sha; } cache[r.id] = r; });
 }).then(route);
+})();
+</script>
+<script>
+/* The background paintings rise at a fifth of the scroll speed; when one leaves the top, it comes back from below. */
+(function(){
+  var arts = [{el: document.querySelector(".art-angel"), base: 0.16, k: 0.2}, {el: document.querySelector(".art-trumpeter"), base: 0.58, k: 0.2}];
+  if (!arts[0].el || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+  var queued = false;
+  function place(){
+    queued = false;
+    var s = window.pageYOffset, vh = window.innerHeight;
+    arts.forEach(function(a){
+      var h = a.el.offsetHeight, P = vh + h + vh*0.35, y = ((a.base*vh + h - s*a.k) % P + P) % P - h;
+      a.el.style.transform = "translate3d(0," + y.toFixed(1) + "px,0)";
+    });
+  }
+  function soon(){ if (!queued){ queued = true; requestAnimationFrame(place); } }
+  window.addEventListener("scroll", soon, {passive: true}); window.addEventListener("resize", soon); place();
 })();
 </script>
 </body>
