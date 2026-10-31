@@ -1,22 +1,20 @@
 set -x
 cd fetched
-rm -rf sv2
-mkdir -p sv2
-pip install -q playwright >/dev/null 2>&1 && python -m playwright install --with-deps chromium >/dev/null 2>&1
-cat > shot2.py <<'PY'
-from playwright.sync_api import sync_playwright
-lat0 = 43.0530206
-shots = []
-for dlng in (-0.00025, 0.0, 0.00025):
-    lng = -91.390142 + dlng
-    for h in (315, 340, 0, 20, 45):
-        shots.append(('lng%+.5f_h%d' % (dlng, h), "https://maps.google.com/maps?q=&layer=c&cbll=%f,%f&cbp=12,%d,0,0,-4&source=embed&output=svembed" % (lat0 - 0.00008, lng, h)))
-with sync_playwright() as p:
-    b = p.chromium.launch(); pg = b.new_page(viewport={'width': 900, 'height': 520})
-    for name, u in shots:
-        pg.set_content('<html><body style="margin:0"><iframe src="%s" width="900" height="520" style="border:0"></iframe></body></html>' % u)
-        pg.wait_for_timeout(7000); pg.screenshot(path='sv2/%s.png' % name); print('ok', name)
-    b.close()
-open('sv2/urls.txt', 'w').write('\n'.join('%s %s' % s for s in shots))
-PY
-python shot2.py
+rm -rf sv sv2 soft
+mkdir -p soft/commons
+UA="KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)"
+for id in curly_teddy_natural curly_teddy_checkered faux_fur_geometric polar_fleece knitted_fleece wool_boucle velour_velvet terry_cloth caban jogging_melange; do
+  url=$(curl -fsSL -A "$UA" "https://api.polyhaven.com/files/$id" | jq -r '.Diffuse["2k"].jpg.url // empty')
+  [ -n "$url" ] && curl -fsSL -A "$UA" -o "soft/$id.jpg" "$url" || echo "none $id"
+done
+q() { curl -fsSL -A "$UA" --get "https://commons.wikimedia.org/w/api.php" --data-urlencode "action=query" --data-urlencode "format=json" --data-urlencode "generator=search" --data-urlencode "gsrnamespace=6" --data-urlencode "gsrsearch=$1 filetype:bitmap" --data-urlencode "gsrlimit=20" --data-urlencode "prop=imageinfo" --data-urlencode "iiprop=url|extmetadata|size" --data-urlencode "iiurlwidth=640" -o "soft/commons/$2.json"; }
+q "shag carpet" shag
+q "carpet pile close-up" pile
+q "sheepskin rug" sheepskin
+for f in soft/commons/*.json; do
+  jq -r '.query.pages[]? | [.title, .imageinfo[0].thumburl] | @tsv' "$f" | while IFS=$'\t' read -r title thumb; do
+    n=$(echo "$title" | sed 's/^File://; s/[^A-Za-z0-9._-]/_/g' | cut -c1-70); d="soft/commons/$(basename "$f" .json)"; mkdir -p "$d"
+    curl -fsSL -A "$UA" -o "$d/$n" "$thumb" || true; sleep 0.2
+  done
+done
+ls -la soft
