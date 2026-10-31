@@ -9,3 +9,10 @@ met-219780-silk-linen-17c.jpg https://collectionapi.metmuseum.org/api/collection
 # Full-size originals, looked up through the Met's open-access API
 met-222358-silk-metal-genoa-17-18c-original.jpg met:222358
 met-216471-green-damask-venice-genoa-17c-original.jpg met:216471
+# Fonts (SIL Open Font License), from the Fontsource packages
+fonts/eb-garamond-latin-wght-normal.woff2 https://cdn.jsdelivr.net/npm/@fontsource-variable/eb-garamond@5/files/eb-garamond-latin-wght-normal.woff2
+fonts/eb-garamond-latin-wght-italic.woff2 https://cdn.jsdelivr.net/npm/@fontsource-variable/eb-garamond@5/files/eb-garamond-latin-wght-italic.woff2
+fonts/EB-Garamond-LICENSE.txt https://cdn.jsdelivr.net/npm/@fontsource-variable/eb-garamond@5/LICENSE
+fonts/im-fell-french-canon-latin-400-normal.woff2 https://cdn.jsdelivr.net/npm/@fontsource/im-fell-french-canon@5/files/im-fell-french-canon-latin-400-normal.woff2
+fonts/im-fell-french-canon-latin-400-italic.woff2 https://cdn.jsdelivr.net/npm/@fontsource/im-fell-french-canon@5/files/im-fell-french-canon-latin-400-italic.woff2
+fonts/IM-Fell-LICENSE.txt https://cdn.jsdelivr.net/npm/@fontsource/im-fell-french-canon@5/LICENSE
