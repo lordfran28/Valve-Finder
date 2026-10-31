@@ -192,6 +192,8 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 .key{margin:0;font-size:.98rem;font-style:italic;color:var(--muted)}
 .songtools{display:flex;flex-direction:column;gap:12px}
 .toolrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.partpick{flex:1 1 9rem;max-width:15rem}
+.partpick select{min-height:2.6rem}
 .settings{background:var(--surface);border:1px solid var(--line);border-radius:3px}
 .settings > summary{cursor:pointer;padding:10px 14px;font-weight:600;font-variant-caps:all-small-caps;letter-spacing:.09em;font-size:1.08rem;color:var(--ink);list-style-position:inside}
 .settings .controls{border:0;border-top:1px solid var(--line);border-radius:0;background:transparent}
@@ -289,12 +291,12 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
     <div class="songtools">
       <div class="toolrow">
         <button type="button" id="playall" class="btn primary">Play all</button>
+        <div class="field partpick" id="partfield" hidden><label for="part" class="vh">Part</label><select id="part" aria-label="Part"></select></div>
         <p class="key">Large: trumpet note · small: concert pitch</p>
       </div>
       <details class="settings" id="settings">
         <summary>Settings</summary>
         <div class="controls">
-          <div class="field" id="partfield" hidden><label for="part">Part</label><select id="part"></select></div>
           <div class="field"><label for="pitch">File pitch</label>
             <select id="pitch">
               <option value="auto">Auto-detect</option>
@@ -480,7 +482,22 @@ function parseScore(text){
 }
 
 /* ---------- MIDI and note lists ---------- */
-function mkNote(m, t, durQ){ var sp = SPELL_FLAT[m % 12]; return {src:{step:sp[0], alter:sp[1], octave:Math.floor(m/12) - 1}, t:t, durQ:durQ, grace:false, tied:false, lyric:""}; }
+var SPELL_MIXED = [["C",0],["C",1],["D",0],["E",-1],["E",0],["F",0],["F",1],["G",0],["A",-1],["A",0],["B",-1],["B",0]];
+var GM = {0:"Piano",1:"Piano",2:"Piano",3:"Piano",4:"Electric piano",5:"Electric piano",6:"Harpsichord",7:"Clavinet",24:"Guitar",25:"Guitar",26:"Guitar",27:"Guitar",28:"Guitar",29:"Guitar",30:"Guitar",31:"Guitar",32:"Bass",33:"Bass",34:"Bass",35:"Bass",36:"Bass",37:"Bass",38:"Bass",39:"Bass",40:"Violin",41:"Viola",42:"Cello",43:"Double bass",48:"Strings",49:"Strings",52:"Choir",53:"Voice",54:"Voice",56:"Trumpet",57:"Trombone",58:"Tuba",59:"Muted trumpet",60:"French horn",61:"Brass",64:"Soprano sax",65:"Alto sax",66:"Tenor sax",67:"Baritone sax",68:"Oboe",69:"English horn",70:"Bassoon",71:"Clarinet",72:"Piccolo",73:"Flute",74:"Recorder",75:"Pan flute",79:"Ocarina"};
+function estimateFifths(ms){
+  var counts = [0,0,0,0,0,0,0,0,0,0,0,0], best = 0, bestScore = -1;
+  ms.forEach(function(m){ counts[m % 12]++; });
+  [0,1,-1,2,-2,3,-3,4,-4,5,-5,6,-6].forEach(function(k){
+    var tonic = ((7*k) % 12 + 12) % 12, sc = 0;
+    [0,2,4,5,7,9,11].forEach(function(d){ sc += counts[(tonic + d) % 12]; });
+    if (sc > bestScore){ bestScore = sc; best = k; }
+  });
+  return best;
+}
+function mkNote(m, t, durQ, fifths){
+  var table = fifths > 0 ? SPELL : fifths < 0 ? SPELL_FLAT : SPELL_MIXED, sp = table[m % 12];
+  return {src:{step:sp[0], alter:sp[1], octave:Math.floor(m/12) - 1}, t:t, durQ:durQ, grace:false, tied:false, lyric:""};
+}
 function monoReduce(ns){
   var sorted = ns.slice().sort(function(x, y){ return x.ss - y.ss || y.v - x.v || y.m - x.m; }), mono = [];
   sorted.forEach(function(n){
@@ -493,7 +510,7 @@ function monoReduce(ns){
   mono.forEach(function(n){ if (!(n.se > n.ss)){ n.se = n.ss + 0.05; if (n.s != null) n.e = n.s + 1; } });
   return mono;
 }
-function phraseMeasures(mono, bpm){
+function phraseMeasures(mono, bpm, fifths){
   var qps = bpm/60, groups = [], cur = null;
   mono.forEach(function(n, i){
     var prev = mono[i-1], gap = prev ? n.ss - prev.se : Infinity;
@@ -503,7 +520,7 @@ function phraseMeasures(mono, bpm){
   return groups.map(function(gr, i){
     var s0 = gr[0].ss, next = groups[i+1] ? groups[i+1][0].ss : gr[gr.length - 1].se;
     return {number:String(i+1), stamp:fmtTime(s0), repeatStart:false, repeatEnd:0, ending:null, len:Math.max((next - s0)*qps, 0.25),
-      notes: gr.map(function(n){ return mkNote(n.m, (n.ss - s0)*qps, (n.se - n.ss)*qps); })};
+      notes: gr.map(function(n){ return mkNote(n.m, (n.ss - s0)*qps, (n.se - n.ss)*qps, fifths); })};
   });
 }
 function parseMidi(buf){
@@ -513,12 +530,12 @@ function parseMidi(buf){
   if (buf.length < 14 || tag(0) !== "MThd") throw userErr("This MIDI file looks damaged. Download it again and add the new file.");
   var hlen = dv.getUint32(4), ntrks = dv.getUint16(10), division = dv.getUint16(12);
   if (division & 0x8000) throw userErr("This MIDI file uses SMPTE timing, which Valve Finder can't read. Export it again with normal beat-based timing.");
-  var ppq = division || 480, p = 8 + hlen, tempos = [], timeSig = null, tracks = [], found = 0;
+  var ppq = division || 480, p = 8 + hlen, tempos = [], timeSig = null, keySig = null, tracks = [], found = 0;
   while (found < ntrks && p + 8 <= buf.length){
     var len = dv.getUint32(p + 4);
     if (tag(p) !== "MTrk"){ p += 8 + len; continue; }
     found++;
-    var st = {q: p + 8, end: Math.min(buf.length, p + 8 + len)}, tick = 0, status = 0, name = "", open = {}, notes = [];
+    var st = {q: p + 8, end: Math.min(buf.length, p + 8 + len)}, tick = 0, status = 0, name = "", instr = "", program = null, open = {}, notes = [];
     while (st.q < st.end){
       tick += vlq(st);
       var s = buf[st.q];
@@ -527,7 +544,9 @@ function parseMidi(buf){
         var type = buf[st.q++], ml = vlq(st);
         if (type === 0x51 && ml >= 3) tempos.push([tick, (buf[st.q] << 16) | (buf[st.q+1] << 8) | buf[st.q+2]]);
         else if (type === 0x58 && ml >= 2 && !timeSig) timeSig = [buf[st.q], Math.pow(2, buf[st.q+1])];
+        else if (type === 0x59 && ml >= 2 && keySig === null){ keySig = buf[st.q] > 127 ? buf[st.q] - 256 : buf[st.q]; }
         else if (type === 0x03 && !name) name = new TextDecoder("windows-1252").decode(buf.subarray(st.q, st.q + ml)).trim();
+        else if (type === 0x04 && !instr) instr = new TextDecoder("windows-1252").decode(buf.subarray(st.q, st.q + ml)).trim();
         st.q += ml; status = 0;
         if (type === 0x2F) break;
       } else if (s === 0xF0 || s === 0xF7){
@@ -535,7 +554,7 @@ function parseMidi(buf){
       } else {
         status = s;
         var hi = s & 0xF0, ch = s & 0x0F;
-        if (hi === 0xC0 || hi === 0xD0){ st.q += 1; continue; }
+        if (hi === 0xC0 || hi === 0xD0){ if (hi === 0xC0 && ch !== 9 && program === null) program = buf[st.q]; st.q += 1; continue; }
         var a = buf[st.q], v = buf[st.q+1]; st.q += 2;
         if (ch === 9) continue;
         var key = ch*128 + a;
@@ -544,7 +563,11 @@ function parseMidi(buf){
       }
     }
     Object.keys(open).forEach(function(k){ open[k].forEach(function(o){ notes.push({s: o.tick, e: Math.max(tick, o.tick + ppq/4), m: k % 128, v: o.vel}); }); });
-    if (notes.length) tracks.push({name: name || ("Track " + found), notes: notes});
+    if (notes.length){
+      var gm = program !== null ? GM[program] : null, nm = name || instr || "";
+      var label = nm && gm && nm.toLowerCase().indexOf(gm.toLowerCase().split(" ").pop()) < 0 ? nm + " (" + gm.toLowerCase() + ")" : (nm || gm || ("Track " + found));
+      tracks.push({name: label, program: program, notes: notes});
+    }
     p += 8 + len;
   }
   if (!tracks.length) throw userErr("This MIDI file has no notes in it.");
@@ -562,16 +585,18 @@ function parseMidi(buf){
   var bpm = Math.round(60e6/tempos[0][1]);
   var parts = tracks.map(function(tr){
     var mono = monoReduce(tr.notes.map(function(n){ return {s:n.s, e:n.e, m:n.m, v:n.v, ss:secAt(n.s), se:secAt(n.e)}; }));
-    var g = ppq/12, tol = Math.max(1, ppq/120);
-    var hits = mono.filter(function(n){ var r = n.s % g; return Math.min(r, g - r) <= tol; }).length;
+    var tol = Math.max(1, ppq/240);
+    function onGrid(t, g){ var r = t % g; return Math.min(r, g - r) <= tol; }
+    var hits = mono.filter(function(n){ return onGrid(n.s, ppq/16) || onGrid(n.s, ppq/12); }).length;
     var quant = mono.length >= 4 && hits/mono.length >= 0.9, measures;
+    var fifths = keySig !== null ? keySig : estimateFifths(mono.map(function(n){ return n.m; }));
     if (quant){
       var ts = timeSig || [4, 4], barQ = ts[0]*4/ts[1], barT = barQ*ppq, nb = Math.floor(mono[mono.length - 1].s / barT) + 1;
       measures = [];
       for (var b=0; b<nb; b++) measures.push({number:String(b+1), notes:[], repeatStart:false, repeatEnd:0, ending:null, len:barQ});
-      mono.forEach(function(n){ var bi = Math.floor(n.s/barT); measures[bi].notes.push(mkNote(n.m, (n.s - bi*barT)/ppq, (n.e - n.s)/ppq)); });
-    } else measures = phraseMeasures(mono, bpm);
-    return {name:tr.name, measures:measures, transpose:null, tempo:bpm, unit: quant ? "Bar" : "Phrase"};
+      mono.forEach(function(n){ var bi = Math.floor(n.s/barT); measures[bi].notes.push(mkNote(n.m, (n.s - bi*barT)/ppq, (n.e - n.s)/ppq, fifths)); });
+    } else measures = phraseMeasures(mono, bpm, fifths);
+    return {name:tr.name, program:tr.program, measures:measures, transpose:null, tempo:bpm, unit: quant ? "Bar" : "Phrase"};
   });
   return {title:"", parts:parts, hasJumps:false};
 }
@@ -588,7 +613,8 @@ function parseNoteList(text){
     return {m:m, v:64, ss:r[0], se:r[0] + Math.max(r[2], 0.03)};
   }).filter(function(n){ return n.m >= 0 && n.m <= 127; });
   if (!notes.length) throw userErr("That note list has no notes Valve Finder can use.");
-  return {title:"", parts:[{name:"Note list", measures:phraseMeasures(monoReduce(notes), 120), transpose:null, tempo:120, unit:"Phrase"}], hasJumps:false};
+  var mono = monoReduce(notes);
+  return {title:"", parts:[{name:"Note list", measures:phraseMeasures(mono, 120, estimateFifths(mono.map(function(n){ return n.m; }))), transpose:null, tempo:120, unit:"Phrase"}], hasJumps:false};
 }
 function decodeText(buf){
   if (buf[0]===0xFF && buf[1]===0xFE) return new TextDecoder("utf-16le").decode(buf);
@@ -800,11 +826,18 @@ function playBars(from, to, follow){
 }
 
 /* ---------- Loading a score into the song view ---------- */
+function partScore(p){
+  var n = String(p.name || "").toLowerCase(), pr = p.program, s = 0;
+  if (/trumpet|tpt|cornet|flugel/.test(n) || pr === 56 || pr === 59) s += 100;
+  if (p.transpose && p.transpose.chrom === -2) s += 40;
+  if (/flute|violin|voice|vocal|soprano|melody|lead|solo|sax|clarinet|oboe|recorder|horn|piccolo|singer/.test(n) || (pr != null && (pr === 40 || pr === 41 || (pr >= 52 && pr <= 54) || (pr >= 56 && pr <= 79)))) s += 50;
+  if (/piano|pno|guitar|bass|drum|perc|accomp|chord|organ|harp|\bup\b|\bdown\b|left|\blh\b|\brh\b/.test(n) || (pr != null && (pr <= 7 || (pr >= 24 && pr <= 39)))) s -= 50;
+  return s;
+}
 function defaultPart(score){
-  var pi = -1;
-  score.parts.forEach(function(p, i){ if (pi < 0 && /trumpet|tpt|cornet|flugel/i.test(p.name)) pi = i; });
-  if (pi < 0) score.parts.forEach(function(p, i){ if (pi < 0 && p.transpose && p.transpose.chrom === -2) pi = i; });
-  return pi < 0 ? 0 : pi;
+  var best = 0, bestScore = -Infinity;
+  score.parts.forEach(function(p, i){ var sc = partScore(p); if (sc > bestScore){ bestScore = sc; best = i; } });
+  return best;
 }
 function countUnits(score){ var p = score.parts[defaultPart(score)]; return {count: p.measures.length, unit: p.unit || "Bar"}; }
 function readSettings(){ return {part: state.part, pitch: $("pitch").value, oct: $("oct").value, tempo: clampTempo($("tempo").value), repeats: $("repeats").checked, alts: $("alts").checked}; }
