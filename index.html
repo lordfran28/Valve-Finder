@@ -1051,6 +1051,18 @@ var GH = (function(){
   return {cfg: cfg, store: store, name: name, getFile: getFile, readIndex: readIndex, saveSongFile: saveSongFile, upsertIndex: upsertIndex, removeSong: removeSong, connect: connect};
 })();
 
+/* Anyone can read the archive when its repository is public; only a device with the key can change it. */
+var PUBLIC_ARCHIVE = {owner: "lordfran28", repo: "valve-finder-songs", branch: "main"};
+function publicFetch(path){
+  var a = PUBLIC_ARCHIVE;
+  return fetch("https://raw.githubusercontent.com/" + a.owner + "/" + a.repo + "/" + a.branch + "/" + path + "?v=" + Date.now(), {cache: "no-store"})
+    .then(function(r){ return r.ok ? r.text() : null; }).catch(function(){ return null; });
+}
+function isAdmin(){ return !!GH.cfg(); }
+function recFromFile(o, id, sha){
+  return {id: o.id || id, title: o.title || "Untitled song", fileName: o.fileName, kind: o.kind, addedAt: o.addedAt, updatedAt: o.updatedAt, units: o.units, settings: o.settings, data: o.data, synced: true, inIndex: true, sha: sha || null};
+}
+
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
 function metaOf(rec){ return {id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, units: rec.units}; }
@@ -1100,7 +1112,17 @@ function renderLibrary(){
 }
 function syncLibrary(){
   var c = GH.cfg();
-  if (!c){ remoteMetas = []; setSync("local"); renderLibrary(); return Promise.resolve(); }
+  if (!c){
+    setSync("local"); renderLibrary();
+    return publicFetch("index.json").then(function(t){
+      var ix = null; try { ix = t ? JSON.parse(t) : null; } catch(e){}
+      remoteMetas = ix && Array.isArray(ix.songs) ? ix.songs : [];
+      (ix && Array.isArray(ix.deleted) ? ix.deleted : []).forEach(function(id){
+        if (cache[id] && cache[id].inIndex){ delete cache[id]; Store.del(id); }
+      });
+      if (!$("view-library").hidden) renderLibrary();
+    });
+  }
   setSync("busy");
   return enqueue(function(){
     return GH.readIndex(c).then(function(ix){
@@ -1156,8 +1178,9 @@ function showView(v){
 }
 function showRecord(rec){
   state.rec = rec;
-  setTitle(rec.title, false);
-  $("dangerzone").hidden = false; $("delask").hidden = true;
+  var locked = !isAdmin() && rec.inIndex;
+  setTitle(rec.title, locked);
+  $("dangerzone").hidden = locked; $("delask").hidden = true;
   return parseBytes(b64ToBytes(rec.data)).then(function(res){
     if (state.rec !== rec) return;
     loadScore(res.score, rec.settings);
@@ -1182,12 +1205,13 @@ function openSong(id){
   var c = GH.cfg();
   state.rec = null;
   setTitle("", true); $("bars").innerHTML = ""; $("strip").textContent = ""; $("fmeta").textContent = "";
-  if (!c){ var m = $("error"); m.textContent = "This song isn't on this device. Turn on GitHub backup to download your songs here."; m.hidden = false; return; }
-  songMsg("Downloading from GitHub…");
-  return enqueue(function(){ return GH.getFile(c, "songs/" + id + ".json"); }).then(function(f){
-    if (!f) throw userErr("This song isn't in your GitHub archive anymore.");
+  songMsg("Opening\u2026");
+  var get = c ? enqueue(function(){ return GH.getFile(c, "songs/" + id + ".json"); })
+              : publicFetch("songs/" + id + ".json").then(function(t){ return t ? {text: t, sha: null} : null; });
+  return get.then(function(f){
+    if (!f) throw userErr("This song isn't in your archive anymore.");
     var o = JSON.parse(f.text);
-    var rec = {id: o.id || id, title: o.title || "Untitled song", fileName: o.fileName, kind: o.kind, addedAt: o.addedAt, updatedAt: o.updatedAt, units: o.units, settings: o.settings, data: o.data, synced: true, inIndex: true, sha: f.sha};
+    var rec = recFromFile(o, id, f.sha);
     cache[rec.id] = rec;
     songMsg("");
     return Store.put(rec).then(function(){ if (location.hash === "#song-" + id) return showRecord(rec); });
@@ -1203,7 +1227,9 @@ function openExample(){
 }
 function scheduleSave(indexToo){
   var rec = state.rec; if (!rec) return;
-  rec.settings = readSettings(); rec.updatedAt = new Date().toISOString(); rec.synced = false;
+  rec.settings = readSettings();
+  if (!isAdmin() && rec.inIndex){ Store.put(rec); return; }
+  rec.updatedAt = new Date().toISOString(); rec.synced = false;
   if (indexToo) pendingIndex = true;
   Store.put(rec);
   setSave(GH.cfg() ? "saving" : "local");
