@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-10-31T06:02:52Z",
+ "generatedAt": "2026-10-31T06:17:50Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -49,6 +49,14 @@
    "kind": "MIDI",
    "sha1": "306ca4dc3e8732bc40886af94c71ab714a8fb75e",
    "addedAt": "2026-10-31T06:02:42Z"
+  },
+  {
+   "id": "jackie-g-i-ll-be-seeing-you-db-major",
+   "file": "songs/Jackie G I'll Be Seeing You Db major.mid",
+   "title": "Jackie G I'll Be Seeing You Db major",
+   "kind": "MIDI",
+   "sha1": "95d13321a574953ecfa71e24e4b5e3b1da4ac4c8",
+   "addedAt": "2026-10-31T06:17:41Z"
   }
  ]
 }
