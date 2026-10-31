@@ -1,31 +1,22 @@
 + cd fetched
-+ rm -rf old sv
-+ mkdir -p sv
-+ UA='KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)'
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://nominatim.openstreetmap.org/search --data-urlencode 'q=112 West Center Street, Monona, Iowa 52159' --data-urlencode format=jsonv2 --data-urlencode addressdetails=1 -o sv/geo1.json
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://nominatim.openstreetmap.org/search --data-urlencode 'q=Knockel'\''s Floor Covering, Monona, Iowa' --data-urlencode format=jsonv2 -o sv/geo2.json
-+ curl -fsSL -A 'KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)' --get https://nominatim.openstreetmap.org/search --data-urlencode 'street=112 W Center St' --data-urlencode city=Monona --data-urlencode state=Iowa --data-urlencode format=jsonv2 -o sv/geo3.json
-+ cat sv/geo1.json sv/geo2.json sv/geo3.json
-[{"place_id":415096156,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":15864256,"lat":"43.0530206","lon":"-91.3901420","category":"place","type":"house","place_rank":30,"importance":9.99999999995449e-06,"addresstype":"place","name":"","display_name":"112, West Center Street, Monona, Monona Township, Clayton County, Iowa, 52159, United States","address":{"house_number":"112","road":"West Center Street","village":"Monona","municipality":"Monona Township","county":"Clayton County","state":"Iowa","ISO3166-2-lvl4":"US-IA","postcode":"52159","country":"United States","country_code":"us"},"boundingbox":["43.0529706","43.0530706","-91.3901920","-91.3900920"]}][][{"place_id":415096156,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":15864256,"lat":"43.0530206","lon":"-91.3901420","category":"place","type":"house","place_rank":30,"importance":9.99999999995449e-06,"addresstype":"place","name":"","display_name":"112, West Center Street, Monona, Monona Township, Clayton County, Iowa, 52159, United States","boundingbox":["43.0529706","43.0530706","-91.3901920","-91.3900920"]}]+ pip install -q playwright
++ rm -rf sv2
++ mkdir -p sv2
++ pip install -q playwright
 + python -m playwright install --with-deps chromium
 + cat
-+ python shot.py
-geo (43.0530206, -91.390142)
-ok legacy_h0
-ok legacy_h90
-ok legacy_h180
-ok legacy_h270
-ok place_embed
-+ ls -la sv
-total 3548
-drwxr-xr-x 2 runner runner   4096 Oct 31 09:00 .
-drwxr-xr-x 3 runner runner   4096 Oct 31 09:00 ..
--rw-r--r-- 1 runner runner    721 Oct 31 08:59 geo1.json
--rw-r--r-- 1 runner runner      2 Oct 31 08:59 geo2.json
--rw-r--r-- 1 runner runner    477 Oct 31 08:59 geo3.json
--rw-r--r-- 1 runner runner 939111 Oct 31 09:00 legacy_h0.png
--rw-r--r-- 1 runner runner 660124 Oct 31 09:00 legacy_h180.png
--rw-r--r-- 1 runner runner 661002 Oct 31 09:00 legacy_h270.png
--rw-r--r-- 1 runner runner 659296 Oct 31 09:00 legacy_h90.png
--rw-r--r-- 1 runner runner 676573 Oct 31 09:00 place_embed.png
--rw-r--r-- 1 runner runner    674 Oct 31 09:00 urls.json
++ python shot2.py
+ok lng-0.00025_h315
+ok lng-0.00025_h340
+ok lng-0.00025_h0
+ok lng-0.00025_h20
+ok lng-0.00025_h45
+ok lng+0.00000_h315
+ok lng+0.00000_h340
+ok lng+0.00000_h0
+ok lng+0.00000_h20
+ok lng+0.00000_h45
+ok lng+0.00025_h315
+ok lng+0.00025_h340
+ok lng+0.00025_h0
+ok lng+0.00025_h20
+ok lng+0.00025_h45
