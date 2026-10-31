@@ -36,6 +36,8 @@
   --warn:#9C3424;
   --warn-soft:#F6DFD7;
   --veil:rgba(239,230,210,.94);
+  --emboss:0 1px 0 rgba(255,250,235,.7),0 2px 3px rgba(70,45,10,.22);
+  --emboss-lift:0 1px 0 rgba(255,250,235,.8),0 3px 7px rgba(70,45,10,.32);
   --textile:url("assets/textile-light.jpg");
   --textile-alpha:.12;
   --hero-alpha:.7;
@@ -48,7 +50,7 @@
     --bg:#0D1626;--surface:#142034;--well:#1B2840;--ink:#EFE3C8;--muted:#B6A98E;--line:#34445F;--dot-line:#7E7766;
     --brass:#D9AE55;--brass-hi:#EDCB7E;--brass-lo:#AF8434;--brass-soft:#3A3122;--on-brass:#1A1206;--blue:#9DBBEB;--blue-soft:#1E3152;
     --ok:#8CC58A;--ok-soft:#1C3322;--warn:#EE9A85;--warn-soft:#3B221D;
-    --veil:rgba(13,22,38,.93);--textile:url("assets/textile-dark.jpg");--textile-alpha:.14;--hero-alpha:.85;color-scheme:dark;
+    --veil:rgba(13,22,38,.93);--emboss:0 1px 0 rgba(0,0,0,.6),0 0 6px rgba(217,174,85,.12);--emboss-lift:0 1px 0 rgba(0,0,0,.7),0 0 12px rgba(217,174,85,.32);--textile:url("assets/textile-dark.jpg");--textile-alpha:.14;--hero-alpha:.85;color-scheme:dark;
   }
 }
 *{box-sizing:border-box}
@@ -96,22 +98,23 @@ a{color:var(--brass)}
 
 /* Library */
 .libhead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.btn,.filebtn{display:inline-flex;align-items:center;justify-content:center;min-height:2.6rem;font:600 1.1rem/1.2 var(--body);font-variant-caps:all-small-caps;letter-spacing:.09em;border-radius:3px;padding:6px 18px;cursor:pointer;border:1px solid var(--brass);background-color:transparent;color:var(--brass);text-decoration:none;user-select:none;-webkit-tap-highlight-color:transparent;
-  transition:background-color .4s ease,color .4s ease,border-color .4s ease,box-shadow .4s ease,filter .4s ease,transform .12s ease}
-.btn:hover{background-color:var(--brass-soft)}
-.btn.primary,.filebtn{color:var(--on-brass);border-color:var(--brass-lo);background:linear-gradient(180deg,var(--brass-hi) 0%,var(--brass) 52%,var(--brass-lo) 100%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.3),inset 0 -1px 0 rgba(0,0,0,.18),0 1px 3px rgba(40,25,5,.28)}
-.btn.primary:hover,.filebtn:hover{filter:brightness(1.1) saturate(1.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.18),0 2px 6px rgba(40,25,5,.3)}
-.btn:active,.filebtn:active{transform:translateY(1px);box-shadow:inset 0 2px 4px rgba(0,0,0,.28)}
-.btn.quiet{border-color:var(--line);color:var(--ink)}
-.btn.danger{border-color:var(--warn);color:var(--warn)}
-.btn.link{border-color:transparent;background:none;box-shadow:none;padding-inline:0;min-height:0;color:var(--muted)}
-.btn.link:hover{color:var(--warn);background:none}
-.btn[disabled]{opacity:.6;cursor:progress}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:2.6rem;padding:4px 2px;cursor:pointer;border:0;border-radius:0;
+  font:400 1.3rem/1.1 var(--display);color:var(--brass);text-decoration:none;user-select:none;-webkit-tap-highlight-color:transparent;
+  background:linear-gradient(currentColor,currentColor) left calc(100% - 6px)/0 1px no-repeat;
+  text-shadow:var(--emboss);opacity:.68;
+  transition:opacity .7s ease,background-size .7s ease,text-shadow .7s ease,color .4s ease}
+.btn:hover,.btn:focus-visible,.btn.on{opacity:1;background-size:100% 1px;text-shadow:var(--emboss-lift)}
+.btn:active{opacity:.85}
+.btn.primary{font-size:1.55rem}
+.btn.quiet{color:var(--ink)}
+.btn.danger,.btn.link:hover{color:var(--warn)}
+.btn.link{font-size:1.1rem;color:var(--muted)}
+.btn[disabled]{opacity:.4;cursor:progress}
+.barplay{min-height:2.2rem;font-size:1.2rem;font-style:italic}
 .addlink{font-family:var(--display);font-size:1.6rem;line-height:1.1;color:var(--brass);cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;
-  opacity:.62;padding:4px 2px;background:linear-gradient(var(--brass),var(--brass)) left bottom/0 1px no-repeat;
+  text-shadow:var(--emboss);opacity:.62;padding:4px 2px;background:linear-gradient(var(--brass),var(--brass)) left bottom/0 1px no-repeat;
   transition:opacity .7s ease,background-size .7s ease}
-.addlink:hover,.libhead:focus-within .addlink{opacity:1;background-size:100% 1px}
+.addlink:hover,.libhead:focus-within .addlink{opacity:1;background-size:100% 1px;text-shadow:var(--emboss-lift)}
 .addlink:active{opacity:.85}
 .libhead:focus-within .addlink{outline:2px solid var(--blue);outline-offset:4px}
 .syncline{margin:0;font-size:1rem;color:var(--muted);display:flex;gap:8px;align-items:baseline}
@@ -175,13 +178,12 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 .bar-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;min-width:0}
 .bar-title h3{font-family:var(--body);font-weight:600;font-size:1.15rem;font-variant-numeric:lining-nums}
 .bar-meta{font-style:italic;font-size:.98rem;color:var(--muted);font-variant-numeric:lining-nums tabular-nums}
-.cap{flex:0 0 auto;width:2.6rem;height:2.6rem;border-radius:50%;padding:0;cursor:pointer;display:grid;place-items:center;color:rgba(74,54,26,.6);
-  border:3px solid var(--brass);background:#efe6dc url("assets/pearl.jpg") center/cover;
-  box-shadow:0 0 0 1px var(--brass-lo),0 2px 0 1px var(--brass-lo),0 4px 7px rgba(30,20,5,.28),inset 0 3px 4px rgba(255,255,255,.6),inset 0 -4px 6px rgba(70,45,15,.22);
-  transition:transform .12s ease,box-shadow .3s ease,filter .4s ease;-webkit-tap-highlight-color:transparent}
-.cap:hover{filter:brightness(1.07)}
-.cap:active,.cap.down{transform:translateY(2px);box-shadow:0 0 0 1px var(--brass-lo),0 0 0 1px var(--brass-lo),0 1px 2px rgba(30,20,5,.3),inset 0 2px 3px rgba(255,255,255,.45),inset 0 -2px 5px rgba(70,45,15,.28)}
-.cap svg{width:11px;height:11px;margin-left:2px}
+.nowplaying{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:16px;pointer-events:none;
+  padding:22px max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+  background:linear-gradient(to top,var(--bg) 0%,var(--bg) 58%,transparent 100%);opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+.nowplaying.on{opacity:1;transform:none}
+.nowplaying.on .btn{pointer-events:auto;opacity:1}
+.nowpos{font-style:italic;color:var(--muted);font-size:1.05rem;font-variant-numeric:lining-nums}
 .play{display:inline-flex;align-items:center;gap:6px;font:600 1rem/1.2 var(--body);font-variant-caps:all-small-caps;letter-spacing:.07em;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:3px;padding:4px 11px;cursor:pointer}
 .notes{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .note{width:4.5rem;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 8px;border-radius:3px;border:1px solid transparent;background:var(--well);color:var(--ink);font:inherit;cursor:pointer;text-align:center}
@@ -297,7 +299,7 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 
     <div class="songtools">
       <div class="toolrow">
-        <button type="button" id="playall" class="btn primary">Play all</button>
+        <button type="button" id="playall" class="btn primary" data-label="Play all">Play all</button>
         <div class="field partpick" id="partfield" hidden><label for="part" class="vh">Part</label><select id="part" aria-label="Part"></select></div>
         <p class="key">Large: trumpet note · small: concert pitch</p>
       </div>
@@ -344,6 +346,7 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
   </section>
 </div>
 <div class="silk-band" aria-hidden="true"></div>
+<div id="nowplaying" class="nowplaying" aria-hidden="true"><span id="nowpos" class="nowpos"></span><button type="button" id="stopbtn" class="btn primary">Stop</button></div>
 
 <script>
 (function(){
@@ -758,7 +761,7 @@ function render(){
     if (item.pass > 1) meta.push(ordinal(item.pass) + " time");
     html.push('<section class="bar" aria-label="' + unit + " " + (bi+1) + '"><div class="bar-head"><div class="bar-title"><h3>' + unit + " " + (bi+1) + "</h3>" +
       (meta.length ? '<span class="bar-meta">' + esc(meta.join(" · ")) + "</span>" : "") + "</div>" +
-      (notes.length ? '<button type="button" class="cap" data-play="' + bi + '" aria-label="Play ' + unitL + " " + (bi+1) + '" title="Play ' + unitL + " " + (bi+1) + '">' + PLAY_ICON + "</button>" : "") +
+      (notes.length ? '<button type="button" class="btn barplay" data-play="' + bi + '" data-label="Play" aria-label="Play ' + unitL + " " + (bi+1) + '">Play</button>' : "") +
       "</div>" + (cells.length ? '<div class="notes">' + cells.join("") + "</div>" : '<p class="rest">Rest</p>') + "</section>");
   });
   state.bars = bars;
@@ -770,52 +773,100 @@ function render(){
   $("jumps").hidden = !score.hasJumps;
 }
 
-/* ---------- Sound ---------- */
+/* ---------- Sound ----------
+   Notes are scheduled a little ahead of time on the audio clock (never all at once),
+   so long pieces don't overload a phone and Stop silences everything immediately. */
 function audio(){
-  if (!ctx){ var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null; ctx = new AC(); }
-  if (ctx.state === "suspended") ctx.resume();
+  if (!ctx){
+    var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
+    try { if (navigator.audioSession) navigator.audioSession.type = "playback"; } catch(e){}
+    ctx = new AC({latencyHint: "playback"});
+  }
   return ctx;
 }
-function tone(out, midi, when, dur){
+function tone(r, midi, when, dur){
   var o = ctx.createOscillator(), f = ctx.createBiquadFilter(), g = ctx.createGain();
   o.type = "sawtooth"; o.frequency.value = 440*Math.pow(2, (midi-69)/12);
   f.type = "lowpass"; f.frequency.value = 1800; f.Q.value = 0.7;
-  var d = Math.max(0.09, dur*0.94);
+  var d = Math.max(0.1, dur*0.94), peak = 0.18;
   g.gain.setValueAtTime(0.0001, when);
-  g.gain.exponentialRampToValueAtTime(0.2, when + 0.03);
-  g.gain.setValueAtTime(0.2, when + Math.max(0.04, d - 0.06));
+  g.gain.exponentialRampToValueAtTime(peak, when + 0.03);
+  g.gain.setValueAtTime(peak, when + Math.max(0.035, d - 0.06));
   g.gain.exponentialRampToValueAtTime(0.0001, when + d);
-  o.connect(f); f.connect(g); g.connect(out);
-  o.start(when); o.stop(when + d + 0.02);
+  o.connect(f); f.connect(g); g.connect(r.out);
+  o.start(when); o.stop(when + d + 0.03);
+  r.live.push(o);
+  o.onended = function(){ var i = r.live.indexOf(o); if (i >= 0) r.live.splice(i, 1); try { g.disconnect(); } catch(e){} };
 }
 function clearPlaying(){ var ps = document.querySelectorAll(".note.playing"); for (var i=0;i<ps.length;i++) ps[i].classList.remove("playing"); }
-function stopRun(){
-  if (!run) return;
-  run.timers.forEach(clearTimeout);
-  try { run.out.disconnect(); } catch(e) {}
-  clearPlaying();
-  if (run.cap) run.cap.classList.remove("down");
-  run = null;
-  $("playall").textContent = "Play all";
+function setNowPlaying(on, label){
+  var np = $("nowplaying");
+  np.classList.toggle("on", !!on);
+  np.setAttribute("aria-hidden", on ? "false" : "true");
+  $("nowpos").textContent = label || "";
 }
-function startRun(ev, follow){
+function stopRun(){
+  var r = run; if (!r) return;
+  run = null;
+  clearInterval(r.timer); cancelAnimationFrame(r.raf);
+  var now = ctx ? ctx.currentTime : 0;
+  r.live.slice().forEach(function(o){ try { o.stop(now); } catch(e){} });
+  try { r.out.gain.setTargetAtTime(0, now, 0.01); } catch(e){}
+  setTimeout(function(){ try { r.out.disconnect(); } catch(e){} }, 120);
+  clearPlaying();
+  if (r.btn){ r.btn.textContent = r.btn.getAttribute("data-label") || "Play"; r.btn.classList.remove("on"); }
+  setNowPlaying(false);
+}
+function schedule(){
+  var r = run; if (!r || !ctx) return;
+  var horizon = ctx.currentTime + 1.5;
+  while (r.i < r.ev.length && r.t0 + r.ev[r.i].when < horizon){
+    var x = r.ev[r.i++];
+    tone(r, x.midi, Math.max(r.t0 + x.when, ctx.currentTime + 0.01), x.dur);
+  }
+}
+function tick(){
+  var r = run; if (!r) return;
+  var now = ctx.currentTime - r.t0;
+  while (r.h < r.ev.length && r.ev[r.h].when <= now) r.h++;
+  var cur = r.ev[r.h - 1];
+  if (cur && cur.el !== r.lastEl){
+    if (r.lastEl) r.lastEl.classList.remove("playing");
+    if (cur.el){
+      cur.el.classList.add("playing");
+      var bar = cur.el.closest(".bar");
+      if (bar && bar !== r.lastBar){
+        r.lastBar = bar;
+        if (r.long) setNowPlaying(true, bar.querySelector("h3") ? bar.querySelector("h3").textContent : "");
+        if (r.follow && Date.now() - r.userAt > 3000) bar.scrollIntoView({block: "center", behavior: reduceMotion ? "auto" : "smooth"});
+      }
+    }
+    r.lastEl = cur.el;
+  }
+  if (now > r.end + 0.25){ stopRun(); return; }
+  r.raf = requestAnimationFrame(tick);
+}
+function startRun(ev, opts){
+  opts = opts || {};
   stopRun();
   var c = audio(); if (!c || !ev.length) return;
-  var out = c.createGain(); out.gain.value = 1; out.connect(c.destination);
-  var t0 = c.currentTime + 0.08, timers = [], lastBar = null;
-  ev.forEach(function(x){
-    tone(out, x.midi, t0 + x.when, x.dur);
-    if (x.el) timers.push(setTimeout(function(){
-      clearPlaying(); x.el.classList.add("playing");
-      if (follow){ var bar = x.el.closest(".bar"); if (bar && bar !== lastBar){ lastBar = bar; bar.scrollIntoView({block:"nearest", behavior: reduceMotion ? "auto" : "smooth"}); } }
-    }, (x.when + 0.08)*1000));
-  });
-  var end = ev.reduce(function(a, x){ return Math.max(a, x.when + x.dur); }, 0);
-  timers.push(setTimeout(stopRun, (end + 0.35)*1000));
-  run = {out:out, timers:timers, follow:follow};
-  if (follow) $("playall").textContent = "Stop";
+  var r = {ev: ev, i: 0, h: 0, live: [], follow: !!opts.follow, long: !!opts.long, btn: opts.btn || null, lastEl: null, lastBar: null, userAt: 0,
+           end: ev.reduce(function(a, x){ return Math.max(a, x.when + x.dur); }, 0)};
+  run = r;
+  if (r.btn){ r.btn.textContent = "Stop"; r.btn.classList.add("on"); }
+  if (r.long) setNowPlaying(true, "");
+  function go(){
+    if (run !== r) return;
+    r.out = c.createGain(); r.out.gain.value = 1; r.out.connect(c.destination);
+    var lead = Math.max(0.12, (c.baseLatency || 0) + (c.outputLatency || 0) + 0.06);
+    r.t0 = c.currentTime + lead;
+    schedule();
+    r.timer = setInterval(schedule, 120);
+    r.raf = requestAnimationFrame(tick);
+  }
+  if (c.state !== "running") c.resume().then(go, go); else go();
 }
-function playBars(from, to, follow){
+function playBars(from, to, opts){
   var spq = 60/clampTempo($("tempo").value), ev = [], off = 0, last = null;
   for (var b=from; b<=to; b++){
     var bar = state.bars[b];
@@ -823,14 +874,18 @@ function playBars(from, to, follow){
       var el = document.querySelector('.note[data-b="' + b + '"][data-n="' + ni + '"]');
       var dur = n.grace ? 0.09 : Math.max(0.09, n.durQ*spq);
       var when = off + n.t*spq;
+      if (!isFinite(when) || !isFinite(dur)) return;
       if (n.tied && last){ last.dur = when + dur - last.when; return; }
       last = {midi:n.concert, when:when, dur:dur, el:el};
       ev.push(last);
     });
-    off += Math.max(bar.len, 0.25)*spq;
+    off += Math.max(bar.len || 0, 0.25)*spq;
   }
-  startRun(ev, follow);
+  startRun(ev, opts);
 }
+["wheel", "touchstart", "touchmove", "keydown"].forEach(function(t){
+  window.addEventListener(t, function(){ if (run) run.userAt = Date.now(); }, {passive: true});
+});
 
 /* ---------- Loading a score into the song view ---------- */
 function partScore(p){
@@ -1260,21 +1315,22 @@ $("bars").addEventListener("click", function(e){
   var pb = e.target.closest("[data-play]");
   if (pb){
     var b = parseInt(pb.getAttribute("data-play"), 10);
-    if (run && run.cap === pb){ stopRun(); return; }
-    playBars(b, b, false);
-    if (run){ run.cap = pb; pb.classList.add("down"); }
+    if (run && run.btn === pb){ stopRun(); return; }
+    playBars(b, b, {btn: pb, long: true});
     return;
   }
   var nb = e.target.closest(".note");
   if (nb){
     var n = state.bars[parseInt(nb.getAttribute("data-b"), 10)].notes[parseInt(nb.getAttribute("data-n"), 10)];
-    startRun([{midi:n.concert, when:0, dur:0.7, el:nb}], false);
+    startRun([{midi:n.concert, when:0, dur:0.7, el:nb}], {});
   }
 });
 $("playall").addEventListener("click", function(){
-  if (run && run.follow){ stopRun(); return; }
-  if (state.bars.length) playBars(0, state.bars.length - 1, true);
+  if (run && run.btn === $("playall")){ stopRun(); return; }
+  if (state.bars.length) playBars(0, state.bars.length - 1, {btn: $("playall"), follow: true, long: true});
 });
+$("stopbtn").addEventListener("click", stopRun);
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && run) stopRun(); });
 $("copy").addEventListener("click", function(){
   var btn = $("copy"), text = $("strip").textContent;
   function reset(){ setTimeout(function(){ btn.textContent = "Copy"; }, 2000); }
