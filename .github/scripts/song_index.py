@@ -4,7 +4,7 @@
 Every MIDI, MusicXML or Tony .csv file anywhere under songs/ is a song. A file may have a
 companion "<file>.vf.json", written by the site, holding its title, settings and playing notes.
 """
-import datetime, json, os, re, subprocess, unicodedata
+import datetime, hashlib, json, os, re, subprocess, unicodedata
 
 ROOT = "songs"
 KINDS = {".mid": "MIDI", ".midi": "MIDI", ".musicxml": "MusicXML", ".xml": "MusicXML", ".mxl": "MusicXML", ".csv": "Note list"}
@@ -30,6 +30,11 @@ def utc(stamp):
         return d.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     except ValueError:
         return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def sha1(path):
+    with open(path, "rb") as f:
+        return hashlib.sha1(f.read()).hexdigest()
 
 
 def slug(text):
@@ -64,6 +69,7 @@ def main():
                 "file": path,
                 "title": str(side.get("title") or stem.replace("_", " ").strip() or "Untitled song"),
                 "kind": KINDS[ext.lower()],
+                "sha1": sha1(path),
                 "addedAt": utc(side.get("addedAt") or first_added(path)),
             }
             units = side.get("units")

@@ -175,6 +175,7 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 .bars{display:flex;flex-direction:column;gap:10px}
 .bar{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:10px 12px 12px}
 .bar-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.barplays{display:flex;align-items:center;gap:2px 14px;flex-wrap:wrap;justify-content:flex-end}
 .bar-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;min-width:0}
 .bar-title h3{font-family:var(--body);font-weight:600;font-size:1.15rem;font-variant-numeric:lining-nums}
 .bar-meta{font-style:italic;font-size:.98rem;color:var(--muted);font-variant-numeric:lining-nums tabular-nums}
@@ -779,7 +780,8 @@ function render(){
     if (item.pass > 1) meta.push(ordinal(item.pass) + " time");
     html.push('<section class="bar" aria-label="' + unit + " " + (bi+1) + '"><div class="bar-head"><div class="bar-title"><h3>' + unit + " " + (bi+1) + "</h3>" +
       (meta.length ? '<span class="bar-meta">' + esc(meta.join(" · ")) + "</span>" : "") + "</div>" +
-      (notes.length ? '<button type="button" class="btn barplay" data-play="' + bi + '" data-label="Play" aria-label="Play ' + unitL + " " + (bi+1) + '">Play</button>' : "") +
+      '<div class="barplays">' + (notes.length ? '<button type="button" class="btn barplay" data-play="' + bi + '" data-label="Play" aria-label="Play ' + unitL + " " + (bi+1) + '">Play</button>' : "") +
+      (bi < seq.length - 1 ? '<button type="button" class="btn barplay" data-from="' + bi + '" data-label="Play from here" aria-label="Play from ' + unitL + " " + (bi+1) + ' to the end">Play from here</button>' : "") + "</div>" +
       "</div>" + (cells.length ? '<div class="notes">' + cells.join("") + "</div>" : '<p class="rest">Rest</p>') + "</section>");
   });
   state.bars = bars;
@@ -1134,6 +1136,17 @@ function buildEvents(from, to){
     });
     off += Math.max(bar.len || 0, 0.25)*spq;
   }
+  /* Playing on through many bars: rests of up to two bars are kept as written; longer ones (a part
+     that waits through an intro or a solo) shrink to one bar, and an empty start shrinks to a beat. */
+  if (to > from && ev.length){
+    var cut = 0, end = 0, longRest = Math.max(3, 8*spq), keep = Math.max(1.5, 4*spq);
+    ev.forEach(function(x, i){
+      x.when -= cut;
+      var gap = x.when - end, limit = i ? keep : spq;
+      if (gap > (i ? longRest : 2*spq)){ cut += gap - limit; x.when -= gap - limit; }
+      end = Math.max(end, x.when + x.dur);
+    });
+  }
   return linkEvents(ev);
 }
 function playBars(from, to, opts){ startRun(buildEvents(from, to), opts); }
@@ -1314,6 +1327,13 @@ function saveSidecar(rec){
 }
 function pushSong(rec){
   if (rec.inArchive) return rec.dirty ? saveSidecar(rec) : Promise.resolve();
+  var twin = rec.dupOf && archive.filter(function(m){ return m.id === rec.dupOf; })[0];
+  if (twin){
+    /* The same file is already in the songs folder: keep this device's title, settings and notes on it. */
+    if (titleKey(rec.title) === titleKey(String(rec.fileName || "").replace(/\.[^.]+$/, ""))) rec.title = twin.title;
+    rec.file = twin.file; rec.inArchive = true; rec.archivedAt = new Date().toISOString(); rec.dirty = true; delete rec.dupOf;
+    return saveSidecar(rec);
+  }
   var path = rec.file || pickPath(rec);
   rec.file = path;
   return Owner.putRetry(path, rec.data, "Add " + rec.title, null).then(function(){
@@ -1330,16 +1350,21 @@ function setSync(kind, msg){
   t.textContent = kind === "busy" ? "Saving to the site…" : (msg || "");
 }
 function titleKey(t){ return String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, ""); }
+function shaOf(rec){
+  if (rec.sha1 || !(window.crypto && crypto.subtle)) return Promise.resolve(rec.sha1 || null);
+  return crypto.subtle.digest("SHA-1", b64ToBytes(rec.data)).then(function(h){
+    rec.sha1 = Array.prototype.map.call(new Uint8Array(h), function(b){ return ("0" + b.toString(16)).slice(-2); }).join("");
+    Store.put(rec); return rec.sha1;
+  }).catch(function(){ return null; });
+}
 function renderLibrary(){
-  var list = [], seen = {}, archTitles = {};
-  archive.forEach(function(m){ archTitles[titleKey(m.title)] = 1; });
-  archive.forEach(function(m){ seen[m.id] = 1; list.push({rec: cache[m.id] || null, meta: cache[m.id] || m}); });
-  Object.keys(cache).forEach(function(id){
-    var r = cache[id];
-    if (seen[id]) return;
-    if (!r.inArchive && !isOwner() && archTitles[titleKey(r.title)]) return;
-    list.push({rec: r, meta: r});
+  var list = [], seen = {}, twins = {}, claimed = {};
+  Object.keys(cache).forEach(function(id){ var r = cache[id]; if (r.dupOf) twins[r.dupOf] = 1; if (r.inArchive && r.file) claimed[r.file] = id; });
+  archive.forEach(function(m){
+    seen[m.id] = 1;
+    if (cache[m.id] || (!twins[m.id] && !(claimed[m.file] && claimed[m.file] !== m.id))) list.push({rec: cache[m.id] || null, meta: cache[m.id] || m});
   });
+  Object.keys(cache).forEach(function(id){ if (!seen[id]) list.push({rec: cache[id], meta: cache[id]}); });
   list.sort(function(a, b){ return String(b.meta.addedAt).localeCompare(String(a.meta.addedAt)); });
   var q = $("search").value.trim().toLowerCase();
   $("searchwrap").hidden = list.length < 6;
@@ -1363,9 +1388,16 @@ function syncLibrary(){
       var gone = goneList(), now = Date.now();
       archive = (Array.isArray(ix.songs) ? ix.songs : []).filter(function(m){ return m && m.id && m.file && !(gone[m.id] && now - gone[m.id] < 36e5); });
       archiveAt = ix.generatedAt || null;
-      var listed = {}; archive.forEach(function(m){ listed[m.id] = m; });
+      var listed = {}, byFile = {}; archive.forEach(function(m){ listed[m.id] = m; byFile[m.file] = m; });
       Object.keys(cache).forEach(function(id){
         var r = cache[id];
+        if (!listed[id] && r.inArchive && r.file && byFile[r.file]){
+          /* Same song, new id (its notes were saved from another device): follow the new id. */
+          var nid = byFile[r.file].id;
+          delete cache[id]; Store.del(id);
+          if (!cache[nid]){ r.id = nid; cache[nid] = r; Store.put(r); }
+          return;
+        }
         if (listed[id]){ if (!r.dirty && listed[id].title) r.title = listed[id].title; if (!r.file) r.file = listed[id].file; r.inArchive = true; return; }
         /* Not listed: either too new for the list, or deleted elsewhere. Only a missing file settles it. */
         if (r.inArchive && !r.dirty && r.file && now - Date.parse(r.archivedAt || 0) > 15 * 6e4){
@@ -1375,16 +1407,28 @@ function syncLibrary(){
         }
       });
     }
-    if (!$("view-library").hidden) renderLibrary();
-    if (!isOwner()) return;
-    var pending = Object.keys(cache).map(function(k){ return cache[k]; }).filter(function(r){ return !r.inArchive || r.dirty; });
-    if (!pending.length){ setSync(""); return; }
-    setSync("busy");
-    return enqueue(function(){
-      return pending.reduce(function(p, r){ return p.then(function(){ return pushSong(r); }); }, Promise.resolve());
-    }).then(function(){ setSync(""); }, function(e){ setSync("error", e.user ? e.message : "Some songs couldn't be saved to the site. They'll be tried again next time."); })
-      .then(function(){ if (!$("view-library").hidden) renderLibrary(); });
+    var locals = Object.keys(cache).map(function(k){ return cache[k]; }).filter(function(r){ return !r.inArchive; });
+    return Promise.all(locals.map(shaOf)).then(function(){
+      var bySha = {}, byName = {};
+      archive.forEach(function(m){ if (m.sha1) bySha[m.sha1] = m; byName[titleKey(String(m.file).split("/").pop().replace(/\.[^.]+$/, ""))] = m; });
+      locals.forEach(function(r){
+        var m = (r.sha1 && bySha[r.sha1]) || byName[titleKey(String(r.fileName || "").replace(/\.[^.]+$/, ""))];
+        if (m && !cache[m.id]) r.dupOf = m.id; else delete r.dupOf;
+      });
+      return uploadPending();
+    });
   });
+}
+function uploadPending(){
+  if (!$("view-library").hidden) renderLibrary();
+  if (!isOwner()) return;
+  var pending = Object.keys(cache).map(function(k){ return cache[k]; }).filter(function(r){ return !r.inArchive || r.dirty; });
+  if (!pending.length){ setSync(""); return; }
+  setSync("busy");
+  return enqueue(function(){
+    return pending.reduce(function(p, r){ return p.then(function(){ return pushSong(r); }); }, Promise.resolve());
+  }).then(function(){ setSync(""); }, function(e){ setSync("error", e.user ? e.message : "Some songs couldn't be saved to the site. They'll be tried again next time."); })
+    .then(function(){ if (!$("view-library").hidden) renderLibrary(); });
 }
 function libMsg(text){ var m = $("libmsg"); m.textContent = text || ""; m.hidden = !text; }
 function addFile(f){
@@ -1577,11 +1621,11 @@ $("title").addEventListener("keydown", function(e){ if (e.key === "Enter"){ e.pr
 $("title").addEventListener("input", fitTitle);
 window.addEventListener("resize", function(){ if (!$("view-song").hidden) fitTitle(); });
 $("bars").addEventListener("click", function(e){
-  var pb = e.target.closest("[data-play]");
+  var pb = e.target.closest("[data-play],[data-from]");
   if (pb){
-    var b = parseInt(pb.getAttribute("data-play"), 10);
     if (run && run.btn === pb){ stopRun(); return; }
-    playBars(b, b, {btn: pb, long: true});
+    if (pb.hasAttribute("data-from")){ var fb = parseInt(pb.getAttribute("data-from"), 10); playBars(fb, state.bars.length - 1, {btn: pb, follow: true, long: true}); }
+    else { var b = parseInt(pb.getAttribute("data-play"), 10); playBars(b, b, {btn: pb, long: true}); }
     return;
   }
   var nb = e.target.closest(".note");
