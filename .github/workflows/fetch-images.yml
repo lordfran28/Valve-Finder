@@ -19,6 +19,10 @@ jobs:
           mkdir -p assets/source
           while read -r name url; do
             case "$name" in ''|\#*) continue;; esac
+            case "$url" in met:*)
+              url=$(curl -fsSL --retry 3 "https://collectionapi.metmuseum.org/public/collection/v1/objects/${url#met:}" | jq -r '.primaryImage') ;;
+            esac
+            [ -f "assets/source/$name" ] && continue
             curl -fsSL --retry 3 -A "ValveFinder/1.0 (https://github.com/lordfran28/Valve-Finder)" -o "assets/source/$name" "$url" && echo "ok $name" || echo "FAILED $name"
           done < assets/sources.txt
           ls -la assets/source

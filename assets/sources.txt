@@ -6,3 +6,6 @@ met-222648-velvet-italian-spanish-17c.jpg https://collectionapi.metmuseum.org/ap
 met-222358-silk-metal-genoa-17-18c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/222358/451210/main-image
 met-460810-cover-italian-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/460810/917056/main-image
 met-219780-silk-linen-17c.jpg https://collectionapi.metmuseum.org/api/collection/v1/iiif/219780/449307/main-image
+# Full-size originals, looked up through the Met's open-access API
+met-222358-silk-metal-genoa-17-18c-original.jpg met:222358
+met-216471-green-damask-venice-genoa-17c-original.jpg met:216471
