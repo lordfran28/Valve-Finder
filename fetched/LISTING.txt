@@ -1,0 +1,20 @@
+total 113644
+drwxr-xr-x 2 runner runner     4096 Oct 31 05:44 .
+drwxr-xr-x 7 runner runner     4096 Oct 31 05:44 ..
+-rw-r--r-- 1 runner runner        0 Oct 31 05:44 LISTING.txt
+-rw-r--r-- 1 runner runner  9737056 Oct 31 05:44 Trumpet.novib.ff.C4B4.aiff
+-rw-r--r-- 1 runner runner 10039906 Oct 31 05:44 Trumpet.novib.ff.C5B5.aiff
+-rw-r--r-- 1 runner runner  3253554 Oct 31 05:44 Trumpet.novib.ff.C6Eb6.aiff
+-rw-r--r-- 1 runner runner  6528982 Oct 31 05:44 Trumpet.novib.ff.E3B3.aiff
+-rw-r--r-- 1 runner runner  9093342 Oct 31 05:44 Trumpet.novib.mf.C4B4.aiff
+-rw-r--r-- 1 runner runner  8595726 Oct 31 05:44 Trumpet.novib.mf.C5B5.aiff
+-rw-r--r-- 1 runner runner  2426270 Oct 31 05:44 Trumpet.novib.mf.C6D6.aiff
+-rw-r--r-- 1 runner runner  5925256 Oct 31 05:44 Trumpet.novib.mf.E3B3.aiff
+-rw-r--r-- 1 runner runner 10021624 Oct 31 05:44 Trumpet.novib.pp.C4B4.aiff
+-rw-r--r-- 1 runner runner 10509716 Oct 31 05:44 Trumpet.novib.pp.C5B5.aiff
+-rw-r--r-- 1 runner runner  3591994 Oct 31 05:44 Trumpet.novib.pp.C6Eb6.aiff
+-rw-r--r-- 1 runner runner  6784682 Oct 31 05:44 Trumpet.novib.pp.E3B3.aiff
+-rw-r--r-- 1 runner runner  9611702 Oct 31 05:44 Trumpet.vib.mf.C4B4.aiff
+-rw-r--r-- 1 runner runner 10721748 Oct 31 05:44 Trumpet.vib.mf.C5B5.aiff
+-rw-r--r-- 1 runner runner  2973618 Oct 31 05:44 Trumpet.vib.mf.C6D6.aiff
+-rw-r--r-- 1 runner runner  6520812 Oct 31 05:44 Trumpet.vib.mf.E3B3.aiff
