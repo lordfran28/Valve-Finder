@@ -1,34 +1,23 @@
 set -x
 cd fetched
-rm -f *.json
+rm -rf ph acg commons *.json
 UA="KnockelsSiteBuild/1.0 (https://github.com/lordfran28; site build)"
-mkdir -p ph acg commons
-for id in wood_floor wood_floor_worn laminate_floor laminate_floor_02 laminate_floor_03 plank_flooring plank_flooring_02 plank_flooring_04 herringbone_parquet rectangular_parquet diagonal_parquet dark_wood wooden_floor_01 old_wooden_floor_03 floor_tiles_06 marble_01 terracotta_floor_tiles slate_floor_03 grey_cartago_01 grey_cartago_03 terrazzo_tiles interior_tiles brown_floor_tiles granite_tile_03 slab_tiles worn_tile_floor square_brick_floor dirty_carpet; do
-  url=$(curl -fsSL -A "$UA" "https://api.polyhaven.com/files/$id" | jq -r '.Diffuse["2k"].jpg.url // .diffuse["2k"].jpg.url // empty')
-  [ -n "$url" ] && curl -fsSL -A "$UA" -o "ph/$id.jpg" "$url" || echo "no diffuse for $id"
-done
-for id in Carpet016 Carpet015 Carpet001 Carpet014 Fabric033 WoodFloor068 WoodFloor069 WoodFloor070 WoodFloor071 WoodFloor042 WoodFloor043 WoodFloor044 Planks009 Tiles002 Tiles027 Tiles028 Tiles073 Tiles138 Marble026; do
-  curl -fsSL -A "$UA" -o "/tmp/$id.zip" "https://ambientcg.com/get?file=${id}_2K-JPG.zip" && unzip -o -j -q "/tmp/$id.zip" "*_Color.jpg" -d acg/ || echo "failed $id"
-done
-q() { curl -fsSL -A "$UA" --get "https://commons.wikimedia.org/w/api.php" --data-urlencode "action=query" --data-urlencode "format=json" --data-urlencode "generator=search" --data-urlencode "gsrnamespace=6" --data-urlencode "gsrsearch=$1 filetype:bitmap" --data-urlencode "gsrlimit=24" --data-urlencode "prop=imageinfo" --data-urlencode "iiprop=url|extmetadata|size" --data-urlencode "iiurlwidth=480" -o "commons/$2.json"; }
-q "Monona Iowa" monona
-q "Pikes Peak State Park Iowa" pikespeak
-q "McGregor Iowa" mcgregor
-q "Clayton County Iowa" clayton
-q "Driftless Area Iowa" driftless
-q "Mississippi River Iowa bluffs" bluffs
-q "empty room wooden floor" emptyroom
-q "living room interior hardwood floor" livingroom
-q "laying laminate flooring" laying
-q "carpet installation" carpetinstall
-q "tile setter floor tiles" tilesetter
-q "hardwood floor installation" hardwoodinstall
-for f in commons/*.json; do
-  jq -r '.query.pages[]? | [.title, .imageinfo[0].thumburl] | @tsv' "$f" | while IFS=$'\t' read -r title thumb; do
-    n=$(echo "$title" | sed 's/^File://; s/[^A-Za-z0-9._-]/_/g' | cut -c1-80)
-    d="commons/$(basename "$f" .json)"; mkdir -p "$d"
-    curl -fsSL -A "$UA" -o "$d/$n" "$thumb" || true
-    sleep 0.2
-  done
-done
-du -sh ph acg commons; ls ph acg
+mkdir -p photos fonts
+big() { # $1 = Commons file title (without File:), $2 = output name, $3 = width
+  url=$(curl -fsSL -A "$UA" --get "https://commons.wikimedia.org/w/api.php" --data-urlencode "action=query" --data-urlencode "format=json" --data-urlencode "titles=File:$1" --data-urlencode "prop=imageinfo" --data-urlencode "iiprop=url|extmetadata" --data-urlencode "iiurlwidth=$3" | tee "photos/$2.json" | jq -r '.query.pages[].imageinfo[0].thumburl')
+  curl -fsSL -A "$UA" -o "photos/$2.jpg" "$url"
+}
+big "Mississippiatpikespeak.JPG" river 2400
+big "204-202-200 South Main Street, Monona, IA - c. 1925.jpg" monona-1925 1499
+big "Monona, Iowa.jpg" monona-aerial 2400
+big "9 Irving A 2014 hardwood floors living room and part of bedroom.JPG" room-bay 786
+big "Empty apartment room with corner windows.jpg" room-corner 2000
+big "CLASSEN Verlegung Laminat.jpg" laying 2000
+big "Gfp-iowa-pikes-peak-state-park-mississippi-river.jpg" river2 2400
+# fonts (SIL Open Font License), latin woff2 from Google Fonts
+CSSUA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+curl -fsSL -A "$CSSUA" "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" -o fonts/fonts.css
+grep -o 'https://fonts.gstatic.com[^)]*' fonts/fonts.css | sort -u | while read u; do curl -fsSL -o "fonts/$(basename "$u")" "$u"; done
+curl -fsSL -o fonts/ZillaSlab-OFL.txt "https://raw.githubusercontent.com/google/fonts/main/ofl/zillaslab/OFL.txt" || true
+curl -fsSL -o fonts/PublicSans-OFL.txt "https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt" || true
+ls -la photos fonts
