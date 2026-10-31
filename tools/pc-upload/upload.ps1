@@ -30,7 +30,7 @@ function Show-Note([string]$text) {
 }
 function Get-Key {
   if ($env:VF_KEY) { return $env:VF_KEY }
-  $secure = Get-Content -LiteralPath $KeyFile -Raw | ConvertTo-SecureString
+  $secure = (Get-Content -LiteralPath $KeyFile -Raw).Trim() | ConvertTo-SecureString
   return [Runtime.InteropServices.Marshal]::PtrToStringBSTR([Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
 }
 function Invoke-GitHub([string]$Method, [string]$Path, $Body) {
@@ -127,7 +127,8 @@ function Invoke-PassLocked {
   if ($changed) { Save-State $state }
 }
 
-try { $script:Token = Get-Key } catch { Write-Log "No GitHub key on this computer yet. Run 'Set up automatic upload' in this folder."; exit 1 }
+if (-not $env:VF_KEY -and -not (Test-Path -LiteralPath $KeyFile)) { Write-Log "No GitHub key on this computer yet. Run 'Set up automatic upload' in this folder."; exit 1 }
+try { $script:Token = Get-Key } catch { Write-Log ("The GitHub key couldn't be read (" + $_.Exception.Message + "). Run 'Set up automatic upload' again."); exit 1 }
 do {
   try { Invoke-Pass }
   catch {
