@@ -108,8 +108,15 @@ a{color:var(--brass)}
 .btn.link{border-color:transparent;background:none;box-shadow:none;padding-inline:0;min-height:0;color:var(--muted)}
 .btn.link:hover{color:var(--warn);background:none}
 .btn[disabled]{opacity:.6;cursor:progress}
-.libhead:focus-within .filebtn{outline:2px solid var(--blue);outline-offset:2px}
+.addlink{font-family:var(--display);font-size:1.6rem;line-height:1.1;color:var(--brass);cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;
+  opacity:.62;padding:4px 2px;background:linear-gradient(var(--brass),var(--brass)) left bottom/0 1px no-repeat;
+  transition:opacity .7s ease,background-size .7s ease}
+.addlink:hover,.libhead:focus-within .addlink{opacity:1;background-size:100% 1px}
+.addlink:active{opacity:.85}
+.libhead:focus-within .addlink{outline:2px solid var(--blue);outline-offset:4px}
 .syncline{margin:0;font-size:1rem;color:var(--muted);display:flex;gap:8px;align-items:baseline}
+.textlink{font:inherit;color:var(--brass);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;opacity:.85;transition:opacity .5s ease}
+.textlink:hover{opacity:1}
 .dot{width:9px;height:9px;border-radius:50%;background:var(--dot-line);display:inline-block;flex:0 0 auto;transform:translateY(-1px)}
 .dot.ok{background:var(--ok)}
 .dot.warn{background:var(--warn)}
@@ -232,10 +239,10 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
   <section id="view-library" class="view" aria-label="Your songs">
     <div class="libhead">
       <h2>Your songs</h2>
-      <label class="filebtn" for="file">Add a song</label>
+      <label class="addlink" for="file">Add a song</label>
       <input id="file" type="file" class="vh">
     </div>
-    <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true"></span><span id="synctext"></span></p>
+    <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true"></span><span id="synctext"></span><button type="button" id="openarchive" class="textlink" hidden>Connect your archive</button></p>
     <p id="libmsg" class="error" role="alert" hidden></p>
     <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search your songs</label><input id="search" type="search" placeholder="Search your songs" autocomplete="off"></div>
     <ul id="songlist" class="songlist"></ul>
@@ -247,7 +254,7 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
     </div>
 
     <details id="backup" class="panel">
-      <summary>GitHub backup</summary>
+      <summary>Your archive</summary>
       <div class="panel-body">
         <p id="ghstate" class="small"></p>
         <div id="ghform" class="panel-body" style="margin-top:0">
@@ -1008,10 +1015,13 @@ function pushRecord(c, rec, indexToo){
 function setSync(kind, msg){
   var c = GH.cfg(), dot = $("syncdot"), t = $("synctext");
   dot.className = "dot" + (kind === "ok" ? " ok" : kind === "error" ? " warn" : kind === "busy" ? " busy" : "");
-  if (kind === "local") t.textContent = Store.ok() ? "Saved on this device only." : "This browser isn't keeping songs between visits.";
-  else if (kind === "busy") t.textContent = "Syncing…";
-  else if (kind === "ok") t.textContent = "Backed up to GitHub.";
-  else t.textContent = msg || "GitHub backup isn't working right now.";
+  $("openarchive").hidden = kind !== "local";
+  dot.hidden = kind === "local";
+  if (kind === "local") t.textContent = Store.ok() ? "" : "This browser isn't keeping songs between visits. ";
+  else if (kind === "busy") t.textContent = "Saving to your archive…";
+  else if (kind === "ok") t.textContent = "Every song is in your archive.";
+  else t.textContent = msg || "Your archive can't be reached right now.";
+  t.hidden = !t.textContent;
 }
 function renderLibrary(){
   var list = Object.keys(cache).map(function(id){ return {rec: cache[id], meta: cache[id]}; });
@@ -1022,13 +1032,13 @@ function renderLibrary(){
   var shown = q ? list.filter(function(x){ return String(x.meta.title).toLowerCase().indexOf(q) >= 0; }) : list;
   var hasGH = !!GH.cfg();
   $("songlist").innerHTML = shown.map(function(x){
-    var st = !x.rec ? ["remote", "On GitHub"] : x.rec.synced ? ["ok", "Backed up"] : hasGH ? ["warn", "Not backed up"] : ["local", "This device"];
+    var st = !hasGH ? null : !x.rec ? ["remote", "In archive"] : x.rec.synced ? null : ["warn", "Saving"];
     var u = x.meta.units, bits = [];
     var d = fmtDate(x.meta.addedAt); if (d) bits.push("Added " + d);
     if (u && u.count) bits.push(plural(u.count, String(u.unit).toLowerCase()));
     if (x.meta.kind) bits.push(x.meta.kind);
     return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + esc(x.meta.title) +
-      '</span><span class="song-meta">' + esc(bits.join(" · ")) + '</span></span><span class="status st-' + st[0] + '">' + st[1] + "</span></a></li>";
+      '</span><span class="song-meta">' + esc(bits.join(" · ")) + '</span></span>' + (st ? '<span class="status st-' + st[0] + '">' + st[1] + "</span>" : "") + "</a></li>";
   }).join("");
   $("empty").hidden = list.length > 0;
   $("nomatch").hidden = !(list.length && !shown.length);
@@ -1076,7 +1086,7 @@ function addFile(f){
 
 /* ---------- Song view ---------- */
 function setSave(kind, msg){
-  var el = $("savestate"), labels = {example: ["plain", "Example, not saved"], local: ["local", "Saved on this device"], saving: ["busy", "Saving…"], syncing: ["busy", "Backing up…"], ok: ["ok", "Backed up"], pending: ["warn", "Not backed up yet"], error: ["warn", "Backup failed"]};
+  var el = $("savestate"), labels = {example: ["plain", "Example"], saving: ["busy", "Saving…"], syncing: ["busy", "Saving…"], ok: ["ok", "In your archive"], pending: ["warn", "Not in archive yet"], error: ["warn", "Couldn't save"]};
   var l = labels[kind];
   el.hidden = !l;
   if (l){ el.className = "status st-" + l[0]; el.textContent = l[1]; }
@@ -1160,7 +1170,7 @@ function renderBackup(){
   var c = GH.cfg();
   $("ghform").hidden = !!c;
   $("ghconnected").hidden = !c;
-  $("ghstate").textContent = c ? "Connected to " + GH.name(c) + "." : "";
+  $("ghstate").textContent = c ? "Connected. Your songs are saved in " + GH.name(c) + " on GitHub." : "";
   $("ghstate").hidden = !c;
 }
 
@@ -1305,6 +1315,7 @@ $("ghconnect").addEventListener("click", function(){
 });
 $("ghsync").addEventListener("click", function(){ ghMsg(""); syncLibrary(); });
 $("ghpair").addEventListener("click", showPair);
+$("openarchive").addEventListener("click", function(){ var b = $("backup"); b.open = true; b.scrollIntoView({block: "start", behavior: reduceMotion ? "auto" : "smooth"}); });
 $("ghoff").addEventListener("click", function(){
   GH.store(null); remoteMetas = []; $("pairbox").hidden = true; $("qr").innerHTML = "";
   ghMsg("Disconnected on this device. Your GitHub archive is untouched.");
