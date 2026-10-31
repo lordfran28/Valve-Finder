@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valve Finder</title>
+<meta name="description" content="B♭ trumpet valve fingerings for every note of your MusicXML, MIDI and Tony files, with a song library backed up to GitHub.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='8' cy='24' r='6.5' fill='%238F5F17'/%3E%3Ccircle cx='24' cy='24' r='5.5' fill='none' stroke='%238F5F17' stroke-width='2.5'/%3E%3Ccircle cx='40' cy='24' r='6.5' fill='%238F5F17'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one music-stand column. Library view lists songs; song view shows settings, a legend, one card per bar or phrase, then the fingering strip. Brass dots = pressed valves. */
+:root{
+  --bg:#ECEFF2;
+  --surface:#FFFFFF;
+  --well:#F3F5F7;
+  --ink:#17202A;
+  --muted:#59636E;
+  --line:#D2D8DF;
+  --dot-line:#8994A0;
+  --brass:#8F5F17;
+  --brass-soft:#F4E7CF;
+  --on-brass:#FFFFFF;
+  --ok:#2F6B3A;
+  --ok-soft:#DDEEDF;
+  --warn:#A3392A;
+  --warn-soft:#F7E2DD;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#10151B;--surface:#182029;--well:#1F2833;--ink:#E5E9ED;--muted:#9BA6B2;--line:#2B3541;--dot-line:#6E7A87;
+    --brass:#E0A649;--brass-soft:#3A2D18;--on-brass:#1B1307;--ok:#86C893;--ok-soft:#1C3322;--warn:#F2907C;--warn-soft:#3B221D;color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.5 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:46rem;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+.view{display:flex;flex-direction:column;gap:16px}
+.view[hidden]{display:none}
+h1,h2,h3{font-family:var(--display);font-weight:700;margin:0;text-wrap:balance}
+h1{font-size:2.1rem;line-height:1.05;letter-spacing:-0.01em}
+h2{font-size:1.45rem}
+h3{font-size:1.1rem;line-height:1.2}
+a{color:var(--brass)}
+.top{display:flex;flex-direction:column;gap:6px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;align-self:flex-start}
+.mark{display:flex;gap:5px}
+.mark i{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--brass);display:block}
+.mark i.on{background:var(--brass)}
+.lede{margin:0;color:var(--muted);max-width:60ch}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;padding:0;margin:-1px}
+.libhead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.filebtn{display:inline-flex;align-items:center;background:var(--brass);color:var(--on-brass);border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer;user-select:none}
+.libhead:focus-within .filebtn{outline:2px solid var(--ink);outline-offset:2px}
+.syncline{margin:0;font-size:.92rem;color:var(--muted);display:flex;gap:8px;align-items:baseline}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--dot-line);display:inline-block;flex:0 0 auto;transform:translateY(-1px)}
+.dot.ok{background:var(--ok)}
+.dot.warn{background:var(--warn)}
+.dot.busy{background:var(--brass)}
+.songlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.song{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:var(--ink);text-decoration:none}
+.song:hover{border-color:var(--dot-line)}
+.song-main{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.song-title{font-family:var(--display);font-weight:700;font-size:1.15rem;line-height:1.2;overflow-wrap:anywhere}
+.song-meta{font-size:.82rem;color:var(--muted)}
+.status{font-family:var(--mono);font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;white-space:nowrap;flex:0 0 auto}
+.st-ok{background:var(--ok-soft);color:var(--ok)}
+.st-warn{background:var(--warn-soft);color:var(--warn)}
+.st-local,.st-plain{background:var(--well);color:var(--muted)}
+.st-remote,.st-busy{background:var(--brass-soft);color:var(--brass)}
+.empty{background:var(--surface);border:1px dashed var(--dot-line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.empty p{margin:0;color:var(--muted);max-width:60ch}
+.empty[hidden]{display:none}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.panel summary{cursor:pointer;font-weight:700;font-size:1rem}
+.panel-body{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+.steps{margin:0;padding-left:1.3rem;display:flex;flex-direction:column;gap:4px;font-size:.93rem}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:12px}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label{font-size:.82rem;color:var(--muted);letter-spacing:.02em}
+.field[hidden]{display:none}
+select,input[type=number],input[type=text],input[type=password],input[type=search]{font:inherit;font-size:.95rem;color:var(--ink);background:var(--well);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:100%;min-width:0}
+select:focus-visible,input:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;font:inherit;font-weight:700;border-radius:999px;padding:8px 16px;cursor:pointer;border:1.5px solid var(--brass);background:transparent;color:var(--brass);text-decoration:none}
+.btn.primary{background:var(--brass);color:var(--on-brass)}
+.btn.quiet{border-color:var(--line);color:var(--ink)}
+.btn.danger{border-color:var(--warn);color:var(--warn)}
+.btn[disabled]{opacity:.6;cursor:progress}
+.msg{margin:0;font-size:.92rem;background:var(--well);border-radius:10px;padding:8px 12px}
+.msg.bad{background:var(--warn-soft);color:var(--warn)}
+.error{margin:0;background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:10px 14px}
+.small{margin:0;font-size:.85rem;color:var(--muted)}
+.songbar{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.back{font-weight:700;text-decoration:none}
+.songhead{display:flex;flex-direction:column;gap:2px}
+.titleinput{font-family:var(--display);font-weight:700;font-size:1.75rem;line-height:1.15;color:var(--ink);background:transparent;border:1px solid transparent;border-radius:10px;padding:4px 6px;margin-left:-7px;width:calc(100% + 7px)}
+.titleinput:not([readonly]):hover{border-color:var(--line)}
+.fmeta{font-family:var(--mono);font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.check{display:flex;align-items:center;gap:8px;font-size:.95rem;cursor:pointer}
+.check input{width:18px;height:18px;accent-color:var(--brass);margin:0}
+.pitchnote{grid-column:1/-1;margin:0;font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.playrow{grid-column:1/-1;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.hint{font-size:.85rem;color:var(--muted);flex:1 1 14rem;min-width:0}
+.legend{display:flex;flex-direction:column;gap:8px;font-size:.88rem;color:var(--muted);padding:0 2px}
+.legend-row{display:flex;align-items:flex-start;gap:10px}
+.legend-row > :first-child{flex:0 0 4.6rem;display:flex;justify-content:center;padding-top:3px}
+.legend b{color:var(--ink);font-weight:700}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px 12px}
+.bar-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.bar-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;min-width:0}
+.bar-meta{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.play{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:.85rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
+.notes{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.note{width:4.4rem;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 8px;border-radius:10px;border:1.5px solid transparent;background:var(--well);color:var(--ink);font:inherit;cursor:pointer;text-align:center}
+.reg{font-family:var(--mono);font-size:.69rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.name{font-family:var(--display);font-weight:700;font-size:1.65rem;line-height:1}
+.acc{font-family:var(--body);font-size:.72em;margin-left:1px;vertical-align:.28em}
+.valves{display:flex;gap:4px;margin-top:2px}
+.v{width:14px;height:14px;border-radius:50%;border:1.5px solid var(--dot-line);background:var(--surface);display:block}
+.v.on{background:var(--brass);border-color:var(--brass)}
+.fing{font-family:var(--mono);font-size:.78rem;font-weight:500}
+.extra{font-family:var(--mono);font-size:.69rem;color:var(--brass)}
+.lyr{font-size:.82rem;font-style:italic;color:var(--muted);max-width:100%;overflow-wrap:anywhere;line-height:1.2}
+.note.tied .name,.note.tied .fing{color:var(--muted)}
+.note.tied .v.on{background:var(--dot-line);border-color:var(--dot-line)}
+.note.out .name,.note.out .fing{color:var(--warn)}
+.note.playing{border-color:var(--brass);background:var(--brass-soft)}
+.rest{margin:8px 0 0;color:var(--muted);font-style:italic}
+.strip-wrap{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.strip-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.strip{margin:0;font-family:var(--mono);font-size:.8rem;line-height:1.7;overflow-x:auto;background:var(--well);border-radius:10px;padding:10px 12px;font-variant-numeric:tabular-nums}
+.dangerzone{display:flex;flex-direction:column;gap:10px;align-items:flex-start;border-top:1px solid var(--line);padding-top:16px}
+.delask{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.delask[hidden]{display:none}
+.foot{font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+.foot p{margin:0;max-width:62ch}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#"><span class="mark" aria-hidden="true"><i class="on"></i><i></i><i class="on"></i></span><h1>Valve Finder</h1></a>
+    <p class="lede">B♭ trumpet valve fingerings under every note of your songs.</p>
+  </header>
+
+  <section id="view-library" class="view" aria-label="Your songs">
+    <div class="libhead">
+      <h2>Your songs</h2>
+      <label class="filebtn" for="file">Add a song</label>
+      <input id="file" type="file" class="vh">
+    </div>
+    <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true"></span><span id="synctext"></span></p>
+    <p id="libmsg" class="error" role="alert" hidden></p>
+    <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search your songs</label><input id="search" type="search" placeholder="Search your songs" autocomplete="off"></div>
+    <ul id="songlist" class="songlist"></ul>
+    <p id="nomatch" class="small" hidden>No songs match that search.</p>
+    <div id="empty" class="empty" hidden>
+      <h3>Add your first song</h3>
+      <p>Add a MusicXML file from Klangio or Scan2Notes, a MIDI file from Basic Pitch, or a note list from Tony. Each song is saved here with its settings.</p>
+      <a class="btn" href="#example">Open the example song</a>
+    </div>
+
+    <details id="backup" class="panel">
+      <summary>GitHub backup</summary>
+      <div class="panel-body">
+        <p id="ghstate" class="small"></p>
+        <div id="ghform" class="panel-body" style="margin-top:0">
+          <ol class="steps">
+            <li>Open GitHub's <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">new token page</a>.</li>
+            <li>Name it Valve Finder and choose the longest expiration offered.</li>
+            <li>Under Repository access, choose Only select repositories, then valve-finder-songs.</li>
+            <li>Under Repository permissions, set Contents to Read and write.</li>
+            <li>Generate the token, copy it, and paste it below.</li>
+          </ol>
+          <div class="fields">
+            <div class="field"><label for="ghowner">GitHub username</label><input id="ghowner" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" value="lordfran28"></div>
+            <div class="field"><label for="ghrepo">Song repository</label><input id="ghrepo" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" value="valve-finder-songs"></div>
+            <div class="field" style="grid-column:1/-1"><label for="ghtoken">Token</label><input id="ghtoken" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></div>
+          </div>
+          <p class="small">The token is kept only in this browser. Set it up once on each phone or computer you use.</p>
+          <div class="btnrow"><button type="button" id="ghconnect" class="btn primary">Connect</button></div>
+        </div>
+        <div id="ghconnected" class="btnrow" hidden>
+          <button type="button" id="ghsync" class="btn">Back up now</button>
+          <button type="button" id="ghoff" class="btn quiet">Disconnect this device</button>
+        </div>
+        <p id="ghmsg" class="msg" role="status" hidden></p>
+      </div>
+    </details>
+
+    <footer class="foot">
+      <p>Valve Finder reads MusicXML (.musicxml, .xml, .mxl), MIDI (.mid) and Tony note lists (.csv). Files are read on your device. With GitHub backup on, each song is also saved to your private song repository, with its full history.</p>
+      <p>MIDI made from a recording has no real bar lines, so its notes are grouped into phrases, each marked with the time it starts in the recording.</p>
+      <p><a href="#example">Example song</a> · <a href="https://github.com/lordfran28/valve-finder" target="_blank" rel="noopener">Source code</a></p>
+    </footer>
+  </section>
+
+  <section id="view-song" class="view" aria-label="Song" hidden>
+    <div class="songbar">
+      <a href="#" class="back">← Your songs</a>
+      <span id="savestate" class="status st-plain" hidden></span>
+    </div>
+    <div class="songhead">
+      <input id="title" class="titleinput" type="text" aria-label="Song title" autocomplete="off">
+      <span id="fmeta" class="fmeta"></span>
+    </div>
+    <p id="songmsg" class="msg" role="status" hidden></p>
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <section class="controls" aria-label="Settings">
+      <div class="field" id="partfield" hidden><label for="part">Part</label><select id="part"></select></div>
+      <div class="field"><label for="pitch">File pitch</label>
+        <select id="pitch">
+          <option value="auto">Auto-detect</option>
+          <option value="concert">Concert pitch, raise a step</option>
+          <option value="written">Already B♭ trumpet</option>
+        </select></div>
+      <div class="field"><label for="oct">Octave</label>
+        <select id="oct">
+          <option value="-1">Down one</option>
+          <option value="0" selected>As written</option>
+          <option value="1">Up one</option>
+        </select></div>
+      <div class="field"><label for="tempo">Tempo (bpm)</label><input id="tempo" type="number" inputmode="numeric" min="30" max="240" step="1" value="100"></div>
+      <label class="check"><input id="repeats" type="checkbox" checked><span>Write out repeats</span></label>
+      <label class="check"><input id="alts" type="checkbox"><span>Show alternate fingerings</span></label>
+      <p id="pitchnote" class="pitchnote"></p>
+      <div class="playrow">
+        <button type="button" id="playall" class="btn">Play all</button>
+        <span class="hint">Tap any note to hear it. If every note sounds a step off from the recording, change File pitch.</span>
+      </div>
+    </section>
+
+    <section class="legend" aria-label="How to read it">
+      <div class="legend-row"><span><span class="valves" aria-hidden="true"><i class="v on"></i><i class="v"></i><i class="v on"></i></span></span><span>Valves 1, 2, 3 from left to right. Brass means pressed; this one is 1-3.</span></div>
+      <div class="legend-row"><span><span class="reg">low</span></span><span>Register, in written pitch. <b>Bottom</b> is below low C, <b>low</b> runs from low C to the B on the middle line, <b>mid</b> from the third-space C to the B above the staff, <b>high</b> from high C up.</span></div>
+      <div class="legend-row"><span><span class="extra">3rd slide</span></span><span>Kick the 3rd valve slide out to bring the note down in tune.</span></div>
+    </section>
+
+    <div id="bars" class="bars" aria-label="Notes"></div>
+
+    <section class="strip-wrap" aria-label="Fingering strip">
+      <div class="strip-head"><h3>Fingering strip</h3><button type="button" id="copy" class="play">Copy</button></div>
+      <p id="striphelp" class="small"></p>
+      <pre id="strip" class="strip"></pre>
+    </section>
+
+    <p id="jumps" class="small" hidden>This file has D.S., D.C. or coda marks. Those jumps aren't written out; repeats and 1st and 2nd endings are.</p>
+
+    <div id="dangerzone" class="dangerzone">
+      <button type="button" id="del" class="btn danger">Delete song</button>
+      <div id="delask" class="delask" hidden>
+        <span id="delq"></span>
+        <button type="button" id="delyes" class="btn danger">Delete</button>
+        <button type="button" id="delno" class="btn quiet">Keep it</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- Fingering tables (written pitch, MIDI numbers; written C4 = 60) ---------- */
+var LETTERS = "CDEFGAB";
+var SEMI = {C:0,D:2,E:4,F:5,G:7,A:9,B:11};
+var FING = {54:"123",55:"13",56:"23",57:"12",58:"1",59:"2",60:"0",61:"123",62:"13",63:"23",64:"12",65:"1",66:"2",67:"0",68:"23",69:"12",70:"1",71:"2",72:"0",73:"12",74:"1",75:"2",76:"0",77:"1",78:"2",79:"0",80:"23",81:"12",82:"1",83:"2",84:"0",85:"12",86:"1",87:"2",88:"0",89:"1",90:"2",91:"0"};
+var ALT = {69:"3",73:"123",74:"13",76:"12",81:"3"};
+var SLIDE = {54:1,55:1,61:1,62:1};
+var SPELL = [["C",0],["C",1],["D",0],["D",1],["E",0],["F",0],["F",1],["G",0],["G",1],["A",0],["A",1],["B",0]];
+var SPELL_FLAT = [["C",0],["D",-1],["D",0],["E",-1],["E",0],["F",0],["G",-1],["G",0],["A",-1],["A",0],["B",-1],["B",0]];
+var PLAY_ICON = '<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M3 1.8v8.4L10 6z" fill="currentColor"/></svg>';
+var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+var state = {score:null, part:0, bars:[], rec:null};
+var cache = {}, remoteMetas = [], ctx = null, run = null, saveTimer = null, pendingIndex = false;
+
+/* ---------- Small helpers ---------- */
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function kid(el, name){ if(!el) return null; for (var i=0;i<el.children.length;i++){ if (el.children[i].nodeName===name) return el.children[i]; } return null; }
+function kids(el, name){ var out=[]; for (var i=0;i<el.children.length;i++){ if (el.children[i].nodeName===name) out.push(el.children[i]); } return out; }
+function txt(el, name){ var c = kid(el, name); return c ? c.textContent.trim() : null; }
+function midiOf(p){ return (p.octave+1)*12 + SEMI[p.step] + p.alter; }
+function userErr(msg){ var e = new Error(msg); e.user = true; return e; }
+function parseNums(s){ return String(s||"").split(/[\s,]+/).map(function(n){ return parseInt(n,10); }).filter(function(n){ return !isNaN(n); }); }
+function ordinal(n){ return n===2 ? "2nd" : n===3 ? "3rd" : n + "th"; }
+function fingLabel(f){ return f==="0" ? "open" : f.split("").join("-"); }
+function accSym(a){ return a===1 ? "♯" : a===-1 ? "♭" : ""; }
+function fmtTime(sec){ var m = Math.floor(sec/60), s = sec - m*60; return m + ":" + (s < 10 ? "0" : "") + s.toFixed(1); }
+function fmtDate(iso){ var d = new Date(iso); return isNaN(d) ? "" : d.toLocaleDateString(undefined, {year:"numeric", month:"short", day:"numeric"}); }
+function newId(){ return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+function clampTempo(t){ t = parseInt(t, 10); if (isNaN(t)) t = 100; return Math.min(240, Math.max(30, t)); }
+function plural(n, w){ return n + " " + w + (n===1 ? "" : "s"); }
+
+function bytesToB64(bytes){ var s = "", CH = 0x8000; for (var i=0; i<bytes.length; i+=CH) s += String.fromCharCode.apply(null, bytes.subarray(i, i+CH)); return btoa(s); }
+function b64ToBytes(b64){ var s = atob(String(b64).replace(/\s/g, "")), out = new Uint8Array(s.length); for (var i=0; i<s.length; i++) out[i] = s.charCodeAt(i); return out; }
+function textToB64(t){ return bytesToB64(new TextEncoder().encode(t)); }
+function b64ToText(b){ return new TextDecoder().decode(b64ToBytes(b)); }
+
+/* ---------- MusicXML ---------- */
+function readPitch(noteEl){
+  var p = kid(noteEl, "pitch"); if (!p) return null;
+  var step = txt(p, "step"), oct = parseInt(txt(p, "octave"), 10);
+  if (!step || !(step in SEMI) || isNaN(oct)) return null;
+  var alter = Math.round(parseFloat(txt(p, "alter") || "0") || 0);
+  return {step:step, alter:alter, octave:oct};
+}
+function readLyric(el){
+  var ls = kids(el, "lyric"); if (!ls.length) return "";
+  var l = ls.filter(function(x){ return (x.getAttribute("number")||"1")==="1"; })[0] || ls[0];
+  var t = kids(l, "text").map(function(x){ return x.textContent; }).join("").trim();
+  if (!t) return "";
+  var syl = txt(l, "syllabic");
+  return (syl==="begin" || syl==="middle") ? t + "-" : t;
+}
+function parsePart(partEl, name){
+  var divisions = 1, transpose = null, tempo = null, firstVoice = null, timeLen = 4, curEnding = null, held = null;
+  var measures = [];
+  kids(partEl, "measure").forEach(function(m){
+    var meas = {number: m.getAttribute("number") || String(measures.length+1), notes:[], repeatStart:false, repeatEnd:0, ending:null, len:0};
+    var t = 0, last = null, endingStops = false;
+    for (var i=0;i<m.children.length;i++){
+      var el = m.children[i], n = el.nodeName;
+      if (n==="attributes"){
+        var d = parseFloat(txt(el, "divisions")); if (d > 0) divisions = d;
+        var tm = kid(el, "time");
+        if (tm){ var b = parseFloat(txt(tm, "beats")), bt = parseFloat(txt(tm, "beat-type")); if (b>0 && bt>0) timeLen = b*4/bt; }
+        var tr = kid(el, "transpose");
+        if (tr && !transpose){
+          var chrom = parseInt(txt(tr, "chromatic") || "0", 10) || 0;
+          var diaT = txt(tr, "diatonic");
+          var dia = diaT !== null ? (parseInt(diaT, 10) || 0) : Math.round(chrom*7/12);
+          var oc = parseInt(txt(tr, "octave-change") || "0", 10) || 0;
+          transpose = {chrom:chrom, dia:dia, oct:oc};
+        }
+      } else if (n==="direction" || n==="sound"){
+        var s = n==="sound" ? el : el.querySelector("sound");
+        var tv = s ? parseFloat(s.getAttribute("tempo")) : NaN;
+        if (tv > 0 && tempo === null) tempo = Math.round(tv);
+      } else if (n==="barline"){
+        var rep = kid(el, "repeat");
+        if (rep){
+          if (rep.getAttribute("direction")==="forward") meas.repeatStart = true;
+          else meas.repeatEnd = parseInt(rep.getAttribute("times") || "2", 10) || 2;
+        }
+        var en = kid(el, "ending");
+        if (en){
+          if (en.getAttribute("type")==="start"){ var nums = parseNums(en.getAttribute("number")); curEnding = nums.length ? nums : null; }
+          else endingStops = true;
+        }
+      } else if (n==="forward"){
+        var fv = txt(el, "voice");
+        if (fv===null || firstVoice===null || fv===firstVoice) t += (parseFloat(txt(el, "duration")) || 0)/divisions;
+      } else if (n==="note"){
+        var v = txt(el, "voice") || "1";
+        if (firstVoice === null) firstVoice = v;
+        if (v !== firstVoice) continue;
+        var grace = !!kid(el, "grace"), isChord = !!kid(el, "chord"), isRest = !!kid(el, "rest");
+        var durQ = grace ? 0 : (parseFloat(txt(el, "duration")) || 0)/divisions;
+        if (isChord){
+          if (last && !isRest){ var cp = readPitch(el); if (cp && midiOf(cp) > midiOf(last.src)) last.src = cp; }
+          continue;
+        }
+        if (isRest){ t += durQ; last = null; held = null; continue; }
+        var p = readPitch(el);
+        if (!p){ t += durQ; last = null; continue; }
+        var ties = kids(el, "tie").map(function(x){ return x.getAttribute("type"); });
+        var note = {src:p, t:t, durQ:durQ, grace:grace, tied: ties.indexOf("stop")>=0 && !!held, lyric: readLyric(el)};
+        meas.notes.push(note); last = note;
+        held = ties.indexOf("start")>=0 ? note : null;
+        t += durQ;
+      }
+    }
+    meas.ending = curEnding;
+    if (endingStops) curEnding = null;
+    meas.len = m.getAttribute("implicit")==="yes" ? t : Math.max(t, timeLen);
+    measures.push(meas);
+  });
+  return {name:name, measures:measures, transpose:transpose, tempo:tempo, unit:"Bar"};
+}
+function parseScore(text){
+  var doc = new DOMParser().parseFromString(text, "application/xml");
+  if (doc.getElementsByTagName("parsererror").length) throw userErr("This file couldn't be read as MusicXML. Export it again as MusicXML (.musicxml, .xml or .mxl) and add that.");
+  var root = doc.documentElement;
+  if (root.nodeName==="score-timewise") throw userErr("This MusicXML uses the rarer timewise layout. Open it in Klangio or MuseScore, export standard MusicXML, and add that.");
+  if (root.nodeName!=="score-partwise") throw userErr("That file isn't MusicXML, MIDI or a Tony note list. Export one of those and add that file.");
+  var names = {};
+  var sps = root.getElementsByTagName("score-part");
+  for (var i=0;i<sps.length;i++){ names[sps[i].getAttribute("id")] = (txt(sps[i], "part-name") || "").replace(/\s+/g," "); }
+  var wt = root.querySelector("work > work-title"), mt = root.querySelector("movement-title");
+  var title = ((wt && wt.textContent) || (mt && mt.textContent) || "").trim();
+  var parts = kids(root, "part").map(function(p, i){ return parsePart(p, names[p.getAttribute("id")] || ("Part " + (i+1))); })
+    .filter(function(p){ return p.measures.some(function(m){ return m.notes.length; }); });
+  if (!parts.length) throw userErr("This file has no pitched notes to finger.");
+  var hasJumps = !!root.querySelector("sound[dalsegno], sound[dacapo], sound[tocoda], sound[fine], segno, coda");
+  return {title:title, parts:parts, hasJumps:hasJumps};
+}
+
+/* ---------- MIDI and note lists ---------- */
+function mkNote(m, t, durQ){ var sp = SPELL_FLAT[m % 12]; return {src:{step:sp[0], alter:sp[1], octave:Math.floor(m/12) - 1}, t:t, durQ:durQ, grace:false, tied:false, lyric:""}; }
+function monoReduce(ns){
+  var sorted = ns.slice().sort(function(x, y){ return x.ss - y.ss || y.v - x.v || y.m - x.m; }), mono = [];
+  sorted.forEach(function(n){
+    var last = mono[mono.length - 1];
+    if (last && n.ss - last.ss < 0.04){ if (n.v > last.v || (n.v === last.v && n.m > last.m)) mono[mono.length - 1] = n; return; }
+    mono.push(n);
+  });
+  mono = mono.map(function(n){ return {s:n.s, e:n.e, m:n.m, v:n.v, ss:n.ss, se:n.se}; });
+  for (var i=0; i<mono.length - 1; i++){ if (mono[i].se > mono[i+1].ss){ mono[i].se = mono[i+1].ss; mono[i].e = mono[i+1].s; } }
+  mono.forEach(function(n){ if (!(n.se > n.ss)){ n.se = n.ss + 0.05; if (n.s != null) n.e = n.s + 1; } });
+  return mono;
+}
+function phraseMeasures(mono, bpm){
+  var qps = bpm/60, groups = [], cur = null;
+  mono.forEach(function(n, i){
+    var prev = mono[i-1], gap = prev ? n.ss - prev.se : Infinity;
+    if (!cur || gap >= 0.3 || cur.length >= 12){ cur = []; groups.push(cur); }
+    cur.push(n);
+  });
+  return groups.map(function(gr, i){
+    var s0 = gr[0].ss, next = groups[i+1] ? groups[i+1][0].ss : gr[gr.length - 1].se;
+    return {number:String(i+1), stamp:fmtTime(s0), repeatStart:false, repeatEnd:0, ending:null, len:Math.max((next - s0)*qps, 0.25),
+      notes: gr.map(function(n){ return mkNote(n.m, (n.ss - s0)*qps, (n.se - n.ss)*qps); })};
+  });
+}
+function parseMidi(buf){
+  var dv = new DataView(buf.buffer, buf.byteOffset, buf.byteLength);
+  function tag(p){ return String.fromCharCode(buf[p], buf[p+1], buf[p+2], buf[p+3]); }
+  function vlq(st){ var v = 0, b; do { b = buf[st.q++]; v = (v << 7) | (b & 0x7f); } while ((b & 0x80) && st.q < st.end); return v; }
+  if (buf.length < 14 || tag(0) !== "MThd") throw userErr("This MIDI file looks damaged. Download it again and add the new file.");
+  var hlen = dv.getUint32(4), ntrks = dv.getUint16(10), division = dv.getUint16(12);
+  if (division & 0x8000) throw userErr("This MIDI file uses SMPTE timing, which Valve Finder can't read. Export it again with normal beat-based timing.");
+  var ppq = division || 480, p = 8 + hlen, tempos = [], timeSig = null, tracks = [], found = 0;
+  while (found < ntrks && p + 8 <= buf.length){
+    var len = dv.getUint32(p + 4);
+    if (tag(p) !== "MTrk"){ p += 8 + len; continue; }
+    found++;
+    var st = {q: p + 8, end: Math.min(buf.length, p + 8 + len)}, tick = 0, status = 0, name = "", open = {}, notes = [];
+    while (st.q < st.end){
+      tick += vlq(st);
+      var s = buf[st.q];
+      if (s & 0x80) st.q++; else if (status) s = status; else break;
+      if (s === 0xFF){
+        var type = buf[st.q++], ml = vlq(st);
+        if (type === 0x51 && ml >= 3) tempos.push([tick, (buf[st.q] << 16) | (buf[st.q+1] << 8) | buf[st.q+2]]);
+        else if (type === 0x58 && ml >= 2 && !timeSig) timeSig = [buf[st.q], Math.pow(2, buf[st.q+1])];
+        else if (type === 0x03 && !name) name = new TextDecoder("windows-1252").decode(buf.subarray(st.q, st.q + ml)).trim();
+        st.q += ml; status = 0;
+        if (type === 0x2F) break;
+      } else if (s === 0xF0 || s === 0xF7){
+        st.q += vlq(st); status = 0;
+      } else {
+        status = s;
+        var hi = s & 0xF0, ch = s & 0x0F;
+        if (hi === 0xC0 || hi === 0xD0){ st.q += 1; continue; }
+        var a = buf[st.q], v = buf[st.q+1]; st.q += 2;
+        if (ch === 9) continue;
+        var key = ch*128 + a;
+        if (hi === 0x90 && v > 0) (open[key] = open[key] || []).push({tick: tick, vel: v});
+        else if (hi === 0x80 || hi === 0x90){ var o = open[key] && open[key].shift(); if (o) notes.push({s: o.tick, e: tick, m: a, v: o.vel}); }
+      }
+    }
+    Object.keys(open).forEach(function(k){ open[k].forEach(function(o){ notes.push({s: o.tick, e: Math.max(tick, o.tick + ppq/4), m: k % 128, v: o.vel}); }); });
+    if (notes.length) tracks.push({name: name || ("Track " + found), notes: notes});
+    p += 8 + len;
+  }
+  if (!tracks.length) throw userErr("This MIDI file has no notes in it.");
+  tempos.sort(function(x, y){ return x[0] - y[0]; });
+  if (!tempos.length || tempos[0][0] > 0) tempos.unshift([0, 500000]);
+  function secAt(t){
+    var sec = 0;
+    for (var i=0; i<tempos.length; i++){
+      var t0 = tempos[i][0], t1 = i + 1 < tempos.length ? Math.min(tempos[i+1][0], t) : t;
+      if (t1 <= t0) break;
+      sec += (t1 - t0)/ppq * tempos[i][1]/1e6;
+    }
+    return sec;
+  }
+  var bpm = Math.round(60e6/tempos[0][1]);
+  var parts = tracks.map(function(tr){
+    var mono = monoReduce(tr.notes.map(function(n){ return {s:n.s, e:n.e, m:n.m, v:n.v, ss:secAt(n.s), se:secAt(n.e)}; }));
+    var g = ppq/12, tol = Math.max(1, ppq/120);
+    var hits = mono.filter(function(n){ var r = n.s % g; return Math.min(r, g - r) <= tol; }).length;
+    var quant = mono.length >= 4 && hits/mono.length >= 0.9, measures;
+    if (quant){
+      var ts = timeSig || [4, 4], barQ = ts[0]*4/ts[1], barT = barQ*ppq, nb = Math.floor(mono[mono.length - 1].s / barT) + 1;
+      measures = [];
+      for (var b=0; b<nb; b++) measures.push({number:String(b+1), notes:[], repeatStart:false, repeatEnd:0, ending:null, len:barQ});
+      mono.forEach(function(n){ var bi = Math.floor(n.s/barT); measures[bi].notes.push(mkNote(n.m, (n.s - bi*barT)/ppq, (n.e - n.s)/ppq)); });
+    } else measures = phraseMeasures(mono, bpm);
+    return {name:tr.name, measures:measures, transpose:null, tempo:bpm, unit: quant ? "Bar" : "Phrase"};
+  });
+  return {title:"", parts:parts, hasJumps:false};
+}
+function parseNoteList(text){
+  var rows = [];
+  text.split(/\r?\n/).forEach(function(line){
+    var f = line.split(/[,;\t ]+/).filter(function(x){ return x !== ""; }).map(Number);
+    if (f.length >= 3 && isFinite(f[0]) && isFinite(f[1]) && isFinite(f[2]) && f[0] >= 0 && f[1] > 0) rows.push(f);
+  });
+  if (!rows.length) throw userErr("That file isn't MusicXML, MIDI or a Tony note list. Export one of those and add that file.");
+  var asMidi = rows.every(function(r){ return r[1] <= 127; });
+  var notes = rows.map(function(r){
+    var m = asMidi ? Math.round(r[1]) : Math.round(69 + 12*Math.log(r[1]/440)/Math.LN2);
+    return {m:m, v:64, ss:r[0], se:r[0] + Math.max(r[2], 0.03)};
+  }).filter(function(n){ return n.m >= 0 && n.m <= 127; });
+  if (!notes.length) throw userErr("That note list has no notes Valve Finder can use.");
+  return {title:"", parts:[{name:"Note list", measures:phraseMeasures(monoReduce(notes), 120), transpose:null, tempo:120, unit:"Phrase"}], hasJumps:false};
+}
+function decodeText(buf){
+  if (buf[0]===0xFF && buf[1]===0xFE) return new TextDecoder("utf-16le").decode(buf);
+  if (buf[0]===0xFE && buf[1]===0xFF) return new TextDecoder("utf-16be").decode(buf);
+  return new TextDecoder("utf-8").decode(buf);
+}
+function unzipMusicXML(buf){
+  var dv = new DataView(buf.buffer, buf.byteOffset, buf.byteLength), eocd = -1;
+  for (var i = buf.length - 22; i >= Math.max(0, buf.length - 65557); i--){ if (dv.getUint32(i, true) === 0x06054b50){ eocd = i; break; } }
+  if (eocd < 0) return Promise.reject(userErr("This compressed file looks damaged. Export the MusicXML again and add the new file."));
+  var count = dv.getUint16(eocd + 10, true), p = dv.getUint32(eocd + 16, true), entries = [];
+  for (var k=0; k<count; k++){
+    if (dv.getUint32(p, true) !== 0x02014b50) break;
+    var nlen = dv.getUint16(p + 28, true), xlen = dv.getUint16(p + 30, true), clen = dv.getUint16(p + 32, true);
+    entries.push({method: dv.getUint16(p + 10, true), csize: dv.getUint32(p + 20, true), lho: dv.getUint32(p + 42, true), name: new TextDecoder().decode(buf.subarray(p + 46, p + 46 + nlen))});
+    p += 46 + nlen + xlen + clen;
+  }
+  function get(e){
+    var ln = dv.getUint16(e.lho + 26, true), lx = dv.getUint16(e.lho + 28, true), s = e.lho + 30 + ln + lx;
+    var data = buf.subarray(s, s + e.csize);
+    if (e.method === 0) return Promise.resolve(data);
+    if (e.method !== 8) return Promise.reject(userErr("This compressed file uses a format Valve Finder can't open. Export uncompressed MusicXML (.musicxml) instead."));
+    if (typeof DecompressionStream === "undefined") return Promise.reject(userErr("This browser can't open compressed .mxl files. Export uncompressed MusicXML (.musicxml) instead."));
+    var stream = new Blob([data]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
+    return new Response(stream).arrayBuffer().then(function(ab){ return new Uint8Array(ab); });
+  }
+  function pickFallback(){ return entries.filter(function(e){ return e.name.indexOf("META-INF") !== 0 && /\.(xml|musicxml)$/i.test(e.name); })[0]; }
+  var cont = entries.filter(function(e){ return e.name === "META-INF/container.xml"; })[0];
+  var findTarget = cont ? get(cont).then(function(b){
+    var x = new DOMParser().parseFromString(decodeText(b), "application/xml");
+    var rf = x.querySelector("rootfile"), path = rf && rf.getAttribute("full-path");
+    return entries.filter(function(e){ return e.name === path; })[0] || pickFallback();
+  }) : Promise.resolve(pickFallback());
+  return findTarget.then(function(target){
+    if (!target) throw userErr("No score was found inside this compressed file. Export MusicXML again and add the new file.");
+    return get(target).then(decodeText);
+  });
+}
+function parseBytes(bytes){
+  return Promise.resolve().then(function(){
+    for (var i=0; i<=Math.min(64, bytes.length - 4); i++){
+      if (bytes[i]===0x4D && bytes[i+1]===0x54 && bytes[i+2]===0x68 && bytes[i+3]===0x64) return {score: parseMidi(bytes.subarray(i)), kind: "MIDI"};
+    }
+    if (bytes[0]===0x50 && bytes[1]===0x4B) return unzipMusicXML(bytes).then(function(t){ return {score: parseScore(t), kind: "MusicXML"}; });
+    var text = decodeText(bytes).replace(/^﻿/, "").trim();
+    if (text.charAt(0) === "<") return {score: parseScore(text), kind: "MusicXML"};
+    return {score: parseNoteList(text), kind: "Note list"};
+  });
+}
+
+/* ---------- Transposition and rendering ---------- */
+function unroll(ms){
+  var out = [], start = 0, pass = 1, i = 0, guard = 0;
+  while (i < ms.length){
+    if (++guard > ms.length*12 + 50) return ms.map(function(m){ return {m:m, pass:1}; });
+    var m = ms[i];
+    if (i !== start){
+      if (m.repeatStart){ start = i; pass = 1; }
+      else if (!m.ending && i > 0 && ms[i-1].ending){ start = i; pass = 1; }
+    }
+    if (m.ending && m.ending.indexOf(pass) < 0){ i++; continue; }
+    out.push({m:m, pass:pass});
+    if (m.repeatEnd){
+      if (pass < m.repeatEnd){ pass++; i = start; continue; }
+      if (!m.ending){ start = i+1; pass = 1; }
+    }
+    i++;
+  }
+  return out;
+}
+function spell(m){ var s = SPELL[((m%12)+12)%12]; return {step:s[0], alter:s[1], octave:Math.floor(m/12)-1}; }
+function shiftPitch(p, dia, chrom){
+  var idx = LETTERS.indexOf(p.step) + p.octave*7 + dia;
+  var octave = Math.floor(idx/7), step = LETTERS[((idx%7)+7)%7];
+  var target = midiOf(p) + chrom;
+  var alter = target - ((octave+1)*12 + SEMI[step]);
+  if (Math.abs(alter) > 1) return spell(target);
+  return {step:step, alter:alter, octave:octave};
+}
+function offsets(part){
+  var mode = $("pitch").value, oc = parseInt($("oct").value, 10) || 0;
+  var dia = 0, chrom = 0, msg = "";
+  if (mode==="written"){ msg = "Notes are used as written for B♭ trumpet."; }
+  else if (mode==="concert"){ dia = 1; chrom = 2; msg = "Read as concert pitch and raised a whole step for B♭ trumpet."; }
+  else {
+    var tr = part.transpose;
+    if (!tr){ dia = 1; chrom = 2; msg = "Auto: the file has no transposition, so it's read as concert pitch and raised a whole step for B♭ trumpet."; }
+    else {
+      dia = tr.dia + 7*tr.oct + 1; chrom = tr.chrom + 12*tr.oct + 2;
+      msg = (dia===0 && chrom===0) ? "Auto: the file is already a B♭ trumpet part, so notes are used as written." : "Auto: the file is written for another transposing instrument, so it's converted to B♭ trumpet.";
+    }
+  }
+  if (oc) msg += oc > 0 ? " Moved up an octave." : " Moved down an octave.";
+  return {dia: dia + 7*oc, chrom: chrom + 12*oc, msg: msg};
+}
+function render(){
+  stopRun();
+  var score = state.score; if (!score) return;
+  var part = score.parts[state.part];
+  var unit = part.unit || "Bar", unitL = unit.toLowerCase();
+  var off = offsets(part);
+  $("pitchnote").textContent = off.msg;
+  var seq = $("repeats").checked ? unroll(part.measures) : part.measures.map(function(m){ return {m:m, pass:1}; });
+  var showAlt = $("alts").checked;
+  var bars = [], html = [], stripBars = [];
+  seq.forEach(function(item, bi){
+    var m = item.m, notes = [], cells = [], sTok = [];
+    m.notes.forEach(function(n, ni){
+      var w = shiftPitch(n.src, off.dia, off.chrom), wm = midiOf(w), f = FING[wm];
+      var reg = wm < 60 ? "bottom" : wm < 72 ? "low" : wm < 84 ? "mid" : "high";
+      var lab = f ? fingLabel(f) : (wm < 54 ? "below range" : "above chart");
+      var extras = [];
+      if (n.tied) extras.push("held");
+      if (n.grace) extras.push("grace");
+      if (f && SLIDE[wm] && !n.tied) extras.push("3rd slide");
+      if (showAlt && f && ALT[wm] && !n.tied) extras.push("alt " + fingLabel(ALT[wm]));
+      var cls = "note" + (n.tied ? " tied" : "") + (f ? "" : " out");
+      var dots = f ? '<span class="valves" aria-hidden="true">' + [1,2,3].map(function(k){ return '<i class="v' + (f.indexOf(String(k))>=0 ? " on" : "") + '"></i>'; }).join("") + "</span>" : "";
+      var aria = w.step + (w.alter===1 ? " sharp" : w.alter===-1 ? " flat" : "") + ", " + reg + ", " + lab + (extras.length ? ", " + extras.join(", ") : "") + (n.lyric ? ", sung " + n.lyric : "");
+      cells.push('<button type="button" class="' + cls + '" data-b="' + bi + '" data-n="' + ni + '" aria-label="' + esc(aria) + '">' +
+        '<span class="reg">' + reg + '</span>' +
+        '<span class="name">' + esc(w.step) + (w.alter ? '<span class="acc">' + accSym(w.alter) + "</span>" : "") + "</span>" +
+        dots + '<span class="fing">' + esc(lab) + "</span>" +
+        (extras.length ? '<span class="extra">' + esc(extras.join(" · ")) + "</span>" : "") +
+        (n.lyric ? '<span class="lyr">' + esc(n.lyric) + "</span>" : "") + "</button>");
+      notes.push({t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2});
+      sTok.push(n.tied ? "~" : f ? (f==="0" ? "0" : fingLabel(f)) : "?");
+    });
+    bars.push({len:m.len, notes:notes});
+    stripBars.push(sTok.length ? sTok.join(" ") : "-");
+    var meta = [];
+    if (String(bi+1) !== m.number) meta.push("m. " + m.number);
+    if (m.stamp) meta.push(m.stamp);
+    if (item.pass > 1) meta.push(ordinal(item.pass) + " time");
+    html.push('<section class="bar" aria-label="' + unit + " " + (bi+1) + '"><div class="bar-head"><div class="bar-title"><h3>' + unit + " " + (bi+1) + "</h3>" +
+      (meta.length ? '<span class="bar-meta">' + esc(meta.join(" · ")) + "</span>" : "") + "</div>" +
+      (notes.length ? '<button type="button" class="play" data-play="' + bi + '" aria-label="Play ' + unitL + " " + (bi+1) + '">' + PLAY_ICON + "Play</button>" : "") +
+      "</div>" + (cells.length ? '<div class="notes">' + cells.join("") + "</div>" : '<p class="rest">Rest</p>') + "</section>");
+  });
+  state.bars = bars;
+  $("bars").innerHTML = html.join("");
+  var lines = [];
+  for (var i=0;i<stripBars.length;i+=4){ lines.push(String(i+1).padStart(4, " ") + "   " + stripBars.slice(i, i+4).join("  |  ")); }
+  $("strip").textContent = lines.join("\n");
+  $("striphelp").textContent = "Every fingering in playing order, four " + unitL + "s a line, numbered by the first " + unitL + ". ~ is a held note, ? is out of range.";
+  $("fmeta").textContent = plural(seq.length, unitL) + " · " + part.name + (state.rec && state.rec.kind ? " · " + state.rec.kind : "");
+  $("jumps").hidden = !score.hasJumps;
+}
+
+/* ---------- Sound ---------- */
+function audio(){
+  if (!ctx){ var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null; ctx = new AC(); }
+  if (ctx.state === "suspended") ctx.resume();
+  return ctx;
+}
+function tone(out, midi, when, dur){
+  var o = ctx.createOscillator(), f = ctx.createBiquadFilter(), g = ctx.createGain();
+  o.type = "sawtooth"; o.frequency.value = 440*Math.pow(2, (midi-69)/12);
+  f.type = "lowpass"; f.frequency.value = 1800; f.Q.value = 0.7;
+  var d = Math.max(0.09, dur*0.94);
+  g.gain.setValueAtTime(0.0001, when);
+  g.gain.exponentialRampToValueAtTime(0.2, when + 0.03);
+  g.gain.setValueAtTime(0.2, when + Math.max(0.04, d - 0.06));
+  g.gain.exponentialRampToValueAtTime(0.0001, when + d);
+  o.connect(f); f.connect(g); g.connect(out);
+  o.start(when); o.stop(when + d + 0.02);
+}
+function clearPlaying(){ var ps = document.querySelectorAll(".note.playing"); for (var i=0;i<ps.length;i++) ps[i].classList.remove("playing"); }
+function stopRun(){
+  if (!run) return;
+  run.timers.forEach(clearTimeout);
+  try { run.out.disconnect(); } catch(e) {}
+  clearPlaying();
+  run = null;
+  $("playall").textContent = "Play all";
+}
+function startRun(ev, follow){
+  stopRun();
+  var c = audio(); if (!c || !ev.length) return;
+  var out = c.createGain(); out.gain.value = 1; out.connect(c.destination);
+  var t0 = c.currentTime + 0.08, timers = [], lastBar = null;
+  ev.forEach(function(x){
+    tone(out, x.midi, t0 + x.when, x.dur);
+    if (x.el) timers.push(setTimeout(function(){
+      clearPlaying(); x.el.classList.add("playing");
+      if (follow){ var bar = x.el.closest(".bar"); if (bar && bar !== lastBar){ lastBar = bar; bar.scrollIntoView({block:"nearest", behavior: reduceMotion ? "auto" : "smooth"}); } }
+    }, (x.when + 0.08)*1000));
+  });
+  var end = ev.reduce(function(a, x){ return Math.max(a, x.when + x.dur); }, 0);
+  timers.push(setTimeout(stopRun, (end + 0.35)*1000));
+  run = {out:out, timers:timers, follow:follow};
+  if (follow) $("playall").textContent = "Stop";
+}
+function playBars(from, to, follow){
+  var spq = 60/clampTempo($("tempo").value), ev = [], off = 0, last = null;
+  for (var b=from; b<=to; b++){
+    var bar = state.bars[b];
+    bar.notes.forEach(function(n, ni){
+      var el = document.querySelector('.note[data-b="' + b + '"][data-n="' + ni + '"]');
+      var dur = n.grace ? 0.09 : Math.max(0.09, n.durQ*spq);
+      var when = off + n.t*spq;
+      if (n.tied && last){ last.dur = when + dur - last.when; return; }
+      last = {midi:n.concert, when:when, dur:dur, el:el};
+      ev.push(last);
+    });
+    off += Math.max(bar.len, 0.25)*spq;
+  }
+  startRun(ev, follow);
+}
+
+/* ---------- Loading a score into the song view ---------- */
+function defaultPart(score){
+  var pi = -1;
+  score.parts.forEach(function(p, i){ if (pi < 0 && /trumpet|tpt|cornet|flugel/i.test(p.name)) pi = i; });
+  if (pi < 0) score.parts.forEach(function(p, i){ if (pi < 0 && p.transpose && p.transpose.chrom === -2) pi = i; });
+  return pi < 0 ? 0 : pi;
+}
+function countUnits(score){ var p = score.parts[defaultPart(score)]; return {count: p.measures.length, unit: p.unit || "Bar"}; }
+function readSettings(){ return {part: state.part, pitch: $("pitch").value, oct: $("oct").value, tempo: clampTempo($("tempo").value), repeats: $("repeats").checked, alts: $("alts").checked}; }
+function applySettings(s){
+  if (!s) return;
+  if (typeof s.part === "number" && s.part >= 0 && s.part < state.score.parts.length){ state.part = s.part; $("part").value = String(s.part); }
+  if (s.pitch) $("pitch").value = s.pitch;
+  if (s.oct != null) $("oct").value = String(s.oct);
+  if (s.tempo) $("tempo").value = clampTempo(s.tempo);
+  if (s.repeats != null) $("repeats").checked = !!s.repeats;
+  if (s.alts != null) $("alts").checked = !!s.alts;
+}
+function loadScore(score, settings){
+  stopRun();
+  state.score = score;
+  var pi = defaultPart(score);
+  state.part = pi;
+  $("part").innerHTML = score.parts.map(function(p, i){ return '<option value="' + i + '"' + (i===pi ? " selected" : "") + ">" + esc(p.name) + "</option>"; }).join("");
+  $("partfield").hidden = score.parts.length < 2;
+  $("pitch").value = "auto"; $("oct").value = "0"; $("repeats").checked = true; $("alts").checked = false;
+  var tp = score.parts[pi].tempo; $("tempo").value = tp ? clampTempo(tp) : 100;
+  applySettings(settings);
+  $("error").hidden = true;
+  render();
+}
+
+/* ---------- Local storage on this device (IndexedDB) ---------- */
+var Store = (function(){
+  var mem = {}, dbp = null, failed = false;
+  function db(){
+    if (failed) return Promise.reject(new Error("no db"));
+    if (!dbp) dbp = new Promise(function(res, rej){
+      try {
+        var r = indexedDB.open("valve-finder", 1);
+        r.onupgradeneeded = function(){ r.result.createObjectStore("songs", {keyPath: "id"}); };
+        r.onsuccess = function(){ res(r.result); };
+        r.onerror = function(){ rej(r.error); };
+      } catch(e){ rej(e); }
+    }).catch(function(e){ failed = true; throw e; });
+    return dbp;
+  }
+  function op(mode, fn){
+    return db().then(function(d){ return new Promise(function(res, rej){
+      var t = d.transaction("songs", mode), req = fn(t.objectStore("songs"));
+      t.oncomplete = function(){ res(req ? req.result : undefined); };
+      t.onerror = t.onabort = function(){ rej(t.error); };
+    }); });
+  }
+  function clean(rec){ var o = {}; for (var k in rec) if (Object.prototype.hasOwnProperty.call(rec, k)) o[k] = rec[k]; return o; }
+  return {
+    all: function(){ return op("readonly", function(s){ return s.getAll(); }).catch(function(){ return Object.keys(mem).map(function(k){ return mem[k]; }); }); },
+    put: function(rec){ mem[rec.id] = rec; return op("readwrite", function(s){ return s.put(clean(rec)); }).catch(function(){}); },
+    del: function(id){ delete mem[id]; return op("readwrite", function(s){ return s.delete(id); }).catch(function(){}); },
+    ok: function(){ return !failed; }
+  };
+})();
+function requestPersist(){ try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function(){}); } catch(e){} }
+
+/* ---------- GitHub backup (private song repository) ---------- */
+var GH = (function(){
+  var KEY = "vf.github";
+  function cfg(){ try { var c = JSON.parse(localStorage.getItem(KEY) || "null"); if (c && c.token && c.owner && c.repo) return c; } catch(e){} return null; }
+  function store(c){ try { if (c) localStorage.setItem(KEY, JSON.stringify(c)); else localStorage.removeItem(KEY); } catch(e){} }
+  function err(code, msg){ var e = new Error(msg); e.code = code; e.user = true; return e; }
+  function name(c){ return c.owner + "/" + c.repo; }
+  function api(c, method, path, body, accept){
+    var url = "https://api.github.com/repos/" + encodeURIComponent(c.owner) + "/" + encodeURIComponent(c.repo) + path;
+    var opts = {method: method, cache: "no-store", headers: {"Authorization": "Bearer " + c.token, "Accept": accept || "application/vnd.github+json"}};
+    if (body){ opts.body = JSON.stringify(body); opts.headers["Content-Type"] = "application/json"; }
+    return fetch(url, opts).then(function(r){
+      if (r.ok || r.status === 404) return r;
+      if (r.status === 401) throw err("auth", "GitHub didn't accept your token. It may have expired or been pasted wrong. Make a new one under GitHub backup.");
+      if (r.status === 403) throw err("forbidden", "GitHub refused the request. Check that your token has Contents set to Read and write for " + name(c) + ".");
+      if (r.status === 409 || r.status === 422) throw err("conflict", "GitHub reported a conflict. Try again.");
+      throw err("http", "GitHub returned an error (" + r.status + "). Try again in a minute.");
+    }, function(){ throw err("offline", "Couldn't reach GitHub. Your songs are saved on this device and will back up next time."); });
+  }
+  function getFile(c, path){
+    return api(c, "GET", "/contents/" + path).then(function(r){
+      if (r.status === 404) return null;
+      return r.json().then(function(j){
+        if (j.encoding === "base64" && j.content) return {text: b64ToText(j.content), sha: j.sha};
+        return api(c, "GET", "/contents/" + path, null, "application/vnd.github.raw+json")
+          .then(function(r2){ return r2.text(); }).then(function(t){ return {text: t, sha: j.sha}; });
+      });
+    });
+  }
+  function putFile(c, path, text, sha, message){
+    var body = {message: message, content: textToB64(text)};
+    if (sha) body.sha = sha;
+    return api(c, "PUT", "/contents/" + path, body).then(function(r){
+      if (r.status === 404) throw err("missing", "Can't save to " + name(c) + ". Check that the repository exists and that your token has access to it.");
+      return r.json();
+    }).then(function(j){ return j.content && j.content.sha; });
+  }
+  function readIndex(c){
+    return getFile(c, "index.json").then(function(f){
+      var j = {};
+      if (f){ try { j = JSON.parse(f.text) || {}; } catch(e){ j = {}; } }
+      return {songs: Array.isArray(j.songs) ? j.songs : [], deleted: Array.isArray(j.deleted) ? j.deleted : [], sha: f ? f.sha : null};
+    });
+  }
+  function writeIndex(c, mutate, message){
+    function attempt(n){
+      return readIndex(c).then(function(ix){
+        var next = mutate({songs: ix.songs.slice(), deleted: ix.deleted.slice()});
+        next.songs.sort(function(a, b){ return String(a.addedAt).localeCompare(String(b.addedAt)); });
+        var text = JSON.stringify({app: "Valve Finder", version: 1, songs: next.songs, deleted: next.deleted}, null, 2) + "\n";
+        return putFile(c, "index.json", text, ix.sha, message).then(function(){ return next; });
+      }).catch(function(e){ if (e.code === "conflict" && n < 2) return attempt(n + 1); throw e; });
+    }
+    return attempt(0);
+  }
+  function saveSongFile(c, rec, fileObj){
+    var path = "songs/" + rec.id + ".json", text = JSON.stringify(fileObj, null, 1) + "\n", msg = (rec.inIndex ? "Update " : "Add ") + rec.title;
+    function put(n, sha){
+      return putFile(c, path, text, sha, msg).catch(function(e){
+        if (e.code === "conflict" && n < 2) return getFile(c, path).then(function(f){ return put(n + 1, f ? f.sha : null); });
+        throw e;
+      });
+    }
+    return put(0, rec.sha || null);
+  }
+  function upsertIndex(c, meta){
+    return writeIndex(c, function(ix){
+      ix.songs = ix.songs.filter(function(s){ return s.id !== meta.id; }); ix.songs.push(meta);
+      ix.deleted = ix.deleted.filter(function(id){ return id !== meta.id; });
+      return ix;
+    }, "List " + meta.title);
+  }
+  function removeSong(c, rec){
+    var path = "songs/" + rec.id + ".json";
+    return getFile(c, path).then(function(f){
+      if (f) return api(c, "DELETE", "/contents/" + path, {message: "Delete " + rec.title, sha: f.sha});
+    }).then(function(){
+      return writeIndex(c, function(ix){
+        ix.songs = ix.songs.filter(function(s){ return s.id !== rec.id; });
+        if (ix.deleted.indexOf(rec.id) < 0) ix.deleted.push(rec.id);
+        return ix;
+      }, "Remove " + rec.title);
+    });
+  }
+  function connect(c){
+    return api(c, "GET", "").then(function(r){
+      if (r.status === 404) throw err("missing", "Can't find " + name(c) + " with this token. Check the username and repository name, and that the token was given access to that repository.");
+      return readIndex(c);
+    }).then(function(ix){ if (!ix.sha) return writeIndex(c, function(i){ return i; }, "Start the Valve Finder song archive"); });
+  }
+  return {cfg: cfg, store: store, name: name, getFile: getFile, readIndex: readIndex, saveSongFile: saveSongFile, upsertIndex: upsertIndex, removeSong: removeSong, connect: connect};
+})();
+
+var ghQueue = Promise.resolve();
+function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
+function metaOf(rec){ return {id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, units: rec.units}; }
+function fileOf(rec){ return {app: "Valve Finder", version: 1, id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units, settings: rec.settings || null, data: rec.data}; }
+function pushRecord(c, rec, indexToo){
+  var snapshot = rec.updatedAt;
+  return GH.saveSongFile(c, rec, fileOf(rec)).then(function(sha){
+    rec.sha = sha;
+    if (indexToo || !rec.inIndex) return GH.upsertIndex(c, metaOf(rec)).then(function(){ rec.inIndex = true; });
+  }).then(function(){
+    if (rec.updatedAt === snapshot) rec.synced = true;
+    return Store.put(rec);
+  });
+}
+
+/* ---------- Library view ---------- */
+function setSync(kind, msg){
+  var c = GH.cfg(), dot = $("syncdot"), t = $("synctext");
+  dot.className = "dot" + (kind === "ok" ? " ok" : kind === "error" ? " warn" : kind === "busy" ? " busy" : "");
+  if (kind === "local") t.textContent = Store.ok() ? "Songs are saved on this device only. Turn on GitHub backup below to keep them safe." : "This browser isn't keeping songs between visits. Turn on GitHub backup below so they're kept.";
+  else if (kind === "busy") t.textContent = "Syncing with GitHub…";
+  else if (kind === "ok") t.textContent = "Backed up to " + GH.name(c) + " on GitHub.";
+  else t.textContent = msg || "GitHub backup isn't working right now.";
+}
+function renderLibrary(){
+  var list = Object.keys(cache).map(function(id){ return {rec: cache[id], meta: cache[id]}; });
+  remoteMetas.forEach(function(m){ if (!cache[m.id]) list.push({rec: null, meta: m}); });
+  list.sort(function(a, b){ return String(b.meta.addedAt).localeCompare(String(a.meta.addedAt)); });
+  var q = $("search").value.trim().toLowerCase();
+  $("searchwrap").hidden = list.length < 6;
+  var shown = q ? list.filter(function(x){ return String(x.meta.title).toLowerCase().indexOf(q) >= 0; }) : list;
+  var hasGH = !!GH.cfg();
+  $("songlist").innerHTML = shown.map(function(x){
+    var st = !x.rec ? ["remote", "On GitHub"] : x.rec.synced ? ["ok", "Backed up"] : hasGH ? ["warn", "Not backed up"] : ["local", "This device"];
+    var u = x.meta.units, bits = [];
+    var d = fmtDate(x.meta.addedAt); if (d) bits.push("Added " + d);
+    if (u && u.count) bits.push(plural(u.count, String(u.unit).toLowerCase()));
+    if (x.meta.kind) bits.push(x.meta.kind);
+    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + esc(x.meta.title) +
+      '</span><span class="song-meta">' + esc(bits.join(" · ")) + '</span></span><span class="status st-' + st[0] + '">' + st[1] + "</span></a></li>";
+  }).join("");
+  $("empty").hidden = list.length > 0;
+  $("nomatch").hidden = !(list.length && !shown.length);
+}
+function syncLibrary(){
+  var c = GH.cfg();
+  if (!c){ remoteMetas = []; setSync("local"); renderLibrary(); return Promise.resolve(); }
+  setSync("busy");
+  return enqueue(function(){
+    return GH.readIndex(c).then(function(ix){
+      remoteMetas = ix.songs;
+      var gone = {}, listed = {};
+      ix.deleted.forEach(function(id){ gone[id] = 1; });
+      ix.songs.forEach(function(s){ listed[s.id] = 1; });
+      var chain = Promise.resolve();
+      Object.keys(cache).forEach(function(id){
+        var rec = cache[id];
+        if (gone[id] && rec.inIndex){ chain = chain.then(function(){ delete cache[id]; return Store.del(id); }); }
+        else if (!rec.synced || !listed[id]){ chain = chain.then(function(){ rec.inIndex = !!listed[id]; return pushRecord(c, rec, !listed[id]); }); }
+      });
+      return chain;
+    });
+  }).then(function(){ setSync("ok"); }, function(e){ setSync("error", e.user ? e.message : "GitHub backup didn't finish. It will try again next time."); })
+    .then(function(){ if (!$("view-library").hidden) renderLibrary(); });
+}
+function libMsg(text){ var m = $("libmsg"); m.textContent = text || ""; m.hidden = !text; }
+function addFile(f){
+  libMsg("");
+  return f.arrayBuffer().then(function(ab){
+    var bytes = new Uint8Array(ab);
+    return parseBytes(bytes).then(function(res){
+      var now = new Date().toISOString();
+      var title = res.score.title || f.name.replace(/\.(musicxml|xml|mxl|midi?|csv|txt)$/i, "").replace(/[_]+/g, " ").trim() || "Untitled song";
+      var rec = {id: newId(), title: title, fileName: f.name, kind: res.kind, addedAt: now, updatedAt: now, units: countUnits(res.score), settings: null, data: bytesToB64(bytes), synced: false, inIndex: false, sha: null};
+      cache[rec.id] = rec;
+      requestPersist();
+      return Store.put(rec).then(function(){
+        location.hash = "song-" + rec.id;
+        var c = GH.cfg();
+        if (c) enqueue(function(){ return pushRecord(c, rec, true); }).then(function(){ if (state.rec === rec) setSave("ok"); }, function(e){ if (state.rec === rec) setSave("error", e.message); });
+      });
+    });
+  }).catch(function(err){ libMsg(err && err.user ? err.message : "This file couldn't be opened. Export it again as MusicXML or MIDI and try that file."); });
+}
+
+/* ---------- Song view ---------- */
+function setSave(kind, msg){
+  var el = $("savestate"), labels = {example: ["plain", "Example, not saved"], local: ["local", "Saved on this device"], saving: ["busy", "Saving…"], syncing: ["busy", "Backing up…"], ok: ["ok", "Backed up"], pending: ["warn", "Not backed up yet"], error: ["warn", "Backup failed"]};
+  var l = labels[kind];
+  el.hidden = !l;
+  if (l){ el.className = "status st-" + l[0]; el.textContent = l[1]; }
+  songMsg(kind === "error" ? msg : "", kind === "error");
+}
+function songMsg(text, bad){ var m = $("songmsg"); m.textContent = text || ""; m.hidden = !text; m.className = "msg" + (bad ? " bad" : ""); }
+function showView(v){
+  $("view-library").hidden = v !== "library";
+  $("view-song").hidden = v !== "song";
+  window.scrollTo(0, 0);
+}
+function showRecord(rec){
+  state.rec = rec;
+  $("title").value = rec.title; $("title").readOnly = false;
+  $("dangerzone").hidden = false; $("delask").hidden = true;
+  return parseBytes(b64ToBytes(rec.data)).then(function(res){
+    if (state.rec !== rec) return;
+    loadScore(res.score, rec.settings);
+    setSave(rec.synced ? "ok" : GH.cfg() ? "pending" : "local");
+    var c = GH.cfg();
+    if (c && rec.inIndex) enqueue(function(){ return GH.getFile(c, "songs/" + rec.id + ".json"); }).then(function(f){
+      if (!f) return;
+      var o = JSON.parse(f.text);
+      rec.sha = f.sha;
+      if (o.updatedAt && rec.synced && String(o.updatedAt) > String(rec.updatedAt)){
+        rec.title = o.title; rec.settings = o.settings; rec.updatedAt = o.updatedAt; rec.units = o.units || rec.units;
+        Store.put(rec);
+        if (state.rec === rec){ $("title").value = rec.title; applySettings(rec.settings); render(); }
+      }
+    }).catch(function(){});
+  }).catch(function(e){ var m = $("error"); m.textContent = e.user ? e.message : "This song's file couldn't be read."; m.hidden = false; });
+}
+function openSong(id){
+  showView("song");
+  setSave(""); $("error").hidden = true;
+  if (cache[id] && cache[id].data) return showRecord(cache[id]);
+  var c = GH.cfg();
+  state.rec = null;
+  $("title").value = ""; $("bars").innerHTML = ""; $("strip").textContent = ""; $("fmeta").textContent = "";
+  if (!c){ var m = $("error"); m.textContent = "This song isn't on this device. Turn on GitHub backup to download your songs here."; m.hidden = false; return; }
+  songMsg("Downloading from GitHub…");
+  return enqueue(function(){ return GH.getFile(c, "songs/" + id + ".json"); }).then(function(f){
+    if (!f) throw userErr("This song isn't in your GitHub archive anymore.");
+    var o = JSON.parse(f.text);
+    var rec = {id: o.id || id, title: o.title || "Untitled song", fileName: o.fileName, kind: o.kind, addedAt: o.addedAt, updatedAt: o.updatedAt, units: o.units, settings: o.settings, data: o.data, synced: true, inIndex: true, sha: f.sha};
+    cache[rec.id] = rec;
+    songMsg("");
+    return Store.put(rec).then(function(){ if (location.hash === "#song-" + id) return showRecord(rec); });
+  }).catch(function(e){ songMsg(""); var m = $("error"); m.textContent = e.user ? e.message : "This song couldn't be downloaded."; m.hidden = false; });
+}
+function openExample(){
+  showView("song");
+  state.rec = null;
+  $("title").value = "When the Saints Go Marching In"; $("title").readOnly = true;
+  $("dangerzone").hidden = true;
+  loadScore(parseScore(sampleXML()), null);
+  setSave("example");
+}
+function scheduleSave(indexToo){
+  var rec = state.rec; if (!rec) return;
+  rec.settings = readSettings(); rec.updatedAt = new Date().toISOString(); rec.synced = false;
+  if (indexToo) pendingIndex = true;
+  Store.put(rec);
+  setSave(GH.cfg() ? "saving" : "local");
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(flushSave, 1500);
+}
+function flushSave(){
+  clearTimeout(saveTimer); saveTimer = null;
+  var rec = state.rec, c = GH.cfg();
+  if (!rec || !c || rec.synced) return Promise.resolve();
+  var idx = pendingIndex; pendingIndex = false;
+  setSave("syncing");
+  return enqueue(function(){ return pushRecord(c, rec, idx); }).then(function(){ if (state.rec === rec) setSave(rec.synced ? "ok" : "pending"); }, function(e){ if (state.rec === rec) setSave("error", e.message); });
+}
+
+/* ---------- Backup panel ---------- */
+function ghMsg(text, bad){ var m = $("ghmsg"); m.textContent = text || ""; m.hidden = !text; m.className = "msg" + (bad ? " bad" : ""); }
+function renderBackup(){
+  var c = GH.cfg();
+  $("ghform").hidden = !!c;
+  $("ghconnected").hidden = !c;
+  $("ghstate").textContent = c ? "Connected to " + GH.name(c) + ". Every song you add or change is saved there, with its full history." : "Keep your songs in your private GitHub repository, so they're safe if this phone or browser is lost or cleared.";
+}
+
+/* ---------- Example song ---------- */
+function sampleXML(){
+  var bars = [
+    [["r",1],["C4",1,"Oh"],["E4",1,"when"],["F4",1,"the"]],
+    [["G4",4,"saints"]],
+    [["r",1],["C4",1,"go"],["E4",1,"march","begin"],["F4",1,"ing","end"]],
+    [["G4",4,"in"]],
+    [["r",1],["C4",1,"Oh"],["E4",1,"when"],["F4",1,"the"]],
+    [["G4",2,"saints"],["E4",2,"go"]],
+    [["C4",2,"march","begin"],["E4",2,"ing","end"]],
+    [["D4",4,"in"]]
+  ];
+  var type = {1:"quarter",2:"half",4:"whole"};
+  function note(x){
+    if (x[0]==="r") return "<note><rest/><duration>" + x[1] + "</duration><voice>1</voice><type>" + type[x[1]] + "</type></note>";
+    var lyr = x[2] ? '<lyric number="1"><syllabic>' + (x[3] || "single") + "</syllabic><text>" + x[2] + "</text></lyric>" : "";
+    return "<note><pitch><step>" + x[0][0] + "</step><octave>" + x[0][1] + "</octave></pitch><duration>" + x[1] + "</duration><voice>1</voice><type>" + type[x[1]] + "</type>" + lyr + "</note>";
+  }
+  var attrs = "<attributes><divisions>1</divisions><key><fifths>0</fifths></key><time><beats>4</beats><beat-type>4</beat-type></time><clef><sign>G</sign><line>2</line></clef><transpose><diatonic>-1</diatonic><chromatic>-2</chromatic></transpose></attributes><direction><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>100</per-minute></metronome></direction-type><sound tempo=\"100\"/></direction>";
+  var ms = bars.map(function(b, i){ return '<measure number="' + (i+1) + '">' + (i===0 ? attrs : "") + b.map(note).join("") + "</measure>"; }).join("");
+  return '<?xml version="1.0" encoding="UTF-8"?><score-partwise version="3.1"><work><work-title>When the Saints Go Marching In</work-title></work><part-list><score-part id="P1"><part-name>Trumpet in B♭</part-name></score-part></part-list><part id="P1">' + ms + "</part></score-partwise>";
+}
+
+/* ---------- Routing and events ---------- */
+function route(){
+  if (saveTimer) flushSave();
+  stopRun();
+  var h = decodeURIComponent(location.hash.replace(/^#/, ""));
+  if (h.indexOf("song-") === 0) openSong(h.slice(5));
+  else if (h === "example") openExample();
+  else { state.rec = null; showView("library"); renderBackup(); renderLibrary(); syncLibrary(); }
+}
+
+$("file").addEventListener("change", function(e){
+  var f = e.target.files && e.target.files[0]; if (!f) return;
+  addFile(f).then(function(){ e.target.value = ""; });
+});
+$("search").addEventListener("input", renderLibrary);
+["pitch","oct","repeats","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(false); }); });
+$("part").addEventListener("change", function(){ state.part = parseInt($("part").value, 10) || 0; render(); scheduleSave(false); });
+$("tempo").addEventListener("change", function(){ $("tempo").value = clampTempo($("tempo").value); scheduleSave(false); });
+$("title").addEventListener("change", function(){
+  var rec = state.rec; if (!rec) return;
+  var v = $("title").value.trim();
+  if (!v){ $("title").value = rec.title; return; }
+  if (v !== rec.title){ rec.title = v; scheduleSave(true); }
+});
+$("title").addEventListener("keydown", function(e){ if (e.key === "Enter") $("title").blur(); });
+$("bars").addEventListener("click", function(e){
+  var pb = e.target.closest("[data-play]");
+  if (pb){ var b = parseInt(pb.getAttribute("data-play"), 10); playBars(b, b, false); return; }
+  var nb = e.target.closest(".note");
+  if (nb){
+    var n = state.bars[parseInt(nb.getAttribute("data-b"), 10)].notes[parseInt(nb.getAttribute("data-n"), 10)];
+    startRun([{midi:n.concert, when:0, dur:0.7, el:nb}], false);
+  }
+});
+$("playall").addEventListener("click", function(){
+  if (run && run.follow){ stopRun(); return; }
+  if (state.bars.length) playBars(0, state.bars.length - 1, true);
+});
+$("copy").addEventListener("click", function(){
+  var btn = $("copy"), text = $("strip").textContent;
+  function reset(){ setTimeout(function(){ btn.textContent = "Copy"; }, 2000); }
+  function fallback(){ var r = document.createRange(); r.selectNodeContents($("strip")); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; reset(); }
+  try { navigator.clipboard.writeText(text).then(function(){ btn.textContent = "Copied"; reset(); }, fallback); } catch(err) { fallback(); }
+});
+$("del").addEventListener("click", function(){
+  var rec = state.rec; if (!rec) return;
+  $("delq").textContent = "Delete “" + rec.title + "” from your library" + (GH.cfg() ? " and your GitHub archive" : "") + "?";
+  $("delask").hidden = false;
+});
+$("delno").addEventListener("click", function(){ $("delask").hidden = true; });
+$("delyes").addEventListener("click", function(){
+  var rec = state.rec, c = GH.cfg(); if (!rec) return;
+  clearTimeout(saveTimer); saveTimer = null;
+  $("delyes").disabled = true;
+  var p = (c && (rec.inIndex || rec.sha)) ? enqueue(function(){ return GH.removeSong(c, rec); }) : Promise.resolve();
+  p.then(function(){
+    delete cache[rec.id];
+    remoteMetas = remoteMetas.filter(function(m){ return m.id !== rec.id; });
+    return Store.del(rec.id);
+  }).then(function(){ state.rec = null; location.hash = ""; })
+    .catch(function(e){ songMsg(e.user ? e.message : "The song couldn't be deleted. Try again.", true); })
+    .then(function(){ $("delyes").disabled = false; });
+});
+$("ghconnect").addEventListener("click", function(){
+  var c = {owner: $("ghowner").value.trim(), repo: $("ghrepo").value.trim(), token: $("ghtoken").value.trim()};
+  if (!c.owner || !c.repo || !c.token){ ghMsg("Fill in your GitHub username, the song repository and the token.", true); return; }
+  var btn = $("ghconnect"); btn.disabled = true;
+  ghMsg("Checking your token…");
+  GH.connect(c).then(function(){
+    GH.store(c); $("ghtoken").value = "";
+    ghMsg("Connected. Your songs are backing up now.");
+    renderBackup(); renderLibrary();
+    return syncLibrary();
+  }).catch(function(e){ ghMsg(e.user ? e.message : "Couldn't connect. Check the details and try again.", true); })
+    .then(function(){ btn.disabled = false; });
+});
+$("ghsync").addEventListener("click", function(){ ghMsg(""); syncLibrary(); });
+$("ghoff").addEventListener("click", function(){
+  GH.store(null); remoteMetas = [];
+  ghMsg("Disconnected on this device. Your GitHub archive is untouched.");
+  renderBackup(); renderLibrary(); setSync("local");
+});
+window.addEventListener("hashchange", route);
+document.addEventListener("visibilitychange", function(){ if (document.visibilityState === "hidden" && saveTimer) flushSave(); });
+
+Store.all().then(function(recs){ (recs || []).forEach(function(r){ cache[r.id] = r; }); }).then(route);
+})();
+</script>
+</body>
+</html>
