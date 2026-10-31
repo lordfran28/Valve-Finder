@@ -186,7 +186,16 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 .nowpos{font-style:italic;color:var(--muted);font-size:1.05rem;font-variant-numeric:lining-nums}
 .play{display:inline-flex;align-items:center;gap:6px;font:600 1rem/1.2 var(--body);font-variant-caps:all-small-caps;letter-spacing:.07em;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:3px;padding:4px 11px;cursor:pointer}
 .notes{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.note{width:4.5rem;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 8px;border-radius:3px;border:1px solid transparent;background:var(--well);color:var(--ink);font:inherit;cursor:pointer;text-align:center}
+.notecell{width:4.5rem;display:flex;flex-direction:column;gap:2px}
+input[type=text].annot{width:100%;min-width:0;font:italic 500 .92rem/1.2 var(--body);color:var(--brass);background:transparent;border:0;border-bottom:1px dotted transparent;border-radius:0;padding:2px 1px 3px;text-align:center;
+  opacity:0;transition:opacity .45s ease,border-color .45s ease}
+.notecell:hover input[type=text].annot,.notecell.reveal input[type=text].annot,input[type=text].annot:focus,input[type=text].annot.has{opacity:1}
+.notecell:hover input[type=text].annot:not([readonly]),.notecell.reveal input[type=text].annot:not([readonly]){border-bottom-color:var(--dot-line)}
+input[type=text].annot:focus{outline:none;border-bottom-style:solid;border-bottom-color:var(--brass)}
+input[type=text].annot[readonly]:not(.has){display:none}
+input[type=text].annot.long{font-size:.8rem;letter-spacing:-.01em}
+input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
+.note{width:100%;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 8px;border-radius:3px;border:1px solid transparent;background:var(--well);color:var(--ink);font:inherit;cursor:pointer;text-align:center}
 .concert{font-size:.98rem;color:var(--muted);font-variant-numeric:lining-nums;line-height:1;letter-spacing:.02em}
 .name{font-family:var(--display);font-size:1.9rem;line-height:1;white-space:nowrap}
 .acc{font-family:var(--body);font-size:.62em;margin-left:1px;vertical-align:.36em}
@@ -327,6 +336,11 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
     </div>
 
     <div id="bars" class="bars" aria-label="Notes"></div>
+    <datalist id="techniques">
+      <option value="slide to next"></option><option value="scoop"></option><option value="fall"></option><option value="doit"></option>
+      <option value="shake"></option><option value="vibrato"></option><option value="bend"></option><option value="staccato"></option>
+      <option value="accent"></option><option value="growl"></option><option value="half-valve"></option><option value="breath before"></option>
+    </datalist>
 
     <section class="strip-wrap" aria-label="Fingering strip">
       <div class="strip-head"><h3>All fingerings, in order</h3><button type="button" id="copy" class="btn quiet">Copy</button></div>
@@ -728,6 +742,8 @@ function render(){
   var off = offsets(part);
   $("pitchnote").textContent = off.msg;
   var seq = $("repeats").checked ? unroll(part.measures) : part.measures.map(function(m){ return {m:m, pass:1}; });
+  var mIndex = new Map(); part.measures.forEach(function(m, i){ mIndex.set(m, i); });
+  var anns = annotations(), locked = !!(state.rec && !isAdmin() && state.rec.inIndex);
   var showAlt = $("alts").checked;
   var bars = [], html = [], stripBars = [];
   seq.forEach(function(item, bi){
@@ -744,13 +760,15 @@ function render(){
       var cls = "note" + (n.tied ? " tied" : "") + (f ? "" : " out");
       var dots = f ? '<span class="valves" aria-hidden="true">' + [1,2,3].map(function(k){ return '<i class="v' + (f.indexOf(String(k))>=0 ? " on" : "") + '"></i>'; }).join("") + "</span>" : "";
       var aria = "Trumpet " + noteWords(w) + ", concert " + noteWords(cp) + ", " + lab + (extras.length ? ", " + extras.join(", ") : "") + (n.lyric ? ", sung " + n.lyric : "");
-      cells.push('<button type="button" class="' + cls + '" data-b="' + bi + '" data-n="' + ni + '" aria-label="' + esc(aria) + '">' +
+      var key = state.part + ":" + mIndex.get(m) + ":" + ni, ann = anns[key] || "";
+      cells.push('<div class="notecell"><button type="button" class="' + cls + '" data-b="' + bi + '" data-n="' + ni + '" aria-label="' + esc(aria) + '">' +
         '<span class="concert">' + esc(cp.step + accSym(cp.alter) + cp.octave) + '</span>' +
         '<span class="name">' + esc(w.step) + (w.alter ? '<span class="acc">' + accSym(w.alter) + "</span>" : "") + '<span class="oct">' + w.octave + "</span></span>" +
         dots + '<span class="fing">' + esc(lab) + "</span>" +
         (extras.length ? '<span class="extra">' + esc(extras.join(" · ")) + "</span>" : "") +
-        (n.lyric ? '<span class="lyr">' + esc(n.lyric) + "</span>" : "") + "</button>");
-      notes.push({t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2});
+        (n.lyric ? '<span class="lyr">' + esc(n.lyric) + "</span>" : "") + "</button>" +
+        '<input class="annot' + annClass(ann) + '" title="' + esc(ann) + '" type="text" list="techniques" maxlength="60" autocomplete="off" spellcheck="false" enterkeyhint="done" data-key="' + key + '" value="' + esc(ann) + '" aria-label="How to play ' + esc(noteWords(w)) + '"' + (locked ? " readonly" : "") + "></div>");
+      notes.push({t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2, key:key});
       sTok.push(n.tied ? "~" : f ? (f==="0" ? "0" : fingLabel(f)) : "?");
     });
     bars.push({len:m.len, notes:notes});
@@ -784,11 +802,34 @@ function audio(){
   }
   return ctx;
 }
-function tone(r, midi, when, dur){
-  var o = ctx.createOscillator(), f = ctx.createBiquadFilter(), g = ctx.createGain();
+function annClass(v){ return (v ? " has" : "") + (v.length > 15 ? " longer" : v.length > 8 ? " long" : ""); }
+function annotations(){ return state.rec ? (state.rec.notes || {}) : (state.tempNotes || {}); }
+function parseFx(t){
+  t = String(t || "").toLowerCase();
+  return {slide: /slide|gliss|portamento|smear/.test(t), scoop: /scoop/.test(t), fall: /fall|drop/.test(t), doit: /doit|doo-?it/.test(t),
+          shake: /shake|lip trill|trill/.test(t), vibrato: /vib/.test(t), bend: /bend|dip/.test(t), staccato: /stacc|short/.test(t),
+          accent: /accent|marcato|punch/.test(t), growl: /growl|flutter/.test(t), half: /half.?valve/.test(t)};
+}
+function tone(r, midi, when, dur, fx, next){
+  fx = fx || {};
+  var o = ctx.createOscillator(), f = ctx.createBiquadFilter(), g = ctx.createGain(), det = o.detune;
   o.type = "sawtooth"; o.frequency.value = 440*Math.pow(2, (midi-69)/12);
-  f.type = "lowpass"; f.frequency.value = 1800; f.Q.value = 0.7;
-  var d = Math.max(0.1, dur*0.94), peak = 0.18;
+  f.type = "lowpass"; f.frequency.value = fx.half ? 900 : 1800; f.Q.value = fx.half ? 2 : 0.7;
+  var d = Math.max(0.1, dur*0.94), peak = fx.accent ? 0.26 : 0.18;
+  if (fx.staccato) d = Math.min(d, 0.14);
+  det.setValueAtTime(0, when);
+  if (fx.scoop){ det.setValueAtTime(-250, when); det.linearRampToValueAtTime(0, when + Math.min(0.16, d*0.45)); }
+  if (fx.bend){ det.linearRampToValueAtTime(-110, when + d*0.35); det.linearRampToValueAtTime(0, when + d*0.75); }
+  if (fx.shake){ for (var t = when + 0.06, up = true; t < when + d - 0.05; t += 1/14, up = !up) det.linearRampToValueAtTime(up ? 320 : 0, t); }
+  if (fx.slide && next != null){ det.setValueAtTime(0, when + d*0.5); det.linearRampToValueAtTime((next - midi)*100, when + d); }
+  if (fx.fall){ var fs = when + Math.max(d*0.45, d - 0.28); det.setValueAtTime(0, fs); det.linearRampToValueAtTime(-900, when + d); }
+  if (fx.doit){ var ds = when + Math.max(d*0.45, d - 0.25); det.setValueAtTime(0, ds); det.linearRampToValueAtTime(800, when + d); }
+  if (fx.vibrato || fx.growl){
+    var lfo = ctx.createOscillator(), lg = ctx.createGain();
+    lfo.frequency.value = fx.growl ? 28 : 5.5; lg.gain.value = fx.growl ? 45 : 22;
+    lfo.connect(lg); lg.connect(det); lfo.start(when + (fx.growl ? 0 : Math.min(0.15, d*0.3))); lfo.stop(when + d + 0.03);
+    r.live.push(lfo);
+  }
   g.gain.setValueAtTime(0.0001, when);
   g.gain.exponentialRampToValueAtTime(peak, when + 0.03);
   g.gain.setValueAtTime(peak, when + Math.max(0.035, d - 0.06));
@@ -822,7 +863,7 @@ function schedule(){
   var horizon = ctx.currentTime + 1.5;
   while (r.i < r.ev.length && r.t0 + r.ev[r.i].when < horizon){
     var x = r.ev[r.i++];
-    tone(r, x.midi, Math.max(r.t0 + x.when, ctx.currentTime + 0.01), x.dur);
+    tone(r, x.midi, Math.max(r.t0 + x.when, ctx.currentTime + 0.01), x.dur, x.fx, x.next);
   }
 }
 function tick(){
@@ -867,7 +908,7 @@ function startRun(ev, opts){
   if (c.state !== "running") c.resume().then(go, go); else go();
 }
 function playBars(from, to, opts){
-  var spq = 60/clampTempo($("tempo").value), ev = [], off = 0, last = null;
+  var spq = 60/clampTempo($("tempo").value), ev = [], off = 0, last = null, anns = annotations();
   for (var b=from; b<=to; b++){
     var bar = state.bars[b];
     bar.notes.forEach(function(n, ni){
@@ -876,11 +917,12 @@ function playBars(from, to, opts){
       var when = off + n.t*spq;
       if (!isFinite(when) || !isFinite(dur)) return;
       if (n.tied && last){ last.dur = when + dur - last.when; return; }
-      last = {midi:n.concert, when:when, dur:dur, el:el};
+      last = {midi:n.concert, when:when, dur:dur, el:el, fx:parseFx(anns[n.key])};
       ev.push(last);
     });
     off += Math.max(bar.len || 0, 0.25)*spq;
   }
+  ev.forEach(function(x, i){ x.next = ev[i+1] ? ev[i+1].midi : null; });
   startRun(ev, opts);
 }
 ["wheel", "touchstart", "touchmove", "keydown"].forEach(function(t){
@@ -1060,13 +1102,13 @@ function publicFetch(path){
 }
 function isAdmin(){ return !!GH.cfg(); }
 function recFromFile(o, id, sha){
-  return {id: o.id || id, title: o.title || "Untitled song", fileName: o.fileName, kind: o.kind, addedAt: o.addedAt, updatedAt: o.updatedAt, units: o.units, settings: o.settings, data: o.data, synced: true, inIndex: true, sha: sha || null};
+  return {id: o.id || id, title: o.title || "Untitled song", fileName: o.fileName, kind: o.kind, addedAt: o.addedAt, updatedAt: o.updatedAt, units: o.units, settings: o.settings, notes: o.notes || null, data: o.data, synced: true, inIndex: true, sha: sha || null};
 }
 
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
 function metaOf(rec){ return {id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, units: rec.units}; }
-function fileOf(rec){ return {app: "Valve Finder", version: 1, id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units, settings: rec.settings || null, data: rec.data}; }
+function fileOf(rec){ return {app: "Valve Finder", version: 1, id: rec.id, title: rec.title, fileName: rec.fileName, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units, settings: rec.settings || null, notes: rec.notes || null, data: rec.data}; }
 function pushRecord(c, rec, indexToo){
   var snapshot = rec.updatedAt;
   return GH.saveSongFile(c, rec, fileOf(rec)).then(function(sha){
@@ -1191,7 +1233,7 @@ function showRecord(rec){
       var o = JSON.parse(f.text);
       rec.sha = f.sha;
       if (o.updatedAt && rec.synced && String(o.updatedAt) > String(rec.updatedAt)){
-        rec.title = o.title; rec.settings = o.settings; rec.updatedAt = o.updatedAt; rec.units = o.units || rec.units;
+        rec.title = o.title; rec.settings = o.settings; rec.notes = o.notes || null; rec.updatedAt = o.updatedAt; rec.units = o.units || rec.units;
         Store.put(rec);
         if (state.rec === rec){ setTitle(rec.title, false); applySettings(rec.settings); render(); }
       }
@@ -1219,7 +1261,7 @@ function openSong(id){
 }
 function openExample(){
   showView("song");
-  state.rec = null;
+  state.rec = null; state.tempNotes = {};
   setTitle("When the Saints Go Marching In", true);
   $("dangerzone").hidden = true;
   loadScore(parseScore(sampleXML()), null);
@@ -1347,10 +1389,23 @@ $("bars").addEventListener("click", function(e){
   }
   var nb = e.target.closest(".note");
   if (nb){
-    var n = state.bars[parseInt(nb.getAttribute("data-b"), 10)].notes[parseInt(nb.getAttribute("data-n"), 10)];
-    startRun([{midi:n.concert, when:0, dur:0.7, el:nb}], {});
+    var b = parseInt(nb.getAttribute("data-b"), 10), ni = parseInt(nb.getAttribute("data-n"), 10), n = state.bars[b].notes[ni];
+    var nx = state.bars[b].notes[ni + 1];
+    for (var k = b + 1; !nx && k < state.bars.length; k++) nx = state.bars[k].notes[0];
+    var cells = document.querySelectorAll(".notecell.reveal"); for (var i = 0; i < cells.length; i++) cells[i].classList.remove("reveal");
+    nb.parentNode.classList.add("reveal");
+    startRun([{midi:n.concert, when:0, dur:0.7, el:nb, fx:parseFx(annotations()[n.key]), next: nx ? nx.concert : null}], {});
   }
 });
+$("bars").addEventListener("input", function(e){
+  var a = e.target; if (!a.classList || !a.classList.contains("annot")) return;
+  var key = a.getAttribute("data-key"), v = a.value.trim();
+  a.className = "annot" + annClass(v); a.title = v;
+  var store = state.rec ? (state.rec.notes = state.rec.notes || {}) : (state.tempNotes = state.tempNotes || {});
+  if (v) store[key] = v; else delete store[key];
+  if (state.rec) scheduleSave(false);
+});
+$("bars").addEventListener("keydown", function(e){ if (e.key === "Enter" && e.target.classList && e.target.classList.contains("annot")){ e.preventDefault(); e.target.blur(); } });
 $("playall").addEventListener("click", function(){
   if (run && run.btn === $("playall")){ stopRun(); return; }
   if (state.bars.length) playBars(0, state.bars.length - 1, {btn: $("playall"), follow: true, long: true});
