@@ -1649,6 +1649,12 @@ var Owner = (function(){
   return {token: token, store: store, getSha: getSha, putRetry: putRetry, del: del, check: check, readJson: readJson};
 })();
 function isOwner(){ return !!Owner.token(); }
+/* what to say when a pasted key doesn't work */
+function keyProblem(e){
+  if (e && e.code === "auth") return "GitHub didn't accept that key. Copy it again, the whole thing, starting with github_pat_.";
+  if (e && e.code === "offline") return "Couldn't reach GitHub. Check the internet connection and try again.";
+  return e && e.user ? e.message : "Couldn't connect. Check the key and try again.";
+}
 /* A deleted song can stay in songs/index.json for a minute until GitHub rebuilds it. */
 function goneList(){ try { return JSON.parse(localStorage.getItem("vf.gone") || "{}") || {}; } catch(e){ return {}; } }
 function markGone(id){
@@ -2231,7 +2237,7 @@ $("delyes").addEventListener("click", function(){
     archive = archive.filter(function(m){ return m.id !== rec.id; });
     return Store.del(rec.id);
   }).then(function(){ state.rec = null; location.hash = ""; })
-    .catch(function(e){ songMsg(e.code === "offline" ? "Couldn't reach GitHub. Try again when you're online." : e.user ? e.message : "The song couldn't be deleted. Try again.", true); })
+    .catch(function(e){ songMsg(e.code === "auth" || (e.code === "missing" && $("delkeyin").value) ? keyProblem(e) : e.code === "offline" ? "Couldn't reach GitHub. Try again when you're online." : e.user ? e.message : "The song couldn't be deleted. Try again.", true); })
     .then(function(){ $("delyes").disabled = false; });
 });
 $("ghconnect").addEventListener("click", function(){
@@ -2244,7 +2250,7 @@ $("ghconnect").addEventListener("click", function(){
     ghMsg("Connected. This device can now change your songs.");
     renderOwner();
     return syncLibrary();
-  }).catch(function(e){ ghMsg(e.user ? e.message : "Couldn't connect. Check the key and try again.", true); })
+  }).catch(function(e){ ghMsg(keyProblem(e), true); })
     .then(function(){ btn.disabled = false; });
 });
 $("ghpair").addEventListener("click", showPair);
