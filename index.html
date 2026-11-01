@@ -232,6 +232,14 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 .lyr{font-size:.95rem;font-style:italic;color:var(--muted);max-width:100%;overflow-wrap:anywhere;line-height:1.15}
 .note.tied .name,.note.tied .fing{color:var(--muted)}
 .key{margin:0;font-size:.98rem;font-style:italic;color:var(--muted)}
+/* The trumpet recording: added from the device, kept on the device */
+.filebtn{position:relative;overflow:hidden}
+.filebtn input{position:absolute;inset:0;opacity:0;cursor:pointer;font-size:0}
+.recrow{display:flex;align-items:center;gap:6px 16px;flex-wrap:wrap}
+.recrow .field{display:flex;flex-direction:row;align-items:center;gap:10px}
+.recrow .field label{margin:0}
+.recrow select{width:auto;max-width:19rem}
+.note.ghost{opacity:.5;border:1px dashed var(--dot-line,var(--line));background:transparent}
 .songtools{display:flex;flex-direction:column;gap:12px}
 .toolrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .partpick{flex:1 1 9rem;max-width:15rem}
@@ -338,6 +346,18 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
         <div class="field partpick" id="partfield" hidden><label for="part" class="vh">Part</label><select id="part" aria-label="Part"></select></div>
         <p class="key">Large: trumpet note · small: concert pitch</p>
       </div>
+      <div class="recrow" id="recrow" hidden>
+        <span class="btn link filebtn" id="recadd"><span id="recaddlab">Add the trumpet recording</span><input type="file" id="recfile" accept="audio/*,.mp3,.wav,.m4a,.aac,.ogg,.flac,.aif,.aiff" aria-label="Add the trumpet recording"></span>
+        <span class="field" id="hearfield" hidden><label for="hear">Hear</label>
+          <select id="hear">
+            <option value="rec">The recording</option>
+            <option value="both">The recording and the trumpet sound</option>
+            <option value="timed">The trumpet sound, in the recording's time</option>
+            <option value="written">The trumpet sound, as written</option>
+          </select></span>
+        <button type="button" class="btn link" id="recdrop" hidden>Remove the recording</button>
+      </div>
+      <p id="recmsg" class="msg" role="status" hidden></p>
       <details class="settings" id="settings">
         <summary>Settings</summary>
         <div class="controls">
@@ -779,7 +799,7 @@ function render(){
   var mIndex = new Map(); part.measures.forEach(function(m, i){ mIndex.set(m, i); });
   var anns = annotations(), locked = isLocked(state.rec);
   var showAlt = $("alts").checked;
-  var bars = [], html = [], stripBars = [];
+  var bars = [], html = [], stripBars = [], heard = 0;
   seq.forEach(function(item, bi){
     var m = item.m, notes = [], cells = [], sTok = [];
     m.notes.forEach(function(n, ni){
@@ -805,7 +825,8 @@ function render(){
       notes.push({t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2, key:key, vel:n.vel});
       sTok.push(n.tied ? "~" : f ? (f==="0" ? "0" : fingLabel(f)) : "?");
     });
-    bars.push({len:m.len, notes:notes});
+    bars.push({len:m.len, notes:notes, first:heard});
+    notes.forEach(function(x){ if (!x.tied) heard++; });
     stripBars.push(sTok.length ? sTok.join(" ") : "-");
     var meta = [];
     if (String(bi+1) !== m.number) meta.push("m. " + m.number);
@@ -824,6 +845,7 @@ function render(){
   $("strip").textContent = lines.join("\n");
   $("fmeta").textContent = plural(seq.length, unitL) + " · " + part.name + (state.rec && state.rec.kind ? " · " + state.rec.kind : "");
   $("jumps").hidden = !score.hasJumps;
+  markTiming();
   prefetchHorn();
 }
 
@@ -1071,7 +1093,7 @@ function schedule(){
   var horizon = ctx.currentTime + 1.5;
   while (r.i < r.ev.length && r.t0 + r.ev[r.i].when < horizon){
     var x = r.ev[r.i++];
-    voice(ctx, r.out, x, Math.max(r.t0 + x.when, ctx.currentTime + 0.01), r.live);
+    if (!x.silent) voice(ctx, r.out, x, Math.max(r.t0 + x.when, ctx.currentTime + 0.01), r.live);
   }
 }
 function tick(){
@@ -1132,6 +1154,13 @@ function startRun(ev, opts){
     r.out = c.createGain(); r.out.gain.value = 1; r.out.connect(bus(c));
     var lead = Math.max(0.12, (c.baseLatency || 0) + (c.outputLatency || 0) + 0.06);
     r.t0 = c.currentTime + lead;
+    /* the trumpet recording, started on the same clock so the fingerings light up as it plays */
+    if (ev.recFrom != null && state.recBuf){
+      var src = c.createBufferSource(), g = c.createGain();
+      src.buffer = state.recBuf; g.gain.value = 1; src.connect(g); g.connect(c.destination);
+      src.start(r.t0, Math.max(0, ev.recFrom), Math.max(0.1, ev.recTo - ev.recFrom));
+      r.live.push(src);
+    }
     schedule();
     r.timer = setInterval(schedule, 120);
     r.raf = requestAnimationFrame(tick);
@@ -1160,6 +1189,8 @@ function linkEvents(ev){
   return ev;
 }
 function buildEvents(from, to){
+  var tm = timingNow(), mode = tm ? $("hear").value : "written";
+  if (mode !== "written") return buildTimed(from, to, tm, (mode === "rec" || mode === "both") && !state.recBuf ? "timed" : mode);
   var spq = 60/clampTempo($("tempo").value), ev = [], off = 0, last = null, anns = annotations();
   for (var b=from; b<=to; b++){
     var bar = state.bars[b];
@@ -1188,6 +1219,239 @@ function buildEvents(from, to){
   return linkEvents(ev);
 }
 function playBars(from, to, opts){ startRun(buildEvents(from, to), opts); }
+
+/* ---------- The trumpet recording ----------
+   The isolated trumpet track stays on this device: it's somebody's recording, and the site is public.
+   Valve Finder listens for its pitch every 20 ms and lines the notes of the file up with it. After
+   that it can play the recording with each fingering lighting up as the note sounds, or play its own
+   trumpet sound in the recording's timing. Only the timing is saved with the song. Notes of the file
+   that the recording never plays are drawn with a dashed edge. */
+var RecDB = (function(){
+  var dbp = null;
+  function db(){
+    if (!dbp) dbp = new Promise(function(res, rej){
+      try { var r = indexedDB.open("valve-finder-audio", 1);
+        r.onupgradeneeded = function(){ r.result.createObjectStore("audio", {keyPath: "id"}); };
+        r.onsuccess = function(){ res(r.result); }; r.onerror = function(){ rej(r.error); };
+      } catch(e){ rej(e); }
+    });
+    return dbp;
+  }
+  function op(mode, fn){ return db().then(function(d){ return new Promise(function(res, rej){ var t = d.transaction("audio", mode), q = fn(t.objectStore("audio")); t.oncomplete = function(){ res(q ? q.result : undefined); }; t.onerror = t.onabort = function(){ rej(t.error); }; }); }); }
+  return {
+    get: function(id){ return op("readonly", function(s){ return s.get(id); }).catch(function(){ return null; }); },
+    put: function(o){ return op("readwrite", function(s){ return s.put(o); }); },
+    del: function(id){ return op("readwrite", function(s){ return s.delete(id); }).catch(function(){}); }
+  };
+})();
+function heardNotes(){
+  var out = [];
+  (state.bars || []).forEach(function(bar){ bar.notes.forEach(function(n){ if (!n.tied) out.push(n.concert); }); });
+  return out;
+}
+/* notes too quick to hear one by one (ornaments, grace notes): never called missing */
+function quickNotes(){
+  var spq = 60/clampTempo($("tempo").value), out = [];
+  (state.bars || []).forEach(function(bar){ bar.notes.forEach(function(n){ if (!n.tied) out.push(!!n.grace || n.durQ*spq < 0.15); }); });
+  return out;
+}
+function timingSig(){ return state.part + "|" + ($("repeats").checked ? 1 : 0) + "|" + heardNotes().length; }
+function timingNow(){ var tm = state.rec && state.rec.timing; return tm && tm.sig === timingSig() && Array.isArray(tm.at) ? tm : null; }
+function markTiming(){
+  var tm = timingNow();
+  (state.bars || []).forEach(function(bar, b){
+    var j = bar.first;
+    bar.notes.forEach(function(n, ni){
+      if (n.tied) return;
+      var el = document.querySelector('.note[data-b="' + b + '"][data-n="' + ni + '"]');
+      if (el) el.classList.toggle("ghost", !!(tm && !tm.at[j]));
+      j++;
+    });
+  });
+  var has = !!(state.rec && (state.rec.timing || state.recName));
+  $("recrow").hidden = !state.rec;
+  $("recaddlab").textContent = state.recName ? "Use another recording" : "Add the trumpet recording";
+  $("hearfield").hidden = !tm;
+  $("recdrop").hidden = !state.recName;
+  var o = $("hear").querySelector('option[value="rec"]'), o2 = $("hear").querySelector('option[value="both"]');
+  o.disabled = o2.disabled = !state.recBuf;
+  if (!state.recBuf && ($("hear").value === "rec" || $("hear").value === "both")) $("hear").value = "timed";
+  if (state.rec && state.rec.timing && !tm) recMsg("The recording was lined up with other settings (part or repeats). Add it again to line it up with these.");
+}
+function recMsg(text, bad){ var m = $("recmsg"); m.textContent = text || ""; m.hidden = !text; m.className = "msg" + (bad ? " bad" : ""); }
+function buildTimed(from, to, tm, mode){
+  var ev = [], anns = annotations();
+  for (var b = from; b <= to; b++){
+    var bar = state.bars[b], j = bar.first;
+    bar.notes.forEach(function(n, ni){
+      if (n.tied) return;
+      var a = tm.at[j++]; if (!a) return;
+      var fx = parseFx(anns[n.key]); fx.fermata = false;
+      ev.push({midi: n.concert, when: a[0], dur: Math.max(0.06, a[1]), el: document.querySelector('.note[data-b="' + b + '"][data-n="' + ni + '"]'), fx: fx, vel: n.vel, silent: mode === "rec"});
+    });
+  }
+  if (!ev.length) return ev;
+  var from0 = Math.max(0, ev[0].when - 0.25), end = 0;
+  ev.forEach(function(x){ x.when -= from0; end = Math.max(end, x.when + x.dur); });
+  linkEvents(ev);
+  if (mode === "rec" || mode === "both"){ ev.recFrom = from0; ev.recTo = from0 + end + 0.4; }
+  return ev;
+}
+/* Pitch every 20 ms (YIN), on a copy of the recording at 11 kHz */
+function trackPitch(buf, progress){
+  var rate = 22050, len = Math.ceil(buf.duration*rate);
+  var oc = new OfflineAudioContext(1, len, rate), src = oc.createBufferSource();
+  src.buffer = buf; src.connect(oc.destination); src.start();
+  return oc.startRendering().then(function(b){
+    var y = b.getChannelData(0), n2 = y.length >> 1, x = new Float32Array(n2);
+    for (var i = 0; i < n2; i++) x[i] = (y[2*i] + y[2*i + 1])*0.5;
+    var sr = rate/2, W = 512, hop = Math.round(sr*0.02), tMin = Math.floor(sr/1500), tMax = Math.ceil(sr/140);
+    var F = Math.max(0, Math.floor((x.length - W - tMax)/hop)), midi = new Float32Array(F), conf = new Float32Array(F), rms = new Float32Array(F), d = new Float32Array(tMax + 2);
+    var f = 0;
+    return new Promise(function(res){
+      (function chunk(){
+        var stop = Math.min(F, f + 400);
+        for (; f < stop; f++){
+          var s0 = f*hop, e = 0, k, t;
+          for (k = 0; k < W; k++){ var v = x[s0 + k]; e += v*v; }
+          rms[f] = Math.sqrt(e/W);
+          d[0] = 1;
+          var run = 0, best = -1, bestV = 9;
+          for (t = 1; t <= tMax; t++){
+            var sum = 0;
+            for (k = 0; k < W; k++){ var q = x[s0 + k] - x[s0 + k + t]; sum += q*q; }
+            run += sum; d[t] = run > 0 ? sum*t/run : 1;
+          }
+          for (t = tMin; t <= tMax; t++){
+            if (d[t] < 0.15){ while (t + 1 <= tMax && d[t + 1] < d[t]) t++; best = t; break; }
+            if (d[t] < bestV){ bestV = d[t]; best = t; }
+          }
+          var bt = best;
+          if (bt > tMin && bt < tMax){ var a = d[bt - 1], c0 = d[bt], c = d[bt + 1], den = a - 2*c0 + c; if (den > 0) bt += 0.5*(a - c)/den; }
+          conf[f] = Math.max(0, 1 - d[best]);
+          midi[f] = 69 + 12*Math.log2(sr/bt/440);
+        }
+        if (progress) progress(f/F);
+        if (f < F) setTimeout(chunk, 0); else res({midi: midi, conf: conf, rms: rms, hop: hop/sr, mid: W/2/sr, n: F});
+      })();
+    });
+  });
+}
+/* Lines the notes up with the pitch track: each note takes the frames where its pitch sounds, in
+   order. A note can be passed over (it isn't in the recording) at a price, and a new note starts
+   most easily where the sound starts again or gets louder. */
+function alignNotes(notes, pt, quick){
+  /* Each note is a short chain of states, so it has to last at least M frames (60 ms); passing a
+     note over costs about what three frames of the wrong pitch would. */
+  var N = notes.length, F = pt.n, M = 3, S = 1 + N*M;
+  var mx = 0; for (var i = 0; i < F; i++) if (pt.rms[i] > mx) mx = pt.rms[i];
+  var voiced = new Uint8Array(F), on = new Float32Array(F);
+  for (i = 0; i < F; i++) voiced[i] = pt.conf[i] > 0.62 && pt.rms[i] > mx*0.035 ? 1 : 0;
+  for (i = 0; i < F; i++){
+    var rise = i >= 2 ? (pt.rms[i] - pt.rms[i - 2])/(mx*0.08) : 0;
+    on[i] = Math.max(0, Math.min(1, rise));
+    if (voiced[i] && (!i || !voiced[i - 1])) on[i] = 1;
+  }
+  var cst = new Float64Array(N + 1);
+  function costs(t){
+    cst[0] = voiced[t] ? 0.7 : 0;
+    for (var n = 1; n <= N; n++){
+      if (!voiced[t]){ cst[n] = 0.25; continue; }
+      var dd = Math.abs(pt.midi[t] - notes[n - 1]);
+      dd = Math.min(dd, Math.abs(dd - 12) + 0.6, Math.abs(dd - 24) + 1.2);
+      cst[n] = Math.min(1, Math.max(0, dd - 0.35)/0.9)*pt.conf[t] + (1 - pt.conf[t])*0.3;
+    }
+  }
+  var INF = 1e30, prev = new Float64Array(S), cur = new Float64Array(S), back = new Uint8Array(S*F), SKIP = 1.6;
+  for (var k = 0; k < S; k++) prev[k] = INF;
+  costs(0); prev[0] = cst[0];
+  for (var t = 1; t < F; t++){
+    costs(t);
+    var adv = 0.6*(1 - on[t]);
+    cur[0] = prev[0] + cst[0]; back[t*S] = 0;
+    for (var n = 1; n <= N; n++){
+      var b0 = 1 + (n - 1)*M, c = cst[n];
+      /* entering note n: from the end of note n-1 (or the start), or passing over one or two notes */
+      var eB = n === 1 ? prev[0] : prev[b0 - 1], eA = 1, v;
+      if (n === 1){ eB = prev[0]; }
+      if (n >= 2 && (v = (n === 2 ? prev[0] : prev[b0 - 1 - M]) + SKIP) < eB){ eB = v; eA = 2; }
+      if (n >= 3 && (v = (n === 3 ? prev[0] : prev[b0 - 1 - 2*M]) + 2*SKIP) < eB){ eB = v; eA = 3; }
+      cur[b0] = eB + adv + c; back[t*S + b0] = eA;
+      for (var j = 1; j < M; j++){ cur[b0 + j] = prev[b0 + j - 1] + c; back[t*S + b0 + j] = 1; }
+      /* the last state of a note can hold */
+      var hold = prev[b0 + M - 1] + c;
+      if (hold < cur[b0 + M - 1]){ cur[b0 + M - 1] = hold; back[t*S + b0 + M - 1] = 0; }
+    }
+    var sw = prev; prev = cur; cur = sw;
+  }
+  var endN = N, bestEnd = INF;
+  for (n = Math.max(1, N - 3); n <= N; n++){ var tot = prev[n*M] + (N - n)*SKIP; if (tot < bestEnd){ bestEnd = tot; endN = n; } }
+  var first = new Array(N).fill(-1), lastV = new Array(N).fill(-1), good = new Array(N).fill(0), seen = new Array(N).fill(0), st = endN*M;
+  for (t = F - 1; t >= 0 && st >= 0; t--){
+    var note = st === 0 ? 0 : Math.floor((st - 1)/M) + 1, sub = st === 0 ? 0 : (st - 1) % M;
+    if (note >= 1){
+      first[note - 1] = t;
+      if (voiced[t]){
+        if (lastV[note - 1] < 0) lastV[note - 1] = t;
+        seen[note - 1]++;
+        var e1 = Math.abs(pt.midi[t] - notes[note - 1]); e1 = Math.min(e1, Math.abs(e1 - 12));
+        if (e1 < 1.0) good[note - 1]++;
+      }
+    }
+    if (!t) break;
+    var mv = back[t*S + st];
+    if (st === 0){ continue; }
+    if (sub > 0){ st -= mv ? 1 : 0; continue; }
+    /* first state of a note: where did it come from? */
+    var from = note - mv;
+    st = from <= 0 ? 0 : from*M;
+  }
+  var out = new Array(N).fill(null), h = pt.hop, mid = (pt.mid || 0) - 0.015;
+  /* a note that only covers silence, or never sounds at its pitch, isn't in the recording */
+  for (i = 0; i < N; i++) if (first[i] >= 0 && !good[i] && !(quick && quick[i])) first[i] = -1;
+  for (i = 0; i < N; i++){
+    if (first[i] < 0) continue;
+    var startT = first[i]*h + mid, nextOn = null;
+    for (var q = i + 1; q < N; q++) if (first[q] >= 0){ nextOn = first[q]*h + mid; break; }
+    var endT = lastV[i] >= 0 ? (lastV[i] + 1)*h + mid : startT + 0.12;
+    if (nextOn != null) endT = Math.min(endT, nextOn);
+    out[i] = [Math.round(startT*1000)/1000, Math.round(Math.max(0.06, endT - startT)*1000)/1000];
+  }
+  return out;
+}
+function loadRecording(id){
+  state.recBuf = null; state.recName = null;
+  return RecDB.get(id).then(function(o){
+    if (!o || !state.rec || state.rec.id !== id) return;
+    state.recName = o.name;
+    var c = audio(); if (!c) return;
+    return new Promise(function(res, rej){ var p = c.decodeAudioData(o.data.slice(0), res, rej); if (p && p.then) p.then(res, rej); }).then(function(b){ if (state.rec && state.rec.id === id) state.recBuf = b; });
+  }).catch(function(){}).then(markTiming);
+}
+function addRecording(file){
+  var rec = state.rec; if (!rec || !file) return;
+  stopRun();
+  recMsg("Listening to " + file.name + "…");
+  var c = audio(), data;
+  file.arrayBuffer().then(function(ab){
+    data = ab;
+    return new Promise(function(res, rej){ var p = c.decodeAudioData(ab.slice(0), res, rej); if (p && p.then) p.then(res, rej); });
+  }).then(function(buf){
+    state.recBuf = buf; state.recName = file.name;
+    return RecDB.put({id: rec.id, name: file.name, type: file.type, data: data}).catch(function(){}).then(function(){
+      return trackPitch(buf, function(p){ recMsg("Listening to " + file.name + "… " + Math.round(p*100) + "%"); });
+    });
+  }).then(function(pt){
+    if (state.rec !== rec) return;
+    var notes = heardNotes(), at = alignNotes(notes, pt, quickNotes()), found = at.filter(Boolean).length;
+    rec.timing = {v: 1, name: file.name, seconds: Math.round(state.recBuf.duration*10)/10, sig: timingSig(), at: at, madeAt: new Date().toISOString()};
+    $("hear").value = "rec";
+    markTiming();
+    var missing = notes.length - found;
+    recMsg("Lined up " + found + " of " + notes.length + " notes with the recording." + (missing ? " " + plural(missing, "note") + " of the file " + (missing === 1 ? "isn't" : "aren't") + " in the recording; " + (missing === 1 ? "it has" : "they have") + " a dashed edge." : "") + " The recording stays on this device; only its timing is saved with the song.");
+    scheduleSave();
+  }).catch(function(e){ recMsg("That recording couldn't be read. Try an MP3, WAV or M4A file.", true); });
+}
 function prefetchHorn(){
   var c = audio(); if (!c || !state.bars) return;
   var anns = annotations(), ev = [];
@@ -1205,6 +1469,8 @@ window.ValveFinder = {
       return oc.startRendering();
     }).then(function(buf){ return buf.getChannelData(0); });
   },
+  addRecording: function(file){ return addRecording(file); },
+  timing: function(){ return state.rec && state.rec.timing || null; },
   buildEvents: function(){ return buildEvents(0, state.bars.length - 1).map(function(x){ return {midi: x.midi, when: x.when, dur: x.dur, legatoIn: !!x.legatoIn, legatoOut: !!x.legatoOut}; }); }
 };
 ["wheel", "touchstart", "touchmove", "keydown"].forEach(function(t){
@@ -1347,7 +1613,7 @@ function isLocked(rec){ return !!(rec && rec.inArchive && !isOwner()); }
 
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
-function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null}; }
+function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null}; }
 function safeName(t){ return String(t || "").replace(/[\\/:*?"<>|#%\u0000-\u001f]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80) || "Song"; }
 function pickPath(rec){
   var used = {};
@@ -1540,10 +1806,11 @@ function showRecord(rec){
     if (state.rec !== rec) return;
     if (!rec.units) rec.units = countUnits(res.score);
     loadScore(res.score, rec.settings);
+    recMsg(""); loadRecording(rec.id);
     setSave(isOwner() && !rec.inArchive ? "pending" : "");
     if (rec.inArchive && rec.file && !rec.dirty) fetchSidecar(rec.file).then(function(o){
       if (!o || rec.dirty || !(String(o.updatedAt || "") > String(rec.updatedAt || ""))) return;
-      rec.title = o.title || rec.title; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.updatedAt = o.updatedAt;
+      rec.title = o.title || rec.title; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.timing = o.timing || null; rec.updatedAt = o.updatedAt;
       Store.put(rec);
       if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); }
     });
@@ -1563,7 +1830,7 @@ function openSong(id){
     return Promise.all([fetchBytes(m.file), fetchSidecar(m.file)]).then(function(got){
       var o = got[1] || {};
       var rec = {id: m.id, file: m.file, title: o.title || m.title, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
-                 units: null, settings: o.settings || null, notes: o.notes || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
+                 units: null, settings: o.settings || null, notes: o.notes || null, timing: o.timing || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
       cache[rec.id] = rec;
       songMsg("");
       return Store.put(rec).then(function(){ if (location.hash === "#song-" + id) return showRecord(rec); });
@@ -1575,6 +1842,7 @@ function openExample(){
   state.rec = null; state.tempNotes = {};
   setTitle("When the Saints Go Marching In", true);
   $("dangerzone").hidden = true;
+  state.recBuf = null; state.recName = null; recMsg("");
   loadScore(parseScore(sampleXML()), null);
   setSave("example");
 }
@@ -1727,6 +1995,14 @@ $("bars").addEventListener("input", function(e){
   if (state.rec) scheduleSave();
 });
 $("bars").addEventListener("keydown", function(e){ if (e.key === "Enter" && e.target.classList && e.target.classList.contains("annot")){ e.preventDefault(); e.target.blur(); } });
+$("recfile").addEventListener("change", function(e){ var f = e.target.files && e.target.files[0]; e.target.value = ""; if (f) addRecording(f); });
+$("hear").addEventListener("change", function(){ stopRun(); });
+$("recdrop").addEventListener("click", function(){
+  var rec = state.rec; if (!rec) return;
+  stopRun(); RecDB.del(rec.id); state.recBuf = null; state.recName = null;
+  recMsg("The recording is gone from this device. Its timing stays with the song.");
+  markTiming();
+});
 $("playall").addEventListener("click", function(){
   if (run && run.btn === $("playall")){ stopRun(); return; }
   if (state.bars.length) playBars(0, state.bars.length - 1, {btn: $("playall"), follow: true, long: true});
