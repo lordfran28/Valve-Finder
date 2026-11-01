@@ -5,7 +5,9 @@ $Api  = if ($env:VF_API) { $env:VF_API } else { "https://api.github.com/repos/lo
 $Data = if ($env:VF_DATA) { $env:VF_DATA } else { Join-Path $env:LOCALAPPDATA "ValveFinder" }
 $Upload = Join-Path $PSScriptRoot "upload.ps1"
 $TaskName = "Valve Finder upload"
-$KeyUrl = "https://github.com/settings/personal-access-tokens/new?name=Valve%20Finder%20uploads%20from%20PC&description=Adds%20songs%20from%20the%20PC%20to%20Valve%20Finder&target_name=lordfran28&expires_in=366&contents=write"
+# GitHub refuses a second key with a name already in use, so each key is named with the day and time it was made
+$KeyName = "Valve Finder PC " + (Get-Date -Format "yyyy-MM-dd HH.mm")
+$KeyUrl = "https://github.com/settings/personal-access-tokens/new?name=" + [Uri]::EscapeDataString($KeyName) + "&description=Adds%20songs%20from%20the%20PC%20to%20Valve%20Finder&target_name=lordfran28&expires_in=366&contents=write"
 
 Write-Host ""
 Write-Host "  VALVE FINDER - AUTOMATIC UPLOAD" -ForegroundColor Yellow
