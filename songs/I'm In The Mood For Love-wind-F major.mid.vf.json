@@ -5,8 +5,15 @@
  "title": "I’m in the Mood for Love (F major)",
  "kind": "MIDI",
  "addedAt": "2026-10-31T06:50:02Z",
- "updatedAt": "2026-10-31T07:10:00Z",
+ "updatedAt": "2026-11-01T07:12:34.832Z",
  "units": null,
- "settings": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "alts": false
+ },
  "notes": null
 }
