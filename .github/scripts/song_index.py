@@ -159,9 +159,9 @@ def removed_songs(present):
         except (OSError, subprocess.CalledProcessError):
             continue
         h = hashlib.sha1(blob).hexdigest()
-        if h in present or h in seen:
+        if h in present or (h, path) in seen:
             continue
-        seen.add(h)
+        seen.add((h, path))
         out.append({"file": path, "sha1": h, "at": utc(at)})
     return out
 
