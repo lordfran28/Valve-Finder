@@ -2,7 +2,7 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "for-hes-a-jolly-good-fellow",
- "title": "For Hes a Jolly Good Fellow",
+ "title": "For He’s a Jolly Good Fellow",
  "kind": "MIDI",
  "addedAt": "2026-11-01T07:07:27Z",
  "settings": {
@@ -13,5 +13,6 @@
   "repeats": true,
   "alts": false
  },
- "updatedAt": "2026-11-01T07:13:43.413Z"
+ "updatedAt": "2026-11-01T07:13:43.413Z",
+ "era": "classical"
 }
