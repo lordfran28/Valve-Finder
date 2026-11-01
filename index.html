@@ -152,6 +152,7 @@ button.addlink{border:0;background-color:transparent;margin:0}
 .song:hover{border-color:var(--brass)}
 .song-main{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
 .song-title{font-family:var(--display);font-size:1.35rem;line-height:1.15;overflow-wrap:anywhere}
+.song-title .composer{font-variant-caps:small-caps;letter-spacing:.05em;color:var(--brass)}
 .song-meta{font-size:.95rem;color:var(--muted);font-variant-numeric:lining-nums}
 .status{font-size:.95rem;font-weight:600;font-variant-caps:all-small-caps;letter-spacing:.07em;padding:1px 9px 3px;border-radius:2px;white-space:nowrap;flex:0 0 auto}
 .st-ok{background:var(--ok-soft);color:var(--ok)}
@@ -1654,6 +1655,34 @@ function setSync(kind, msg){
   t.textContent = kind === "busy" ? "Saving to the site…" : (msg || "");
 }
 function titleKey(t){ return String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, ""); }
+/* Titles: composers first ("Bach – Minuet"), so the list reads A to Z by composer, then by song. */
+var COMPOSERS = ["Bach","Handel","Vivaldi","Purcell","Telemann","Albinoni","Pachelbel","Corelli","Scarlatti","Monteverdi","Caccini","Gluck","Haydn","Mozart","Beethoven","Schubert","Schumann","Mendelssohn","Chopin","Liszt","Brahms","Wagner","Verdi","Puccini","Rossini","Bellini","Donizetti","Bizet","Gounod","Massenet","Offenbach","Fauré","Saint-Saëns","Debussy","Ravel","Satie","Grieg","Dvořák","Tchaikovsky","Rachmaninoff","Rimsky-Korsakov","Mussorgsky","Borodin","Glinka","Elgar","Holst","Mahler","Sibelius","Arban","Hummel","Charpentier","Mouret","Paganini","Boccherini","Granados","Albéniz","Gershwin"];
+function fold(t){ return String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[‘’ʼ]/g, "'").toLowerCase(); }
+function composerOf(t){
+  var f = fold(t);
+  for (var i = 0; i < COMPOSERS.length; i++){
+    var c = fold(COMPOSERS[i]);
+    if (f.indexOf(c + " – ") === 0 || f.indexOf(c + " - ") === 0 || f.indexOf(c + " — ") === 0) return COMPOSERS[i];
+  }
+  return null;
+}
+function composerFirst(t){
+  t = String(t || "").trim();
+  if (!t || composerOf(t)) return t;
+  /* a folded copy that remembers where each letter came from, so accents don't throw the cut off */
+  var f = "", at = [];
+  for (var i = 0; i < t.length; i++){ var g = fold(t[i]); for (var k = 0; k < g.length; k++){ f += g[k]; at.push(i); } }
+  at.push(t.length);
+  for (var j = 0; j < COMPOSERS.length; j++){
+    var c = fold(COMPOSERS[j]), m = new RegExp("(^|[^a-z])((?:[a-z]\\.? ?){0,2})" + c.replace(/[.*+?^${}()|[\]\\-]/g, "\\$&") + "('s)?(?:-|(?![a-z]))").exec(f);
+    if (!m) continue;
+    var a = m.index + m[1].length, b = m.index + m[0].length;
+    var rest = (t.slice(0, at[a]) + " " + t.slice(at[b])).replace(/\(\s*\)/g, "").replace(/\s+([,;:)])/g, "$1").replace(/([,;:(])\s*(?=[,;:)])/g, "").replace(/\s{2,}/g, " ").replace(/^[\s,;:–—-]+|[\s,;:–—-]+$/g, "");
+    return rest ? COMPOSERS[j] + " – " + rest : t;
+  }
+  return t;
+}
+function sortKey(t){ return fold(t).replace(/[^a-z0-9 ]+/g, "").replace(/\s+/g, " ").trim(); }
 function shaOf(rec){
   if (rec.sha1 || !(window.crypto && crypto.subtle)) return Promise.resolve(rec.sha1 || null);
   return crypto.subtle.digest("SHA-1", b64ToBytes(rec.data)).then(function(h){
@@ -1669,10 +1698,11 @@ function renderLibrary(){
     if (cache[m.id] || (!twins[m.id] && !(claimed[m.file] && claimed[m.file] !== m.id))) list.push({rec: cache[m.id] || null, meta: cache[m.id] || m});
   });
   Object.keys(cache).forEach(function(id){ if (!seen[id]) list.push({rec: cache[id], meta: cache[id]}); });
-  list.sort(function(a, b){ return String(b.meta.addedAt).localeCompare(String(a.meta.addedAt)); });
-  var q = $("search").value.trim().toLowerCase();
-  $("searchwrap").hidden = list.length < 6;
-  var shown = q ? list.filter(function(x){ return String(x.meta.title).toLowerCase().indexOf(q) >= 0; }) : list;
+  list.forEach(function(x){ x.title = composerFirst(x.meta.title); x.key = sortKey(x.title); });
+  list.sort(function(a, b){ return a.key < b.key ? -1 : a.key > b.key ? 1 : 0; });
+  var q = sortKey($("search").value).split(" ").filter(Boolean);
+  $("searchwrap").hidden = !list.length;
+  var shown = q.length ? list.filter(function(x){ var hay = x.key + " " + sortKey(String(x.meta.file || "").split("/").pop()); return q.every(function(w){ return hay.indexOf(w) >= 0; }); }) : list;
   var owner = isOwner();
   $("songlist").innerHTML = shown.map(function(x){
     var st = owner && x.rec && !x.rec.inArchive ? ["warn", "Not on the site yet"] : owner && x.rec && x.rec.dirty ? ["busy", "Saving"] : null;
@@ -1680,7 +1710,8 @@ function renderLibrary(){
     var d = fmtDate(x.meta.addedAt); if (d) bits.push("Added " + d);
     if (u && u.count) bits.push(plural(u.count, String(u.unit).toLowerCase()));
     if (x.meta.kind) bits.push(x.meta.kind);
-    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + esc(x.meta.title) +
+    var who = composerOf(x.title), name = who ? '<span class="composer">' + esc(x.title.slice(0, who.length)) + '</span>' + esc(x.title.slice(who.length)) : esc(x.title);
+    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + name +
       '</span><span class="song-meta">' + esc(bits.join(" · ")) + '</span></span>' + (st ? '<span class="status st-' + st[0] + '">' + st[1] + "</span>" : "") + "</a></li>";
   }).join("");
   $("empty").hidden = list.length > 0;
@@ -1763,7 +1794,7 @@ function addFile(f, quiet){
     var bytes = new Uint8Array(ab);
     return parseBytes(bytes).then(function(res){
       var now = new Date().toISOString();
-      var title = res.score.title || f.name.replace(/\.(musicxml|xml|mxl|midi?|csv|txt)$/i, "").replace(/[_]+/g, " ").trim() || "Untitled song";
+      var title = composerFirst(res.score.title || f.name.replace(/\.(musicxml|xml|mxl|midi?|csv|txt)$/i, "").replace(/[_]+/g, " ").trim()) || "Untitled song";
       var rec = {id: newId(), file: null, title: title, fileName: f.name, kind: res.kind, addedAt: now, updatedAt: now, units: countUnits(res.score), settings: null, notes: null, data: bytesToB64(bytes), inArchive: false, dirty: false};
       cache[rec.id] = rec;
       requestPersist();

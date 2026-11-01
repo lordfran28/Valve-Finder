@@ -1,11 +1,11 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-10-31T07:09:09Z",
+ "generatedAt": "2026-11-01T04:07:08Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
    "file": "songs/Badinerie, Bach Orchestral Suite No. 2.mid",
-   "title": "Badinerie, Bach Orchestral Suite No. 2",
+   "title": "Bach – Badinerie (Orchestral Suite No. 2)",
    "kind": "MIDI",
    "sha1": "246022df0d869976db2b73b39213244266aeb0e4",
    "addedAt": "2026-10-31T06:02:42Z"
@@ -13,7 +13,7 @@
   {
    "id": "can-t-get-started-back-up-trumpet-rod-s",
    "file": "songs/Can't Get Started, Back Up Trumpet Rod S.mid",
-   "title": "Can't Get Started, Back Up Trumpet Rod S",
+   "title": "I Can’t Get Started, Rod Stewart (backup trumpet)",
    "kind": "MIDI",
    "sha1": "fcdc0bd880dc3404f5c6a576365ff49db8fe1f17",
    "addedAt": "2026-10-31T06:02:42Z"
@@ -21,7 +21,7 @@
   {
    "id": "eine-kleine-nachtmusik-allegro-mozart",
    "file": "songs/Eine kleine Nachtmusik, Allegro, Mozart.mid",
-   "title": "Eine kleine Nachtmusik, Allegro, Mozart",
+   "title": "Mozart – Eine kleine Nachtmusik, Allegro",
    "kind": "MIDI",
    "sha1": "fd27b146a2586176e4e61f966b587f27b6c0d776",
    "addedAt": "2026-10-31T06:02:42Z"
@@ -29,7 +29,7 @@
   {
    "id": "minuet-bach-orchestral-suite-no-2",
    "file": "songs/Minuet, Bach Orchestral Suite No. 2.mid",
-   "title": "Minuet, Bach Orchestral Suite No. 2",
+   "title": "Bach – Minuet (Orchestral Suite No. 2)",
    "kind": "MIDI",
    "sha1": "7fcbf5cfc612c81d8b3f50dd912edf67f0e239ff",
    "addedAt": "2026-10-31T06:02:42Z"
@@ -37,7 +37,7 @@
   {
    "id": "my-one-and-only-love-baritone-coltranehartman",
    "file": "songs/My One And Only Love Baritone ColtraneHartman.mid",
-   "title": "My One And Only Love Baritone ColtraneHartman",
+   "title": "My One and Only Love, Coltrane and Hartman (baritone)",
    "kind": "MIDI",
    "sha1": "86f0e524ef08a39bfbbc619c0988f058a9f9bcb7",
    "addedAt": "2026-10-31T06:02:42Z"
@@ -45,7 +45,7 @@
   {
    "id": "pavane-faure",
    "file": "songs/Pavane, Fauré.mid",
-   "title": "Pavane, Fauré",
+   "title": "Fauré – Pavane",
    "kind": "MIDI",
    "sha1": "306ca4dc3e8732bc40886af94c71ab714a8fb75e",
    "addedAt": "2026-10-31T06:02:42Z"
@@ -53,7 +53,7 @@
   {
    "id": "jackie-g-i-ll-be-seeing-you-db-major",
    "file": "songs/Jackie G I'll Be Seeing You Db major.mid",
-   "title": "Jackie G I'll Be Seeing You Db major",
+   "title": "I’ll Be Seeing You, Jackie Gleason (D♭ major)",
    "kind": "MIDI",
    "sha1": "95d13321a574953ecfa71e24e4b5e3b1da4ac4c8",
    "addedAt": "2026-10-31T06:17:41Z"

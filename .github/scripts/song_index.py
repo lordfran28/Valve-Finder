@@ -11,6 +11,49 @@ KINDS = {".mid": "MIDI", ".midi": "MIDI", ".musicxml": "MusicXML", ".xml": "Musi
 OUT = os.path.join(ROOT, "index.json")
 
 
+# Composers go first in a title ("Badinerie, Bach Suite No. 2" -> "Bach – Badinerie, Suite No. 2"),
+# so the list reads A to Z by composer. The site does the same for songs added there.
+COMPOSERS = ["Bach", "Handel", "Vivaldi", "Purcell", "Telemann", "Albinoni", "Pachelbel", "Corelli", "Scarlatti",
+             "Monteverdi", "Caccini", "Gluck", "Haydn", "Mozart", "Beethoven", "Schubert", "Schumann", "Mendelssohn",
+             "Chopin", "Liszt", "Brahms", "Wagner", "Verdi", "Puccini", "Rossini", "Bellini", "Donizetti", "Bizet",
+             "Gounod", "Massenet", "Offenbach", "Fauré", "Saint-Saëns", "Debussy", "Ravel", "Satie", "Grieg", "Dvořák",
+             "Tchaikovsky", "Rachmaninoff", "Rimsky-Korsakov", "Mussorgsky", "Borodin", "Glinka", "Elgar", "Holst",
+             "Mahler", "Sibelius", "Arban", "Hummel", "Charpentier", "Mouret", "Paganini", "Boccherini", "Granados",
+             "Albéniz", "Gershwin"]
+
+
+def fold(t):
+    t = unicodedata.normalize("NFD", str(t))
+    return "".join(c for c in t if not unicodedata.combining(c)).replace("’", "'").replace("‘", "'").lower()
+
+
+def composer_first(t):
+    t = str(t or "").strip()
+    f, at = "", []
+    for i, ch in enumerate(t):
+        g = fold(ch)
+        f += g
+        at += [i] * len(g)
+    at.append(len(t))
+    for name in COMPOSERS:
+        c = fold(name)
+        if any(f.startswith(c + d) for d in (" – ", " - ", " — ")):
+            return t
+    for name in COMPOSERS:
+        m = re.search(r"(^|[^a-z])((?:[a-z]\.? ?){0,2})" + re.escape(fold(name)) + r"('s)?(?:-|(?![a-z]))", f)
+        if not m:
+            continue
+        a, b = m.start() + len(m.group(1)), m.end()
+        rest = t[:at[a]] + " " + t[at[b]:]
+        rest = re.sub(r"\(\s*\)", "", rest)
+        rest = re.sub(r"\s+([,;:)])", r"\1", rest)
+        rest = re.sub(r"([,;:(])\s*(?=[,;:)])", "", rest)
+        rest = re.sub(r"\s{2,}", " ", rest)
+        rest = re.sub(r"^[\s,;:–—-]+|[\s,;:–—-]+$", "", rest)
+        return name + " – " + rest if rest else t
+    return t
+
+
 def first_added(path):
     try:
         out = subprocess.run(["git", "log", "--diff-filter=A", "--follow", "--format=%aI", "--", path],
@@ -67,7 +110,7 @@ def main():
             entry = {
                 "id": sid,
                 "file": path,
-                "title": str(side.get("title") or stem.replace("_", " ").strip() or "Untitled song"),
+                "title": str(side.get("title") or composer_first(stem.replace("_", " ").strip()) or "Untitled song"),
                 "kind": KINDS[ext.lower()],
                 "sha1": sha1(path),
                 "addedAt": utc(side.get("addedAt") or first_added(path)),
