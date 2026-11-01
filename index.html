@@ -1814,7 +1814,7 @@ function syncLibrary(){
     if (ix){
       (Array.isArray(ix.removed) ? ix.removed : []).forEach(function(x){ if (x && x.sha1) removed[x.sha1] = Date.parse(x.at) || 0; if (x && x.file) removedFile[x.file] = 1; });
       var gone = goneList(), now = Date.now();
-      archive = (Array.isArray(ix.songs) ? ix.songs : []).filter(function(m){ return m && m.id && m.file && !(gone[m.id] && now - gone[m.id] < 36e5); });
+      archive = (Array.isArray(ix.songs) ? ix.songs : []).filter(function(m){ return m && m.id && m.file && !m.removed && !(gone[m.id] && now - gone[m.id] < 36e5); });
       archiveAt = ix.generatedAt || null;
       var listed = {}, byFile = {}; archive.forEach(function(m){ listed[m.id] = m; byFile[m.file] = m; });
       Object.keys(cache).forEach(function(id){
@@ -1953,7 +1953,7 @@ function openSong(id){
   setTitle("", true); $("bars").innerHTML = ""; $("strip").textContent = ""; $("fmeta").textContent = "";
   songMsg("Opening…");
   var meta = archive.filter(function(m){ return m.id === id; })[0];
-  var ready = meta ? Promise.resolve(meta) : fetchIndex().then(function(ix){ archive = ix && ix.songs || archive; return archive.filter(function(m){ return m.id === id; })[0]; });
+  var ready = meta ? Promise.resolve(meta) : fetchIndex().then(function(ix){ if (ix && Array.isArray(ix.songs)) archive = ix.songs.filter(function(m){ return m && m.id && m.file && !m.removed; }); return archive.filter(function(m){ return m.id === id; })[0]; });
   return ready.then(function(m){
     if (!m) throw userErr("This song isn't on the site anymore.");
     return Promise.all([fetchBytes(m.file), fetchSidecar(m.file)]).then(function(got){
