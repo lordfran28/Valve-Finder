@@ -70,7 +70,7 @@ function Get-SiteHashes {
   if ($r.Status -eq 200 -and $r.Json.content) {
     $text = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($r.Json.content -replace "\s", "")))
     $list = $text | ConvertFrom-Json
-    foreach ($s in $list.songs) { if ($s.sha1) { $h[[string]$s.sha1] = [string]$s.file } }
+    foreach ($s in $list.songs) { if ($s.sha1) { $h[[string]$s.sha1] = $(if ($s.removed) { "removed:" } else { "" }) + [string]$s.file } }
     # songs deleted from the website stay deleted: a copy left in this folder isn't sent again
     foreach ($x in $list.removed) { if ($x.sha1 -and -not $h.ContainsKey([string]$x.sha1)) { $h[[string]$x.sha1] = "removed:" + [string]$x.file } }
   } elseif ($r.Status -eq 401 -or $r.Status -eq 403) { throw "key:" + $r.Status }

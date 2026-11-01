@@ -138,6 +138,52 @@ def slug(text):
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-") or "song"
 
 
+def added_from_pc(path):
+    """True when the file was put on the site by the uploader on the PC (its commit says "from PC")."""
+    try:
+        out = subprocess.run(["git", "log", "--diff-filter=A", "-1", "--format=%s", "--", path],
+                             capture_output=True, text=True, check=True).stdout.strip()
+        return out.endswith("from PC")
+    except Exception:
+        return False
+
+
+def added_at(path):
+    try:
+        out = subprocess.run(["git", "log", "--diff-filter=A", "-1", "--format=%ct", "--", path],
+                             capture_output=True, text=True, check=True).stdout.strip()
+        return int(out) if out else 2 ** 40
+    except Exception:
+        return 2 ** 40
+
+
+def prune_duplicates():
+    """The PC can send the same file twice (as "name 2.mid") when it uploads again before this list is rebuilt.
+    A file sent from the PC whose content is already on the site, under an older name, is taken off again."""
+    groups = {}
+    for folder, dirs, files in os.walk(ROOT):
+        dirs[:] = sorted(d for d in dirs if not d.startswith("."))
+        for name in sorted(files):
+            if os.path.splitext(name)[1].lower() in KINDS and not name.startswith("."):
+                path = os.path.join(folder, name).replace(os.sep, "/")
+                groups.setdefault(sha1(path), []).append(path)
+    gone = []
+    for paths in groups.values():
+        if len(paths) < 2:
+            continue
+        # oldest first, by the commit that added this exact path (not followed through renames: identical
+        # files look like one file to git); on a tie, a name without a " 2"-style ending is the original
+        paths.sort(key=lambda p: (added_at(p), bool(re.search(r" \d+\.[^.]+$", p)), p))
+        for p in paths[1:]:
+            if not os.path.exists(p + ".vf.json") and added_from_pc(p):
+                subprocess.run(["git", "rm", "-q", "--", p], check=False)
+                if os.path.exists(p):
+                    os.remove(p)
+                gone.append(p)
+    for p in gone:
+        print("Took off a copy sent twice: " + p)
+
+
 def removed_songs(present):
     """Songs deleted from the folder, from the git history: devices drop their own copies of these."""
     try:
@@ -167,6 +213,7 @@ def removed_songs(present):
 
 
 def main():
+    prune_duplicates()
     songs, used = [], set()
     for folder, dirs, files in os.walk(ROOT):
         dirs[:] = sorted(d for d in dirs if not d.startswith("."))
@@ -206,6 +253,13 @@ def main():
             songs.append(entry)
     songs.sort(key=lambda s: (str(s["addedAt"]), s["file"]))
     removed = removed_songs({s["sha1"] for s in songs})
+    # Deleted songs stay in the list, marked removed, so the PC uploader (which checks this list by content)
+    # never sends them again from the copy still in the folder. The site doesn't show them.
+    stubs = {}
+    for r in removed:
+        stubs.setdefault(r["sha1"], {"id": "removed-" + r["sha1"][:12], "file": r["file"], "title": "", "kind": KINDS.get(os.path.splitext(r["file"])[1].lower(), "MIDI"),
+                                     "sha1": r["sha1"], "addedAt": r["at"], "removed": True})
+    songs += list(stubs.values())
 
     try:
         with open(OUT, encoding="utf-8") as f:

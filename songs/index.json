@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T07:14:00Z",
+ "generatedAt": "2026-11-01T07:14:36Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -231,14 +231,6 @@
    "addedAt": "2026-11-01T06:51:28Z"
   },
   {
-   "id": "chet-baker-almost-blue-wind-a-minor-57bpm-441hz",
-   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
-   "title": "Chet Baker, Almost Blue (A minor)",
-   "kind": "MusicXML",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
-   "addedAt": "2026-11-01T06:51:29Z"
-  },
-  {
    "id": "darlene-z-have-your-way-voice",
    "file": "songs/Darlene Z Have Your Way Voice.mid",
    "title": "Have Your Way, Darlene Z (voice)",
@@ -318,14 +310,6 @@
    "sha1": "7279e7bded726152ea49d224a68536dd27785fc0",
    "addedAt": "2026-11-01T07:03:15Z",
    "era": "classical"
-  },
-  {
-   "id": "for-hes-a-jolly-good-fellow-2",
-   "file": "songs/for-hes-a-jolly-good-fellow 2.mid",
-   "title": "For-hes-a-jolly-good-fellow 2",
-   "kind": "MIDI",
-   "sha1": "a2d502a42334d61679e74f46d0003407cc8e691d",
-   "addedAt": "2026-11-01T07:07:27Z"
   },
   {
    "id": "for-hes-a-jolly-good-fellow",
@@ -570,7 +554,32 @@
     "count": 83,
     "unit": "Phrase"
    }
+  },
+  {
+   "id": "removed-b86f3678c087",
+   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
+   "title": "",
+   "kind": "MusicXML",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "addedAt": "2026-11-01T07:14:35Z",
+   "removed": true
   }
  ],
- "removed": []
+ "removed": [
+  {
+   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "at": "2026-11-01T07:14:35Z"
+  },
+  {
+   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz 2.musicxml",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "at": "2026-11-01T07:12:23Z"
+  },
+  {
+   "file": "songs/Almost Blue, Chet Baker.musicxml",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "at": "2026-11-01T06:49:15Z"
+  }
+ ]
 }
