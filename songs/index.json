@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T07:12:38Z",
+ "generatedAt": "2026-11-01T07:13:41Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -75,6 +75,18 @@
    "addedAt": "2026-10-31T06:50:03Z"
   },
   {
+   "id": "mvxaukcq5yws4",
+   "file": "songs/tchaikovsky-the-nutcracker-russian-dance-trepak.mid",
+   "title": "tchaikovsky-the-nutcracker-russian-dance-trepak",
+   "kind": "MIDI",
+   "sha1": "5321d808e1d44bf8841c6605bb5ae70ca673a7a7",
+   "addedAt": "2026-11-01T03:57:48Z",
+   "units": {
+    "count": 76,
+    "unit": "Bar"
+   }
+  },
+  {
    "id": "bewitched-bothered-and-bewildered-rod-stewart-and-cher",
    "file": "songs/Bewitched, Bothered and Bewildered, Rod Stewart and Cher.musicxml",
    "title": "Bewitched, Bothered and Bewildered, Rod Stewart and Cher (B♭ major)",
@@ -137,6 +149,42 @@
    "kind": "MusicXML",
    "sha1": "ae0696f97df72dceed51ba0154c5d5c36da98fa2",
    "addedAt": "2026-11-01T04:22:02Z"
+  },
+  {
+   "id": "mvxghooqgidbp",
+   "file": "songs/Rod S Until The Real Thing Comes Along voice.mid",
+   "title": "Rod S Until The Real Thing Comes Along voice",
+   "kind": "MIDI",
+   "sha1": "346c9660715d9638e139283863fa3f3b3acf4b94",
+   "addedAt": "2026-11-01T06:35:45Z",
+   "units": {
+    "count": 71,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mvxghoott13uu",
+   "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
+   "title": "Rod S What A Difference A Day Made VoiceTrumpet",
+   "kind": "MIDI",
+   "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
+   "addedAt": "2026-11-01T06:35:45Z",
+   "units": {
+    "count": 42,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mvxghoovtqr7v",
+   "file": "songs/They Can't Take That Away from Me VoiceTrumpet.mid",
+   "title": "They Can't Take That Away from Me VoiceTrumpet",
+   "kind": "MIDI",
+   "sha1": "64e5da6c58616cc550c94002683e60dc96292c0f",
+   "addedAt": "2026-11-01T06:35:45Z",
+   "units": {
+    "count": 46,
+    "unit": "Phrase"
+   }
   },
   {
    "id": "beatles-all-you-need-is-love-voice",
@@ -498,6 +546,14 @@
    "kind": "MIDI",
    "sha1": "504f70685b2e3c032b03e0c9392f3f3d58cf7825",
    "addedAt": "2026-11-01T07:08:01Z"
+  },
+  {
+   "id": "xvorostovsky-i-loved-you-voice",
+   "file": "songs/Xvorostovsky I Loved You Voice.mid",
+   "title": "Xvorostovsky I Loved You Voice",
+   "kind": "MIDI",
+   "sha1": "7495823725d1cf0daeb28d3606abd46a753285a3",
+   "addedAt": "2026-11-01T07:13:30Z"
   }
  ],
  "removed": []
