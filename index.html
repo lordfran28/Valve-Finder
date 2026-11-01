@@ -152,6 +152,7 @@ button.addlink{border:0;background-color:transparent;margin:0}
 .song:hover{border-color:var(--brass)}
 .song-main{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
 .song-title{font-family:var(--display);font-size:1.35rem;line-height:1.15;overflow-wrap:anywhere}
+.song-title.old{color:var(--brass)}
 .song-title .composer{font-variant-caps:small-caps;letter-spacing:.05em;color:var(--brass)}
 .song-meta{font-size:.95rem;color:var(--muted);font-variant-numeric:lining-nums}
 .status{font-size:.95rem;font-weight:600;font-variant-caps:all-small-caps;letter-spacing:.07em;padding:1px 9px 3px;border-radius:2px;white-space:nowrap;flex:0 0 auto}
@@ -1614,7 +1615,7 @@ function isLocked(rec){ return !!(rec && rec.inArchive && !isOwner()); }
 
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
-function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null}; }
+function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, era: rec.era || undefined, year: rec.year || undefined, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null}; }
 function safeName(t){ return String(t || "").replace(/[\\/:*?"<>|#%\u0000-\u001f]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80) || "Song"; }
 function pickPath(rec){
   var used = {};
@@ -1666,8 +1667,51 @@ function composerOf(t){
   }
   return null;
 }
+/* File names straight from a transcriber or a download ("THE NEARNESS OF YOU Frank Sinatra-wind-G major-98bpm-440hz",
+   "bach-orchestral-suite-no-2-badinerie") become readable titles: no dashes, no tempo or tuning, capitals where they belong. */
+var SMALL = {a:1, an:1, and:1, as:1, at:1, but:1, by:1, de:1, del:1, for:1, from:1, "in":1, into:1, la:1, nor:1, of:1, on:1, or:1, the:1, to:1, "with":1, y:1};
+function titleCase(t){
+  return t.toLowerCase().replace(/[^\s()\-–—,]+/g, function(w, i){
+    if (/^(no|op|bwv|k|hwv|rv)\.?$/.test(w)) return w.charAt(0).toUpperCase() + w.slice(1);
+    if (/^[ivxlc]+$/.test(w) && w.length > 1) return w.toUpperCase();
+    if (i > 0 && SMALL[w.replace(/[^a-z]/g, "")]) return w;
+    return w.charAt(0).toUpperCase() + w.slice(1);
+  }).replace(/(['’])S\b/g, "$1s");
+}
+var KEYNAME = {b: "♭", "#": "♯"};
+function cleanTitle(t){
+  t = String(t || "").replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{266C}\u{2670}-\u{27BF}\u{FE0F}]/gu, " ").replace(/_/g, " ").trim();
+  var key = "";
+  /* transcriber tails: -wind-A minor-57bpm-441hz, -Bb-144bpm-441hz, a (1) for a second copy */
+  t = t.replace(/\s*\(\d+\)\s*$/, "");
+  t = t.replace(/-(?:wind|brass|guitar|piano|vocals?|voice|strings|bass|drums|other)?-?([A-G])([b#♭♯]?)(?:\s*(major|minor|maj|min|m))?-?(?:-?\d+\s*bpm)?(?:-?\d+\s*hz)?-?\s*$/i, function(all, n, acc, mode){
+    if (!/bpm|hz|major|minor|-\s*$/i.test(all) && !/^-(wind|brass|guitar|piano|vocals?|voice|strings|bass)/i.test(all)) return all;
+    key = n.toUpperCase() + (KEYNAME[acc] || acc || "") + (mode ? (/^min|^m$/i.test(mode) ? " minor" : " major") : "");
+    return "";
+  });
+  t = t.replace(/-\d+\s*bpm|-\d+\s*hz/gi, "");
+  t = t.replace(/[\s-]+([A-G])([b#♭♯]?)\s+(major|minor)\s*-?\s*$/i, function(all, n, acc, mode){ key = n.toUpperCase() + (KEYNAME[acc] || acc || "") + " " + mode.toLowerCase(); return ""; });
+  var raw = !!key || /\s-\s|-\s|\s-/.test(t) || (!/\s/.test(t) && /-/.test(t));
+  t = t.replace(/\s*-?\s*\b(trumpet solo transcription|trumpet cover|instrumental trompete|instrumental|trompete|transcription)\b/gi, " ").replace(/\(\s*trumpet\s*\)/gi, " ");
+  if (raw) t = t.replace(/(\)|\s)\s*trumpet\s*(,|$)/i, "$1$2").replace(/\s+-\s*|\s*-\s+/g, ", ").replace(/\(\s+/g, "(").replace(/\s+\)/g, ")");
+  /* a bare slug: dashes for spaces */
+  if (!/\s/.test(t) && /-/.test(t)) t = t.replace(/-+/g, " ");
+  t = t.replace(/\s*-\s*$/, "").replace(/^\s*-\s*/, "").replace(/\s{2,}/g, " ").trim();
+  var letters = t.replace(/[^A-Za-z]/g, "");
+  if (letters && (letters === letters.toUpperCase() || letters === letters.toLowerCase())) t = titleCase(t);
+  else if (raw) t = t.replace(/[^\s()\-–—,]+/g, function(w, i, all){
+    var bare = w.toLowerCase().replace(/[^a-z]/g, "");
+    if (/^[A-Z][A-Z']+$/.test(w) && !/^(BWV|HWV|RV|[IVXLC]+)$/.test(w)) w = w.charAt(0) + w.slice(1).toLowerCase();
+    var last = !/[^\s(),]/.test(all.slice(i + w.length).replace(/\([^)]*\)\s*$/, ""));
+    if (i > 0 && !last && SMALL[bare] && !/[(,]\s*$/.test(all.slice(0, i))) return w.toLowerCase();
+    return /^[a-z]/.test(w) ? w.charAt(0).toUpperCase() + w.slice(1) : w;
+  });
+  t = t.replace(/\s*,\s*,/g, ",").replace(/,\s*$/, "").replace(/\s{2,}/g, " ").trim();
+  if (key && !/\((?:[A-G][♭♯]?)(?: major| minor)?\)\s*$/.test(t)) t += " (" + key + ")";
+  return t;
+}
 function composerFirst(t){
-  t = String(t || "").trim();
+  t = cleanTitle(t);
   if (!t || composerOf(t)) return t;
   /* a folded copy that remembers where each letter came from, so accents don't throw the cut off */
   var f = "", at = [];
@@ -1682,6 +1726,7 @@ function composerFirst(t){
   }
   return t;
 }
+function isOld(meta, title){ return !!(composerOf(title) || (meta && (meta.era === "classical" || (meta.year && meta.year < 1920)))); }
 function sortKey(t){ return fold(t).replace(/[^a-z0-9 ]+/g, "").replace(/\s+/g, " ").trim(); }
 function shaOf(rec){
   if (rec.sha1 || !(window.crypto && crypto.subtle)) return Promise.resolve(rec.sha1 || null);
@@ -1695,10 +1740,11 @@ function renderLibrary(){
   Object.keys(cache).forEach(function(id){ var r = cache[id]; if (r.dupOf) twins[r.dupOf] = 1; if (r.inArchive && r.file) claimed[r.file] = id; });
   archive.forEach(function(m){
     seen[m.id] = 1;
-    if (cache[m.id] || (!twins[m.id] && !(claimed[m.file] && claimed[m.file] !== m.id))) list.push({rec: cache[m.id] || null, meta: cache[m.id] || m});
+    if (cache[m.id] || !(claimed[m.file] && claimed[m.file] !== m.id)) list.push({rec: cache[m.id] || null, meta: cache[m.id] || m, site: m});
   });
-  Object.keys(cache).forEach(function(id){ if (!seen[id]) list.push({rec: cache[id], meta: cache[id]}); });
-  list.forEach(function(x){ x.title = composerFirst(x.meta.title); x.key = sortKey(x.title); });
+  /* a copy of a song that's already on the site (added here from the same file) shows as the site's song */
+  Object.keys(cache).forEach(function(id){ if (!seen[id] && !(cache[id].dupOf && seen[cache[id].dupOf])) list.push({rec: cache[id], meta: cache[id]}); });
+  list.forEach(function(x){ x.title = composerFirst(x.site && x.rec && !x.rec.dirty ? x.site.title : x.meta.title); x.key = sortKey(x.title); x.old = isOld(x.site || x.meta, x.title); });
   list.sort(function(a, b){ return a.key < b.key ? -1 : a.key > b.key ? 1 : 0; });
   var q = sortKey($("search").value).split(" ").filter(Boolean);
   $("searchwrap").hidden = !list.length;
@@ -1711,7 +1757,7 @@ function renderLibrary(){
     if (u && u.count) bits.push(plural(u.count, String(u.unit).toLowerCase()));
     if (x.meta.kind) bits.push(x.meta.kind);
     var who = composerOf(x.title), name = who ? '<span class="composer">' + esc(x.title.slice(0, who.length)) + '</span>' + esc(x.title.slice(who.length)) : esc(x.title);
-    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + name +
+    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title' + (x.old ? " old" : "") + '">' + name +
       '</span><span class="song-meta">' + esc(bits.join(" · ")) + '</span></span>' + (st ? '<span class="status st-' + st[0] + '">' + st[1] + "</span>" : "") + "</a></li>";
   }).join("");
   $("empty").hidden = list.length > 0;
@@ -1841,7 +1887,7 @@ function showRecord(rec){
     setSave(isOwner() && !rec.inArchive ? "pending" : "");
     if (rec.inArchive && rec.file && !rec.dirty) fetchSidecar(rec.file).then(function(o){
       if (!o || rec.dirty || !(String(o.updatedAt || "") > String(rec.updatedAt || ""))) return;
-      rec.title = o.title || rec.title; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.timing = o.timing || null; rec.updatedAt = o.updatedAt;
+      rec.title = o.title || rec.title; rec.era = o.era || rec.era; rec.year = o.year || rec.year; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.timing = o.timing || null; rec.updatedAt = o.updatedAt;
       Store.put(rec);
       if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); }
     });
@@ -1860,7 +1906,7 @@ function openSong(id){
     if (!m) throw userErr("This song isn't on the site anymore.");
     return Promise.all([fetchBytes(m.file), fetchSidecar(m.file)]).then(function(got){
       var o = got[1] || {};
-      var rec = {id: m.id, file: m.file, title: o.title || m.title, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
+      var rec = {id: m.id, file: m.file, title: o.title || m.title, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
                  units: null, settings: o.settings || null, notes: o.notes || null, timing: o.timing || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
       cache[rec.id] = rec;
       songMsg("");
