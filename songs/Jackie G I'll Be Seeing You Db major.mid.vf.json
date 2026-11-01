@@ -5,8 +5,17 @@
  "title": "I’ll Be Seeing You, Jackie Gleason (D♭ major)",
  "kind": "MIDI",
  "addedAt": "2026-10-31T06:17:41Z",
- "updatedAt": "2026-11-01T04:07:08Z",
+ "updatedAt": "2026-11-01T07:12:33.034Z",
  "units": null,
- "settings": null,
- "notes": null
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "alts": false
+ },
+ "notes": {
+  "0:0:5": "slide to next"
+ }
 }
