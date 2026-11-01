@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T06:54:25Z",
+ "generatedAt": "2026-11-01T07:03:18Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -177,6 +177,38 @@
    "kind": "MIDI",
    "sha1": "f4bcf98ceb3abd0920532e1c6d7b725c5c0b9a11",
    "addedAt": "2026-11-01T06:51:30Z"
+  },
+  {
+   "id": "bach-cello-suite-no2-allemande",
+   "file": "songs/bach-cello-suite-no2-allemande.mid",
+   "title": "Bach – Cello Suite No2 Allemande",
+   "kind": "MIDI",
+   "sha1": "865ef66b5069ca41e6a0d4d3a4fbfbc4f1aa1b09",
+   "addedAt": "2026-11-01T07:03:05Z"
+  },
+  {
+   "id": "bach-cello-suite-no3-allemande",
+   "file": "songs/bach-cello-suite-no3-allemande.mid",
+   "title": "Bach – Cello Suite No3 Allemande",
+   "kind": "MIDI",
+   "sha1": "61455fb8123ad5c050338958360c0c312d3f6fc8",
+   "addedAt": "2026-11-01T07:03:06Z"
+  },
+  {
+   "id": "bach-cello-suite-no3-sarabande",
+   "file": "songs/bach-cello-suite-no3-sarabande.mid",
+   "title": "Bach – Cello Suite No3 Sarabande",
+   "kind": "MIDI",
+   "sha1": "20e20020690962baa45284432d2b481ef2a981b7",
+   "addedAt": "2026-11-01T07:03:07Z"
+  },
+  {
+   "id": "bach-cello-suite-no5-allemande",
+   "file": "songs/bach-cello-suite-no5-allemande.mid",
+   "title": "Bach – Cello Suite No5 Allemande",
+   "kind": "MIDI",
+   "sha1": "2deb6de4341d1b7a25086d12ab50b63987d3b7cb",
+   "addedAt": "2026-11-01T07:03:09Z"
   }
  ],
  "removed": [
