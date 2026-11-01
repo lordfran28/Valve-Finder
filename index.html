@@ -399,9 +399,13 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 /* ---------- Fingering tables (written pitch, MIDI numbers; written C4 = 60) ---------- */
 var LETTERS = "CDEFGAB";
 var SEMI = {C:0,D:2,E:4,F:5,G:7,A:9,B:11};
-var FING = {54:"123",55:"13",56:"23",57:"12",58:"1",59:"2",60:"0",61:"123",62:"13",63:"23",64:"12",65:"1",66:"2",67:"0",68:"23",69:"12",70:"1",71:"2",72:"0",73:"12",74:"1",75:"2",76:"0",77:"1",78:"2",79:"0",80:"23",81:"12",82:"1",83:"2",84:"0",85:"12",86:"1",87:"2",88:"0",89:"1",90:"2",91:"0"};
+/* Pedal tones, written F#2 to C3, use the valves of the note an octave up. So do the notes between pedal C and
+   low F#; low F sounds best on 1-2-3 with the third slide all the way out. At the top, double high C (C7) is
+   as far as the chart goes. Only notes past these ends are marked: they are outside what a trumpet can play. */
+var LOWEST = 42, HIGHEST = 96;
+var FING = {42:"123",43:"13",44:"23",45:"12",46:"1",47:"2",48:"0",49:"123",50:"13",51:"23",52:"12",53:"123",54:"123",55:"13",56:"23",57:"12",58:"1",59:"2",60:"0",61:"123",62:"13",63:"23",64:"12",65:"1",66:"2",67:"0",68:"23",69:"12",70:"1",71:"2",72:"0",73:"12",74:"1",75:"2",76:"0",77:"1",78:"2",79:"0",80:"23",81:"12",82:"1",83:"2",84:"0",85:"12",86:"1",87:"2",88:"0",89:"1",90:"2",91:"0",92:"23",93:"12",94:"1",95:"2",96:"0"};
 var ALT = {69:"3",73:"123",74:"13",76:"12",81:"3"};
-var SLIDE = {54:1,55:1,61:1,62:1};
+var SLIDE = {53:1,54:1,55:1,61:1,62:1};
 var SPELL = [["C",0],["C",1],["D",0],["D",1],["E",0],["F",0],["F",1],["G",0],["G",1],["A",0],["A",1],["B",0]];
 var SPELL_FLAT = [["C",0],["D",-1],["D",0],["E",-1],["E",0],["F",0],["G",-1],["G",0],["A",-1],["A",0],["B",-1],["B",0]];
 var PLAY_ICON = '<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M3 1.8v8.4L10 6z" fill="currentColor"/></svg>';
@@ -781,7 +785,7 @@ function render(){
     m.notes.forEach(function(n, ni){
       var w = shiftPitch(n.src, off.dia, off.chrom), wm = midiOf(w), f = FING[wm];
       var cp = shiftPitch(w, -1, -2);
-      var lab = f ? fingLabel(f) : (wm < 54 ? "below range" : "above chart");
+      var lab = f ? fingLabel(f) : (wm < LOWEST ? "too low for trumpet" : "too high for trumpet");
       var extras = [];
       if (n.tied) extras.push("held");
       if (n.grace) extras.push("grace");
