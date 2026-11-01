@@ -1,0 +1,17 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "jerry-v-pretend-you-don-t-see-her-voice",
+ "title": "Jerry V Pretend You Don't See Her Voice",
+ "kind": "MIDI",
+ "addedAt": "2026-11-01T07:07:28Z",
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": false,
+  "alts": false
+ },
+ "updatedAt": "2026-11-01T07:13:32.512Z"
+}
