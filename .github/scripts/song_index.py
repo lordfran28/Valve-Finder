@@ -27,8 +27,61 @@ def fold(t):
     return "".join(c for c in t if not unicodedata.combining(c)).replace("’", "'").replace("‘", "'").lower()
 
 
+SMALL = {"a", "an", "and", "as", "at", "but", "by", "de", "del", "for", "from", "in", "into", "la", "nor", "of", "on", "or", "the", "to", "with", "y"}
+ACC = {"b": "♭", "#": "♯"}
+
+
+def clean_title(t):
+    """A file name from a transcriber or a download becomes a readable title (the site does the same)."""
+    t = re.sub(r"[\U0001F300-\U0001FAFF\u2600-\u266C\u2670-\u27BF\uFE0F]", " ", str(t or "")).replace("_", " ").strip()
+    t = re.sub(r"\s*\(\d+\)\s*$", "", t)
+    key = ""
+    m = re.search(r"-(?:wind|brass|guitar|piano|vocals?|voice|strings|bass|drums|other)?-?([A-G])([b#♭♯]?)(?:\s*(major|minor|maj|min|m))?-?(?:-?\d+\s*bpm)?(?:-?\d+\s*hz)?-?\s*$", t, re.I)
+    if m and re.search(r"bpm|hz|major|minor|-\s*$", m.group(0), re.I):
+        mode = m.group(3) or ""
+        key = m.group(1).upper() + ACC.get(m.group(2), m.group(2)) + ((" minor" if re.match(r"min|m$", mode, re.I) else " major") if mode else "")
+        t = t[:m.start()]
+    t = re.sub(r"-\d+\s*bpm|-\d+\s*hz", "", t, flags=re.I)
+    m = re.search(r"[\s-]+([A-G])([b#♭♯]?)\s+(major|minor)\s*-?\s*$", t, re.I)
+    if m:
+        key = m.group(1).upper() + ACC.get(m.group(2), m.group(2)) + " " + m.group(3).lower()
+        t = t[:m.start()]
+    raw = bool(key) or bool(re.search(r"\s-\s|-\s|\s-", t)) or (" " not in t and "-" in t)
+    t = re.sub(r"\s*-?\s*\b(trumpet solo transcription|trumpet cover|instrumental trompete|instrumental|trompete|transcription)\b", " ", t, flags=re.I)
+    t = re.sub(r"\(\s*trumpet\s*\)", " ", t, flags=re.I)
+    if " " not in t and "-" in t:
+        t = re.sub(r"-+", " ", t)
+    if raw:
+        t = re.sub(r"(\)|\s)\s*trumpet\s*(,|$)", r"\1\2", t, flags=re.I)
+        t = re.sub(r"\s+-\s*|\s*-\s+", ", ", t)
+        t = re.sub(r"\(\s+", "(", re.sub(r"\s+\)", ")", t))
+    t = re.sub(r"\s{2,}", " ", t).strip(" -,")
+    letters = re.sub(r"[^A-Za-z]", "", t)
+    if letters and (raw or letters.isupper() or letters.islower()):
+        words = re.split(r"(\s+)", t)
+        out = []
+        for i, w in enumerate(words):
+            if not w.strip():
+                out.append(w)
+                continue
+            if re.fullmatch(r"[A-Z][A-Z']+", w) and not re.fullmatch(r"BWV|HWV|RV|[IVXLC]+", w) or letters.isupper():
+                w = w[:1] + w[1:].lower()
+            bare = re.sub(r"[^a-z]", "", w.lower())
+            last = i == len(words) - 1
+            prev = "".join(out).rstrip()
+            if i > 0 and not last and bare in SMALL and not prev.endswith(("(", ",")):
+                w = w.lower()
+            elif w[:1].islower():
+                w = w[:1].upper() + w[1:]
+            out.append(w)
+        t = "".join(out)
+    if key and not re.search(r"\([A-G][♭♯]?( major| minor)?\)\s*$", t):
+        t += " (" + key + ")"
+    return t
+
+
 def composer_first(t):
-    t = str(t or "").strip()
+    t = clean_title(t)
     f, at = "", []
     for i, ch in enumerate(t):
         g = fold(ch)
@@ -115,6 +168,10 @@ def main():
                 "sha1": sha1(path),
                 "addedAt": utc(side.get("addedAt") or first_added(path)),
             }
+            if side.get("era") in ("classical",):
+                entry["era"] = side["era"]
+            if isinstance(side.get("year"), int):
+                entry["year"] = side["year"]
             units = side.get("units")
             if isinstance(units, dict) and isinstance(units.get("count"), int):
                 entry["units"] = {"count": units["count"], "unit": str(units.get("unit") or "Bar")}
