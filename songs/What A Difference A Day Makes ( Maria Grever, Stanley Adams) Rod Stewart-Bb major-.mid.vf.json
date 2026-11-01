@@ -5,8 +5,15 @@
  "title": "What a Difference a Day Makes, Rod Stewart (B♭ major)",
  "kind": "MIDI",
  "addedAt": "2026-10-31T06:50:03Z",
- "updatedAt": "2026-10-31T07:10:00Z",
+ "updatedAt": "2026-11-01T07:12:36.803Z",
  "units": null,
- "settings": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "alts": false
+ },
  "notes": null
 }
