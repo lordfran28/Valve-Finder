@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T07:03:35Z",
+ "generatedAt": "2026-11-01T07:06:05Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -171,14 +171,6 @@
    "addedAt": "2026-11-01T06:51:28Z"
   },
   {
-   "id": "chet-baker-almost-blue-wind-a-minor-57bpm-441hz",
-   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
-   "title": "Chet Baker, Almost Blue (A minor)",
-   "kind": "MusicXML",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
-   "addedAt": "2026-11-01T06:51:29Z"
-  },
-  {
    "id": "darlene-z-have-your-way-voice",
    "file": "songs/Darlene Z Have Your Way Voice.mid",
    "title": "Have Your Way, Darlene Z (voice)",
@@ -189,7 +181,7 @@
   {
    "id": "bach-cello-suite-no2-allemande",
    "file": "songs/bach-cello-suite-no2-allemande.mid",
-   "title": "Bach – Cello Suite No2 Allemande",
+   "title": "Bach – Allemande (Cello Suite No. 2)",
    "kind": "MIDI",
    "sha1": "865ef66b5069ca41e6a0d4d3a4fbfbc4f1aa1b09",
    "addedAt": "2026-11-01T07:03:05Z"
@@ -197,7 +189,7 @@
   {
    "id": "bach-cello-suite-no3-allemande",
    "file": "songs/bach-cello-suite-no3-allemande.mid",
-   "title": "Bach – Cello Suite No3 Allemande",
+   "title": "Bach – Allemande (Cello Suite No. 3)",
    "kind": "MIDI",
    "sha1": "61455fb8123ad5c050338958360c0c312d3f6fc8",
    "addedAt": "2026-11-01T07:03:06Z"
@@ -205,7 +197,7 @@
   {
    "id": "bach-cello-suite-no3-sarabande",
    "file": "songs/bach-cello-suite-no3-sarabande.mid",
-   "title": "Bach – Cello Suite No3 Sarabande",
+   "title": "Bach – Sarabande (Cello Suite No. 3)",
    "kind": "MIDI",
    "sha1": "20e20020690962baa45284432d2b481ef2a981b7",
    "addedAt": "2026-11-01T07:03:07Z"
@@ -213,7 +205,7 @@
   {
    "id": "bach-cello-suite-no5-allemande",
    "file": "songs/bach-cello-suite-no5-allemande.mid",
-   "title": "Bach – Cello Suite No5 Allemande",
+   "title": "Bach – Allemande (Cello Suite No. 5)",
    "kind": "MIDI",
    "sha1": "2deb6de4341d1b7a25086d12ab50b63987d3b7cb",
    "addedAt": "2026-11-01T07:03:09Z"
@@ -221,7 +213,7 @@
   {
    "id": "bach-cpe-flute-sonata-in-a-minor-wq132-ii-allegro",
    "file": "songs/bach-cpe-flute-sonata-in-a-minor-wq132-ii-allegro.mid",
-   "title": "Bach – Cpe Flute Sonata in a Minor Wq132 Ii Allegro",
+   "title": "C. P. E. Bach – Allegro (Flute Sonata in A minor, Wq. 132)",
    "kind": "MIDI",
    "sha1": "371e48dfbf2a14b418d77f9c35f83b34bb977fdf",
    "addedAt": "2026-11-01T07:03:10Z"
@@ -229,7 +221,7 @@
   {
    "id": "bach-partita-in-d-minor-for-solo-violin-allemande",
    "file": "songs/bach-partita-in-d-minor-for-solo-violin-allemande.mid",
-   "title": "Bach – Partita in D Minor for Solo Violin Allemande",
+   "title": "Bach – Allemande (Violin Partita No. 2 in D minor)",
    "kind": "MIDI",
    "sha1": "fd8290b6d4c1863ed1e19bc70e832bdfe6a77276",
    "addedAt": "2026-11-01T07:03:12Z"
@@ -237,7 +229,7 @@
   {
    "id": "bach-sonata-no1-for-solo-violin-adagio",
    "file": "songs/bach-sonata-no1-for-solo-violin-adagio.mid",
-   "title": "Bach – Sonata No1 for Solo Violin Adagio",
+   "title": "Bach – Adagio (Violin Sonata No. 1)",
    "kind": "MIDI",
    "sha1": "50c2e04c509c28ec9b0b71912292e2cd7398ecc1",
    "addedAt": "2026-11-01T07:03:13Z"
@@ -245,7 +237,7 @@
   {
    "id": "bach-sonata-no1-for-solo-violin-siciliano",
    "file": "songs/bach-sonata-no1-for-solo-violin-siciliano.mid",
-   "title": "Bach – Sonata No1 for Solo Violin Siciliano",
+   "title": "Bach – Siciliano (Violin Sonata No. 1)",
    "kind": "MIDI",
    "sha1": "2131ee783c800e2fc3c0df201c1c4a6433ad34e3",
    "addedAt": "2026-11-01T07:03:14Z"
@@ -253,11 +245,23 @@
   {
    "id": "bonapartes-grand-march",
    "file": "songs/bonapartes-grand-march.mid",
-   "title": "Bonapartes Grand March",
+   "title": "Bonaparte’s Grand March",
    "kind": "MIDI",
    "sha1": "7279e7bded726152ea49d224a68536dd27785fc0",
-   "addedAt": "2026-11-01T07:03:15Z"
+   "addedAt": "2026-11-01T07:03:15Z",
+   "era": "classical"
   }
  ],
- "removed": []
+ "removed": [
+  {
+   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "at": "2026-11-01T07:06:05Z"
+  },
+  {
+   "file": "songs/Almost Blue, Chet Baker.musicxml",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "at": "2026-11-01T06:49:15Z"
+  }
+ ]
 }
