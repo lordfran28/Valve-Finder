@@ -5,8 +5,15 @@
  "title": "Bach – Minuet (Orchestral Suite No. 2)",
  "kind": "MIDI",
  "addedAt": "2026-10-31T06:02:42Z",
- "updatedAt": "2026-11-01T04:07:08Z",
+ "updatedAt": "2026-11-01T07:12:23.650Z",
  "units": null,
- "settings": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 108,
+  "repeats": true,
+  "alts": true
+ },
  "notes": null
 }
