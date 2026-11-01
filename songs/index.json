@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T07:08:30Z",
+ "generatedAt": "2026-11-01T07:12:38Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -169,14 +169,6 @@
    "kind": "MIDI",
    "sha1": "d7c4b2e3a083cc4392b75ac979b3c2952b3be256",
    "addedAt": "2026-11-01T06:51:28Z"
-  },
-  {
-   "id": "chet-baker-almost-blue-wind-a-minor-57bpm-441hz-2",
-   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz 2.musicxml",
-   "title": "Chet Baker, Almost Blue-wind-A Minor 2",
-   "kind": "MusicXML",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
-   "addedAt": "2026-11-01T06:51:29Z"
   },
   {
    "id": "chet-baker-almost-blue-wind-a-minor-57bpm-441hz",
