@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T07:14:36Z",
+ "generatedAt": "2026-11-01T07:20:33Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -77,7 +77,7 @@
   {
    "id": "mvxaukcq5yws4",
    "file": "songs/tchaikovsky-the-nutcracker-russian-dance-trepak.mid",
-   "title": "tchaikovsky-the-nutcracker-russian-dance-trepak",
+   "title": "Tchaikovsky – Russian Dance, Trepak (The Nutcracker)",
    "kind": "MIDI",
    "sha1": "5321d808e1d44bf8841c6605bb5ae70ca673a7a7",
    "addedAt": "2026-11-01T03:57:48Z",
@@ -153,7 +153,7 @@
   {
    "id": "mvxghooqgidbp",
    "file": "songs/Rod S Until The Real Thing Comes Along voice.mid",
-   "title": "Rod S Until The Real Thing Comes Along voice",
+   "title": "Until the Real Thing Comes Along, Rod Stewart (voice)",
    "kind": "MIDI",
    "sha1": "346c9660715d9638e139283863fa3f3b3acf4b94",
    "addedAt": "2026-11-01T06:35:45Z",
@@ -165,7 +165,7 @@
   {
    "id": "mvxghoott13uu",
    "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
-   "title": "Rod S What A Difference A Day Made VoiceTrumpet",
+   "title": "What a Difference a Day Made, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
    "addedAt": "2026-11-01T06:35:45Z",
@@ -177,7 +177,7 @@
   {
    "id": "mvxghoovtqr7v",
    "file": "songs/They Can't Take That Away from Me VoiceTrumpet.mid",
-   "title": "They Can't Take That Away from Me VoiceTrumpet",
+   "title": "They Can’t Take That Away from Me (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "64e5da6c58616cc550c94002683e60dc96292c0f",
    "addedAt": "2026-11-01T06:35:45Z",
@@ -189,7 +189,7 @@
   {
    "id": "mvxghoow3cnfg",
    "file": "songs/Xvorostovsky I Loved You Voice.mid",
-   "title": "Xvorostovsky I Loved You Voice",
+   "title": "I Loved You, Hvorostovsky (voice)",
    "kind": "MIDI",
    "sha1": "7495823725d1cf0daeb28d3606abd46a753285a3",
    "addedAt": "2026-11-01T06:35:45Z",
@@ -314,15 +314,16 @@
   {
    "id": "for-hes-a-jolly-good-fellow",
    "file": "songs/for-hes-a-jolly-good-fellow.mid",
-   "title": "For Hes a Jolly Good Fellow",
+   "title": "For He’s a Jolly Good Fellow",
    "kind": "MIDI",
    "sha1": "a2d502a42334d61679e74f46d0003407cc8e691d",
-   "addedAt": "2026-11-01T07:07:27Z"
+   "addedAt": "2026-11-01T07:07:27Z",
+   "era": "classical"
   },
   {
    "id": "jerry-v-pretend-you-don-t-see-her-voice",
    "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
-   "title": "Jerry V Pretend You Don't See Her Voice",
+   "title": "Pretend You Don’t See Her, Jerry Vale (voice)",
    "kind": "MIDI",
    "sha1": "0b0cd2f5ba32a610f16089c3db9b7054ef3ad35f",
    "addedAt": "2026-11-01T07:07:28Z"
@@ -330,7 +331,7 @@
   {
    "id": "kat-e-just-like-starting-over-voice",
    "file": "songs/Kat E Just Like Starting Over Voice.mid",
-   "title": "Kat E Just Like Starting Over Voice",
+   "title": "Just Like Starting Over, Kat E (voice)",
    "kind": "MIDI",
    "sha1": "6639167605262a628469cad057eb740694f7981c",
    "addedAt": "2026-11-01T07:07:29Z"
@@ -338,7 +339,7 @@
   {
    "id": "luis-m-contigo-aprendi-voice",
    "file": "songs/Luis M Contigo Aprendi Voice.mid",
-   "title": "Luis M Contigo Aprendi Voice",
+   "title": "Contigo Aprendí, Luis Miguel (voice)",
    "kind": "MIDI",
    "sha1": "74710939bd9f10565362172c8839bf28456e213f",
    "addedAt": "2026-11-01T07:07:30Z"
@@ -346,7 +347,7 @@
   {
    "id": "luis-m-nos-hizo-falta-tiempo-voicetrumpet",
    "file": "songs/Luis M Nos Hizo Falta Tiempo VoiceTrumpet.mid",
-   "title": "Luis M Nos Hizo Falta Tiempo VoiceTrumpet",
+   "title": "Nos Hizo Falta Tiempo, Luis Miguel (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "213ebb73b81bbed08a5c76b36cf17da0ff7b184d",
    "addedAt": "2026-11-01T07:07:32Z"
@@ -354,7 +355,7 @@
   {
    "id": "luis-m-somos-novios-voice",
    "file": "songs/Luis M Somos Novios Voice.mid",
-   "title": "Luis M Somos Novios Voice",
+   "title": "Somos Novios, Luis Miguel (voice)",
    "kind": "MIDI",
    "sha1": "183a8c327364b1171bd84da5d0edef572cfc88c4",
    "addedAt": "2026-11-01T07:07:33Z"
@@ -362,7 +363,7 @@
   {
    "id": "mitch-m-song-for-a-summer-night-trumpet",
    "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
-   "title": "Mitch M Song For A Summer Night Trumpet",
+   "title": "Song for a Summer Night, Mitch Miller (trumpet)",
    "kind": "MIDI",
    "sha1": "09b76d355fefa0dc5fbcedfcd7dbbea6f34bf862",
    "addedAt": "2026-11-01T07:07:34Z"
@@ -370,7 +371,7 @@
   {
    "id": "quiet-nights-of-quiet-stars-corcovado-voice",
    "file": "songs/Quiet Nights of Quiet Stars Corcovado voice.mid",
-   "title": "Quiet Nights of Quiet Stars Corcovado voice",
+   "title": "Quiet Nights of Quiet Stars (Corcovado) (voice)",
    "kind": "MIDI",
    "sha1": "024844acde422e6b8a9b9f7a7a7d21a36ca0f3ad",
    "addedAt": "2026-11-01T07:07:35Z"
@@ -378,7 +379,7 @@
   {
    "id": "rod-s-till-there-was-you-voice",
    "file": "songs/Rod S 'Till There Was You Voice.mid",
-   "title": "Rod S 'Till There Was You Voice",
+   "title": "Till There Was You, Rod Stewart (voice)",
    "kind": "MIDI",
    "sha1": "1b40abfd96852b4e7755e12cbbaa0b5c2d1059ec",
    "addedAt": "2026-11-01T07:07:36Z"
@@ -386,7 +387,7 @@
   {
    "id": "rod-s-a-nightingale-sang-in-berkeley-square-voicetrumpet",
    "file": "songs/Rod S A Nightingale Sang in Berkeley Square VoiceTrumpet.mid",
-   "title": "Rod S A Nightingale Sang in Berkeley Square VoiceTrumpet",
+   "title": "A Nightingale Sang in Berkeley Square, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "d07de40503376271931a60559e075431b7f3e4b6",
    "addedAt": "2026-11-01T07:07:38Z"
@@ -394,7 +395,7 @@
   {
    "id": "rod-s-but-not-for-me-voicetrumpet",
    "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
-   "title": "Rod S But Not For Me VoiceTrumpet",
+   "title": "But Not for Me, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "10c970648b97abf44ddd9fe35e2a30334994114e",
    "addedAt": "2026-11-01T07:07:39Z"
@@ -402,7 +403,7 @@
   {
    "id": "rod-s-don-t-get-around-much-anymore-voicetrumpet",
    "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
-   "title": "Rod S Don't Get Around Much Anymore VoiceTrumpet",
+   "title": "Don’t Get Around Much Anymore, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "fd975a3922a1a037723d2c1635a4051991c220e4",
    "addedAt": "2026-11-01T07:07:40Z"
@@ -410,7 +411,7 @@
   {
    "id": "rod-s-embraceable-you-voicetrumpet",
    "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
-   "title": "Rod S Embraceable You VoiceTrumpet",
+   "title": "Embraceable You, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "8450df5c740a60d149a2cfcf369739b587d12075",
    "addedAt": "2026-11-01T07:07:41Z"
@@ -418,7 +419,7 @@
   {
    "id": "rod-s-fly-me-to-the-moon-voicetrumpet",
    "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
-   "title": "Rod S Fly Me to the Moon VoiceTrumpet",
+   "title": "Fly Me to the Moon, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "af29489870c29bac4bab6decf48dd6e745336519",
    "addedAt": "2026-11-01T07:07:42Z"
@@ -426,7 +427,7 @@
   {
    "id": "rod-s-for-all-we-know-voicetrumpet",
    "file": "songs/Rod S For All We Know VoiceTrumpet.mid",
-   "title": "Rod S For All We Know VoiceTrumpet",
+   "title": "For All We Know, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "2c73e70168c7b094569e74951cb3dc04802e164f",
    "addedAt": "2026-11-01T07:07:44Z"
@@ -434,7 +435,7 @@
   {
    "id": "rod-s-i-can-t-get-started-voicetrumpet",
    "file": "songs/Rod S I Can't Get Started VoiceTrumpet.mid",
-   "title": "Rod S I Can't Get Started VoiceTrumpet",
+   "title": "I Can’t Get Started, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "4b67153bc7820fe81efa79adcd48f52d79c1cd75",
    "addedAt": "2026-11-01T07:07:45Z"
@@ -442,7 +443,7 @@
   {
    "id": "rod-s-i-ll-be-seeing-you-voicetrumpet",
    "file": "songs/Rod S I'll Be Seeing You VoiceTrumpet.mid",
-   "title": "Rod S I'll Be Seeing You VoiceTrumpet",
+   "title": "I’ll Be Seeing You, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "be3243a7cdbcef732431e2ad7123002f9c1910c5",
    "addedAt": "2026-11-01T07:07:47Z"
@@ -450,7 +451,7 @@
   {
    "id": "rod-s-i-m-in-the-mood-for-love",
    "file": "songs/Rod S I'm In The Mood for Love.mid",
-   "title": "Rod S I'm In The Mood for Love",
+   "title": "I’m in the Mood for Love, Rod Stewart",
    "kind": "MIDI",
    "sha1": "ea1d4f8d72a2ffd0b31f506c2d2ec8824fc373f7",
    "addedAt": "2026-11-01T07:07:48Z"
@@ -458,7 +459,7 @@
   {
    "id": "rod-s-isn-t-it-romantic-voicetrumpet",
    "file": "songs/Rod S Isn't It Romantic VoiceTrumpet.mid",
-   "title": "Rod S Isn't It Romantic VoiceTrumpet",
+   "title": "Isn’t It Romantic, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "1e17c1dd04ce860b89dcd973214831295999faff",
    "addedAt": "2026-11-01T07:07:49Z"
@@ -466,7 +467,7 @@
   {
    "id": "rod-s-it-had-to-be-you-voicetrumpet",
    "file": "songs/Rod S It Had To Be You VoiceTrumpet.mid",
-   "title": "Rod S It Had To Be You VoiceTrumpet",
+   "title": "It Had to Be You, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "7b570d2864d5596f92159e4b070c2f801d477049",
    "addedAt": "2026-11-01T07:07:50Z"
@@ -474,7 +475,7 @@
   {
    "id": "rod-s-moonglow-voicetrumpet",
    "file": "songs/Rod S Moonglow VoiceTrumpet.mid",
-   "title": "Rod S Moonglow VoiceTrumpet",
+   "title": "Moonglow, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "90147e00df44a190d691364f6c8d5afb2d7c9aca",
    "addedAt": "2026-11-01T07:07:51Z"
@@ -482,7 +483,7 @@
   {
    "id": "rod-s-my-one-and-only-love-voicetrumpet",
    "file": "songs/Rod S My One and Only Love VoiceTrumpet.mid",
-   "title": "Rod S My One and Only Love VoiceTrumpet",
+   "title": "My One and Only Love, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "9078f1ff4b26ae4cb9a9e2470fb51cb853352b17",
    "addedAt": "2026-11-01T07:07:52Z"
@@ -490,7 +491,7 @@
   {
    "id": "rod-s-night-and-day-voicetrumpet",
    "file": "songs/Rod S Night and Day VoiceTrumpet.mid",
-   "title": "Rod S Night and Day VoiceTrumpet",
+   "title": "Night and Day, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "39f2248f0820bd1b6b00af86554fe30a4d9c7bd6",
    "addedAt": "2026-11-01T07:07:54Z"
@@ -498,7 +499,7 @@
   {
    "id": "rod-s-only-have-eyes-for-you",
    "file": "songs/Rod S Only Have Eyes For You.mid",
-   "title": "Rod S Only Have Eyes For You",
+   "title": "I Only Have Eyes for You, Rod Stewart",
    "kind": "MIDI",
    "sha1": "df2deb8449dac86970fdda41a7b05a62ae9ecdcf",
    "addedAt": "2026-11-01T07:07:55Z"
@@ -506,7 +507,7 @@
   {
    "id": "rod-s-our-love-is-here-to-stay-voicetrumpet",
    "file": "songs/Rod S Our Love Is Here To Stay VoiceTrumpet.mid",
-   "title": "Rod S Our Love Is Here To Stay VoiceTrumpet",
+   "title": "Our Love Is Here to Stay, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "4ac422a22fda8d6d83726ee79837c43bfbb97111",
    "addedAt": "2026-11-01T07:07:56Z"
@@ -514,7 +515,7 @@
   {
    "id": "rod-s-september-in-the-rain-voicetrumpet",
    "file": "songs/Rod S September in the Rain VoiceTrumpet.mid",
-   "title": "Rod S September in the Rain VoiceTrumpet",
+   "title": "September in the Rain, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "196634b06afb46aeee27b8eaf088d4407cdebd04",
    "addedAt": "2026-11-01T07:07:57Z"
@@ -522,7 +523,7 @@
   {
    "id": "rod-s-stardust-voicetrumpet",
    "file": "songs/Rod S Stardust VoiceTrumpet.mid",
-   "title": "Rod S Stardust VoiceTrumpet",
+   "title": "Stardust, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "26330c69d6475846d48f81fa299f9ceae9794387",
    "addedAt": "2026-11-01T07:07:58Z"
@@ -530,7 +531,7 @@
   {
    "id": "rod-s-that-s-all-voicetrumpet",
    "file": "songs/Rod S That's All VoiceTrumpet.mid",
-   "title": "Rod S That's All VoiceTrumpet",
+   "title": "That’s All, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "24666546c7dfceb27bf20bdbcc627aa2626278f1",
    "addedAt": "2026-11-01T07:07:59Z"
@@ -538,7 +539,7 @@
   {
    "id": "rod-s-the-very-thought-of-you-voicetrumpet",
    "file": "songs/Rod S The Very Thought of You VoiceTrumpet.mid",
-   "title": "Rod S The Very Thought of You VoiceTrumpet",
+   "title": "The Very Thought of You, Rod Stewart (voice and trumpet)",
    "kind": "MIDI",
    "sha1": "504f70685b2e3c032b03e0c9392f3f3d58cf7825",
    "addedAt": "2026-11-01T07:08:01Z"
@@ -546,7 +547,7 @@
   {
    "id": "mvxhref3h8itq",
    "file": "songs/Miles D Someday My Prince Will Come.mid",
-   "title": "Miles D Someday My Prince Will Come",
+   "title": "Someday My Prince Will Come, Miles Davis",
    "kind": "MIDI",
    "sha1": "66608b5851085ddcbc25bdcdd39e9a971977949f",
    "addedAt": "2026-11-01T07:11:18Z",

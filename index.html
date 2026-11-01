@@ -1762,7 +1762,30 @@ function cleanTitle(t){
   });
   t = t.replace(/\s*,\s*,/g, ",").replace(/,\s*$/, "").replace(/\s{2,}/g, " ").trim();
   if (key && !/\((?:[A-G][♭♯]?)(?: major| minor)?\)\s*$/.test(t)) t += " (" + key + ")";
-  return t;
+  return pcName(t);
+}
+/* Names from the songs folder on the PC: "Rod S Fly Me to the Moon VoiceTrumpet" becomes
+   "Fly Me to the Moon, Rod Stewart (voice and trumpet)". */
+var ARTISTS = {"rod s": "Rod Stewart", "luis m": "Luis Miguel", "jerry v": "Jerry Vale", "mitch m": "Mitch Miller", "miles d": "Miles Davis",
+  "chet b": "Chet Baker", "jackie g": "Jackie Gleason", "frank s": "Frank Sinatra", "xvorostovsky": "Hvorostovsky", "hvorostovsky": "Hvorostovsky",
+  "beegees": "Bee Gees", "bee gees": "Bee Gees", "beatles": "The Beatles", "the beatles": "The Beatles", "carpenters": "Carpenters"};
+var PARTS = [[/\s+voice\s*(?:and\s*)?trumpet$/i, "voice and trumpet"], [/\s+back\s*up\s+trumpet$/i, "backup trumpet"], [/\s+(?:voice|vocals?)$/i, "voice"],
+  [/\s+trumpet$/i, "trumpet"], [/\s+intro$/i, "intro"]];
+function pcName(t){
+  if (/,|\s[–—]\s|\(/.test(t)) return t;
+  var s = t, part = "", artist = "", m;
+  for (var i = 0; i < PARTS.length; i++) if (PARTS[i][0].test(s)){ part = PARTS[i][1]; s = s.replace(PARTS[i][0], ""); break; }
+  var low = s.toLowerCase();
+  Object.keys(ARTISTS).sort(function(a, b){ return b.length - a.length; }).some(function(k){
+    if (low.indexOf(k + " ") !== 0) return false;
+    artist = ARTISTS[k]; s = s.slice(k.length + 1); return true;
+  });
+  if (!artist && part && (m = /^([A-Z][a-z]+ [B-HJ-Z])\s+(\S.*)$/.exec(s))){ artist = m[1]; s = m[2]; }
+  if (!artist && !part) return t;
+  s = s.replace(/^['’]/, "").trim();
+  var words = s.split(/\s+/);
+  s = words.map(function(w, i){ return i > 0 && i < words.length - 1 && SMALL[w.toLowerCase()] ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1); }).join(" ");
+  return (s + (artist ? ", " + artist : "") + (part ? " (" + part + ")" : "")).replace(/(\w)'(\w)/g, "$1’$2");
 }
 function composerFirst(t){
   t = cleanTitle(t);

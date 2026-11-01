@@ -80,8 +80,40 @@ def clean_title(t):
     return t
 
 
+# Names from the songs folder on the PC: "Rod S Fly Me to the Moon VoiceTrumpet" -> "Fly Me to the Moon, Rod Stewart (voice and trumpet)"
+ARTISTS = {"rod s": "Rod Stewart", "luis m": "Luis Miguel", "jerry v": "Jerry Vale", "mitch m": "Mitch Miller", "miles d": "Miles Davis",
+           "chet b": "Chet Baker", "jackie g": "Jackie Gleason", "frank s": "Frank Sinatra", "xvorostovsky": "Hvorostovsky", "hvorostovsky": "Hvorostovsky",
+           "beegees": "Bee Gees", "bee gees": "Bee Gees", "beatles": "The Beatles", "the beatles": "The Beatles", "carpenters": "Carpenters"}
+PARTS = [(r"\s+voice\s*(?:and\s*)?trumpet$", "voice and trumpet"), (r"\s+back\s*up\s+trumpet$", "backup trumpet"), (r"\s+(?:voice|vocals?)$", "voice"),
+         (r"\s+trumpet$", "trumpet"), (r"\s+intro$", "intro")]
+
+
+def pc_name(t):
+    if re.search(r",|\s[–—]\s|\(", t):
+        return t
+    s, part, artist = t, "", ""
+    for pat, name in PARTS:
+        if re.search(pat, s, re.I):
+            part, s = name, re.sub(pat, "", s, flags=re.I)
+            break
+    low = s.lower()
+    for k in sorted(ARTISTS, key=len, reverse=True):
+        if low.startswith(k + " "):
+            artist, s = ARTISTS[k], s[len(k) + 1:]
+            break
+    if not artist and part:
+        m = re.match(r"^([A-Z][a-z]+ [B-HJ-Z])\s+(\S.*)$", s)
+        if m:
+            artist, s = m.group(1), m.group(2)
+    if not artist and not part:
+        return t
+    words = re.sub(r"^['’]", "", s).split()
+    s = " ".join(w.lower() if 0 < i < len(words) - 1 and w.lower() in SMALL else w[:1].upper() + w[1:] for i, w in enumerate(words))
+    return re.sub(r"(\w)'(\w)", "\\1’\\2", s + (", " + artist if artist else "") + (" (" + part + ")" if part else ""))
+
+
 def composer_first(t):
-    t = clean_title(t)
+    t = pc_name(clean_title(t))
     f, at = "", []
     for i, ch in enumerate(t):
         g = fold(ch)
