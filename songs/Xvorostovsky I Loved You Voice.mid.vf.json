@@ -1,0 +1,16 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "mvxghoow3cnfg",
+ "title": "Xvorostovsky I Loved You Voice",
+ "kind": "MIDI",
+ "addedAt": "2026-11-01T06:35:45.344Z",
+ "updatedAt": "2026-11-01T06:35:45.344Z",
+ "units": {
+  "count": 37,
+  "unit": "Phrase"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null
+}
