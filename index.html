@@ -2192,7 +2192,21 @@ $("ghoff").addEventListener("click", function(){
   renderOwner();
 });
 window.addEventListener("hashchange", route);
-document.addEventListener("visibilitychange", function(){ if (document.visibilityState === "hidden" && saveTimer) flushSave(); });
+document.addEventListener("visibilitychange", function(){
+  if (document.visibilityState === "hidden" && saveTimer) flushSave();
+  /* a phone keeps the page open in the background: coming back to it, fetch the song list again */
+  if (document.visibilityState === "visible" && !$("view-library").hidden) syncLibrary();
+});
+window.addEventListener("pageshow", function(e){ if (e.persisted && !$("view-library").hidden) syncLibrary(); });
+/* GitHub won't make two keys with the same name, so each key is named with the day and time it was made */
+(function(){
+  var a = $("ghmake"); if (!a) return;
+  a.addEventListener("click", function(){
+    var d = new Date(), p = function(n){ return ("0" + n).slice(-2); };
+    var name = "Valve Finder " + d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()) + " " + p(d.getHours()) + "." + p(d.getMinutes());
+    a.href = a.href.replace(/([?&]name=)[^&]*/, "$1" + encodeURIComponent(name));
+  });
+})();
 
 Store.all().then(function(recs){
   (recs || []).forEach(function(r){ if (r.inArchive === undefined){ r.inArchive = false; r.dirty = false; delete r.inIndex; delete r.synced; delete r.sha; } cache[r.id] = r; });
