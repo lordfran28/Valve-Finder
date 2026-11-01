@@ -1525,6 +1525,19 @@ function applySettings(s){
   if (s.join != null) $("join").checked = !!s.join;
   if (s.alts != null) $("alts").checked = !!s.alts;
 }
+/* A voice line or a transcription an octave off can sit mostly below (or above) the trumpet. When more
+   than a tenth of its notes can't be played as written and another octave fits nearly all of them, that
+   octave is used, unless an octave was chosen for the song already. */
+function bestOctave(part){
+  var keep = $("oct").value; $("oct").value = "0"; var off = offsets(part); $("oct").value = keep;
+  var src = []; part.measures.forEach(function(m){ m.notes.forEach(function(n){ if (!n.tied && !n.grace) src.push(n.src); }); });
+  if (!src.length) return 0;
+  function outs(k){ var c = 0; src.forEach(function(p){ if (!FING[midiOf(shiftPitch(p, off.dia + 7*k, off.chrom + 12*k))]) c++; }); return c; }
+  var o0 = outs(0); if (o0 <= src.length * 0.1) return 0;
+  var best = 0, bo = o0;
+  [1, -1].forEach(function(k){ var o = outs(k); if (o < bo){ best = k; bo = o; } });
+  return bo <= o0 / 4 ? best : 0;
+}
 function loadScore(score, settings){
   stopRun();
   state.score = score;
@@ -1535,6 +1548,7 @@ function loadScore(score, settings){
   $("pitch").value = "auto"; $("oct").value = "0"; $("repeats").checked = true; $("join").checked = false; $("alts").checked = false;
   var tp = score.parts[pi].tempo; $("tempo").value = tp ? clampTempo(tp) : 100;
   applySettings(settings);
+  if (!settings || settings.oct == null) $("oct").value = String(bestOctave(score.parts[state.part]));
   $("error").hidden = true;
   render();
 }
