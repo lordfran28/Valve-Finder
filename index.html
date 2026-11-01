@@ -152,7 +152,7 @@ button.addlink{border:0;background-color:transparent;margin:0}
 .song:hover{border-color:var(--brass)}
 .song-main{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
 .song-title{font-family:var(--display);font-size:1.35rem;line-height:1.15;overflow-wrap:anywhere}
-.song-title.old{color:var(--brass)}
+.song-title .lead{color:var(--brass)}
 .song-title .composer{font-variant-caps:small-caps;letter-spacing:.05em;color:var(--brass)}
 .song-meta{font-size:.95rem;color:var(--muted);font-variant-numeric:lining-nums}
 .status{font-size:.95rem;font-weight:600;font-variant-caps:all-small-caps;letter-spacing:.07em;padding:1px 9px 3px;border-radius:2px;white-space:nowrap;flex:0 0 auto}
@@ -1756,8 +1756,11 @@ function renderLibrary(){
     var d = fmtDate(x.meta.addedAt); if (d) bits.push("Added " + d);
     if (u && u.count) bits.push(plural(u.count, String(u.unit).toLowerCase()));
     if (x.meta.kind) bits.push(x.meta.kind);
-    var who = composerOf(x.title), name = who ? '<span class="composer">' + esc(x.title.slice(0, who.length)) + '</span>' + esc(x.title.slice(who.length)) : esc(x.title);
-    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title' + (x.old ? " old" : "") + '">' + name +
+    // only the composer's name is gold; an old piece with no composer named gets its own name gold instead
+    var who = composerOf(x.title), lead = who ? 0 : x.old ? x.title.search(/, | \(|$/) : 0;
+    var name = who ? '<span class="composer">' + esc(x.title.slice(0, who.length)) + '</span>' + esc(x.title.slice(who.length))
+      : lead ? '<span class="lead">' + esc(x.title.slice(0, lead)) + '</span>' + esc(x.title.slice(lead)) : esc(x.title);
+    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + name +
       '</span><span class="song-meta">' + esc(bits.join(" · ")) + '</span></span>' + (st ? '<span class="status st-' + st[0] + '">' + st[1] + "</span>" : "") + "</a></li>";
   }).join("");
   $("empty").hidden = list.length > 0;
