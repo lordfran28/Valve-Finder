@@ -138,6 +138,34 @@ def slug(text):
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-") or "song"
 
 
+def removed_songs(present):
+    """Songs deleted from the folder, from the git history: devices drop their own copies of these."""
+    try:
+        log = subprocess.run(["git", "log", "--diff-filter=D", "--name-only", "--format=@%H %cI", "--", "."],
+                             cwd=ROOT, capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return []
+    out, seen, commit, at = [], set(), None, None
+    for line in log.splitlines():
+        if line.startswith("@"):
+            commit, at = line[1:].split(" ", 1)
+            continue
+        path = line.strip()
+        if not path or os.path.splitext(path)[1].lower() not in KINDS:
+            continue
+        try:
+            blob = subprocess.run(["git", "show", "%s^:%s" % (commit, path)], cwd=os.path.dirname(ROOT) or ".",
+                                  capture_output=True, check=True).stdout
+        except (OSError, subprocess.CalledProcessError):
+            continue
+        h = hashlib.sha1(blob).hexdigest()
+        if h in present or h in seen:
+            continue
+        seen.add(h)
+        out.append({"file": path, "sha1": h, "at": utc(at)})
+    return out
+
+
 def main():
     songs, used = [], set()
     for folder, dirs, files in os.walk(ROOT):
@@ -177,17 +205,19 @@ def main():
                 entry["units"] = {"count": units["count"], "unit": str(units.get("unit") or "Bar")}
             songs.append(entry)
     songs.sort(key=lambda s: (str(s["addedAt"]), s["file"]))
+    removed = removed_songs({s["sha1"] for s in songs})
 
     try:
         with open(OUT, encoding="utf-8") as f:
-            if json.load(f).get("songs") == songs:
+            old = json.load(f)
+            if old.get("songs") == songs and old.get("removed", []) == removed:
                 print("Song list unchanged (%d songs)." % len(songs))
                 return
     except (OSError, ValueError, AttributeError):
         pass
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     with open(OUT, "w", encoding="utf-8") as f:
-        json.dump({"app": "Valve Finder", "generatedAt": now, "songs": songs}, f, ensure_ascii=False, indent=1)
+        json.dump({"app": "Valve Finder", "generatedAt": now, "songs": songs, "removed": removed}, f, ensure_ascii=False, indent=1)
         f.write("\n")
     print("Wrote %d songs." % len(songs))
 

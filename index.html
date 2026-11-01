@@ -258,6 +258,8 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 .strip{margin:0;font-family:var(--body);font-size:1.02rem;line-height:1.7;overflow-x:auto;background:var(--well);border-radius:3px;padding:10px 12px;font-variant-numeric:lining-nums tabular-nums}
 .dangerzone{display:flex;flex-direction:column;gap:10px;align-items:flex-start;border-top:1px solid var(--line);padding-top:16px}
 .delask{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.delkey{flex-basis:100%;margin:0}
+.delkey a{display:inline-block;margin-top:6px}
 
 /* Footer */
 .foot{font-size:.98rem;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
@@ -376,7 +378,8 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
               <option value="1">Up one</option>
             </select></div>
           <div class="field"><label for="tempo">Tempo (bpm)</label><input id="tempo" type="number" inputmode="numeric" min="30" max="240" step="1" value="100"></div>
-          <label class="check"><input id="repeats" type="checkbox" checked><span>Write out repeats</span></label>
+          <label class="check"><input id="join" type="checkbox"><span>Join repeated notes</span></label>
+          <label class="check" id="repeatsbox" hidden><input id="repeats" type="checkbox" checked><span>Write out repeat signs</span></label>
           <label class="check"><input id="alts" type="checkbox"><span>Alternate fingerings</span></label>
           <p id="pitchnote" class="pitchnote"></p>
         </div>
@@ -405,6 +408,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
       <button type="button" id="del" class="btn link">Delete song</button>
       <div id="delask" class="delask" hidden>
         <span id="delq"></span>
+        <div id="delkey" class="field delkey" hidden><label for="delkeyin">Your key</label><input id="delkeyin" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"><a href="#owner" class="small">Get a key</a></div>
         <button type="button" id="delyes" class="btn danger">Delete</button>
         <button type="button" id="delno" class="btn quiet">Keep it</button>
       </div>
@@ -797,15 +801,28 @@ function render(){
   var unit = part.unit || "Bar", unitL = unit.toLowerCase();
   var off = offsets(part);
   $("pitchnote").textContent = off.msg;
+  /* the box is about repeat signs in the sheet music (bars to play twice), so it only shows when the song has some */
+  $("repeatsbox").hidden = !part.measures.some(function(m){ return m.repeatStart || m.repeatEnd || m.ending; });
   var seq = $("repeats").checked ? unroll(part.measures) : part.measures.map(function(m){ return {m:m, pass:1}; });
   var mIndex = new Map(); part.measures.forEach(function(m, i){ mIndex.set(m, i); });
   var anns = annotations(), locked = isLocked(state.rec);
   var showAlt = $("alts").checked;
   var bars = [], html = [], stripBars = [], heard = 0;
+  /* Transcriptions made from a recording often split one held note into two or three of the same note.
+     With "Join repeated notes", a note that follows the same note with no gap is taken as part of it:
+     in the same bar it disappears and the first note lasts longer; over a bar line it shows as held. */
+  var join = $("join").checked, prev = null, boff = 0;
   seq.forEach(function(item, bi){
     var m = item.m, notes = [], cells = [], sTok = [];
     m.notes.forEach(function(n, ni){
       var w = shiftPitch(n.src, off.dia, off.chrom), wm = midiOf(w), f = FING[wm];
+      var at = boff + n.t, joined = join && !n.grace && !n.tied && prev && prev.wm === wm && at >= prev.start && at - prev.end <= 0.13;
+      if (joined && prev.bi === bi){
+        prev.note.durQ = Math.max(prev.note.durQ, n.t + n.durQ - prev.note.t);
+        prev.end = Math.max(prev.end, at + n.durQ);
+        return;
+      }
+      if (joined) n = Object.assign({}, n, {tied: true});
       var cp = shiftPitch(w, -1, -2);
       var lab = f ? fingLabel(f) : (wm < LOWEST ? "too low for trumpet" : "too high for trumpet");
       var extras = [];
@@ -817,16 +834,19 @@ function render(){
       var dots = f ? '<span class="valves" aria-hidden="true">' + [1,2,3].map(function(k){ return '<i class="v' + (f.indexOf(String(k))>=0 ? " on" : "") + '"></i>'; }).join("") + "</span>" : "";
       var aria = "Trumpet " + noteWords(w) + ", concert " + noteWords(cp) + ", " + lab + (extras.length ? ", " + extras.join(", ") : "") + (n.lyric ? ", sung " + n.lyric : "");
       var key = state.part + ":" + mIndex.get(m) + ":" + ni, ann = anns[key] || "";
-      cells.push('<div class="notecell"><button type="button" class="' + cls + '" data-b="' + bi + '" data-n="' + ni + '" aria-label="' + esc(aria) + '">' +
+      cells.push('<div class="notecell"><button type="button" class="' + cls + '" data-b="' + bi + '" data-n="' + notes.length + '" aria-label="' + esc(aria) + '">' +
         '<span class="concert">' + esc(cp.step + accSym(cp.alter) + cp.octave) + '</span>' +
         '<span class="name">' + esc(w.step) + (w.alter ? '<span class="acc">' + accSym(w.alter) + "</span>" : "") + '<span class="oct">' + w.octave + "</span></span>" +
         dots + '<span class="fing">' + esc(lab) + "</span>" +
         (extras.length ? '<span class="extra">' + esc(extras.join(" · ")) + "</span>" : "") +
         (n.lyric ? '<span class="lyr">' + esc(n.lyric) + "</span>" : "") + "</button>" +
         '<input class="annot' + annClass(ann) + '" title="' + esc(ann) + '" type="text" list="techniques" maxlength="60" autocomplete="off" spellcheck="false" enterkeyhint="done" data-key="' + key + '" value="' + esc(ann) + '" aria-label="How to play ' + esc(noteWords(w)) + '"' + (locked ? " readonly" : "") + "></div>");
-      notes.push({t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2, key:key, vel:n.vel});
+      var pushed = {t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2, key:key, vel:n.vel};
+      notes.push(pushed);
       sTok.push(n.tied ? "~" : f ? (f==="0" ? "0" : fingLabel(f)) : "?");
+      if (!n.grace) prev = {wm: wm, start: (n.tied && prev) ? prev.start : at, end: at + n.durQ, bi: bi, note: pushed};
     });
+    boff += Math.max(m.len || 0, 0.25);
     bars.push({len:m.len, notes:notes, first:heard});
     notes.forEach(function(x){ if (!x.tied) heard++; });
     stripBars.push(sTok.length ? sTok.join(" ") : "-");
@@ -1278,7 +1298,7 @@ function markTiming(){
   var o = $("hear").querySelector('option[value="rec"]'), o2 = $("hear").querySelector('option[value="both"]');
   o.disabled = o2.disabled = !state.recBuf;
   if (!state.recBuf && ($("hear").value === "rec" || $("hear").value === "both")) $("hear").value = "timed";
-  if (state.rec && state.rec.timing && !tm) recMsg("The recording was lined up with other settings (part or repeats). Add it again to line it up with these.");
+  if (state.rec && state.rec.timing && !tm) recMsg("The recording was lined up with other settings (part, repeats or joined notes). Add it again to line it up with these.");
 }
 function recMsg(text, bad){ var m = $("recmsg"); m.textContent = text || ""; m.hidden = !text; m.className = "msg" + (bad ? " bad" : ""); }
 function buildTimed(from, to, tm, mode){
@@ -1494,7 +1514,7 @@ function defaultPart(score){
   return best;
 }
 function countUnits(score){ var p = score.parts[defaultPart(score)]; return {count: p.measures.length, unit: p.unit || "Bar"}; }
-function readSettings(){ return {part: state.part, pitch: $("pitch").value, oct: $("oct").value, tempo: clampTempo($("tempo").value), repeats: $("repeats").checked, alts: $("alts").checked}; }
+function readSettings(){ return {part: state.part, pitch: $("pitch").value, oct: $("oct").value, tempo: clampTempo($("tempo").value), repeats: $("repeats").checked, join: $("join").checked, alts: $("alts").checked}; }
 function applySettings(s){
   if (!s) return;
   if (typeof s.part === "number" && s.part >= 0 && s.part < state.score.parts.length){ state.part = s.part; $("part").value = String(s.part); }
@@ -1502,6 +1522,7 @@ function applySettings(s){
   if (s.oct != null) $("oct").value = String(s.oct);
   if (s.tempo) $("tempo").value = clampTempo(s.tempo);
   if (s.repeats != null) $("repeats").checked = !!s.repeats;
+  if (s.join != null) $("join").checked = !!s.join;
   if (s.alts != null) $("alts").checked = !!s.alts;
 }
 function loadScore(score, settings){
@@ -1511,7 +1532,7 @@ function loadScore(score, settings){
   state.part = pi;
   $("part").innerHTML = score.parts.map(function(p, i){ return '<option value="' + i + '"' + (i===pi ? " selected" : "") + ">" + esc(p.name) + "</option>"; }).join("");
   $("partfield").hidden = score.parts.length < 2;
-  $("pitch").value = "auto"; $("oct").value = "0"; $("repeats").checked = true; $("alts").checked = false;
+  $("pitch").value = "auto"; $("oct").value = "0"; $("repeats").checked = true; $("join").checked = false; $("alts").checked = false;
   var tp = score.parts[pi].tempo; $("tempo").value = tp ? clampTempo(tp) : 100;
   applySettings(settings);
   $("error").hidden = true;
@@ -1631,15 +1652,35 @@ function saveSidecar(rec){
   return Owner.putRetry(rec.file + ".vf.json", textToB64(JSON.stringify(sidecarOf(rec), null, 1) + "\n"), "Update " + rec.title, rec.sideSha)
     .then(function(sha){ rec.sideSha = sha; if (rec.updatedAt === snapshot) rec.dirty = false; return Store.put(rec); });
 }
+function filled(v){ return !!(v && (typeof v !== "object" || Object.keys(v).length)); }
+/* This device has its own copy of a song that's already on the site. It is never uploaded again and never
+   retitles the site's song: only the settings, playing notes and timing made here come across, where the
+   site's song has none (notes and timing only from the very same file), and then the copy is dropped. */
+function adoptTwin(rec, twin){
+  return fetchSidecar(twin.file).then(function(o){
+    var side = o || {app: "Valve Finder", version: 2, id: twin.id, title: twin.title, kind: twin.kind, addedAt: twin.addedAt};
+    var site = cache[twin.id], same = !!(rec.sha1 && twin.sha1 && rec.sha1 === twin.sha1), add = 0;
+    (same ? ["settings", "notes", "timing"] : ["settings"]).forEach(function(k){
+      if (filled(rec[k]) && !filled(side[k]) && !(site && filled(site[k]))){ side[k] = rec[k]; if (site) site[k] = rec[k]; add++; }
+    });
+    var write = Promise.resolve();
+    if (add){
+      side.updatedAt = new Date().toISOString();
+      write = Owner.putRetry(twin.file + ".vf.json", textToB64(JSON.stringify(side, null, 1) + "\n"), "Update " + (side.title || twin.title), null);
+    }
+    return write.then(function(){
+      if (site && add){ site.updatedAt = side.updatedAt; Store.put(site); }
+      return same ? RecDB.get(rec.id).then(function(a){
+        if (!a) return;
+        return RecDB.get(twin.id).then(function(b){ if (!b){ a.id = twin.id; return RecDB.put(a).then(function(){ return RecDB.del(rec.id); }); } });
+      }).catch(function(){}) : null;
+    }).then(function(){ delete cache[rec.id]; return Store.del(rec.id); });
+  });
+}
 function pushSong(rec){
   if (rec.inArchive) return rec.dirty ? saveSidecar(rec) : Promise.resolve();
   var twin = rec.dupOf && archive.filter(function(m){ return m.id === rec.dupOf; })[0];
-  if (twin){
-    /* The same file is already in the songs folder: keep this device's title, settings and notes on it. */
-    if (titleKey(rec.title) === titleKey(String(rec.fileName || "").replace(/\.[^.]+$/, ""))) rec.title = twin.title;
-    rec.file = twin.file; rec.inArchive = true; rec.archivedAt = new Date().toISOString(); rec.dirty = true; delete rec.dupOf;
-    return saveSidecar(rec);
-  }
+  if (twin) return adoptTwin(rec, twin);
   var path = rec.file || pickPath(rec);
   rec.file = path;
   return Owner.putRetry(path, rec.data, "Add " + rec.title, null).then(function(){
@@ -1767,8 +1808,11 @@ function renderLibrary(){
   $("nomatch").hidden = !(list.length && !shown.length);
 }
 function syncLibrary(){
+  /* songs deleted from the site: this device's own copies of them go too, unless added here after the delete */
+  var removed = {}, removedFile = {};
   return fetchIndex().then(function(ix){
     if (ix){
+      (Array.isArray(ix.removed) ? ix.removed : []).forEach(function(x){ if (x && x.sha1) removed[x.sha1] = Date.parse(x.at) || 0; if (x && x.file) removedFile[x.file] = 1; });
       var gone = goneList(), now = Date.now();
       archive = (Array.isArray(ix.songs) ? ix.songs : []).filter(function(m){ return m && m.id && m.file && !(gone[m.id] && now - gone[m.id] < 36e5); });
       archiveAt = ix.generatedAt || null;
@@ -1782,6 +1826,7 @@ function syncLibrary(){
           if (!cache[nid]){ r.id = nid; cache[nid] = r; Store.put(r); }
           return;
         }
+        if (!listed[id] && r.inArchive && r.file && removedFile[r.file]){ delete cache[id]; Store.del(id); RecDB.del(id); return; }
         if (listed[id]){ if (!r.dirty && listed[id].title) r.title = listed[id].title; if (!r.file) r.file = listed[id].file; r.inArchive = true; return; }
         /* Not listed: either too new for the list, or deleted elsewhere. Only a missing file settles it. */
         if (r.inArchive && !r.dirty && r.file && now - Date.parse(r.archivedAt || 0) > 15 * 6e4){
@@ -1793,11 +1838,15 @@ function syncLibrary(){
     }
     var locals = Object.keys(cache).map(function(k){ return cache[k]; }).filter(function(r){ return !r.inArchive; });
     return Promise.all(locals.map(shaOf)).then(function(){
+      locals = locals.filter(function(r){
+        if (!(r.sha1 && removed[r.sha1] !== undefined && !(Date.parse(r.addedAt) > removed[r.sha1]))) return true;
+        delete cache[r.id]; Store.del(r.id); RecDB.del(r.id); return false;
+      });
       var bySha = {}, byName = {};
       archive.forEach(function(m){ if (m.sha1) bySha[m.sha1] = m; byName[titleKey(String(m.file).split("/").pop().replace(/\.[^.]+$/, ""))] = m; });
       locals.forEach(function(r){
         var m = (r.sha1 && bySha[r.sha1]) || byName[titleKey(String(r.fileName || "").replace(/\.[^.]+$/, ""))];
-        if (m && !cache[m.id]){
+        if (m){
           r.dupOf = m.id;
           /* never renamed on this device: use the tidier title from the songs folder */
           if (m.title && titleKey(r.title) === titleKey(String(r.fileName || "").replace(/\.[^.]+$/, "")) && r.title !== m.title){ r.title = m.title; Store.put(r); }
@@ -1881,7 +1930,7 @@ function showRecord(rec){
   state.rec = rec;
   var locked = isLocked(rec);
   setTitle(rec.title, locked);
-  $("dangerzone").hidden = locked; $("delask").hidden = true;
+  $("dangerzone").hidden = false; $("delask").hidden = true; $("delkey").hidden = true;
   return parseBytes(b64ToBytes(rec.data)).then(function(res){
     if (state.rec !== rec) return;
     if (!rec.units) rec.units = countUnits(res.score);
@@ -2034,7 +2083,7 @@ $("addtoggle").addEventListener("click", function(){ openDrop($("dropbox").hidde
   });
 })();
 $("search").addEventListener("input", renderLibrary);
-["pitch","oct","repeats","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(); }); });
+["pitch","oct","repeats","join","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(); }); });
 $("part").addEventListener("change", function(){ state.part = parseInt($("part").value, 10) || 0; render(); scheduleSave(); });
 $("tempo").addEventListener("change", function(){ $("tempo").value = clampTempo($("tempo").value); scheduleSave(); });
 $("title").addEventListener("change", function(){
@@ -2098,21 +2147,29 @@ $("copy").addEventListener("click", function(){
 $("del").addEventListener("click", function(){
   var rec = state.rec; if (!rec) return;
   $("delq").textContent = "Delete “" + rec.title + "”" + (rec.inArchive ? " from the site?" : " from this device?");
+  /* only a device with the key can take a song off the site; ask for it here rather than hiding the button */
+  $("delkey").hidden = !(rec.inArchive && rec.file && !isOwner());
   $("delask").hidden = false;
 });
 $("delno").addEventListener("click", function(){ $("delask").hidden = true; });
 $("delyes").addEventListener("click", function(){
   var rec = state.rec; if (!rec) return;
+  var key = $("delkeyin").value.trim();
+  if (rec.inArchive && rec.file && !isOwner() && !key){ songMsg("Paste your key to delete it from the site.", true); $("delkeyin").focus(); return; }
   clearTimeout(saveTimer); saveTimer = null;
-  $("delyes").disabled = true;
-  var p = (rec.inArchive && rec.file && isOwner()) ? enqueue(function(){ return Owner.del(rec.file, "Delete " + rec.title).then(function(){ return Owner.del(rec.file + ".vf.json", "Delete notes for " + rec.title); }); }) : Promise.resolve();
+  $("delyes").disabled = true; songMsg("");
+  var ready = (rec.inArchive && rec.file && !isOwner()) ? Owner.check(key).then(function(){ Owner.store(key); $("delkeyin").value = ""; }) : Promise.resolve();
+  var p = ready.then(function(){ return (rec.inArchive && rec.file && isOwner()) ? enqueue(function(){ return Owner.del(rec.file, "Delete " + rec.title).then(function(){ return Owner.del(rec.file + ".vf.json", "Delete notes for " + rec.title); }); }) : null; });
   p.then(function(){
+    /* copies of the same song kept on this device go too, or they'd come back into the list */
+    Object.keys(cache).forEach(function(k){ var r = cache[k]; if (k !== rec.id && (r.dupOf === rec.id || (rec.file && r.file === rec.file))){ delete cache[k]; Store.del(k); RecDB.del(k); } });
+    RecDB.del(rec.id);
     delete cache[rec.id];
     if (rec.inArchive) markGone(rec.id);
     archive = archive.filter(function(m){ return m.id !== rec.id; });
     return Store.del(rec.id);
   }).then(function(){ state.rec = null; location.hash = ""; })
-    .catch(function(e){ songMsg(e.user ? e.message : "The song couldn't be deleted. Try again.", true); })
+    .catch(function(e){ songMsg(e.code === "offline" ? "Couldn't reach GitHub. Try again when you're online." : e.user ? e.message : "The song couldn't be deleted. Try again.", true); })
     .then(function(){ $("delyes").disabled = false; });
 });
 $("ghconnect").addEventListener("click", function(){
