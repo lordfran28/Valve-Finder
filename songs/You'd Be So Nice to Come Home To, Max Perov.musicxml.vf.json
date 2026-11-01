@@ -5,8 +5,15 @@
  "title": "You’d Be So Nice to Come Home To, Max Perov (A minor)",
  "kind": "MusicXML",
  "addedAt": "2026-11-01T04:22:02Z",
- "updatedAt": "2026-11-01T04:22:02Z",
+ "updatedAt": "2026-11-01T07:13:14.061Z",
  "units": null,
- "settings": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 91,
+  "repeats": true,
+  "alts": false
+ },
  "notes": null
 }
