@@ -1616,13 +1616,23 @@ var Owner = (function(){
       throw e;
     });
   }
+  function readJson(path){
+    return api("GET", cpath(path)).then(function(r){
+      if (r.status === 404) return null;
+      return r.json().then(function(j){
+        var text = j.content ? new TextDecoder().decode(b64ToBytes(String(j.content).replace(/\s/g, ""))) : "";
+        var json = null; try { json = text ? JSON.parse(text) : null; } catch(e){}
+        return {json: json, sha: j.sha || null};
+      });
+    });
+  }
   function del(path, message){ return getSha(path).then(function(s){ if (s) return api("DELETE", cpath(path), {message: message, sha: s, branch: SITE.branch}); }); }
   function check(t){
     return api("GET", "", null, t).then(function(r){
       if (r.status === 404) throw err("missing", "This key can't see the Valve-Finder repository. Make a new key and choose Valve-Finder under Repository access.");
     });
   }
-  return {token: token, store: store, getSha: getSha, putRetry: putRetry, del: del, check: check};
+  return {token: token, store: store, getSha: getSha, putRetry: putRetry, del: del, check: check, readJson: readJson};
 })();
 function isOwner(){ return !!Owner.token(); }
 /* A deleted song can stay in songs/index.json for a minute until GitHub rebuilds it. */
@@ -1649,15 +1659,18 @@ function pickPath(rec){
 }
 function saveSidecar(rec){
   var snapshot = rec.updatedAt;
-  return Owner.putRetry(rec.file + ".vf.json", textToB64(JSON.stringify(sidecarOf(rec), null, 1) + "\n"), "Update " + rec.title, rec.sideSha)
-    .then(function(sha){ rec.sideSha = sha; if (rec.updatedAt === snapshot) rec.dirty = false; return Store.put(rec); });
+  var body = sidecarOf(rec), same = JSON.stringify(Object.assign({}, body, {updatedAt: null}));
+  if (rec.sideSaved === same){ if (rec.updatedAt === snapshot) rec.dirty = false; return Store.put(rec); }
+  return Owner.putRetry(rec.file + ".vf.json", textToB64(JSON.stringify(body, null, 1) + "\n"), "Update " + rec.title, rec.sideSha)
+    .then(function(sha){ rec.sideSha = sha; rec.sideSaved = same; if (rec.updatedAt === snapshot) rec.dirty = false; return Store.put(rec); });
 }
 function filled(v){ return !!(v && (typeof v !== "object" || Object.keys(v).length)); }
 /* This device has its own copy of a song that's already on the site. It is never uploaded again and never
    retitles the site's song: only the settings, playing notes and timing made here come across, where the
    site's song has none (notes and timing only from the very same file), and then the copy is dropped. */
 function adoptTwin(rec, twin){
-  return fetchSidecar(twin.file).then(function(o){
+  return Owner.readJson(twin.file + ".vf.json").then(function(got){
+    var o = got && got.json;
     var side = o || {app: "Valve Finder", version: 2, id: twin.id, title: twin.title, kind: twin.kind, addedAt: twin.addedAt};
     var site = cache[twin.id], same = !!(rec.sha1 && twin.sha1 && rec.sha1 === twin.sha1), add = 0;
     (same ? ["settings", "notes", "timing"] : ["settings"]).forEach(function(k){
@@ -1666,7 +1679,7 @@ function adoptTwin(rec, twin){
     var write = Promise.resolve();
     if (add){
       side.updatedAt = new Date().toISOString();
-      write = Owner.putRetry(twin.file + ".vf.json", textToB64(JSON.stringify(side, null, 1) + "\n"), "Update " + (side.title || twin.title), null);
+      write = Owner.putRetry(twin.file + ".vf.json", textToB64(JSON.stringify(side, null, 1) + "\n"), "Update " + (side.title || twin.title), got && got.sha);
     }
     return write.then(function(){
       if (site && add){ site.updatedAt = side.updatedAt; Store.put(site); }
@@ -1792,7 +1805,8 @@ function renderLibrary(){
   var shown = q.length ? list.filter(function(x){ var hay = x.key + " " + sortKey(String(x.meta.file || "").split("/").pop()); return q.every(function(w){ return hay.indexOf(w) >= 0; }); }) : list;
   var owner = isOwner();
   $("songlist").innerHTML = shown.map(function(x){
-    var st = owner && x.rec && !x.rec.inArchive ? ["warn", "Not on the site yet"] : owner && x.rec && x.rec.dirty ? ["busy", "Saving"] : null;
+    /* a song added on a device without the key stays on that device: say so, or it looks lost on the other devices */
+    var st = x.rec && !x.rec.inArchive ? (owner ? ["warn", "Not on the site yet"] : ["plain", "Only on this device"]) : owner && x.rec && x.rec.dirty ? ["busy", "Saving"] : null;
     var u = x.meta.units, bits = [];
     var d = fmtDate(x.meta.addedAt); if (d) bits.push("Added " + d);
     if (u && u.count) bits.push(plural(u.count, String(u.unit).toLowerCase()));
@@ -1873,12 +1887,15 @@ function addFiles(list){
   if (!list.length) return Promise.resolve();
   openDrop(false);
   if (list.length === 1) return addFile(list[0]);
-  var failed = [];
+  var failed = [], already = [];
   libMsg("");
-  return list.reduce(function(p, f){ return p.then(function(){ return addFile(f, true).then(function(ok){ if (!ok) failed.push(f.name); }); }); }, Promise.resolve())
+  return list.reduce(function(p, f){ return p.then(function(){ return addFile(f, true).then(function(ok){ if (!ok) failed.push(f.name); else if (typeof ok === "string") already.push(ok.slice(5)); }); }); }, Promise.resolve())
     .then(function(){
       renderLibrary();
-      if (failed.length) libMsg(failed.length === 1 ? "This file couldn't be opened: " + failed[0] + ". Export it again as MusicXML or MIDI." : "These files couldn't be opened: " + failed.join(", ") + ". Export them again as MusicXML or MIDI.");
+      var msg = [];
+      if (failed.length) msg.push(failed.length === 1 ? "This file couldn't be opened: " + failed[0] + ". Export it again as MusicXML or MIDI." : "These files couldn't be opened: " + failed.join(", ") + ". Export them again as MusicXML or MIDI.");
+      if (already.length) msg.push((already.length === 1 ? "Already in your songs: " : "Already in your songs, so not added again: ") + already.join(", ") + ".");
+      libMsg(msg.join(" "));
     });
 }
 function openDrop(open){
@@ -1890,10 +1907,16 @@ function addFile(f, quiet){
   if (!quiet) libMsg("");
   return f.arrayBuffer().then(function(ab){
     var bytes = new Uint8Array(ab);
-    return parseBytes(bytes).then(function(res){
+    return Promise.all([parseBytes(bytes), crypto.subtle.digest("SHA-1", bytes).then(function(h){
+      return Array.prototype.map.call(new Uint8Array(h), function(b){ return ("0" + b.toString(16)).slice(-2); }).join("");
+    }).catch(function(){ return null; })]).then(function(got){
+      var res = got[0], sha = got[1];
+      /* the very same file is already here (on the site or on this device): open that one instead of adding a copy */
+      var same = sha && (archive.filter(function(m){ return m.sha1 === sha; })[0] || Object.keys(cache).map(function(k){ return cache[k]; }).filter(function(r){ return r.sha1 === sha && !r.dupOf; })[0]);
+      if (same){ if (!quiet) location.hash = "song-" + same.id; return "same:" + (same.title || f.name); }
       var now = new Date().toISOString();
       var title = composerFirst(res.score.title || f.name.replace(/\.(musicxml|xml|mxl|midi?|csv|txt)$/i, "").replace(/[_]+/g, " ").trim()) || "Untitled song";
-      var rec = {id: newId(), file: null, title: title, fileName: f.name, kind: res.kind, addedAt: now, updatedAt: now, units: countUnits(res.score), settings: null, notes: null, data: bytesToB64(bytes), inArchive: false, dirty: false};
+      var rec = {id: newId(), file: null, title: title, fileName: f.name, kind: res.kind, addedAt: now, updatedAt: now, units: countUnits(res.score), settings: null, notes: null, data: bytesToB64(bytes), sha1: sha || undefined, inArchive: false, dirty: false};
       cache[rec.id] = rec;
       requestPersist();
       return Store.put(rec).then(function(){
@@ -1904,7 +1927,7 @@ function addFile(f, quiet){
         }
       });
     });
-  }).then(function(){ return true; }).catch(function(err){
+  }).then(function(r){ return typeof r === "string" ? r : true; }).catch(function(err){
     if (!quiet) libMsg(err && err.user ? err.message : "This file couldn't be opened. Export it again as MusicXML or MIDI and try that file.");
     return false;
   });
@@ -1940,6 +1963,7 @@ function showRecord(rec){
     if (rec.inArchive && rec.file && !rec.dirty) fetchSidecar(rec.file).then(function(o){
       if (!o || rec.dirty || !(String(o.updatedAt || "") > String(rec.updatedAt || ""))) return;
       rec.title = o.title || rec.title; rec.era = o.era || rec.era; rec.year = o.year || rec.year; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.timing = o.timing || null; rec.updatedAt = o.updatedAt;
+      rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       Store.put(rec);
       if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); }
     });
@@ -1960,6 +1984,7 @@ function openSong(id){
       var o = got[1] || {};
       var rec = {id: m.id, file: m.file, title: o.title || m.title, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
                  units: null, settings: o.settings || null, notes: o.notes || null, timing: o.timing || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
+      rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       cache[rec.id] = rec;
       songMsg("");
       return Store.put(rec).then(function(){ if (location.hash === "#song-" + id) return showRecord(rec); });
