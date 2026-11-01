@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T06:51:38Z",
+ "generatedAt": "2026-11-01T06:54:13Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -141,7 +141,7 @@
   {
    "id": "beatles-all-you-need-is-love-voice",
    "file": "songs/Beatles All You Need Is Love Voice.mid",
-   "title": "Beatles All You Need Is Love Voice",
+   "title": "All You Need Is Love, The Beatles (voice)",
    "kind": "MIDI",
    "sha1": "e572c50bfa5c917132ad10d34272eeb9a6421345",
    "addedAt": "2026-11-01T06:51:24Z"
@@ -149,7 +149,7 @@
   {
    "id": "beegees-love-so-right-voice",
    "file": "songs/BeeGees Love So Right Voice.mid",
-   "title": "BeeGees Love So Right Voice",
+   "title": "Love So Right, Bee Gees (voice)",
    "kind": "MIDI",
    "sha1": "98fd2b73d7427c64f35777af403338aa15e9c8b3",
    "addedAt": "2026-11-01T06:51:25Z"
@@ -157,7 +157,7 @@
   {
    "id": "carpenters-goodbye-to-love-voice",
    "file": "songs/Carpenters Goodbye To Love Voice.mid",
-   "title": "Carpenters Goodbye To Love Voice",
+   "title": "Goodbye to Love, Carpenters (voice)",
    "kind": "MIDI",
    "sha1": "c9e959668a97d51af4f1894c674b32b7b82bdb6a",
    "addedAt": "2026-11-01T06:51:26Z"
@@ -165,27 +165,25 @@
   {
    "id": "chet-b-almost-blue-intro",
    "file": "songs/Chet B Almost Blue Intro.mid",
-   "title": "Chet B Almost Blue Intro",
+   "title": "Almost Blue, Chet Baker (intro)",
    "kind": "MIDI",
    "sha1": "d7c4b2e3a083cc4392b75ac979b3c2952b3be256",
    "addedAt": "2026-11-01T06:51:28Z"
   },
   {
-   "id": "chet-baker-almost-blue-wind-a-minor-57bpm-441hz",
-   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
-   "title": "Chet Baker, Almost Blue (A minor)",
-   "kind": "MusicXML",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
-   "addedAt": "2026-11-01T06:51:29Z"
-  },
-  {
    "id": "darlene-z-have-your-way-voice",
    "file": "songs/Darlene Z Have Your Way Voice.mid",
-   "title": "Darlene Z Have Your Way Voice",
+   "title": "Have Your Way, Darlene Z (voice)",
    "kind": "MIDI",
    "sha1": "f4bcf98ceb3abd0920532e1c6d7b725c5c0b9a11",
    "addedAt": "2026-11-01T06:51:30Z"
   }
  ],
- "removed": []
+ "removed": [
+  {
+   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "at": "2026-11-01T06:54:13Z"
+  }
+ ]
 }
