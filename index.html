@@ -1698,7 +1698,7 @@ function setSync(kind, msg){
 }
 function titleKey(t){ return String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, ""); }
 /* Titles: composers first ("Bach – Minuet"), so the list reads A to Z by composer, then by song. */
-var COMPOSERS = ["Bach","Handel","Vivaldi","Purcell","Telemann","Albinoni","Pachelbel","Corelli","Scarlatti","Monteverdi","Caccini","Gluck","Haydn","Mozart","Beethoven","Schubert","Schumann","Mendelssohn","Chopin","Liszt","Brahms","Wagner","Verdi","Puccini","Rossini","Bellini","Donizetti","Bizet","Gounod","Massenet","Offenbach","Fauré","Saint-Saëns","Debussy","Ravel","Satie","Grieg","Dvořák","Tchaikovsky","Rachmaninoff","Rimsky-Korsakov","Mussorgsky","Borodin","Glinka","Elgar","Holst","Mahler","Sibelius","Arban","Hummel","Charpentier","Mouret","Paganini","Boccherini","Granados","Albéniz","Gershwin"];
+var COMPOSERS = ["C. P. E. Bach","Bach","Handel","Vivaldi","Purcell","Telemann","Albinoni","Pachelbel","Corelli","Scarlatti","Monteverdi","Caccini","Gluck","Haydn","Mozart","Beethoven","Schubert","Schumann","Mendelssohn","Chopin","Liszt","Brahms","Wagner","Verdi","Puccini","Rossini","Bellini","Donizetti","Bizet","Gounod","Massenet","Offenbach","Fauré","Saint-Saëns","Debussy","Ravel","Satie","Grieg","Dvořák","Tchaikovsky","Rachmaninoff","Rimsky-Korsakov","Mussorgsky","Borodin","Glinka","Elgar","Holst","Mahler","Sibelius","Arban","Hummel","Charpentier","Mouret","Paganini","Boccherini","Granados","Albéniz","Gershwin"];
 function fold(t){ return String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[‘’ʼ]/g, "'").toLowerCase(); }
 function composerOf(t){
   var f = fold(t);

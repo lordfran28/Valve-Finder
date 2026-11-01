@@ -69,7 +69,10 @@ function Get-SiteHashes {
   $h = @{}
   if ($r.Status -eq 200 -and $r.Json.content) {
     $text = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($r.Json.content -replace "\s", "")))
-    foreach ($s in ($text | ConvertFrom-Json).songs) { if ($s.sha1) { $h[[string]$s.sha1] = [string]$s.file } }
+    $list = $text | ConvertFrom-Json
+    foreach ($s in $list.songs) { if ($s.sha1) { $h[[string]$s.sha1] = [string]$s.file } }
+    # songs deleted from the website stay deleted: a copy left in this folder isn't sent again
+    foreach ($x in $list.removed) { if ($x.sha1 -and -not $h.ContainsKey([string]$x.sha1)) { $h[[string]$x.sha1] = "removed:" + [string]$x.file } }
   } elseif ($r.Status -eq 401 -or $r.Status -eq 403) { throw "key:" + $r.Status }
   return $h
 }
@@ -96,6 +99,7 @@ function Invoke-PassLocked {
     if ($null -eq $site) { $site = Get-SiteHashes }
     if ($site.ContainsKey($sha)) {
       $state[$rel] = @{ Size = $f.Length; Ticks = $ticks; Sha = $sha; Remote = $site[$sha] }; $changed = $true
+      if ($site[$sha] -like "removed:*") { Write-Log ("Deleted from the website, so not sent again: " + $f.Name); continue }
       Write-Log ("Already on the website: " + $f.Name); continue
     }
     # Where it goes: the same place as before if this computer added it, otherwise a free name.

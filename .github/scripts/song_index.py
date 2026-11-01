@@ -13,7 +13,7 @@ OUT = os.path.join(ROOT, "index.json")
 
 # Composers go first in a title ("Badinerie, Bach Suite No. 2" -> "Bach – Badinerie, Suite No. 2"),
 # so the list reads A to Z by composer. The site does the same for songs added there.
-COMPOSERS = ["Bach", "Handel", "Vivaldi", "Purcell", "Telemann", "Albinoni", "Pachelbel", "Corelli", "Scarlatti",
+COMPOSERS = ["C. P. E. Bach", "Bach", "Handel", "Vivaldi", "Purcell", "Telemann", "Albinoni", "Pachelbel", "Corelli", "Scarlatti",
              "Monteverdi", "Caccini", "Gluck", "Haydn", "Mozart", "Beethoven", "Schubert", "Schumann", "Mendelssohn",
              "Chopin", "Liszt", "Brahms", "Wagner", "Verdi", "Puccini", "Rossini", "Bellini", "Donizetti", "Bizet",
              "Gounod", "Massenet", "Offenbach", "Fauré", "Saint-Saëns", "Debussy", "Ravel", "Satie", "Grieg", "Dvořák",
