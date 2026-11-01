@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T04:22:02Z",
+ "generatedAt": "2026-11-01T06:49:16Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -75,14 +75,6 @@
    "addedAt": "2026-10-31T06:50:03Z"
   },
   {
-   "id": "almost-blue-chet-baker",
-   "file": "songs/Almost Blue, Chet Baker.musicxml",
-   "title": "Almost Blue, Chet Baker (A minor)",
-   "kind": "MusicXML",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
-   "addedAt": "2026-11-01T04:22:02Z"
-  },
-  {
    "id": "bewitched-bothered-and-bewildered-rod-stewart-and-cher",
    "file": "songs/Bewitched, Bothered and Bewildered, Rod Stewart and Cher.musicxml",
    "title": "Bewitched, Bothered and Bewildered, Rod Stewart and Cher (B♭ major)",
@@ -145,6 +137,13 @@
    "kind": "MusicXML",
    "sha1": "ae0696f97df72dceed51ba0154c5d5c36da98fa2",
    "addedAt": "2026-11-01T04:22:02Z"
+  }
+ ],
+ "removed": [
+  {
+   "file": "songs/Almost Blue, Chet Baker.musicxml",
+   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "at": "2026-11-01T06:49:15Z"
   }
  ]
 }
