@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:46:48Z",
+ "generatedAt": "2026-11-02T00:47:18Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -185,14 +185,6 @@
     "count": 37,
     "unit": "Phrase"
    }
-  },
-  {
-   "id": "beatles-all-you-need-is-love-voice",
-   "file": "songs/Beatles All You Need Is Love Voice.mid",
-   "title": "All You Need Is Love, The Beatles (voice)",
-   "kind": "MIDI",
-   "sha1": "e572c50bfa5c917132ad10d34272eeb9a6421345",
-   "addedAt": "2026-11-01T06:51:24Z"
   },
   {
    "id": "beegees-love-so-right-voice",
@@ -525,6 +517,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-e572c50bfa5c",
+   "file": "songs/Beatles All You Need Is Love Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "e572c50bfa5c917132ad10d34272eeb9a6421345",
+   "addedAt": "2026-11-02T00:46:58Z",
+   "removed": true
+  },
+  {
    "id": "removed-038140b15da7",
    "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
    "title": "",
@@ -571,6 +572,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Beatles All You Need Is Love Voice.mid",
+   "sha1": "e572c50bfa5c917132ad10d34272eeb9a6421345",
+   "at": "2026-11-02T00:46:58Z"
+  },
   {
    "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
    "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
