@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T05:46:09Z",
+ "generatedAt": "2026-11-02T05:47:09Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -529,6 +529,15 @@
    }
   },
   {
+   "id": "removed-f6183bcd3eb5",
+   "file": "songs/Arturo S Aprés Un Reve (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
    "id": "removed-a2b86d9a9361",
    "file": "songs/Arturo S Pavane (D minor).mid",
    "title": "",
@@ -538,11 +547,47 @@
    "removed": true
   },
   {
+   "id": "removed-a3a09bd6f9aa",
+   "file": "songs/Chet B You Don´t Know What Love Is (F minor).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "a3a09bd6f9aa7d7f29d3932c6b13e14cc1699b60",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
    "id": "removed-4c81fb2f978d",
    "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
    "title": "",
    "kind": "MIDI",
    "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
+   "id": "removed-ab4a2104617f",
+   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
+   "id": "removed-94d8fb9ed5c3",
+   "file": "songs/Embraceable You (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "94d8fb9ed5c3030c7e9e0f6234ac8faab5f74cf8",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
+   "id": "removed-a15499e6ca46",
+   "file": "songs/For All We Know (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "a15499e6ca4607fd72b80d683bf1d868cb52ed5d",
    "addedAt": "2026-11-02T05:45:53Z",
    "removed": true
   },
@@ -570,6 +615,15 @@
    "title": "",
    "kind": "MIDI",
    "sha1": "b38e9f4c2d25f207bfd1e0f2f09c9a56f57dbd2d",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
+   "id": "removed-7fcedf0aca9d",
+   "file": "songs/When You Wish Upon a Star (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "7fcedf0aca9d420def0f28c2a5927b3d8ca80d26",
    "addedAt": "2026-11-02T05:45:53Z",
    "removed": true
   },
@@ -954,13 +1008,43 @@
  ],
  "removed": [
   {
+   "file": "songs/Arturo S Aprés Un Reve (E♭ major).mid",
+   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/Arturo S Aprés un Reve Eb major.mid",
+   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
    "file": "songs/Arturo S Pavane (D minor).mid",
    "sha1": "a2b86d9a9361fc82720dc0ab26f49ebc3c18c9a5",
    "at": "2026-11-02T05:45:53Z"
   },
   {
+   "file": "songs/Chet B You Don´t Know What Love Is (F minor).mid",
+   "sha1": "a3a09bd6f9aa7d7f29d3932c6b13e14cc1699b60",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
    "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
    "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
+   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/Embraceable You (E♭ major).mid",
+   "sha1": "94d8fb9ed5c3030c7e9e0f6234ac8faab5f74cf8",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/For All We Know (B♭ major).mid",
+   "sha1": "a15499e6ca4607fd72b80d683bf1d868cb52ed5d",
    "at": "2026-11-02T05:45:53Z"
   },
   {
@@ -976,6 +1060,11 @@
   {
    "file": "songs/Stardust (C major).mid",
    "sha1": "b38e9f4c2d25f207bfd1e0f2f09c9a56f57dbd2d",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/When You Wish Upon a Star (B♭ major).mid",
+   "sha1": "7fcedf0aca9d420def0f28c2a5927b3d8ca80d26",
    "at": "2026-11-02T05:45:53Z"
   },
   {
