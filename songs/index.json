@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:59:16Z",
+ "generatedAt": "2026-11-02T00:59:32Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -353,14 +353,6 @@
    "addedAt": "2026-11-01T07:07:38Z"
   },
   {
-   "id": "rod-s-fly-me-to-the-moon-voicetrumpet",
-   "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
-   "title": "Fly Me to the Moon, Rod Stewart (voice and trumpet)",
-   "kind": "MIDI",
-   "sha1": "af29489870c29bac4bab6decf48dd6e745336519",
-   "addedAt": "2026-11-01T07:07:42Z"
-  },
-  {
    "id": "rod-s-for-all-we-know-voicetrumpet",
    "file": "songs/Rod S For All We Know VoiceTrumpet.mid",
    "title": "For All We Know, Rod Stewart (voice and trumpet)",
@@ -481,6 +473,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-af29489870c2",
+   "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "af29489870c29bac4bab6decf48dd6e745336519",
+   "addedAt": "2026-11-02T00:59:23Z",
+   "removed": true
+  },
+  {
    "id": "removed-663916760526",
    "file": "songs/Kat E Just Like Starting Over Voice.mid",
    "title": "",
@@ -581,6 +582,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
+   "sha1": "af29489870c29bac4bab6decf48dd6e745336519",
+   "at": "2026-11-02T00:59:23Z"
+  },
   {
    "file": "songs/Kat E Just Like Starting Over Voice.mid",
    "sha1": "6639167605262a628469cad057eb740694f7981c",
