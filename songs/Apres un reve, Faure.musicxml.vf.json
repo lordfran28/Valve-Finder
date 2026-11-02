@@ -1,0 +1,24 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "apres-un-reve-faure",
+ "title": "Fauré – Après un rêve",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-02T03:49:14Z",
+ "updatedAt": "2026-11-02T03:49:14Z",
+ "units": {
+  "count": 48,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 54,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}
