@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T01:13:17Z",
+ "generatedAt": "2026-11-02T01:14:12Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -140,7 +140,11 @@
    "title": "The Nearness of You, Frank Sinatra (G major)",
    "kind": "MusicXML",
    "sha1": "6235a4152670b9d914034c8d94caf729989c81d6",
-   "addedAt": "2026-11-01T04:22:02Z"
+   "addedAt": "2026-11-01T04:22:02Z",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
   },
   {
    "id": "you-d-be-so-nice-to-come-home-to-max-perov",
