@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:40:00Z",
+ "generatedAt": "2026-11-02T00:42:51Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -52,7 +52,11 @@
    "title": "Fauré – Pavane",
    "kind": "MIDI",
    "sha1": "306ca4dc3e8732bc40886af94c71ab714a8fb75e",
-   "addedAt": "2026-10-31T06:02:42Z"
+   "addedAt": "2026-10-31T06:02:42Z",
+   "units": {
+    "count": 105,
+    "unit": "Bar"
+   }
   },
   {
    "id": "jackie-g-i-ll-be-seeing-you-db-major",
