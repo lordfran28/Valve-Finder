@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:52:52Z",
+ "generatedAt": "2026-11-02T00:54:58Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -361,14 +361,6 @@
    "addedAt": "2026-11-01T07:07:38Z"
   },
   {
-   "id": "rod-s-but-not-for-me-voicetrumpet",
-   "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
-   "title": "But Not for Me, Rod Stewart (voice and trumpet)",
-   "kind": "MIDI",
-   "sha1": "10c970648b97abf44ddd9fe35e2a30334994114e",
-   "addedAt": "2026-11-01T07:07:39Z"
-  },
-  {
    "id": "rod-s-don-t-get-around-much-anymore-voicetrumpet",
    "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
    "title": "Don’t Get Around Much Anymore, Rod Stewart (voice and trumpet)",
@@ -513,6 +505,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-10c970648b97",
+   "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "10c970648b97abf44ddd9fe35e2a30334994114e",
+   "addedAt": "2026-11-02T00:54:45Z",
+   "removed": true
+  },
+  {
    "id": "removed-1b40abfd9685",
    "file": "songs/Rod S 'Till There Was You Voice.mid",
    "title": "",
@@ -577,6 +578,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
+   "sha1": "10c970648b97abf44ddd9fe35e2a30334994114e",
+   "at": "2026-11-02T00:54:45Z"
+  },
   {
    "file": "songs/Rod S 'Till There Was You Voice.mid",
    "sha1": "1b40abfd96852b4e7755e12cbbaa0b5c2d1059ec",
