@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:43:59Z",
+ "generatedAt": "2026-11-02T00:46:48Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -159,18 +159,6 @@
    "addedAt": "2026-11-01T06:35:45Z",
    "units": {
     "count": 71,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvxghoott13uu",
-   "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
-   "title": "What a Difference a Day Made, Rod Stewart (voice and trumpet)",
-   "kind": "MIDI",
-   "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
-   "addedAt": "2026-11-01T06:35:45Z",
-   "units": {
-    "count": 42,
     "unit": "Phrase"
    }
   },
@@ -537,6 +525,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-038140b15da7",
+   "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
+   "addedAt": "2026-11-02T00:46:35Z",
+   "removed": true
+  },
+  {
    "id": "removed-09b76d355fef",
    "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
    "title": "",
@@ -574,6 +571,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
+   "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
+   "at": "2026-11-02T00:46:35Z"
+  },
   {
    "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
    "sha1": "09b76d355fefa0dc5fbcedfcd7dbbea6f34bf862",
