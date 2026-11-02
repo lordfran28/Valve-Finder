@@ -2,9 +2,10 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "bonapartes-grand-march",
- "title": "Bonaparte’s Grand March",
+ "title": "Traditional – Bonaparte’s Grand March",
+ "category": "classical",
  "kind": "MIDI",
  "addedAt": "2026-11-01T07:03:15Z",
- "updatedAt": "2026-11-01T07:03:15Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "era": "classical"
 }

@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "mvyt981h33ryg",
- "title": "Clifford B Stardust (D♭ major)",
+ "title": "Stardust — Clifford Brown (D♭ major)",
+ "category": "contemporary",
  "kind": "MIDI",
  "addedAt": "2026-11-02T05:20:51.701Z",
- "updatedAt": "2026-11-02T05:20:51.701Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": {
   "count": 41,
   "unit": "Phrase"

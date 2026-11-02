@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "chet-b-almost-blue-intro",
- "title": "Almost Blue, Chet Baker (intro)",
+ "title": "Almost Blue — Chet Baker (intro)",
+ "category": "contemporary",
  "kind": "MIDI",
  "addedAt": "2026-11-01T06:51:28Z",
- "updatedAt": "2026-11-02T00:47:28.487Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": {
   "count": 17,
   "unit": "Phrase"

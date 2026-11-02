@@ -16,6 +16,10 @@ Every song is a file in the [`songs`](songs/) folder of this repository, so the 
 - **From your computer, by hand:** put MIDI, MusicXML or Tony files in `songs/` (subfolders are fine), then commit and push in GitHub Desktop, or upload them at https://github.com/lordfran28/Valve-Finder/upload/main/songs.
 - **From the site:** on a device connected as owner, *Add a song* puts the file in `songs/` for you. Titles, settings and the notes typed under each note are saved beside it in `<file>.vf.json`.
 
+A `.vf.json` can also hold, written by hand:
+- `category`: `classical`, `contemporary` or `anthems`, the groups in the library's side column. A song without one goes under Classical if its title starts with a composer, otherwise Contemporary.
+- `details`: the entry shown at the foot of the song, reached by *Details on the piece* at the top: `title`, `lead`, `facts` (pairs), `sections` (each a `heading` and `paragraphs`) and `sources` (each a `title` and `url`). The national anthems have one.
+
 `.github/workflows/song-index.yml` rewrites `songs/index.json`, the list the site reads, after every change to the folder.
 
 ### Owner devices

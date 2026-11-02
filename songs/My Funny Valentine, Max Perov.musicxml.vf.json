@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "my-funny-valentine-max-perov",
- "title": "My Funny Valentine, Max Perov (E♭ major)",
+ "title": "My Funny Valentine — Max Perov (E♭ major)",
+ "category": "contemporary",
  "kind": "MusicXML",
  "addedAt": "2026-11-01T04:22:02Z",
- "updatedAt": "2026-11-01T07:13:39.627Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": null,
  "settings": {
   "part": 0,

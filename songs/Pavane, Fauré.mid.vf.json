@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "pavane-faure",
- "title": "Fauré – Pavane",
+ "title": "Fauré – Pavane, Op. 50",
+ "category": "classical",
  "kind": "MIDI",
  "addedAt": "2026-10-31T06:02:42Z",
- "updatedAt": "2026-11-02T00:42:25.904Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": {
   "count": 105,
   "unit": "Bar"

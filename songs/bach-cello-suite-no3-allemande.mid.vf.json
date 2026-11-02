@@ -2,8 +2,9 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "bach-cello-suite-no3-allemande",
- "title": "Bach – Allemande (Cello Suite No. 3)",
+ "title": "Bach – Allemande, Cello Suite No. 3, BWV 1009",
+ "category": "classical",
  "kind": "MIDI",
  "addedAt": "2026-11-01T07:03:06Z",
- "updatedAt": "2026-11-01T07:03:06Z"
+ "updatedAt": "2026-11-02T12:00:00Z"
 }

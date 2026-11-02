@@ -1,0 +1,108 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "la-marseillaise",
+ "title": "France – La Marseillaise",
+ "category": "anthems",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-02T12:00:00Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
+ "units": {
+  "count": 29,
+  "unit": "Bar"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "La Marseillaise",
+  "lead": "La Marseillaise is the national anthem of France. Claude-Joseph Rouget de Lisle, a captain of engineers, wrote the words and the tune in Strasbourg on the night of 25 April 1792, a few days after France declared war on Austria.",
+  "facts": [
+   [
+    "Music and words",
+    "Claude-Joseph Rouget de Lisle"
+   ],
+   [
+    "Written",
+    "Strasbourg, April 1792"
+   ],
+   [
+    "Anthem",
+    "1795, and again from 1879"
+   ],
+   [
+    "Key",
+    "E♭ major, as the French Army sings it"
+   ],
+   [
+    "Tempo",
+    "A march, about 120 beats a minute"
+   ],
+   [
+    "This part",
+    "Written in F major, C4 to D5"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "History",
+    "paragraphs": [
+     "He called it Chant de guerre pour l’Armée du Rhin, the war song for the Army of the Rhine. It was printed without his name and dedicated to Marshal Luckner. That summer volunteers from Marseille sang it on their march into Paris, and the city named the song after them.",
+     "It was declared the national song on 14 July 1795. Napoleon and the kings who came after him set it aside, and the Republic took it back in 1879. In 1887 the War Ministry adopted one official version for military band, and a version for choir followed in 1912. The constitutions of 1946 and 1958 name it as the anthem of the Republic."
+    ]
+   },
+   {
+    "heading": "How it is played",
+    "paragraphs": [
+     "At state ceremonies a military band plays it, very often the band of the Garde républicaine. The French Army’s own guide asks people not to sing while a military band is playing it.",
+     "The Army gives the key as E♭ major and the pace as a march, about 120 beats a minute, two beats every second. Of the seven verses the official version keeps the first, the sixth and the seventh, the one written for children, and a ceremony normally uses the first verse and the chorus. Valéry Giscard d’Estaing had it played more slowly while he was president. François Mitterrand brought back the quicker march, and it has stayed that way."
+    ]
+   },
+   {
+    "heading": "On the trumpet",
+    "paragraphs": [
+     "Everything grows out of the figure on the first words, Allons enfants: a short note, a long one, a short one. Keep it crisp, a true dotted eighth and sixteenth, never rounded off into a triplet. The repeated notes want light, even tonguing so they don’t run together.",
+     "The chorus is where the work is. Hold the long notes on Aux armes for their full value, leave the rests in Marchons, marchons silent, then climb to the top of the tune on qu’un sang impur and come down cleanly to the last note. In E♭ the part sits low and comfortable, so the test is rhythm and a steady, full sound, not range. Breathe in the rests: after arrivé, after the first levé, and before Aux armes."
+    ]
+   },
+   {
+    "heading": "The instrument",
+    "paragraphs": [
+     "Rouget de Lisle wrote a song for voice. The trumpets of 1792 had no valves and could play only the notes of their harmonic series, so a tune like this was out of their reach. The valved cornet, made in France in the late 1820s, changed that, and in a band today the cornets and trumpets carry the melody."
+    ]
+   },
+   {
+    "heading": "This part",
+    "paragraphs": [
+     "The melody of the first verse and the chorus, once through, in E♭ as the French Army sings it. For B♭ trumpet it is written in F major, from C4 to D5."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "French Army, La Marseillaise (TTA 107)",
+    "url": "https://www.defense.gouv.fr/sites/default/files/terre/LaMarseillaiseTTA107.pdf"
+   },
+   {
+    "title": "Élysée, La Marseillaise by Rouget de Lisle",
+    "url": "https://www.elysee.fr/en/french-presidency/la-marseillaise-by-rouget-de-lisle"
+   },
+   {
+    "title": "Chemins de mémoire, La Marseillaise past and present",
+    "url": "https://www.cheminsdememoire.gouv.fr/en/revue/la-marseillaise-past-and-present"
+   },
+   {
+    "title": "Mutopia Project, the 1792 edition (Bignon)",
+    "url": "https://github.com/MutopiaProject/MutopiaProject/tree/master/ftp/RougetdeLisleCJ/Marseillaise1792"
+   },
+   {
+    "title": "Melody: voice line of jeandeaual/lilypond-piano-la-marseillaise",
+    "url": "https://github.com/jeandeaual/lilypond-piano-la-marseillaise"
+   },
+   {
+    "title": "Melody checked against the OpenEWLD lead sheet",
+    "url": "https://github.com/00sapo/OpenEWLD"
+   }
+  ]
+ }
+}
