@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T01:04:14Z",
+ "generatedAt": "2026-11-02T01:09:56Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -429,14 +429,6 @@
    "addedAt": "2026-11-01T07:07:54Z"
   },
   {
-   "id": "rod-s-only-have-eyes-for-you",
-   "file": "songs/Rod S Only Have Eyes For You.mid",
-   "title": "I Only Have Eyes for You, Rod Stewart",
-   "kind": "MIDI",
-   "sha1": "df2deb8449dac86970fdda41a7b05a62ae9ecdcf",
-   "addedAt": "2026-11-01T07:07:55Z"
-  },
-  {
    "id": "rod-s-our-love-is-here-to-stay-voicetrumpet",
    "file": "songs/Rod S Our Love Is Here To Stay VoiceTrumpet.mid",
    "title": "Our Love Is Here to Stay, Rod Stewart (voice and trumpet)",
@@ -475,6 +467,15 @@
    "kind": "MIDI",
    "sha1": "504f70685b2e3c032b03e0c9392f3f3d58cf7825",
    "addedAt": "2026-11-01T07:08:01Z"
+  },
+  {
+   "id": "removed-df2deb8449da",
+   "file": "songs/Rod S Only Have Eyes For You.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "df2deb8449dac86970fdda41a7b05a62ae9ecdcf",
+   "addedAt": "2026-11-02T01:09:42Z",
+   "removed": true
   },
   {
    "id": "removed-af29489870c2",
@@ -586,6 +587,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Rod S Only Have Eyes For You.mid",
+   "sha1": "df2deb8449dac86970fdda41a7b05a62ae9ecdcf",
+   "at": "2026-11-02T01:09:42Z"
+  },
   {
    "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
    "sha1": "af29489870c29bac4bab6decf48dd6e745336519",
