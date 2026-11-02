@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T03:45:49Z",
+ "generatedAt": "2026-11-02T03:49:15Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -243,6 +243,30 @@
    "kind": "MIDI",
    "sha1": "ea1d4f8d72a2ffd0b31f506c2d2ec8824fc373f7",
    "addedAt": "2026-11-01T07:07:48Z"
+  },
+  {
+   "id": "apres-un-reve-faure",
+   "file": "songs/Apres un reve, Faure.musicxml",
+   "title": "Fauré – Après un rêve",
+   "kind": "MusicXML",
+   "sha1": "1be0457f06984866523e0bcd6a1f834c70abb6da",
+   "addedAt": "2026-11-02T03:49:14Z",
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "lascia-chio-pianga-handel",
+   "file": "songs/Lascia ch'io pianga, Handel.musicxml",
+   "title": "Handel – Lascia ch’io pianga",
+   "kind": "MusicXML",
+   "sha1": "872efa9f6faf765862229b079a7f10a93d5386a4",
+   "addedAt": "2026-11-02T03:49:14Z",
+   "units": {
+    "count": 42,
+    "unit": "Bar"
+   }
   },
   {
    "id": "removed-6235a4152670",
