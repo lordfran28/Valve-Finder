@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T01:54:58Z",
+ "generatedAt": "2026-11-02T01:55:16Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -257,6 +257,222 @@
    "addedAt": "2026-11-01T07:07:48Z"
   },
   {
+   "id": "removed-98fd2b73d742",
+   "file": "songs/BeeGees Love So Right Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "98fd2b73d7427c64f35777af403338aa15e9c8b3",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-c9e959668a97",
+   "file": "songs/Carpenters Goodbye To Love Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "c9e959668a97d51af4f1894c674b32b7b82bdb6a",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-f4bcf98ceb3a",
+   "file": "songs/Darlene Z Have Your Way Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "f4bcf98ceb3abd0920532e1c6d7b725c5c0b9a11",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-74710939bd9f",
+   "file": "songs/Luis M Contigo Aprendi Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "74710939bd9f10565362172c8839bf28456e213f",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-213ebb73b81b",
+   "file": "songs/Luis M Nos Hizo Falta Tiempo VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "213ebb73b81bbed08a5c76b36cf17da0ff7b184d",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-183a8c327364",
+   "file": "songs/Luis M Somos Novios Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "183a8c327364b1171bd84da5d0edef572cfc88c4",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-024844acde42",
+   "file": "songs/Quiet Nights of Quiet Stars Corcovado voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "024844acde422e6b8a9b9f7a7a7d21a36ca0f3ad",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-d07de4050337",
+   "file": "songs/Rod S A Nightingale Sang in Berkeley Square VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "d07de40503376271931a60559e075431b7f3e4b6",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-2c73e70168c7",
+   "file": "songs/Rod S For All We Know VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "2c73e70168c7b094569e74951cb3dc04802e164f",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-4b67153bc782",
+   "file": "songs/Rod S I Can't Get Started VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "4b67153bc7820fe81efa79adcd48f52d79c1cd75",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-be3243a7cdbc",
+   "file": "songs/Rod S I'll Be Seeing You VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "be3243a7cdbcef732431e2ad7123002f9c1910c5",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-1e17c1dd04ce",
+   "file": "songs/Rod S Isn't It Romantic VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "1e17c1dd04ce860b89dcd973214831295999faff",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-7b570d2864d5",
+   "file": "songs/Rod S It Had To Be You VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "7b570d2864d5596f92159e4b070c2f801d477049",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-90147e00df44",
+   "file": "songs/Rod S Moonglow VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "90147e00df44a190d691364f6c8d5afb2d7c9aca",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-9078f1ff4b26",
+   "file": "songs/Rod S My One and Only Love VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "9078f1ff4b26ae4cb9a9e2470fb51cb853352b17",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-39f2248f0820",
+   "file": "songs/Rod S Night and Day VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "39f2248f0820bd1b6b00af86554fe30a4d9c7bd6",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-4ac422a22fda",
+   "file": "songs/Rod S Our Love Is Here To Stay VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "4ac422a22fda8d6d83726ee79837c43bfbb97111",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-196634b06afb",
+   "file": "songs/Rod S September in the Rain VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "196634b06afb46aeee27b8eaf088d4407cdebd04",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-26330c69d647",
+   "file": "songs/Rod S Stardust VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "26330c69d6475846d48f81fa299f9ceae9794387",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-24666546c7df",
+   "file": "songs/Rod S That's All VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "24666546c7dfceb27bf20bdbcc627aa2626278f1",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-504f70685b2e",
+   "file": "songs/Rod S The Very Thought of You VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "504f70685b2e3c032b03e0c9392f3f3d58cf7825",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-346c9660715d",
+   "file": "songs/Rod S Until The Real Thing Comes Along voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "346c9660715d9638e139283863fa3f3b3acf4b94",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-64e5da6c5861",
+   "file": "songs/They Can't Take That Away from Me VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "64e5da6c58616cc550c94002683e60dc96292c0f",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
+   "id": "removed-7495823725d1",
+   "file": "songs/Xvorostovsky I Loved You Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "7495823725d1cf0daeb28d3606abd46a753285a3",
+   "addedAt": "2026-11-02T01:54:59Z",
+   "removed": true
+  },
+  {
    "id": "removed-0b0cd2f5ba32",
    "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
    "title": "",
@@ -384,6 +600,126 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/BeeGees Love So Right Voice.mid",
+   "sha1": "98fd2b73d7427c64f35777af403338aa15e9c8b3",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Carpenters Goodbye To Love Voice.mid",
+   "sha1": "c9e959668a97d51af4f1894c674b32b7b82bdb6a",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Darlene Z Have Your Way Voice.mid",
+   "sha1": "f4bcf98ceb3abd0920532e1c6d7b725c5c0b9a11",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Luis M Contigo Aprendi Voice.mid",
+   "sha1": "74710939bd9f10565362172c8839bf28456e213f",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Luis M Nos Hizo Falta Tiempo VoiceTrumpet.mid",
+   "sha1": "213ebb73b81bbed08a5c76b36cf17da0ff7b184d",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Luis M Somos Novios Voice.mid",
+   "sha1": "183a8c327364b1171bd84da5d0edef572cfc88c4",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Quiet Nights of Quiet Stars Corcovado voice.mid",
+   "sha1": "024844acde422e6b8a9b9f7a7a7d21a36ca0f3ad",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S A Nightingale Sang in Berkeley Square VoiceTrumpet.mid",
+   "sha1": "d07de40503376271931a60559e075431b7f3e4b6",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S For All We Know VoiceTrumpet.mid",
+   "sha1": "2c73e70168c7b094569e74951cb3dc04802e164f",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S I Can't Get Started VoiceTrumpet.mid",
+   "sha1": "4b67153bc7820fe81efa79adcd48f52d79c1cd75",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S I'll Be Seeing You VoiceTrumpet.mid",
+   "sha1": "be3243a7cdbcef732431e2ad7123002f9c1910c5",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S Isn't It Romantic VoiceTrumpet.mid",
+   "sha1": "1e17c1dd04ce860b89dcd973214831295999faff",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S It Had To Be You VoiceTrumpet.mid",
+   "sha1": "7b570d2864d5596f92159e4b070c2f801d477049",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S Moonglow VoiceTrumpet.mid",
+   "sha1": "90147e00df44a190d691364f6c8d5afb2d7c9aca",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S My One and Only Love VoiceTrumpet.mid",
+   "sha1": "9078f1ff4b26ae4cb9a9e2470fb51cb853352b17",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S Night and Day VoiceTrumpet.mid",
+   "sha1": "39f2248f0820bd1b6b00af86554fe30a4d9c7bd6",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S Our Love Is Here To Stay VoiceTrumpet.mid",
+   "sha1": "4ac422a22fda8d6d83726ee79837c43bfbb97111",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S September in the Rain VoiceTrumpet.mid",
+   "sha1": "196634b06afb46aeee27b8eaf088d4407cdebd04",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S Stardust VoiceTrumpet.mid",
+   "sha1": "26330c69d6475846d48f81fa299f9ceae9794387",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S That's All VoiceTrumpet.mid",
+   "sha1": "24666546c7dfceb27bf20bdbcc627aa2626278f1",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S The Very Thought of You VoiceTrumpet.mid",
+   "sha1": "504f70685b2e3c032b03e0c9392f3f3d58cf7825",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Rod S Until The Real Thing Comes Along voice.mid",
+   "sha1": "346c9660715d9638e139283863fa3f3b3acf4b94",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/They Can't Take That Away from Me VoiceTrumpet.mid",
+   "sha1": "64e5da6c58616cc550c94002683e60dc96292c0f",
+   "at": "2026-11-02T01:54:59Z"
+  },
+  {
+   "file": "songs/Xvorostovsky I Loved You Voice.mid",
+   "sha1": "7495823725d1cf0daeb28d3606abd46a753285a3",
+   "at": "2026-11-02T01:54:59Z"
+  },
   {
    "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
    "sha1": "0b0cd2f5ba32a610f16089c3db9b7054ef3ad35f",
