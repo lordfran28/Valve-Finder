@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:38:23Z",
+ "generatedAt": "2026-11-02T00:40:00Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -32,7 +32,11 @@
    "title": "Bach – Minuet (Orchestral Suite No. 2)",
    "kind": "MIDI",
    "sha1": "7fcbf5cfc612c81d8b3f50dd912edf67f0e239ff",
-   "addedAt": "2026-10-31T06:02:42Z"
+   "addedAt": "2026-10-31T06:02:42Z",
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   }
   },
   {
    "id": "my-one-and-only-love-baritone-coltranehartman",
