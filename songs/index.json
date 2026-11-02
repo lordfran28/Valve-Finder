@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:43:36Z",
+ "generatedAt": "2026-11-02T00:43:59Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -361,18 +361,6 @@
    "addedAt": "2026-11-01T07:07:33Z"
   },
   {
-   "id": "mitch-m-song-for-a-summer-night-trumpet",
-   "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
-   "title": "Song for a Summer Night, Mitch Miller (trumpet)",
-   "kind": "MIDI",
-   "sha1": "09b76d355fefa0dc5fbcedfcd7dbbea6f34bf862",
-   "addedAt": "2026-11-01T07:07:34Z",
-   "units": {
-    "count": 18,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "quiet-nights-of-quiet-stars-corcovado-voice",
    "file": "songs/Quiet Nights of Quiet Stars Corcovado voice.mid",
    "title": "Quiet Nights of Quiet Stars (Corcovado) (voice)",
@@ -549,6 +537,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-09b76d355fef",
+   "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "09b76d355fefa0dc5fbcedfcd7dbbea6f34bf862",
+   "addedAt": "2026-11-02T00:43:46Z",
+   "removed": true
+  },
+  {
    "id": "removed-66608b585108",
    "file": "songs/Miles D Someday My Prince Will Come.mid",
    "title": "",
@@ -577,6 +574,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
+   "sha1": "09b76d355fefa0dc5fbcedfcd7dbbea6f34bf862",
+   "at": "2026-11-02T00:43:46Z"
+  },
   {
    "file": "songs/Miles D Someday My Prince Will Come.mid",
    "sha1": "66608b5851085ddcbc25bdcdd39e9a971977949f",
