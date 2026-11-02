@@ -5,8 +5,20 @@
  "title": "The Nearness of You, Frank Sinatra (G major)",
  "kind": "MusicXML",
  "addedAt": "2026-11-01T04:22:02Z",
- "updatedAt": "2026-11-01T04:22:02Z",
- "units": null,
- "settings": null,
- "notes": null
+ "updatedAt": "2026-11-02T01:13:45.048Z",
+ "units": {
+  "count": 38,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 61,
+  "repeats": true,
+  "join": true,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
 }
