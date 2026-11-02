@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:57:54Z",
+ "generatedAt": "2026-11-02T00:58:46Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -361,14 +361,6 @@
    "addedAt": "2026-11-01T07:07:38Z"
   },
   {
-   "id": "rod-s-don-t-get-around-much-anymore-voicetrumpet",
-   "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
-   "title": "Don’t Get Around Much Anymore, Rod Stewart (voice and trumpet)",
-   "kind": "MIDI",
-   "sha1": "fd975a3922a1a037723d2c1635a4051991c220e4",
-   "addedAt": "2026-11-01T07:07:40Z"
-  },
-  {
    "id": "rod-s-fly-me-to-the-moon-voicetrumpet",
    "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
    "title": "Fly Me to the Moon, Rod Stewart (voice and trumpet)",
@@ -497,6 +489,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-fd975a3922a1",
+   "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "fd975a3922a1a037723d2c1635a4051991c220e4",
+   "addedAt": "2026-11-02T00:58:22Z",
+   "removed": true
+  },
+  {
    "id": "removed-8450df5c740a",
    "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
    "title": "",
@@ -579,6 +580,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
+   "sha1": "fd975a3922a1a037723d2c1635a4051991c220e4",
+   "at": "2026-11-02T00:58:22Z"
+  },
   {
    "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
    "sha1": "8450df5c740a60d149a2cfcf369739b587d12075",
