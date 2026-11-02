@@ -1,0 +1,16 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "mvyt981739v0a",
+ "title": "Chet B Every Time We Say Goodbye (F major)",
+ "kind": "MIDI",
+ "addedAt": "2026-11-02T05:20:51.691Z",
+ "updatedAt": "2026-11-02T05:20:51.691Z",
+ "units": {
+  "count": 36,
+  "unit": "Phrase"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null
+}
