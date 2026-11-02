@@ -1,0 +1,16 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "mvyt980py4uaw",
+ "title": "Nearness of You (E♭ major)",
+ "kind": "MIDI",
+ "addedAt": "2026-11-02T05:20:51.672Z",
+ "updatedAt": "2026-11-02T05:20:51.672Z",
+ "units": {
+  "count": 30,
+  "unit": "Phrase"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null
+}
