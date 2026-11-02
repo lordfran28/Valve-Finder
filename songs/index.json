@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T01:09:56Z",
+ "generatedAt": "2026-11-02T01:13:17Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -309,14 +309,6 @@
    "era": "classical"
   },
   {
-   "id": "jerry-v-pretend-you-don-t-see-her-voice",
-   "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
-   "title": "Pretend You Don’t See Her, Jerry Vale (voice)",
-   "kind": "MIDI",
-   "sha1": "0b0cd2f5ba32a610f16089c3db9b7054ef3ad35f",
-   "addedAt": "2026-11-01T07:07:28Z"
-  },
-  {
    "id": "luis-m-contigo-aprendi-voice",
    "file": "songs/Luis M Contigo Aprendi Voice.mid",
    "title": "Contigo Aprendí, Luis Miguel (voice)",
@@ -469,6 +461,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-0b0cd2f5ba32",
+   "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "0b0cd2f5ba32a610f16089c3db9b7054ef3ad35f",
+   "addedAt": "2026-11-02T01:13:02Z",
+   "removed": true
+  },
+  {
    "id": "removed-df2deb8449da",
    "file": "songs/Rod S Only Have Eyes For You.mid",
    "title": "",
@@ -587,6 +588,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
+   "sha1": "0b0cd2f5ba32a610f16089c3db9b7054ef3ad35f",
+   "at": "2026-11-02T01:13:02Z"
+  },
   {
    "file": "songs/Rod S Only Have Eyes For You.mid",
    "sha1": "df2deb8449dac86970fdda41a7b05a62ae9ecdcf",
