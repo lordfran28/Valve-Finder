@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:47:52Z",
+ "generatedAt": "2026-11-02T00:52:52Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -353,14 +353,6 @@
    "addedAt": "2026-11-01T07:07:35Z"
   },
   {
-   "id": "rod-s-till-there-was-you-voice",
-   "file": "songs/Rod S 'Till There Was You Voice.mid",
-   "title": "Till There Was You, Rod Stewart (voice)",
-   "kind": "MIDI",
-   "sha1": "1b40abfd96852b4e7755e12cbbaa0b5c2d1059ec",
-   "addedAt": "2026-11-01T07:07:36Z"
-  },
-  {
    "id": "rod-s-a-nightingale-sang-in-berkeley-square-voicetrumpet",
    "file": "songs/Rod S A Nightingale Sang in Berkeley Square VoiceTrumpet.mid",
    "title": "A Nightingale Sang in Berkeley Square, Rod Stewart (voice and trumpet)",
@@ -521,6 +513,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-1b40abfd9685",
+   "file": "songs/Rod S 'Till There Was You Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "1b40abfd96852b4e7755e12cbbaa0b5c2d1059ec",
+   "addedAt": "2026-11-02T00:52:38Z",
+   "removed": true
+  },
+  {
    "id": "removed-e572c50bfa5c",
    "file": "songs/Beatles All You Need Is Love Voice.mid",
    "title": "",
@@ -576,6 +577,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Rod S 'Till There Was You Voice.mid",
+   "sha1": "1b40abfd96852b4e7755e12cbbaa0b5c2d1059ec",
+   "at": "2026-11-02T00:52:38Z"
+  },
   {
    "file": "songs/Beatles All You Need Is Love Voice.mid",
    "sha1": "e572c50bfa5c917132ad10d34272eeb9a6421345",
