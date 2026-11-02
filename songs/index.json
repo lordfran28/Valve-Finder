@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:54:58Z",
+ "generatedAt": "2026-11-02T00:57:54Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -369,14 +369,6 @@
    "addedAt": "2026-11-01T07:07:40Z"
   },
   {
-   "id": "rod-s-embraceable-you-voicetrumpet",
-   "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
-   "title": "Embraceable You, Rod Stewart (voice and trumpet)",
-   "kind": "MIDI",
-   "sha1": "8450df5c740a60d149a2cfcf369739b587d12075",
-   "addedAt": "2026-11-01T07:07:41Z"
-  },
-  {
    "id": "rod-s-fly-me-to-the-moon-voicetrumpet",
    "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
    "title": "Fly Me to the Moon, Rod Stewart (voice and trumpet)",
@@ -505,6 +497,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-8450df5c740a",
+   "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "8450df5c740a60d149a2cfcf369739b587d12075",
+   "addedAt": "2026-11-02T00:57:39Z",
+   "removed": true
+  },
+  {
    "id": "removed-10c970648b97",
    "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
    "title": "",
@@ -578,6 +579,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
+   "sha1": "8450df5c740a60d149a2cfcf369739b587d12075",
+   "at": "2026-11-02T00:57:39Z"
+  },
   {
    "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
    "sha1": "10c970648b97abf44ddd9fe35e2a30334994114e",
