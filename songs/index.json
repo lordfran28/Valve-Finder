@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T05:22:33Z",
+ "generatedAt": "2026-11-02T05:25:19Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -521,18 +521,6 @@
    }
   },
   {
-   "id": "mvyt981vrgt7m",
-   "file": "songs/I Cant Get Started (C major).mid",
-   "title": "I Cant Get Started (C major)",
-   "kind": "MIDI",
-   "sha1": "64c90a29b08951a6eb8c2057a3ffb03508119c2f",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 68,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "mvyt981w60ik2",
    "file": "songs/I Fall in Love Too Easily (F major).mid",
    "title": "I Fall in Love Too Easily (F major)",
@@ -691,6 +679,15 @@
    "kind": "MIDI",
    "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
    "addedAt": "2026-11-02T05:21:17Z"
+  },
+  {
+   "id": "removed-64c90a29b089",
+   "file": "songs/I Cant Get Started (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "64c90a29b08951a6eb8c2057a3ffb03508119c2f",
+   "addedAt": "2026-11-02T05:25:01Z",
+   "removed": true
   },
   {
    "id": "removed-bf922f904408",
@@ -1054,6 +1051,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/I Cant Get Started (C major).mid",
+   "sha1": "64c90a29b08951a6eb8c2057a3ffb03508119c2f",
+   "at": "2026-11-02T05:25:01Z"
+  },
   {
    "file": "songs/Chet B What a Difference a Day Makes (D major).mid",
    "sha1": "bf922f904408c1753e099b1cef17a4c265ecd824",
