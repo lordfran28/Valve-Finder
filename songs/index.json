@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:59:32Z",
+ "generatedAt": "2026-11-02T01:04:14Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -200,7 +200,11 @@
    "title": "Goodbye to Love, Carpenters (voice)",
    "kind": "MIDI",
    "sha1": "c9e959668a97d51af4f1894c674b32b7b82bdb6a",
-   "addedAt": "2026-11-01T06:51:26Z"
+   "addedAt": "2026-11-01T06:51:26Z",
+   "units": {
+    "count": 76,
+    "unit": "Phrase"
+   }
   },
   {
    "id": "chet-b-almost-blue-intro",
