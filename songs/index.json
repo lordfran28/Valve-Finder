@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T00:58:46Z",
+ "generatedAt": "2026-11-02T00:59:16Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -313,14 +313,6 @@
    "addedAt": "2026-11-01T07:07:28Z"
   },
   {
-   "id": "kat-e-just-like-starting-over-voice",
-   "file": "songs/Kat E Just Like Starting Over Voice.mid",
-   "title": "Just Like Starting Over, Kat E (voice)",
-   "kind": "MIDI",
-   "sha1": "6639167605262a628469cad057eb740694f7981c",
-   "addedAt": "2026-11-01T07:07:29Z"
-  },
-  {
    "id": "luis-m-contigo-aprendi-voice",
    "file": "songs/Luis M Contigo Aprendi Voice.mid",
    "title": "Contigo Aprendí, Luis Miguel (voice)",
@@ -489,6 +481,15 @@
    "addedAt": "2026-11-01T07:08:01Z"
   },
   {
+   "id": "removed-663916760526",
+   "file": "songs/Kat E Just Like Starting Over Voice.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "6639167605262a628469cad057eb740694f7981c",
+   "addedAt": "2026-11-02T00:59:01Z",
+   "removed": true
+  },
+  {
    "id": "removed-fd975a3922a1",
    "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
    "title": "",
@@ -580,6 +581,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Kat E Just Like Starting Over Voice.mid",
+   "sha1": "6639167605262a628469cad057eb740694f7981c",
+   "at": "2026-11-02T00:59:01Z"
+  },
   {
    "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
    "sha1": "fd975a3922a1a037723d2c1635a4051991c220e4",
