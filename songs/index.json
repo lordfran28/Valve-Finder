@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-01T07:20:33Z",
+ "generatedAt": "2026-11-02T00:37:46Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -124,14 +124,6 @@
    "title": "Quiet Nights of Quiet Stars (Corcovado), Max Perov (C major)",
    "kind": "MusicXML",
    "sha1": "faecea865798cce618257c1fc6e8b7bfb6b262c9",
-   "addedAt": "2026-11-01T04:22:02Z"
-  },
-  {
-   "id": "someday-my-prince-will-come-miles-davis",
-   "file": "songs/Someday My Prince Will Come, Miles Davis.musicxml",
-   "title": "Someday My Prince Will Come, Miles Davis (B♭ major)",
-   "kind": "MusicXML",
-   "sha1": "84000fa058a1f3f84d893099aed6bb52b28c90d1",
    "addedAt": "2026-11-01T04:22:02Z"
   },
   {
@@ -557,6 +549,15 @@
    }
   },
   {
+   "id": "removed-84000fa058a1",
+   "file": "songs/Someday My Prince Will Come, Miles Davis.musicxml",
+   "title": "",
+   "kind": "MusicXML",
+   "sha1": "84000fa058a1f3f84d893099aed6bb52b28c90d1",
+   "addedAt": "2026-11-02T00:37:31Z",
+   "removed": true
+  },
+  {
    "id": "removed-b86f3678c087",
    "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
    "title": "",
@@ -567,6 +568,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Someday My Prince Will Come, Miles Davis.musicxml",
+   "sha1": "84000fa058a1f3f84d893099aed6bb52b28c90d1",
+   "at": "2026-11-02T00:37:31Z"
+  },
   {
    "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
    "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
