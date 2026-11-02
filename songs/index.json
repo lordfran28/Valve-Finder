@@ -1,38 +1,42 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T05:47:09Z",
+ "generatedAt": "2026-11-02T09:35:06Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
    "file": "songs/Badinerie, Bach Orchestral Suite No. 2.mid",
-   "title": "Bach – Badinerie (Orchestral Suite No. 2)",
+   "title": "Bach – Badinerie, Orchestral Suite No. 2, BWV 1067",
    "kind": "MIDI",
    "sha1": "246022df0d869976db2b73b39213244266aeb0e4",
-   "addedAt": "2026-10-31T06:02:42Z"
+   "addedAt": "2026-10-31T06:02:42Z",
+   "category": "classical"
   },
   {
    "id": "can-t-get-started-back-up-trumpet-rod-s",
    "file": "songs/Can't Get Started, Back Up Trumpet Rod S.mid",
-   "title": "I Can’t Get Started, Rod Stewart (backup trumpet)",
+   "title": "I Can’t Get Started — Rod Stewart (backup trumpet)",
    "kind": "MIDI",
    "sha1": "fcdc0bd880dc3404f5c6a576365ff49db8fe1f17",
-   "addedAt": "2026-10-31T06:02:42Z"
+   "addedAt": "2026-10-31T06:02:42Z",
+   "category": "contemporary"
   },
   {
    "id": "eine-kleine-nachtmusik-allegro-mozart",
    "file": "songs/Eine kleine Nachtmusik, Allegro, Mozart.mid",
-   "title": "Mozart – Eine kleine Nachtmusik, Allegro",
+   "title": "Mozart – Eine kleine Nachtmusik, Allegro, K. 525",
    "kind": "MIDI",
    "sha1": "fd27b146a2586176e4e61f966b587f27b6c0d776",
-   "addedAt": "2026-10-31T06:02:42Z"
+   "addedAt": "2026-10-31T06:02:42Z",
+   "category": "classical"
   },
   {
    "id": "minuet-bach-orchestral-suite-no-2",
    "file": "songs/Minuet, Bach Orchestral Suite No. 2.mid",
-   "title": "Bach – Minuet (Orchestral Suite No. 2)",
+   "title": "Bach – Minuet, Orchestral Suite No. 2, BWV 1067",
    "kind": "MIDI",
    "sha1": "7fcbf5cfc612c81d8b3f50dd912edf67f0e239ff",
    "addedAt": "2026-10-31T06:02:42Z",
+   "category": "classical",
    "units": {
     "count": 48,
     "unit": "Bar"
@@ -41,10 +45,11 @@
   {
    "id": "pavane-faure",
    "file": "songs/Pavane, Fauré.mid",
-   "title": "Fauré – Pavane",
+   "title": "Fauré – Pavane, Op. 50",
    "kind": "MIDI",
    "sha1": "306ca4dc3e8732bc40886af94c71ab714a8fb75e",
    "addedAt": "2026-10-31T06:02:42Z",
+   "category": "classical",
    "units": {
     "count": 105,
     "unit": "Bar"
@@ -56,23 +61,26 @@
    "title": "I’m in the Mood for Love (F major)",
    "kind": "MIDI",
    "sha1": "6b52009c75a3afb2ddc73faba4988194e2881f48",
-   "addedAt": "2026-10-31T06:50:02Z"
+   "addedAt": "2026-10-31T06:50:02Z",
+   "category": "contemporary"
   },
   {
    "id": "what-a-difference-a-day-makes-maria-grever-stanley-adams-rod-stewart-bb-major",
    "file": "songs/What A Difference A Day Makes ( Maria Grever, Stanley Adams) Rod Stewart-Bb major-.mid",
-   "title": "What a Difference a Day Makes, Rod Stewart (B♭ major)",
+   "title": "What a Difference a Day Makes — Rod Stewart (B♭ major)",
    "kind": "MIDI",
    "sha1": "9870b226af246a00f697cde325945a067633f640",
-   "addedAt": "2026-10-31T06:50:03Z"
+   "addedAt": "2026-10-31T06:50:03Z",
+   "category": "contemporary"
   },
   {
    "id": "mvxaukcq5yws4",
    "file": "songs/tchaikovsky-the-nutcracker-russian-dance-trepak.mid",
-   "title": "Tchaikovsky – Russian Dance, Trepak (The Nutcracker)",
+   "title": "Tchaikovsky – Russian Dance (Trepak), The Nutcracker, Op. 71",
    "kind": "MIDI",
    "sha1": "5321d808e1d44bf8841c6605bb5ae70ca673a7a7",
    "addedAt": "2026-11-01T03:57:48Z",
+   "category": "classical",
    "units": {
     "count": 76,
     "unit": "Bar"
@@ -81,58 +89,65 @@
   {
    "id": "bewitched-bothered-and-bewildered-rod-stewart-and-cher",
    "file": "songs/Bewitched, Bothered and Bewildered, Rod Stewart and Cher.musicxml",
-   "title": "Bewitched, Bothered and Bewildered, Rod Stewart and Cher (B♭ major)",
+   "title": "Bewitched, Bothered and Bewildered — Rod Stewart and Cher (B♭ major)",
    "kind": "MusicXML",
    "sha1": "c7ba1dcd681ce2d42d8726bf019cce78fe5e3bbd",
-   "addedAt": "2026-11-01T04:22:02Z"
+   "addedAt": "2026-11-01T04:22:02Z",
+   "category": "contemporary"
   },
   {
    "id": "feels-so-good-chuck-mangione",
    "file": "songs/Feels So Good, Chuck Mangione.musicxml",
-   "title": "Feels So Good, Chuck Mangione (F major)",
+   "title": "Feels So Good — Chuck Mangione (F major)",
    "kind": "MusicXML",
    "sha1": "e8eb103b6cb99688d07c32ac9b3d56810043068a",
-   "addedAt": "2026-11-01T04:22:02Z"
+   "addedAt": "2026-11-01T04:22:02Z",
+   "category": "contemporary"
   },
   {
    "id": "fly-me-to-the-moon-max-perov",
    "file": "songs/Fly Me to the Moon, Max Perov.musicxml",
-   "title": "Fly Me to the Moon, Max Perov (C major)",
+   "title": "Fly Me to the Moon — Max Perov (C major)",
    "kind": "MusicXML",
    "sha1": "840c1c4e620a63fd46d6270212eed3a72f71a05a",
-   "addedAt": "2026-11-01T04:22:02Z"
+   "addedAt": "2026-11-01T04:22:02Z",
+   "category": "contemporary"
   },
   {
    "id": "my-funny-valentine-max-perov",
    "file": "songs/My Funny Valentine, Max Perov.musicxml",
-   "title": "My Funny Valentine, Max Perov (E♭ major)",
+   "title": "My Funny Valentine — Max Perov (E♭ major)",
    "kind": "MusicXML",
    "sha1": "16077d9b5479f15f0b55730fdb500a8d254c1dda",
-   "addedAt": "2026-11-01T04:22:02Z"
+   "addedAt": "2026-11-01T04:22:02Z",
+   "category": "contemporary"
   },
   {
    "id": "quiet-nights-of-quiet-stars-max-perov",
    "file": "songs/Quiet Nights of Quiet Stars, Max Perov.musicxml",
-   "title": "Quiet Nights of Quiet Stars (Corcovado), Max Perov (C major)",
+   "title": "Quiet Nights of Quiet Stars (Corcovado) — Max Perov (C major)",
    "kind": "MusicXML",
    "sha1": "faecea865798cce618257c1fc6e8b7bfb6b262c9",
-   "addedAt": "2026-11-01T04:22:02Z"
+   "addedAt": "2026-11-01T04:22:02Z",
+   "category": "contemporary"
   },
   {
    "id": "you-d-be-so-nice-to-come-home-to-max-perov",
    "file": "songs/You'd Be So Nice to Come Home To, Max Perov.musicxml",
-   "title": "You’d Be So Nice to Come Home To, Max Perov (A minor)",
+   "title": "You’d Be So Nice to Come Home To — Max Perov (A minor)",
    "kind": "MusicXML",
    "sha1": "ae0696f97df72dceed51ba0154c5d5c36da98fa2",
-   "addedAt": "2026-11-01T04:22:02Z"
+   "addedAt": "2026-11-01T04:22:02Z",
+   "category": "contemporary"
   },
   {
    "id": "chet-b-almost-blue-intro",
    "file": "songs/Chet B Almost Blue Intro.mid",
-   "title": "Almost Blue, Chet Baker (intro)",
+   "title": "Almost Blue — Chet Baker (intro)",
    "kind": "MIDI",
    "sha1": "d7c4b2e3a083cc4392b75ac979b3c2952b3be256",
    "addedAt": "2026-11-01T06:51:28Z",
+   "category": "contemporary",
    "units": {
     "count": 17,
     "unit": "Phrase"
@@ -141,100 +156,112 @@
   {
    "id": "bach-cello-suite-no2-allemande",
    "file": "songs/bach-cello-suite-no2-allemande.mid",
-   "title": "Bach – Allemande (Cello Suite No. 2)",
+   "title": "Bach – Allemande, Cello Suite No. 2, BWV 1008",
    "kind": "MIDI",
    "sha1": "865ef66b5069ca41e6a0d4d3a4fbfbc4f1aa1b09",
-   "addedAt": "2026-11-01T07:03:05Z"
+   "addedAt": "2026-11-01T07:03:05Z",
+   "category": "classical"
   },
   {
    "id": "bach-cello-suite-no3-allemande",
    "file": "songs/bach-cello-suite-no3-allemande.mid",
-   "title": "Bach – Allemande (Cello Suite No. 3)",
+   "title": "Bach – Allemande, Cello Suite No. 3, BWV 1009",
    "kind": "MIDI",
    "sha1": "61455fb8123ad5c050338958360c0c312d3f6fc8",
-   "addedAt": "2026-11-01T07:03:06Z"
+   "addedAt": "2026-11-01T07:03:06Z",
+   "category": "classical"
   },
   {
    "id": "bach-cello-suite-no3-sarabande",
    "file": "songs/bach-cello-suite-no3-sarabande.mid",
-   "title": "Bach – Sarabande (Cello Suite No. 3)",
+   "title": "Bach – Sarabande, Cello Suite No. 3, BWV 1009",
    "kind": "MIDI",
    "sha1": "20e20020690962baa45284432d2b481ef2a981b7",
-   "addedAt": "2026-11-01T07:03:07Z"
+   "addedAt": "2026-11-01T07:03:07Z",
+   "category": "classical"
   },
   {
    "id": "bach-cello-suite-no5-allemande",
    "file": "songs/bach-cello-suite-no5-allemande.mid",
-   "title": "Bach – Allemande (Cello Suite No. 5)",
+   "title": "Bach – Allemande, Cello Suite No. 5, BWV 1011",
    "kind": "MIDI",
    "sha1": "2deb6de4341d1b7a25086d12ab50b63987d3b7cb",
-   "addedAt": "2026-11-01T07:03:09Z"
+   "addedAt": "2026-11-01T07:03:09Z",
+   "category": "classical"
   },
   {
    "id": "bach-cpe-flute-sonata-in-a-minor-wq132-ii-allegro",
    "file": "songs/bach-cpe-flute-sonata-in-a-minor-wq132-ii-allegro.mid",
-   "title": "C. P. E. Bach – Allegro (Flute Sonata in A minor, Wq. 132)",
+   "title": "C. P. E. Bach – Allegro, Flute Sonata in A minor, Wq. 132",
    "kind": "MIDI",
    "sha1": "371e48dfbf2a14b418d77f9c35f83b34bb977fdf",
-   "addedAt": "2026-11-01T07:03:10Z"
+   "addedAt": "2026-11-01T07:03:10Z",
+   "category": "classical"
   },
   {
    "id": "bach-partita-in-d-minor-for-solo-violin-allemande",
    "file": "songs/bach-partita-in-d-minor-for-solo-violin-allemande.mid",
-   "title": "Bach – Allemande (Violin Partita No. 2 in D minor)",
+   "title": "Bach – Allemande, Violin Partita No. 2, BWV 1004",
    "kind": "MIDI",
    "sha1": "fd8290b6d4c1863ed1e19bc70e832bdfe6a77276",
-   "addedAt": "2026-11-01T07:03:12Z"
+   "addedAt": "2026-11-01T07:03:12Z",
+   "category": "classical"
   },
   {
    "id": "bach-sonata-no1-for-solo-violin-adagio",
    "file": "songs/bach-sonata-no1-for-solo-violin-adagio.mid",
-   "title": "Bach – Adagio (Violin Sonata No. 1)",
+   "title": "Bach – Adagio, Violin Sonata No. 1, BWV 1001",
    "kind": "MIDI",
    "sha1": "50c2e04c509c28ec9b0b71912292e2cd7398ecc1",
-   "addedAt": "2026-11-01T07:03:13Z"
+   "addedAt": "2026-11-01T07:03:13Z",
+   "category": "classical"
   },
   {
    "id": "bach-sonata-no1-for-solo-violin-siciliano",
    "file": "songs/bach-sonata-no1-for-solo-violin-siciliano.mid",
-   "title": "Bach – Siciliano (Violin Sonata No. 1)",
+   "title": "Bach – Siciliana, Violin Sonata No. 1, BWV 1001",
    "kind": "MIDI",
    "sha1": "2131ee783c800e2fc3c0df201c1c4a6433ad34e3",
-   "addedAt": "2026-11-01T07:03:14Z"
+   "addedAt": "2026-11-01T07:03:14Z",
+   "category": "classical"
   },
   {
    "id": "bonapartes-grand-march",
    "file": "songs/bonapartes-grand-march.mid",
-   "title": "Bonaparte’s Grand March",
+   "title": "Traditional – Bonaparte’s Grand March",
    "kind": "MIDI",
    "sha1": "7279e7bded726152ea49d224a68536dd27785fc0",
    "addedAt": "2026-11-01T07:03:15Z",
+   "category": "classical",
    "era": "classical"
   },
   {
    "id": "for-hes-a-jolly-good-fellow",
    "file": "songs/for-hes-a-jolly-good-fellow.mid",
-   "title": "For He’s a Jolly Good Fellow",
+   "title": "Traditional – For He’s a Jolly Good Fellow",
    "kind": "MIDI",
    "sha1": "a2d502a42334d61679e74f46d0003407cc8e691d",
    "addedAt": "2026-11-01T07:07:27Z",
+   "category": "classical",
    "era": "classical"
   },
   {
    "id": "rod-s-i-m-in-the-mood-for-love",
    "file": "songs/Rod S I'm In The Mood for Love.mid",
-   "title": "I’m in the Mood for Love, Rod Stewart",
+   "title": "I’m in the Mood for Love — Rod Stewart",
    "kind": "MIDI",
    "sha1": "ea1d4f8d72a2ffd0b31f506c2d2ec8824fc373f7",
-   "addedAt": "2026-11-01T07:07:48Z"
+   "addedAt": "2026-11-01T07:07:48Z",
+   "category": "contemporary"
   },
   {
    "id": "apres-un-reve-faure",
    "file": "songs/Apres un reve, Faure.musicxml",
-   "title": "Fauré – Après un rêve",
+   "title": "Fauré – Après un rêve, Op. 7 No. 1",
    "kind": "MusicXML",
    "sha1": "1be0457f06984866523e0bcd6a1f834c70abb6da",
    "addedAt": "2026-11-02T03:49:14Z",
+   "category": "classical",
    "units": {
     "count": 48,
     "unit": "Bar"
@@ -243,10 +270,11 @@
   {
    "id": "lascia-chio-pianga-handel",
    "file": "songs/Lascia ch'io pianga, Handel.musicxml",
-   "title": "Handel – Lascia ch’io pianga",
+   "title": "Handel – Lascia ch’io pianga, Rinaldo, HWV 7",
    "kind": "MusicXML",
    "sha1": "872efa9f6faf765862229b079a7f10a93d5386a4",
    "addedAt": "2026-11-02T03:49:14Z",
+   "category": "classical",
    "units": {
     "count": 42,
     "unit": "Bar"
@@ -255,10 +283,11 @@
   {
    "id": "mvyt9814nir81",
    "file": "songs/Arturo S Autumn Leaves (G minor).mid",
-   "title": "Arturo S Autumn Leaves (G minor)",
+   "title": "Autumn Leaves — Arturo Sandoval (G minor)",
    "kind": "MIDI",
    "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 35,
     "unit": "Phrase"
@@ -267,10 +296,11 @@
   {
    "id": "mvyt981739v0a",
    "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
-   "title": "Chet B Every Time We Say Goodbye (F major)",
+   "title": "Every Time We Say Goodbye — Chet Baker (F major)",
    "kind": "MIDI",
    "sha1": "6099dc07d387f98179e564b8b754448f37d8c0bf",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 36,
     "unit": "Phrase"
@@ -279,10 +309,11 @@
   {
    "id": "mvyt98188tt6i",
    "file": "songs/Chet B It Never Entered My Mind (F major).mid",
-   "title": "Chet B It Never Entered My Mind (F major)",
+   "title": "It Never Entered My Mind — Chet Baker (F major)",
    "kind": "MIDI",
    "sha1": "0554d6b18d0a265e96601d263dc0e6f24754689a",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 51,
     "unit": "Phrase"
@@ -291,10 +322,11 @@
   {
    "id": "mvyt981eclcw2",
    "file": "songs/Chris B Ave Maria (B♭ major).mid",
-   "title": "Chris B Ave Maria (B♭ major)",
+   "title": "Ave Maria — Chris Botti (B♭ major)",
    "kind": "MIDI",
    "sha1": "41d3caa939477b3c9910cad6f0358b6252222f0d",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 16,
     "unit": "Phrase"
@@ -303,10 +335,11 @@
   {
    "id": "mvyt981fkfbsf",
    "file": "songs/Clifford B Embraceable You (E♭ major).mid",
-   "title": "Clifford B Embraceable You (E♭ major)",
+   "title": "Embraceable You — Clifford Brown (E♭ major)",
    "kind": "MIDI",
    "sha1": "81c7845c26723ddf6c850c927fdd6a40b0a66fbd",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 28,
     "unit": "Phrase"
@@ -315,10 +348,11 @@
   {
    "id": "mvyt981h33ryg",
    "file": "songs/Clifford B Stardust (D♭ major).mid",
-   "title": "Clifford B Stardust (D♭ major)",
+   "title": "Stardust — Clifford Brown (D♭ major)",
    "kind": "MIDI",
    "sha1": "1a7c2b50fd3a6e1a72bcb8a68d9cfeb226434361",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 41,
     "unit": "Phrase"
@@ -327,10 +361,11 @@
   {
    "id": "mvyt981iqhise",
    "file": "songs/Clifford B Where or When (G major).mid",
-   "title": "Clifford B Where or When (G major)",
+   "title": "Where or When — Clifford Brown (G major)",
    "kind": "MIDI",
    "sha1": "e4ba701d6b05ba8941ad957a18a2ada12b0810d3",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 32,
     "unit": "Phrase"
@@ -343,6 +378,7 @@
    "kind": "MIDI",
    "sha1": "c1c9a90ba42afc3144609d1782cd692fffb0faaa",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 14,
     "unit": "Phrase"
@@ -351,10 +387,11 @@
   {
    "id": "mvyt981k3t80s",
    "file": "songs/Duke E Don't Get Around Much Anymore (C major).mid",
-   "title": "Duke E Don't Get Around Much Anymore (C major)",
+   "title": "Don’t Get Around Much Anymore — Duke Ellington (C major)",
    "kind": "MIDI",
    "sha1": "cb2e4c55a25c17ba6b037ddeb927ac35143a9e58",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 15,
     "unit": "Phrase"
@@ -363,10 +400,11 @@
   {
    "id": "mvyt981me2850",
    "file": "songs/Everytime We Say Goodbye (F major).mid",
-   "title": "Everytime We Say Goodbye (F major)",
+   "title": "Every Time We Say Goodbye (F major)",
    "kind": "MIDI",
    "sha1": "25fbdfbab6b8fc959392620c84f7c045b39d620a",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 44,
     "unit": "Phrase"
@@ -379,6 +417,7 @@
    "kind": "MIDI",
    "sha1": "9841c2c8e8b1c8906c3837160fee1cbe52edac48",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 70,
     "unit": "Phrase"
@@ -387,10 +426,11 @@
   {
    "id": "mvyt981rucowj",
    "file": "songs/Herb a Someone to Watch Over Me (E♭ major).mid",
-   "title": "Herb a Someone to Watch Over Me (E♭ major)",
+   "title": "Someone to Watch Over Me — Herb Alpert (E♭ major)",
    "kind": "MIDI",
    "sha1": "03370c73c0fcfa157651daba0401be0cac20731b",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 28,
     "unit": "Phrase"
@@ -399,10 +439,11 @@
   {
    "id": "mvyt981uu6xl1",
    "file": "songs/I Can`t Get Started (C major).mid",
-   "title": "I Can`t Get Started (C major)",
+   "title": "I Can’t Get Started (C major)",
    "kind": "MIDI",
    "sha1": "c8ecabf68616b5b8e484b5bf07bb32f0227c5b15",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 58,
     "unit": "Phrase"
@@ -415,6 +456,7 @@
    "kind": "MIDI",
    "sha1": "7ea57b900cfbb07b3b2e8f6d2cf51e30b1785436",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 41,
     "unit": "Phrase"
@@ -423,10 +465,11 @@
   {
    "id": "mvyt981x35xgv",
    "file": "songs/In the Wee Small Hours (E♭ major).mid",
-   "title": "In the Wee Small Hours (E♭ major)",
+   "title": "In the Wee Small Hours of the Morning (E♭ major)",
    "kind": "MIDI",
    "sha1": "86fdfca0adc18d91cce9da3ef88b699e85a003c3",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 61,
     "unit": "Phrase"
@@ -439,6 +482,7 @@
    "kind": "MIDI",
    "sha1": "8198bc37d2864740b8bbe6b19397628a642698d3",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 45,
     "unit": "Phrase"
@@ -447,10 +491,11 @@
   {
    "id": "mvyt980magxh3",
    "file": "songs/Miles D My Funny Valentine (E♭ major).mid",
-   "title": "Miles D My Funny Valentine (E♭ major)",
+   "title": "My Funny Valentine — Miles Davis (E♭ major)",
    "kind": "MIDI",
    "sha1": "cb88195b5ee0aebf2891d85d69c721485adf5c53",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 43,
     "unit": "Phrase"
@@ -459,10 +504,11 @@
   {
    "id": "mvyt980py4uaw",
    "file": "songs/Nearness of You (E♭ major).mid",
-   "title": "Nearness of You (E♭ major)",
+   "title": "The Nearness of You (E♭ major)",
    "kind": "MIDI",
    "sha1": "382d6ca7d4e62c2e69c0d4261574f1c0d86d4c6c",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 30,
     "unit": "Phrase"
@@ -475,6 +521,7 @@
    "kind": "MIDI",
    "sha1": "0dd5cc2e05a41797b9db07d34f71cee4593ef527",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 21,
     "unit": "Phrase"
@@ -483,10 +530,11 @@
   {
    "id": "mvyt980ukbr4w",
    "file": "songs/Rudy V Alone Together (F minor).mid",
-   "title": "Rudy V Alone Together (F minor)",
+   "title": "Alone Together — Rudy V (F minor)",
    "kind": "MIDI",
    "sha1": "eaf078a14035682b6bca1c22f93235a494416bcd",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 18,
     "unit": "Phrase"
@@ -499,6 +547,7 @@
    "kind": "MIDI",
    "sha1": "8e5b939fec68d7a9289dcd21043026efc864da4f",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 30,
     "unit": "Phrase"
@@ -511,6 +560,7 @@
    "kind": "MIDI",
    "sha1": "00b245446c0b927a9c9599b538e1b4477e9d3dc0",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 52,
     "unit": "Phrase"
@@ -523,9 +573,323 @@
    "kind": "MIDI",
    "sha1": "1370ddd069794dc5b7ae5a010f40e364f62d2392",
    "addedAt": "2026-11-02T05:20:51Z",
+   "category": "contemporary",
    "units": {
     "count": 32,
     "unit": "Phrase"
+   }
+  },
+  {
+   "id": "la-marseillaise",
+   "file": "songs/La Marseillaise, French national anthem.musicxml",
+   "title": "France – La Marseillaise",
+   "kind": "MusicXML",
+   "sha1": "033fd9d4810b3396ab1737e9f9d9af766235392d",
+   "addedAt": "2026-11-02T12:00:00Z",
+   "category": "anthems",
+   "units": {
+    "count": 29,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "La Marseillaise",
+    "lead": "La Marseillaise is the national anthem of France. Claude-Joseph Rouget de Lisle, a captain of engineers, wrote the words and the tune in Strasbourg on the night of 25 April 1792, a few days after France declared war on Austria.",
+    "facts": [
+     [
+      "Music and words",
+      "Claude-Joseph Rouget de Lisle"
+     ],
+     [
+      "Written",
+      "Strasbourg, April 1792"
+     ],
+     [
+      "Anthem",
+      "1795, and again from 1879"
+     ],
+     [
+      "Key",
+      "E♭ major, as the French Army sings it"
+     ],
+     [
+      "Tempo",
+      "A march, about 120 beats a minute"
+     ],
+     [
+      "This part",
+      "Written in F major, C4 to D5"
+     ]
+    ],
+    "sections": [
+     {
+      "heading": "History",
+      "paragraphs": [
+       "He called it Chant de guerre pour l’Armée du Rhin, the war song for the Army of the Rhine. It was printed without his name and dedicated to Marshal Luckner. That summer volunteers from Marseille sang it on their march into Paris, and the city named the song after them.",
+       "It was declared the national song on 14 July 1795. Napoleon and the kings who came after him set it aside, and the Republic took it back in 1879. In 1887 the War Ministry adopted one official version for military band, and a version for choir followed in 1912. The constitutions of 1946 and 1958 name it as the anthem of the Republic."
+      ]
+     },
+     {
+      "heading": "How it is played",
+      "paragraphs": [
+       "At state ceremonies a military band plays it, very often the band of the Garde républicaine. The French Army’s own guide asks people not to sing while a military band is playing it.",
+       "The Army gives the key as E♭ major and the pace as a march, about 120 beats a minute, two beats every second. Of the seven verses the official version keeps the first, the sixth and the seventh, the one written for children, and a ceremony normally uses the first verse and the chorus. Valéry Giscard d’Estaing had it played more slowly while he was president. François Mitterrand brought back the quicker march, and it has stayed that way."
+      ]
+     },
+     {
+      "heading": "On the trumpet",
+      "paragraphs": [
+       "Everything grows out of the figure on the first words, Allons enfants: a short note, a long one, a short one. Keep it crisp, a true dotted eighth and sixteenth, never rounded off into a triplet. The repeated notes want light, even tonguing so they don’t run together.",
+       "The chorus is where the work is. Hold the long notes on Aux armes for their full value, leave the rests in Marchons, marchons silent, then climb to the top of the tune on qu’un sang impur and come down cleanly to the last note. In E♭ the part sits low and comfortable, so the test is rhythm and a steady, full sound, not range. Breathe in the rests: after arrivé, after the first levé, and before Aux armes."
+      ]
+     },
+     {
+      "heading": "The instrument",
+      "paragraphs": [
+       "Rouget de Lisle wrote a song for voice. The trumpets of 1792 had no valves and could play only the notes of their harmonic series, so a tune like this was out of their reach. The valved cornet, made in France in the late 1820s, changed that, and in a band today the cornets and trumpets carry the melody."
+      ]
+     },
+     {
+      "heading": "This part",
+      "paragraphs": [
+       "The melody of the first verse and the chorus, once through, in E♭ as the French Army sings it. For B♭ trumpet it is written in F major, from C4 to D5."
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "title": "French Army, La Marseillaise (TTA 107)",
+      "url": "https://www.defense.gouv.fr/sites/default/files/terre/LaMarseillaiseTTA107.pdf"
+     },
+     {
+      "title": "Élysée, La Marseillaise by Rouget de Lisle",
+      "url": "https://www.elysee.fr/en/french-presidency/la-marseillaise-by-rouget-de-lisle"
+     },
+     {
+      "title": "Chemins de mémoire, La Marseillaise past and present",
+      "url": "https://www.cheminsdememoire.gouv.fr/en/revue/la-marseillaise-past-and-present"
+     },
+     {
+      "title": "Mutopia Project, the 1792 edition (Bignon)",
+      "url": "https://github.com/MutopiaProject/MutopiaProject/tree/master/ftp/RougetdeLisleCJ/Marseillaise1792"
+     },
+     {
+      "title": "Melody: voice line of jeandeaual/lilypond-piano-la-marseillaise",
+      "url": "https://github.com/jeandeaual/lilypond-piano-la-marseillaise"
+     },
+     {
+      "title": "Melody checked against the OpenEWLD lead sheet",
+      "url": "https://github.com/00sapo/OpenEWLD"
+     }
+    ]
+   }
+  },
+  {
+   "id": "russian-state-anthem",
+   "file": "songs/Russian national anthem, Alexandrov.musicxml",
+   "title": "Russia – State Anthem of the Russian Federation",
+   "kind": "MusicXML",
+   "sha1": "562af87048d60c00b7ea18f221eb59850c423fa2",
+   "addedAt": "2026-11-02T12:00:00Z",
+   "category": "anthems",
+   "units": {
+    "count": 22,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "State Anthem of the Russian Federation",
+    "lead": "Russia’s anthem is sung to music by Alexander Alexandrov. The tune was first heard in 1939 as the Hymn of the Bolshevik Party and was the anthem of the Soviet Union from 1944.",
+    "facts": [
+     [
+      "Music",
+      "Alexander Alexandrov (1883–1946)"
+     ],
+     [
+      "Words",
+      "Sergey Mikhalkov, 2000"
+     ],
+     [
+      "Soviet anthem",
+      "1944 to 1991"
+     ],
+     [
+      "Russian anthem",
+      "Since December 2000"
+     ],
+     [
+      "Key and tempo",
+      "C major, 76 beats a minute"
+     ],
+     [
+      "This part",
+      "Written in D major, D4 to G5"
+     ]
+    ],
+    "sections": [
+     {
+      "heading": "History",
+      "paragraphs": [
+       "Alexandrov founded and led the Red Army song and dance ensemble that still carries his name. Stalin chose his tune in a contest in 1943, and from the start of 1944 it replaced the Internationale as the anthem of the Soviet Union, with words by Sergey Mikhalkov and Gabriel El-Registan.",
+       "From 1990 to 2000 Russia used Glinka’s Patriotic Song, a tune without official words. In December 2000 Alexandrov’s music came back by law, and Mikhalkov, then in his eighties, wrote new words for it."
+      ]
+     },
+     {
+      "heading": "How it is played",
+      "paragraphs": [
+       "The official score is in C major at 76 beats a minute, to be played solemnly and in a singing way. The government published arrangements for symphony orchestra and for wind band. It must be played at the president’s inauguration, at the opening of sessions of the Duma and the Federation Council, and at state ceremonies, and it is played at sporting events. At the Victory Day parade on Red Square a massed military band plays it without singers."
+      ]
+     },
+     {
+      "heading": "On the trumpet",
+      "paragraphs": [
+       "The verse moves in quarter notes, with a dotted eighth and a sixteenth in the middle of most bars. Keep the sixteenth light and on time, leaning into the next beat. Recordings differ on where the dotted rhythm is used and where the two notes are played even; this part follows the official band score.",
+       "The chorus starts high, on written F♯, and later reaches the G at the top of the staff. The line is broad and legato and there are no rests until the end, so breathe on the longer notes: the dotted quarter at the end of the second line, and the half notes in the chorus. In the band score the other cornets and trumpets add fanfares with quick triplets during the chorus. This page has the melody only."
+      ]
+     },
+     {
+      "heading": "The instrument",
+      "paragraphs": [
+       "Alexandrov wrote it as a hymn for voices and orchestra, the way his ensemble performed. In the official wind band score the B♭ cornets carry the tune, written in D, and the trumpets add the fanfares."
+      ]
+     },
+     {
+      "heading": "Rights",
+      "paragraphs": [
+       "Russian law treats the anthem as a state symbol, so the music and the words are not under copyright there. IMSLP lists the 1944 score as public domain in Canada and the European Union, but probably still protected in the United States."
+      ]
+     },
+     {
+      "heading": "This part",
+      "paragraphs": [
+       "The cornet melody of one verse and the chorus from the official wind band score, from the opening chord to the final cadence, written in D major for B♭ trumpet (concert C). The first ending, which leads back into the next verse, is left out."
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "title": "Wikipedia, National anthem of Russia",
+      "url": "https://en.wikipedia.org/wiki/National_anthem_of_Russia"
+     },
+     {
+      "title": "IMSLP, State Anthem of the Soviet Union (Aleksandrov)",
+      "url": "https://imslp.org/wiki/State_Anthem_of_the_Soviet_Union_(Aleksandrov,_Aleksandr)"
+     },
+     {
+      "title": "FluteTunes, National Anthem of Russia",
+      "url": "https://www.flutetunes.com/tunes.php?id=141"
+     },
+     {
+      "title": "Melody: cornet 1 of the official wind band score, typeset by kenta2/russian-anthem-kvzlyzug",
+      "url": "https://github.com/kenta2/russian-anthem-kvzlyzug"
+     },
+     {
+      "title": "Melody checked against Aorda/USSR-Anthem-with-Arduino-Piezo-Buzzer",
+      "url": "https://github.com/Aorda/USSR-Anthem-with-Arduino-Piezo-Buzzer"
+     }
+    ]
+   }
+  },
+  {
+   "id": "star-spangled-banner",
+   "file": "songs/The Star-Spangled Banner, American national anthem.musicxml",
+   "title": "United States – The Star-Spangled Banner",
+   "kind": "MusicXML",
+   "sha1": "6078d4a67a7cbc2b5cf23a5e4c5c396c8f679711",
+   "addedAt": "2026-11-02T12:00:00Z",
+   "category": "anthems",
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Star-Spangled Banner",
+    "lead": "The Star-Spangled Banner is the national anthem of the United States. The words are by Francis Scott Key. The tune is an English club song from the 1770s.",
+    "facts": [
+     [
+      "Music",
+      "John Stafford Smith and the Anacreontic Society, 1770s"
+     ],
+     [
+      "Words",
+      "Francis Scott Key, 1814"
+     ],
+     [
+      "Anthem",
+      "3 March 1931"
+     ],
+     [
+      "Key",
+      "B♭ major, the traditional key"
+     ],
+     [
+      "Time",
+      "3/4"
+     ],
+     [
+      "This part",
+      "Written in C major, C4 to G5"
+     ]
+    ],
+    "sections": [
+     {
+      "heading": "History",
+      "paragraphs": [
+       "The tune was written for the Anacreontic Society, a gentlemen’s club in London that met for concerts, dinners and singing. Its song, To Anacreon in Heaven, had words by the club’s president, Ralph Tomlinson, and music most likely by John Stafford Smith, a court musician and member. By 1798 the tune was printed in American newspapers with new words of all kinds.",
+       "In September 1814, during the War of 1812, Key watched the British bombard Fort McHenry in Baltimore harbor from a ship where he was being held. In the morning the fort’s flag was still flying. He wrote his poem on 14 September, and it was printed with Smith’s tune soon after the battle. The song was in general use for more than a century. President Herbert Hoover signed the act that made it the national anthem on 3 March 1931."
+      ]
+     },
+     {
+      "heading": "How it is played",
+      "paragraphs": [
+       "It opens most official ceremonies and sporting events, played by a military band or sung by one voice. It is in three, at a moderate, steady pace. B♭ major is the traditional key; bands also play it in A♭. Many performers hold the high note on “free” near the end.",
+       "When no band is present, or the anthem can’t be played, the armed forces sound the bugle call To the Colors in its place and give it the same honors."
+      ]
+     },
+     {
+      "heading": "On the trumpet",
+      "paragraphs": [
+       "The tune spans an octave and a fifth, and that is why singers fear it. On the trumpet it lies well, written from middle C to the G on top of the staff. The opening falls through the chord and then leaps up an octave, so the low notes must speak at once and the leap has to land in tune.",
+       "Keep every dotted figure crisp: “O say,” “by the dawn’s,” “and the rocket’s.” The third line, the rocket’s red glare, climbs to the high F, written G, and the last line climbs back to it on “free.” There are no rests, so breathe by shortening the long note at the end of a line: after “light,” “gleaming,” “streaming,” “air” and “there.”"
+      ]
+     },
+     {
+      "heading": "The instrument",
+      "paragraphs": [
+       "Neither the tune nor the poem was written for trumpet. In 1814 army trumpets and bugles had no valves and played signals, not melodies like this one. The anthem came to brass players through the band, where the cornet and later the B♭ trumpet took the melody."
+      ]
+     },
+     {
+      "heading": "This part",
+      "paragraphs": [
+       "The first verse, the one everyone knows, from the pickup to the last note, in B♭. For B♭ trumpet it is written in C major. The fermata on “free” is marked."
+      ]
+     }
+    ],
+    "sources": [
+     {
+      "title": "National Park Service, Fort McHenry: To Anacreon in Heaven",
+      "url": "https://www.nps.gov/fomc/learn/historyculture/to-anacreon-in-heaven.htm"
+     },
+     {
+      "title": "Smithsonian, Why is the national anthem so hard to sing?",
+      "url": "https://www.smithsonianmag.com/blogs/national-museum-american-history/2021/07/13/national-anthem-hard-to-sing/"
+     },
+     {
+      "title": "TAPS Bugler, The evolution of The Star-Spangled Banner",
+      "url": "https://www.tapsbugler.com/the-evolution-of-the-star-spangled-banner/"
+     },
+     {
+      "title": "Britannica, The Star-Spangled Banner",
+      "url": "https://www.britannica.com/topic/The-Star-Spangled-Banner"
+     },
+     {
+      "title": "Wikipedia, To the Color",
+      "url": "https://en.wikipedia.org/wiki/To_the_Color"
+     },
+     {
+      "title": "Melody checked against two MIDI files (dirkncl/koleksiMidi, dirkncl/koleksi-midi)",
+      "url": "https://github.com/dirkncl/koleksiMidi"
+     }
+    ]
    }
   },
   {

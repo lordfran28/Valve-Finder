@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "badinerie-bach-orchestral-suite-no-2",
- "title": "Bach – Badinerie (Orchestral Suite No. 2)",
+ "title": "Bach – Badinerie, Orchestral Suite No. 2, BWV 1067",
+ "category": "classical",
  "kind": "MIDI",
  "addedAt": "2026-10-31T06:02:42Z",
- "updatedAt": "2026-11-01T07:12:27.357Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": null,
  "settings": {
   "part": 0,

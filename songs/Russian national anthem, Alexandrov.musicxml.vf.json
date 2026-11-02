@@ -1,0 +1,109 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "russian-state-anthem",
+ "title": "Russia – State Anthem of the Russian Federation",
+ "category": "anthems",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-02T12:00:00Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
+ "units": {
+  "count": 22,
+  "unit": "Bar"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "State Anthem of the Russian Federation",
+  "lead": "Russia’s anthem is sung to music by Alexander Alexandrov. The tune was first heard in 1939 as the Hymn of the Bolshevik Party and was the anthem of the Soviet Union from 1944.",
+  "facts": [
+   [
+    "Music",
+    "Alexander Alexandrov (1883–1946)"
+   ],
+   [
+    "Words",
+    "Sergey Mikhalkov, 2000"
+   ],
+   [
+    "Soviet anthem",
+    "1944 to 1991"
+   ],
+   [
+    "Russian anthem",
+    "Since December 2000"
+   ],
+   [
+    "Key and tempo",
+    "C major, 76 beats a minute"
+   ],
+   [
+    "This part",
+    "Written in D major, D4 to G5"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "History",
+    "paragraphs": [
+     "Alexandrov founded and led the Red Army song and dance ensemble that still carries his name. Stalin chose his tune in a contest in 1943, and from the start of 1944 it replaced the Internationale as the anthem of the Soviet Union, with words by Sergey Mikhalkov and Gabriel El-Registan.",
+     "From 1990 to 2000 Russia used Glinka’s Patriotic Song, a tune without official words. In December 2000 Alexandrov’s music came back by law, and Mikhalkov, then in his eighties, wrote new words for it."
+    ]
+   },
+   {
+    "heading": "How it is played",
+    "paragraphs": [
+     "The official score is in C major at 76 beats a minute, to be played solemnly and in a singing way. The government published arrangements for symphony orchestra and for wind band. It must be played at the president’s inauguration, at the opening of sessions of the Duma and the Federation Council, and at state ceremonies, and it is played at sporting events. At the Victory Day parade on Red Square a massed military band plays it without singers."
+    ]
+   },
+   {
+    "heading": "On the trumpet",
+    "paragraphs": [
+     "The verse moves in quarter notes, with a dotted eighth and a sixteenth in the middle of most bars. Keep the sixteenth light and on time, leaning into the next beat. Recordings differ on where the dotted rhythm is used and where the two notes are played even; this part follows the official band score.",
+     "The chorus starts high, on written F♯, and later reaches the G at the top of the staff. The line is broad and legato and there are no rests until the end, so breathe on the longer notes: the dotted quarter at the end of the second line, and the half notes in the chorus. In the band score the other cornets and trumpets add fanfares with quick triplets during the chorus. This page has the melody only."
+    ]
+   },
+   {
+    "heading": "The instrument",
+    "paragraphs": [
+     "Alexandrov wrote it as a hymn for voices and orchestra, the way his ensemble performed. In the official wind band score the B♭ cornets carry the tune, written in D, and the trumpets add the fanfares."
+    ]
+   },
+   {
+    "heading": "Rights",
+    "paragraphs": [
+     "Russian law treats the anthem as a state symbol, so the music and the words are not under copyright there. IMSLP lists the 1944 score as public domain in Canada and the European Union, but probably still protected in the United States."
+    ]
+   },
+   {
+    "heading": "This part",
+    "paragraphs": [
+     "The cornet melody of one verse and the chorus from the official wind band score, from the opening chord to the final cadence, written in D major for B♭ trumpet (concert C). The first ending, which leads back into the next verse, is left out."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wikipedia, National anthem of Russia",
+    "url": "https://en.wikipedia.org/wiki/National_anthem_of_Russia"
+   },
+   {
+    "title": "IMSLP, State Anthem of the Soviet Union (Aleksandrov)",
+    "url": "https://imslp.org/wiki/State_Anthem_of_the_Soviet_Union_(Aleksandrov,_Aleksandr)"
+   },
+   {
+    "title": "FluteTunes, National Anthem of Russia",
+    "url": "https://www.flutetunes.com/tunes.php?id=141"
+   },
+   {
+    "title": "Melody: cornet 1 of the official wind band score, typeset by kenta2/russian-anthem-kvzlyzug",
+    "url": "https://github.com/kenta2/russian-anthem-kvzlyzug"
+   },
+   {
+    "title": "Melody checked against Aorda/USSR-Anthem-with-Arduino-Piezo-Buzzer",
+    "url": "https://github.com/Aorda/USSR-Anthem-with-Arduino-Piezo-Buzzer"
+   }
+  ]
+ }
+}

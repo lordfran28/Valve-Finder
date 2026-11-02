@@ -275,6 +275,9 @@ def main():
                 "sha1": sha1(path),
                 "addedAt": utc(side.get("addedAt") or first_added(path)),
             }
+            # the library's side column groups songs by this (classical, contemporary, anthems)
+            if isinstance(side.get("category"), str) and re.fullmatch(r"[a-z][a-z-]{0,29}", side["category"]):
+                entry["category"] = side["category"]
             if side.get("era") in ("classical",):
                 entry["era"] = side["era"]
             if isinstance(side.get("year"), int):
@@ -282,6 +285,9 @@ def main():
             units = side.get("units")
             if isinstance(units, dict) and isinstance(units.get("count"), int):
                 entry["units"] = {"count": units["count"], "unit": str(units.get("unit") or "Bar")}
+            # "Details on the piece": the encyclopedia entry shown at the foot of the song
+            if isinstance(side.get("details"), dict) and side["details"]:
+                entry["details"] = side["details"]
             songs.append(entry)
     songs.sort(key=lambda s: (str(s["addedAt"]), s["file"]))
     removed = removed_songs({s["sha1"] for s in songs})

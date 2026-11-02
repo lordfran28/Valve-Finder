@@ -1,0 +1,108 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "star-spangled-banner",
+ "title": "United States – The Star-Spangled Banner",
+ "category": "anthems",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-02T12:00:00Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
+ "units": {
+  "count": 33,
+  "unit": "Bar"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "The Star-Spangled Banner",
+  "lead": "The Star-Spangled Banner is the national anthem of the United States. The words are by Francis Scott Key. The tune is an English club song from the 1770s.",
+  "facts": [
+   [
+    "Music",
+    "John Stafford Smith and the Anacreontic Society, 1770s"
+   ],
+   [
+    "Words",
+    "Francis Scott Key, 1814"
+   ],
+   [
+    "Anthem",
+    "3 March 1931"
+   ],
+   [
+    "Key",
+    "B♭ major, the traditional key"
+   ],
+   [
+    "Time",
+    "3/4"
+   ],
+   [
+    "This part",
+    "Written in C major, C4 to G5"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "History",
+    "paragraphs": [
+     "The tune was written for the Anacreontic Society, a gentlemen’s club in London that met for concerts, dinners and singing. Its song, To Anacreon in Heaven, had words by the club’s president, Ralph Tomlinson, and music most likely by John Stafford Smith, a court musician and member. By 1798 the tune was printed in American newspapers with new words of all kinds.",
+     "In September 1814, during the War of 1812, Key watched the British bombard Fort McHenry in Baltimore harbor from a ship where he was being held. In the morning the fort’s flag was still flying. He wrote his poem on 14 September, and it was printed with Smith’s tune soon after the battle. The song was in general use for more than a century. President Herbert Hoover signed the act that made it the national anthem on 3 March 1931."
+    ]
+   },
+   {
+    "heading": "How it is played",
+    "paragraphs": [
+     "It opens most official ceremonies and sporting events, played by a military band or sung by one voice. It is in three, at a moderate, steady pace. B♭ major is the traditional key; bands also play it in A♭. Many performers hold the high note on “free” near the end.",
+     "When no band is present, or the anthem can’t be played, the armed forces sound the bugle call To the Colors in its place and give it the same honors."
+    ]
+   },
+   {
+    "heading": "On the trumpet",
+    "paragraphs": [
+     "The tune spans an octave and a fifth, and that is why singers fear it. On the trumpet it lies well, written from middle C to the G on top of the staff. The opening falls through the chord and then leaps up an octave, so the low notes must speak at once and the leap has to land in tune.",
+     "Keep every dotted figure crisp: “O say,” “by the dawn’s,” “and the rocket’s.” The third line, the rocket’s red glare, climbs to the high F, written G, and the last line climbs back to it on “free.” There are no rests, so breathe by shortening the long note at the end of a line: after “light,” “gleaming,” “streaming,” “air” and “there.”"
+    ]
+   },
+   {
+    "heading": "The instrument",
+    "paragraphs": [
+     "Neither the tune nor the poem was written for trumpet. In 1814 army trumpets and bugles had no valves and played signals, not melodies like this one. The anthem came to brass players through the band, where the cornet and later the B♭ trumpet took the melody."
+    ]
+   },
+   {
+    "heading": "This part",
+    "paragraphs": [
+     "The first verse, the one everyone knows, from the pickup to the last note, in B♭. For B♭ trumpet it is written in C major. The fermata on “free” is marked."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "National Park Service, Fort McHenry: To Anacreon in Heaven",
+    "url": "https://www.nps.gov/fomc/learn/historyculture/to-anacreon-in-heaven.htm"
+   },
+   {
+    "title": "Smithsonian, Why is the national anthem so hard to sing?",
+    "url": "https://www.smithsonianmag.com/blogs/national-museum-american-history/2021/07/13/national-anthem-hard-to-sing/"
+   },
+   {
+    "title": "TAPS Bugler, The evolution of The Star-Spangled Banner",
+    "url": "https://www.tapsbugler.com/the-evolution-of-the-star-spangled-banner/"
+   },
+   {
+    "title": "Britannica, The Star-Spangled Banner",
+    "url": "https://www.britannica.com/topic/The-Star-Spangled-Banner"
+   },
+   {
+    "title": "Wikipedia, To the Color",
+    "url": "https://en.wikipedia.org/wiki/To_the_Color"
+   },
+   {
+    "title": "Melody checked against two MIDI files (dirkncl/koleksiMidi, dirkncl/koleksi-midi)",
+    "url": "https://github.com/dirkncl/koleksiMidi"
+   }
+  ]
+ }
+}

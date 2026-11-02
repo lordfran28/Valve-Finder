@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "mvyt981uu6xl1",
- "title": "I Can`t Get Started (C major)",
+ "title": "I Can’t Get Started (C major)",
+ "category": "contemporary",
  "kind": "MIDI",
  "addedAt": "2026-11-02T05:20:51.713Z",
- "updatedAt": "2026-11-02T05:20:51.713Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": {
   "count": 58,
   "unit": "Phrase"

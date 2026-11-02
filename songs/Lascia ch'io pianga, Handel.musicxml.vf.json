@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "lascia-chio-pianga-handel",
- "title": "Handel – Lascia ch’io pianga",
+ "title": "Handel – Lascia ch’io pianga, Rinaldo, HWV 7",
+ "category": "classical",
  "kind": "MusicXML",
  "addedAt": "2026-11-02T03:49:14Z",
- "updatedAt": "2026-11-02T03:49:14Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": {
   "count": 42,
   "unit": "Bar"

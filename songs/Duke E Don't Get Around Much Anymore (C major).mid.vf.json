@@ -2,10 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "mvyt981k3t80s",
- "title": "Duke E Don't Get Around Much Anymore (C major)",
+ "title": "Don’t Get Around Much Anymore — Duke Ellington (C major)",
+ "category": "contemporary",
  "kind": "MIDI",
  "addedAt": "2026-11-02T05:20:51.704Z",
- "updatedAt": "2026-11-02T05:20:51.704Z",
+ "updatedAt": "2026-11-02T12:00:00Z",
  "units": {
   "count": 15,
   "unit": "Phrase"

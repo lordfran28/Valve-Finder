@@ -147,6 +147,25 @@ button.addlink{border:0;background-color:transparent;margin:0}
 .dot.ok{background:var(--ok)}
 .dot.warn{background:var(--warn)}
 .dot.busy{background:var(--brass)}
+/* Categories: a row above the list on a phone, a slim column beside it on a wide screen */
+.shelf{display:flex;flex-direction:column;gap:12px}
+.cats{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 18px;margin-top:-2px}
+.cat{display:inline-flex;align-items:baseline;gap:6px;padding:3px 0 4px;border:0;border-radius:0;cursor:pointer;color:var(--ink);font:400 1.15rem/1.2 var(--display);
+  background:linear-gradient(currentColor,currentColor) left bottom/0 1px no-repeat;opacity:.7;-webkit-tap-highlight-color:transparent;
+  transition:opacity .5s ease,background-size .5s ease,color .4s ease}
+.cat:hover{opacity:1}
+.cat[aria-pressed="true"]{color:var(--brass);opacity:1;background-size:100% 1px}
+.cat .n{font:400 .88rem/1 var(--body);color:var(--muted);font-variant-numeric:lining-nums}
+@media (max-width:520px){.cat .n{display:none}}
+@media (min-width:1180px){
+  .shelf{display:grid;grid-template-columns:11rem minmax(0,1fr);grid-template-rows:auto auto auto;column-gap:24px;row-gap:12px;margin-left:calc(-11rem - 24px)}
+  .shelf > #searchwrap{grid-column:2;grid-row:1}
+  .shelf > .songlist{grid-column:2;grid-row:2}
+  .shelf > #nomatch{grid-column:2;grid-row:3}
+  .cats{grid-column:1;grid-row:1 / 4;align-self:start;position:sticky;top:18px;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:2px;margin:0;
+    padding:10px 14px 12px;background:var(--surface);border:1px solid var(--line);border-radius:3px}
+  .cat{justify-content:space-between}
+}
 .songlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .song{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:12px 14px;color:var(--ink);text-decoration:none}
 .song:hover{border-color:var(--brass)}
@@ -256,6 +275,25 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 .strip-wrap{display:flex;flex-direction:column;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:12px 14px}
 .strip-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .strip{margin:0;font-family:var(--body);font-size:1.02rem;line-height:1.7;overflow-x:auto;background:var(--well);border-radius:3px;padding:10px 12px;font-variant-numeric:lining-nums tabular-nums}
+/* Details on the piece: an encyclopedia entry at the foot of the song */
+.detailslink{align-self:flex-start;margin-top:2px;font-style:italic;font-size:1.05rem;color:var(--brass);text-decoration:underline 1px;text-underline-offset:3px;text-decoration-color:var(--line);transition:text-decoration-color .5s ease}
+.detailslink:hover{text-decoration-color:var(--brass)}
+.details{background:var(--surface);border:1px solid var(--line);outline:1px solid var(--line);outline-offset:3px;border-radius:2px;margin:4px;padding:20px 22px 16px;scroll-margin-top:22px}
+.details::after{content:"";display:block;clear:both}
+.details:focus{outline:1px solid var(--line)}
+.details h2{font-size:2.1rem;line-height:1.05;margin:4px 0 12px}
+.details h3{display:flow-root;font-size:1.3rem;margin:18px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--line)}
+.details p{margin:0 0 10px;max-width:68ch}
+.details .lead{font-size:1.13rem}
+.facts{float:right;width:min(20rem,46%);margin:2px 0 12px 22px;padding:10px 12px;background:var(--well);border:1px solid var(--line);border-radius:3px;
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:5px 12px;font-size:.95rem;line-height:1.3;font-variant-numeric:lining-nums}
+.facts dt{font-variant-caps:all-small-caps;letter-spacing:.07em;color:var(--muted)}
+.facts dd{margin:0}
+@media (max-width:620px){.facts{float:none;width:auto;margin:0 0 14px}}
+.sources{margin:0;padding-left:1.5rem;font-size:.98rem;color:var(--muted);font-variant-numeric:lining-nums}
+.sources li{margin:3px 0}
+.sources a{overflow-wrap:anywhere}
+.details .back{margin:14px 0 0;font-size:.98rem}
 .dangerzone{display:flex;flex-direction:column;gap:10px;align-items:flex-start;border-top:1px solid var(--line);padding-top:16px}
 .delask{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .delkey{flex-basis:100%;margin:0}
@@ -297,9 +335,12 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     <input id="file" type="file" class="vh" multiple>
     <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true" hidden></span><span id="synctext" hidden></span></p>
     <p id="libmsg" class="error" role="alert" hidden></p>
-    <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search your songs</label><input id="search" type="search" placeholder="Search your songs" autocomplete="off"></div>
-    <ul id="songlist" class="songlist"></ul>
-    <p id="nomatch" class="small" hidden>No songs match that search.</p>
+    <div class="shelf">
+      <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search your songs</label><input id="search" type="search" placeholder="Search your songs" autocomplete="off"></div>
+      <nav id="cats" class="cats" aria-label="Categories" hidden></nav>
+      <ul id="songlist" class="songlist"></ul>
+      <p id="nomatch" class="small" hidden>No songs match that search.</p>
+    </div>
     <div id="empty" class="empty" hidden>
       <h3>Add your first song</h3>
       <p>Add a MusicXML, MIDI or Tony file.</p>
@@ -340,6 +381,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     <div class="songhead">
       <textarea id="title" class="titleinput" rows="1" aria-label="Song title" spellcheck="false"></textarea>
       <span id="fmeta" class="fmeta"></span>
+      <a id="detailslink" class="detailslink" href="#details" hidden>Details on the piece</a>
     </div>
     <p id="songmsg" class="msg" role="status" hidden></p>
     <p id="error" class="error" role="alert" hidden></p>
@@ -403,6 +445,12 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     </section>
 
     <p id="jumps" class="small" hidden>D.S., D.C. and coda jumps aren't written out.</p>
+
+    <article id="details" class="details" tabindex="-1" aria-labelledby="detailstitle" hidden>
+      <h2 id="detailstitle"></h2>
+      <div id="detailsbody"></div>
+      <p class="back"><button type="button" id="detailstop" class="textlink">Back to the top</button></p>
+    </article>
 
     <div id="dangerzone" class="dangerzone">
       <button type="button" id="del" class="btn link">Delete song</button>
@@ -1666,7 +1714,8 @@ function isLocked(rec){ return !!(rec && rec.inArchive && !isOwner()); }
 
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
-function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, era: rec.era || undefined, year: rec.year || undefined, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null}; }
+/* category and details are written by hand in the songs folder; saving from the site keeps them as they are */
+function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, category: rec.category || undefined, era: rec.era || undefined, year: rec.year || undefined, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null, details: rec.details || undefined}; }
 function safeName(t){ return String(t || "").replace(/[\\/:*?"<>|#%\u0000-\u001f]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80) || "Song"; }
 function pickPath(rec){
   var used = {};
@@ -1824,6 +1873,26 @@ function composerFirst(t){
   return t;
 }
 function isOld(meta, title){ return !!(composerOf(title) || (meta && (meta.era === "classical" || (meta.year && meta.year < 1920)))); }
+/* Categories. A song's own is set in its .vf.json; a song without one goes by its title: a composer or an old piece is Classical. */
+var CATS = [{id: "classical", label: "Classical"}, {id: "contemporary", label: "Contemporary"}, {id: "anthems", label: "Anthems"}];
+var CAT_LABEL = {}; CATS.forEach(function(c){ CAT_LABEL[c.id] = c.label; });
+var libCat = (function(){ try { var c = localStorage.getItem("vf.cat"); return CAT_LABEL[c] ? c : "all"; } catch(e){ return "all"; } })();
+function catOf(x){
+  var c = String((x.site && x.site.category) || x.meta.category || "").toLowerCase();
+  return CAT_LABEL[c] ? c : (x.old ? "classical" : "contemporary");
+}
+function renderCats(list){
+  var n = {all: list.length}; CATS.forEach(function(c){ n[c.id] = 0; });
+  list.forEach(function(x){ n[x.cat]++; });
+  /* a category with no songs (yet: the list may still be loading) shows everything, without forgetting the choice */
+  var cur = n[libCat] ? libCat : "all";
+  var nav = $("cats");
+  nav.hidden = !list.length;
+  nav.innerHTML = [{id: "all", label: "All"}].concat(CATS).filter(function(c){ return c.id === "all" || n[c.id]; }).map(function(c){
+    return '<button type="button" class="cat" data-cat="' + c.id + '" aria-pressed="' + (c.id === cur) + '">' + esc(c.label) + '<span class="n">' + n[c.id] + "</span></button>";
+  }).join("");
+  return cur;
+}
 function sortKey(t){ return fold(t).replace(/[^a-z0-9 ]+/g, "").replace(/\s+/g, " ").trim(); }
 function shaOf(rec){
   if (rec.sha1 || !(window.crypto && crypto.subtle)) return Promise.resolve(rec.sha1 || null);
@@ -1841,11 +1910,16 @@ function renderLibrary(){
   });
   /* a copy of a song that's already on the site (added here from the same file) shows as the site's song */
   Object.keys(cache).forEach(function(id){ if (!seen[id] && !(cache[id].dupOf && seen[cache[id].dupOf])) list.push({rec: cache[id], meta: cache[id]}); });
-  list.forEach(function(x){ x.title = composerFirst(x.site && x.rec && !x.rec.dirty ? x.site.title : x.meta.title); x.key = sortKey(x.title); x.old = isOld(x.site || x.meta, x.title); });
+  list.forEach(function(x){ x.title = composerFirst(x.site && x.rec && !x.rec.dirty ? x.site.title : x.meta.title); x.key = sortKey(x.title); x.old = isOld(x.site || x.meta, x.title); x.cat = catOf(x); });
   list.sort(function(a, b){ return a.key < b.key ? -1 : a.key > b.key ? 1 : 0; });
+  var cat = renderCats(list);
   var q = sortKey($("search").value).split(" ").filter(Boolean);
   $("searchwrap").hidden = !list.length;
-  var shown = q.length ? list.filter(function(x){ var hay = x.key + " " + sortKey(String(x.meta.file || "").split("/").pop()); return q.every(function(w){ return hay.indexOf(w) >= 0; }); }) : list;
+  var shown = list.filter(function(x){
+    if (cat !== "all" && x.cat !== cat) return false;
+    var hay = x.key + " " + sortKey(String(x.meta.file || "").split("/").pop()) + " " + sortKey(CAT_LABEL[x.cat]);
+    return q.every(function(w){ return hay.indexOf(w) >= 0; });
+  });
   var owner = isOwner();
   $("songlist").innerHTML = shown.map(function(x){
     /* a song added on a device without the key stays on that device: say so, or it looks lost on the other devices */
@@ -1856,6 +1930,9 @@ function renderLibrary(){
     if (x.meta.kind) bits.push(x.meta.kind);
     // only the composer's name is gold; an old piece with no composer named gets its own name gold instead
     var who = composerOf(x.title), lead = who ? 0 : x.old ? x.title.search(/, | \(|$/) : 0;
+    /* "Traditional – …", "France – …": in Classical and Anthems the name before the dash reads like a composer's */
+    var pre = !who && x.cat !== "contemporary" && /^([^–—,(]{2,40}) – /.exec(x.title);
+    if (pre){ who = pre[1]; lead = 0; }
     var name = who ? '<span class="composer">' + esc(x.title.slice(0, who.length)) + '</span>' + esc(x.title.slice(who.length))
       : lead ? '<span class="lead">' + esc(x.title.slice(0, lead)) + '</span>' + esc(x.title.slice(lead)) : esc(x.title);
     return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + name +
@@ -1864,6 +1941,13 @@ function renderLibrary(){
   $("empty").hidden = list.length > 0;
   $("nomatch").hidden = !(list.length && !shown.length);
 }
+$("cats").addEventListener("click", function(e){
+  var b = e.target.closest("[data-cat]"); if (!b) return;
+  libCat = b.getAttribute("data-cat");
+  try { localStorage.setItem("vf.cat", libCat); } catch(err){}
+  renderLibrary();
+  var again = $("cats").querySelector('[data-cat="' + libCat + '"]'); if (again) again.focus();
+});
 function syncLibrary(){
   /* songs deleted from the site: this device's own copies of them go too, unless added here after the delete */
   var removed = {}, removedFile = {};
@@ -1884,7 +1968,13 @@ function syncLibrary(){
           return;
         }
         if (!listed[id] && r.inArchive && r.file && removedFile[r.file]){ delete cache[id]; Store.del(id); RecDB.del(id); return; }
-        if (listed[id]){ if (!r.dirty && listed[id].title) r.title = listed[id].title; if (!r.file) r.file = listed[id].file; r.inArchive = true; return; }
+        if (listed[id]){
+          if (!r.dirty && listed[id].title) r.title = listed[id].title;
+          if (!r.file) r.file = listed[id].file;
+          if (listed[id].category) r.category = listed[id].category;
+          if (listed[id].details) r.details = listed[id].details;
+          r.inArchive = true; return;
+        }
         /* Not listed: either too new for the list, or deleted elsewhere. Only a missing file settles it. */
         if (r.inArchive && !r.dirty && r.file && now - Date.parse(r.archivedAt || 0) > 15 * 6e4){
           fetch(siteUrl(r.file), {method: "HEAD", cache: "no-store"}).then(function(res){
@@ -1992,10 +2082,28 @@ function showView(v){
   $("view-owner").hidden = v !== "owner";
   window.scrollTo(0, 0);
 }
+/* Details on the piece, from the song's .vf.json: {title, lead, facts: [[name, value]], sections: [{heading, paragraphs}], sources: [{title, url}]} */
+function renderDetails(rec){
+  var d = rec && rec.details, ok = !!(d && typeof d === "object" && (d.lead || (Array.isArray(d.sections) && d.sections.length)));
+  $("details").hidden = !ok; $("detailslink").hidden = !ok;
+  if (!ok){ $("detailsbody").innerHTML = ""; return; }
+  $("detailstitle").textContent = d.title || rec.title;
+  var h = [];
+  if (Array.isArray(d.facts) && d.facts.length) h.push('<dl class="facts">' + d.facts.map(function(f){ return "<dt>" + esc(f[0]) + "</dt><dd>" + esc(f[1]) + "</dd>"; }).join("") + "</dl>");
+  if (d.lead) h.push('<p class="lead">' + esc(d.lead) + "</p>");
+  (Array.isArray(d.sections) ? d.sections : []).forEach(function(s){
+    if (s.heading) h.push("<h3>" + esc(s.heading) + "</h3>");
+    (Array.isArray(s.paragraphs) ? s.paragraphs : [s.paragraphs]).forEach(function(p){ if (p) h.push("<p>" + esc(p) + "</p>"); });
+  });
+  var src = (Array.isArray(d.sources) ? d.sources : []).filter(function(s){ return s && /^https?:\/\//.test(s.url || ""); });
+  if (src.length) h.push("<h3>Sources</h3><ol class=\"sources\">" + src.map(function(s){ return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.title || s.url) + "</a></li>"; }).join("") + "</ol>");
+  $("detailsbody").innerHTML = h.join("");
+}
 function showRecord(rec){
   state.rec = rec;
   var locked = isLocked(rec);
   setTitle(rec.title, locked);
+  renderDetails(rec);
   $("dangerzone").hidden = false; $("delask").hidden = true; $("delkey").hidden = true;
   return parseBytes(b64ToBytes(rec.data)).then(function(res){
     if (state.rec !== rec) return;
@@ -2006,9 +2114,10 @@ function showRecord(rec){
     if (rec.inArchive && rec.file && !rec.dirty) fetchSidecar(rec.file).then(function(o){
       if (!o || rec.dirty || !(String(o.updatedAt || "") > String(rec.updatedAt || ""))) return;
       rec.title = o.title || rec.title; rec.era = o.era || rec.era; rec.year = o.year || rec.year; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.timing = o.timing || null; rec.updatedAt = o.updatedAt;
+      rec.category = o.category || rec.category; rec.details = o.details || rec.details;
       rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       Store.put(rec);
-      if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); }
+      if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); renderDetails(rec); }
     });
   }).catch(function(e){ var m = $("error"); m.textContent = e.user ? e.message : "This song's file couldn't be read."; m.hidden = false; });
 }
@@ -2016,7 +2125,7 @@ function openSong(id){
   showView("song");
   setSave(""); $("error").hidden = true;
   if (cache[id] && cache[id].data) return showRecord(cache[id]);
-  state.rec = null;
+  state.rec = null; renderDetails(null);
   setTitle("", true); $("bars").innerHTML = ""; $("strip").textContent = ""; $("fmeta").textContent = "";
   songMsg("Opening…");
   var meta = archive.filter(function(m){ return m.id === id; })[0];
@@ -2025,7 +2134,7 @@ function openSong(id){
     if (!m) throw userErr("This song isn't on the site anymore.");
     return Promise.all([fetchBytes(m.file), fetchSidecar(m.file)]).then(function(got){
       var o = got[1] || {};
-      var rec = {id: m.id, file: m.file, title: o.title || m.title, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
+      var rec = {id: m.id, file: m.file, title: o.title || m.title, category: o.category || m.category, details: o.details || m.details, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
                  units: null, settings: o.settings || null, notes: o.notes || null, timing: o.timing || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
       rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       cache[rec.id] = rec;
@@ -2038,7 +2147,7 @@ function openExample(){
   showView("song");
   state.rec = null; state.tempNotes = {};
   setTitle("When the Saints Go Marching In", true);
-  $("dangerzone").hidden = true;
+  $("dangerzone").hidden = true; renderDetails(null);
   state.recBuf = null; state.recName = null; recMsg("");
   loadScore(parseScore(sampleXML()), null);
   setSave("example");
@@ -2151,6 +2260,14 @@ $("addtoggle").addEventListener("click", function(){ openDrop($("dropbox").hidde
   });
 })();
 $("search").addEventListener("input", renderLibrary);
+/* the song's address is in the hash, so these scroll instead of following the link */
+$("detailslink").addEventListener("click", function(e){
+  e.preventDefault();
+  var d = $("details");
+  d.scrollIntoView({behavior: reduceMotion ? "auto" : "smooth", block: "start"});
+  try { d.focus({preventScroll: true}); } catch(err){}
+});
+$("detailstop").addEventListener("click", function(){ window.scrollTo({top: 0, behavior: reduceMotion ? "auto" : "smooth"}); });
 ["pitch","oct","repeats","join","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(); }); });
 $("part").addEventListener("change", function(){ state.part = parseInt($("part").value, 10) || 0; render(); scheduleSave(); });
 $("tempo").addEventListener("change", function(){ $("tempo").value = clampTempo($("tempo").value); scheduleSave(); });
