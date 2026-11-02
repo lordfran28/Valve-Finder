@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T05:26:40Z",
+ "generatedAt": "2026-11-02T05:46:09Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -39,14 +39,6 @@
    }
   },
   {
-   "id": "my-one-and-only-love-baritone-coltranehartman",
-   "file": "songs/My One And Only Love Baritone ColtraneHartman.mid",
-   "title": "My One and Only Love, Coltrane and Hartman (baritone)",
-   "kind": "MIDI",
-   "sha1": "86f0e524ef08a39bfbbc619c0988f058a9f9bcb7",
-   "addedAt": "2026-10-31T06:02:42Z"
-  },
-  {
    "id": "pavane-faure",
    "file": "songs/Pavane, Fauré.mid",
    "title": "Fauré – Pavane",
@@ -57,14 +49,6 @@
     "count": 105,
     "unit": "Bar"
    }
-  },
-  {
-   "id": "jackie-g-i-ll-be-seeing-you-db-major",
-   "file": "songs/Jackie G I'll Be Seeing You Db major.mid",
-   "title": "I’ll Be Seeing You, Jackie Gleason (D♭ major)",
-   "kind": "MIDI",
-   "sha1": "95d13321a574953ecfa71e24e4b5e3b1da4ac4c8",
-   "addedAt": "2026-10-31T06:17:41Z"
   },
   {
    "id": "i-m-in-the-mood-for-love-wind-f-major",
@@ -269,18 +253,6 @@
    }
   },
   {
-   "id": "mvyt9812hdt2c",
-   "file": "songs/Arturo S Aprés Un Reve (E♭ major).mid",
-   "title": "Arturo S Aprés Un Reve (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 39,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "mvyt9814nir81",
    "file": "songs/Arturo S Autumn Leaves (G minor).mid",
    "title": "Arturo S Autumn Leaves (G minor)",
@@ -289,18 +261,6 @@
    "addedAt": "2026-11-02T05:20:51Z",
    "units": {
     "count": 35,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt98158hc88",
-   "file": "songs/Arturo S Pavane (D minor).mid",
-   "title": "Arturo S Pavane (D minor)",
-   "kind": "MIDI",
-   "sha1": "a2b86d9a9361fc82720dc0ab26f49ebc3c18c9a5",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 25,
     "unit": "Phrase"
    }
   },
@@ -329,30 +289,6 @@
    }
   },
   {
-   "id": "mvyt981bacw5m",
-   "file": "songs/Chet B You Don´t Know What Love Is (F minor).mid",
-   "title": "Chet B You Don´t Know What Love Is (F minor)",
-   "kind": "MIDI",
-   "sha1": "a3a09bd6f9aa7d7f29d3932c6b13e14cc1699b60",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 25,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt981doi2wk",
-   "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
-   "title": "Chet B You'd Be So Nice to Come Home To (C major)",
-   "kind": "MIDI",
-   "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 62,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "mvyt981eclcw2",
    "file": "songs/Chris B Ave Maria (B♭ major).mid",
    "title": "Chris B Ave Maria (B♭ major)",
@@ -361,18 +297,6 @@
    "addedAt": "2026-11-02T05:20:51Z",
    "units": {
     "count": 16,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt981en6gcs",
-   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
-   "title": "Chris B Cinema Paradiso (B♭ major)",
-   "kind": "MIDI",
-   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 62,
     "unit": "Phrase"
    }
   },
@@ -437,18 +361,6 @@
    }
   },
   {
-   "id": "mvyt981lgs5yy",
-   "file": "songs/Embraceable You (E♭ major).mid",
-   "title": "Embraceable You (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "94d8fb9ed5c3030c7e9e0f6234ac8faab5f74cf8",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 28,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "mvyt981me2850",
    "file": "songs/Everytime We Say Goodbye (F major).mid",
    "title": "Everytime We Say Goodbye (F major)",
@@ -457,18 +369,6 @@
    "addedAt": "2026-11-02T05:20:51Z",
    "units": {
     "count": 44,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt981oyyzg1",
-   "file": "songs/For All We Know (B♭ major).mid",
-   "title": "For All We Know (B♭ major)",
-   "kind": "MIDI",
-   "sha1": "a15499e6ca4607fd72b80d683bf1d868cb52ed5d",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 55,
     "unit": "Phrase"
    }
   },
@@ -605,18 +505,6 @@
    }
   },
   {
-   "id": "mvyt980xhdd7e",
-   "file": "songs/Stardust (C major).mid",
-   "title": "Stardust (C major)",
-   "kind": "MIDI",
-   "sha1": "b38e9f4c2d25f207bfd1e0f2f09c9a56f57dbd2d",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 28,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "mvyt980yyg8cl",
    "file": "songs/The Very Thought of You (A♭ major).mid",
    "title": "The Very Thought of You (A♭ major)",
@@ -641,32 +529,49 @@
    }
   },
   {
-   "id": "mvyt98112ll05",
-   "file": "songs/When You Wish Upon a Star (B♭ major).mid",
-   "title": "When You Wish Upon a Star (B♭ major)",
+   "id": "removed-a2b86d9a9361",
+   "file": "songs/Arturo S Pavane (D minor).mid",
+   "title": "",
    "kind": "MIDI",
-   "sha1": "7fcedf0aca9d420def0f28c2a5927b3d8ca80d26",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "units": {
-    "count": 59,
-    "unit": "Phrase"
-   }
+   "sha1": "a2b86d9a9361fc82720dc0ab26f49ebc3c18c9a5",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
   },
   {
-   "id": "arturo-s-apres-un-reve-eb-major",
-   "file": "songs/Arturo S Aprés un Reve Eb major.mid",
-   "title": "Arturo S Aprés Un Reve (E♭ major)",
+   "id": "removed-4c81fb2f978d",
+   "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
+   "title": "",
    "kind": "MIDI",
-   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
-   "addedAt": "2026-11-02T05:21:16Z"
+   "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
   },
   {
-   "id": "arturo-s-autumn-leaves-g-minor",
-   "file": "songs/Arturo S Autumn Leaves G minor.mid",
-   "title": "Arturo S Autumn Leaves (G minor)",
+   "id": "removed-95d13321a574",
+   "file": "songs/Jackie G I'll Be Seeing You Db major.mid",
+   "title": "",
    "kind": "MIDI",
-   "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
-   "addedAt": "2026-11-02T05:21:17Z"
+   "sha1": "95d13321a574953ecfa71e24e4b5e3b1da4ac4c8",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
+   "id": "removed-86f0e524ef08",
+   "file": "songs/My One And Only Love Baritone ColtraneHartman.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "86f0e524ef08a39bfbbc619c0988f058a9f9bcb7",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
+   "id": "removed-b38e9f4c2d25",
+   "file": "songs/Stardust (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "b38e9f4c2d25f207bfd1e0f2f09c9a56f57dbd2d",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
   },
   {
    "id": "removed-c1761caa55e3",
@@ -1048,6 +953,31 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Arturo S Pavane (D minor).mid",
+   "sha1": "a2b86d9a9361fc82720dc0ab26f49ebc3c18c9a5",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
+   "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/Jackie G I'll Be Seeing You Db major.mid",
+   "sha1": "95d13321a574953ecfa71e24e4b5e3b1da4ac4c8",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/My One And Only Love Baritone ColtraneHartman.mid",
+   "sha1": "86f0e524ef08a39bfbbc619c0988f058a9f9bcb7",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/Stardust (C major).mid",
+   "sha1": "b38e9f4c2d25f207bfd1e0f2f09c9a56f57dbd2d",
+   "at": "2026-11-02T05:45:53Z"
+  },
   {
    "file": "songs/How Deep Is the Ocean (C minor).mid",
    "sha1": "c1761caa55e327d1efecb57a5984029b8a9ae2d7",
