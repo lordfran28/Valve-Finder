@@ -219,7 +219,7 @@ def prune_duplicates():
 def removed_songs(present):
     """Songs deleted from the folder, from the git history: devices drop their own copies of these."""
     try:
-        log = subprocess.run(["git", "log", "--diff-filter=D", "--name-only", "--format=@%H %cI", "--", "."],
+        log = subprocess.run(["git", "-c", "core.quotepath=false", "log", "--diff-filter=D", "--name-only", "--format=@%H %cI", "--", "."],
                              cwd=ROOT, capture_output=True, text=True, check=True).stdout
     except (OSError, subprocess.CalledProcessError):
         return []
