@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T01:55:16Z",
+ "generatedAt": "2026-11-02T03:45:49Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -135,18 +135,6 @@
    "addedAt": "2026-11-01T04:22:02Z"
   },
   {
-   "id": "the-nearness-of-you-frank-sinatra",
-   "file": "songs/The Nearness of You, Frank Sinatra.musicxml",
-   "title": "The Nearness of You, Frank Sinatra (G major)",
-   "kind": "MusicXML",
-   "sha1": "6235a4152670b9d914034c8d94caf729989c81d6",
-   "addedAt": "2026-11-01T04:22:02Z",
-   "units": {
-    "count": 38,
-    "unit": "Bar"
-   }
-  },
-  {
    "id": "you-d-be-so-nice-to-come-home-to-max-perov",
    "file": "songs/You'd Be So Nice to Come Home To, Max Perov.musicxml",
    "title": "You’d Be So Nice to Come Home To, Max Perov (A minor)",
@@ -255,6 +243,15 @@
    "kind": "MIDI",
    "sha1": "ea1d4f8d72a2ffd0b31f506c2d2ec8824fc373f7",
    "addedAt": "2026-11-01T07:07:48Z"
+  },
+  {
+   "id": "removed-6235a4152670",
+   "file": "songs/The Nearness of You, Frank Sinatra.musicxml",
+   "title": "",
+   "kind": "MusicXML",
+   "sha1": "6235a4152670b9d914034c8d94caf729989c81d6",
+   "addedAt": "2026-11-02T03:45:34Z",
+   "removed": true
   },
   {
    "id": "removed-98fd2b73d742",
@@ -600,6 +597,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/The Nearness of You, Frank Sinatra.musicxml",
+   "sha1": "6235a4152670b9d914034c8d94caf729989c81d6",
+   "at": "2026-11-02T03:45:34Z"
+  },
   {
    "file": "songs/BeeGees Love So Right Voice.mid",
    "sha1": "98fd2b73d7427c64f35777af403338aa15e9c8b3",
