@@ -108,7 +108,7 @@ a{color:var(--brass)}
 .in-song h1{font-size:2rem}
 
 /* Library */
-.libhead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.libhead{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:2.6rem;padding:4px 2px;cursor:pointer;border:0;border-radius:0;
   font:400 1.3rem/1.1 var(--display);color:var(--brass);text-decoration:none;user-select:none;-webkit-tap-highlight-color:transparent;
   background:linear-gradient(currentColor,currentColor) left calc(100% - 6px)/0 1px no-repeat;
@@ -322,9 +322,8 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     </a>
   </header>
 
-  <section id="view-library" class="view" aria-label="Your songs">
+  <section id="view-library" class="view" aria-label="Songs">
     <div class="libhead">
-      <h2>Your songs</h2>
       <button type="button" id="addtoggle" class="addlink" aria-expanded="false" aria-controls="dropbox">Add a song</button>
     </div>
     <label id="dropbox" class="dropbox" for="file" hidden>
@@ -336,7 +335,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     <p class="syncline"><span id="syncdot" class="dot" aria-hidden="true" hidden></span><span id="synctext" hidden></span></p>
     <p id="libmsg" class="error" role="alert" hidden></p>
     <div class="shelf">
-      <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search your songs</label><input id="search" type="search" placeholder="Search your songs" autocomplete="off"></div>
+      <div id="searchwrap" class="field" hidden><label for="search" class="vh">Search the songs</label><input id="search" type="search" placeholder="Search" autocomplete="off"></div>
       <nav id="cats" class="cats" aria-label="Categories" hidden></nav>
       <ul id="songlist" class="songlist"></ul>
       <p id="nomatch" class="small" hidden>No songs match that search.</p>
@@ -353,7 +352,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
   </section>
 
   <section id="view-owner" class="view" aria-label="Owner" hidden>
-    <div class="songbar"><a href="#" class="back">← Your songs</a></div>
+    <div class="songbar"><a href="#" class="back">← Songs</a></div>
     <h2>Owner</h2>
     <p id="ownerstate" class="small"></p>
     <div id="ownerform" class="panel-body">
@@ -375,7 +374,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 
   <section id="view-song" class="view" aria-label="Song" hidden>
     <div class="songbar">
-      <a href="#" class="back">← Your songs</a>
+      <a href="#" class="back">← Songs</a>
       <span id="savestate" class="status st-plain" hidden></span>
     </div>
     <div class="songhead">
