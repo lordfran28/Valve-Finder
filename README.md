@@ -28,11 +28,11 @@ Anyone can open and play the songs. Only a connected device can add, rename or d
 ## Images and fonts
 Everything the page shows is stored in this repository, so the site keeps working on its own.
 
-- **Clio**, detail of Johannes Vermeer, *The Art of Painting* (c. 1666–68), Kunsthistorisches Museum, Vienna. Public domain. `assets/clio-vermeer.jpg`
+- **The Trumpet Player**, Gerrit Dou, *Trumpet-Player in front of a Banquet* (c. 1660–65), Louvre, Paris. Public domain. Cut around the trumpeter for the title: `assets/trumpet-player-dou.jpg`
 - **Silk**, *Piece*, Italian (possibly Genoa), 17th–18th century, silk and metal thread, The Metropolitan Museum of Art, [30.95.68](https://www.metmuseum.org/art/collection/search/222358). Public domain (Met Open Access). Recoloured into `assets/textile-light.jpg` (ochre on parchment) and `assets/textile-dark.jpg` (gold on navy).
 - Other public-domain textiles considered for the design are kept in `assets/source/`; `assets/sources.txt` lists where each came from.
 - **Trumpet sound:** University of Iowa Electronic Music Studios, [Musical Instrument Samples](https://theremin.music.uiowa.edu/MISBbtrumpet.html), B♭ trumpet (Bach Stradivarius) played by Aren Van Houzen, 2003, "used for any projects, without restrictions". Cut into one mp3 per note in `assets/trumpet/` (sets: `mf`, `vib` = mf with vibrato, `ff`, `pp`; file name = concert MIDI note; `manifest.json` holds each note's tuning correction and sustain loop).
-- **Background paintings** (`assets/art/`): an angel playing a natural trumpet, from a Baroque fresco, and Gerrit Dou's Trumpet Player in front of a Banquet (c. 1660–65, Louvre; public domain), both sent by Francisco. They drift up slowly as you scroll and come round again. Each is tinted into the palette (ochre ink for light mode, gold for dark) and feathered so it sits in the silk.
+- **Background painting** (`assets/art/`): an angel playing a natural trumpet, from a Baroque fresco, sent by Francisco. It drifts up slowly as you scroll and comes round again. It is tinted into the palette (ochre ink for light mode, gold for dark) and feathered so it sits in the silk.
 - **Fonts:** [EB Garamond](https://github.com/octaviopardo/EBGaramond12) and [IM Fell French Canon](https://iginomarini.com/fell/) (the Fell Types, cut in the 1670s), both under the SIL Open Font License; licences in `assets/fonts/`.
 
 `.github/workflows/fetch-images.yml` downloads anything listed in `assets/sources.txt` and commits it.

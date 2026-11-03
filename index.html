@@ -15,7 +15,7 @@
 @font-face{font-family:"EB Garamond";font-style:italic;font-weight:400 800;font-display:swap;src:url("assets/fonts/eb-garamond-latin-wght-italic.woff2") format("woff2")}
 @font-face{font-family:"IM Fell French Canon";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/im-fell-french-canon-latin-400-normal.woff2") format("woff2")}
 @font-face{font-family:"IM Fell French Canon";font-style:italic;font-weight:400;font-display:swap;src:url("assets/fonts/im-fell-french-canon-latin-400-italic.woff2") format("woff2")}
-/* Layout: one music-stand column. A framed hero sets Vermeer's Clio into a 17th-century Genoese silk; below it, the library or a song on parchment cards; a band of the same silk closes the page. */
+/* Layout: one music-stand column. A framed hero sets Gerrit Dou's Trumpet Player into a 17th-century Genoese silk; below it, the library or a song on parchment cards; a band of the same silk closes the page. */
 :root{
   --bg:#EFE6D2;
   --surface:#FBF7EE;
@@ -40,7 +40,7 @@
   --emboss-lift:0 1px 0 rgba(255,250,235,.8),0 3px 7px rgba(70,45,10,.32);
   --textile:url("assets/textile-light.jpg");
   --textile-alpha:.12;
-  --angel:url("assets/art/angel-light.webp");--trumpeter:url("assets/art/trumpeter-light.webp");--art-alpha:.36;
+  --angel:url("assets/art/angel-light.webp");--art-alpha:.36;
   --hero-alpha:.7;
   --display:"IM Fell French Canon",Garamond,"Times New Roman",serif;
   --body:"EB Garamond",Garamond,"Garamond Premier Pro",Georgia,serif;
@@ -51,7 +51,7 @@
     --bg:#0D1626;--surface:#142034;--well:#1B2840;--ink:#EFE3C8;--muted:#B6A98E;--line:#34445F;--dot-line:#7E7766;
     --brass:#D9AE55;--brass-hi:#EDCB7E;--brass-lo:#AF8434;--brass-soft:#3A3122;--on-brass:#1A1206;--blue:#9DBBEB;--blue-soft:#1E3152;
     --ok:#8CC58A;--ok-soft:#1C3322;--warn:#EE9A85;--warn-soft:#3B221D;
-    --veil:rgba(13,22,38,.93);--emboss:0 1px 0 rgba(0,0,0,.6),0 0 6px rgba(217,174,85,.12);--emboss-lift:0 1px 0 rgba(0,0,0,.7),0 0 12px rgba(217,174,85,.32);--textile:url("assets/textile-dark.jpg");--textile-alpha:.14;--angel:url("assets/art/angel-dark.webp");--trumpeter:url("assets/art/trumpeter-dark.webp");--art-alpha:.26;--hero-alpha:.85;color-scheme:dark;
+    --veil:rgba(13,22,38,.93);--emboss:0 1px 0 rgba(0,0,0,.6),0 0 6px rgba(217,174,85,.12);--emboss-lift:0 1px 0 rgba(0,0,0,.7),0 0 12px rgba(217,174,85,.32);--textile:url("assets/textile-dark.jpg");--textile-alpha:.14;--angel:url("assets/art/angel-dark.webp");--art-alpha:.26;--hero-alpha:.85;color-scheme:dark;
   }
 }
 *{box-sizing:border-box}
@@ -60,16 +60,14 @@ html{background:var(--bg);padding-top:env(safe-area-inset-top,0px);padding-botto
 body{position:relative;z-index:0;margin:0;background:var(--bg);color:var(--ink);font:400 1.08rem/1.55 var(--body);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 0}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--textile) center/cover no-repeat;opacity:var(--textile-alpha)}
-/* Two paintings tinted into the silk: an angel with a natural trumpet (a Baroque fresco) and Gerrit Dou's
-   Trumpet Player (c. 1660). They drift slowly upward as you scroll, slower than the page, and come round again. */
+/* A painting tinted into the silk: an angel with a natural trumpet (a Baroque fresco). It drifts slowly upward
+   as you scroll, slower than the page, and comes round again. (Gerrit Dou's Trumpet Player is the title painting.) */
 .art{position:fixed;top:0;z-index:-1;pointer-events:none;background:no-repeat center/contain;opacity:var(--art-alpha);will-change:transform}
 .art-angel{left:max(-4vw,calc(50% - 23rem - 42vw));width:min(46vw,700px);aspect-ratio:1100/619;background-image:var(--angel);transform:translate3d(0,16vh,0)}
-.art-trumpeter{opacity:min(1,calc(var(--art-alpha)*1.35));right:max(-4vw,calc(50% - 23rem - 38vw));width:min(40vw,600px);aspect-ratio:900/811;background-image:var(--trumpeter);transform:translate3d(0,52vh,0)}
 @media (max-width:900px){
   .art{opacity:calc(var(--art-alpha)*.62)}
   .art-angel{left:-26vw;width:84vw}
-  .art-trumpeter{right:-24vw;width:76vw}
-}
+  }
 .wrap{max-width:46rem;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 .view{display:flex;flex-direction:column;gap:16px}
 h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;letter-spacing:.005em}
@@ -84,16 +82,16 @@ a{color:var(--brass)}
 .hero{position:relative;overflow:hidden;isolation:isolate;height:27rem;background:var(--bg);border:1px solid var(--line)}
 .hero::after{content:"";position:absolute;inset:5px;border:1px solid var(--line);pointer-events:none;z-index:4}
 .hero-silk{position:absolute;inset:0;background:var(--textile) center 26%/cover no-repeat;opacity:var(--hero-alpha)}
-.hero-clio{position:absolute;right:-10%;top:-5%;height:84%;width:auto;max-width:none;
+.hero-fig{position:absolute;right:-10%;top:-5%;height:84%;width:auto;max-width:none;
   -webkit-mask-image:radial-gradient(ellipse 56% 62% at 56% 46%,#000 52%,transparent 100%);
   mask-image:radial-gradient(ellipse 56% 62% at 56% 46%,#000 52%,transparent 100%)}
 .hero-veil{position:absolute;inset:0;background:linear-gradient(to top,var(--veil) 0%,var(--veil) 30%,transparent 52%)}
 .hero-title{position:absolute;left:1.35rem;right:1.35rem;bottom:1.3rem;display:flex;flex-direction:column;gap:6px;color:var(--ink);text-decoration:none;z-index:3}
 @media (min-width:600px){
   .hero{height:24rem}
-  .hero-clio{right:-4%;top:-4%;height:112%;
-    -webkit-mask-image:radial-gradient(ellipse 46% 60% at 64% 46%,#000 40%,transparent 100%);
-    mask-image:radial-gradient(ellipse 46% 60% at 64% 46%,#000 40%,transparent 100%)}
+  .hero-fig{right:-4%;top:-4%;height:112%;
+    -webkit-mask-image:radial-gradient(ellipse 44% 46% at 44% 48%,#000 42%,transparent 100%);
+    mask-image:radial-gradient(ellipse 44% 46% at 44% 48%,#000 42%,transparent 100%)}
   .hero-veil{background:radial-gradient(ellipse 70% 85% at 0% 100%,var(--veil) 0%,var(--veil) 38%,transparent 72%)}
   .hero-title{right:auto;max-width:21rem;bottom:1.8rem;left:1.8rem}
 }
@@ -102,7 +100,7 @@ a{color:var(--brass)}
 
 /* On a song page the hero shrinks to a slim band, so the notes come first */
 .in-song .hero{height:5.5rem}
-.in-song .hero-clio,.in-song .eyebrow,.in-song .lede{display:none}
+.in-song .hero-fig,.in-song .eyebrow,.in-song .lede{display:none}
 .in-song .hero-veil{background:linear-gradient(90deg,var(--veil) 0%,var(--veil) 40%,transparent 90%)}
 .in-song .hero-title{top:50%;bottom:auto;left:1.35rem;right:auto;transform:translateY(-50%)}
 .in-song h1{font-size:2rem}
@@ -309,11 +307,11 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
 </style>
 </head>
 <body>
-<div class="art art-angel" aria-hidden="true"></div><div class="art art-trumpeter" aria-hidden="true"></div>
+<div class="art art-angel" aria-hidden="true"></div>
 <div class="wrap">
   <header class="hero">
     <div class="hero-silk" aria-hidden="true"></div>
-    <img class="hero-clio" src="assets/clio-vermeer.jpg" width="1000" height="980" alt="Clio, the muse of history, holding a trumpet and a book, from Vermeer's The Art of Painting">
+    <img class="hero-fig" src="assets/trumpet-player-dou.jpg" width="820" height="840" alt="A man blowing a trumpet at a window, from Gerrit Dou's Trumpet Player">
     <div class="hero-veil" aria-hidden="true"></div>
     <a class="hero-title" href="#">
       <span class="eyebrow">For the B♭ trumpet</span>
@@ -347,7 +345,7 @@ input[type=text].annot.longer{font-size:.7rem;letter-spacing:-.015em}
     </div>
 
     <footer class="foot">
-      <p class="credits">Clio from Vermeer's <a href="https://en.wikipedia.org/wiki/The_Art_of_Painting" target="_blank" rel="noopener">The Art of Painting</a> · Genoese silk, <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">The Met</a> · Trumpet recordings, <a href="https://theremin.music.uiowa.edu/MISBbtrumpet.html" target="_blank" rel="noopener">University of Iowa</a> · The trumpeter, Gerrit Dou · <a href="#example">Example song</a></p>
+      <p class="credits">Gerrit Dou, <a href="https://commons.wikimedia.org/wiki/File:Gerard_Dou_-_Trumpet-Player_in_front_of_a_Banquet_-_WGA06662.jpg" target="_blank" rel="noopener">The Trumpet Player</a> · Genoese silk, <a href="https://www.metmuseum.org/art/collection/search/222358" target="_blank" rel="noopener">The Met</a> · Trumpet recordings, <a href="https://theremin.music.uiowa.edu/MISBbtrumpet.html" target="_blank" rel="noopener">University of Iowa</a> · <a href="#example">Example song</a></p>
     </footer>
   </section>
 
@@ -2400,7 +2398,7 @@ Store.all().then(function(recs){
 <script>
 /* The background paintings rise at a fifth of the scroll speed; when one leaves the top, it comes back from below. */
 (function(){
-  var arts = [{el: document.querySelector(".art-angel"), base: 0.16, k: 0.2}, {el: document.querySelector(".art-trumpeter"), base: 0.58, k: 0.2}];
+  var arts = [{el: document.querySelector(".art-angel"), base: 0.16, k: 0.2}];
   if (!arts[0].el || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
   var queued = false;
   function place(){
