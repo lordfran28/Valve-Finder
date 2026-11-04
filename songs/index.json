@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-02T09:35:06Z",
+ "generatedAt": "2026-11-04T22:15:29Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -890,6 +890,19 @@
       "url": "https://github.com/dirkncl/koleksiMidi"
      }
     ]
+   }
+  },
+  {
+   "id": "viva-la-vida-trumpet",
+   "file": "songs/Viva la Vida, trumpet part (E major).musicxml",
+   "title": "Viva la Vida — trumpet part (E major)",
+   "kind": "MusicXML",
+   "sha1": "11f2700f77bca144891e8a4371a4b85e0c7b7527",
+   "addedAt": "2026-11-04T22:15:28Z",
+   "category": "contemporary",
+   "units": {
+    "count": 16,
+    "unit": "Bar"
    }
   },
   {

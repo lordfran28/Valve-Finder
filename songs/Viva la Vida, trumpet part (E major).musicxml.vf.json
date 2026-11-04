@@ -1,0 +1,17 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "viva-la-vida-trumpet",
+ "title": "Viva la Vida — trumpet part (E major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-04T22:15:28Z",
+ "updatedAt": "2026-11-04T22:15:28Z",
+ "units": {
+  "count": 16,
+  "unit": "Bar"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null
+}
