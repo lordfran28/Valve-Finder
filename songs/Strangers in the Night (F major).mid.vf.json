@@ -1,0 +1,16 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "mw5mg742iq121",
+ "title": "Strangers in the Night (F major)",
+ "kind": "MIDI",
+ "addedAt": "2026-11-06T23:44:43.010Z",
+ "updatedAt": "2026-11-06T23:44:43.010Z",
+ "units": {
+  "count": 14,
+  "unit": "Phrase"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null
+}
