@@ -1,0 +1,16 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "mw5mg741tzo16",
+ "title": "Stardust (F major)",
+ "kind": "MIDI",
+ "addedAt": "2026-11-06T23:44:43.009Z",
+ "updatedAt": "2026-11-06T23:44:43.009Z",
+ "units": {
+  "count": 41,
+  "unit": "Phrase"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null
+}
