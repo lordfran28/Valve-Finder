@@ -1,0 +1,16 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "mw5mg74gd1xj5",
+ "title": "I'm in the Mood for Love (C major)",
+ "kind": "MIDI",
+ "addedAt": "2026-11-06T23:44:43.024Z",
+ "updatedAt": "2026-11-06T23:44:43.024Z",
+ "units": {
+  "count": 24,
+  "unit": "Phrase"
+ },
+ "settings": null,
+ "notes": null,
+ "timing": null
+}
