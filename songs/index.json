@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-04T22:15:29Z",
+ "generatedAt": "2026-11-06T23:45:56Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -904,6 +904,86 @@
     "count": 16,
     "unit": "Bar"
    }
+  },
+  {
+   "id": "mw5mg73sqkqqk",
+   "file": "songs/Nothing's Gonna Change My Love for You (B major).mid",
+   "title": "Nothing's Gonna Change My Love for You (B major)",
+   "kind": "MIDI",
+   "sha1": "8a08ce6cc17839adc3a778a2dbc318d717f80056",
+   "addedAt": "2026-11-06T23:44:42Z",
+   "units": {
+    "count": 23,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mw5mg73wwyoib",
+   "file": "songs/Our Love Is Here to Stay (F major).mid",
+   "title": "Our Love Is Here to Stay (F major)",
+   "kind": "MIDI",
+   "sha1": "883e9b4477d74044844b420a149ead0f38f5126b",
+   "addedAt": "2026-11-06T23:44:43Z",
+   "units": {
+    "count": 46,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mw5mg73yynzjq",
+   "file": "songs/September in the Rain (E♭ major).mid",
+   "title": "September in the Rain (E♭ major)",
+   "kind": "MIDI",
+   "sha1": "6a1b10787d4d2e20d30d86cd9a334858b72cabb7",
+   "addedAt": "2026-11-06T23:44:43Z",
+   "units": {
+    "count": 86,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mw5mg73zj0b4i",
+   "file": "songs/Something Stupid (F major).mid",
+   "title": "Something Stupid (F major)",
+   "kind": "MIDI",
+   "sha1": "bc816ede5b11fb86b3bfd31e42ec73619f09ff7f",
+   "addedAt": "2026-11-06T23:44:43Z",
+   "units": {
+    "count": 26,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mw5mg741tzo16",
+   "file": "songs/Stardust (F major).mid",
+   "title": "Stardust (F major)",
+   "kind": "MIDI",
+   "sha1": "f2418c687c7a5fbe63e213cc40db3eadbcf45930",
+   "addedAt": "2026-11-06T23:44:43Z",
+   "units": {
+    "count": 41,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mw5mg742iq121",
+   "file": "songs/Strangers in the Night (F major).mid",
+   "title": "Strangers in the Night (F major)",
+   "kind": "MIDI",
+   "sha1": "7c2e6c6d9e0b1f34abc022c652dea56526028fc6",
+   "addedAt": "2026-11-06T23:44:43Z",
+   "units": {
+    "count": 14,
+    "unit": "Phrase"
+   }
+  },
+  {
+   "id": "unforgettable-g-major",
+   "file": "songs/Unforgettable (G major).mid",
+   "title": "Unforgettable (G major)",
+   "kind": "MIDI",
+   "sha1": "ad4a53d903b85ac812e2575e7cc18d71a04f7cfb",
+   "addedAt": "2026-11-06T23:45:39Z"
   },
   {
    "id": "removed-f6183bcd3eb5",
