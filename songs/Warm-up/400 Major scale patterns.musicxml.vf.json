@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-major-scale-patterns",
+ "title": "Major scale patterns",
+ "category": "warmup",
+ "order": 400,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 19,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Major scale patterns",
+  "lead": "The major scale in 3rds, in 4ths, in groups of four and in groups of three, in every key, placed where it fits between E3 and F5.",
+  "facts": [
+   [
+    "Keys",
+    "All 12, from B♭ up by half steps"
+   ]
+  ]
+ }
+}

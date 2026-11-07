@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-lip-slurs",
+ "title": "Lip slurs",
+ "category": "warmup",
+ "order": 20,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 7,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Lip slurs",
+  "lead": "The valves stay down for the whole bar; only the lips and the air change the note. Every note in a bar is written with the valves of its series, even where the chart would finger it another way. Keep the air moving and the sound the same size from the bottom note to the top.",
+  "facts": [
+   [
+    "Parts",
+    "Two notes, Three notes, Four notes, Five notes, Six notes, up to the 8th partial, Up to the top: the 16th partial, Lip trills"
+   ]
+  ]
+ }
+}

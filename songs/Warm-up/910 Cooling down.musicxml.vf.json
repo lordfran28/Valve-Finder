@@ -1,0 +1,38 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-cooling-down",
+ "title": "Cooling down",
+ "category": "warmup",
+ "order": 910,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:11:39Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 7,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 60,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "ghost",
+  "0:1:0": "ghost",
+  "0:2:0": "ghost",
+  "0:3:0": "ghost",
+  "0:4:0": "ghost",
+  "0:5:0": "ghost",
+  "0:6:0": "ghost"
+ },
+ "timing": null,
+ "details": {
+  "title": "Cooling down",
+  "lead": "As soft as you can, with a clear center to the sound. Lower and softer at the end. Then put the horn down."
+ }
+}

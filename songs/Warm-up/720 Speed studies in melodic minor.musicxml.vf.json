@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-speed-studies-in-melodic-minor",
+ "title": "Speed studies in melodic minor",
+ "category": "warmup",
+ "order": 720,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Speed studies in melodic minor",
+  "lead": "From Arpeggio Mastery: short bursts in melodic minor, as fast as they stay clean, then dotted rhythms, approach notes and three licks.",
+  "facts": [
+   [
+    "Keys",
+    "All 12, from B♭ up by half steps"
+   ]
+  ]
+ }
+}

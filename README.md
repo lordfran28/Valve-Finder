@@ -17,8 +17,11 @@ Every song is a file in the [`songs`](songs/) folder of this repository, so the 
 - **From the site:** on a device connected as owner, *Add a song* puts the file in `songs/` for you. Titles, settings and the notes typed under each note are saved beside it in `<file>.vf.json`.
 
 A `.vf.json` can also hold, written by hand:
-- `category`: `classical`, `contemporary` or `anthems`, the groups in the library's side column. A song without one goes under Classical if its title starts with a composer, otherwise Contemporary.
+- `category`: `classical`, `contemporary`, `anthems` or `warmup`, the groups in the library's side column. A song without one goes under Classical if its title starts with a composer, otherwise Contemporary.
+- `order`: a number that puts the warm-up exercises in playing order instead of A to Z.
 - `details`: the entry shown at the foot of the song, reached by *Details on the piece* at the top: `title`, `lead`, `facts` (pairs), `sections` (each a `heading` and `paragraphs`) and `sources` (each a `title` and `url`). The national anthems have one.
+
+The warm-up exercises are made by `tools/warmup/make_warmup.py`, which writes them into `songs/Warm-up/`: every note in concert pitch, one part per key, a fingering written on each note where it differs from the chart (the lip slurs), and a caption over the first bar of each section.
 
 `.github/workflows/song-index.yml` rewrites `songs/index.json`, the list the site reads, after every change to the folder.
 

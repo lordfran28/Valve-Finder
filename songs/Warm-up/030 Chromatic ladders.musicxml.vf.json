@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-chromatic-ladders",
+ "title": "Chromatic ladders",
+ "category": "warmup",
+ "order": 30,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 2,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 100,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Chromatic ladders",
+  "lead": "Every half step, one rung of the ladder at a time, from the bottom of the horn to double high B♭. The valves change on every note, so keep the fingers down firmly and the air steady between them.",
+  "facts": [
+   [
+    "Parts",
+    "E3 to B3, G3 to D4, C4 to G4, F4 to C5, B♭4 to F5, E♭5 to B♭5, B♭5 to F6, E♭6 to B♭6, All of them, low to high, The whole horn: E3 to B♭6 and back"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-pedal-tones",
+ "title": "Pedal tones",
+ "category": "warmup",
+ "order": 900,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 7,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 60,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Pedal tones",
+  "lead": "The notes an octave below the bottom of the horn, played with the valves of the note above. Loose lips, a lot of slow air. They relax the lips after high playing.",
+  "facts": [
+   [
+    "Parts",
+    "From each low note to its pedal, Pedal long tones: B♭2 down to E2"
+   ]
+  ]
+ }
+}

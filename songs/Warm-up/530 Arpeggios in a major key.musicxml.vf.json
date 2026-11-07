@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-arpeggios-in-a-major-key",
+ "title": "Arpeggios in a major key",
+ "category": "warmup",
+ "order": 530,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 29,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Arpeggios in a major key",
+  "lead": "The chord on every note of the major scale, as triads and as sevenths, up and down, the way Arpeggio Mastery does it in minor.",
+  "facts": [
+   [
+    "Keys",
+    "All 12, from B♭ up by half steps"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-long-tones",
+ "title": "Long tones",
+ "category": "warmup",
+ "order": 10,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 7,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 60,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "5:0:0": "swell",
+  "5:1:0": "swell",
+  "5:2:0": "swell",
+  "5:3:0": "swell",
+  "5:4:0": "swell",
+  "5:5:0": "swell",
+  "5:6:0": "swell",
+  "5:7:0": "swell",
+  "5:8:0": "swell",
+  "5:9:0": "swell",
+  "5:10:0": "swell",
+  "5:11:0": "swell",
+  "5:12:0": "swell",
+  "5:13:0": "swell"
+ },
+ "timing": null,
+ "details": {
+  "title": "Long tones",
+  "lead": "Slow notes to wake up the lips and warm the horn. Play each one softly with a steady, centered sound, and rest as long as the rest in the bar. Begin in the middle, go down, then up as far as the lips are ready for today.",
+  "facts": [
+   [
+    "Parts",
+    "Middle: F4 down to B3, Low: B♭3 down to E3, Middle and low: F4 down to E3, Up: F4 to B♭5, Top: B♭5 to double high B♭6, Swells, soft to loud to soft: F4 down to E3"
+   ]
+  ]
+ }
+}
