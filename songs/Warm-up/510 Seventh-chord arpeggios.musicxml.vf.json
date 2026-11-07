@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-seventh-chord-arpeggios",
+ "title": "Seventh-chord arpeggios",
+ "category": "warmup",
+ "order": 510,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 24,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Seventh-chord arpeggios",
+  "lead": "Eight kinds of seventh chord on every root, two octaves up and back: major 7th, dominant 7th, minor 7th, half-diminished, diminished, minor with a major 7th, augmented with a major 7th, and 7sus4.",
+  "facts": [
+   [
+    "Keys",
+    "All 12, from B♭ up by half steps"
+   ]
+  ]
+ }
+}

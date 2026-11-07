@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-tonguing",
+ "title": "Tonguing",
+ "category": "warmup",
+ "order": 70,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 5,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Tonguing",
+  "lead": "Short, even notes on a steady stream of air. The letters under the notes are the syllables: T is the tip of the tongue, K the back of it. Start slowly and keep T and K sounding the same.",
+  "facts": [
+   [
+    "Parts",
+    "Single tongue on B♭4, Single tongue, up and down the B♭ scale, Double tongue on B♭4, Double tongue, up and down the B♭ scale, Triple tongue on B♭4, Triple tongue, up and down the B♭ scale"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-bugle-calls",
+ "title": "Bugle calls",
+ "category": "warmup",
+ "order": 810,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 9,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:8:0": "fermata",
+  "1:16:0": "fermata",
+  "2:4:3": "fermata",
+  "4:2:0": "fermata",
+  "6:21:0": "fermata",
+  "10:3:4": "fermata",
+  "11:0:2": "fermata",
+  "11:1:2": "fermata",
+  "11:2:2": "fermata",
+  "11:3:2": "fermata",
+  "11:7:5": "fermata",
+  "12:7:3": "fermata",
+  "12:19:7": "fermata",
+  "13:1:0": "fermata",
+  "13:2:0": "fermata",
+  "13:4:0": "fermata",
+  "13:7:0": "fermata",
+  "14:8:0": "fermata"
+ },
+ "timing": null,
+ "details": {
+  "title": "Bugle calls",
+  "lead": "The old calls of the U.S. Army, played on open valves: the notes of the bugle, B♭3, F4, B♭4, D5 and F5. Each call keeps the tempo of the manual.",
+  "facts": [
+   [
+    "Parts",
+    "First Call, Reveille, Assembly, Mess Call, Attention, To the Colors, Retreat, Carry On, Adjutant’s Call, Officers’ Call, First Sergeant’s Call, Church Call, Tattoo, Taps, Echo Taps"
+   ],
+   [
+    "Valves",
+    "All open"
+   ]
+  ]
+ }
+}

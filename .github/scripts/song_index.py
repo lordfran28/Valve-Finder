@@ -282,6 +282,9 @@ def main():
                 entry["era"] = side["era"]
             if isinstance(side.get("year"), int):
                 entry["year"] = side["year"]
+            # warm-ups keep their playing order in the library
+            if isinstance(side.get("order"), int) and not isinstance(side.get("order"), bool):
+                entry["order"] = side["order"]
             units = side.get("units")
             if isinstance(units, dict) and isinstance(units.get("count"), int):
                 entry["units"] = {"count": units["count"], "unit": str(units.get("unit") or "Bar")}

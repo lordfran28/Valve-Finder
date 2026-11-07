@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-valve-crossings-and-finger-trills",
+ "title": "Valve crossings and finger trills",
+ "category": "warmup",
+ "order": 40,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 9,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 92,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Valve crossings and finger trills",
+  "lead": "Clean changes between fingerings: the valve goes all the way down and all the way up, on time, with the air going through the change.",
+  "facts": [
+   [
+    "Parts",
+    "The hardest changes, Every half step, E3 to B♭5, Every half step, B♭5 to double high B♭6, Every whole step, E3 to B♭5"
+   ]
+  ]
+ }
+}

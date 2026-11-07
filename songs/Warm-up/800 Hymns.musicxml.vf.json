@@ -1,0 +1,52 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-hymns",
+ "title": "Hymns",
+ "category": "warmup",
+ "order": 800,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 13,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Hymns",
+  "lead": "Four old hymn tunes, the soprano line, for a singing sound: long phrases, full breaths, no gaps between the notes.",
+  "facts": [
+   [
+    "Parts",
+    "Melita (Dykes, 1861), Eventide (Monk, 1861), New Britain (1831), Ein’ feste Burg (Luther, about 1529)"
+   ],
+   [
+    "Melita",
+    "John B. Dykes, 1861"
+   ],
+   [
+    "Eventide",
+    "William H. Monk, 1861"
+   ],
+   [
+    "New Britain",
+    "Virginia Harmony, 1831"
+   ],
+   [
+    "Ein’ feste Burg",
+    "Martin Luther, about 1529"
+   ]
+  ]
+ }
+}

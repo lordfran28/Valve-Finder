@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-bb-major-low-bb-to-double-high-bb",
+ "title": "B♭ major, low B♭ to double high B♭",
+ "category": "warmup",
+ "order": 100,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 4,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "B♭ major, low B♭ to double high B♭",
+  "lead": "The trumpet’s own scale, open low B♭ to double high B♭, every note: one octave at a time, then all three in one breath each way, then the whole horn from double high B♭ down to the bottom F, and last, slowly, a half note to every note. Rest a moment at the top of each run.",
+  "facts": [
+   [
+    "Parts",
+    "Low octave: B♭3 to B♭4, Middle octave: B♭4 to B♭5, High octave: B♭5 to double high B♭6, Low B♭3 to double high B♭6, up and down, Every note on the horn: F3 to B♭6, Slow, a half note each: B♭3 to B♭6 and back"
+   ]
+  ]
+ }
+}

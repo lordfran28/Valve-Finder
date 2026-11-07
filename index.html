@@ -533,7 +533,7 @@ function parsePart(partEl, name){
   var divisions = 1, transpose = null, tempo = null, firstVoice = null, timeLen = 4, curEnding = null, held = null;
   var measures = [];
   kids(partEl, "measure").forEach(function(m){
-    var meas = {number: m.getAttribute("number") || String(measures.length+1), notes:[], repeatStart:false, repeatEnd:0, ending:null, len:0};
+    var meas = {number: m.getAttribute("number") || String(measures.length+1), notes:[], repeatStart:false, repeatEnd:0, ending:null, len:0, words:""};
     var t = 0, last = null, endingStops = false;
     for (var i=0;i<m.children.length;i++){
       var el = m.children[i], n = el.nodeName;
@@ -550,6 +550,7 @@ function parsePart(partEl, name){
           transpose = {chrom:chrom, dia:dia, oct:oc};
         }
       } else if (n==="direction" || n==="sound"){
+        if (n==="direction"){ var wd = Array.prototype.map.call(el.querySelectorAll("words"), function(w){ return w.textContent.trim(); }).filter(Boolean).join(" "); if (wd) meas.words = meas.words ? meas.words + " · " + wd : wd; }
         var s = n==="sound" ? el : el.querySelector("sound");
         var tv = s ? parseFloat(s.getAttribute("tempo")) : NaN;
         if (tv > 0 && tempo === null) tempo = Math.round(tv);
@@ -581,7 +582,9 @@ function parsePart(partEl, name){
         var p = readPitch(el);
         if (!p){ t += durQ; last = null; continue; }
         var ties = kids(el, "tie").map(function(x){ return x.getAttribute("type"); });
-        var note = {src:p, t:t, durQ:durQ, grace:grace, tied: ties.indexOf("stop")>=0 && !!held, lyric: readLyric(el)};
+        /* a fingering written in the file (a lip slur keeps the valves of its series) takes the place of the chart's */
+        var fg = el.querySelector("notations technical fingering"), fgt = fg ? fg.textContent.trim().replace(/[-\s]/g, "") : "";
+        var note = {src:p, t:t, durQ:durQ, grace:grace, tied: ties.indexOf("stop")>=0 && !!held, lyric: readLyric(el), fing: /^(0|1?2?3?)$/.test(fgt) && fgt ? fgt : null};
         meas.notes.push(note); last = note;
         held = ties.indexOf("start")>=0 ? note : null;
         t += durQ;
@@ -862,7 +865,7 @@ function render(){
   seq.forEach(function(item, bi){
     var m = item.m, notes = [], cells = [], sTok = [];
     m.notes.forEach(function(n, ni){
-      var w = shiftPitch(n.src, off.dia, off.chrom), wm = midiOf(w), f = FING[wm];
+      var w = shiftPitch(n.src, off.dia, off.chrom), wm = midiOf(w), f = FING[wm] && n.fing ? n.fing : FING[wm];
       var at = boff + n.t, joined = join && !n.grace && !n.tied && prev && prev.wm === wm && at >= prev.start && at - prev.end <= 0.13;
       if (joined && prev.bi === bi){
         prev.note.durQ = Math.max(prev.note.durQ, n.t + n.durQ - prev.note.t);
@@ -876,7 +879,7 @@ function render(){
       if (n.tied) extras.push("held");
       if (n.grace) extras.push("grace");
       if (f && SLIDE[wm] && !n.tied) extras.push("3rd slide out");
-      if (showAlt && f && ALT[wm] && !n.tied) extras.push("alt " + fingLabel(ALT[wm]));
+      if (showAlt && f && ALT[wm] && ALT[wm] !== f && !n.tied) extras.push("alt " + fingLabel(ALT[wm]));
       var cls = "note" + (n.tied ? " tied" : "") + (f ? "" : " out");
       var dots = f ? '<span class="valves" aria-hidden="true">' + [1,2,3].map(function(k){ return '<i class="v' + (f.indexOf(String(k))>=0 ? " on" : "") + '"></i>'; }).join("") + "</span>" : "";
       var aria = "Trumpet " + noteWords(w) + ", concert " + noteWords(cp) + ", " + lab + (extras.length ? ", " + extras.join(", ") : "") + (n.lyric ? ", sung " + n.lyric : "");
@@ -898,6 +901,7 @@ function render(){
     notes.forEach(function(x){ if (!x.tied) heard++; });
     stripBars.push(sTok.length ? sTok.join(" ") : "-");
     var meta = [];
+    if (m.words) meta.push(m.words);
     if (String(bi+1) !== m.number) meta.push("m. " + m.number);
     if (m.stamp) meta.push(m.stamp);
     if (item.pass > 1) meta.push(ordinal(item.pass) + " time");
@@ -992,7 +996,7 @@ var Horn = (function(){
   function get(set, m){
     if (!man) return null;
     var n = nearest(set, m);
-    var b = n !== null && Math.abs(n - m) <= 5 ? bufs[set + ":" + n] : null;
+    var b = n !== null && Math.abs(n - m) <= 8 ? bufs[set + ":" + n] : null;
     if (!b) return set !== "mf" ? get("mf", m) : null;
     return {s: b, shift: (m - n)*100};
   }
@@ -1714,7 +1718,7 @@ function isLocked(rec){ return !!(rec && rec.inArchive && !isOwner()); }
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
 /* category and details are written by hand in the songs folder; saving from the site keeps them as they are */
-function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, category: rec.category || undefined, era: rec.era || undefined, year: rec.year || undefined, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null, details: rec.details || undefined}; }
+function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, category: rec.category || undefined, order: rec.order || undefined, era: rec.era || undefined, year: rec.year || undefined, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null, details: rec.details || undefined}; }
 function safeName(t){ return String(t || "").replace(/[\\/:*?"<>|#%\u0000-\u001f]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80) || "Song"; }
 function pickPath(rec){
   var used = {};
@@ -1873,7 +1877,7 @@ function composerFirst(t){
 }
 function isOld(meta, title){ return !!(composerOf(title) || (meta && (meta.era === "classical" || (meta.year && meta.year < 1920)))); }
 /* Categories. A song's own is set in its .vf.json; a song without one goes by its title: a composer or an old piece is Classical. */
-var CATS = [{id: "classical", label: "Classical"}, {id: "contemporary", label: "Contemporary"}, {id: "anthems", label: "Anthems"}];
+var CATS = [{id: "classical", label: "Classical"}, {id: "contemporary", label: "Contemporary"}, {id: "anthems", label: "Anthems"}, {id: "warmup", label: "Warm-up"}];
 var CAT_LABEL = {}; CATS.forEach(function(c){ CAT_LABEL[c.id] = c.label; });
 var libCat = (function(){ try { var c = localStorage.getItem("vf.cat"); return CAT_LABEL[c] ? c : "all"; } catch(e){ return "all"; } })();
 function catOf(x){
@@ -1909,7 +1913,9 @@ function renderLibrary(){
   });
   /* a copy of a song that's already on the site (added here from the same file) shows as the site's song */
   Object.keys(cache).forEach(function(id){ if (!seen[id] && !(cache[id].dupOf && seen[cache[id].dupOf])) list.push({rec: cache[id], meta: cache[id]}); });
-  list.forEach(function(x){ x.title = composerFirst(x.site && x.rec && !x.rec.dirty ? x.site.title : x.meta.title); x.key = sortKey(x.title); x.old = isOld(x.site || x.meta, x.title); x.cat = catOf(x); });
+  list.forEach(function(x){ x.title = composerFirst(x.site && x.rec && !x.rec.dirty ? x.site.title : x.meta.title); x.key = sortKey(x.title); x.old = isOld(x.site || x.meta, x.title); x.cat = catOf(x);
+    var ord = (x.site && x.site.order) || x.meta.order;
+    if (x.cat === "warmup") x.key = "\uffff" + ("0000" + (typeof ord === "number" ? ord : 9999)).slice(-4) + " " + x.key; });
   list.sort(function(a, b){ return a.key < b.key ? -1 : a.key > b.key ? 1 : 0; });
   var cat = renderCats(list);
   var q = sortKey($("search").value).split(" ").filter(Boolean);
@@ -1971,6 +1977,7 @@ function syncLibrary(){
           if (!r.dirty && listed[id].title) r.title = listed[id].title;
           if (!r.file) r.file = listed[id].file;
           if (listed[id].category) r.category = listed[id].category;
+          if (listed[id].order) r.order = listed[id].order;
           if (listed[id].details) r.details = listed[id].details;
           r.inArchive = true; return;
         }
@@ -2113,7 +2120,7 @@ function showRecord(rec){
     if (rec.inArchive && rec.file && !rec.dirty) fetchSidecar(rec.file).then(function(o){
       if (!o || rec.dirty || !(String(o.updatedAt || "") > String(rec.updatedAt || ""))) return;
       rec.title = o.title || rec.title; rec.era = o.era || rec.era; rec.year = o.year || rec.year; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.timing = o.timing || null; rec.updatedAt = o.updatedAt;
-      rec.category = o.category || rec.category; rec.details = o.details || rec.details;
+      rec.category = o.category || rec.category; rec.order = o.order || rec.order; rec.details = o.details || rec.details;
       rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       Store.put(rec);
       if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); renderDetails(rec); }
@@ -2133,7 +2140,7 @@ function openSong(id){
     if (!m) throw userErr("This song isn't on the site anymore.");
     return Promise.all([fetchBytes(m.file), fetchSidecar(m.file)]).then(function(got){
       var o = got[1] || {};
-      var rec = {id: m.id, file: m.file, title: o.title || m.title, category: o.category || m.category, details: o.details || m.details, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
+      var rec = {id: m.id, file: m.file, title: o.title || m.title, category: o.category || m.category, order: o.order || m.order, details: o.details || m.details, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
                  units: null, settings: o.settings || null, notes: o.notes || null, timing: o.timing || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
       rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       cache[rec.id] = rec;
@@ -2268,7 +2275,13 @@ $("detailslink").addEventListener("click", function(e){
 });
 $("detailstop").addEventListener("click", function(){ window.scrollTo({top: 0, behavior: reduceMotion ? "auto" : "smooth"}); });
 ["pitch","oct","repeats","join","alts"].forEach(function(id){ $(id).addEventListener("change", function(){ render(); scheduleSave(); }); });
-$("part").addEventListener("change", function(){ state.part = parseInt($("part").value, 10) || 0; render(); scheduleSave(); });
+$("part").addEventListener("change", function(){
+  /* parts written at their own tempo (the bugle calls, the hymns) bring it with them */
+  var parts = state.score ? state.score.parts : [], was = parts[state.part];
+  state.part = parseInt($("part").value, 10) || 0;
+  var now = parts[state.part];
+  if (was && now && now.tempo && was.tempo && now.tempo !== was.tempo) $("tempo").value = clampTempo(now.tempo);
+  render(); scheduleSave(); });
 $("tempo").addEventListener("change", function(){ $("tempo").value = clampTempo($("tempo").value); scheduleSave(); });
 $("title").addEventListener("change", function(){
   var rec = state.rec; if (!rec) return;

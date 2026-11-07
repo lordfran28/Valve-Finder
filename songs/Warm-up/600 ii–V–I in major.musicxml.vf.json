@@ -1,0 +1,36 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "warmup-ii-v-i-in-major",
+ "title": "ii–V–I in major",
+ "category": "warmup",
+ "order": 600,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-07T10:07:45Z",
+ "updatedAt": "2026-11-07T10:13:05Z",
+ "units": {
+  "count": 12,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "ii–V–I in major",
+  "lead": "The ii–V–I of every major key: the two guide-tone lines first, the 7ths and 3rds that move by step, then the arpeggios.",
+  "facts": [
+   [
+    "Keys",
+    "All 12, from B♭ up by half steps"
+   ]
+  ]
+ }
+}

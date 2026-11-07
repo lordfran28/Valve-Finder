@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-06T23:56:36Z",
+ "generatedAt": "2026-11-07T10:13:09Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -1239,6 +1239,1148 @@
    "units": {
     "count": 62,
     "unit": "Phrase"
+   }
+  },
+  {
+   "id": "warmup-long-tones",
+   "file": "songs/Warm-up/010 Long tones.musicxml",
+   "title": "Long tones",
+   "kind": "MusicXML",
+   "sha1": "c942df85de29f2500d464d262cace6d103613207",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 10,
+   "units": {
+    "count": 7,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Long tones",
+    "lead": "Slow notes to wake up the lips and warm the horn. Play each one softly with a steady, centered sound, and rest as long as the rest in the bar. Begin in the middle, go down, then up as far as the lips are ready for today.",
+    "facts": [
+     [
+      "Parts",
+      "Middle: F4 down to B3, Low: B♭3 down to E3, Middle and low: F4 down to E3, Up: F4 to B♭5, Top: B♭5 to double high B♭6, Swells, soft to loud to soft: F4 down to E3"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-lip-slurs",
+   "file": "songs/Warm-up/020 Lip slurs.musicxml",
+   "title": "Lip slurs",
+   "kind": "MusicXML",
+   "sha1": "597e684d441c9c4d99ee867f56f27e0d31ac50f9",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 20,
+   "units": {
+    "count": 7,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Lip slurs",
+    "lead": "The valves stay down for the whole bar; only the lips and the air change the note. Every note in a bar is written with the valves of its series, even where the chart would finger it another way. Keep the air moving and the sound the same size from the bottom note to the top.",
+    "facts": [
+     [
+      "Parts",
+      "Two notes, Three notes, Four notes, Five notes, Six notes, up to the 8th partial, Up to the top: the 16th partial, Lip trills"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-chromatic-ladders",
+   "file": "songs/Warm-up/030 Chromatic ladders.musicxml",
+   "title": "Chromatic ladders",
+   "kind": "MusicXML",
+   "sha1": "9d6f8a9e028cba980f696d30037142e8f8e9b4f5",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 30,
+   "units": {
+    "count": 2,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Chromatic ladders",
+    "lead": "Every half step, one rung of the ladder at a time, from the bottom of the horn to double high B♭. The valves change on every note, so keep the fingers down firmly and the air steady between them.",
+    "facts": [
+     [
+      "Parts",
+      "E3 to B3, G3 to D4, C4 to G4, F4 to C5, B♭4 to F5, E♭5 to B♭5, B♭5 to F6, E♭6 to B♭6, All of them, low to high, The whole horn: E3 to B♭6 and back"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-valve-crossings-and-finger-trills",
+   "file": "songs/Warm-up/040 Valve crossings and finger trills.musicxml",
+   "title": "Valve crossings and finger trills",
+   "kind": "MusicXML",
+   "sha1": "bc97cf89546736fdb470a19c5808249b78965a5f",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 40,
+   "units": {
+    "count": 9,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Valve crossings and finger trills",
+    "lead": "Clean changes between fingerings: the valve goes all the way down and all the way up, on time, with the air going through the change.",
+    "facts": [
+     [
+      "Parts",
+      "The hardest changes, Every half step, E3 to B♭5, Every half step, B♭5 to double high B♭6, Every whole step, E3 to B♭5"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-octaves",
+   "file": "songs/Warm-up/050 Octaves.musicxml",
+   "title": "Octaves",
+   "kind": "MusicXML",
+   "sha1": "fe0cfd5b2b3a6f10fc8ca1f22c7d9269b7d87d2a",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 50,
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Octaves",
+    "lead": "Each note, the octave above, and back. Slur them, then tongue them. Let the air do the jump and keep the mouthpiece still on the lips.",
+    "facts": [
+     [
+      "Parts",
+      "Up: E3 and E4, to B♭5 and B♭6, Down: B♭5 and B♭6, to E3 and E4"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-widening-intervals",
+   "file": "songs/Warm-up/060 Widening intervals.musicxml",
+   "title": "Widening intervals",
+   "kind": "MusicXML",
+   "sha1": "5d1299d330755c2e1c14cd1e5d768b88bd063713",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 60,
+   "units": {
+    "count": 13,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Widening intervals",
+    "lead": "From one note, out a half step above and below, then a whole step, and on to the octave. The middle note should sound the same every time you come back to it.",
+    "facts": [
+     [
+      "Parts",
+      "Around F4, Around B♭4, Around F5, Around B♭5"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-tonguing",
+   "file": "songs/Warm-up/070 Tonguing.musicxml",
+   "title": "Tonguing",
+   "kind": "MusicXML",
+   "sha1": "f4fa93a02b0b087f35abe5783ab0aedaccc431d1",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 70,
+   "units": {
+    "count": 5,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Tonguing",
+    "lead": "Short, even notes on a steady stream of air. The letters under the notes are the syllables: T is the tip of the tongue, K the back of it. Start slowly and keep T and K sounding the same.",
+    "facts": [
+     [
+      "Parts",
+      "Single tongue on B♭4, Single tongue, up and down the B♭ scale, Double tongue on B♭4, Double tongue, up and down the B♭ scale, Triple tongue on B♭4, Triple tongue, up and down the B♭ scale"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-bb-major-low-bb-to-double-high-bb",
+   "file": "songs/Warm-up/100 B♭ major, low B♭ to double high B♭.musicxml",
+   "title": "B♭ major, low B♭ to double high B♭",
+   "kind": "MusicXML",
+   "sha1": "6bbd1336a151d46d42002c8a1da6612cb8ce9594",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 100,
+   "units": {
+    "count": 4,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "B♭ major, low B♭ to double high B♭",
+    "lead": "The trumpet’s own scale, open low B♭ to double high B♭, every note: one octave at a time, then all three in one breath each way, then the whole horn from double high B♭ down to the bottom F, and last, slowly, a half note to every note. Rest a moment at the top of each run.",
+    "facts": [
+     [
+      "Parts",
+      "Low octave: B♭3 to B♭4, Middle octave: B♭4 to B♭5, High octave: B♭5 to double high B♭6, Low B♭3 to double high B♭6, up and down, Every note on the horn: F3 to B♭6, Slow, a half note each: B♭3 to B♭6 and back"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-major-scales",
+   "file": "songs/Warm-up/110 Major scales.musicxml",
+   "title": "Major scales",
+   "kind": "MusicXML",
+   "sha1": "83106318d6d37996dce79eed2e9f0d599b240b0b",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 110,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Major scales",
+    "lead": "The major scale in every key. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-natural-minor-scales",
+   "file": "songs/Warm-up/120 Natural minor scales.musicxml",
+   "title": "Natural minor scales",
+   "kind": "MusicXML",
+   "sha1": "cfcbca1a363cbf71fefe8913de92395f666d4dc3",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 120,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Natural minor scales",
+    "lead": "The natural minor scale (Aeolian) in every key. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-harmonic-minor-scales",
+   "file": "songs/Warm-up/130 Harmonic minor scales.musicxml",
+   "title": "Harmonic minor scales",
+   "kind": "MusicXML",
+   "sha1": "6974414dbe3ed5d4717260a96776347f40399661",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 130,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Harmonic minor scales",
+    "lead": "Harmonic minor: natural minor with the 7th raised, so the scale leans hard into the tonic. The step and a half between the 6th and 7th is its sound. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-melodic-minor-scales",
+   "file": "songs/Warm-up/140 Melodic minor scales.musicxml",
+   "title": "Melodic minor scales",
+   "kind": "MusicXML",
+   "sha1": "23640306a37591589a7f596d43e2f013af01c540",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 140,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Melodic minor scales",
+    "lead": "Melodic minor as jazz players use it, the same up and down: natural minor with the 6th and 7th raised. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-dorian-scales",
+   "file": "songs/Warm-up/150 Dorian scales.musicxml",
+   "title": "Dorian scales",
+   "kind": "MusicXML",
+   "sha1": "524d40e8b44acbecf3a7ccb0348f18517fa5eb11",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 150,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Dorian scales",
+    "lead": "Dorian: minor with a raised 6th. The minor 7th chord’s scale. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-phrygian-scales",
+   "file": "songs/Warm-up/160 Phrygian scales.musicxml",
+   "title": "Phrygian scales",
+   "kind": "MusicXML",
+   "sha1": "b8b6d4a2fa349b9944f1813b2ff53b55511e9968",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 160,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Phrygian scales",
+    "lead": "Phrygian: minor with a lowered 2nd, the dark Spanish sound. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-lydian-scales",
+   "file": "songs/Warm-up/170 Lydian scales.musicxml",
+   "title": "Lydian scales",
+   "kind": "MusicXML",
+   "sha1": "5624771861eb674f8346415310dfb2c8d3ba6a54",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 170,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Lydian scales",
+    "lead": "Lydian: major with a raised 4th. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-mixolydian-scales",
+   "file": "songs/Warm-up/180 Mixolydian scales.musicxml",
+   "title": "Mixolydian scales",
+   "kind": "MusicXML",
+   "sha1": "cd67654d136c46f4fb305ffa892a6d1f523a25e3",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 180,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Mixolydian scales",
+    "lead": "Mixolydian: major with a lowered 7th. The dominant 7th chord’s scale. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-locrian-scales",
+   "file": "songs/Warm-up/190 Locrian scales.musicxml",
+   "title": "Locrian scales",
+   "kind": "MusicXML",
+   "sha1": "d89e37c9c0670442cf867d35baff49c127abfd42",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 190,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Locrian scales",
+    "lead": "Locrian: the scale of the half-diminished chord, with a lowered 2nd and 5th. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-major-pentatonic-scales",
+   "file": "songs/Warm-up/200 Major pentatonic scales.musicxml",
+   "title": "Major pentatonic scales",
+   "kind": "MusicXML",
+   "sha1": "3c6207af0c2d806919fa327ecc8464786f9865b8",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 200,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Major pentatonic scales",
+    "lead": "Five notes of the major scale, without the 4th and 7th. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-minor-pentatonic-scales",
+   "file": "songs/Warm-up/210 Minor pentatonic scales.musicxml",
+   "title": "Minor pentatonic scales",
+   "kind": "MusicXML",
+   "sha1": "8b8a45c740a38464db43c55d061982506bf78137",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 210,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Minor pentatonic scales",
+    "lead": "Five notes of the minor scale, without the 2nd and 6th. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-blues-scales",
+   "file": "songs/Warm-up/220 Blues scales.musicxml",
+   "title": "Blues scales",
+   "kind": "MusicXML",
+   "sha1": "6cdc756e020fa450361436a58fb77e42bf748bb0",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 220,
+   "units": {
+    "count": 11,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Blues scales",
+    "lead": "Minor pentatonic with the lowered 5th, the blue note, added. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-major-blues-scales",
+   "file": "songs/Warm-up/230 Major blues scales.musicxml",
+   "title": "Major blues scales",
+   "kind": "MusicXML",
+   "sha1": "e1a45e13f06c2a914d84c3b5e3ddaadf9d43120a",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 230,
+   "units": {
+    "count": 10,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Major blues scales",
+    "lead": "Major pentatonic with the lowered 3rd added. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-bebop-dominant-scales",
+   "file": "songs/Warm-up/240 Bebop dominant scales.musicxml",
+   "title": "Bebop dominant scales",
+   "kind": "MusicXML",
+   "sha1": "85477a44abab84bbc02235fabd84d44ae60597a3",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 240,
+   "units": {
+    "count": 13,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Bebop dominant scales",
+    "lead": "Mixolydian with the major 7th added as a passing note, so the chord tones fall on the beats. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-lydian-dominant-scales",
+   "file": "songs/Warm-up/250 Lydian dominant scales.musicxml",
+   "title": "Lydian dominant scales",
+   "kind": "MusicXML",
+   "sha1": "d3f5c3bda84f5a0209bd7ed3d82558a045f3bf20",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 250,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Lydian dominant scales",
+    "lead": "Mixolydian with a raised 4th: the scale of a 7♯11 chord, the 4th mode of melodic minor. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-altered-scales",
+   "file": "songs/Warm-up/260 Altered scales.musicxml",
+   "title": "Altered scales",
+   "kind": "MusicXML",
+   "sha1": "fcff0dbe4f1b5563c168e86032daa2534e679ab0",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 260,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Altered scales",
+    "lead": "Every tension a dominant 7th can take: ♭9, ♯9, ♯11 and ♭13. The 7th mode of melodic minor. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-phrygian-dominant-scales",
+   "file": "songs/Warm-up/270 Phrygian dominant scales.musicxml",
+   "title": "Phrygian dominant scales",
+   "kind": "MusicXML",
+   "sha1": "392a35aa1305fde32837e0549738d623c06f27ab",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 270,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Phrygian dominant scales",
+    "lead": "The 5th mode of harmonic minor: the V7♭9 chord of a minor key, and the sound of flamenco. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-whole-tone-scales",
+   "file": "songs/Warm-up/280 Whole-tone scales.musicxml",
+   "title": "Whole-tone scales",
+   "kind": "MusicXML",
+   "sha1": "7f3281dc6e68f1858a1808d87bdce580eb1f3618",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 280,
+   "units": {
+    "count": 11,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Whole-tone scales",
+    "lead": "Six notes, each a whole step apart. There are only two different ones; every key here starts on its own note. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-diminished-scales-half-whole",
+   "file": "songs/Warm-up/290 Diminished scales, half-whole.musicxml",
+   "title": "Diminished scales, half-whole",
+   "kind": "MusicXML",
+   "sha1": "4bbf1803024521e739015347a0d9eae251c81725",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 290,
+   "units": {
+    "count": 13,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Diminished scales, half-whole",
+    "lead": "Half step, whole step, all the way up: the scale of a 7♭9 chord. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-diminished-scales-whole-half",
+   "file": "songs/Warm-up/300 Diminished scales, whole-half.musicxml",
+   "title": "Diminished scales, whole-half",
+   "kind": "MusicXML",
+   "sha1": "da67b41c0b2d64ebd49ca03ae4cf1230f3ae8091",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 300,
+   "units": {
+    "count": 13,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Diminished scales, whole-half",
+    "lead": "Whole step, half step, all the way up: the scale of a diminished 7th chord. Each key goes up and down two octaves from its lowest tonic, then over the whole horn: up to the highest note of the scale at or below double high B♭, down to the lowest, and back to the tonic.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-major-scale-patterns",
+   "file": "songs/Warm-up/400 Major scale patterns.musicxml",
+   "title": "Major scale patterns",
+   "kind": "MusicXML",
+   "sha1": "6cdbe28eb7fddc26fdb01900fba4b4cc80f05974",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 400,
+   "units": {
+    "count": 19,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Major scale patterns",
+    "lead": "The major scale in 3rds, in 4ths, in groups of four and in groups of three, in every key, placed where it fits between E3 and F5.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-harmonic-minor-patterns",
+   "file": "songs/Warm-up/410 Harmonic minor patterns.musicxml",
+   "title": "Harmonic minor patterns",
+   "kind": "MusicXML",
+   "sha1": "edd6647de13e5cff80864e19babefca89fb2902b",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 410,
+   "units": {
+    "count": 17,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Harmonic minor patterns",
+    "lead": "From Arpeggio Mastery: the harmonic minor scale in 3rds, in groups of four and of three, and the natural minor beside it. Each key sits where it fits between E3 and F5.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-melodic-minor-patterns",
+   "file": "songs/Warm-up/420 Melodic minor patterns.musicxml",
+   "title": "Melodic minor patterns",
+   "kind": "MusicXML",
+   "sha1": "19f05bf97cdef4cd2a73214ad46aadcb169ba38f",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 420,
+   "units": {
+    "count": 17,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Melodic minor patterns",
+    "lead": "From Arpeggio Mastery: the melodic minor scale in 3rds, in groups of four and of three, and the classical way, raised going up and lowered coming down. Each key sits where it fits between E3 and F5.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-triad-arpeggios",
+   "file": "songs/Warm-up/500 Triad arpeggios.musicxml",
+   "title": "Triad arpeggios",
+   "kind": "MusicXML",
+   "sha1": "45b5b9dc07d91c5ba1cecd8529a2136adccc7635",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 500,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Triad arpeggios",
+    "lead": "Major, minor, diminished and augmented triads on every root, two octaves up from the lowest root on the horn and back.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-seventh-chord-arpeggios",
+   "file": "songs/Warm-up/510 Seventh-chord arpeggios.musicxml",
+   "title": "Seventh-chord arpeggios",
+   "kind": "MusicXML",
+   "sha1": "ed242dc3196e578041eb5e5239ef73083d966c9a",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 510,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Seventh-chord arpeggios",
+    "lead": "Eight kinds of seventh chord on every root, two octaves up and back: major 7th, dominant 7th, minor 7th, half-diminished, diminished, minor with a major 7th, augmented with a major 7th, and 7sus4.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-ninth-chord-arpeggios",
+   "file": "songs/Warm-up/520 Ninth-chord arpeggios.musicxml",
+   "title": "Ninth-chord arpeggios",
+   "kind": "MusicXML",
+   "sha1": "e1eedfc81df74951bcff5ee8559a10cb6f179391",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 520,
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Ninth-chord arpeggios",
+    "lead": "Seven ninth chords on every root, up to the 9th and back, and again an octave higher where the horn has room.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-arpeggios-in-a-major-key",
+   "file": "songs/Warm-up/530 Arpeggios in a major key.musicxml",
+   "title": "Arpeggios in a major key",
+   "kind": "MusicXML",
+   "sha1": "6570fc533c055ff853ae7cf6c748f509bfb2bf4b",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 530,
+   "units": {
+    "count": 29,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Arpeggios in a major key",
+    "lead": "The chord on every note of the major scale, as triads and as sevenths, up and down, the way Arpeggio Mastery does it in minor.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-arpeggios-in-harmonic-minor",
+   "file": "songs/Warm-up/540 Arpeggios in harmonic minor.musicxml",
+   "title": "Arpeggios in harmonic minor",
+   "kind": "MusicXML",
+   "sha1": "e3ba9c6823d433d290e3321d903b20d885d8a964",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 540,
+   "units": {
+    "count": 29,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Arpeggios in harmonic minor",
+    "lead": "From Arpeggio Mastery: the chord on every note of harmonic minor, as triads and as sevenths, up and down. Say the chord name before you play it.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-arpeggios-in-melodic-minor",
+   "file": "songs/Warm-up/550 Arpeggios in melodic minor.musicxml",
+   "title": "Arpeggios in melodic minor",
+   "kind": "MusicXML",
+   "sha1": "47b59da84a8d3753354c698710caaccf10ba0437",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 550,
+   "units": {
+    "count": 29,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Arpeggios in melodic minor",
+    "lead": "From Arpeggio Mastery: the chord on every note of melodic minor, as triads and as sevenths, up and down. Say the chord name before you play it.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-ii-v-i-in-major",
+   "file": "songs/Warm-up/600 ii–V–I in major.musicxml",
+   "title": "ii–V–I in major",
+   "kind": "MusicXML",
+   "sha1": "10aa7cfbbb9d326ecd4d1401828863006355e71f",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 600,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "ii–V–I in major",
+    "lead": "The ii–V–I of every major key: the two guide-tone lines first, the 7ths and 3rds that move by step, then the arpeggios.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-ii-v-i-in-harmonic-minor",
+   "file": "songs/Warm-up/610 ii–V–i in harmonic minor.musicxml",
+   "title": "ii–V–i in harmonic minor",
+   "kind": "MusicXML",
+   "sha1": "e668493ee08d5749b27ffd8f4f26047567c5cb5f",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 610,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "ii–V–i in harmonic minor",
+    "lead": "From Arpeggio Mastery: the ii–V–i of harmonic minor. First the two guide-tone lines, the 3rds and 7ths that move by step from chord to chord; then the arpeggios.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-ii-v-i-in-melodic-minor",
+   "file": "songs/Warm-up/620 ii–V–i in melodic minor.musicxml",
+   "title": "ii–V–i in melodic minor",
+   "kind": "MusicXML",
+   "sha1": "cbdf6c66fcfda186dc95bbc9b26a5c006d376bdc",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 620,
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "ii–V–i in melodic minor",
+    "lead": "From Arpeggio Mastery: the ii–V–i of melodic minor. First the two guide-tone lines, the 3rds and 7ths that move by step from chord to chord; then the arpeggios.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-speed-studies-in-major",
+   "file": "songs/Warm-up/700 Speed studies in major.musicxml",
+   "title": "Speed studies in major",
+   "kind": "MusicXML",
+   "sha1": "50a3abcc0e77875c846af7f2fa50051f0f7e9629",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 700,
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Speed studies in major",
+    "lead": "Short bursts in major, as fast as they stay clean, then dotted rhythms, approach notes and three licks.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-speed-studies-in-harmonic-minor",
+   "file": "songs/Warm-up/710 Speed studies in harmonic minor.musicxml",
+   "title": "Speed studies in harmonic minor",
+   "kind": "MusicXML",
+   "sha1": "711c35886e6b7927f26eaa093555f5a79a849873",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 710,
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Speed studies in harmonic minor",
+    "lead": "From Arpeggio Mastery: short bursts in harmonic minor, as fast as they stay clean, then dotted rhythms, approach notes and three licks.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-speed-studies-in-melodic-minor",
+   "file": "songs/Warm-up/720 Speed studies in melodic minor.musicxml",
+   "title": "Speed studies in melodic minor",
+   "kind": "MusicXML",
+   "sha1": "bd33ca0518fef0c9f327a490eeced88019637785",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 720,
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Speed studies in melodic minor",
+    "lead": "From Arpeggio Mastery: short bursts in melodic minor, as fast as they stay clean, then dotted rhythms, approach notes and three licks.",
+    "facts": [
+     [
+      "Keys",
+      "All 12, from B♭ up by half steps"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-hymns",
+   "file": "songs/Warm-up/800 Hymns.musicxml",
+   "title": "Hymns",
+   "kind": "MusicXML",
+   "sha1": "3e7e27a935ce7ca9f29e64fae3e5785c553e50d3",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 800,
+   "units": {
+    "count": 13,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Hymns",
+    "lead": "Four old hymn tunes, the soprano line, for a singing sound: long phrases, full breaths, no gaps between the notes.",
+    "facts": [
+     [
+      "Parts",
+      "Melita (Dykes, 1861), Eventide (Monk, 1861), New Britain (1831), Ein’ feste Burg (Luther, about 1529)"
+     ],
+     [
+      "Melita",
+      "John B. Dykes, 1861"
+     ],
+     [
+      "Eventide",
+      "William H. Monk, 1861"
+     ],
+     [
+      "New Britain",
+      "Virginia Harmony, 1831"
+     ],
+     [
+      "Ein’ feste Burg",
+      "Martin Luther, about 1529"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-bugle-calls",
+   "file": "songs/Warm-up/810 Bugle calls.musicxml",
+   "title": "Bugle calls",
+   "kind": "MusicXML",
+   "sha1": "f0c2e0d1d09c34cbad55f91bedd300f096c86e32",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 810,
+   "units": {
+    "count": 9,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Bugle calls",
+    "lead": "The old calls of the U.S. Army, played on open valves: the notes of the bugle, B♭3, F4, B♭4, D5 and F5. Each call keeps the tempo of the manual.",
+    "facts": [
+     [
+      "Parts",
+      "First Call, Reveille, Assembly, Mess Call, Attention, To the Colors, Retreat, Carry On, Adjutant’s Call, Officers’ Call, First Sergeant’s Call, Church Call, Tattoo, Taps, Echo Taps"
+     ],
+     [
+      "Valves",
+      "All open"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-pedal-tones",
+   "file": "songs/Warm-up/900 Pedal tones.musicxml",
+   "title": "Pedal tones",
+   "kind": "MusicXML",
+   "sha1": "1f78b0f85d207748644debe63535cbc3cf82c096",
+   "addedAt": "2026-11-07T10:07:45Z",
+   "category": "warmup",
+   "order": 900,
+   "units": {
+    "count": 7,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Pedal tones",
+    "lead": "The notes an octave below the bottom of the horn, played with the valves of the note above. Loose lips, a lot of slow air. They relax the lips after high playing.",
+    "facts": [
+     [
+      "Parts",
+      "From each low note to its pedal, Pedal long tones: B♭2 down to E2"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "warmup-cooling-down",
+   "file": "songs/Warm-up/910 Cooling down.musicxml",
+   "title": "Cooling down",
+   "kind": "MusicXML",
+   "sha1": "0fb89e8a93dbe56c2ccc2a5b870db82709854965",
+   "addedAt": "2026-11-07T10:11:39Z",
+   "category": "warmup",
+   "order": 910,
+   "units": {
+    "count": 7,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Cooling down",
+    "lead": "As soft as you can, with a clear center to the sound. Lower and softer at the end. Then put the horn down."
    }
   },
   {
