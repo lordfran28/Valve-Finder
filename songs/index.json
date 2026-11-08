@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-07T10:13:09Z",
+ "generatedAt": "2026-11-08T20:37:50Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -91,7 +91,7 @@
    "file": "songs/Bewitched, Bothered and Bewildered, Rod Stewart and Cher.musicxml",
    "title": "Bewitched, Bothered and Bewildered — Rod Stewart and Cher (B♭ major)",
    "kind": "MusicXML",
-   "sha1": "c7ba1dcd681ce2d42d8726bf019cce78fe5e3bbd",
+   "sha1": "52884909192f78e150e576724abcc27c1ddcca9d",
    "addedAt": "2026-11-01T04:22:02Z",
    "category": "contemporary"
   },
@@ -100,7 +100,7 @@
    "file": "songs/Feels So Good, Chuck Mangione.musicxml",
    "title": "Feels So Good — Chuck Mangione (F major)",
    "kind": "MusicXML",
-   "sha1": "e8eb103b6cb99688d07c32ac9b3d56810043068a",
+   "sha1": "044392172a8b2f74f759aede8461acab846701d3",
    "addedAt": "2026-11-01T04:22:02Z",
    "category": "contemporary"
   },
@@ -109,7 +109,7 @@
    "file": "songs/Fly Me to the Moon, Max Perov.musicxml",
    "title": "Fly Me to the Moon — Max Perov (C major)",
    "kind": "MusicXML",
-   "sha1": "840c1c4e620a63fd46d6270212eed3a72f71a05a",
+   "sha1": "3ca4d89ac1ec2410a8b36b7d4bca9589ebb2b8f9",
    "addedAt": "2026-11-01T04:22:02Z",
    "category": "contemporary"
   },
@@ -118,7 +118,7 @@
    "file": "songs/My Funny Valentine, Max Perov.musicxml",
    "title": "My Funny Valentine — Max Perov (E♭ major)",
    "kind": "MusicXML",
-   "sha1": "16077d9b5479f15f0b55730fdb500a8d254c1dda",
+   "sha1": "8c0d27d6253deeb8beec13f4d44c9556f36bb076",
    "addedAt": "2026-11-01T04:22:02Z",
    "category": "contemporary"
   },
@@ -127,7 +127,7 @@
    "file": "songs/Quiet Nights of Quiet Stars, Max Perov.musicxml",
    "title": "Quiet Nights of Quiet Stars (Corcovado) — Max Perov (C major)",
    "kind": "MusicXML",
-   "sha1": "faecea865798cce618257c1fc6e8b7bfb6b262c9",
+   "sha1": "7652eb3d5e9449b1d40fe9897a9adbd2afa181d0",
    "addedAt": "2026-11-01T04:22:02Z",
    "category": "contemporary"
   },
@@ -136,7 +136,7 @@
    "file": "songs/You'd Be So Nice to Come Home To, Max Perov.musicxml",
    "title": "You’d Be So Nice to Come Home To — Max Perov (A minor)",
    "kind": "MusicXML",
-   "sha1": "ae0696f97df72dceed51ba0154c5d5c36da98fa2",
+   "sha1": "915788a924b0057876dcb8ecda0f981f6b56257d",
    "addedAt": "2026-11-01T04:22:02Z",
    "category": "contemporary"
   },
@@ -2501,11 +2501,11 @@
    "removed": true
   },
   {
-   "id": "removed-6235a4152670",
+   "id": "removed-55a8b216902c",
    "file": "songs/The Nearness of You, Frank Sinatra.musicxml",
    "title": "",
    "kind": "MusicXML",
-   "sha1": "6235a4152670b9d914034c8d94caf729989c81d6",
+   "sha1": "55a8b216902c9bcc664ef623da8bc191b1b86aff",
    "addedAt": "2026-11-02T03:45:34Z",
    "removed": true
   },
@@ -2834,20 +2834,20 @@
    "removed": true
   },
   {
-   "id": "removed-84000fa058a1",
+   "id": "removed-56387e867756",
    "file": "songs/Someday My Prince Will Come, Miles Davis.musicxml",
    "title": "",
    "kind": "MusicXML",
-   "sha1": "84000fa058a1f3f84d893099aed6bb52b28c90d1",
+   "sha1": "56387e8677569d56825c6e9331d365bd789c688e",
    "addedAt": "2026-11-02T00:37:31Z",
    "removed": true
   },
   {
-   "id": "removed-b86f3678c087",
+   "id": "removed-fca6c507a0e4",
    "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
    "title": "",
    "kind": "MusicXML",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
    "addedAt": "2026-11-01T07:14:35Z",
    "removed": true
   }
@@ -2925,7 +2925,7 @@
   },
   {
    "file": "songs/The Nearness of You, Frank Sinatra.musicxml",
-   "sha1": "6235a4152670b9d914034c8d94caf729989c81d6",
+   "sha1": "55a8b216902c9bcc664ef623da8bc191b1b86aff",
    "at": "2026-11-02T03:45:34Z"
   },
   {
@@ -3110,22 +3110,22 @@
   },
   {
    "file": "songs/Someday My Prince Will Come, Miles Davis.musicxml",
-   "sha1": "84000fa058a1f3f84d893099aed6bb52b28c90d1",
+   "sha1": "56387e8677569d56825c6e9331d365bd789c688e",
    "at": "2026-11-02T00:37:31Z"
   },
   {
    "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
    "at": "2026-11-01T07:14:35Z"
   },
   {
    "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz 2.musicxml",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
    "at": "2026-11-01T07:12:23Z"
   },
   {
    "file": "songs/Almost Blue, Chet Baker.musicxml",
-   "sha1": "b86f3678c0875f31fae4a0f64f2bc0cb0120bb61",
+   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
    "at": "2026-11-01T06:49:15Z"
   }
  ]
