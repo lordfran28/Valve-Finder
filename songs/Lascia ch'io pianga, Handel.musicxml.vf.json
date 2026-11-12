@@ -6,7 +6,7 @@
  "category": "classical",
  "kind": "MusicXML",
  "addedAt": "2026-11-02T03:49:14Z",
- "updatedAt": "2026-11-12T23:33:23.983Z",
+ "updatedAt": "2026-11-12T23:42:05.407Z",
  "units": {
   "count": 42,
   "unit": "Bar"
@@ -15,7 +15,7 @@
   "part": 0,
   "pitch": "auto",
   "oct": "0",
-  "tempo": 50,
+  "tempo": 70,
   "repeats": true,
   "join": false,
   "alts": false
