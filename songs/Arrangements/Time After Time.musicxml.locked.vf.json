@@ -1,0 +1,45 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arr-time-after-time",
+ "title": "Time After Time, after Rod Stewart",
+ "category": "arrangements",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-14T21:09:03Z",
+ "updatedAt": "2026-11-14T21:09:03Z",
+ "units": {
+  "count": 79,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 112,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "details": {
+  "title": "Time After Time",
+  "lead": "Rod Stewart's sung line, played straight on the trumpet. In his key, E, an octave up it would reach A♭5, so it is in E♭, a half step lower: concert C4 to G5 (written D4 to A5).",
+  "facts": [
+   [
+    "Song",
+    "Time After Time, as Rod Stewart sings it on the recording you sent"
+   ],
+   [
+    "Line",
+    "Rod's voice, read note by note and straightened"
+   ],
+   [
+    "Key",
+    "E♭ concert, F for the trumpet"
+   ],
+   [
+    "Form",
+    "The song as Rod sings it, with rests where the band plays alone"
+   ]
+  ]
+ }
+}

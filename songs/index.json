@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-14T20:38:27Z",
+ "generatedAt": "2026-11-14T21:09:07Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2483,6 +2483,150 @@
      [
       "Key",
       "G concert, A for the trumpet"
+     ],
+     [
+      "Form",
+      "The song as Rod sings it, with rests where the band plays alone"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-someone-to-watch-over-me",
+   "file": "songs/Arrangements/Someone to Watch Over Me.musicxml.locked",
+   "title": "Someone to Watch Over Me, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "f55c8565fc63cc347432623f5fe32933a588b2a9",
+   "addedAt": "2026-11-14T21:08:06Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Someone to Watch Over Me",
+    "lead": "Rod Stewart's sung line, played straight on the trumpet. In his key, E, an octave up it would reach A♭5, so it is in E♭, a half step lower: concert D♭4 to G5 (written E♭4 to A5).",
+    "facts": [
+     [
+      "Song",
+      "Someone to Watch Over Me, as Rod Stewart sings it on the recording you sent"
+     ],
+     [
+      "Line",
+      "Rod's voice, read note by note and straightened"
+     ],
+     [
+      "Key",
+      "E♭ concert, F for the trumpet"
+     ],
+     [
+      "Form",
+      "The song as Rod sings it, with rests where the band plays alone"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-thanks-for-the-memory",
+   "file": "songs/Arrangements/Thanks for the Memory.musicxml.locked",
+   "title": "Thanks for the Memory, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "8054dff139add61b2fee40d6204aa9b4c2c6640e",
+   "addedAt": "2026-11-14T21:08:06Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 83,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Thanks for the Memory",
+    "lead": "Rod Stewart's sung line, played straight on the trumpet. In his key, A, an octave up it would climb to B5, so it is in F, a third lower: concert A3 to G5 (written B3 to A5).",
+    "facts": [
+     [
+      "Song",
+      "Thanks for the Memory, as Rod Stewart sings it on the recording you sent"
+     ],
+     [
+      "Line",
+      "Rod's voice, read note by note and straightened"
+     ],
+     [
+      "Key",
+      "F concert, G for the trumpet"
+     ],
+     [
+      "Form",
+      "The song as Rod sings it, with rests where the band plays alone"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-i-only-have-eyes-for-you",
+   "file": "songs/Arrangements/I Only Have Eyes for You.musicxml.locked",
+   "title": "I Only Have Eyes for You, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "53e8cecbcfc613618785ed2f218431df720b4ba1",
+   "addedAt": "2026-11-14T21:09:03Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 77,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Only Have Eyes for You",
+    "lead": "Rod Stewart's sung line, played straight on the trumpet. In his key, E♭, an octave up it would reach B♭5, so it is in C, a third lower: concert B3 to G5 (written C♯4 to A5).",
+    "facts": [
+     [
+      "Song",
+      "I Only Have Eyes for You, as Rod Stewart sings it on the recording you sent"
+     ],
+     [
+      "Line",
+      "Rod's voice, read note by note and straightened"
+     ],
+     [
+      "Key",
+      "C concert, D for the trumpet"
+     ],
+     [
+      "Form",
+      "The song as Rod sings it, with rests where the band plays alone"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-time-after-time",
+   "file": "songs/Arrangements/Time After Time.musicxml.locked",
+   "title": "Time After Time, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "08d5a903daf0bee1525fccaf86083d27c03a81c7",
+   "addedAt": "2026-11-14T21:09:03Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 79,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Time After Time",
+    "lead": "Rod Stewart's sung line, played straight on the trumpet. In his key, E, an octave up it would reach A♭5, so it is in E♭, a half step lower: concert C4 to G5 (written D4 to A5).",
+    "facts": [
+     [
+      "Song",
+      "Time After Time, as Rod Stewart sings it on the recording you sent"
+     ],
+     [
+      "Line",
+      "Rod's voice, read note by note and straightened"
+     ],
+     [
+      "Key",
+      "E♭ concert, F for the trumpet"
      ],
      [
       "Form",

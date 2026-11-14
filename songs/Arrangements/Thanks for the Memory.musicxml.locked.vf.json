@@ -1,0 +1,45 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arr-thanks-for-the-memory",
+ "title": "Thanks for the Memory, after Rod Stewart",
+ "category": "arrangements",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-14T21:08:06Z",
+ "updatedAt": "2026-11-14T21:08:06Z",
+ "units": {
+  "count": 83,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "details": {
+  "title": "Thanks for the Memory",
+  "lead": "Rod Stewart's sung line, played straight on the trumpet. In his key, A, an octave up it would climb to B5, so it is in F, a third lower: concert A3 to G5 (written B3 to A5).",
+  "facts": [
+   [
+    "Song",
+    "Thanks for the Memory, as Rod Stewart sings it on the recording you sent"
+   ],
+   [
+    "Line",
+    "Rod's voice, read note by note and straightened"
+   ],
+   [
+    "Key",
+    "F concert, G for the trumpet"
+   ],
+   [
+    "Form",
+    "The song as Rod sings it, with rests where the band plays alone"
+   ]
+  ]
+ }
+}
