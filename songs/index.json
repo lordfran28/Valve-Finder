@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-14T21:31:23Z",
+ "generatedAt": "2026-11-14T21:33:03Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2451,42 +2451,6 @@
      [
       "Form",
       "Verse, chorus twice, second verse, chorus three times, bridge four times, last chorus"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "arr-a-nightingale-sang-in-berkeley-square",
-   "file": "songs/Arrangements/A Nightingale Sang in Berkeley Square.musicxml.locked",
-   "title": "A Nightingale Sang in Berkeley Square, after Rod Stewart",
-   "kind": "MusicXML",
-   "sha1": "94c79ff6b9a106c2d786fa0a1d0f251cf6abfcb4",
-   "addedAt": "2026-11-14T20:38:26Z",
-   "locked": true,
-   "category": "arrangements",
-   "units": {
-    "count": 80,
-    "unit": "Bar"
-   },
-   "details": {
-    "title": "A Nightingale Sang in Berkeley Square",
-    "lead": "Rod Stewart's sung line, played straight on the trumpet, an octave above where he sings it, in his key: concert D4 to G5 (written E4 to A5).",
-    "facts": [
-     [
-      "Song",
-      "A Nightingale Sang in Berkeley Square, as Rod Stewart sings it on the recording you sent"
-     ],
-     [
-      "Line",
-      "Rod's voice, read note by note and straightened"
-     ],
-     [
-      "Key",
-      "G concert, A for the trumpet"
-     ],
-     [
-      "Form",
-      "The song as Rod sings it, with rests where the band plays alone"
      ]
     ]
    }
