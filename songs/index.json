@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-14T21:10:59Z",
+ "generatedAt": "2026-11-14T21:14:04Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2663,6 +2663,42 @@
      [
       "Key",
       "B♭ concert, C for the trumpet"
+     ],
+     [
+      "Form",
+      "The song as Rod sings it, with rests where Arturo Sandoval's trumpet takes the solo"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-that-old-feeling",
+   "file": "songs/Arrangements/That Old Feeling.musicxml.locked",
+   "title": "That Old Feeling, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "4dab304e891fa94603148f92272161a13cd9f91f",
+   "addedAt": "2026-11-14T21:14:04Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 74,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "That Old Feeling",
+    "lead": "Rod Stewart's sung line, played straight on the trumpet, an octave above where he sings it, in his key: concert D♭4 to G5 (written E♭4 to A5).",
+    "facts": [
+     [
+      "Song",
+      "That Old Feeling, as Rod Stewart sings it on the recording you sent"
+     ],
+     [
+      "Line",
+      "Rod's voice, read note by note and straightened"
+     ],
+     [
+      "Key",
+      "F concert, G for the trumpet"
      ],
      [
       "Form",
