@@ -1,0 +1,45 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arr-till-there-was-you",
+ "title": "Till There Was You, after Rod Stewart",
+ "category": "arrangements",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-14T21:25:25Z",
+ "updatedAt": "2026-11-14T21:25:25Z",
+ "units": {
+  "count": 56,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 92,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "details": {
+  "title": "Till There Was You",
+  "lead": "Rod Stewart's sung line, played straight on the trumpet, an octave above where he sings it, in his key: concert D4 to G♭5 (written E4 to A♭5).",
+  "facts": [
+   [
+    "Song",
+    "Till There Was You, as Rod Stewart sings it on the recording you sent"
+   ],
+   [
+    "Line",
+    "Rod's voice, read note by note and straightened"
+   ],
+   [
+    "Key",
+    "E concert, F♯ for the trumpet"
+   ],
+   [
+    "Form",
+    "The song as Rod sings it, with rests where the band plays alone"
+   ]
+  ]
+ }
+}
