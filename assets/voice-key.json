@@ -1,0 +1,7 @@
+{
+ "kty": "EC",
+ "crv": "P-256",
+ "x": "W-aOu7Qr74BvoKcDhHzZZ4hN1mxr6MPZVFYXGTXwjl4",
+ "y": "Sb390SPx3tvpNnNB1f_1gnvT0m8NPx1tQyGeoy6jaqM",
+ "note": "Public half of the owner's singer key. Tracks are locked to it with tools/lock_voice.mjs."
+}

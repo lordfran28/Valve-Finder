@@ -1647,6 +1647,40 @@ var archive = [], archiveAt = null;
 function siteUrl(path){ return path.split("/").map(encodeURIComponent).join("/") + "?v=" + Date.now(); }
 function fetchIndex(){ return fetch(siteUrl("songs/index.json"), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : (r.status === 404 ? {songs: []} : null); }).catch(function(){ return null; }); }
 function fetchBytes(path){ return fetch(siteUrl(path), {cache: "no-store"}).then(function(r){ if (!r.ok) throw userErr("This song isn't on the site anymore."); return r.arrayBuffer(); }).then(function(ab){ return new Uint8Array(ab); }); }
+/* Arrangements: songs locked to the singer key that Fret Finder and Key Finder use ("FFV1" files). The key sits in this
+   browser under the same name on all three sites, so a device that opened one opens these. Without it they don't show. */
+var Sealed = (function(){
+  var S = window.crypto && crypto.subtle, KEY = "ff.voicekey", INFO = new TextEncoder().encode("fret-finder voice"), pubP = null, dMemo = {};
+  function key(){ try { return localStorage.getItem(KEY) || ""; } catch(e){ return ""; } }
+  function pub(){ return pubP || (pubP = fetch(siteUrl("assets/voice-key.json")).then(function(r){ return r.json(); })); }
+  function toD(w){
+    w = String(w || "").replace(/\s+/g, "");
+    if (/^[A-Za-z0-9_-]{43}$/.test(w)) return Promise.resolve(w);
+    w = w.toLowerCase();
+    if (dMemo[w]) return dMemo[w];
+    var te = new TextEncoder();
+    return (dMemo[w] = S.importKey("raw", te.encode(w), "PBKDF2", false, ["deriveBits"])
+      .then(function(k){ return S.deriveBits({name: "PBKDF2", hash: "SHA-256", salt: te.encode("fret-finder voice key"), iterations: 100000}, k, 256); })
+      .then(function(b){ var t = ""; new Uint8Array(b).forEach(function(c){ t += String.fromCharCode(c); }); return btoa(t).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); }));
+  }
+  function open(u){
+    if (!S || !key()) return Promise.reject(userErr("This song opens with the singer key."));
+    if (u.length < 82 || String.fromCharCode(u[0], u[1], u[2], u[3]) !== "FFV1") return Promise.reject(userErr("This song's file couldn't be read."));
+    var epk = u.slice(4, 69), iv = u.slice(69, 81), ct = u.slice(81);
+    return Promise.all([pub(), toD(key())]).then(function(pd){
+      return Promise.all([
+        S.importKey("jwk", {kty: "EC", crv: "P-256", x: pd[0].x, y: pd[0].y, d: pd[1], ext: true}, {name: "ECDH", namedCurve: "P-256"}, false, ["deriveBits"]),
+        S.importKey("raw", epk, {name: "ECDH", namedCurve: "P-256"}, false, [])
+      ]);
+    }).then(function(k){ return S.deriveBits({name: "ECDH", public: k[1]}, k[0], 256); })
+      .then(function(bits){ return S.importKey("raw", bits, "HKDF", false, ["deriveKey"]); })
+      .then(function(hk){ return S.deriveKey({name: "HKDF", hash: "SHA-256", salt: epk, info: INFO}, hk, {name: "AES-GCM", length: 256}, false, ["decrypt"]); })
+      .then(function(k){ return S.decrypt({name: "AES-GCM", iv: iv}, k, ct); })
+      .then(function(pt){ return new Uint8Array(pt); }, function(e){ throw e && e.user ? e : userErr("This song opens with the singer key."); });
+  }
+  return {has: function(){ return !!(S && key()); }, open: open};
+})();
+function sealedOk(m){ return !m.locked || Sealed.has(); }
 function fetchSidecar(path){ return fetch(siteUrl(path + ".vf.json"), {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }); }
 
 var Owner = (function(){
@@ -1877,7 +1911,7 @@ function composerFirst(t){
 }
 function isOld(meta, title){ return !!(composerOf(title) || (meta && (meta.era === "classical" || (meta.year && meta.year < 1920)))); }
 /* Categories. A song's own is set in its .vf.json; a song without one goes by its title: a composer or an old piece is Classical. */
-var CATS = [{id: "classical", label: "Classical"}, {id: "contemporary", label: "Contemporary"}, {id: "anthems", label: "Anthems"}, {id: "warmup", label: "Warm-up"}];
+var CATS = [{id: "classical", label: "Classical"}, {id: "contemporary", label: "Contemporary"}, {id: "anthems", label: "Anthems"}, {id: "arrangements", label: "Arrangements"}, {id: "warmup", label: "Warm-up"}];
 var CAT_LABEL = {}; CATS.forEach(function(c){ CAT_LABEL[c.id] = c.label; });
 var libCat = (function(){ try { var c = localStorage.getItem("vf.cat"); return CAT_LABEL[c] ? c : "all"; } catch(e){ return "all"; } })();
 function catOf(x){
@@ -1960,7 +1994,7 @@ function syncLibrary(){
     if (ix){
       (Array.isArray(ix.removed) ? ix.removed : []).forEach(function(x){ if (x && x.sha1) removed[x.sha1] = Date.parse(x.at) || 0; if (x && x.file) removedFile[x.file] = 1; });
       var gone = goneList(), now = Date.now();
-      archive = (Array.isArray(ix.songs) ? ix.songs : []).filter(function(m){ return m && m.id && m.file && !m.removed && !(gone[m.id] && now - gone[m.id] < 36e5); });
+      archive = (Array.isArray(ix.songs) ? ix.songs : []).filter(function(m){ return m && m.id && m.file && !m.removed && sealedOk(m) && !(gone[m.id] && now - gone[m.id] < 36e5); });
       archiveAt = ix.generatedAt || null;
       var listed = {}, byFile = {}; archive.forEach(function(m){ listed[m.id] = m; byFile[m.file] = m; });
       Object.keys(cache).forEach(function(id){
@@ -2135,10 +2169,10 @@ function openSong(id){
   setTitle("", true); $("bars").innerHTML = ""; $("strip").textContent = ""; $("fmeta").textContent = "";
   songMsg("Opening…");
   var meta = archive.filter(function(m){ return m.id === id; })[0];
-  var ready = meta ? Promise.resolve(meta) : fetchIndex().then(function(ix){ if (ix && Array.isArray(ix.songs)) archive = ix.songs.filter(function(m){ return m && m.id && m.file && !m.removed; }); return archive.filter(function(m){ return m.id === id; })[0]; });
+  var ready = meta ? Promise.resolve(meta) : fetchIndex().then(function(ix){ if (ix && Array.isArray(ix.songs)) archive = ix.songs.filter(function(m){ return m && m.id && m.file && !m.removed && sealedOk(m); }); return archive.filter(function(m){ return m.id === id; })[0]; });
   return ready.then(function(m){
     if (!m) throw userErr("This song isn't on the site anymore.");
-    return Promise.all([fetchBytes(m.file), fetchSidecar(m.file)]).then(function(got){
+    return Promise.all([fetchBytes(m.file).then(function(b){ return m.locked ? Sealed.open(b) : b; }), fetchSidecar(m.file)]).then(function(got){
       var o = got[1] || {};
       var rec = {id: m.id, file: m.file, title: o.title || m.title, category: o.category || m.category, order: o.order || m.order, details: o.details || m.details, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
                  units: null, settings: o.settings || null, notes: o.notes || null, timing: o.timing || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};

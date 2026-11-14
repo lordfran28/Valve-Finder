@@ -251,6 +251,9 @@ def main():
         dirs[:] = sorted(d for d in dirs if not d.startswith("."))
         for name in sorted(files):
             stem, ext = os.path.splitext(name)
+            locked = ext.lower() == ".locked"          # an arrangement locked to the singer key: "<song>.musicxml.locked"
+            if locked:
+                stem, ext = os.path.splitext(stem)
             if ext.lower() not in KINDS or name.startswith("."):
                 continue
             path = os.path.join(folder, name).replace(os.sep, "/")
@@ -262,7 +265,7 @@ def main():
                 side = {}
             sid = str(side.get("id") or "")
             if not re.fullmatch(r"[A-Za-z0-9_-]{1,80}", sid) or sid in used:
-                base = slug(os.path.splitext(path[len(ROOT) + 1:])[0])
+                base = slug(re.sub(r"(\.[A-Za-z]+)?\.locked$", "", os.path.splitext(path[len(ROOT) + 1:])[0] if not locked else path[len(ROOT) + 1:]))
                 sid, n = base, 2
                 while sid in used:
                     sid, n = "%s-%d" % (base, n), n + 1
@@ -275,7 +278,9 @@ def main():
                 "sha1": sha1(path),
                 "addedAt": utc(side.get("addedAt") or first_added(path)),
             }
-            # the library's side column groups songs by this (classical, contemporary, anthems)
+            if locked:
+                entry["locked"] = True
+            # the library's side column groups songs by this (classical, contemporary, anthems, arrangements)
             if isinstance(side.get("category"), str) and re.fullmatch(r"[a-z][a-z-]{0,29}", side["category"]):
                 entry["category"] = side["category"]
             if side.get("era") in ("classical",):

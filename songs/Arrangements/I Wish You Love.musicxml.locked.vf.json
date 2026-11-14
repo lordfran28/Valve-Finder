@@ -1,0 +1,45 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arr-i-wish-you-love",
+ "title": "I Wish You Love, after Michael Bublé",
+ "category": "arrangements",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-14T19:00:17Z",
+ "updatedAt": "2026-11-14T19:00:17Z",
+ "units": {
+  "count": 41,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 84,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "details": {
+  "title": "I Wish You Love",
+  "lead": "Michael Bublé's sung line, played straight on the trumpet, in A♭ so it sits where the trumpet sings: written G4 to G5. Two flourishes only: a quick turn into the bridge's long note, and a last turn home after the final note.",
+  "facts": [
+   [
+    "Song",
+    "Charles Trenet (Que reste-t-il de nos amours, 1942); English words by Albert Beach"
+   ],
+   [
+    "Line",
+    "Michael Bublé's singing, read from his voice and straightened"
+   ],
+   [
+    "Key",
+    "A♭ concert, B♭ for the trumpet"
+   ],
+   [
+    "Form",
+    "Pickup, A, A, bridge, A, coda"
+   ]
+  ]
+ }
+}
