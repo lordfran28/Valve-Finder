@@ -1,0 +1,45 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arr-moonglow",
+ "title": "Moonglow, after Rod Stewart",
+ "category": "arrangements",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-14T21:10:47Z",
+ "updatedAt": "2026-11-14T21:10:47Z",
+ "units": {
+  "count": 73,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 91,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "details": {
+  "title": "Moonglow",
+  "lead": "Rod Stewart's sung line, played straight on the trumpet, an octave above where he sings it, in his key: concert D4 to G5 (written E4 to A5).",
+  "facts": [
+   [
+    "Song",
+    "Moonglow, as Rod Stewart sings it on the recording you sent"
+   ],
+   [
+    "Line",
+    "Rod's voice, read note by note and straightened"
+   ],
+   [
+    "Key",
+    "B♭ concert, C for the trumpet"
+   ],
+   [
+    "Form",
+    "The song as Rod sings it, with rests where Arturo Sandoval's trumpet takes the solo"
+   ]
+  ]
+ }
+}
