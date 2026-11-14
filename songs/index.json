@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-14T21:14:04Z",
+ "generatedAt": "2026-11-14T21:20:41Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2703,6 +2703,42 @@
      [
       "Form",
       "The song as Rod sings it, with rests where Arturo Sandoval's trumpet takes the solo"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-i-ll-be-seeing-you",
+   "file": "songs/Arrangements/I'll Be Seeing You.musicxml.locked",
+   "title": "I'll Be Seeing You, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "dcefc0a12d416535cd8da009dd0dc1c4e7e1596f",
+   "addedAt": "2026-11-14T21:20:40Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 86,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I'll Be Seeing You",
+    "lead": "Rod Stewart's sung line, played straight on the trumpet, an octave above where he sings it, in his key: concert C4 to G5 (written D4 to A5).",
+    "facts": [
+     [
+      "Song",
+      "I'll Be Seeing You, as Rod Stewart sings it on the recording you sent"
+     ],
+     [
+      "Line",
+      "Rod's voice, read note by note and straightened"
+     ],
+     [
+      "Key",
+      "G♭ concert, A♭ for the trumpet"
+     ],
+     [
+      "Form",
+      "The song as Rod sings it, the verse first, with rests where the band plays alone"
      ]
     ]
    }
