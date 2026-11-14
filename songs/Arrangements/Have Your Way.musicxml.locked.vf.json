@@ -1,0 +1,45 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arr-have-your-way",
+ "title": "Have Your Way, after Darlene Zschech",
+ "category": "arrangements",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-14T20:16:16Z",
+ "updatedAt": "2026-11-14T20:16:16Z",
+ "units": {
+  "count": 78,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "details": {
+  "title": "Have Your Way",
+  "lead": "The singer's line on the trumpet, as she sings it, in the record's key: it runs from concert A3 to C5 (written B3 to D5), well under G5, so nothing moves. Played straight, with her phrasing and her long notes.",
+  "facts": [
+   [
+    "Song",
+    "Have Your Way, as Darlene Zschech sings it on the recording you sent"
+   ],
+   [
+    "Line",
+    "The singer's voice, read note by note and straightened"
+   ],
+   [
+    "Key",
+    "F concert, G for the trumpet"
+   ],
+   [
+    "Form",
+    "Verse, chorus twice, second verse, chorus three times, bridge four times, last chorus"
+   ]
+  ]
+ }
+}

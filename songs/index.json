@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-14T19:00:18Z",
+ "generatedAt": "2026-11-14T20:16:17Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2415,6 +2415,42 @@
      [
       "Form",
       "Pickup, A, A, bridge, A, coda"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-have-your-way",
+   "file": "songs/Arrangements/Have Your Way.musicxml.locked",
+   "title": "Have Your Way, after Darlene Zschech",
+   "kind": "MusicXML",
+   "sha1": "23dab05ca3facbdb02512b008242d4c6121441ca",
+   "addedAt": "2026-11-14T20:16:16Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 78,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Have Your Way",
+    "lead": "The singer's line on the trumpet, as she sings it, in the record's key: it runs from concert A3 to C5 (written B3 to D5), well under G5, so nothing moves. Played straight, with her phrasing and her long notes.",
+    "facts": [
+     [
+      "Song",
+      "Have Your Way, as Darlene Zschech sings it on the recording you sent"
+     ],
+     [
+      "Line",
+      "The singer's voice, read note by note and straightened"
+     ],
+     [
+      "Key",
+      "F concert, G for the trumpet"
+     ],
+     [
+      "Form",
+      "Verse, chorus twice, second verse, chorus three times, bridge four times, last chorus"
      ]
     ]
    }
