@@ -1,0 +1,45 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arr-a-nightingale-sang-in-berkeley-square",
+ "title": "A Nightingale Sang in Berkeley Square, after Rod Stewart",
+ "category": "arrangements",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-14T20:38:26Z",
+ "updatedAt": "2026-11-14T20:38:26Z",
+ "units": {
+  "count": 80,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 86,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "details": {
+  "title": "A Nightingale Sang in Berkeley Square",
+  "lead": "Rod Stewart's sung line, played straight on the trumpet, an octave above where he sings it, in his key: concert D4 to G5 (written E4 to A5).",
+  "facts": [
+   [
+    "Song",
+    "A Nightingale Sang in Berkeley Square, as Rod Stewart sings it on the recording you sent"
+   ],
+   [
+    "Line",
+    "Rod's voice, read note by note and straightened"
+   ],
+   [
+    "Key",
+    "G concert, A for the trumpet"
+   ],
+   [
+    "Form",
+    "The song as Rod sings it, with rests where the band plays alone"
+   ]
+  ]
+ }
+}
