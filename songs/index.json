@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-14T21:48:08Z",
+ "generatedAt": "2026-11-15T05:23:42Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2451,42 +2451,6 @@
      [
       "Form",
       "Verse, chorus twice, second verse, chorus three times, bridge four times, last chorus"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "arr-till-there-was-you",
-   "file": "songs/Arrangements/Till There Was You.musicxml.locked",
-   "title": "Till There Was You, after Rod Stewart",
-   "kind": "MusicXML",
-   "sha1": "f4a6fa020db31e7f322bc1ecfc0df8c547f60bb3",
-   "addedAt": "2026-11-14T21:48:07Z",
-   "locked": true,
-   "category": "arrangements",
-   "units": {
-    "count": 48,
-    "unit": "Bar"
-   },
-   "details": {
-    "title": "Till There Was You",
-    "lead": "Rod Stewart's sung line, written out by hand from his voice, a note for each word he sings, without his slides and scoops. An octave above where he sings it, in his key: concert D♯4 to F♯5 (written F4 to G♯5).",
-    "facts": [
-     [
-      "Song",
-      "Till There Was You, as Rod Stewart sings it on the recording you sent"
-     ],
-     [
-      "Line",
-      "Rod's voice, written out by hand, bar by bar"
-     ],
-     [
-      "Key",
-      "E concert, F♯ for the trumpet"
-     ],
-     [
-      "Form",
-      "Pickup, A, A, bridge, A, bridge, A. The band's chorus in the middle is left out."
      ]
     ]
    }
