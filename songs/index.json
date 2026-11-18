@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T18:15:20Z",
+ "generatedAt": "2026-11-18T18:16:35Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3839,6 +3839,24 @@
    "kind": "MIDI",
    "sha1": "a89474f19c9d8b87c9585b3a32fb5e7a6a7bc90c",
    "addedAt": "2026-11-18T18:20:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "home-sweet-home-bishop",
+   "file": "songs/Home Sweet Home, Bishop.mid",
+   "title": "Bishop – Home, Sweet Home",
+   "kind": "MIDI",
+   "sha1": "b94ccb4f8db8cd7ea45087c08ee41ac408d40a09",
+   "addedAt": "2026-11-18T18:28:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "the-last-rose-of-summer-moore",
+   "file": "songs/The Last Rose of Summer, Moore.mid",
+   "title": "Moore – The Last Rose of Summer",
+   "kind": "MIDI",
+   "sha1": "cc890e347eb17a2f7e18d7302bd446f35b9dede7",
+   "addedAt": "2026-11-18T18:28:00Z",
    "category": "classical"
   },
   {
