@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "am-meer-schubert",
+ "title": "Schubert – Am Meer, D. 957 No. 12",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T07:29:30Z",
+ "updatedAt": "2026-11-18T07:29:30Z",
+ "units": {
+  "count": 44,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 45,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

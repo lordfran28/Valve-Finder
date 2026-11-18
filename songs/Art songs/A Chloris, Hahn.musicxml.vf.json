@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "a-chloris-hahn",
+ "title": "Hahn – À Chloris",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T07:29:30Z",
+ "updatedAt": "2026-11-18T07:29:30Z",
+ "units": {
+  "count": 20,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 56,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

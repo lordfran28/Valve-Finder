@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "pace-non-trovo-liszt",
+ "title": "Liszt – Pace non trovo (Petrarch Sonnet 104)",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T07:29:30Z",
+ "updatedAt": "2026-11-18T07:29:30Z",
+ "units": {
+  "count": 97,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "1",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

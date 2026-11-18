@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-15T05:23:42Z",
+ "generatedAt": "2026-11-18T07:29:31Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2453,6 +2453,383 @@
       "Verse, chorus twice, second verse, chorus three times, bridge four times, last chorus"
      ]
     ]
+   }
+  },
+  {
+   "id": "a-chloris-hahn",
+   "file": "songs/Art songs/A Chloris, Hahn.musicxml",
+   "title": "Hahn – À Chloris",
+   "kind": "MusicXML",
+   "sha1": "2f5748e307f1c06527a28300f08cbeaf9b9f8481",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "am-meer-schubert",
+   "file": "songs/Art songs/Am Meer, Schubert.musicxml",
+   "title": "Schubert – Am Meer, D. 957 No. 12",
+   "kind": "MusicXML",
+   "sha1": "c5eca0d968bdebead4610a9c48896b127177d0dd",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 44,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "an-die-musik-schubert",
+   "file": "songs/Art songs/An die Musik, Schubert.musicxml",
+   "title": "Schubert – An die Musik, D. 547",
+   "kind": "MusicXML",
+   "sha1": "17c1d8ff31633158794184a3459a3375549e06d7",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 21,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ave-maria-d-839-schubert",
+   "file": "songs/Art songs/Ave Maria D 839, Schubert.musicxml",
+   "title": "Schubert – Ave Maria (Ellens Gesang III), D. 839",
+   "kind": "MusicXML",
+   "sha1": "f9d7e9709f122d72212b9f1095109f964f2d1655",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 15,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-lindenbaum-schubert",
+   "file": "songs/Art songs/Der Lindenbaum, Schubert.musicxml",
+   "title": "Schubert – Der Lindenbaum, Winterreise No. 5",
+   "kind": "MusicXML",
+   "sha1": "8fde936c18b6d4753bca82624160f4fe39c7590e",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 75,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-forelle-schubert",
+   "file": "songs/Art songs/Die Forelle, Schubert.musicxml",
+   "title": "Schubert – Die Forelle, D. 550",
+   "kind": "MusicXML",
+   "sha1": "bc392b65bdbcd0c24c6fbda1acbf0a462eb9b20c",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 53,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-mainacht-brahms",
+   "file": "songs/Art songs/Die Mainacht, Brahms.musicxml",
+   "title": "Brahms – Die Mainacht, Op. 43 No. 2",
+   "kind": "MusicXML",
+   "sha1": "c30923973ab709acab13258c552f1d113eb0592c",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 50,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-zwei-blauen-augen-mahler",
+   "file": "songs/Art songs/Die zwei blauen Augen, Mahler.musicxml",
+   "title": "Mahler – Die zwei blauen Augen, Songs of a Wayfarer No. 4",
+   "kind": "MusicXML",
+   "sha1": "da498550b3284f89e96287c3ce9f955f6f42e243",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 68,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "elegie-massenet",
+   "file": "songs/Art songs/Elegie, Massenet.musicxml",
+   "title": "Massenet – Élégie",
+   "kind": "MusicXML",
+   "sha1": "08310a73d62abfbeac10291bb4c307b3518a65f7",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 25,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "en-sourdine-faure",
+   "file": "songs/Art songs/En sourdine, Faure.musicxml",
+   "title": "Fauré – En sourdine, Op. 58 No. 2",
+   "kind": "MusicXML",
+   "sha1": "be3653317c46e0993c775dae96a8136df42eaa6c",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 46,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "gute-nacht-schubert",
+   "file": "songs/Art songs/Gute Nacht, Schubert.musicxml",
+   "title": "Schubert – Gute Nacht, Winterreise No. 1",
+   "kind": "MusicXML",
+   "sha1": "34c74d7189bd855945fe365c35a3d07248465660",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 99,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-grolle-nicht-schumann",
+   "file": "songs/Art songs/Ich grolle nicht, Schumann.musicxml",
+   "title": "Schumann – Ich grolle nicht, Dichterliebe No. 7",
+   "kind": "MusicXML",
+   "sha1": "5e61a52d2729d9b84fcb12af1522800d265013a9",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 36,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "im-wunderschonen-monat-mai-schumann",
+   "file": "songs/Art songs/Im wunderschonen Monat Mai, Schumann.musicxml",
+   "title": "Schumann – Im wunderschönen Monat Mai, Dichterliebe No. 1",
+   "kind": "MusicXML",
+   "sha1": "3a41a47e0d011fea49412a362ea1431db1f11ef3",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 23,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "in-solitaria-stanza-verdi",
+   "file": "songs/Art songs/In solitaria stanza, Verdi.musicxml",
+   "title": "Verdi – In solitaria stanza",
+   "kind": "MusicXML",
+   "sha1": "a77b12e087bacca66e09eeb78b2c2ae55e7e1e32",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 54,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "je-te-veux-satie",
+   "file": "songs/Art songs/Je te veux, Satie.musicxml",
+   "title": "Satie – Je te veux",
+   "kind": "MusicXML",
+   "sha1": "1cd99f59260446824ff6995f1d6732f1138a3d36",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 106,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "l-heure-exquise-hahn",
+   "file": "songs/Art songs/L heure exquise, Hahn.musicxml",
+   "title": "Hahn – L’heure exquise",
+   "kind": "MusicXML",
+   "sha1": "182d719244b1aeb90df2065d1d6699f0fb3a16dd",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 46,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "les-roses-d-ispahan-faure",
+   "file": "songs/Art songs/Les roses d Ispahan, Faure.musicxml",
+   "title": "Fauré – Les roses d’Ispahan, Op. 39 No. 4",
+   "kind": "MusicXML",
+   "sha1": "19173200aaf0427fd553b84db32cd7e64297f9fc",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 75,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "lydia-faure",
+   "file": "songs/Art songs/Lydia, Faure.musicxml",
+   "title": "Fauré – Lydia, Op. 4 No. 2",
+   "kind": "MusicXML",
+   "sha1": "8fcb08fd3ef4658c3d48b43f584c40c7d1cff444",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mondnacht-schumann",
+   "file": "songs/Art songs/Mondnacht, Schumann.musicxml",
+   "title": "Schumann – Mondnacht, Op. 39 No. 5",
+   "kind": "MusicXML",
+   "sha1": "88274637154d9dfc5213947dcc41aad80eded31d",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 63,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "pace-non-trovo-liszt",
+   "file": "songs/Art songs/Pace non trovo, Liszt.musicxml",
+   "title": "Liszt – Pace non trovo (Petrarch Sonnet 104)",
+   "kind": "MusicXML",
+   "sha1": "63c34ed9f6af0fd5802408534b1b3552f7222d19",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 97,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "reve-d-un-soir-chaminade",
+   "file": "songs/Art songs/Reve d un soir, Chaminade.musicxml",
+   "title": "Chaminade – Rêve d’un soir",
+   "kind": "MusicXML",
+   "sha1": "3f1cc63898f18337a2472fbf468535919505a447",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "serenade-gounod",
+   "file": "songs/Art songs/Serenade, Gounod.musicxml",
+   "title": "Gounod – Sérénade",
+   "kind": "MusicXML",
+   "sha1": "8f401e4a8f2eccda6f6095f265a17b7f99f7a2d3",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 65,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "spirate-pur-spirate-donaudy",
+   "file": "songs/Art songs/Spirate pur spirate, Donaudy.musicxml",
+   "title": "Donaudy – Spirate pur, spirate",
+   "kind": "MusicXML",
+   "sha1": "2538ab9f15e64f2b5a195e672e6f8845bf15834e",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 60,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "standchen-d-957-schubert",
+   "file": "songs/Art songs/Standchen D 957, Schubert.musicxml",
+   "title": "Schubert – Ständchen (“Leise flehen meine Lieder”), D. 957 No. 4",
+   "kind": "MusicXML",
+   "sha1": "46fdca59608a7ea52eb318ff90534a4861b431e0",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 55,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "von-ewiger-liebe-brahms",
+   "file": "songs/Art songs/Von ewiger Liebe, Brahms.musicxml",
+   "title": "Brahms – Von ewiger Liebe, Op. 43 No. 1",
+   "kind": "MusicXML",
+   "sha1": "e913da8df8c58e12f73f16144d3b621179b8120f",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 117,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wandrers-nachtlied-schubert",
+   "file": "songs/Art songs/Wandrers Nachtlied, Schubert.musicxml",
+   "title": "Schubert – Wandrers Nachtlied, D. 768",
+   "kind": "MusicXML",
+   "sha1": "088f249213d94a67e899a7ca069bc9a2ac3b78ca",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "widmung-schumann",
+   "file": "songs/Art songs/Widmung, Schumann.musicxml",
+   "title": "Schumann – Widmung, Op. 25 No. 1",
+   "kind": "MusicXML",
+   "sha1": "228aa90d4d5b098eba7e5212dd707fa3828197fc",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 43,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wiegenlied-brahms",
+   "file": "songs/Art songs/Wiegenlied, Brahms.musicxml",
+   "title": "Brahms – Wiegenlied (Lullaby), Op. 49 No. 4",
+   "kind": "MusicXML",
+   "sha1": "228b8f2f253c177521a000f5af4e9d4cb345209e",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 17,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "zyczenie-chopin",
+   "file": "songs/Art songs/Zyczenie, Chopin.musicxml",
+   "title": "Chopin – Życzenie (The Wish), Op. 74 No. 1",
+   "kind": "MusicXML",
+   "sha1": "a8609509a59875ae1a4f1ce9907967a28536e497",
+   "addedAt": "2026-11-18T07:29:30Z",
+   "category": "classical",
+   "units": {
+    "count": 21,
+    "unit": "Bar"
    }
   },
   {
