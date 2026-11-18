@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "die-lotosblume-schumann",
+ "title": "Schumann – Die Lotosblume, Op. 25 No. 7",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T18:20:43Z",
+ "updatedAt": "2026-11-18T18:20:43Z",
+ "units": {
+  "count": 27,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 85,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

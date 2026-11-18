@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "die-stille-lotosblume-clara-schumann",
+ "title": "Clara Schumann – Die stille Lotosblume, Op. 13 No. 6",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T18:20:43Z",
+ "updatedAt": "2026-11-18T18:20:43Z",
+ "units": {
+  "count": 46,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 70,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

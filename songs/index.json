@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T18:16:35Z",
+ "generatedAt": "2026-11-18T18:20:49Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3840,6 +3840,84 @@
    "sha1": "a89474f19c9d8b87c9585b3a32fb5e7a6a7bc90c",
    "addedAt": "2026-11-18T18:20:00Z",
    "category": "classical"
+  },
+  {
+   "id": "dein-blaues-auge-brahms",
+   "file": "songs/Art songs/Dein blaues Auge, Brahms.musicxml",
+   "title": "Brahms – Dein blaues Auge, Op. 59 No. 8",
+   "kind": "MusicXML",
+   "sha1": "a913c1ef39c58b16093954f64836d5f2fa3df845",
+   "addedAt": "2026-11-18T18:20:43Z",
+   "category": "classical",
+   "units": {
+    "count": 26,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-lotosblume-schumann",
+   "file": "songs/Art songs/Die Lotosblume, Schumann.musicxml",
+   "title": "Schumann – Die Lotosblume, Op. 25 No. 7",
+   "kind": "MusicXML",
+   "sha1": "1bbed168a8b35514adb06829b7f30077678b00ca",
+   "addedAt": "2026-11-18T18:20:43Z",
+   "category": "classical",
+   "units": {
+    "count": 27,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-stille-lotosblume-clara-schumann",
+   "file": "songs/Art songs/Die stille Lotosblume, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Die stille Lotosblume, Op. 13 No. 6",
+   "kind": "MusicXML",
+   "sha1": "4fd23e5bbe6065416c723ece126353de06eeff29",
+   "addedAt": "2026-11-18T18:20:43Z",
+   "category": "classical",
+   "units": {
+    "count": 46,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "geistliches-wiegenlied-brahms",
+   "file": "songs/Art songs/Geistliches Wiegenlied, Brahms.musicxml",
+   "title": "Brahms – Geistliches Wiegenlied, Op. 91 No. 2",
+   "kind": "MusicXML",
+   "sha1": "b698d2b7828c940c21822175af5f39cd40a2b29c",
+   "addedAt": "2026-11-18T18:20:43Z",
+   "category": "classical",
+   "units": {
+    "count": 145,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "morgenstandchen-hensel",
+   "file": "songs/Art songs/Morgenstandchen, Hensel.musicxml",
+   "title": "Hensel – Morgenständchen, Op. 1 No. 5",
+   "kind": "MusicXML",
+   "sha1": "24a34af13d50083d95e89f293c8bda526e395640",
+   "addedAt": "2026-11-18T18:20:43Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "widmung-franz",
+   "file": "songs/Art songs/Widmung, Franz.musicxml",
+   "title": "Franz – Widmung, Op. 14 No. 1",
+   "kind": "MusicXML",
+   "sha1": "aedb0ef8996097ceda7a5435a5ef1c77739b26fd",
+   "addedAt": "2026-11-18T18:20:43Z",
+   "category": "classical",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   }
   },
   {
    "id": "home-sweet-home-bishop",
