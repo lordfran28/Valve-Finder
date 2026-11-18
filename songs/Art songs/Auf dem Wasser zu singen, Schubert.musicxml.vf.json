@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "auf-dem-wasser-zu-singen-schubert",
+ "title": "Schubert – Auf dem Wasser zu singen, D. 774",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T13:38:12Z",
+ "updatedAt": "2026-11-18T13:38:12Z",
+ "units": {
+  "count": 28,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

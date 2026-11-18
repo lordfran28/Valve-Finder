@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "il-pleure-dans-mon-coeur-debussy",
+ "title": "Debussy – Il pleure dans mon cœur, Ariettes oubliées No. 2",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T13:38:12Z",
+ "updatedAt": "2026-11-18T13:38:12Z",
+ "units": {
+  "count": 77,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 112,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

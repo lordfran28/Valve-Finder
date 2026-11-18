@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T08:01:41Z",
+ "generatedAt": "2026-11-18T13:38:40Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3323,6 +3323,422 @@
    "category": "classical",
    "units": {
     "count": 56,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "absence-berlioz",
+   "file": "songs/Art songs/Absence, Berlioz.musicxml",
+   "title": "Berlioz – Absence, Les nuits d’été No. 4",
+   "kind": "MusicXML",
+   "sha1": "28503e3a21d9b824b62ce0bd4e92353a6465acd8",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "aloha-oe-liliuokalani",
+   "file": "songs/Art songs/Aloha Oe, Liliuokalani.musicxml",
+   "title": "Liliuokalani – Aloha ʻOe",
+   "kind": "MusicXML",
+   "sha1": "f9d14773cab8e8f2a1b9b47b01162738087d1bf5",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 18,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "an-ein-veilchen-brahms",
+   "file": "songs/Art songs/An ein Veilchen, Brahms.musicxml",
+   "title": "Brahms – An ein Veilchen, Op. 49 No. 2",
+   "kind": "MusicXML",
+   "sha1": "8e9edcaf086e6689c7e1347d7a2543ae343865c4",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "auf-dem-wasser-zu-singen-schubert",
+   "file": "songs/Art songs/Auf dem Wasser zu singen, Schubert.musicxml",
+   "title": "Schubert – Auf dem Wasser zu singen, D. 774",
+   "kind": "MusicXML",
+   "sha1": "ab5751ea3f5d2de79a785eabfe1cd55a30dadee3",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "auf-einer-wanderung-wolf",
+   "file": "songs/Art songs/Auf einer Wanderung, Wolf.musicxml",
+   "title": "Wolf – Auf einer Wanderung, Mörike-Lieder No. 15",
+   "kind": "MusicXML",
+   "sha1": "52785a4a85be85e85ecb46bc2b8f98e508aab5c2",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 103,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "das-wandern-schubert",
+   "file": "songs/Art songs/Das Wandern, Schubert.musicxml",
+   "title": "Schubert – Das Wandern, Die schöne Müllerin No. 1",
+   "kind": "MusicXML",
+   "sha1": "c26aa81b4ae2b295ae989e134df050201ded31ec",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 17,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-doppelganger-schubert",
+   "file": "songs/Art songs/Der Doppelganger, Schubert.musicxml",
+   "title": "Schubert – Der Doppelgänger, D. 957 No. 13",
+   "kind": "MusicXML",
+   "sha1": "eda4a1fc76eef02d17002b52cf0d9d32fe4d4f5f",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 59,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-leiermann-schubert",
+   "file": "songs/Art songs/Der Leiermann, Schubert.musicxml",
+   "title": "Schubert – Der Leiermann, Winterreise No. 24",
+   "kind": "MusicXML",
+   "sha1": "c0671b9204f805cc06074b67c5fe498a5a2fae70",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 53,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-musensohn-schubert",
+   "file": "songs/Art songs/Der Musensohn, Schubert.musicxml",
+   "title": "Schubert – Der Musensohn, D. 764",
+   "kind": "MusicXML",
+   "sha1": "a44edd1864714215a05f29cf50a6375a8c92fc1a",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 68,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-nussbaum-schumann",
+   "file": "songs/Art songs/Der Nussbaum, Schumann.musicxml",
+   "title": "Schumann – Der Nussbaum, Op. 25 No. 3",
+   "kind": "MusicXML",
+   "sha1": "da3bf8e652eb2c60547edbdd807a089ff4db2d4f",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 65,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "du-bist-die-ruh-schubert",
+   "file": "songs/Art songs/Du bist die Ruh, Schubert.musicxml",
+   "title": "Schubert – Du bist die Ruh, D. 776",
+   "kind": "MusicXML",
+   "sha1": "e1bd8199b59a80e5ed0bec205d378f11747d54fa",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 75,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "erlkonig-schubert",
+   "file": "songs/Art songs/Erlkonig, Schubert.musicxml",
+   "title": "Schubert – Erlkönig, D. 328",
+   "kind": "MusicXML",
+   "sha1": "b87987375e515e63ab070f000ffc49867f8e4835",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 134,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "gretchen-am-spinnrade-schubert",
+   "file": "songs/Art songs/Gretchen am Spinnrade, Schubert.musicxml",
+   "title": "Schubert – Gretchen am Spinnrade, D. 118",
+   "kind": "MusicXML",
+   "sha1": "a484bed766bdad404b1f563e06dbf5275363d54f",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 119,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "heidenroslein-schubert",
+   "file": "songs/Art songs/Heidenroslein, Schubert.musicxml",
+   "title": "Schubert – Heidenröslein, D. 257",
+   "kind": "MusicXML",
+   "sha1": "fc4c70b1f9a5db47c8e2eca86e58a78297d4bd47",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ideale-tosti",
+   "file": "songs/Art songs/Ideale, Tosti.musicxml",
+   "title": "Tosti – Ideale",
+   "kind": "MusicXML",
+   "sha1": "ace8061dd94a4f4c77372f87a96cd747904bb07a",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "il-pleure-dans-mon-coeur-debussy",
+   "file": "songs/Art songs/Il pleure dans mon coeur, Debussy.musicxml",
+   "title": "Debussy – Il pleure dans mon cœur, Ariettes oubliées No. 2",
+   "kind": "MusicXML",
+   "sha1": "462800e4ed0ea967b2a333e21b4f093759efd41e",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 77,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "l-invito-rossini",
+   "file": "songs/Art songs/L invito, Rossini.musicxml",
+   "title": "Rossini – L’invito, Soirées musicales No. 5",
+   "kind": "MusicXML",
+   "sha1": "48e1fa2f0bad5f30b53cbc4ccfdf84b388f80988",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 85,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "le-charme-chausson",
+   "file": "songs/Art songs/Le Charme, Chausson.musicxml",
+   "title": "Chausson – Le Charme, Op. 2 No. 2",
+   "kind": "MusicXML",
+   "sha1": "8efcb6f8d763ce61817c68f7e55992d0aab79357",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mandoline-debussy",
+   "file": "songs/Art songs/Mandoline, Debussy.musicxml",
+   "title": "Debussy – Mandoline",
+   "kind": "MusicXML",
+   "sha1": "511acbcb1d6a5856a09e716e849b123b672c2dc6",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mattinata-leoncavallo",
+   "file": "songs/Art songs/Mattinata, Leoncavallo.musicxml",
+   "title": "Leoncavallo – Mattinata",
+   "kind": "MusicXML",
+   "sha1": "8eac6a8afaefd76ee275e89b91824a78236bf0ff",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 27,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "o-tuneful-voice-haydn",
+   "file": "songs/Art songs/O Tuneful Voice, Haydn.musicxml",
+   "title": "Haydn – O Tuneful Voice",
+   "kind": "MusicXML",
+   "sha1": "3db1e0983806f224becfb83ff8a62982e5d6f4cc",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 75,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "pastorale-bizet",
+   "file": "songs/Art songs/Pastorale, Bizet.musicxml",
+   "title": "Bizet – Pastorale, Op. 21 No. 9",
+   "kind": "MusicXML",
+   "sha1": "d4ba377ce92b0c3a12ac7eeab6511e88bde4c961",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 66,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "romance-debussy",
+   "file": "songs/Art songs/Romance, Debussy.musicxml",
+   "title": "Debussy – Romance (L’âme évaporée)",
+   "kind": "MusicXML",
+   "sha1": "a292560e204114964264a66705cf99109af32ac1",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 26,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "serenade-italienne-chausson",
+   "file": "songs/Art songs/Serenade italienne, Chausson.musicxml",
+   "title": "Chausson – Sérénade italienne, Op. 2 No. 5",
+   "kind": "MusicXML",
+   "sha1": "ca497e9db06e0f1775fd518a8c3cc3214c7cc354",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 34,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "she-never-told-her-love-haydn",
+   "file": "songs/Art songs/She Never Told Her Love, Haydn.musicxml",
+   "title": "Haydn – She Never Told Her Love",
+   "kind": "MusicXML",
+   "sha1": "7f0d1109e62f13f5c16a55ca308c350102f6efac",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 26,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "sogno-tosti",
+   "file": "songs/Art songs/Sogno, Tosti.musicxml",
+   "title": "Tosti – Sogno",
+   "kind": "MusicXML",
+   "sha1": "0abb7db4473d83403881837f9802b558b3cdc082",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 49,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "standchen-op-14-brahms",
+   "file": "songs/Art songs/Standchen Op 14, Brahms.musicxml",
+   "title": "Brahms – Ständchen, Op. 14 No. 7",
+   "kind": "MusicXML",
+   "sha1": "829600238fca1afde06d506d2b2b21abf324cd0f",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 47,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "the-long-day-closes-sullivan",
+   "file": "songs/Art songs/The Long Day Closes, Sullivan.musicxml",
+   "title": "Sullivan – The Long Day Closes",
+   "kind": "MusicXML",
+   "sha1": "ac0a9f0f336fc6e8befc6b52d3551dbca167827e",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "the-lost-chord-sullivan",
+   "file": "songs/Art songs/The Lost Chord, Sullivan.musicxml",
+   "title": "Sullivan – The Lost Chord",
+   "kind": "MusicXML",
+   "sha1": "3271efdd2c5202099803bded86689ae509532e7e",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 76,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "verborgenheit-wolf",
+   "file": "songs/Art songs/Verborgenheit, Wolf.musicxml",
+   "title": "Wolf – Verborgenheit, Mörike-Lieder No. 12",
+   "kind": "MusicXML",
+   "sha1": "ef1bd7aeb1623018a75239595729355ec92573bf",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 34,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "vieille-chanson-bizet",
+   "file": "songs/Art songs/Vieille chanson, Bizet.musicxml",
+   "title": "Bizet – Vieille chanson, Op. 21 No. 3",
+   "kind": "MusicXML",
+   "sha1": "6186c1f57d5d4ac8cd5ed78e2ebbdc208362d073",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "villanelle-berlioz",
+   "file": "songs/Art songs/Villanelle, Berlioz.musicxml",
+   "title": "Berlioz – Villanelle, Les nuits d’été No. 1",
+   "kind": "MusicXML",
+   "sha1": "4e18e795bc92ade30202fead727d42da1460035d",
+   "addedAt": "2026-11-18T13:38:12Z",
+   "category": "classical",
+   "units": {
+    "count": 129,
     "unit": "Bar"
    }
   },

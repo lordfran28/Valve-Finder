@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "standchen-op-14-brahms",
+ "title": "Brahms – Ständchen, Op. 14 No. 7",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T13:38:12Z",
+ "updatedAt": "2026-11-18T13:38:12Z",
+ "units": {
+  "count": 47,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 140,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}
