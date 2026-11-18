@@ -1,0 +1,20 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "sheep-may-safely-graze-bach",
+ "title": "Bach – Sheep May Safely Graze, BWV 208",
+ "category": "classical",
+ "kind": "MIDI",
+ "addedAt": "2026-11-18T18:20:00Z",
+ "updatedAt": "2026-11-18T18:20:00Z",
+ "units": null,
+ "settings": {
+  "part": 2,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 60,
+  "repeats": true,
+  "alts": false
+ },
+ "notes": null
+}

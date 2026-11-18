@@ -1,0 +1,20 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "siciliano-bach-flute-sonata-bwv-1031",
+ "title": "Bach – Siciliano, Flute Sonata, BWV 1031",
+ "category": "classical",
+ "kind": "MIDI",
+ "addedAt": "2026-11-18T18:20:00Z",
+ "updatedAt": "2026-11-18T18:20:00Z",
+ "units": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "-1",
+  "tempo": 54,
+  "repeats": true,
+  "alts": false
+ },
+ "notes": null
+}

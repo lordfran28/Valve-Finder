@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T18:10:58Z",
+ "generatedAt": "2026-11-18T18:15:20Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3794,6 +3794,51 @@
    "kind": "MIDI",
    "sha1": "14cc8c3961261fa1abcc6e0b36fd50d5cbd1961b",
    "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
+  },
+  {
+   "id": "ave-maria-schubert",
+   "file": "songs/Ave Maria, Schubert.mid",
+   "title": "Schubert – Ave Maria, D. 839",
+   "kind": "MIDI",
+   "sha1": "3f34149180899d4ed1bed3ca81a1344e5c9302e1",
+   "addedAt": "2026-11-18T18:20:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "gavotte-martini",
+   "file": "songs/Gavotte, Martini.mid",
+   "title": "Martini – Gavotte",
+   "kind": "MIDI",
+   "sha1": "d6517e57feeac3b002885922833e580065247cae",
+   "addedAt": "2026-11-18T18:20:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "romance-op-36-saint-saens",
+   "file": "songs/Romance Op. 36, Saint-Saens.mid",
+   "title": "Saint-Saëns – Romance, Op. 36",
+   "kind": "MIDI",
+   "sha1": "14001f77743e6298d7b46f31066ce8db4b065bf4",
+   "addedAt": "2026-11-18T18:20:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "sheep-may-safely-graze-bach",
+   "file": "songs/Sheep May Safely Graze, Bach.mid",
+   "title": "Bach – Sheep May Safely Graze, BWV 208",
+   "kind": "MIDI",
+   "sha1": "5b0d35807af6034378f2ef1141e2e08cb44d7efa",
+   "addedAt": "2026-11-18T18:20:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "siciliano-bach-flute-sonata-bwv-1031",
+   "file": "songs/Siciliano, Bach Flute Sonata BWV 1031.mid",
+   "title": "Bach – Siciliano, Flute Sonata, BWV 1031",
+   "kind": "MIDI",
+   "sha1": "a89474f19c9d8b87c9585b3a32fb5e7a6a7bc90c",
+   "addedAt": "2026-11-18T18:20:00Z",
    "category": "classical"
   },
   {
