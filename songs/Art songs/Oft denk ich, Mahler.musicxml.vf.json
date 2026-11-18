@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "oft-denk-ich-mahler",
+ "title": "Mahler – Oft denk’ ich, sie sind nur ausgegangen, Kindertotenlieder No. 4",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T08:01:32Z",
+ "updatedAt": "2026-11-18T08:01:32Z",
+ "units": {
+  "count": 67,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

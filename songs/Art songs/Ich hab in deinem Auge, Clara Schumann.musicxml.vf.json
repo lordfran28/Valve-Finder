@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "ich-hab-in-deinem-auge-clara-schumann",
+ "title": "Clara Schumann – Ich hab’ in deinem Auge, Op. 13 No. 5",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T08:01:32Z",
+ "updatedAt": "2026-11-18T08:01:32Z",
+ "units": {
+  "count": 34,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 65,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

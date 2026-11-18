@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "die-rose-die-lilie-schumann",
+ "title": "Schumann – Die Rose, die Lilie, Dichterliebe No. 3",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-18T08:01:32Z",
+ "updatedAt": "2026-11-18T08:01:32Z",
+ "units": {
+  "count": 23,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

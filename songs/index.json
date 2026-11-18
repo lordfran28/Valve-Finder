@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T07:29:31Z",
+ "generatedAt": "2026-11-18T08:01:41Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -2829,6 +2829,500 @@
    "category": "classical",
    "units": {
     "count": 21,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "allnachtlich-im-traume-mendelssohn",
+   "file": "songs/Art songs/Allnachtlich im Traume, Mendelssohn.musicxml",
+   "title": "Mendelssohn – Allnächtlich im Traume, Op. 86 No. 4",
+   "kind": "MusicXML",
+   "sha1": "464c4f64d5f72fb4fc546d3929bafcbee61c772f",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "aus-meinen-tranen-schumann",
+   "file": "songs/Art songs/Aus meinen Tranen, Schumann.musicxml",
+   "title": "Schumann – Aus meinen Tränen sprießen, Dichterliebe No. 2",
+   "kind": "MusicXML",
+   "sha1": "cbb517e6c9216205a6744c2a6fcc702731f3540a",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 18,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "cacilie-strauss",
+   "file": "songs/Art songs/Cacilie, Strauss.musicxml",
+   "title": "Strauss – Cäcilie, Op. 27 No. 2",
+   "kind": "MusicXML",
+   "sha1": "da5bcefb4287b997867237e98204d1a14b47954a",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 53,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "chanson-d-avril-bizet",
+   "file": "songs/Art songs/Chanson d avril, Bizet.musicxml",
+   "title": "Bizet – Chanson d’avril, Op. 21 No. 1",
+   "kind": "MusicXML",
+   "sha1": "cf7d8ca5a8dd1a50ebb732f0cb1368247809a3a5",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 104,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "come-away-death-quilter",
+   "file": "songs/Art songs/Come Away Death, Quilter.musicxml",
+   "title": "Quilter – Come Away, Death, Op. 6 No. 1",
+   "kind": "MusicXML",
+   "sha1": "92c081a261435874f6311702e514fa4a20b6ba99",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 44,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-mond-kommt-still-gegangen-clara-schumann",
+   "file": "songs/Art songs/Der Mond kommt still gegangen, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Der Mond kommt still gegangen, Op. 13 No. 4",
+   "kind": "MusicXML",
+   "sha1": "bc83eb12b125b09ca24a4debcd28369f28707111",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-mond-mendelssohn",
+   "file": "songs/Art songs/Der Mond, Mendelssohn.musicxml",
+   "title": "Mendelssohn – Der Mond, Op. 86 No. 5",
+   "kind": "MusicXML",
+   "sha1": "b8402f59d3bb875acc54d958d14e44659be8c5c0",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-wegweiser-schubert",
+   "file": "songs/Art songs/Der Wegweiser, Schubert.musicxml",
+   "title": "Schubert – Der Wegweiser, Winterreise No. 20",
+   "kind": "MusicXML",
+   "sha1": "a9233ccefd6d34b88fe7a0faec0ce36eddda8f72",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 79,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-rose-die-lilie-schumann",
+   "file": "songs/Art songs/Die Rose die Lilie, Schumann.musicxml",
+   "title": "Schumann – Die Rose, die Lilie, Dichterliebe No. 3",
+   "kind": "MusicXML",
+   "sha1": "800edd0347bf6cc3de75a61dc55f0897f6283bf6",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 23,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "do-you-remember-jacobs-bond",
+   "file": "songs/Art songs/Do You Remember, Jacobs-Bond.musicxml",
+   "title": "Jacobs-Bond – Do You Remember",
+   "kind": "MusicXML",
+   "sha1": "c2833b02191cb08c99bbb659ad51cbfc58b0ae29",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 43,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "fruhlingstraum-schubert",
+   "file": "songs/Art songs/Fruhlingstraum, Schubert.musicxml",
+   "title": "Schubert – Frühlingstraum, Winterreise No. 11",
+   "kind": "MusicXML",
+   "sha1": "21585dc82d32102eb0bd0cd1ee21825bbc22f38e",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 85,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ging-heut-morgen-ubers-feld-mahler",
+   "file": "songs/Art songs/Ging heut morgen ubers Feld, Mahler.musicxml",
+   "title": "Mahler – Ging heut’ morgen übers Feld, Songs of a Wayfarer No. 2",
+   "kind": "MusicXML",
+   "sha1": "270eb8de99aa083b370709bbe0bde89f3b07c2e6",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 126,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "go-down-moses-burleigh",
+   "file": "songs/Art songs/Go Down Moses, Burleigh.musicxml",
+   "title": "Burleigh – Go Down, Moses",
+   "kind": "MusicXML",
+   "sha1": "0beab518d827652e2614b7de70774cd3b3095fcc",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "green-faure",
+   "file": "songs/Art songs/Green, Faure.musicxml",
+   "title": "Fauré – Green, Op. 58 No. 3",
+   "kind": "MusicXML",
+   "sha1": "2c65b6c37f58cf67a3251d5d10b006390e6f5edb",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 37,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "heimliche-aufforderung-strauss",
+   "file": "songs/Art songs/Heimliche Aufforderung, Strauss.musicxml",
+   "title": "Strauss – Heimliche Aufforderung, Op. 27 No. 3",
+   "kind": "MusicXML",
+   "sha1": "a3fef6153dfca4b781f4b50354dd21f0944f53c2",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 111,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-hab-im-traum-geweinet-franz",
+   "file": "songs/Art songs/Ich hab im Traum geweinet, Franz.musicxml",
+   "title": "Franz – Ich hab’ im Traum geweinet, Op. 25 No. 3",
+   "kind": "MusicXML",
+   "sha1": "368cb81cf3b2d06d04c3eb01e720c24ada89f42b",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 30,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-hab-in-deinem-auge-clara-schumann",
+   "file": "songs/Art songs/Ich hab in deinem Auge, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Ich hab’ in deinem Auge, Op. 13 No. 5",
+   "kind": "MusicXML",
+   "sha1": "20a047d9d3660a4340a160d369dfde2aba8662d2",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 34,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-will-meine-seele-tauchen-schumann",
+   "file": "songs/Art songs/Ich will meine Seele tauchen, Schumann.musicxml",
+   "title": "Schumann – Ich will meine Seele tauchen, Dichterliebe No. 5",
+   "kind": "MusicXML",
+   "sha1": "d98b75baad202e8f6b891b17c984f4c1ed7ec85d",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 23,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ihr-bild-schubert",
+   "file": "songs/Art songs/Ihr Bild, Schubert.musicxml",
+   "title": "Schubert – Ihr Bild, D. 957 No. 9",
+   "kind": "MusicXML",
+   "sha1": "fb2d96ce828802e64fc3ef0c1920a266a084db3e",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 35,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "im-rhein-schumann",
+   "file": "songs/Art songs/Im Rhein, Schumann.musicxml",
+   "title": "Schumann – Im Rhein, im heiligen Strome, Dichterliebe No. 6",
+   "kind": "MusicXML",
+   "sha1": "a2165290c7528aea6b97eed7c28f96098946b12a",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 59,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "intermezzo-schumann",
+   "file": "songs/Art songs/Intermezzo, Schumann.musicxml",
+   "title": "Schumann – Intermezzo, Op. 39 No. 2",
+   "kind": "MusicXML",
+   "sha1": "7f00cfafa6c8a9e5ff5dd8d537489efe424d5322",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 30,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "is-she-not-passing-fair-elgar",
+   "file": "songs/Art songs/Is She Not Passing Fair, Elgar.musicxml",
+   "title": "Elgar – Is She Not Passing Fair",
+   "kind": "MusicXML",
+   "sha1": "2539d88a30b1d5fd5de5f3a03775cf0876206da0",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 91,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "kashmiri-song-burleigh",
+   "file": "songs/Art songs/Kashmiri Song, Burleigh.musicxml",
+   "title": "Burleigh – Kashmiri Song",
+   "kind": "MusicXML",
+   "sha1": "b6dc81fa9539657e4183ae7ea655cbceba8599bd",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 64,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "le-soir-gounod",
+   "file": "songs/Art songs/Le soir, Gounod.musicxml",
+   "title": "Gounod – Le soir",
+   "kind": "MusicXML",
+   "sha1": "6e8b2822a3e3d4be0062d0554d253b8bddb6710a",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 72,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mandoline-faure",
+   "file": "songs/Art songs/Mandoline, Faure.musicxml",
+   "title": "Fauré – Mandoline, Op. 58 No. 1",
+   "kind": "MusicXML",
+   "sha1": "8de2e7baaa0d193761b7933f485cdde7f9ad4844",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 37,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "morgen-strauss",
+   "file": "songs/Art songs/Morgen, Strauss.musicxml",
+   "title": "Strauss – Morgen!, Op. 27 No. 4",
+   "kind": "MusicXML",
+   "sha1": "af4dc892c11facb24f923aa90e20c9fbab1240ea",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 30,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "morgengruss-schubert",
+   "file": "songs/Art songs/Morgengruss, Schubert.musicxml",
+   "title": "Schubert – Morgengruß, Die schöne Müllerin No. 8",
+   "kind": "MusicXML",
+   "sha1": "9636d6936afbb31baedb6c9c2179587696ef3871",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 21,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "nobody-knows-de-trouble-burleigh",
+   "file": "songs/Art songs/Nobody Knows de Trouble, Burleigh.musicxml",
+   "title": "Burleigh – Nobody Knows de Trouble I’ve Seen",
+   "kind": "MusicXML",
+   "sha1": "bc233f58f0d2e2327c0193840eb573e98de0d0c4",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 42,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "nun-will-die-sonn-mahler",
+   "file": "songs/Art songs/Nun will die Sonn, Mahler.musicxml",
+   "title": "Mahler – Nun will die Sonn’ so hell aufgeh’n, Kindertotenlieder No. 1",
+   "kind": "MusicXML",
+   "sha1": "b9fa4e6f0258dc3157c370cd773f30377ccd4849",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 81,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "o-mistress-mine-quilter",
+   "file": "songs/Art songs/O Mistress Mine, Quilter.musicxml",
+   "title": "Quilter – O Mistress Mine, Op. 6 No. 2",
+   "kind": "MusicXML",
+   "sha1": "9086a1946cd814deabe96f3eeb0b3bc5bf625d19",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "oft-denk-ich-mahler",
+   "file": "songs/Art songs/Oft denk ich, Mahler.musicxml",
+   "title": "Mahler – Oft denk’ ich, sie sind nur ausgegangen, Kindertotenlieder No. 4",
+   "kind": "MusicXML",
+   "sha1": "9c239ded8582ad26744198ae548a32c3dac631a9",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ruhe-meine-seele-strauss",
+   "file": "songs/Art songs/Ruhe meine Seele, Strauss.musicxml",
+   "title": "Strauss – Ruhe, meine Seele!, Op. 27 No. 1",
+   "kind": "MusicXML",
+   "sha1": "9622cc01aa2474b0d3e4ca82719f481ee21f3d80",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "schone-fremde-schumann",
+   "file": "songs/Art songs/Schone Fremde, Schumann.musicxml",
+   "title": "Schumann – Schöne Fremde, Op. 39 No. 6",
+   "kind": "MusicXML",
+   "sha1": "674358d59ad002bfa39861a7531d3640e797930a",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 30,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "standchen-d-889-schubert",
+   "file": "songs/Art songs/Standchen D 889, Schubert.musicxml",
+   "title": "Schubert – Ständchen (“Horch, horch, die Lerch”), D. 889",
+   "kind": "MusicXML",
+   "sha1": "19ce7dcd556753db511da26ab87116eed50b5e6d",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "under-the-greenwood-tree-gurney",
+   "file": "songs/Art songs/Under the Greenwood Tree, Gurney.musicxml",
+   "title": "Gurney – Under the Greenwood Tree",
+   "kind": "MusicXML",
+   "sha1": "e986e4d4edd4c532b7884bcfe946c62a0afa3bd6",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 55,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wenn-ich-in-deine-augen-seh-schumann",
+   "file": "songs/Art songs/Wenn ich in deine Augen seh, Schumann.musicxml",
+   "title": "Schumann – Wenn ich in deine Augen seh’, Dichterliebe No. 4",
+   "kind": "MusicXML",
+   "sha1": "1da2c5ed8c3db18a41c835543ab88a9933f8dc85",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 21,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wenn-mein-schatz-hochzeit-macht-mahler",
+   "file": "songs/Art songs/Wenn mein Schatz Hochzeit macht, Mahler.musicxml",
+   "title": "Mahler – Wenn mein Schatz Hochzeit macht, Songs of a Wayfarer No. 1",
+   "kind": "MusicXML",
+   "sha1": "4a504f416cd882cf8cdf5557516f54be9fe49356",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 93,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wiosna-chopin",
+   "file": "songs/Art songs/Wiosna, Chopin.musicxml",
+   "title": "Chopin – Wiosna (Spring), Op. 74 No. 2",
+   "kind": "MusicXML",
+   "sha1": "7364dd10f5ec4a4a57e66ec9963582db041ff701",
+   "addedAt": "2026-11-18T08:01:32Z",
+   "category": "classical",
+   "units": {
+    "count": 56,
     "unit": "Bar"
    }
   },
