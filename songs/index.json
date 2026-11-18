@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T13:38:40Z",
+ "generatedAt": "2026-11-18T17:21:18Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3741,6 +3741,60 @@
     "count": 129,
     "unit": "Bar"
    }
+  },
+  {
+   "id": "ave-maria-gounod",
+   "file": "songs/Ave Maria, Gounod.mid",
+   "title": "Gounod – Ave Maria, on Bach’s first prelude",
+   "kind": "MIDI",
+   "sha1": "e967ec7d2e7150fd2c11d5dce81d3d72913554b8",
+   "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
+  },
+  {
+   "id": "bist-du-bei-mir-bach",
+   "file": "songs/Bist du bei mir, Bach.mid",
+   "title": "Bach – Bist du bei mir, BWV 508",
+   "kind": "MIDI",
+   "sha1": "d6d29b4f1aecbd551b3e0c67d6e25e0dafd0f7ad",
+   "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
+  },
+  {
+   "id": "fairest-isle-purcell-king-arthur",
+   "file": "songs/Fairest Isle, Purcell King Arthur.mid",
+   "title": "Purcell – Fairest Isle, King Arthur, Z. 628",
+   "kind": "MIDI",
+   "sha1": "90a412d8d9663b300e081c128773531fbaa47487",
+   "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
+  },
+  {
+   "id": "la-rejouissance-handel-royal-fireworks",
+   "file": "songs/La Rejouissance, Handel Royal Fireworks.mid",
+   "title": "Handel – La Réjouissance, Music for the Royal Fireworks, HWV 351",
+   "kind": "MIDI",
+   "sha1": "7d7fd81afe7c43a79bac1eabafe2278d0c399865",
+   "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
+  },
+  {
+   "id": "neapolitan-dance-tchaikovsky-swan-lake",
+   "file": "songs/Neapolitan Dance, Tchaikovsky Swan Lake.mid",
+   "title": "Tchaikovsky – Neapolitan Dance, Swan Lake, Op. 20",
+   "kind": "MIDI",
+   "sha1": "b22a83d65400ab90d76659b887a81cd851daedd1",
+   "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
+  },
+  {
+   "id": "what-power-art-thou-purcell-king-arthur",
+   "file": "songs/What Power Art Thou, Purcell King Arthur.mid",
+   "title": "Purcell – What Power Art Thou (the Cold Song), King Arthur, Z. 628",
+   "kind": "MIDI",
+   "sha1": "14cc8c3961261fa1abcc6e0b36fd50d5cbd1961b",
+   "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
   },
   {
    "id": "removed-f6183bcd3eb5",

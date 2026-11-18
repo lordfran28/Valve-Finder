@@ -1,0 +1,20 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "ave-maria-gounod",
+ "title": "Gounod – Ave Maria, on Bach’s first prelude",
+ "category": "classical",
+ "kind": "MIDI",
+ "addedAt": "2026-11-18T17:21:12Z",
+ "updatedAt": "2026-11-18T17:21:12Z",
+ "units": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 100,
+  "repeats": true,
+  "alts": false
+ },
+ "notes": null
+}
