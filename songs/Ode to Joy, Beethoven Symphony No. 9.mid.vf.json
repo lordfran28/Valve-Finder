@@ -1,0 +1,20 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "ode-to-joy-beethoven-symphony-no-9",
+ "title": "Beethoven – Ode to Joy, Symphony No. 9",
+ "category": "classical",
+ "kind": "MIDI",
+ "addedAt": "2026-11-18T19:50:00Z",
+ "updatedAt": "2026-11-18T19:50:00Z",
+ "units": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 100,
+  "repeats": true,
+  "alts": false
+ },
+ "notes": null
+}

@@ -1,0 +1,20 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "air-bach-orchestral-suite-no-3",
+ "title": "Bach – Air, Orchestral Suite No. 3, BWV 1068",
+ "category": "classical",
+ "kind": "MIDI",
+ "addedAt": "2026-11-18T19:50:00Z",
+ "updatedAt": "2026-11-18T19:50:00Z",
+ "units": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "-1",
+  "tempo": 50,
+  "repeats": true,
+  "alts": false
+ },
+ "notes": null
+}

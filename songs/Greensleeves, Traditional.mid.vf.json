@@ -1,0 +1,20 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "greensleeves-traditional",
+ "title": "Traditional – Greensleeves",
+ "category": "classical",
+ "kind": "MIDI",
+ "addedAt": "2026-11-18T19:50:00Z",
+ "updatedAt": "2026-11-18T19:50:00Z",
+ "units": null,
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 60,
+  "repeats": true,
+  "alts": false
+ },
+ "notes": null
+}

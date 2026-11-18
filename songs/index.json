@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T17:21:18Z",
+ "generatedAt": "2026-11-18T18:10:58Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3794,6 +3794,51 @@
    "kind": "MIDI",
    "sha1": "14cc8c3961261fa1abcc6e0b36fd50d5cbd1961b",
    "addedAt": "2026-11-18T17:21:12Z",
+   "category": "classical"
+  },
+  {
+   "id": "air-bach-orchestral-suite-no-3",
+   "file": "songs/Air, Bach Orchestral Suite No. 3.mid",
+   "title": "Bach – Air, Orchestral Suite No. 3, BWV 1068",
+   "kind": "MIDI",
+   "sha1": "455b08fff28e7def36ad348a640ed81ae5dee3f9",
+   "addedAt": "2026-11-18T19:50:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "brother-james-s-air-bain",
+   "file": "songs/Brother James's Air, Bain.mid",
+   "title": "Bain – Brother James’s Air",
+   "kind": "MIDI",
+   "sha1": "7b35025e07876117042660cdcb40b3cd06a12cc0",
+   "addedAt": "2026-11-18T19:50:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "caro-mio-ben-giordani",
+   "file": "songs/Caro mio ben, Giordani.mid",
+   "title": "Giordani – Caro mio ben",
+   "kind": "MIDI",
+   "sha1": "7f1b21e380bd5f140974f51ed93ba00c0a5fdb1c",
+   "addedAt": "2026-11-18T19:50:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "greensleeves-traditional",
+   "file": "songs/Greensleeves, Traditional.mid",
+   "title": "Traditional – Greensleeves",
+   "kind": "MIDI",
+   "sha1": "17baaa7cbb3a14e91e5a66e44902ead0ed27969a",
+   "addedAt": "2026-11-18T19:50:00Z",
+   "category": "classical"
+  },
+  {
+   "id": "ode-to-joy-beethoven-symphony-no-9",
+   "file": "songs/Ode to Joy, Beethoven Symphony No. 9.mid",
+   "title": "Beethoven – Ode to Joy, Symphony No. 9",
+   "kind": "MIDI",
+   "sha1": "08a40329628816dd7082256bed4293bf50095e11",
+   "addedAt": "2026-11-18T19:50:00Z",
    "category": "classical"
   },
   {
