@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "abschied-schubert",
+ "title": "Schubert – Abschied, D. 957 No. 7",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T21:42:03Z",
+ "updatedAt": "2026-11-19T21:42:03Z",
+ "units": {
+  "count": 160,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 140,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

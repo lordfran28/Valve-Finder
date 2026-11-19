@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:34:06Z",
+ "generatedAt": "2026-11-19T21:42:36Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5286,6 +5286,292 @@
    "details": {
     "title": "You Don't Know What Love Is — Chet Baker",
     "lead": "Chet Baker's trumpet from the record, note for note and in bars, in F minor."
+   }
+  },
+  {
+   "id": "abschied-schubert",
+   "file": "songs/Art songs/Abschied, Schubert.musicxml",
+   "title": "Schubert – Abschied, D. 957 No. 7",
+   "kind": "MusicXML",
+   "sha1": "82268755f2c66ed71a0eb91444d938ff921ea906",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 160,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "auf-dem-flusse-schubert",
+   "file": "songs/Art songs/Auf dem Flusse, Schubert.musicxml",
+   "title": "Schubert – Auf dem Flusse, Winterreise No. 7",
+   "kind": "MusicXML",
+   "sha1": "985a9947f39d9f1313dbd6273bdbec528c7580dd",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 70,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "bitten-beethoven",
+   "file": "songs/Art songs/Bitten, Beethoven.musicxml",
+   "title": "Beethoven – Bitten, Op. 48 No. 1",
+   "kind": "MusicXML",
+   "sha1": "b0e8985edb0979a261d002679a624c6e819d1384",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "c-est-l-extase-langoureuse-debussy",
+   "file": "songs/Art songs/C est l extase langoureuse, Debussy.musicxml",
+   "title": "Debussy – C’est l’extase langoureuse, Ariettes oubliées No. 1",
+   "kind": "MusicXML",
+   "sha1": "b7125aeb6f6fcfc9a5fd90b967b6c2a83d5b5181",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 50,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "c-est-l-extase-faure",
+   "file": "songs/Art songs/C est l extase, Faure.musicxml",
+   "title": "Fauré – C’est l’extase, Op. 58 No. 5",
+   "kind": "MusicXML",
+   "sha1": "b3c25f6bb0da899c5051f6ef522e84db540488d7",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 51,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "das-wirtshaus-schubert",
+   "file": "songs/Art songs/Das Wirtshaus, Schubert.musicxml",
+   "title": "Schubert – Das Wirtshaus, Winterreise No. 21",
+   "kind": "MusicXML",
+   "sha1": "7336dab7271fa19afc841ef2618fd8a662265ab4",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 27,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-atlas-schubert",
+   "file": "songs/Art songs/Der Atlas, Schubert.musicxml",
+   "title": "Schubert – Der Atlas, D. 957 No. 8",
+   "kind": "MusicXML",
+   "sha1": "481762976b3beeb9c56c960fe665fad3b4c4d2e7",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 53,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-krahe-schubert",
+   "file": "songs/Art songs/Die Krahe, Schubert.musicxml",
+   "title": "Schubert – Die Krähe, Winterreise No. 15",
+   "kind": "MusicXML",
+   "sha1": "9b6ef267f8a090023a9fd6b8896f8aa7b912322d",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-nebensonnen-schubert",
+   "file": "songs/Art songs/Die Nebensonnen, Schubert.musicxml",
+   "title": "Schubert – Die Nebensonnen, Winterreise No. 23",
+   "kind": "MusicXML",
+   "sha1": "a831bfdb2f0fb37189f62cc61eede8fcfc38f5fe",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 29,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-post-schubert",
+   "file": "songs/Art songs/Die Post, Schubert.musicxml",
+   "title": "Schubert – Die Post, Winterreise No. 13",
+   "kind": "MusicXML",
+   "sha1": "9669baa4d5905a5e150b674f37c87e4179f761df",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 86,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-stadt-schubert",
+   "file": "songs/Art songs/Die Stadt, Schubert.musicxml",
+   "title": "Schubert – Die Stadt, D. 957 No. 11",
+   "kind": "MusicXML",
+   "sha1": "57c4679f43d8b3c96a7e03dca363b3f9e3a8a662",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 35,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-alten-bosen-lieder-schumann",
+   "file": "songs/Art songs/Die alten bosen Lieder, Schumann.musicxml",
+   "title": "Schumann – Die alten, bösen Lieder, Dichterliebe No. 16",
+   "kind": "MusicXML",
+   "sha1": "2535dc80ecddecda5f218eb8862a035d06376667",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 65,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "im-dorfe-schubert",
+   "file": "songs/Art songs/Im Dorfe, Schubert.musicxml",
+   "title": "Schubert – Im Dorfe, Winterreise No. 17",
+   "kind": "MusicXML",
+   "sha1": "eb6d9f56aea536855c90d4bc8a38a3cfa89418f7",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 44,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "in-der-ferne-schubert",
+   "file": "songs/Art songs/In der Ferne, Schubert.musicxml",
+   "title": "Schubert – In der Ferne, D. 957 No. 6",
+   "kind": "MusicXML",
+   "sha1": "a2df5e4fc84666ebfc52b54266551a48ad8c17a9",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 110,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "le-balcon-debussy",
+   "file": "songs/Art songs/Le Balcon, Debussy.musicxml",
+   "title": "Debussy – Le Balcon, Cinq Poèmes de Baudelaire No. 1",
+   "kind": "MusicXML",
+   "sha1": "b70ee106f09c29681c0b542ad59c0bacf7d09a51",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 128,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mein-schubert",
+   "file": "songs/Art songs/Mein, Schubert.musicxml",
+   "title": "Schubert – Mein!, Die schöne Müllerin No. 11",
+   "kind": "MusicXML",
+   "sha1": "3b86decd3bac8c3242c4b8638609e3ed25b6f585",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 95,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mut-schubert",
+   "file": "songs/Art songs/Mut, Schubert.musicxml",
+   "title": "Schubert – Mut!, Winterreise No. 22",
+   "kind": "MusicXML",
+   "sha1": "35b9c3fdaa1a3db076aa13e11587805899455991",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 42,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "pause-schubert",
+   "file": "songs/Art songs/Pause, Schubert.musicxml",
+   "title": "Schubert – Pause, Die schöne Müllerin No. 12",
+   "kind": "MusicXML",
+   "sha1": "fd05b0bca7924c29a7eff14324ee54343fa8b599",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 73,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "und-wussten-s-die-blumen-schumann",
+   "file": "songs/Art songs/Und wussten s die Blumen, Schumann.musicxml",
+   "title": "Schumann – Und wüssten’s die Blumen, Dichterliebe No. 8",
+   "kind": "MusicXML",
+   "sha1": "efaa9325e3dc36a5257ff0ebb6fd5d5f274d2c1d",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "verschwiegene-liebe-wolf",
+   "file": "songs/Art songs/Verschwiegene Liebe, Wolf.musicxml",
+   "title": "Wolf – Verschwiegene Liebe, Eichendorff-Lieder No. 3",
+   "kind": "MusicXML",
+   "sha1": "90575ebb81f99fbf90444966481fb5390a72ca64",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wehmut-schumann",
+   "file": "songs/Art songs/Wehmut, Schumann.musicxml",
+   "title": "Schumann – Wehmut, Op. 39 No. 9",
+   "kind": "MusicXML",
+   "sha1": "34a7370df887d01aa868550fa63a63fa82d2d55f",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "zwielicht-schumann",
+   "file": "songs/Art songs/Zwielicht, Schumann.musicxml",
+   "title": "Schumann – Zwielicht, Op. 39 No. 10",
+   "kind": "MusicXML",
+   "sha1": "2b4bcee4fcab09f7790dfbee50e0fc5a6537eeb1",
+   "addedAt": "2026-11-19T21:42:03Z",
+   "category": "classical",
+   "units": {
+    "count": 34,
+    "unit": "Bar"
    }
   },
   {

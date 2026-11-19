@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "c-est-l-extase-langoureuse-debussy",
+ "title": "Debussy – C’est l’extase langoureuse, Ariettes oubliées No. 1",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T21:42:03Z",
+ "updatedAt": "2026-11-19T21:42:03Z",
+ "units": {
+  "count": 50,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 40,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

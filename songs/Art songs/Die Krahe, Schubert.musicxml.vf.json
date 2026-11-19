@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "die-krahe-schubert",
+ "title": "Schubert – Die Krähe, Winterreise No. 15",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T21:42:03Z",
+ "updatedAt": "2026-11-19T21:42:03Z",
+ "units": {
+  "count": 38,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

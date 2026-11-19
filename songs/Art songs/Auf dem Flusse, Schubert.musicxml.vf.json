@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "auf-dem-flusse-schubert",
+ "title": "Schubert – Auf dem Flusse, Winterreise No. 7",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T21:42:03Z",
+ "updatedAt": "2026-11-19T21:42:03Z",
+ "units": {
+  "count": 70,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 43,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}
