@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:28:10Z",
+ "generatedAt": "2026-11-19T11:28:34Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5190,6 +5190,15 @@
    }
   },
   {
+   "id": "removed-51612c62a637",
+   "file": "songs/Arturo S Autumn Leaves (G minor).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
+   "addedAt": "2026-11-19T11:28:16Z",
+   "removed": true
+  },
+  {
    "id": "removed-8198bc37d286",
    "file": "songs/It Never Entered My Mind (D major).mid",
    "title": "",
@@ -5627,15 +5636,6 @@
    "title": "",
    "kind": "MIDI",
    "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-51612c62a637",
-   "file": "songs/Arturo S Autumn Leaves G minor.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
    "addedAt": "2026-11-02T05:45:53Z",
    "removed": true
   },
@@ -6100,6 +6100,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Arturo S Autumn Leaves (G minor).mid",
+   "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
+   "at": "2026-11-19T11:28:16Z"
+  },
   {
    "file": "songs/It Never Entered My Mind (D major).mid",
    "sha1": "8198bc37d2864740b8bbe6b19397628a642698d3",
