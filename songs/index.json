@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T05:32:09Z",
+ "generatedAt": "2026-11-19T05:32:25Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3907,6 +3907,19 @@
    }
   },
   {
+   "id": "widmung-franz",
+   "file": "songs/Art songs/Widmung, Franz.musicxml",
+   "title": "Franz – Widmung, Op. 14 No. 1",
+   "kind": "MusicXML",
+   "sha1": "aedb0ef8996097ceda7a5435a5ef1c77739b26fd",
+   "addedAt": "2026-11-18T18:20:43Z",
+   "category": "classical",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   }
+  },
+  {
    "id": "home-sweet-home-bishop",
    "file": "songs/Home Sweet Home, Bishop.mid",
    "title": "Bishop – Home, Sweet Home",
@@ -4752,7 +4765,7 @@
   {
    "id": "meeres-stille-schubert",
    "file": "songs/Art songs/Meeres Stille, Schubert.musicxml",
-   "title": "Schubert – Meeres Stille, D. 216",
+   "title": "Schubert – Meeres Stille, Op. 3 No. 2",
    "kind": "MusicXML",
    "sha1": "f05b177883ddf25c686c69855b7be34a904d5091",
    "addedAt": "2026-11-19T05:31:47Z",
@@ -4902,19 +4915,6 @@
    "category": "classical",
    "units": {
     "count": 37,
-    "unit": "Bar"
-   }
-  },
-  {
-   "id": "widmung-franz",
-   "file": "songs/Art songs/Widmung, Franz.musicxml",
-   "title": "Robert Franz – Widmung, Op. 14 No. 1",
-   "kind": "MusicXML",
-   "sha1": "aedb0ef8996097ceda7a5435a5ef1c77739b26fd",
-   "addedAt": "2026-11-19T05:31:47Z",
-   "category": "classical",
-   "units": {
-    "count": 32,
     "unit": "Bar"
    }
   },
