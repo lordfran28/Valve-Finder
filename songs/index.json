@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T10:54:20Z",
+ "generatedAt": "2026-11-19T11:04:21Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -912,26 +912,38 @@
   },
   {
    "id": "mw5mg73sqkqqk",
-   "file": "songs/Nothing's Gonna Change My Love for You (B major).mid",
+   "file": "songs/Nothing's Gonna Change My Love for You (B major).musicxml.locked",
    "title": "Nothing's Gonna Change My Love for You (B major)",
-   "kind": "MIDI",
-   "sha1": "8a08ce6cc17839adc3a778a2dbc318d717f80056",
+   "kind": "MusicXML",
+   "sha1": "28be8e284c9bc7c821074e733e0d0138b61343e6",
    "addedAt": "2026-11-06T23:44:42Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 23,
-    "unit": "Phrase"
+    "count": 46,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Nothing's Gonna Change My Love for You",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in B major. It comes and goes; where it rests, the bars rest."
    }
   },
   {
    "id": "mw5mg749moppx",
-   "file": "songs/A Kiss to Build a Dream On (C major).mid",
+   "file": "songs/A Kiss to Build a Dream On (C major).musicxml.locked",
    "title": "A Kiss to Build a Dream On (C major)",
-   "kind": "MIDI",
-   "sha1": "6afd02bc861eaea60a061f7cce3f19bfde0224ed",
+   "kind": "MusicXML",
+   "sha1": "664617b73a9c32b55cbc2cb0feb515cc042cf4d3",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 16,
-    "unit": "Phrase"
+    "count": 33,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "A Kiss to Build a Dream On",
+    "lead": "The trumpet's tune from the cover you added, note for note and in bars. C major, and low in the horn the whole way: nothing above the D."
    }
   },
   {
@@ -948,14 +960,20 @@
   },
   {
    "id": "mw5mg74cepnfv",
-   "file": "songs/Call Me Irresponsible (F major).mid",
+   "file": "songs/Call Me Irresponsible (F major).musicxml.locked",
    "title": "Call Me Irresponsible (F major)",
-   "kind": "MIDI",
-   "sha1": "1e29eb1a599f34af14ae26564a033defcf833f21",
+   "kind": "MusicXML",
+   "sha1": "b1fedf8a1333dc448bd366d008c7bb07421a9e38",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 42,
-    "unit": "Phrase"
+    "count": 82,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Call Me Irresponsible",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars: F major, then up a half step to G♭ for the last time through. Where the trumpet rests, the bars rest."
    }
   },
   {
@@ -1020,14 +1038,20 @@
   },
   {
    "id": "mw5mg74h08n18",
-   "file": "songs/It Had to Be You (F major).mid",
+   "file": "songs/It Had to Be You (F major).musicxml.locked",
    "title": "It Had to Be You (F major)",
-   "kind": "MIDI",
-   "sha1": "9dfc2ec648334058f79d342999f73a2c316fa3fd",
+   "kind": "MusicXML",
+   "sha1": "915f034eb2f4fde08d6b98e07125e97d3b2c73f9",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 21,
-    "unit": "Phrase"
+    "count": 67,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "It Had to Be You",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars: F major, at a brisk swing."
    }
   },
   {
@@ -1068,26 +1092,38 @@
   },
   {
    "id": "mw5mg74mk0woz",
-   "file": "songs/Misty (E♭ major).mid",
+   "file": "songs/Misty (E♭ major).musicxml.locked",
    "title": "Misty (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "a7b1bd81380cee19b033ac9b64884c049f405f3e",
+   "kind": "MusicXML",
+   "sha1": "89d21c263669b2259ee529515cb2d72655d14ad1",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 35,
-    "unit": "Phrase"
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Misty",
+    "lead": "Misty on flugelhorn, the way this player decorates it: every turn and run written out note for note, in E♭ major, at a slow 55 a minute."
    }
   },
   {
    "id": "mw5mg74okfzbm",
-   "file": "songs/Moon River (B♭ major).mid",
+   "file": "songs/Moon River (B♭ major).musicxml.locked",
    "title": "Moon River (B♭ major)",
-   "kind": "MIDI",
-   "sha1": "5a0814e518cf09858cfd69b0f49c9dcc6ad39515",
+   "kind": "MusicXML",
+   "sha1": "575007e0f6ef3695a585a2dc3aaa52e320f91196",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 31,
-    "unit": "Phrase"
+    "count": 81,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Moon River",
+    "lead": "The trumpet's tune from the recording you added, in waltz time and B♭ major. The second time through it climbs an octave and peaks on a high C. Where the trumpet rests or drops too soft to make out, the bars rest."
    }
   },
   {
@@ -1164,14 +1200,20 @@
   },
   {
    "id": "mw5mg742iq121",
-   "file": "songs/Strangers in the Night (F major).mid",
+   "file": "songs/Strangers in the Night (F major).musicxml.locked",
    "title": "Strangers in the Night (F major)",
-   "kind": "MIDI",
-   "sha1": "7c2e6c6d9e0b1f34abc022c652dea56526028fc6",
+   "kind": "MusicXML",
+   "sha1": "584731821779b68781ea554707a931583fbe9e65",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 14,
-    "unit": "Phrase"
+    "count": 52,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Strangers in the Night",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major."
    }
   },
   {
@@ -1212,14 +1254,20 @@
   },
   {
    "id": "mw5mg747j4dcm",
-   "file": "songs/Unforgettable (G major).mid",
+   "file": "songs/Unforgettable (G major).musicxml.locked",
    "title": "Unforgettable (G major)",
-   "kind": "MIDI",
-   "sha1": "ad4a53d903b85ac812e2575e7cc18d71a04f7cfb",
+   "kind": "MusicXML",
+   "sha1": "61db3dd6750bc1991c4c99c146598bde97631a39",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 26,
-    "unit": "Phrase"
+    "count": 66,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Unforgettable",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in G major. It plays the song twice, with the band on its own in between."
    }
   },
   {
