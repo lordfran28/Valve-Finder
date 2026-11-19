@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:16:19Z",
+ "generatedAt": "2026-11-19T11:24:28Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -281,6 +281,24 @@
    }
   },
   {
+   "id": "mvyt980ukbr4w",
+   "file": "songs/Alone Together — Rudy V (F minor).musicxml.locked",
+   "title": "Alone Together — Rudy V (F minor)",
+   "kind": "MusicXML",
+   "sha1": "1d434207386f28659f024bd55231f3a42ba6ff1c",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 47,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Alone Together — Rudy V",
+    "lead": "The trumpet's tune from the record you added, note for note and in bars, in F minor."
+   }
+  },
+  {
    "id": "mvyt9814nir81",
    "file": "songs/Arturo S Autumn Leaves (G minor).mid",
    "title": "Autumn Leaves — Arturo Sandoval (G minor)",
@@ -475,15 +493,20 @@
   },
   {
    "id": "mvyt981yxfhkx",
-   "file": "songs/It Never Entered My Mind (D major).mid",
-   "title": "It Never Entered My Mind (D major)",
-   "kind": "MIDI",
-   "sha1": "8198bc37d2864740b8bbe6b19397628a642698d3",
+   "file": "songs/It Never Entered My Mind (G major).musicxml.locked",
+   "title": "It Never Entered My Mind (G major)",
+   "kind": "MusicXML",
+   "sha1": "f04d85dcc76a34d84e4fa8f882446b53456123aa",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 45,
-    "unit": "Phrase"
+    "count": 152,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "It Never Entered My Mind",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars. It's in G major, not D as the old file had it."
    }
   },
   {
@@ -506,67 +529,56 @@
   },
   {
    "id": "mvyt980magxh3",
-   "file": "songs/Miles D My Funny Valentine (E♭ major).mid",
+   "file": "songs/My Funny Valentine — Miles Davis (E♭ major).musicxml.locked",
    "title": "My Funny Valentine — Miles Davis (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "cb88195b5ee0aebf2891d85d69c721485adf5c53",
+   "kind": "MusicXML",
+   "sha1": "ebe076aad8887318bc3435596448c7b80f2a05e8",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 43,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt980py4uaw",
-   "file": "songs/Nearness of You (E♭ major).mid",
-   "title": "The Nearness of You (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "382d6ca7d4e62c2e69c0d4261574f1c0d86d4c6c",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 30,
-    "unit": "Phrase"
+    "count": 196,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My Funny Valentine — Miles Davis",
+    "lead": "Miles Davis's trumpet from Cookin', note for note and in bars, in C minor."
    }
   },
   {
    "id": "mvyt980sc8yii",
-   "file": "songs/Night and Day (F major).mid",
+   "file": "songs/Night and Day (F major).musicxml.locked",
    "title": "Night and Day (F major)",
-   "kind": "MIDI",
-   "sha1": "0dd5cc2e05a41797b9db07d34f71cee4593ef527",
+   "kind": "MusicXML",
+   "sha1": "46f05c9c697b34950193529e6fee125a152b4859",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 21,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt980ukbr4w",
-   "file": "songs/Rudy V Alone Together (F minor).mid",
-   "title": "Alone Together — Rudy V (F minor)",
-   "kind": "MIDI",
-   "sha1": "eaf078a14035682b6bca1c22f93235a494416bcd",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 18,
-    "unit": "Phrase"
+    "count": 50,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Night and Day",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major."
    }
   },
   {
    "id": "mvyt980wh65gz",
-   "file": "songs/Someone to Watch Over Me (D♭ major).mid",
+   "file": "songs/Someone to Watch Over Me (D♭ major).musicxml.locked",
    "title": "Someone to Watch Over Me (D♭ major)",
-   "kind": "MIDI",
-   "sha1": "8e5b939fec68d7a9289dcd21043026efc864da4f",
+   "kind": "MusicXML",
+   "sha1": "3d6a04061077726da05a95948b9fe658f89f1c72",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 30,
-    "unit": "Phrase"
+    "count": 58,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Someone to Watch Over Me",
+    "lead": "The trumpet's tune from the live recording you added, note for note and in bars, in D♭ major."
    }
   },
   {
@@ -606,29 +618,57 @@
    }
   },
   {
-   "id": "mvyt980yyg8cl",
-   "file": "songs/The Very Thought of You (A♭ major).mid",
-   "title": "The Very Thought of You (A♭ major)",
-   "kind": "MIDI",
-   "sha1": "00b245446c0b927a9c9599b538e1b4477e9d3dc0",
+   "id": "mvyt980py4uaw",
+   "file": "songs/The Nearness of You, slow (E♭ major).musicxml.locked",
+   "title": "The Nearness of You, slow (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "5046e01f919d001cef716a124b6ae0ef3fe9372a",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 52,
-    "unit": "Phrase"
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Nearness of You, slow",
+    "lead": "The trumpet's tune from the slow cover you added, about 60 a minute, note for note and in bars, in E♭ major."
+   }
+  },
+  {
+   "id": "mvyt980yyg8cl",
+   "file": "songs/The Very Thought of You (A♭ major).musicxml.locked",
+   "title": "The Very Thought of You (A♭ major)",
+   "kind": "MusicXML",
+   "sha1": "0d368832c01a53b290a176b0ec179c66038c84b5",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 108,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Very Thought of You",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in A♭ major."
    }
   },
   {
    "id": "mvyt9810v9f5x",
-   "file": "songs/When I Fall in Love (F major).mid",
+   "file": "songs/When I Fall in Love (F major).musicxml.locked",
    "title": "When I Fall in Love (F major)",
-   "kind": "MIDI",
-   "sha1": "1370ddd069794dc5b7ae5a010f40e364f62d2392",
+   "kind": "MusicXML",
+   "sha1": "82c5da17739b7613014c923278f6004fb05c2183",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 32,
-    "unit": "Phrase"
+    "count": 129,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "When I Fall in Love",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major."
    }
   },
   {
@@ -1114,6 +1154,24 @@
    }
   },
   {
+   "id": "mw5mg74ied9yv",
+   "file": "songs/I've Got You Under My Skin (E♭ major).musicxml.locked",
+   "title": "I've Got You Under My Skin (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "fa363c741beb23a7a6e5add142f68154d79d0792",
+   "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 56,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I've Got You Under My Skin",
+    "lead": "The trumpet's tune from the cover you added, note for note and in bars. It's in E♭ major, not C as the old file had it."
+   }
+  },
+  {
    "id": "mw5mg74fajav1",
    "file": "songs/If (F major).musicxml.locked",
    "title": "If (F major)",
@@ -1150,39 +1208,39 @@
    }
   },
   {
-   "id": "mw5mg74ied9yv",
-   "file": "songs/Iv Got You Under My Skin (C major).mid",
-   "title": "Iv Got You Under My Skin (C major)",
-   "kind": "MIDI",
-   "sha1": "a83a6bfd370db9ff8dbd26e40dd451f9b45a24db",
-   "addedAt": "2026-11-06T23:44:43Z",
-   "units": {
-    "count": 34,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "mw5mg74kep4ro",
-   "file": "songs/Long Ago and Far Away (E♭ major).mid",
+   "file": "songs/Long Ago and Far Away (E♭ major).musicxml.locked",
    "title": "Long Ago and Far Away (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "8c69291f7cc1b78c22c1df547addcafffc4de7ea",
+   "kind": "MusicXML",
+   "sha1": "ad10dd27dcc8b1c7897827c69b5d2ba22508a703",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 18,
-    "unit": "Phrase"
+    "count": 63,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Long Ago and Far Away",
+    "lead": "The trumpet's tune from the solo you added, note for note and in bars, in E♭ major, low in the horn."
    }
   },
   {
    "id": "mw5mg74loje9f",
-   "file": "songs/Max P September in the Rain (E♭ major).mid",
+   "file": "songs/Max P September in the Rain (E♭ major).musicxml.locked",
    "title": "Max P September in the Rain (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "b985620348a854008504183f13530e90976a86e3",
+   "kind": "MusicXML",
+   "sha1": "a23c42c2fe15cd3cc4e8b2fbfddb144a47057710",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 102,
-    "unit": "Phrase"
+    "count": 169,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Max P September in the Rain",
+    "lead": "Max Perov's trumpet from the recording you added, note for note and in bars, in E♭ major."
    }
   },
   {
@@ -1223,50 +1281,74 @@
   },
   {
    "id": "mw5mg74oz6r0r",
-   "file": "songs/My Funny Valentine (F major).mid",
+   "file": "songs/My Funny Valentine (F major).musicxml.locked",
    "title": "My Funny Valentine (F major)",
-   "kind": "MIDI",
-   "sha1": "a843cba5d74cbd267a3b4347c6d2141a536bcdce",
+   "kind": "MusicXML",
+   "sha1": "5cf90678b0c3f80478f887b9d50fefeb7beef296",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 36,
-    "unit": "Phrase"
+    "count": 52,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My Funny Valentine",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in D minor."
    }
   },
   {
    "id": "mw5mg74p9w1gw",
-   "file": "songs/Nevertheless (E♭ major).mid",
+   "file": "songs/Nevertheless (E♭ major).musicxml.locked",
    "title": "Nevertheless (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "b09e49d900c6cf71393631fb9440558d77cfeed8",
+   "kind": "MusicXML",
+   "sha1": "64ab9dfb8992613c2a467010f422420132d5990f",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 46,
-    "unit": "Phrase"
+    "count": 71,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Nevertheless",
+    "lead": "The trumpet's tune from Matthew Sirait's recording, note for note and in bars, in E♭ major. He plays it low in the horn."
    }
   },
   {
    "id": "mw5mg73wwyoib",
-   "file": "songs/Our Love Is Here to Stay (F major).mid",
+   "file": "songs/Our Love Is Here to Stay (F major).musicxml.locked",
    "title": "Our Love Is Here to Stay (F major)",
-   "kind": "MIDI",
-   "sha1": "883e9b4477d74044844b420a149ead0f38f5126b",
+   "kind": "MusicXML",
+   "sha1": "1c1f6d9528086017a6ccee701bb3de02dea7d276",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 46,
-    "unit": "Phrase"
+    "count": 72,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Our Love Is Here to Stay",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major."
    }
   },
   {
    "id": "mw5mg73yynzjq",
-   "file": "songs/September in the Rain (E♭ major).mid",
+   "file": "songs/September in the Rain (E♭ major).musicxml.locked",
    "title": "September in the Rain (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "6a1b10787d4d2e20d30d86cd9a334858b72cabb7",
+   "kind": "MusicXML",
+   "sha1": "de92626de8e893488617585e6779c7853a8af536",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 86,
-    "unit": "Phrase"
+    "count": 213,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "September in the Rain",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in E♭ major."
    }
   },
   {
@@ -1283,14 +1365,20 @@
   },
   {
    "id": "mw5mg741tzo16",
-   "file": "songs/Stardust (F major).mid",
+   "file": "songs/Stardust (F major).musicxml.locked",
    "title": "Stardust (F major)",
-   "kind": "MIDI",
-   "sha1": "f2418c687c7a5fbe63e213cc40db3eadbcf45930",
+   "kind": "MusicXML",
+   "sha1": "430ed53cba8edbbc88e60f15c2fe467748299526",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 41,
-    "unit": "Phrase"
+    "count": 68,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Stardust",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major."
    }
   },
   {
@@ -1313,38 +1401,56 @@
   },
   {
    "id": "mw5mg744mzhp7",
-   "file": "songs/The Nearness of You (E♭ major).mid",
+   "file": "songs/The Nearness of You (E♭ major).musicxml.locked",
    "title": "The Nearness of You (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "369943d662d3ba71590f0b29d4dd7378c51baf8a",
+   "kind": "MusicXML",
+   "sha1": "bc249003ac48fba5ad4db60033b81515719739df",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 17,
-    "unit": "Phrase"
+    "count": 84,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Nearness of You",
+    "lead": "The trumpet's tune from the recording you added, at about 106 a minute, note for note and in bars, in E♭ major."
    }
   },
   {
    "id": "mw5mg7454ing4",
-   "file": "songs/There Will Never Be Another You (E♭ major).mid",
+   "file": "songs/There Will Never Be Another You (E♭ major).musicxml.locked",
    "title": "There Will Never Be Another You (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "687ba3dbe72857fa55ee13df45fc807dcf9786a2",
+   "kind": "MusicXML",
+   "sha1": "444af3d520c35b1621de20d5612c8f9cb0272d2e",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 23,
-    "unit": "Phrase"
+    "count": 35,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "There Will Never Be Another You",
+    "lead": "The trumpet's tune from the cover you added, note for note and in bars, in E♭ major."
    }
   },
   {
    "id": "mw5mg746honxf",
-   "file": "songs/Till There Was You (B♭ major).mid",
+   "file": "songs/Till There Was You (B♭ major).musicxml.locked",
    "title": "Till There Was You (B♭ major)",
-   "kind": "MIDI",
-   "sha1": "43daa44367899efec30c98a1456682ca87d54862",
+   "kind": "MusicXML",
+   "sha1": "87144e0cdab7288cf2fe7b9513c63322de259f92",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 16,
-    "unit": "Phrase"
+    "count": 44,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Till There Was You",
+    "lead": "The trumpet's tune from the solo you added, note for note and in bars, in B♭ major."
    }
   },
   {
@@ -1367,14 +1473,20 @@
   },
   {
    "id": "mw5mg7493a8s4",
-   "file": "songs/You'll Never Know (B♭ major).mid",
+   "file": "songs/You'll Never Know (B♭ major).musicxml.locked",
    "title": "You'll Never Know (B♭ major)",
-   "kind": "MIDI",
-   "sha1": "2b7b1f57485a55cb95904dbef65f72567b3c37c0",
+   "kind": "MusicXML",
+   "sha1": "97882022f12d718ed538f478ab5d23b08dd01e32",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 33,
-    "unit": "Phrase"
+    "count": 54,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "You'll Never Know",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in B♭ major."
    }
   },
   {
