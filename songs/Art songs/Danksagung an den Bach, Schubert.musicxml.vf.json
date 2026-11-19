@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "danksagung-an-den-bach-schubert",
+ "title": "Schubert – Danksagung an den Bach, Die schöne Müllerin No. 4",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T05:31:47Z",
+ "updatedAt": "2026-11-19T05:31:47Z",
+ "units": {
+  "count": 38,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 65,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

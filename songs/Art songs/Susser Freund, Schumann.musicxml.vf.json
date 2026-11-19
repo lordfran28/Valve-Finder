@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "susser-freund-schumann",
+ "title": "Schumann – Süsser Freund, du blickest, Frauenliebe und -leben No. 6",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T05:31:47Z",
+ "updatedAt": "2026-11-19T05:31:47Z",
+ "units": {
+  "count": 57,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

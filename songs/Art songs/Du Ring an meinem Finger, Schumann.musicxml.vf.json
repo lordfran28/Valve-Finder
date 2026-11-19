@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "du-ring-an-meinem-finger-schumann",
+ "title": "Schumann – Du Ring an meinem Finger, Frauenliebe und -leben No. 4",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T05:31:47Z",
+ "updatedAt": "2026-11-19T05:31:47Z",
+ "units": {
+  "count": 45,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

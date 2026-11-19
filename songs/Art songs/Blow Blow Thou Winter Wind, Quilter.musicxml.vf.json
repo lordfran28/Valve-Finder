@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "blow-blow-thou-winter-wind-quilter",
+ "title": "Quilter – Blow, Blow, Thou Winter Wind, Op. 6 No. 3",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T05:31:47Z",
+ "updatedAt": "2026-11-19T05:31:47Z",
+ "units": {
+  "count": 76,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 76,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

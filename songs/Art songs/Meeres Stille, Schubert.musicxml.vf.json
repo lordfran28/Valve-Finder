@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "meeres-stille-schubert",
+ "title": "Schubert – Meeres Stille, D. 216",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T05:31:47Z",
+ "updatedAt": "2026-11-19T05:31:47Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 108,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

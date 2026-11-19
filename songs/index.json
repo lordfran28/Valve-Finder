@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T01:37:01Z",
+ "generatedAt": "2026-11-19T05:32:09Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3907,19 +3907,6 @@
    }
   },
   {
-   "id": "widmung-franz",
-   "file": "songs/Art songs/Widmung, Franz.musicxml",
-   "title": "Franz – Widmung, Op. 14 No. 1",
-   "kind": "MusicXML",
-   "sha1": "aedb0ef8996097ceda7a5435a5ef1c77739b26fd",
-   "addedAt": "2026-11-18T18:20:43Z",
-   "category": "classical",
-   "units": {
-    "count": 32,
-    "unit": "Bar"
-   }
-  },
-  {
    "id": "home-sweet-home-bishop",
    "file": "songs/Home Sweet Home, Bishop.mid",
    "title": "Bishop – Home, Sweet Home",
@@ -4421,6 +4408,513 @@
    "category": "classical",
    "units": {
     "count": 80,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "abenddammerung-brahms",
+   "file": "songs/Art songs/Abenddammerung, Brahms.musicxml",
+   "title": "Brahms – Abenddämmerung, Op. 49 No. 5",
+   "kind": "MusicXML",
+   "sha1": "33c548d5ffcbd03ebec369a26f4cb8ddcfaa6e88",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 69,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "allnachtlich-im-traume-schumann",
+   "file": "songs/Art songs/Allnachtlich im Traume, Schumann.musicxml",
+   "title": "Schumann – Allnächtlich im Traume, Dichterliebe No. 14",
+   "kind": "MusicXML",
+   "sha1": "09d6d3291f04f530fcfd3a03caeb351c42bf16fb",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "altdeutsches-fruhlingslied-mendelssohn",
+   "file": "songs/Art songs/Altdeutsches Fruhlingslied, Mendelssohn.musicxml",
+   "title": "Mendelssohn – Altdeutsches Frühlingslied, Op. 86 No. 6",
+   "kind": "MusicXML",
+   "sha1": "2fb7c5454d363fa35ce20d4dbf40eef27777b027",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "an-die-nachtigall-brahms",
+   "file": "songs/Art songs/An die Nachtigall, Brahms.musicxml",
+   "title": "Brahms – An die Nachtigall, Op. 46 No. 4",
+   "kind": "MusicXML",
+   "sha1": "58c7160688b776b2dff212df6e0695ca6fc4e21f",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 56,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "an-eine-aolsharfe-brahms",
+   "file": "songs/Art songs/An eine Aolsharfe, Brahms.musicxml",
+   "title": "Brahms – An eine Äolsharfe, Op. 19 No. 5",
+   "kind": "MusicXML",
+   "sha1": "443693c55ae81b8169c54dd8e8756bcb25c01fce",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 104,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "aubade-gounod",
+   "file": "songs/Art songs/Aubade, Gounod.musicxml",
+   "title": "Gounod – Aubade",
+   "kind": "MusicXML",
+   "sha1": "82f2df2555c0f09e50f442655588db93fbb67684",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 54,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "auf-einer-burg-schumann",
+   "file": "songs/Art songs/Auf einer Burg, Schumann.musicxml",
+   "title": "Schumann – Auf einer Burg, Liederkreis Op. 39 No. 7",
+   "kind": "MusicXML",
+   "sha1": "43407d84ea7f7aca5afc7853445208053f9b6d01",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "blow-blow-thou-winter-wind-quilter",
+   "file": "songs/Art songs/Blow Blow Thou Winter Wind, Quilter.musicxml",
+   "title": "Quilter – Blow, Blow, Thou Winter Wind, Op. 6 No. 3",
+   "kind": "MusicXML",
+   "sha1": "4a3565c745cc849dd7d56fd520c538465df2ff58",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 76,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "chant-d-automne-gounod",
+   "file": "songs/Art songs/Chant d automne, Gounod.musicxml",
+   "title": "Gounod – Chant d’automne",
+   "kind": "MusicXML",
+   "sha1": "8a6f4d4ee2425b04bd0ba663004cb3625feb7532",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 82,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "danksagung-an-den-bach-schubert",
+   "file": "songs/Art songs/Danksagung an den Bach, Schubert.musicxml",
+   "title": "Schubert – Danksagung an den Bach, Die schöne Müllerin No. 4",
+   "kind": "MusicXML",
+   "sha1": "f29025da3bca6d9cf9a499c49b4b8ea1497c24b6",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "dass-sie-hier-gewesen-schubert",
+   "file": "songs/Art songs/Dass sie hier gewesen, Schubert.musicxml",
+   "title": "Schubert – Dass sie hier gewesen, D. 775",
+   "kind": "MusicXML",
+   "sha1": "2c9c4e3c25c39fd26a84a99bd475b3aa4b2693a4",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 66,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-muller-und-der-bach-schubert",
+   "file": "songs/Art songs/Der Muller und der Bach, Schubert.musicxml",
+   "title": "Schubert – Der Müller und der Bach, Die schöne Müllerin No. 19",
+   "kind": "MusicXML",
+   "sha1": "b25f5c0d2b96c5a9157fcf41496fd40c35faa1a6",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 87,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "des-mullers-blumen-schubert",
+   "file": "songs/Art songs/Des Mullers Blumen, Schubert.musicxml",
+   "title": "Schubert – Des Müllers Blumen, Die schöne Müllerin No. 9",
+   "kind": "MusicXML",
+   "sha1": "07f115ac488f41ae3da90188f4e1c5f1f0c44b43",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-stille-schumann",
+   "file": "songs/Art songs/Die Stille, Schumann.musicxml",
+   "title": "Schumann – Die Stille, Liederkreis Op. 39 No. 4",
+   "kind": "MusicXML",
+   "sha1": "9ffc5d1ae0d24ca4ca42e693999be85c8f1aa1b0",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-liebe-farbe-schubert",
+   "file": "songs/Art songs/Die liebe Farbe, Schubert.musicxml",
+   "title": "Schubert – Die liebe Farbe, Die schöne Müllerin No. 16",
+   "kind": "MusicXML",
+   "sha1": "17efb4ebd2186473c282cd186b89d2213484b2e6",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 22,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "du-ring-an-meinem-finger-schumann",
+   "file": "songs/Art songs/Du Ring an meinem Finger, Schumann.musicxml",
+   "title": "Schumann – Du Ring an meinem Finger, Frauenliebe und -leben No. 4",
+   "kind": "MusicXML",
+   "sha1": "5879715856274b1aeee99abb4a943c12020882ee",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 45,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "fischerweise-schubert",
+   "file": "songs/Art songs/Fischerweise, Schubert.musicxml",
+   "title": "Schubert – Fischerweise, D. 881",
+   "kind": "MusicXML",
+   "sha1": "c772d30f354d5eb5e88035ef20287bd929c41183",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 83,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "fruhlingssehnsucht-schubert",
+   "file": "songs/Art songs/Fruhlingssehnsucht, Schubert.musicxml",
+   "title": "Schubert – Frühlingssehnsucht, D. 957 No. 3",
+   "kind": "MusicXML",
+   "sha1": "0f38b5009cedde4c57dc44dc92852105c3f8da34",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 91,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "gestillte-sehnsucht-brahms",
+   "file": "songs/Art songs/Gestillte Sehnsucht, Brahms.musicxml",
+   "title": "Brahms – Gestillte Sehnsucht, Op. 91 No. 1",
+   "kind": "MusicXML",
+   "sha1": "6182761dad0804f57c4195e309eeb3a8e244e220",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 86,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "harmonie-du-soir-debussy",
+   "file": "songs/Art songs/Harmonie du soir, Debussy.musicxml",
+   "title": "Debussy – Harmonie du soir",
+   "kind": "MusicXML",
+   "sha1": "cac79774012f4d0649153455fe00b47b6b74b120",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 72,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "hor-ich-das-liedchen-klingen-schumann",
+   "file": "songs/Art songs/Hor ich das Liedchen klingen, Schumann.musicxml",
+   "title": "Schumann – Hör’ ich das Liedchen klingen, Dichterliebe No. 10",
+   "kind": "MusicXML",
+   "sha1": "350d37a5dbb2ea063e8c664ad72973647ba8a26d",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 26,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-stand-in-dunklen-traumen-clara-schumann",
+   "file": "songs/Art songs/Ich stand in dunklen Traumen, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Ich stand in dunklen Träumen, Op. 13 No. 1",
+   "kind": "MusicXML",
+   "sha1": "4b211ffa8e70150771d47fe461b36090bf23d1bc",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "la-rose-faure",
+   "file": "songs/Art songs/La rose, Faure.musicxml",
+   "title": "Fauré – La rose, Op. 51 No. 4",
+   "kind": "MusicXML",
+   "sha1": "6bad0fce114cceeb6ed385dc272eefbb79255a53",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 55,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "les-cloches-debussy",
+   "file": "songs/Art songs/Les cloches, Debussy.musicxml",
+   "title": "Debussy – Les cloches",
+   "kind": "MusicXML",
+   "sha1": "249950670bf05d0b5f530fbf814ae42474330ef7",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "liebst-du-um-schonheit-clara-schumann",
+   "file": "songs/Art songs/Liebst du um Schonheit, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Liebst du um Schönheit, Op. 12 No. 4",
+   "kind": "MusicXML",
+   "sha1": "0fc2513422799c9684b93c5110e45025667b1e39",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "lorelei-clara-schumann",
+   "file": "songs/Art songs/Lorelei, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Lorelei",
+   "kind": "MusicXML",
+   "sha1": "946a984cc35a347304d85f18546a722bb3dc7dd2",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 73,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "meeres-stille-schubert",
+   "file": "songs/Art songs/Meeres Stille, Schubert.musicxml",
+   "title": "Schubert – Meeres Stille, D. 216",
+   "kind": "MusicXML",
+   "sha1": "f05b177883ddf25c686c69855b7be34a904d5091",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mutter-o-sing-mich-zur-ruh-franz",
+   "file": "songs/Art songs/Mutter o sing mich zur Ruh, Franz.musicxml",
+   "title": "Robert Franz – Mutter, o sing mich zur Ruh, Op. 10 No. 3",
+   "kind": "MusicXML",
+   "sha1": "f8595a17122e15b82ad210d73a72db730514091a",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 50,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "nachtlied-schumann",
+   "file": "songs/Art songs/Nachtlied, Schumann.musicxml",
+   "title": "Schumann – Nachtlied, Op. 96 No. 1",
+   "kind": "MusicXML",
+   "sha1": "5835661ef45a6fde5ecbec02a4818dbc3f8a1b5b",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 29,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "prison-faure",
+   "file": "songs/Art songs/Prison, Faure.musicxml",
+   "title": "Fauré – Prison, Op. 83 No. 1",
+   "kind": "MusicXML",
+   "sha1": "88457bd23261cac3518a3344686e55072cbcfbe4",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 30,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "rencontre-faure",
+   "file": "songs/Art songs/Rencontre, Faure.musicxml",
+   "title": "Fauré – Rencontre, Poème d’un jour No. 1",
+   "kind": "MusicXML",
+   "sha1": "95b0bb8e29420a121e58c61f43c8d0994a89bbe2",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 42,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "sehnsucht-brahms",
+   "file": "songs/Art songs/Sehnsucht, Brahms.musicxml",
+   "title": "Brahms – Sehnsucht, Op. 49 No. 3",
+   "kind": "MusicXML",
+   "sha1": "a97b2044c1a40dcd715aa5d312c7d7364d4028df",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 45,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "susser-freund-schumann",
+   "file": "songs/Art songs/Susser Freund, Schumann.musicxml",
+   "title": "Schumann – Süsser Freund, du blickest, Frauenliebe und -leben No. 6",
+   "kind": "MusicXML",
+   "sha1": "a23af2e5ff189942676ae2083103defa7a6a3a79",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 57,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "to-daisies-quilter",
+   "file": "songs/Art songs/To Daisies, Quilter.musicxml",
+   "title": "Quilter – To Daisies, To Julia No. 4",
+   "kind": "MusicXML",
+   "sha1": "e783b1f1fa17170f1f4217530b73725e9a8a2c08",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "toujours-faure",
+   "file": "songs/Art songs/Toujours, Faure.musicxml",
+   "title": "Fauré – Toujours, Poème d’un jour No. 2",
+   "kind": "MusicXML",
+   "sha1": "7a743ba7697232edc6b4a61bf850c96bae895bfe",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 45,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "tranenregen-schubert",
+   "file": "songs/Art songs/Tranenregen, Schubert.musicxml",
+   "title": "Schubert – Tränenregen, Die schöne Müllerin No. 10",
+   "kind": "MusicXML",
+   "sha1": "f629a01ae9027c5a88c99f95345f1947cb87964d",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 34,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "treue-liebe-brahms",
+   "file": "songs/Art songs/Treue Liebe, Brahms.musicxml",
+   "title": "Brahms – Treue Liebe, Op. 7 No. 1",
+   "kind": "MusicXML",
+   "sha1": "269f0ab29a93ca44bc9cb1f6342b7178281758f3",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 36,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wehmut-schubert",
+   "file": "songs/Art songs/Wehmut, Schubert.musicxml",
+   "title": "Schubert – Wehmut, D. 772",
+   "kind": "MusicXML",
+   "sha1": "2c60b00e79b38754d7b89ec90a37a4789c2189ac",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 37,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "widmung-franz",
+   "file": "songs/Art songs/Widmung, Franz.musicxml",
+   "title": "Robert Franz – Widmung, Op. 14 No. 1",
+   "kind": "MusicXML",
+   "sha1": "aedb0ef8996097ceda7a5435a5ef1c77739b26fd",
+   "addedAt": "2026-11-19T05:31:47Z",
+   "category": "classical",
+   "units": {
+    "count": 32,
     "unit": "Bar"
    }
   },
