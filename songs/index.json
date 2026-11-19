@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:04:39Z",
+ "generatedAt": "2026-11-19T11:15:48Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -294,81 +294,21 @@
    }
   },
   {
-   "id": "mvyt981739v0a",
-   "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
-   "title": "Every Time We Say Goodbye — Chet Baker (F major)",
-   "kind": "MIDI",
-   "sha1": "6099dc07d387f98179e564b8b754448f37d8c0bf",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 36,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt98188tt6i",
-   "file": "songs/Chet B It Never Entered My Mind (F major).mid",
-   "title": "It Never Entered My Mind — Chet Baker (F major)",
-   "kind": "MIDI",
-   "sha1": "0554d6b18d0a265e96601d263dc0e6f24754689a",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 51,
-    "unit": "Phrase"
-   }
-  },
-  {
    "id": "mvyt981eclcw2",
-   "file": "songs/Chris B Ave Maria (B♭ major).mid",
+   "file": "songs/Ave Maria — Chris Botti (B♭ major).musicxml.locked",
    "title": "Ave Maria — Chris Botti (B♭ major)",
-   "kind": "MIDI",
-   "sha1": "41d3caa939477b3c9910cad6f0358b6252222f0d",
+   "kind": "MusicXML",
+   "sha1": "bacac359e75b17c1f9227b1cf38c0886ba695083",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 16,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt981fkfbsf",
-   "file": "songs/Clifford B Embraceable You (E♭ major).mid",
-   "title": "Embraceable You — Clifford Brown (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "81c7845c26723ddf6c850c927fdd6a40b0a66fbd",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 28,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt981h33ryg",
-   "file": "songs/Clifford B Stardust (D♭ major).mid",
-   "title": "Stardust — Clifford Brown (D♭ major)",
-   "kind": "MIDI",
-   "sha1": "1a7c2b50fd3a6e1a72bcb8a68d9cfeb226434361",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 41,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt981iqhise",
-   "file": "songs/Clifford B Where or When (G major).mid",
-   "title": "Where or When — Clifford Brown (G major)",
-   "kind": "MIDI",
-   "sha1": "e4ba701d6b05ba8941ad957a18a2ada12b0810d3",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 32,
-    "unit": "Phrase"
+    "count": 77,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Ave Maria — Chris Botti",
+    "lead": "Chris Botti's trumpet from the record you added: Schubert's Ave Maria, note for note and in bars, in B♭ major."
    }
   },
   {
@@ -391,93 +331,146 @@
   },
   {
    "id": "mvyt981k3t80s",
-   "file": "songs/Duke E Don't Get Around Much Anymore (C major).mid",
+   "file": "songs/Don’t Get Around Much Anymore — Duke Ellington (C major).musicxml.locked",
    "title": "Don’t Get Around Much Anymore — Duke Ellington (C major)",
-   "kind": "MIDI",
-   "sha1": "cb2e4c55a25c17ba6b037ddeb927ac35143a9e58",
+   "kind": "MusicXML",
+   "sha1": "28d02702f6e90ee43cd5aafffb2492421466b098",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 15,
-    "unit": "Phrase"
+    "count": 33,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Don’t Get Around Much Anymore — Duke Ellington",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in C major."
+   }
+  },
+  {
+   "id": "mvyt981fkfbsf",
+   "file": "songs/Embraceable You — Clifford Brown (E♭ major).musicxml.locked",
+   "title": "Embraceable You — Clifford Brown (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "19c33999ece7d2594952a933a43c746db1d4d808",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 50,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Embraceable You — Clifford Brown",
+    "lead": "Clifford Brown's trumpet from With Strings, note for note and in bars, in E♭ major."
    }
   },
   {
    "id": "mvyt981me2850",
-   "file": "songs/Everytime We Say Goodbye (F major).mid",
+   "file": "songs/Every Time We Say Goodbye (F major).musicxml.locked",
    "title": "Every Time We Say Goodbye (F major)",
-   "kind": "MIDI",
-   "sha1": "25fbdfbab6b8fc959392620c84f7c045b39d620a",
+   "kind": "MusicXML",
+   "sha1": "289dfc39deeda5c66b91373bf06753d8e1272c72",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 44,
-    "unit": "Phrase"
+    "count": 103,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Every Time We Say Goodbye",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major, very slow, about 57 a minute."
+   }
+  },
+  {
+   "id": "mvyt981739v0a",
+   "file": "songs/Every Time We Say Goodbye — Chet Baker (F major).musicxml.locked",
+   "title": "Every Time We Say Goodbye — Chet Baker (F major)",
+   "kind": "MusicXML",
+   "sha1": "b6927988df091868462fa7d1271a5b205fe63ee2",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 126,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Every Time We Say Goodbye — Chet Baker",
+    "lead": "Chet Baker's trumpet from the record you added, note for note and in bars, in F major. Where the trumpet rests, the bars rest."
    }
   },
   {
    "id": "mvyt981qdjatb",
-   "file": "songs/Glad to Be Unhappy (F major).mid",
+   "file": "songs/Glad to Be Unhappy (F major).musicxml.locked",
    "title": "Glad to Be Unhappy (F major)",
-   "kind": "MIDI",
-   "sha1": "9841c2c8e8b1c8906c3837160fee1cbe52edac48",
+   "kind": "MusicXML",
+   "sha1": "cb4f95ce97fd59f5a595d908228647d5f89f7fe5",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 70,
-    "unit": "Phrase"
-   }
-  },
-  {
-   "id": "mvyt981rucowj",
-   "file": "songs/Herb a Someone to Watch Over Me (E♭ major).mid",
-   "title": "Someone to Watch Over Me — Herb Alpert (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "03370c73c0fcfa157651daba0401be0cac20731b",
-   "addedAt": "2026-11-02T05:20:51Z",
-   "category": "contemporary",
-   "units": {
-    "count": 28,
-    "unit": "Phrase"
+    "count": 147,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Glad to Be Unhappy",
+    "lead": "The trumpet from the recording you added, note for note and in bars, in F major: the tune and everything played around it."
    }
   },
   {
    "id": "mvyt981uu6xl1",
-   "file": "songs/I Can`t Get Started (C major).mid",
+   "file": "songs/I Can’t Get Started (C major).musicxml.locked",
    "title": "I Can’t Get Started (C major)",
-   "kind": "MIDI",
-   "sha1": "c8ecabf68616b5b8e484b5bf07bb32f0227c5b15",
+   "kind": "MusicXML",
+   "sha1": "5768aee2323533ee33cf97ab40d84417e351318a",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 58,
-    "unit": "Phrase"
+    "count": 66,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Can’t Get Started",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in C major."
    }
   },
   {
    "id": "mvyt981w60ik2",
-   "file": "songs/I Fall in Love Too Easily (F major).mid",
+   "file": "songs/I Fall in Love Too Easily (F major).musicxml.locked",
    "title": "I Fall in Love Too Easily (F major)",
-   "kind": "MIDI",
-   "sha1": "7ea57b900cfbb07b3b2e8f6d2cf51e30b1785436",
+   "kind": "MusicXML",
+   "sha1": "0013cb733070c4e3fa1b50d0542bbea35774cf84",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 41,
-    "unit": "Phrase"
+    "count": 55,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Fall in Love Too Easily",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major, slow, about 57 a minute."
    }
   },
   {
    "id": "mvyt981x35xgv",
-   "file": "songs/In the Wee Small Hours (E♭ major).mid",
+   "file": "songs/In the Wee Small Hours of the Morning (E♭ major).musicxml.locked",
    "title": "In the Wee Small Hours of the Morning (E♭ major)",
-   "kind": "MIDI",
-   "sha1": "86fdfca0adc18d91cce9da3ef88b699e85a003c3",
+   "kind": "MusicXML",
+   "sha1": "5008c8bdf74631263ef8a78fbbb675ba081af61e",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 61,
-    "unit": "Phrase"
+    "count": 154,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "In the Wee Small Hours of the Morning",
+    "lead": "The trumpet from the recording you added, note for note and in bars, in E♭ major."
    }
   },
   {
@@ -491,6 +484,24 @@
    "units": {
     "count": 45,
     "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mvyt98188tt6i",
+   "file": "songs/It Never Entered My Mind — Chet Baker (F major).musicxml.locked",
+   "title": "It Never Entered My Mind — Chet Baker (F major)",
+   "kind": "MusicXML",
+   "sha1": "94fc808a515a96ed51a8ce9fed63c509811d77c5",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 70,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "It Never Entered My Mind — Chet Baker",
+    "lead": "Chet Baker's trumpet from the record you added, note for note and in bars, in F major, slow, about 63 a minute."
    }
   },
   {
@@ -559,6 +570,42 @@
    }
   },
   {
+   "id": "mvyt981rucowj",
+   "file": "songs/Someone to Watch Over Me — Herb Alpert (E♭ major).musicxml.locked",
+   "title": "Someone to Watch Over Me — Herb Alpert (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "3b368b3bde67a6651d81579bde01216ffe323000",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 63,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Someone to Watch Over Me — Herb Alpert",
+    "lead": "Herb Alpert's trumpet from the video you added, note for note and in bars, in E♭ major."
+   }
+  },
+  {
+   "id": "mvyt981h33ryg",
+   "file": "songs/Stardust — Clifford Brown (D♭ major).musicxml.locked",
+   "title": "Stardust — Clifford Brown (D♭ major)",
+   "kind": "MusicXML",
+   "sha1": "c0feae3694512b6b7b024e3c3e915d9374ad2af2",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 55,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Stardust — Clifford Brown",
+    "lead": "Clifford Brown's trumpet from With Strings, note for note and in bars, in D♭ major, runs and all."
+   }
+  },
+  {
    "id": "mvyt980yyg8cl",
    "file": "songs/The Very Thought of You (A♭ major).mid",
    "title": "The Very Thought of You (A♭ major)",
@@ -582,6 +629,24 @@
    "units": {
     "count": 32,
     "unit": "Phrase"
+   }
+  },
+  {
+   "id": "mvyt981iqhise",
+   "file": "songs/Where or When — Clifford Brown (G major).musicxml.locked",
+   "title": "Where or When — Clifford Brown (G major)",
+   "kind": "MusicXML",
+   "sha1": "b3a213f121a83b7a0ab429685b52328db93bfe2d",
+   "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 63,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Where or When — Clifford Brown",
+    "lead": "Clifford Brown's trumpet from With Strings, note for note and in bars, in G major."
    }
   },
   {
@@ -978,62 +1043,92 @@
   },
   {
    "id": "mw5mg74d669qs",
-   "file": "songs/Desafinado (F major).mid",
+   "file": "songs/Desafinado (F major).musicxml.locked",
    "title": "Desafinado (F major)",
-   "kind": "MIDI",
-   "sha1": "bcd480e20dc91dd5b4da675ed1e7739a038b250e",
+   "kind": "MusicXML",
+   "sha1": "3e72deccee00c827744c785b49843b023b0b57fc",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 37,
-    "unit": "Phrase"
+    "count": 87,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Desafinado",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major, at a quick bossa, about 140."
    }
   },
   {
    "id": "mw5mg74em6iv1",
-   "file": "songs/Everytime We Say Goodbye (G major).mid",
+   "file": "songs/Everytime We Say Goodbye (G major).musicxml.locked",
    "title": "Everytime We Say Goodbye (G major)",
-   "kind": "MIDI",
-   "sha1": "be333838624a14958b7dc0cf2b3068fd83a2a0cd",
+   "kind": "MusicXML",
+   "sha1": "bd279bb81c427b8a1b511a3ecfe014fdfd44e742",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 21,
-    "unit": "Phrase"
+    "count": 73,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Everytime We Say Goodbye",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in G major."
    }
   },
   {
    "id": "mw5mg74fyazyf",
-   "file": "songs/I Only Have Eyes for You (C major).mid",
+   "file": "songs/I Only Have Eyes for You (C major).musicxml.locked",
    "title": "I Only Have Eyes for You (C major)",
-   "kind": "MIDI",
-   "sha1": "f68942887e9c9e57056c543558c37b8975a4b8f6",
+   "kind": "MusicXML",
+   "sha1": "88ae3765906ad49f42b7e7be76704271528655c0",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 26,
-    "unit": "Phrase"
+    "count": 37,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Only Have Eyes for You",
+    "lead": "The trumpet's tune from the cover you added, note for note and in bars, in C major."
    }
   },
   {
    "id": "mw5mg74gd1xj5",
-   "file": "songs/I'm in the Mood for Love (C major).mid",
+   "file": "songs/I'm in the Mood for Love (C major).musicxml.locked",
    "title": "I'm in the Mood for Love (C major)",
-   "kind": "MIDI",
-   "sha1": "fb6cd4f07ff006218fcc616f4bd6d34add383fa2",
+   "kind": "MusicXML",
+   "sha1": "cb08c374ed63144d8e76023069d0771d5175d320",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 24,
-    "unit": "Phrase"
+    "count": 48,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I'm in the Mood for Love",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars: C major, then up a half step to D♭ partway through."
    }
   },
   {
    "id": "mw5mg74fajav1",
-   "file": "songs/If (F major).mid",
+   "file": "songs/If (F major).musicxml.locked",
    "title": "If (F major)",
-   "kind": "MIDI",
-   "sha1": "ca6faa6b639f75a5355789e012d7a19723412dd5",
+   "kind": "MusicXML",
+   "sha1": "96482d6256e4bfeb4ca73479d38f5338903694f0",
    "addedAt": "2026-11-06T23:44:43Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 26,
-    "unit": "Phrase"
+    "count": 57,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "If",
+    "lead": "The trumpet's tune from the recording you added, note for note and in bars, in F major."
    }
   },
   {
@@ -1284,14 +1379,20 @@
   },
   {
    "id": "mw5mv2829dgz1",
-   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
+   "file": "songs/Chris B Cinema Paradiso (B♭ major).musicxml.locked",
    "title": "Chris B Cinema Paradiso (B♭ major)",
-   "kind": "MIDI",
-   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
+   "kind": "MusicXML",
+   "sha1": "9b52dde814429165b60ddb41ea271c2dc92fed21",
    "addedAt": "2026-11-06T23:56:16Z",
+   "locked": true,
+   "category": "contemporary",
    "units": {
-    "count": 62,
-    "unit": "Phrase"
+    "count": 71,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Chris B Cinema Paradiso",
+    "lead": "Chris Botti's trumpet from the record you added, note for note and in bars, in B♭ major, with every turn he puts on the theme."
    }
   },
   {
@@ -5089,6 +5190,15 @@
    "removed": true
   },
   {
+   "id": "removed-ab4a2104617f",
+   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
+   "addedAt": "2026-11-02T05:45:53Z",
+   "removed": true
+  },
+  {
    "id": "removed-94d8fb9ed5c3",
    "file": "songs/Embraceable You (E♭ major).mid",
    "title": "",
@@ -5590,6 +5700,11 @@
   {
    "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
    "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
+   "at": "2026-11-02T05:45:53Z"
+  },
+  {
+   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
+   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
    "at": "2026-11-02T05:45:53Z"
   },
   {
