@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:15:48Z",
+ "generatedAt": "2026-11-19T11:16:19Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5073,6 +5073,177 @@
    }
   },
   {
+   "id": "removed-6099dc07d387",
+   "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "6099dc07d387f98179e564b8b754448f37d8c0bf",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-0554d6b18d0a",
+   "file": "songs/Chet B It Never Entered My Mind (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "0554d6b18d0a265e96601d263dc0e6f24754689a",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-41d3caa93947",
+   "file": "songs/Chris B Ave Maria (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "41d3caa939477b3c9910cad6f0358b6252222f0d",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-ab4a2104617f",
+   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-81c7845c2672",
+   "file": "songs/Clifford B Embraceable You (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "81c7845c26723ddf6c850c927fdd6a40b0a66fbd",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-1a7c2b50fd3a",
+   "file": "songs/Clifford B Stardust (D♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "1a7c2b50fd3a6e1a72bcb8a68d9cfeb226434361",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-e4ba701d6b05",
+   "file": "songs/Clifford B Where or When (G major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "e4ba701d6b05ba8941ad957a18a2ada12b0810d3",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-bcd480e20dc9",
+   "file": "songs/Desafinado (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "bcd480e20dc91dd5b4da675ed1e7739a038b250e",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-cb2e4c55a25c",
+   "file": "songs/Duke E Don't Get Around Much Anymore (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "cb2e4c55a25c17ba6b037ddeb927ac35143a9e58",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-25fbdfbab6b8",
+   "file": "songs/Everytime We Say Goodbye (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "25fbdfbab6b8fc959392620c84f7c045b39d620a",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-be333838624a",
+   "file": "songs/Everytime We Say Goodbye (G major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "be333838624a14958b7dc0cf2b3068fd83a2a0cd",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-9841c2c8e8b1",
+   "file": "songs/Glad to Be Unhappy (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "9841c2c8e8b1c8906c3837160fee1cbe52edac48",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-03370c73c0fc",
+   "file": "songs/Herb a Someone to Watch Over Me (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "03370c73c0fcfa157651daba0401be0cac20731b",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-c8ecabf68616",
+   "file": "songs/I Can`t Get Started (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "c8ecabf68616b5b8e484b5bf07bb32f0227c5b15",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-7ea57b900cfb",
+   "file": "songs/I Fall in Love Too Easily (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "7ea57b900cfbb07b3b2e8f6d2cf51e30b1785436",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-f68942887e9c",
+   "file": "songs/I Only Have Eyes for You (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "f68942887e9c9e57056c543558c37b8975a4b8f6",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-fb6cd4f07ff0",
+   "file": "songs/I'm in the Mood for Love (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "fb6cd4f07ff006218fcc616f4bd6d34add383fa2",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-ca6faa6b639f",
+   "file": "songs/If (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "ca6faa6b639f75a5355789e012d7a19723412dd5",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
+   "id": "removed-86fdfca0adc1",
+   "file": "songs/In the Wee Small Hours (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "86fdfca0adc18d91cce9da3ef88b699e85a003c3",
+   "addedAt": "2026-11-19T11:15:54Z",
+   "removed": true
+  },
+  {
    "id": "removed-6afd02bc861e",
    "file": "songs/A Kiss to Build a Dream On (C major).mid",
    "title": "",
@@ -5186,15 +5357,6 @@
    "title": "",
    "kind": "MIDI",
    "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-ab4a2104617f",
-   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
    "addedAt": "2026-11-02T05:45:53Z",
    "removed": true
   },
@@ -5633,6 +5795,101 @@
  ],
  "removed": [
   {
+   "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
+   "sha1": "6099dc07d387f98179e564b8b754448f37d8c0bf",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Chet B It Never Entered My Mind (F major).mid",
+   "sha1": "0554d6b18d0a265e96601d263dc0e6f24754689a",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Chris B Ave Maria (B♭ major).mid",
+   "sha1": "41d3caa939477b3c9910cad6f0358b6252222f0d",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
+   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Clifford B Embraceable You (E♭ major).mid",
+   "sha1": "81c7845c26723ddf6c850c927fdd6a40b0a66fbd",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Clifford B Stardust (D♭ major).mid",
+   "sha1": "1a7c2b50fd3a6e1a72bcb8a68d9cfeb226434361",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Clifford B Where or When (G major).mid",
+   "sha1": "e4ba701d6b05ba8941ad957a18a2ada12b0810d3",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Desafinado (F major).mid",
+   "sha1": "bcd480e20dc91dd5b4da675ed1e7739a038b250e",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Duke E Don't Get Around Much Anymore (C major).mid",
+   "sha1": "cb2e4c55a25c17ba6b037ddeb927ac35143a9e58",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Everytime We Say Goodbye (F major).mid",
+   "sha1": "25fbdfbab6b8fc959392620c84f7c045b39d620a",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Everytime We Say Goodbye (G major).mid",
+   "sha1": "be333838624a14958b7dc0cf2b3068fd83a2a0cd",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Glad to Be Unhappy (F major).mid",
+   "sha1": "9841c2c8e8b1c8906c3837160fee1cbe52edac48",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/Herb a Someone to Watch Over Me (E♭ major).mid",
+   "sha1": "03370c73c0fcfa157651daba0401be0cac20731b",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/I Can`t Get Started (C major).mid",
+   "sha1": "c8ecabf68616b5b8e484b5bf07bb32f0227c5b15",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/I Fall in Love Too Easily (F major).mid",
+   "sha1": "7ea57b900cfbb07b3b2e8f6d2cf51e30b1785436",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/I Only Have Eyes for You (C major).mid",
+   "sha1": "f68942887e9c9e57056c543558c37b8975a4b8f6",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/I'm in the Mood for Love (C major).mid",
+   "sha1": "fb6cd4f07ff006218fcc616f4bd6d34add383fa2",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/If (F major).mid",
+   "sha1": "ca6faa6b639f75a5355789e012d7a19723412dd5",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
+   "file": "songs/In the Wee Small Hours (E♭ major).mid",
+   "sha1": "86fdfca0adc18d91cce9da3ef88b699e85a003c3",
+   "at": "2026-11-19T11:15:54Z"
+  },
+  {
    "file": "songs/A Kiss to Build a Dream On (C major).mid",
    "sha1": "6afd02bc861eaea60a061f7cce3f19bfde0224ed",
    "at": "2026-11-19T11:04:21Z"
@@ -5700,11 +5957,6 @@
   {
    "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
    "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
-   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
    "at": "2026-11-02T05:45:53Z"
   },
   {
