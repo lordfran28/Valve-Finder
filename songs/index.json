@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:24:28Z",
+ "generatedAt": "2026-11-19T11:24:45Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5185,6 +5185,186 @@
    }
   },
   {
+   "id": "removed-8198bc37d286",
+   "file": "songs/It Never Entered My Mind (D major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "8198bc37d2864740b8bbe6b19397628a642698d3",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-a83a6bfd370d",
+   "file": "songs/Iv Got You Under My Skin (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "a83a6bfd370db9ff8dbd26e40dd451f9b45a24db",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-8c69291f7cc1",
+   "file": "songs/Long Ago and Far Away (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "8c69291f7cc1b78c22c1df547addcafffc4de7ea",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-b985620348a8",
+   "file": "songs/Max P September in the Rain (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "b985620348a854008504183f13530e90976a86e3",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-cb88195b5ee0",
+   "file": "songs/Miles D My Funny Valentine (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "cb88195b5ee0aebf2891d85d69c721485adf5c53",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-a843cba5d74c",
+   "file": "songs/My Funny Valentine (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "a843cba5d74cbd267a3b4347c6d2141a536bcdce",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-382d6ca7d4e6",
+   "file": "songs/Nearness of You (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "382d6ca7d4e62c2e69c0d4261574f1c0d86d4c6c",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-b09e49d900c6",
+   "file": "songs/Nevertheless (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "b09e49d900c6cf71393631fb9440558d77cfeed8",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-0dd5cc2e05a4",
+   "file": "songs/Night and Day (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "0dd5cc2e05a41797b9db07d34f71cee4593ef527",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-883e9b4477d7",
+   "file": "songs/Our Love Is Here to Stay (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "883e9b4477d74044844b420a149ead0f38f5126b",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-eaf078a14035",
+   "file": "songs/Rudy V Alone Together (F minor).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "eaf078a14035682b6bca1c22f93235a494416bcd",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-6a1b10787d4d",
+   "file": "songs/September in the Rain (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "6a1b10787d4d2e20d30d86cd9a334858b72cabb7",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-8e5b939fec68",
+   "file": "songs/Someone to Watch Over Me (D♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "8e5b939fec68d7a9289dcd21043026efc864da4f",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-f2418c687c7a",
+   "file": "songs/Stardust (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "f2418c687c7a5fbe63e213cc40db3eadbcf45930",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-369943d662d3",
+   "file": "songs/The Nearness of You (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "369943d662d3ba71590f0b29d4dd7378c51baf8a",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-00b245446c0b",
+   "file": "songs/The Very Thought of You (A♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "00b245446c0b927a9c9599b538e1b4477e9d3dc0",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-687ba3dbe728",
+   "file": "songs/There Will Never Be Another You (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "687ba3dbe72857fa55ee13df45fc807dcf9786a2",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-43daa4436789",
+   "file": "songs/Till There Was You (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "43daa44367899efec30c98a1456682ca87d54862",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-1370ddd06979",
+   "file": "songs/When I Fall in Love (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "1370ddd069794dc5b7ae5a010f40e364f62d2392",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
+   "id": "removed-2b7b1f57485a",
+   "file": "songs/You'll Never Know (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "2b7b1f57485a55cb95904dbef65f72567b3c37c0",
+   "addedAt": "2026-11-19T11:24:28Z",
+   "removed": true
+  },
+  {
    "id": "removed-6099dc07d387",
    "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
    "title": "",
@@ -5906,6 +6086,106 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/It Never Entered My Mind (D major).mid",
+   "sha1": "8198bc37d2864740b8bbe6b19397628a642698d3",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Iv Got You Under My Skin (C major).mid",
+   "sha1": "a83a6bfd370db9ff8dbd26e40dd451f9b45a24db",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Long Ago and Far Away (E♭ major).mid",
+   "sha1": "8c69291f7cc1b78c22c1df547addcafffc4de7ea",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Max P September in the Rain (E♭ major).mid",
+   "sha1": "b985620348a854008504183f13530e90976a86e3",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Miles D My Funny Valentine (E♭ major).mid",
+   "sha1": "cb88195b5ee0aebf2891d85d69c721485adf5c53",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/My Funny Valentine (F major).mid",
+   "sha1": "a843cba5d74cbd267a3b4347c6d2141a536bcdce",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Nearness of You (E♭ major).mid",
+   "sha1": "382d6ca7d4e62c2e69c0d4261574f1c0d86d4c6c",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Nevertheless (E♭ major).mid",
+   "sha1": "b09e49d900c6cf71393631fb9440558d77cfeed8",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Night and Day (F major).mid",
+   "sha1": "0dd5cc2e05a41797b9db07d34f71cee4593ef527",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Our Love Is Here to Stay (F major).mid",
+   "sha1": "883e9b4477d74044844b420a149ead0f38f5126b",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Rudy V Alone Together (F minor).mid",
+   "sha1": "eaf078a14035682b6bca1c22f93235a494416bcd",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/September in the Rain (E♭ major).mid",
+   "sha1": "6a1b10787d4d2e20d30d86cd9a334858b72cabb7",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Someone to Watch Over Me (D♭ major).mid",
+   "sha1": "8e5b939fec68d7a9289dcd21043026efc864da4f",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Stardust (F major).mid",
+   "sha1": "f2418c687c7a5fbe63e213cc40db3eadbcf45930",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/The Nearness of You (E♭ major).mid",
+   "sha1": "369943d662d3ba71590f0b29d4dd7378c51baf8a",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/The Very Thought of You (A♭ major).mid",
+   "sha1": "00b245446c0b927a9c9599b538e1b4477e9d3dc0",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/There Will Never Be Another You (E♭ major).mid",
+   "sha1": "687ba3dbe72857fa55ee13df45fc807dcf9786a2",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/Till There Was You (B♭ major).mid",
+   "sha1": "43daa44367899efec30c98a1456682ca87d54862",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/When I Fall in Love (F major).mid",
+   "sha1": "1370ddd069794dc5b7ae5a010f40e364f62d2392",
+   "at": "2026-11-19T11:24:28Z"
+  },
+  {
+   "file": "songs/You'll Never Know (B♭ major).mid",
+   "sha1": "2b7b1f57485a55cb95904dbef65f72567b3c37c0",
+   "at": "2026-11-19T11:24:28Z"
+  },
   {
    "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
    "sha1": "6099dc07d387f98179e564b8b754448f37d8c0bf",
