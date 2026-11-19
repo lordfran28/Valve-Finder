@@ -6,9 +6,9 @@
  "category": "contemporary",
  "kind": "MusicXML",
  "addedAt": "2026-11-06T23:44:43.010Z",
- "updatedAt": "2026-11-19T11:04:07.000Z",
+ "updatedAt": "2026-11-19T11:27:57.000Z",
  "units": {
-  "count": 52,
+  "count": 42,
   "unit": "Bar"
  },
  "settings": {
@@ -25,7 +25,7 @@
   "v": 1,
   "name": "Strangers in the Night-wind-F major-92bpm-443hz.m4a",
   "seconds": 158.8,
-  "sig": "0|1|118",
+  "sig": "0|1|112",
   "at": [
    [
     10.862,
@@ -474,33 +474,9 @@
    [
     117.977,
     0.265
-   ],
-   [
-    138.467,
-    0.175
-   ],
-   [
-    140.907,
-    0.18
-   ],
-   [
-    141.572,
-    0.175
-   ],
-   [
-    142.052,
-    0.075
-   ],
-   [
-    142.542,
-    0.095
-   ],
-   [
-    142.702,
-    0.095
    ]
   ],
-  "madeAt": "2026-11-19T11:04:07.000Z"
+  "madeAt": "2026-11-19T11:27:57.000Z"
  },
  "details": {
   "title": "Strangers in the Night",
