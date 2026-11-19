@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T05:32:25Z",
+ "generatedAt": "2026-11-19T10:53:21Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -373,15 +373,20 @@
   },
   {
    "id": "mvyt981juhv2t",
-   "file": "songs/Close to You (G major).mid",
+   "file": "songs/Close to You (G major).musicxml.locked",
    "title": "Close to You (G major)",
-   "kind": "MIDI",
-   "sha1": "c1c9a90ba42afc3144609d1782cd692fffb0faaa",
+   "kind": "MusicXML",
+   "sha1": "dc86a09515e2996e3d17beebfaa1cefcb108ce06",
    "addedAt": "2026-11-02T05:20:51Z",
+   "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 14,
-    "unit": "Phrase"
+    "count": 80,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Close to You",
+    "lead": "The tune as the trumpet plays it on the cover you added, note for note and in bars: G major, then up a half step to A♭ for the last part. Where the cover's trumpet rests, the bars rest."
    }
   },
   {
