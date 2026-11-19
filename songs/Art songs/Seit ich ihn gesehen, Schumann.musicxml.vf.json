@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "seit-ich-ihn-gesehen-schumann",
+ "title": "Schumann – Seit ich ihn gesehen, Frauenliebe und -leben No. 1",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T01:36:50Z",
+ "updatedAt": "2026-11-19T01:36:50Z",
+ "units": {
+  "count": 35,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

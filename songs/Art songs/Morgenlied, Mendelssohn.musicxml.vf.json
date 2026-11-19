@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "morgenlied-mendelssohn",
+ "title": "Mendelssohn – Morgenlied, Op. 86 No. 2",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T01:36:50Z",
+ "updatedAt": "2026-11-19T01:36:50Z",
+ "units": {
+  "count": 22,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 132,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

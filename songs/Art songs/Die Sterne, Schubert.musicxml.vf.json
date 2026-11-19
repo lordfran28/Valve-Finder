@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "die-sterne-schubert",
+ "title": "Schubert – Die Sterne, D. 939",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T01:36:50Z",
+ "updatedAt": "2026-11-19T01:36:50Z",
+ "units": {
+  "count": 172,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 118,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

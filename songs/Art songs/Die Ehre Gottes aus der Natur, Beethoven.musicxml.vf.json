@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "die-ehre-gottes-aus-der-natur-beethoven",
+ "title": "Beethoven – Die Ehre Gottes aus der Natur, Op. 48 No. 4",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T01:36:50Z",
+ "updatedAt": "2026-11-19T01:36:50Z",
+ "units": {
+  "count": 41,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

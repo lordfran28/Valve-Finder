@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-18T18:20:49Z",
+ "generatedAt": "2026-11-19T01:37:01Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -3981,6 +3981,448 @@
    "sha1": "08a40329628816dd7082256bed4293bf50095e11",
    "addedAt": "2026-11-18T19:50:00Z",
    "category": "classical"
+  },
+  {
+   "id": "adieu-faure",
+   "file": "songs/Art songs/Adieu, Faure.musicxml",
+   "title": "Fauré – Adieu, Poème d’un jour No. 3",
+   "kind": "MusicXML",
+   "sha1": "1988a1c0798850b6add75904b6a00698599c2ce8",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 30,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "am-leuchtenden-sommermorgen-schumann",
+   "file": "songs/Art songs/Am leuchtenden Sommermorgen, Schumann.musicxml",
+   "title": "Schumann – Am leuchtenden Sommermorgen, Dichterliebe No. 12",
+   "kind": "MusicXML",
+   "sha1": "835a9b3fc3a546a744b4e74649ff361c4c6a6eeb",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 29,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "aufenthalt-schubert",
+   "file": "songs/Art songs/Aufenthalt, Schubert.musicxml",
+   "title": "Schubert – Aufenthalt, D. 957 No. 5",
+   "kind": "MusicXML",
+   "sha1": "77a72bfa3b67737f16e3917e0fa9703de03d602a",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 135,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "barcarolle-faure",
+   "file": "songs/Art songs/Barcarolle, Faure.musicxml",
+   "title": "Fauré – Barcarolle, Op. 7 No. 3",
+   "kind": "MusicXML",
+   "sha1": "e17d6f77c037025b5e3e56a0274887e26437ea3e",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "botschaft-brahms",
+   "file": "songs/Art songs/Botschaft, Brahms.musicxml",
+   "title": "Brahms – Botschaft, Op. 47 No. 1",
+   "kind": "MusicXML",
+   "sha1": "a89593cea666454ec0b957f153ac7c20d7fa411b",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 57,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "chanson-d-amour-faure",
+   "file": "songs/Art songs/Chanson d amour, Faure.musicxml",
+   "title": "Fauré – Chanson d’amour, Op. 27 No. 1",
+   "kind": "MusicXML",
+   "sha1": "233544f71b22b1575739b8a5fd34af55bdf977b7",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 52,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "das-fischermadchen-schubert",
+   "file": "songs/Art songs/Das Fischermadchen, Schubert.musicxml",
+   "title": "Schubert – Das Fischermädchen, D. 957 No. 10",
+   "kind": "MusicXML",
+   "sha1": "ac0622ec02e69262db66ee8fc266bbe1256c499b",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 66,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-neugierige-schubert",
+   "file": "songs/Art songs/Der Neugierige, Schubert.musicxml",
+   "title": "Schubert – Der Neugierige, Die schöne Müllerin No. 6",
+   "kind": "MusicXML",
+   "sha1": "64a5217fa4a3b520ffd4494b7d567bbbeaeea7dd",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 52,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "des-baches-wiegenlied-schubert",
+   "file": "songs/Art songs/Des Baches Wiegenlied, Schubert.musicxml",
+   "title": "Schubert – Des Baches Wiegenlied, Die schöne Müllerin No. 20",
+   "kind": "MusicXML",
+   "sha1": "201593d06d52af64e8f7061be05125c807d41e54",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 22,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-ehre-gottes-aus-der-natur-beethoven",
+   "file": "songs/Art songs/Die Ehre Gottes aus der Natur, Beethoven.musicxml",
+   "title": "Beethoven – Die Ehre Gottes aus der Natur, Op. 48 No. 4",
+   "kind": "MusicXML",
+   "sha1": "e64f917ee7725173b127466c843a8a212dc01f11",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 41,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-sterne-schubert",
+   "file": "songs/Art songs/Die Sterne, Schubert.musicxml",
+   "title": "Schubert – Die Sterne, D. 939",
+   "kind": "MusicXML",
+   "sha1": "816ef0540ad001b476dcdae609d73947f4d6a761",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 172,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "die-taubenpost-schubert",
+   "file": "songs/Art songs/Die Taubenpost, Schubert.musicxml",
+   "title": "Schubert – Die Taubenpost, D. 965a",
+   "kind": "MusicXML",
+   "sha1": "631529c47611b9b7a6ddb401a1083da8b3c31bd8",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 101,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "du-bist-wie-eine-blume-schumann",
+   "file": "songs/Art songs/Du bist wie eine Blume, Schumann.musicxml",
+   "title": "Schumann – Du bist wie eine Blume, Myrthen No. 24",
+   "kind": "MusicXML",
+   "sha1": "5e57cf8368a5740295bbe86e5b93db7aaaf1a673",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "fruhlingsnacht-schumann",
+   "file": "songs/Art songs/Fruhlingsnacht, Schumann.musicxml",
+   "title": "Schumann – Frühlingsnacht, Liederkreis Op. 39 No. 12",
+   "kind": "MusicXML",
+   "sha1": "17f7533558a3fcaea80e760eb2e04526797cacdb",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-hab-im-traum-geweinet-schumann",
+   "file": "songs/Art songs/Ich hab im Traum geweinet, Schumann.musicxml",
+   "title": "Schumann – Ich hab’ im Traum geweinet, Dichterliebe No. 13",
+   "kind": "MusicXML",
+   "sha1": "14e195de9e0d8193f287fd2b3a9fa9109640190d",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "lachen-und-weinen-schubert",
+   "file": "songs/Art songs/Lachen und Weinen, Schubert.musicxml",
+   "title": "Schubert – Lachen und Weinen, D. 777",
+   "kind": "MusicXML",
+   "sha1": "c23040ab94197871617d1cad9727ba626da411c9",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 75,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "liebesbotschaft-schubert",
+   "file": "songs/Art songs/Liebesbotschaft, Schubert.musicxml",
+   "title": "Schubert – Liebesbotschaft, D. 957 No. 1",
+   "kind": "MusicXML",
+   "sha1": "215121b858649bd86df401a4efb774da5efe531a",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 71,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "liebestreu-brahms",
+   "file": "songs/Art songs/Liebestreu, Brahms.musicxml",
+   "title": "Brahms – Liebestreu, Op. 3 No. 1",
+   "kind": "MusicXML",
+   "sha1": "47e4f4602a174dfa659974c8e0f1b87d9d687de9",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 35,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "like-to-the-damask-rose-elgar",
+   "file": "songs/Art songs/Like to the Damask Rose, Elgar.musicxml",
+   "title": "Elgar – Like to the Damask Rose",
+   "kind": "MusicXML",
+   "sha1": "30c767c7183740d79175356ea258ddaec60eb667",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 68,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "mailied-beethoven",
+   "file": "songs/Art songs/Mailied, Beethoven.musicxml",
+   "title": "Beethoven – Mailied, Op. 52 No. 4",
+   "kind": "MusicXML",
+   "sha1": "44172ee2d3ec86e7837fe587bd1d4a10d0b0eb3d",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 112,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "marmotte-beethoven",
+   "file": "songs/Art songs/Marmotte, Beethoven.musicxml",
+   "title": "Beethoven – Marmotte, Op. 52 No. 7",
+   "kind": "MusicXML",
+   "sha1": "73f232ab6bffa8ef9097de47bc4b3ea958fb668f",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 21,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "morgenlied-mendelssohn",
+   "file": "songs/Art songs/Morgenlied, Mendelssohn.musicxml",
+   "title": "Mendelssohn – Morgenlied, Op. 86 No. 2",
+   "kind": "MusicXML",
+   "sha1": "fd115e950eddc513852326e7e7e999a43d647cf4",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 22,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "nur-wer-die-sehnsucht-kennt-schubert",
+   "file": "songs/Art songs/Nur wer die Sehnsucht kennt, Schubert.musicxml",
+   "title": "Schubert – Nur wer die Sehnsucht kennt, D. 877 No. 4",
+   "kind": "MusicXML",
+   "sha1": "5c27966c7c972c82a6947f7e0cc7ef01788b13f8",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "o-liebliche-wangen-brahms",
+   "file": "songs/Art songs/O liebliche Wangen, Brahms.musicxml",
+   "title": "Brahms – O liebliche Wangen, Op. 47 No. 4",
+   "kind": "MusicXML",
+   "sha1": "1f2a7d8a8aa1bb8a4bb71af2cb591abb8af1d0b4",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "rheinlegendchen-mahler",
+   "file": "songs/Art songs/Rheinlegendchen, Mahler.musicxml",
+   "title": "Mahler – Rheinlegendchen, Des Knaben Wunderhorn",
+   "kind": "MusicXML",
+   "sha1": "4ebca5063bc946c2b84cb4d83bbb60b1e75c3931",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 105,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "seit-ich-ihn-gesehen-schumann",
+   "file": "songs/Art songs/Seit ich ihn gesehen, Schumann.musicxml",
+   "title": "Schumann – Seit ich ihn gesehen, Frauenliebe und -leben No. 1",
+   "kind": "MusicXML",
+   "sha1": "62d897fc8cb709f2a568c1beb4e87066edc92455",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 35,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "songs-my-mother-taught-me-ives",
+   "file": "songs/Art songs/Songs My Mother Taught Me, Ives.musicxml",
+   "title": "Ives – Songs My Mother Taught Me",
+   "kind": "MusicXML",
+   "sha1": "e7ebd22bdd08592b2092ac54d10312e7c7157f6c",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "sonntag-brahms",
+   "file": "songs/Art songs/Sonntag, Brahms.musicxml",
+   "title": "Brahms – Sonntag, Op. 47 No. 3",
+   "kind": "MusicXML",
+   "sha1": "fb928ad721b45233286672c14ee0c510d06cd9fc",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "trockne-blumen-schubert",
+   "file": "songs/Art songs/Trockne Blumen, Schubert.musicxml",
+   "title": "Schubert – Trockne Blumen, Die schöne Müllerin No. 18",
+   "kind": "MusicXML",
+   "sha1": "3c1750baccde2b5b0a261c5bac34b62719c6293f",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 56,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ungeduld-schubert",
+   "file": "songs/Art songs/Ungeduld, Schubert.musicxml",
+   "title": "Schubert – Ungeduld, Die schöne Müllerin No. 7",
+   "kind": "MusicXML",
+   "sha1": "070895d58869c04f6b79a5a9bbd96d85ae709eed",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 21,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "venise-gounod",
+   "file": "songs/Art songs/Venise, Gounod.musicxml",
+   "title": "Gounod – Venise",
+   "kind": "MusicXML",
+   "sha1": "67b6340aa2d8b35df0eade9313f5f3d8e922a2d2",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 134,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "vocalise-etude-faure",
+   "file": "songs/Art songs/Vocalise-etude, Faure.musicxml",
+   "title": "Fauré – Vocalise-étude",
+   "kind": "MusicXML",
+   "sha1": "de813bdc6da96388df0dcf4d49220fe76f5d8b60",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "was-will-die-einsame-trane-schumann",
+   "file": "songs/Art songs/Was will die einsame Trane, Schumann.musicxml",
+   "title": "Schumann – Was will die einsame Träne, Myrthen No. 21",
+   "kind": "MusicXML",
+   "sha1": "fcac18f1d39ae64bee7d359d4b784fa59c1efb63",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wohin-schubert",
+   "file": "songs/Art songs/Wohin, Schubert.musicxml",
+   "title": "Schubert – Wohin?, Die schöne Müllerin No. 2",
+   "kind": "MusicXML",
+   "sha1": "b11ac82aa67b688d6f64966f6f4b2d5157c50f95",
+   "addedAt": "2026-11-19T01:36:50Z",
+   "category": "classical",
+   "units": {
+    "count": 80,
+    "unit": "Bar"
+   }
   },
   {
    "id": "removed-f6183bcd3eb5",

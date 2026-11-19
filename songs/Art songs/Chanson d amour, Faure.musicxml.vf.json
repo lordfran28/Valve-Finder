@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "chanson-d-amour-faure",
+ "title": "Fauré – Chanson d’amour, Op. 27 No. 1",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-19T01:36:50Z",
+ "updatedAt": "2026-11-19T01:36:50Z",
+ "units": {
+  "count": 52,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 130,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}
