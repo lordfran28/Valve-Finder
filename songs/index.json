@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:04:21Z",
+ "generatedAt": "2026-11-19T11:04:39Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -4972,6 +4972,78 @@
    }
   },
   {
+   "id": "removed-6afd02bc861e",
+   "file": "songs/A Kiss to Build a Dream On (C major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "6afd02bc861eaea60a061f7cce3f19bfde0224ed",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
+   "id": "removed-1e29eb1a599f",
+   "file": "songs/Call Me Irresponsible (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "1e29eb1a599f34af14ae26564a033defcf833f21",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
+   "id": "removed-9dfc2ec64833",
+   "file": "songs/It Had to Be You (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "9dfc2ec648334058f79d342999f73a2c316fa3fd",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
+   "id": "removed-a7b1bd81380c",
+   "file": "songs/Misty (E♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "a7b1bd81380cee19b033ac9b64884c049f405f3e",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
+   "id": "removed-5a0814e518cf",
+   "file": "songs/Moon River (B♭ major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "5a0814e518cf09858cfd69b0f49c9dcc6ad39515",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
+   "id": "removed-8a08ce6cc178",
+   "file": "songs/Nothing's Gonna Change My Love for You (B major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "8a08ce6cc17839adc3a778a2dbc318d717f80056",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
+   "id": "removed-7c2e6c6d9e0b",
+   "file": "songs/Strangers in the Night (F major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "7c2e6c6d9e0b1f34abc022c652dea56526028fc6",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
+   "id": "removed-ad4a53d903b8",
+   "file": "songs/Unforgettable (G major).mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "ad4a53d903b85ac812e2575e7cc18d71a04f7cfb",
+   "addedAt": "2026-11-19T11:04:21Z",
+   "removed": true
+  },
+  {
    "id": "removed-c1c9a90ba42a",
    "file": "songs/Close to You (G major).mid",
    "title": "",
@@ -5450,6 +5522,46 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/A Kiss to Build a Dream On (C major).mid",
+   "sha1": "6afd02bc861eaea60a061f7cce3f19bfde0224ed",
+   "at": "2026-11-19T11:04:21Z"
+  },
+  {
+   "file": "songs/Call Me Irresponsible (F major).mid",
+   "sha1": "1e29eb1a599f34af14ae26564a033defcf833f21",
+   "at": "2026-11-19T11:04:21Z"
+  },
+  {
+   "file": "songs/It Had to Be You (F major).mid",
+   "sha1": "9dfc2ec648334058f79d342999f73a2c316fa3fd",
+   "at": "2026-11-19T11:04:21Z"
+  },
+  {
+   "file": "songs/Misty (E♭ major).mid",
+   "sha1": "a7b1bd81380cee19b033ac9b64884c049f405f3e",
+   "at": "2026-11-19T11:04:21Z"
+  },
+  {
+   "file": "songs/Moon River (B♭ major).mid",
+   "sha1": "5a0814e518cf09858cfd69b0f49c9dcc6ad39515",
+   "at": "2026-11-19T11:04:21Z"
+  },
+  {
+   "file": "songs/Nothing's Gonna Change My Love for You (B major).mid",
+   "sha1": "8a08ce6cc17839adc3a778a2dbc318d717f80056",
+   "at": "2026-11-19T11:04:21Z"
+  },
+  {
+   "file": "songs/Strangers in the Night (F major).mid",
+   "sha1": "7c2e6c6d9e0b1f34abc022c652dea56526028fc6",
+   "at": "2026-11-19T11:04:21Z"
+  },
+  {
+   "file": "songs/Unforgettable (G major).mid",
+   "sha1": "ad4a53d903b85ac812e2575e7cc18d71a04f7cfb",
+   "at": "2026-11-19T11:04:21Z"
+  },
   {
    "file": "songs/Close to You (G major).mid",
    "sha1": "c1c9a90ba42afc3144609d1782cd692fffb0faaa",
