@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T11:33:47Z",
+ "generatedAt": "2026-11-19T11:34:06Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5289,6 +5289,15 @@
    }
   },
   {
+   "id": "removed-fcdc0bd880dc",
+   "file": "songs/Can't Get Started, Back Up Trumpet Rod S.mid",
+   "title": "",
+   "kind": "MIDI",
+   "sha1": "fcdc0bd880dc3404f5c6a576365ff49db8fe1f17",
+   "addedAt": "2026-11-19T11:33:47Z",
+   "removed": true
+  },
+  {
    "id": "removed-51612c62a637",
    "file": "songs/Arturo S Autumn Leaves (G minor).mid",
    "title": "",
@@ -6199,6 +6208,11 @@
   }
  ],
  "removed": [
+  {
+   "file": "songs/Can't Get Started, Back Up Trumpet Rod S.mid",
+   "sha1": "fcdc0bd880dc3404f5c6a576365ff49db8fe1f17",
+   "at": "2026-11-19T11:33:47Z"
+  },
   {
    "file": "songs/Arturo S Autumn Leaves (G minor).mid",
    "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
