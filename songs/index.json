@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T21:21:51Z",
+ "generatedAt": "2026-11-20T21:27:22Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7180,6 +7180,42 @@
      [
       "Form",
       "Pickup, A, middle, A, last part; eight bars for the band; middle, A, last part longer"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-till-there-was-you",
+   "file": "songs/Arrangements/Till There Was You.musicxml.locked",
+   "title": "Till There Was You, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "ab6f6c6d4b689d2665d02613de1cb27430fa4dc8",
+   "addedAt": "2026-11-20T21:26:53Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 66,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Till There Was You",
+    "lead": "Rod Stewart's singing on his record, an octave up for the trumpet and in his key, E. His phrasing is straightened, his slides left out. It runs from concert D♯4 to G5 (written E♯4 to A5); the G5 comes once, in the first bridge. The eight bars without him are left as rests.",
+    "facts": [
+     [
+      "Song",
+      "Meredith Willson, from The Music Man (1957)"
+     ],
+     [
+      "Line",
+      "Rod Stewart's voice, read note by note from the vocal track and straightened"
+     ],
+     [
+      "Key",
+      "E concert, F♯ for the trumpet"
+     ],
+     [
+      "Form",
+      "Intro; A, A, bridge, A; eight bars without voice; bridge, last A"
      ]
     ]
    }
