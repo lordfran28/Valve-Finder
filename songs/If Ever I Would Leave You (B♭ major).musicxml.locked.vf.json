@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-if-ever-i-would-leave-you-b-major",
+ "title": "If Ever I Would Leave You (B♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:33:15.000Z",
+ "updatedAt": "2026-11-20T16:33:15.000Z",
+ "units": {
+  "count": 57,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 100,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "If Ever I Would Leave You",
+  "lead": "Frederick Loewe and Alan Jay Lerner's song from Camelot, 1960, the melody as written. Lowest note concert A3, highest D5."
+ }
+}

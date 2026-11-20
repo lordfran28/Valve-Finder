@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-days-of-wine-and-roses-f-major",
+ "title": "Days of Wine and Roses (F major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:33:11.000Z",
+ "updatedAt": "2026-11-20T16:33:11.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 96,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Days of Wine and Roses",
+  "lead": "Henry Mancini and Johnny Mercer's song from 1962, one chorus, the melody as written in the real book. Lowest note concert C4, highest E5."
+ }
+}

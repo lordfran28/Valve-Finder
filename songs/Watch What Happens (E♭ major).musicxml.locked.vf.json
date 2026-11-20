@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-watch-what-happens-e-major",
+ "title": "Watch What Happens (E♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:33:16.000Z",
+ "updatedAt": "2026-11-20T16:33:16.000Z",
+ "units": {
+  "count": 35,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Watch What Happens",
+  "lead": "Michel Legrand's song from The Umbrellas of Cherbourg, 1964, with Norman Gimbel's words; the melody as written. Lowest note concert C4, highest C5."
+ }
+}

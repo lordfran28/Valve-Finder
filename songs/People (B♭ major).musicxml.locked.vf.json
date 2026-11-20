@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-people-b-major",
+ "title": "People (B♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:33:14.000Z",
+ "updatedAt": "2026-11-20T16:33:14.000Z",
+ "units": {
+  "count": 46,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 92,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "People",
+  "lead": "Jule Styne and Bob Merrill's song from Funny Girl, 1964, the melody as written. Lowest note concert B♭3, highest E♭5."
+ }
+}

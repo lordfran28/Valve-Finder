@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T16:30:27Z",
+ "generatedAt": "2026-11-20T16:33:22Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -6103,6 +6103,294 @@
    "details": {
     "title": "I Wonder Who's Kissing Her Now — Dean Martin",
     "lead": "The 1909 song by Harold Orlob, Will M. Hough and Frank R. Adams, public domain, as Dean Martin sings it on the live record you sent: written out by ear note by note, his slides and scoops left out, an octave above his voice for the trumpet. One chorus. Lowest note concert B♭3, highest D5."
+   }
+  },
+  {
+   "id": "std-days-of-wine-and-roses-f-major",
+   "file": "songs/Days of Wine and Roses (F major).musicxml.locked",
+   "title": "Days of Wine and Roses (F major)",
+   "kind": "MusicXML",
+   "sha1": "d318d0db8ea53d2a94d3eadcc536fb9ae4e0eaa3",
+   "addedAt": "2026-11-20T16:33:11Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Days of Wine and Roses",
+    "lead": "Henry Mancini and Johnny Mercer's song from 1962, one chorus, the melody as written in the real book. Lowest note concert C4, highest E5."
+   }
+  },
+  {
+   "id": "std-the-shadow-of-your-smile-g-major",
+   "file": "songs/The Shadow of Your Smile (G major).musicxml.locked",
+   "title": "The Shadow of Your Smile (G major)",
+   "kind": "MusicXML",
+   "sha1": "0aeb79457c8ad17df3cd8745d1214067ba0ca119",
+   "addedAt": "2026-11-20T16:33:11Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Shadow of Your Smile",
+    "lead": "Johnny Mandel and Paul Francis Webster's song from 1965, the melody as written in the real book. Lowest note concert B♭3, highest E5."
+   }
+  },
+  {
+   "id": "std-here-s-that-rainy-day-g-major",
+   "file": "songs/Here's That Rainy Day (G major).musicxml.locked",
+   "title": "Here's That Rainy Day (G major)",
+   "kind": "MusicXML",
+   "sha1": "57fd33c5f9f03ad72d68beed91b96e89e53f2b55",
+   "addedAt": "2026-11-20T16:33:12Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Here's That Rainy Day",
+    "lead": "Jimmy Van Heusen and Johnny Burke's ballad from 1953, one chorus, the melody as written in the real book. Lowest note concert D4, highest E5."
+   }
+  },
+  {
+   "id": "std-i-will-wait-for-you-f-major",
+   "file": "songs/I Will Wait for You (F major).musicxml.locked",
+   "title": "I Will Wait for You (F major)",
+   "kind": "MusicXML",
+   "sha1": "e0fd36d146a32ba17e8d0eabaffb4297a8c5ea9f",
+   "addedAt": "2026-11-20T16:33:12Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 58,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Will Wait for You",
+    "lead": "Michel Legrand's song from The Umbrellas of Cherbourg, 1964, with Norman Gimbel's words; the melody as written. Lowest note concert A3, highest F5."
+   }
+  },
+  {
+   "id": "std-what-a-wonderful-world-f-major",
+   "file": "songs/What a Wonderful World (F major).musicxml.locked",
+   "title": "What a Wonderful World (F major)",
+   "kind": "MusicXML",
+   "sha1": "bd80a073c793e795fe78d6b65b3228855794896d",
+   "addedAt": "2026-11-20T16:33:12Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 35,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "What a Wonderful World",
+    "lead": "George David Weiss and Bob Thiele's song from 1967, the melody as written. Lowest note concert C4, highest D5."
+   }
+  },
+  {
+   "id": "std-nature-boy-d-minor",
+   "file": "songs/Nature Boy (D minor).musicxml.locked",
+   "title": "Nature Boy (D minor)",
+   "kind": "MusicXML",
+   "sha1": "d7126e308695e4a1000687cc091ba626e483885c",
+   "addedAt": "2026-11-20T16:33:13Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Nature Boy",
+    "lead": "Eden Ahbez's song from 1947, the melody as written in the real book. Lowest note concert A3, highest D5."
+   }
+  },
+  {
+   "id": "std-once-i-loved-f-major",
+   "file": "songs/Once I Loved (F major).musicxml.locked",
+   "title": "Once I Loved (F major)",
+   "kind": "MusicXML",
+   "sha1": "b2e641ae080bbc32555083bf02a6afc1a7ef2cf5",
+   "addedAt": "2026-11-20T16:33:13Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 43,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Once I Loved",
+    "lead": "Antonio Carlos Jobim's O Amor em Paz, 1960, the melody as written in the real book. Lowest note concert C♯4, highest F5."
+   }
+  },
+  {
+   "id": "std-over-the-rainbow-e-major",
+   "file": "songs/Over the Rainbow (E♭ major).musicxml.locked",
+   "title": "Over the Rainbow (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "1359a8ea9ca299cf31e5a2ae79bb3e4af271d9c9",
+   "addedAt": "2026-11-20T16:33:13Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Over the Rainbow",
+    "lead": "Harold Arlen and Yip Harburg's song from 1939, the melody as written. Lowest note concert C4, highest F5."
+   }
+  },
+  {
+   "id": "std-how-insensitive-d-minor",
+   "file": "songs/How Insensitive (D minor).musicxml.locked",
+   "title": "How Insensitive (D minor)",
+   "kind": "MusicXML",
+   "sha1": "1f05e924ed8cad2a9b2f631c8a1db86b70aed7c7",
+   "addedAt": "2026-11-20T16:33:14Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "How Insensitive",
+    "lead": "Antonio Carlos Jobim's Insensatez, 1963, one chorus, the melody as written in the real book. Lowest note concert D4, highest C5."
+   }
+  },
+  {
+   "id": "std-people-b-major",
+   "file": "songs/People (B♭ major).musicxml.locked",
+   "title": "People (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "d02cd53162fff969efa4af571bad71a3df5f5d65",
+   "addedAt": "2026-11-20T16:33:14Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 46,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "People",
+    "lead": "Jule Styne and Bob Merrill's song from Funny Girl, 1964, the melody as written. Lowest note concert B♭3, highest E♭5."
+   }
+  },
+  {
+   "id": "std-the-girl-from-ipanema-f-major",
+   "file": "songs/The Girl from Ipanema (F major).musicxml.locked",
+   "title": "The Girl from Ipanema (F major)",
+   "kind": "MusicXML",
+   "sha1": "5674b6b487c7c75b8846cc9c0c5894360de38d94",
+   "addedAt": "2026-11-20T16:33:14Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 44,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Girl from Ipanema",
+    "lead": "Antonio Carlos Jobim's song from 1962, the melody as written. Lowest note concert B♭3, highest C5."
+   }
+  },
+  {
+   "id": "std-i-left-my-heart-in-san-francisco-b-major",
+   "file": "songs/I Left My Heart in San Francisco (B♭ major).musicxml.locked",
+   "title": "I Left My Heart in San Francisco (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "12d5a4ffe975bfc701ca593ae082ee144a40caa1",
+   "addedAt": "2026-11-20T16:33:15Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Left My Heart in San Francisco",
+    "lead": "George Cory and Douglass Cross's song from 1953, the melody as written. Lowest note concert B3, highest E♭5."
+   }
+  },
+  {
+   "id": "std-if-ever-i-would-leave-you-b-major",
+   "file": "songs/If Ever I Would Leave You (B♭ major).musicxml.locked",
+   "title": "If Ever I Would Leave You (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "d64ef2afb43254b1b21d1fcbf4a11ada56e8e279",
+   "addedAt": "2026-11-20T16:33:15Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 57,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "If Ever I Would Leave You",
+    "lead": "Frederick Loewe and Alan Jay Lerner's song from Camelot, 1960, the melody as written. Lowest note concert A3, highest D5."
+   }
+  },
+  {
+   "id": "std-the-more-i-see-you-e-major",
+   "file": "songs/The More I See You (E♭ major).musicxml.locked",
+   "title": "The More I See You (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "7d20636b5fb7f3abb2c67d6fd983cce9fa287f6b",
+   "addedAt": "2026-11-20T16:33:15Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The More I See You",
+    "lead": "Harry Warren and Mack Gordon's song from 1945, one chorus, the melody as written in the real book. Lowest note concert B♭3, highest E♭5."
+   }
+  },
+  {
+   "id": "std-the-good-life-a-major",
+   "file": "songs/The Good Life (A♭ major).musicxml.locked",
+   "title": "The Good Life (A♭ major)",
+   "kind": "MusicXML",
+   "sha1": "51b4cccd7322d821691b80f4850f6215b11416ea",
+   "addedAt": "2026-11-20T16:33:16Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Good Life",
+    "lead": "Sacha Distel's song from 1962, with Jack Reardon's English words; the melody as written. Lowest note concert C4, highest C♯5."
+   }
+  },
+  {
+   "id": "std-watch-what-happens-e-major",
+   "file": "songs/Watch What Happens (E♭ major).musicxml.locked",
+   "title": "Watch What Happens (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "5fa96ebac3853bc79e6f03b11eeeebc0134f713b",
+   "addedAt": "2026-11-20T16:33:16Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 35,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Watch What Happens",
+    "lead": "Michel Legrand's song from The Umbrellas of Cherbourg, 1964, with Norman Gimbel's words; the melody as written. Lowest note concert C4, highest C5."
    }
   },
   {

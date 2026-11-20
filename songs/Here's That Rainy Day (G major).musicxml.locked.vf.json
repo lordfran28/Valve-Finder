@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-here-s-that-rainy-day-g-major",
+ "title": "Here's That Rainy Day (G major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:33:12.000Z",
+ "updatedAt": "2026-11-20T16:33:12.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 84,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Here's That Rainy Day",
+  "lead": "Jimmy Van Heusen and Johnny Burke's ballad from 1953, one chorus, the melody as written in the real book. Lowest note concert D4, highest E5."
+ }
+}

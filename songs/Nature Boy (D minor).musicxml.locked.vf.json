@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-nature-boy-d-minor",
+ "title": "Nature Boy (D minor)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:33:13.000Z",
+ "updatedAt": "2026-11-20T16:33:13.000Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 90,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Nature Boy",
+  "lead": "Eden Ahbez's song from 1947, the melody as written in the real book. Lowest note concert A3, highest D5."
+ }
+}

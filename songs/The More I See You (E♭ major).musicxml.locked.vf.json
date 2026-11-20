@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-the-more-i-see-you-e-major",
+ "title": "The More I See You (E♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:33:15.000Z",
+ "updatedAt": "2026-11-20T16:33:15.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 100,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "The More I See You",
+  "lead": "Harry Warren and Mack Gordon's song from 1945, one chorus, the melody as written in the real book. Lowest note concert B♭3, highest E♭5."
+ }
+}
