@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-but-beautiful-g-major",
+ "title": "But Beautiful (G major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:51.000Z",
+ "updatedAt": "2026-11-20T16:51:51.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 76,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "But Beautiful",
+  "lead": "Jimmy Van Heusen and Johnny Burke's ballad from 1947, one chorus, the melody as written in the real book. Lowest note concert C♯4, highest E5."
+ }
+}

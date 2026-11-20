@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-god-bless-the-child-e-major",
+ "title": "God Bless the Child (E♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:58.000Z",
+ "updatedAt": "2026-11-20T16:51:58.000Z",
+ "units": {
+  "count": 37,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "God Bless the Child",
+  "lead": "Billie Holiday and Arthur Herzog Jr.'s song, recorded in 1941; the melody as written in the real book. Lowest note concert B♭3, highest E♭5."
+ }
+}

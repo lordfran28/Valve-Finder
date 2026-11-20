@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-angel-eyes-c-minor",
+ "title": "Angel Eyes (C minor)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:54.000Z",
+ "updatedAt": "2026-11-20T16:51:54.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Angel Eyes",
+  "lead": "Matt Dennis and Earl Brent's ballad from 1946, the melody as written in the real book. Lowest note concert C4, highest D5."
+ }
+}

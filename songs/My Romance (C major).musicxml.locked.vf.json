@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-my-romance-c-major",
+ "title": "My Romance (C major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:58.000Z",
+ "updatedAt": "2026-11-20T16:51:58.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 84,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "My Romance",
+  "lead": "Richard Rodgers and Lorenz Hart's song from 1935, the melody as written in the real book. Lowest note concert C4, highest E5."
+ }
+}

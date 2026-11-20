@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-april-in-paris-c-major",
+ "title": "April in Paris (C major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:54.000Z",
+ "updatedAt": "2026-11-20T16:51:54.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "April in Paris",
+  "lead": "Vernon Duke and Yip Harburg's song from 1932, the melody as written in the real book. Lowest note concert A3, highest E5."
+ }
+}

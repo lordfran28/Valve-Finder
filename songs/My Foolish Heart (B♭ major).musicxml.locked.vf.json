@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-my-foolish-heart-b-major",
+ "title": "My Foolish Heart (B♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:55.000Z",
+ "updatedAt": "2026-11-20T16:51:55.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "My Foolish Heart",
+  "lead": "Victor Young and Ned Washington's ballad from 1949, one chorus, the melody as written in the real book. Lowest note concert B♭3, highest D5."
+ }
+}

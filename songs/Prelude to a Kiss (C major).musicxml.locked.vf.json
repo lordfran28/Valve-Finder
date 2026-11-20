@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-prelude-to-a-kiss-c-major",
+ "title": "Prelude to a Kiss (C major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:57.000Z",
+ "updatedAt": "2026-11-20T16:51:57.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Prelude to a Kiss",
+  "lead": "Duke Ellington's ballad from 1938, the melody as written in the real book. Lowest note concert C4, highest E♭5."
+ }
+}

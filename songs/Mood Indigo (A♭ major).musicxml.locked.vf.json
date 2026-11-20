@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-mood-indigo-a-major",
+ "title": "Mood Indigo (A♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:57.000Z",
+ "updatedAt": "2026-11-20T16:51:57.000Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Mood Indigo",
+  "lead": "Duke Ellington's song with Barney Bigard and Irving Mills, 1930, the melody as written in the real book. Lowest note concert D4, highest F5."
+ }
+}

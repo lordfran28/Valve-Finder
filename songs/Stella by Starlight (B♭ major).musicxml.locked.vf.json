@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-stella-by-starlight-b-major",
+ "title": "Stella by Starlight (B♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:51:51.000Z",
+ "updatedAt": "2026-11-20T16:51:51.000Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 100,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Stella by Starlight",
+  "lead": "Victor Young's theme from 1944, words by Ned Washington; the melody as written in the real book. Lowest note concert B♭3, highest F5."
+ }
+}

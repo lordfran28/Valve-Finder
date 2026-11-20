@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T16:35:15Z",
+ "generatedAt": "2026-11-20T16:52:05Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -6679,6 +6679,437 @@
    "details": {
     "title": "Meditation",
     "lead": "Antonio Carlos Jobim's Meditação, around 1960, words by Newton Mendonça, English by Norman Gimbel; the melody as written. Lowest note concert C4, highest D5."
+   }
+  },
+  {
+   "id": "std-but-beautiful-g-major",
+   "file": "songs/But Beautiful (G major).musicxml.locked",
+   "title": "But Beautiful (G major)",
+   "kind": "MusicXML",
+   "sha1": "1933c97682f1683e1c1d160459efd30ad7c460ab",
+   "addedAt": "2026-11-20T16:51:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "But Beautiful",
+    "lead": "Jimmy Van Heusen and Johnny Burke's ballad from 1947, one chorus, the melody as written in the real book. Lowest note concert C♯4, highest E5."
+   }
+  },
+  {
+   "id": "std-in-a-sentimental-mood-f-major",
+   "file": "songs/In a Sentimental Mood (F major).musicxml.locked",
+   "title": "In a Sentimental Mood (F major)",
+   "kind": "MusicXML",
+   "sha1": "2ad94d31c97e943d8c1d497c7ae971d750c83b2d",
+   "addedAt": "2026-11-20T16:51:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "In a Sentimental Mood",
+    "lead": "Duke Ellington's ballad from 1935, the melody as written in the real book. Lowest note concert C4, highest G5."
+   }
+  },
+  {
+   "id": "std-stella-by-starlight-b-major",
+   "file": "songs/Stella by Starlight (B♭ major).musicxml.locked",
+   "title": "Stella by Starlight (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "4d3dd260e5d0a8d7a7b8669e8716ae9652a76f07",
+   "addedAt": "2026-11-20T16:51:51Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Stella by Starlight",
+    "lead": "Victor Young's theme from 1944, words by Ned Washington; the melody as written in the real book. Lowest note concert B♭3, highest F5."
+   }
+  },
+  {
+   "id": "std-my-one-and-only-love-c-major",
+   "file": "songs/My One and Only Love (C major).musicxml.locked",
+   "title": "My One and Only Love (C major)",
+   "kind": "MusicXML",
+   "sha1": "5b385bcc500c83df97718efbea7bf1d43a624f6f",
+   "addedAt": "2026-11-20T16:51:52Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My One and Only Love",
+    "lead": "Guy Wood and Robert Mellin's ballad from 1953, one chorus, the melody as written in the real book. Lowest note concert G3, highest D5."
+   }
+  },
+  {
+   "id": "std-skylark-e-major",
+   "file": "songs/Skylark (E♭ major).musicxml.locked",
+   "title": "Skylark (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "69d9b503f4a1b870957b432a19202a42c9b284d4",
+   "addedAt": "2026-11-20T16:51:52Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Skylark",
+    "lead": "Hoagy Carmichael and Johnny Mercer's song from 1941, the melody as written in the real book. Lowest note concert C4, highest F5."
+   }
+  },
+  {
+   "id": "std-darn-that-dream-g-major",
+   "file": "songs/Darn That Dream (G major).musicxml.locked",
+   "title": "Darn That Dream (G major)",
+   "kind": "MusicXML",
+   "sha1": "2323d053cafae77ea931840a0a7dc7fb82cfa3c4",
+   "addedAt": "2026-11-20T16:51:53Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Darn That Dream",
+    "lead": "Jimmy Van Heusen and Eddie DeLange's ballad from 1939, the melody as written in the real book. Lowest note concert D4, highest E5."
+   }
+  },
+  {
+   "id": "std-polka-dots-and-moonbeams-f-major",
+   "file": "songs/Polka Dots and Moonbeams (F major).musicxml.locked",
+   "title": "Polka Dots and Moonbeams (F major)",
+   "kind": "MusicXML",
+   "sha1": "6ae84d0f4cc64939f5384c8ca57da0c337d0d6df",
+   "addedAt": "2026-11-20T16:51:53Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Polka Dots and Moonbeams",
+    "lead": "Jimmy Van Heusen and Johnny Burke's ballad from 1940, the melody as written in the real book. Lowest note concert C4, highest E5."
+   }
+  },
+  {
+   "id": "std-these-foolish-things-e-major",
+   "file": "songs/These Foolish Things (E♭ major).musicxml.locked",
+   "title": "These Foolish Things (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "379ff0e623d2c55066e6b1c6b6a0e4ae200144a2",
+   "addedAt": "2026-11-20T16:51:53Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "These Foolish Things",
+    "lead": "Jack Strachey and Eric Maschwitz's song from 1936, one chorus, the melody as written in the real book. Lowest note concert C4, highest G5."
+   }
+  },
+  {
+   "id": "std-angel-eyes-c-minor",
+   "file": "songs/Angel Eyes (C minor).musicxml.locked",
+   "title": "Angel Eyes (C minor)",
+   "kind": "MusicXML",
+   "sha1": "ae433745660e71c3c07042096875c4f7cf7cd666",
+   "addedAt": "2026-11-20T16:51:54Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Angel Eyes",
+    "lead": "Matt Dennis and Earl Brent's ballad from 1946, the melody as written in the real book. Lowest note concert C4, highest D5."
+   }
+  },
+  {
+   "id": "std-april-in-paris-c-major",
+   "file": "songs/April in Paris (C major).musicxml.locked",
+   "title": "April in Paris (C major)",
+   "kind": "MusicXML",
+   "sha1": "6562988af790fb786d6210847d767e9dea177805",
+   "addedAt": "2026-11-20T16:51:54Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "April in Paris",
+    "lead": "Vernon Duke and Yip Harburg's song from 1932, the melody as written in the real book. Lowest note concert A3, highest E5."
+   }
+  },
+  {
+   "id": "std-autumn-in-new-york-f-major",
+   "file": "songs/Autumn in New York (F major).musicxml.locked",
+   "title": "Autumn in New York (F major)",
+   "kind": "MusicXML",
+   "sha1": "54812dc1f90b08007a29fa93810ed9cfee6c5298",
+   "addedAt": "2026-11-20T16:51:54Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Autumn in New York",
+    "lead": "Vernon Duke's song from 1934, the melody as written in the real book. Lowest note concert B♭3, highest E5."
+   }
+  },
+  {
+   "id": "std-come-rain-or-come-shine-f-major",
+   "file": "songs/Come Rain or Come Shine (F major).musicxml.locked",
+   "title": "Come Rain or Come Shine (F major)",
+   "kind": "MusicXML",
+   "sha1": "9b0b00a024d691f3c114f4629cc5a0fc1f612254",
+   "addedAt": "2026-11-20T16:51:54Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Come Rain or Come Shine",
+    "lead": "Harold Arlen and Johnny Mercer's song from 1946, the melody as written in the real book. Lowest note concert D4, highest E5."
+   }
+  },
+  {
+   "id": "std-georgia-on-my-mind-f-major",
+   "file": "songs/Georgia on My Mind (F major).musicxml",
+   "title": "Georgia on My Mind (F major)",
+   "kind": "MusicXML",
+   "sha1": "8f4ef5d0c7ebefabc2ac7cb42a48c2602bb74643",
+   "addedAt": "2026-11-20T16:51:55Z",
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Georgia on My Mind",
+    "lead": "Hoagy Carmichael and Stuart Gorrell's song from 1930, public domain; one chorus, the melody as written in the real book. Lowest note concert D4, highest E5."
+   }
+  },
+  {
+   "id": "std-my-foolish-heart-b-major",
+   "file": "songs/My Foolish Heart (B♭ major).musicxml.locked",
+   "title": "My Foolish Heart (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "2704c33b21e38cda33ddb6fd29f0fa62d5f87b6e",
+   "addedAt": "2026-11-20T16:51:55Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My Foolish Heart",
+    "lead": "Victor Young and Ned Washington's ballad from 1949, one chorus, the melody as written in the real book. Lowest note concert B♭3, highest D5."
+   }
+  },
+  {
+   "id": "std-smoke-gets-in-your-eyes-e-major",
+   "file": "songs/Smoke Gets in Your Eyes (E♭ major).musicxml.locked",
+   "title": "Smoke Gets in Your Eyes (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "a6afbf4f3c1777f246701f0e27b94d3f3378068d",
+   "addedAt": "2026-11-20T16:51:55Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Smoke Gets in Your Eyes",
+    "lead": "Jerome Kern and Otto Harbach's song from 1933, the melody as written in the real book. Lowest note concert A♭3, highest F5."
+   }
+  },
+  {
+   "id": "std-moonlight-in-vermont-e-major",
+   "file": "songs/Moonlight in Vermont (E♭ major).musicxml.locked",
+   "title": "Moonlight in Vermont (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "90e3aeba28fad733b0f494205270ed293181172e",
+   "addedAt": "2026-11-20T16:51:56Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Moonlight in Vermont",
+    "lead": "Karl Suessdorf and John Blackburn's song from 1944, the melody as written in the real book. Lowest note concert B3, highest E♭5."
+   }
+  },
+  {
+   "id": "std-tenderly-e-major",
+   "file": "songs/Tenderly (E♭ major).musicxml.locked",
+   "title": "Tenderly (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "0f3e96746cc930d7da5a54faf869c7b35a04c352",
+   "addedAt": "2026-11-20T16:51:56Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Tenderly",
+    "lead": "Walter Gross and Jack Lawrence's waltz from 1946, the melody as written in the real book. Lowest note concert B♭3, highest F5."
+   }
+  },
+  {
+   "id": "std-young-and-foolish-c-major",
+   "file": "songs/Young and Foolish (C major).musicxml.locked",
+   "title": "Young and Foolish (C major)",
+   "kind": "MusicXML",
+   "sha1": "b827d7dca8cf22249d73288b468fe97f126745d0",
+   "addedAt": "2026-11-20T16:51:56Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Young and Foolish",
+    "lead": "Albert Hague and Arnold Horwitt's ballad from 1954, the melody as written in the real book. Lowest note concert C4, highest E5."
+   }
+  },
+  {
+   "id": "std-mood-indigo-a-major",
+   "file": "songs/Mood Indigo (A♭ major).musicxml.locked",
+   "title": "Mood Indigo (A♭ major)",
+   "kind": "MusicXML",
+   "sha1": "7bc385217d6397a84e14692e99a168cc5b4b7a67",
+   "addedAt": "2026-11-20T16:51:57Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Mood Indigo",
+    "lead": "Duke Ellington's song with Barney Bigard and Irving Mills, 1930, the melody as written in the real book. Lowest note concert D4, highest F5."
+   }
+  },
+  {
+   "id": "std-prelude-to-a-kiss-c-major",
+   "file": "songs/Prelude to a Kiss (C major).musicxml.locked",
+   "title": "Prelude to a Kiss (C major)",
+   "kind": "MusicXML",
+   "sha1": "cb635013ee0ce4e12e46be558d28e2b455eb8acb",
+   "addedAt": "2026-11-20T16:51:57Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Prelude to a Kiss",
+    "lead": "Duke Ellington's ballad from 1938, the melody as written in the real book. Lowest note concert C4, highest E♭5."
+   }
+  },
+  {
+   "id": "std-sophisticated-lady-a-major",
+   "file": "songs/Sophisticated Lady (A♭ major).musicxml.locked",
+   "title": "Sophisticated Lady (A♭ major)",
+   "kind": "MusicXML",
+   "sha1": "dd47d78d08e5be0dee30dd4adbfe2f266c0bd5f8",
+   "addedAt": "2026-11-20T16:51:57Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Sophisticated Lady",
+    "lead": "Duke Ellington's ballad from 1933, one chorus, the melody as written in the real book. Lowest note concert B3, highest F♯5."
+   }
+  },
+  {
+   "id": "std-god-bless-the-child-e-major",
+   "file": "songs/God Bless the Child (E♭ major).musicxml.locked",
+   "title": "God Bless the Child (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "d7df4edcbe6cb804e2e74420fcce4b3ab471de6c",
+   "addedAt": "2026-11-20T16:51:58Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 37,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "God Bless the Child",
+    "lead": "Billie Holiday and Arthur Herzog Jr.'s song, recorded in 1941; the melody as written in the real book. Lowest note concert B♭3, highest E♭5."
+   }
+  },
+  {
+   "id": "std-my-romance-c-major",
+   "file": "songs/My Romance (C major).musicxml.locked",
+   "title": "My Romance (C major)",
+   "kind": "MusicXML",
+   "sha1": "4e3e98e5eb66f536c15b6d8db26377f6bfaa2e61",
+   "addedAt": "2026-11-20T16:51:58Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My Romance",
+    "lead": "Richard Rodgers and Lorenz Hart's song from 1935, the melody as written in the real book. Lowest note concert C4, highest E5."
+   }
+  },
+  {
+   "id": "std-willow-weep-for-me-g-major",
+   "file": "songs/Willow Weep for Me (G major).musicxml.locked",
+   "title": "Willow Weep for Me (G major)",
+   "kind": "MusicXML",
+   "sha1": "e348392f85d63d3afdeb86ad8153e30d9fc57324",
+   "addedAt": "2026-11-20T16:51:58Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 30,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Willow Weep for Me",
+    "lead": "Ann Ronell's song from 1932, the melody as written in the real book. Lowest note concert D4, highest E♭5."
    }
   },
   {
