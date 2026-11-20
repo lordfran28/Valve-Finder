@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T04:50:14Z",
+ "generatedAt": "2026-11-20T05:01:10Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5855,6 +5855,130 @@
    "details": {
     "title": "That Old Feeling",
     "lead": "Sammy Fain and Lew Brown's song from 1937, the chorus as it is written. Checked against Rod Stewart's record bar by bar; where he sings it his own way, the written tune is kept. Concert C4 to C5, all in the middle of the horn."
+   }
+  },
+  {
+   "id": "std-a-nightingale-sang-in-berkeley-square-e-major",
+   "file": "songs/A Nightingale Sang in Berkeley Square (E♭ major).musicxml.locked",
+   "title": "A Nightingale Sang in Berkeley Square (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "4f900ea675cae92cfa1b805bfe0bf1b561be446a",
+   "addedAt": "2026-11-20T05:00:46Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 42,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "A Nightingale Sang in Berkeley Square",
+    "lead": "Manning Sherwin and Eric Maschwitz, 1940. The chorus as written, with its last ending, checked bar by bar against Rod Stewart's record; where Rod sings it his own way, the written tune is kept. The middle part moves to G major and back."
+   }
+  },
+  {
+   "id": "std-moonglow-g-major",
+   "file": "songs/Moonglow (G major).musicxml.locked",
+   "title": "Moonglow (G major)",
+   "kind": "MusicXML",
+   "sha1": "b62c4e4b6a67e4fd795ed2cafca2adabc8c3671c",
+   "addedAt": "2026-11-20T05:00:46Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Moonglow",
+    "lead": "Will Hudson, Eddie DeLange and Irving Mills, 1934. The chorus as written, checked bar by bar against Rod Stewart's record, where Arturo Sandoval plays; where Rod sings it his own way, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-thanks-for-the-memory-f-major",
+   "file": "songs/Thanks for the Memory (F major).musicxml.locked",
+   "title": "Thanks for the Memory (F major)",
+   "kind": "MusicXML",
+   "sha1": "73e2920a40796d28967afa022fd5a2b49ebce74c",
+   "addedAt": "2026-11-20T05:00:46Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Thanks for the Memory",
+    "lead": "Ralph Rainger and Leo Robin, 1938. The chorus as written, checked bar by bar against Rod Stewart's record; where Rod sings it his own way, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-but-not-for-me-f-major",
+   "file": "songs/But Not for Me (F major).musicxml",
+   "title": "But Not for Me (F major)",
+   "kind": "MusicXML",
+   "sha1": "fe9ae1061f9daa0c786fdd1204e7dbbf44119c73",
+   "addedAt": "2026-11-20T05:00:47Z",
+   "category": "contemporary",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "But Not for Me",
+    "lead": "George and Ira Gershwin, 1930, from Girl Crazy; public domain now. The chorus as written, checked bar by bar against the record you sent."
+   }
+  },
+  {
+   "id": "std-that-s-all-c-major",
+   "file": "songs/That's All (C major).musicxml.locked",
+   "title": "That's All (C major)",
+   "kind": "MusicXML",
+   "sha1": "ea7134677e4eaefdc184182e15034f1c4cba22ba",
+   "addedAt": "2026-11-20T05:00:47Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "That's All",
+    "lead": "Alan Brandt and Bob Haymes, 1952. The chorus as written, checked bar by bar against Johnny Hartman's record; where he sings it his own way, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-when-your-lover-has-gone-g-major",
+   "file": "songs/When Your Lover Has Gone (G major).musicxml.locked",
+   "title": "When Your Lover Has Gone (G major)",
+   "kind": "MusicXML",
+   "sha1": "bf44fef48e3e1ecc8e1ade265be45a9b11c9e9e2",
+   "addedAt": "2026-11-20T05:00:47Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "When Your Lover Has Gone",
+    "lead": "Einar Swan, 1931. The chorus as written, its chromatic falls and all, checked against Johnny Hartman's record; where he sings it his own way, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-i-ve-got-a-crush-on-you-b-major",
+   "file": "songs/I've Got a Crush on You (B♭ major).musicxml",
+   "title": "I've Got a Crush on You (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "3bb8de7c7fd0d9cef6809ce476ed0be6656167fe",
+   "addedAt": "2026-11-20T05:01:02Z",
+   "category": "contemporary",
+   "units": {
+    "count": 35,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I've Got a Crush on You",
+    "lead": "George and Ira Gershwin, 1928; public domain now. The chorus as written, checked against Sinatra's record live at the Sands (1966)."
    }
   },
   {

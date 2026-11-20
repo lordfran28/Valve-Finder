@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-moonglow-g-major",
+ "title": "Moonglow (G major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T05:00:46.000Z",
+ "updatedAt": "2026-11-20T05:00:46.000Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Moonglow",
+  "lead": "Will Hudson, Eddie DeLange and Irving Mills, 1934. The chorus as written, checked bar by bar against Rod Stewart's record, where Arturo Sandoval plays; where Rod sings it his own way, the written tune is kept."
+ }
+}

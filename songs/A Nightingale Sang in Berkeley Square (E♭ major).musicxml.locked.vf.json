@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-a-nightingale-sang-in-berkeley-square-e-major",
+ "title": "A Nightingale Sang in Berkeley Square (E♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T05:00:46.000Z",
+ "updatedAt": "2026-11-20T05:00:46.000Z",
+ "units": {
+  "count": 42,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "A Nightingale Sang in Berkeley Square",
+  "lead": "Manning Sherwin and Eric Maschwitz, 1940. The chorus as written, with its last ending, checked bar by bar against Rod Stewart's record; where Rod sings it his own way, the written tune is kept. The middle part moves to G major and back."
+ }
+}
