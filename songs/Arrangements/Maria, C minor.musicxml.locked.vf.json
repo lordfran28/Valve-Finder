@@ -2,11 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "arr-maria-c-minor",
- "title": "Maria song (title to come), after Maria",
+ "title": "Maria, the sung line",
  "category": "arrangements",
  "kind": "MusicXML",
  "addedAt": "2026-11-20T22:08:58Z",
- "updatedAt": "2026-11-20T22:08:58Z",
+ "updatedAt": "2026-11-20T22:14:50Z",
  "units": {
   "count": 84,
   "unit": "Bar"
@@ -1416,11 +1416,11 @@
  },
  "details": {
   "title": "Maria",
-  "lead": "Maria's singing on the record, at her own pitch and in her key, C minor: concert F3 to B♭4. The notes sit on straight values; playback follows her own timing on the record.",
+  "lead": "The singing on the record, at her own pitch and in her key, C minor: concert F3 to B♭4. The notes sit on straight values; playback follows her own timing on the record.",
   "facts": [
    [
     "Line",
-    "Maria's voice, read note by note from the vocal track"
+    "The singer's voice, read note by note from the vocal track"
    ],
    [
     "Key",

@@ -2,11 +2,11 @@
  "app": "Valve Finder",
  "version": 2,
  "id": "arr-anna-german-f-minor",
- "title": "Anna German song (title to come), after Anna German",
+ "title": "Город влюблённых людей, after Anna German",
  "category": "arrangements",
  "kind": "MusicXML",
  "addedAt": "2026-11-20T22:08:17Z",
- "updatedAt": "2026-11-20T22:08:17Z",
+ "updatedAt": "2026-11-20T22:14:50Z",
  "units": {
   "count": 111,
   "unit": "Bar"
@@ -1139,9 +1139,13 @@
   "madeAt": "2026-11-20T22:08:17Z"
  },
  "details": {
-  "title": "Anna German",
+  "title": "Город влюблённых людей",
   "lead": "Anna German's singing on the record, at her own pitch and in her key, F minor: concert G3 to E♭5, where the trumpet sings. She sings freely around the beat; the notes here sit on the nearest straight values, and playback follows her own timing on the record.",
   "facts": [
+   [
+    "Song",
+    "Город влюблённых людей (City of People in Love), as Anna German sings it"
+   ],
    [
     "Line",
     "Anna German's voice, read note by note from the vocal track"
