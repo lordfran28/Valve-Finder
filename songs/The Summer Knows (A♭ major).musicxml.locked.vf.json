@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-the-summer-knows-a-major",
+ "title": "The Summer Knows (A♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:35:05.000Z",
+ "updatedAt": "2026-11-20T16:35:05.000Z",
+ "units": {
+  "count": 56,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 92,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "The Summer Knows",
+  "lead": "Michel Legrand's theme from Summer of '42, 1971, words by Alan and Marilyn Bergman; the melody as written. Lowest note concert C4, highest F5."
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-moonlight-serenade-f-major",
+ "title": "Moonlight Serenade (F major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:35:07.000Z",
+ "updatedAt": "2026-11-20T16:35:07.000Z",
+ "units": {
+  "count": 44,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Moonlight Serenade",
+  "lead": "Glenn Miller's theme from 1939, words by Mitchell Parish; the melody as written. Lowest note concert C♯4, highest E5."
+ }
+}

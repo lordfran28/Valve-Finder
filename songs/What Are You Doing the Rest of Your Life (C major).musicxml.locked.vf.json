@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-what-are-you-doing-the-rest-of-your-life-c-major",
+ "title": "What Are You Doing the Rest of Your Life (C major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:35:05.000Z",
+ "updatedAt": "2026-11-20T16:35:05.000Z",
+ "units": {
+  "count": 40,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "What Are You Doing the Rest of Your Life",
+  "lead": "Michel Legrand's song from 1969, words by Alan and Marilyn Bergman; one chorus, the melody as written. Lowest note concert B3, highest E5."
+ }
+}

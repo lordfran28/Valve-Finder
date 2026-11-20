@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-what-the-world-needs-now-is-love-g-major",
+ "title": "What the World Needs Now Is Love (G major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:35:03.000Z",
+ "updatedAt": "2026-11-20T16:35:03.000Z",
+ "units": {
+  "count": 72,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "What the World Needs Now Is Love",
+  "lead": "Burt Bacharach and Hal David's song from 1965, the melody as written. Lowest note concert D4, highest E5."
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-emily-c-major",
+ "title": "Emily (C major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:35:06.000Z",
+ "updatedAt": "2026-11-20T16:35:06.000Z",
+ "units": {
+  "count": 40,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 100,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Emily",
+  "lead": "Johnny Mandel and Johnny Mercer's waltz from 1964, the melody as written. Lowest note concert A3, highest E5."
+ }
+}

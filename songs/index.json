@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T16:33:22Z",
+ "generatedAt": "2026-11-20T16:35:15Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -6391,6 +6391,294 @@
    "details": {
     "title": "Watch What Happens",
     "lead": "Michel Legrand's song from The Umbrellas of Cherbourg, 1964, with Norman Gimbel's words; the melody as written. Lowest note concert C4, highest C5."
+   }
+  },
+  {
+   "id": "std-the-look-of-love-f-major",
+   "file": "songs/The Look of Love (F major).musicxml.locked",
+   "title": "The Look of Love (F major)",
+   "kind": "MusicXML",
+   "sha1": "d38bde98ada96e5679e838ff8e6e9037dff0326d",
+   "addedAt": "2026-11-20T16:35:03Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 56,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Look of Love",
+    "lead": "Burt Bacharach and Hal David's song from 1967, the melody as written. Lowest note concert A3, highest D5."
+   }
+  },
+  {
+   "id": "std-what-the-world-needs-now-is-love-g-major",
+   "file": "songs/What the World Needs Now Is Love (G major).musicxml.locked",
+   "title": "What the World Needs Now Is Love (G major)",
+   "kind": "MusicXML",
+   "sha1": "a17799a9b0547d7855d337ac9c553c20eac51368",
+   "addedAt": "2026-11-20T16:35:03Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 72,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "What the World Needs Now Is Love",
+    "lead": "Burt Bacharach and Hal David's song from 1965, the melody as written. Lowest note concert D4, highest E5."
+   }
+  },
+  {
+   "id": "std-charade-c-major",
+   "file": "songs/Charade (C major).musicxml.locked",
+   "title": "Charade (C major)",
+   "kind": "MusicXML",
+   "sha1": "ab4a9669c88e40b94db167599049e10f3855cd0e",
+   "addedAt": "2026-11-20T16:35:04Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 65,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Charade",
+    "lead": "Henry Mancini and Johnny Mercer's waltz from 1963, the melody as written. Lowest note concert A3, highest C5."
+   }
+  },
+  {
+   "id": "std-dear-heart-f-major",
+   "file": "songs/Dear Heart (F major).musicxml.locked",
+   "title": "Dear Heart (F major)",
+   "kind": "MusicXML",
+   "sha1": "a04aa405fcff3552b5485abb1887807e16e6d142",
+   "addedAt": "2026-11-20T16:35:04Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 42,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Dear Heart",
+    "lead": "Henry Mancini's waltz from 1964, words by Jay Livingston and Ray Evans; one chorus, the melody as written. Lowest note concert C4, highest D5."
+   }
+  },
+  {
+   "id": "std-two-for-the-road-g-major",
+   "file": "songs/Two for the Road (G major).musicxml.locked",
+   "title": "Two for the Road (G major)",
+   "kind": "MusicXML",
+   "sha1": "e2828f64694e296fb73cb2a0180513927852c4c5",
+   "addedAt": "2026-11-20T16:35:04Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 64,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Two for the Road",
+    "lead": "Henry Mancini and Leslie Bricusse's song from 1967, the melody as written. Lowest note concert B3, highest D5."
+   }
+  },
+  {
+   "id": "std-how-do-you-keep-the-music-playing-e-major",
+   "file": "songs/How Do You Keep the Music Playing (E♭ major).musicxml.locked",
+   "title": "How Do You Keep the Music Playing (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "4d371cb55c603b5a12a8f99b0175541fce8d2265",
+   "addedAt": "2026-11-20T16:35:05Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 45,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "How Do You Keep the Music Playing",
+    "lead": "Michel Legrand's song from 1982, words by Alan and Marilyn Bergman; the melody as written. Lowest note concert C4, highest E♭5."
+   }
+  },
+  {
+   "id": "std-the-summer-knows-a-major",
+   "file": "songs/The Summer Knows (A♭ major).musicxml.locked",
+   "title": "The Summer Knows (A♭ major)",
+   "kind": "MusicXML",
+   "sha1": "b30b5b94f94b95cde194622052e0b7e095c63112",
+   "addedAt": "2026-11-20T16:35:05Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 56,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Summer Knows",
+    "lead": "Michel Legrand's theme from Summer of '42, 1971, words by Alan and Marilyn Bergman; the melody as written. Lowest note concert C4, highest F5."
+   }
+  },
+  {
+   "id": "std-what-are-you-doing-the-rest-of-your-life-c-major",
+   "file": "songs/What Are You Doing the Rest of Your Life (C major).musicxml.locked",
+   "title": "What Are You Doing the Rest of Your Life (C major)",
+   "kind": "MusicXML",
+   "sha1": "78b06a224c8da5d8093ee048220f47921d249875",
+   "addedAt": "2026-11-20T16:35:05Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "What Are You Doing the Rest of Your Life",
+    "lead": "Michel Legrand's song from 1969, words by Alan and Marilyn Bergman; one chorus, the melody as written. Lowest note concert B3, highest E5."
+   }
+  },
+  {
+   "id": "std-yesterday-f-major",
+   "file": "songs/Yesterday (F major).musicxml.locked",
+   "title": "Yesterday (F major)",
+   "kind": "MusicXML",
+   "sha1": "8d4e55867819b8c11d86e81793a64aa86b62d4a7",
+   "addedAt": "2026-11-20T16:35:05Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Yesterday",
+    "lead": "Lennon and McCartney's song from 1965, the melody as written. Lowest note concert D4, highest F5."
+   }
+  },
+  {
+   "id": "std-a-time-for-love-b-major",
+   "file": "songs/A Time for Love (B♭ major).musicxml.locked",
+   "title": "A Time for Love (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "12cc23a5a1e8a4395f084588f9d712abd73501c5",
+   "addedAt": "2026-11-20T16:35:06Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 38,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "A Time for Love",
+    "lead": "Johnny Mandel and Paul Francis Webster's song from 1966, the melody as written. Lowest note concert A3, highest E♭5."
+   }
+  },
+  {
+   "id": "std-emily-c-major",
+   "file": "songs/Emily (C major).musicxml.locked",
+   "title": "Emily (C major)",
+   "kind": "MusicXML",
+   "sha1": "5fe7f5bf844708cc8ad330a0b7b73c62f1e8e967",
+   "addedAt": "2026-11-20T16:35:06Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Emily",
+    "lead": "Johnny Mandel and Johnny Mercer's waltz from 1964, the melody as written. Lowest note concert A3, highest E5."
+   }
+  },
+  {
+   "id": "std-michelle-f-major",
+   "file": "songs/Michelle (F major).musicxml.locked",
+   "title": "Michelle (F major)",
+   "kind": "MusicXML",
+   "sha1": "01e84bb6b211f0bf03829aac91c626ac65adbdbc",
+   "addedAt": "2026-11-20T16:35:06Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 54,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Michelle",
+    "lead": "Lennon and McCartney's song from 1965, the melody as written. Lowest note concert C♯4, highest E5."
+   }
+  },
+  {
+   "id": "std-edelweiss-b-major",
+   "file": "songs/Edelweiss (B♭ major).musicxml.locked",
+   "title": "Edelweiss (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "c0422255de388f721f1559d0efac345e945bbab0",
+   "addedAt": "2026-11-20T16:35:07Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Edelweiss",
+    "lead": "Richard Rodgers and Oscar Hammerstein's song from The Sound of Music, 1959, the melody as written. Lowest note concert D4, highest C5."
+   }
+  },
+  {
+   "id": "std-moonlight-serenade-f-major",
+   "file": "songs/Moonlight Serenade (F major).musicxml.locked",
+   "title": "Moonlight Serenade (F major)",
+   "kind": "MusicXML",
+   "sha1": "5e6a7d9d536dc37438d644ff0fbe4b0be8c0de00",
+   "addedAt": "2026-11-20T16:35:07Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 44,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Moonlight Serenade",
+    "lead": "Glenn Miller's theme from 1939, words by Mitchell Parish; the melody as written. Lowest note concert C♯4, highest E5."
+   }
+  },
+  {
+   "id": "std-my-way-f-major",
+   "file": "songs/My Way (F major).musicxml.locked",
+   "title": "My Way (F major)",
+   "kind": "MusicXML",
+   "sha1": "91b63eea5ae38bb77cb55c45d394f02bbfd58ae0",
+   "addedAt": "2026-11-20T16:35:07Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 57,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My Way",
+    "lead": "Paul Anka's English song of 1969 on Claude François and Jacques Revaux's Comme d'habitude, the melody as written. Lowest note concert C4, highest A5."
+   }
+  },
+  {
+   "id": "std-meditation-c-major",
+   "file": "songs/Meditation (C major).musicxml.locked",
+   "title": "Meditation (C major)",
+   "kind": "MusicXML",
+   "sha1": "b607581196a9b63bf87e9dd9f6bb08a5154ec65c",
+   "addedAt": "2026-11-20T16:35:08Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 56,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Meditation",
+    "lead": "Antonio Carlos Jobim's Meditação, around 1960, words by Newton Mendonça, English by Norman Gimbel; the melody as written. Lowest note concert C4, highest D5."
    }
   },
   {

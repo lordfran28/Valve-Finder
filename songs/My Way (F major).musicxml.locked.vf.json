@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-my-way-f-major",
+ "title": "My Way (F major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T16:35:07.000Z",
+ "updatedAt": "2026-11-20T16:35:07.000Z",
+ "units": {
+  "count": 57,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "My Way",
+  "lead": "Paul Anka's English song of 1969 on Claude François and Jacques Revaux's Comme d'habitude, the melody as written. Lowest note concert C4, highest A5."
+ }
+}
