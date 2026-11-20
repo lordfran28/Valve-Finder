@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.1">
+<work><work-title>I Wonder Who's Kissing Her Now</work-title></work>
+<identification></identification>
+<part-list><score-part id="P1"><part-name>Melody</part-name></score-part></part-list>
+<part id="P1">
+<measure number="0" implicit="yes">
+<attributes><divisions>48</divisions><key><fifths>-3</fifths><mode>major</mode></key><time><beats>4</beats><beat-type>4</beat-type></time><clef><sign>G</sign><line>2</line></clef></attributes>
+<direction placement="above"><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>97</per-minute></metronome></direction-type><sound tempo="97"/></direction>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="1">
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+<note><rest/><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="2">
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><tie type="start"/><type>half</type><notations><tied type="start"/></notations></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><tie type="stop"/><type>eighth</type><notations><tied type="stop"/></notations></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+</measure>
+<measure number="3">
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>192</duration><type>whole</type></note>
+</measure>
+<measure number="4">
+<note><rest/><duration>192</duration><type>whole</type></note>
+</measure>
+<measure number="5">
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+</measure>
+<measure number="6">
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="7">
+<note><pitch><step>C</step><octave>4</octave></pitch><duration>192</duration><type>whole</type></note>
+</measure>
+<measure number="8">
+<note><rest/><duration>192</duration><type>whole</type></note>
+</measure>
+<measure number="9">
+<note><pitch><step>A</step><alter>-1</alter><octave>4</octave></pitch><duration>72</duration><type>quarter</type><dot/></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>C</step><octave>5</octave></pitch><duration>72</duration><type>quarter</type><dot/></note>
+<note><pitch><step>A</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+</measure>
+<measure number="10">
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>72</duration><type>quarter</type><dot/></note>
+<note><rest/><duration>72</duration><type>quarter</type><dot/></note>
+</measure>
+<measure number="11">
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>72</duration><type>quarter</type><dot/></note>
+</measure>
+<measure number="12">
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>C</step><octave>4</octave></pitch><duration>96</duration><tie type="start"/><type>half</type><notations><tied type="start"/></notations></note>
+<note><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><tie type="stop"/><type>eighth</type><notations><tied type="stop"/></notations></note>
+<note><rest/><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="13">
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><tie type="start"/><type>quarter</type><notations><tied type="start"/></notations></note>
+</measure>
+<measure number="14">
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>96</duration><tie type="stop"/><type>half</type><notations><tied type="stop"/></notations></note>
+<note><rest/><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>C</step><octave>5</octave></pitch><duration>48</duration><tie type="start"/><type>quarter</type><notations><tied type="start"/></notations></note>
+</measure>
+<measure number="15">
+<note><pitch><step>C</step><octave>5</octave></pitch><duration>48</duration><tie type="stop"/><type>quarter</type><notations><tied type="stop"/></notations></note>
+<note><pitch><step>C</step><octave>5</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+</measure>
+<measure number="16">
+<note><rest/><duration>144</duration><type>half</type><dot/></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="17">
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+<note><rest/><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="18">
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="19">
+<note><pitch><step>D</step><octave>4</octave></pitch><duration>144</duration><type>half</type><dot/></note>
+<note><rest/><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="20">
+<note><rest/><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>72</duration><type>quarter</type><dot/></note>
+<note><rest/><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="21">
+<note><rest/><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>D</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+</measure>
+<measure number="22">
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>C</step><octave>4</octave></pitch><duration>144</duration><tie type="start"/><type>half</type><dot/><notations><tied type="start"/></notations></note>
+</measure>
+<measure number="23">
+<note><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><tie type="stop"/><type>quarter</type><notations><tied type="stop"/></notations></note>
+<note><rest/><duration>96</duration><type>half</type></note>
+<note><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="24">
+<note><pitch><step>D</step><octave>4</octave></pitch><duration>144</duration><type>half</type><dot/></note>
+<note><pitch><step>D</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>E</step><octave>4</octave></pitch><duration>24</duration><tie type="start"/><type>eighth</type><notations><tied type="start"/></notations></note>
+</measure>
+<measure number="25">
+<note><pitch><step>E</step><octave>4</octave></pitch><duration>96</duration><tie type="stop"/><type>half</type><notations><tied type="stop"/></notations></note>
+<note><rest/><duration>96</duration><type>half</type></note>
+</measure>
+<measure number="26">
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><tie type="start"/><type>quarter</type><notations><tied type="start"/></notations></note>
+</measure>
+<measure number="27">
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><tie type="stop"/><type>quarter</type><notations><tied type="stop"/></notations></note>
+<note><pitch><step>D</step><octave>5</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>C</step><octave>5</octave></pitch><duration>96</duration><tie type="start"/><type>half</type><notations><tied type="start"/></notations></note>
+</measure>
+<measure number="28">
+<note><pitch><step>C</step><octave>5</octave></pitch><duration>96</duration><tie type="stop"/><type>half</type><notations><tied type="stop"/></notations></note>
+<note><rest/><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+</measure>
+<measure number="29">
+<note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>A</step><alter>-1</alter><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>96</duration><tie type="start"/><type>half</type><notations><tied type="start"/></notations></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>24</duration><tie type="stop"/><type>eighth</type><notations><tied type="stop"/></notations></note>
+</measure>
+<measure number="30">
+<note><rest/><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+</measure>
+<measure number="31">
+<note><rest/><duration>96</duration><type>half</type></note>
+<note><pitch><step>G</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>72</duration><tie type="start"/><type>quarter</type><dot/><notations><tied type="start"/></notations></note>
+</measure>
+<measure number="32">
+<note><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>24</duration><tie type="stop"/><type>eighth</type><notations><tied type="stop"/></notations></note>
+<note><pitch><step>F</step><octave>4</octave></pitch><duration>24</duration><type>eighth</type></note>
+<note><pitch><step>D</step><octave>4</octave></pitch><duration>48</duration><type>quarter</type></note>
+<note><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>half</type></note>
+</measure>
+</part></score-partwise>

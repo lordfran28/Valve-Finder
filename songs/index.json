@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T05:38:21Z",
+ "generatedAt": "2026-11-20T13:17:23Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -6086,6 +6086,23 @@
    "details": {
     "title": "Dark Eyes",
     "lead": "Ochi chyornye, the Russian romance: Yevhen Hrebinka's poem of 1843, sung to an old waltz tune; public domain. One verse as it is usually sung, checked against the record you sent."
+   }
+  },
+  {
+   "id": "std-i-wonder-who-s-kissing-her-now-dean-martin-e-major",
+   "file": "songs/I Wonder Who's Kissing Her Now — Dean Martin (E♭ major).musicxml",
+   "title": "I Wonder Who's Kissing Her Now — Dean Martin (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "16094a4faa52b6aa56078b5b915e5f5b589f2470",
+   "addedAt": "2026-11-20T13:17:15Z",
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Wonder Who's Kissing Her Now — Dean Martin",
+    "lead": "The 1909 song by Harold Orlob, Will M. Hough and Frank R. Adams, public domain, as Dean Martin sings it on the live record you sent: written out by ear note by note, his slides and scoops left out, an octave above his voice for the trumpet. One chorus. Lowest note concert B♭3, highest D5."
    }
   },
   {
