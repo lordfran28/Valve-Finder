@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T21:45:02Z",
+ "generatedAt": "2026-11-20T21:59:38Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7251,6 +7251,42 @@
      [
       "Ornaments",
       "The turns in bars 47 and 79 are written out as grace notes; the long B in bar 50 is a trill"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-even-the-nights-are-better",
+   "file": "songs/Arrangements/Even the Nights Are Better.musicxml.locked",
+   "title": "Even the Nights Are Better, after Air Supply",
+   "kind": "MusicXML",
+   "sha1": "ea15e8ae5d66131c2b4799cb7144d2a541d9f773",
+   "addedAt": "2026-11-20T21:59:04Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 115,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Even the Nights Are Better",
+    "lead": "Russell Hitchcock's singing on the Air Supply record, at its own pitch: concert F3 to E♭5. The verses are his voice alone. The choruses are sung as a three-part chord, and there the part follows the top voice of the chord, which is usually the tune but not always. The last chorus is a step higher, as on the record.",
+    "facts": [
+     [
+      "Song",
+      "J. L. Wallace, Terry Skinner and Ken Bell (1982)"
+     ],
+     [
+      "Line",
+      "The vocal track, read note by note; the top voice in the choruses"
+     ],
+     [
+      "Key",
+      "E♭ concert, F for the trumpet; the last chorus a step up"
+     ],
+     [
+      "Form",
+      "Intro, verse, chorus twice, verse, chorus twice, instrumental, last chorus a step up"
      ]
     ]
    }
