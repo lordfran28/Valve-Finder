@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T01:32:29Z",
+ "generatedAt": "2026-11-20T04:47:30Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5819,6 +5819,24 @@
    "units": {
     "count": 39,
     "unit": "Bar"
+   }
+  },
+  {
+   "id": "std-time-after-time-c-major",
+   "file": "songs/Time After Time (C major).musicxml.locked",
+   "title": "Time After Time (C major)",
+   "kind": "MusicXML",
+   "sha1": "f1739da6525ec3836bd0416263f1d68faf65836b",
+   "addedAt": "2026-11-20T04:47:23Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Time After Time",
+    "lead": "Jule Styne and Sammy Cahn's ballad from 1947, the verse and the chorus, as the song is written. Checked note by note against Rod Stewart's record: where he sings it differently, that is his own phrasing, and the written tune is kept. Lowest note concert B3, highest E5."
    }
   },
   {
