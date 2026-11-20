@@ -1,0 +1,48 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "mozart-concerto-23-adagio",
+ "title": "Mozart – Piano Concerto No. 23, K. 488: Adagio",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T21:44:17Z",
+ "updatedAt": "2026-11-20T21:44:17Z",
+ "units": {
+  "count": 99,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 48,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:49:0": "trill"
+ },
+ "details": {
+  "title": "Piano Concerto No. 23 in A major, K. 488: Adagio",
+  "lead": "The piano's melody through the whole movement, read from the score, an octave below the piano so it sits where the trumpet sings: concert E3 to E5. Where the piano drops very low, in bars 65, 66, 89 and 90, those few notes stay at the piano's pitch. The bars the orchestra plays alone are rests.",
+  "facts": [
+   [
+    "Piece",
+    "Wolfgang Amadeus Mozart, Piano Concerto No. 23 in A major, K. 488 (1786), second movement"
+   ],
+   [
+    "Line",
+    "The solo piano's right hand, its top voice, from the two-piano score (Kalmus)"
+   ],
+   [
+    "Key",
+    "F♯ minor concert, G♯ minor for the trumpet; 6/8, about 32 to the dotted quarter"
+   ],
+   [
+    "Ornaments",
+    "The turns in bars 47 and 79 are written out as grace notes; the long B in bar 50 is a trill"
+   ]
+  ]
+ }
+}
