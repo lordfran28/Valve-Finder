@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T21:59:38Z",
+ "generatedAt": "2026-11-20T22:09:10Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7287,6 +7287,34 @@
      [
       "Form",
       "Intro, verse, chorus twice, verse, chorus twice, instrumental, last chorus a step up"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-anna-german-f-minor",
+   "file": "songs/Arrangements/Anna German, F minor.musicxml.locked",
+   "title": "Anna German song (title to come), after Anna German",
+   "kind": "MusicXML",
+   "sha1": "244e42ea18bf5c557a2b79d2c30c0723567439ef",
+   "addedAt": "2026-11-20T22:08:17Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 111,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Anna German",
+    "lead": "Anna German's singing on the record, at her own pitch and in her key, F minor: concert G3 to E♭5, where the trumpet sings. She sings freely around the beat; the notes here sit on the nearest straight values, and playback follows her own timing on the record.",
+    "facts": [
+     [
+      "Line",
+      "Anna German's voice, read note by note from the vocal track"
+     ],
+     [
+      "Key",
+      "F minor concert, G minor for the trumpet"
      ]
     ]
    }
