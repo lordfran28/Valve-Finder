@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T13:17:23Z",
+ "generatedAt": "2026-11-20T16:14:51Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5257,17 +5257,17 @@
    "file": "songs/Stardust (C major).musicxml.locked",
    "title": "Stardust (C major)",
    "kind": "MusicXML",
-   "sha1": "eaa0e4de8777f267a1a31ebb5f74905a0acaade1",
+   "sha1": "2c6c6d0b68a35f55f2691ca3f87d4ec4832ec784",
    "addedAt": "2026-11-19T11:33:27Z",
    "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 54,
+    "count": 46,
     "unit": "Bar"
    },
    "details": {
     "title": "Stardust",
-    "lead": "The trumpet's tune from the recording, note for note and in bars: C major, then up a half step to D♭ partway through."
+    "lead": "The trumpet track's Stardust, written out again by hand: Carmichael's verse in C, then straight into the chorus a half step up in D♭, the way the player takes it. His turns, runs and octave leaps are kept. Where the track loses the trumpet, the written tune fills in. Concert G3 to G5."
    }
   },
   {
