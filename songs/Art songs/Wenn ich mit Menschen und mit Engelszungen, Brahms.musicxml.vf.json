@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "wenn-ich-mit-menschen-und-mit-engelszungen-brahms",
+ "title": "Brahms – Wenn ich mit Menschen- und mit Engelszungen redete, Vier ernste Gesänge, Op. 121 No. 4",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T01:31:49Z",
+ "updatedAt": "2026-11-20T01:31:49Z",
+ "units": {
+  "count": 97,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "1",
+  "tempo": 94,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-19T21:42:36Z",
+ "generatedAt": "2026-11-20T01:32:29Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5571,6 +5571,253 @@
    "category": "classical",
    "units": {
     "count": 34,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "am-sonntag-morgen-brahms",
+   "file": "songs/Art songs/Am Sonntag Morgen, Brahms.musicxml",
+   "title": "Brahms – Am Sonntag Morgen, Op. 49 No. 1",
+   "kind": "MusicXML",
+   "sha1": "afc9e0b7ea06ed407d45282b6d516415777ac43d",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 27,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "denn-es-gehet-dem-menschen-brahms",
+   "file": "songs/Art songs/Denn es gehet dem Menschen, Brahms.musicxml",
+   "title": "Brahms – Denn es gehet dem Menschen, Vier ernste Gesänge, Op. 121 No. 1",
+   "kind": "MusicXML",
+   "sha1": "f6fcf54731546c66f9aa1479299d22986656dd3b",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 96,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "der-schmied-brahms",
+   "file": "songs/Art songs/Der Schmied, Brahms.musicxml",
+   "title": "Brahms – Der Schmied, Op. 19 No. 4",
+   "kind": "MusicXML",
+   "sha1": "9373952c96e8194262e3ec7d575fe9aa351afb01",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 21,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "elegie-satie",
+   "file": "songs/Art songs/Elegie, Satie.musicxml",
+   "title": "Satie – Élégie, Quatre petites mélodies No. 1",
+   "kind": "MusicXML",
+   "sha1": "b6c7840226121045518f07f8f772866ea9cad4de",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 12,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-hab-ein-gluhend-messer-mahler",
+   "file": "songs/Art songs/Ich hab ein gluhend Messer, Mahler.musicxml",
+   "title": "Mahler – Ich hab’ ein glühend Messer, Lieder eines fahrenden Gesellen No. 3",
+   "kind": "MusicXML",
+   "sha1": "d2ca0251c907cc824592ac5ed6be8750bfb06374",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 76,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "ich-wandte-mich-brahms",
+   "file": "songs/Art songs/Ich wandte mich, Brahms.musicxml",
+   "title": "Brahms – Ich wandte mich und sahe an, Vier ernste Gesänge, Op. 121 No. 2",
+   "kind": "MusicXML",
+   "sha1": "1152c256d07861593e6909944c0472d2c8a2373e",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 74,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "in-diesem-wetter-mahler",
+   "file": "songs/Art songs/In diesem Wetter, Mahler.musicxml",
+   "title": "Mahler – In diesem Wetter, Kindertotenlieder No. 5",
+   "kind": "MusicXML",
+   "sha1": "7e3d932ab4acf7f4e1f1670bacdae38f9b97106d",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 123,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "le-colibri-chausson",
+   "file": "songs/Art songs/Le Colibri, Chausson.musicxml",
+   "title": "Chausson – Le Colibri, Op. 2 No. 7",
+   "kind": "MusicXML",
+   "sha1": "10cb2d99d8b3989abb71fa8bfb63ac337bf01753",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 36,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "liebeszauber-clara-schumann",
+   "file": "songs/Art songs/Liebeszauber, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Liebeszauber, Op. 13 No. 3",
+   "kind": "MusicXML",
+   "sha1": "656aa849e822081bcdf16d139c0d93a408f2603e",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 55,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "nun-seh-ich-wohl-mahler",
+   "file": "songs/Art songs/Nun seh ich wohl, Mahler.musicxml",
+   "title": "Mahler – Nun seh’ ich wohl, warum so dunkle Flammen, Kindertotenlieder No. 2",
+   "kind": "MusicXML",
+   "sha1": "c1ed000cb7760f8b0f4d2eb7042b9f70d514c789",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 70,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "o-tod-wie-bitter-bist-du-brahms",
+   "file": "songs/Art songs/O Tod wie bitter bist du, Brahms.musicxml",
+   "title": "Brahms – O Tod, wie bitter bist du, Vier ernste Gesänge, Op. 121 No. 3",
+   "kind": "MusicXML",
+   "sha1": "616f4769522f5a062d1ce5d57e3b1609a7c37a9a",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 41,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "o-ma-belle-rebelle-gounod",
+   "file": "songs/Art songs/O ma belle rebelle, Gounod.musicxml",
+   "title": "Gounod – Ô ma belle rebelle",
+   "kind": "MusicXML",
+   "sha1": "60c2ffa5e55e25afe65cb603e7ffce2602b693a9",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 107,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "queen-marys-song-elgar",
+   "file": "songs/Art songs/Queen Marys Song, Elgar.musicxml",
+   "title": "Elgar – Queen Mary’s Song",
+   "kind": "MusicXML",
+   "sha1": "ceed2e12fc0fda88f983c273440e825d68b20b12",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "schwanenlied-hensel",
+   "file": "songs/Art songs/Schwanenlied, Hensel.musicxml",
+   "title": "Fanny Hensel – Schwanenlied, Op. 1 No. 1",
+   "kind": "MusicXML",
+   "sha1": "918fa96125b08d55c7e581482c41c6843d24df5c",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 54,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "sie-liebten-sich-beide-clara-schumann",
+   "file": "songs/Art songs/Sie liebten sich beide, Clara Schumann.musicxml",
+   "title": "Clara Schumann – Sie liebten sich beide, Op. 13 No. 2",
+   "kind": "MusicXML",
+   "sha1": "f375916b4cbc47b09607c122eb6d3de37cf5a717",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "tendrement-satie",
+   "file": "songs/Art songs/Tendrement, Satie.musicxml",
+   "title": "Satie – Tendrement",
+   "kind": "MusicXML",
+   "sha1": "247336cf34716d06f1b1952f48759cb86da2c2c0",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 106,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wenn-dein-mutterlein-mahler",
+   "file": "songs/Art songs/Wenn dein Mutterlein, Mahler.musicxml",
+   "title": "Mahler – Wenn dein Mütterlein, Kindertotenlieder No. 3",
+   "kind": "MusicXML",
+   "sha1": "04ae86d16a59a62345efc344a0f5fb6af00b65b6",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 63,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wenn-ich-mit-menschen-und-mit-engelszungen-brahms",
+   "file": "songs/Art songs/Wenn ich mit Menschen und mit Engelszungen, Brahms.musicxml",
+   "title": "Brahms – Wenn ich mit Menschen- und mit Engelszungen redete, Vier ernste Gesänge, Op. 121 No. 4",
+   "kind": "MusicXML",
+   "sha1": "6d5f6a834ba6e3563841cf19b2e71b83808229c3",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 97,
+    "unit": "Bar"
+   }
+  },
+  {
+   "id": "wie-die-wolke-nach-der-sonne-brahms",
+   "file": "songs/Art songs/Wie die Wolke nach der Sonne, Brahms.musicxml",
+   "title": "Brahms – Wie die Wolke nach der Sonne, Op. 6 No. 5",
+   "kind": "MusicXML",
+   "sha1": "7ba26cfe7bf40bb0dbe8b505a53bb499a07d903c",
+   "addedAt": "2026-11-20T01:31:49Z",
+   "category": "classical",
+   "units": {
+    "count": 39,
     "unit": "Bar"
    }
   },

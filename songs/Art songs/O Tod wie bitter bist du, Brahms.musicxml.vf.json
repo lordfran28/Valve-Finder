@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "o-tod-wie-bitter-bist-du-brahms",
+ "title": "Brahms – O Tod, wie bitter bist du, Vier ernste Gesänge, Op. 121 No. 3",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T01:31:49Z",
+ "updatedAt": "2026-11-20T01:31:49Z",
+ "units": {
+  "count": 41,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "1",
+  "tempo": 90,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}

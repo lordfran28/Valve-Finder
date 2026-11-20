@@ -1,0 +1,25 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "nun-seh-ich-wohl-mahler",
+ "title": "Mahler – Nun seh’ ich wohl, warum so dunkle Flammen, Kindertotenlieder No. 2",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T01:31:49Z",
+ "updatedAt": "2026-11-20T01:31:49Z",
+ "units": {
+  "count": 70,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": null,
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null
+}
