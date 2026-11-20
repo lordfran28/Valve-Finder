@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T22:09:10Z",
+ "generatedAt": "2026-11-20T22:09:30Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7315,6 +7315,34 @@
      [
       "Key",
       "F minor concert, G minor for the trumpet"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-maria-c-minor",
+   "file": "songs/Arrangements/Maria, C minor.musicxml.locked",
+   "title": "Maria song (title to come), after Maria",
+   "kind": "MusicXML",
+   "sha1": "dfd3382d3f71f074d7dc9a429db1346b6d6b53ba",
+   "addedAt": "2026-11-20T22:08:58Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 84,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Maria",
+    "lead": "Maria's singing on the record, at her own pitch and in her key, C minor: concert F3 to B♭4. The notes sit on straight values; playback follows her own timing on the record.",
+    "facts": [
+     [
+      "Line",
+      "Maria's voice, read note by note from the vocal track"
+     ],
+     [
+      "Key",
+      "C minor concert, D minor for the trumpet"
      ]
     ]
    }
