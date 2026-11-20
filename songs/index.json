@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T16:14:51Z",
+ "generatedAt": "2026-11-20T16:30:27Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5221,17 +5221,17 @@
    "file": "songs/How Deep Is the Ocean (C minor).musicxml.locked",
    "title": "How Deep Is the Ocean (C minor)",
    "kind": "MusicXML",
-   "sha1": "971bae0f2ceea2c795ddb02a7c0c532d86e373d7",
+   "sha1": "04c6870e9ba89f842e83f2491038e5c7e87d2ff6",
    "addedAt": "2026-11-19T11:33:27Z",
    "locked": true,
    "category": "contemporary",
    "units": {
-    "count": 37,
+    "count": 36,
     "unit": "Bar"
    },
    "details": {
     "title": "How Deep Is the Ocean",
-    "lead": "The trumpet's tune from the recording, note for note and in bars, in C minor."
+    "lead": "The trumpet track's How Deep Is the Ocean, in the song's own bars: the player's four-bar intro, then one chorus as he plays it, in E♭. Note for note, with the stem's stray notes taken out."
    }
   },
   {
