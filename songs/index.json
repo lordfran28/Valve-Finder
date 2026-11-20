@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T16:52:05Z",
+ "generatedAt": "2026-11-20T21:21:51Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7110,6 +7110,78 @@
    "details": {
     "title": "Willow Weep for Me",
     "lead": "Ann Ronell's song from 1932, the melody as written in the real book. Lowest note concert D4, highest E♭5."
+   }
+  },
+  {
+   "id": "arr-our-love-is-here-to-stay-backup",
+   "file": "songs/Arrangements/Our Love Is Here to Stay (backup trumpet).musicxml.locked",
+   "title": "Our Love Is Here to Stay — Rod Stewart (backup trumpet)",
+   "kind": "MusicXML",
+   "sha1": "21771b336f938bc1f844954d6de8440620bb1072",
+   "addedAt": "2026-11-20T21:21:02Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 71,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Our Love Is Here to Stay — Rod Stewart",
+    "lead": "The wind line behind Rod Stewart on his record, note for note, in G: the long notes held under him, the line that falls a half step at a time in the middle part, and the last fall to E at the end. Concert B3 to D5 (written C♯4 to E5).",
+    "facts": [
+     [
+      "Song",
+      "George Gershwin, words by Ira Gershwin (1938)"
+     ],
+     [
+      "Line",
+      "The record's wind track, its leading voice"
+     ],
+     [
+      "Key",
+      "G concert, A for the trumpet"
+     ],
+     [
+      "Form",
+      "Pickup, A, middle, A, last part; eight bars for the band; middle, A, last part longer"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-our-love-is-here-to-stay",
+   "file": "songs/Arrangements/Our Love Is Here to Stay.musicxml.locked",
+   "title": "Our Love Is Here to Stay, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "dedd73e436a676cda0dcb459141269e0ee8dfb1c",
+   "addedAt": "2026-11-20T21:21:02Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 71,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Our Love Is Here to Stay",
+    "lead": "Rod Stewart's singing on his record, an octave up for the trumpet and in his key, G. His phrasing is straightened into plain eighths, and his slides and turns are left out. It runs from concert C♯4 to G5 (written D♯4 to A5); the G5 comes once, in the last A.",
+    "facts": [
+     [
+      "Song",
+      "George Gershwin, words by Ira Gershwin (1938)"
+     ],
+     [
+      "Line",
+      "Rod Stewart's voice, read note by note from the vocal track and straightened"
+     ],
+     [
+      "Key",
+      "G concert, A for the trumpet"
+     ],
+     [
+      "Form",
+      "Pickup, A, middle, A, last part; eight bars for the band; middle, A, last part longer"
+     ]
+    ]
    }
   },
   {
