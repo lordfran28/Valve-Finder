@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T22:09:30Z",
+ "generatedAt": "2026-11-20T22:15:08Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7294,7 +7294,7 @@
   {
    "id": "arr-anna-german-f-minor",
    "file": "songs/Arrangements/Anna German, F minor.musicxml.locked",
-   "title": "Anna German song (title to come), after Anna German",
+   "title": "Город влюблённых людей, after Anna German",
    "kind": "MusicXML",
    "sha1": "244e42ea18bf5c557a2b79d2c30c0723567439ef",
    "addedAt": "2026-11-20T22:08:17Z",
@@ -7305,9 +7305,13 @@
     "unit": "Bar"
    },
    "details": {
-    "title": "Anna German",
+    "title": "Город влюблённых людей",
     "lead": "Anna German's singing on the record, at her own pitch and in her key, F minor: concert G3 to E♭5, where the trumpet sings. She sings freely around the beat; the notes here sit on the nearest straight values, and playback follows her own timing on the record.",
     "facts": [
+     [
+      "Song",
+      "Город влюблённых людей (City of People in Love), as Anna German sings it"
+     ],
      [
       "Line",
       "Anna German's voice, read note by note from the vocal track"
@@ -7322,7 +7326,7 @@
   {
    "id": "arr-maria-c-minor",
    "file": "songs/Arrangements/Maria, C minor.musicxml.locked",
-   "title": "Maria song (title to come), after Maria",
+   "title": "Maria, the sung line",
    "kind": "MusicXML",
    "sha1": "dfd3382d3f71f074d7dc9a429db1346b6d6b53ba",
    "addedAt": "2026-11-20T22:08:58Z",
@@ -7334,11 +7338,11 @@
    },
    "details": {
     "title": "Maria",
-    "lead": "Maria's singing on the record, at her own pitch and in her key, C minor: concert F3 to B♭4. The notes sit on straight values; playback follows her own timing on the record.",
+    "lead": "The singing on the record, at her own pitch and in her key, C minor: concert F3 to B♭4. The notes sit on straight values; playback follows her own timing on the record.",
     "facts": [
      [
       "Line",
-      "Maria's voice, read note by note from the vocal track"
+      "The singer's voice, read note by note from the vocal track"
      ],
      [
       "Key",
