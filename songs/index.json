@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T05:32:23Z",
+ "generatedAt": "2026-11-20T05:38:21Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -6069,6 +6069,23 @@
    "details": {
     "title": "Until the Real Thing Comes Along",
     "lead": "Saul Chaplin, Sammy Cahn, Mann Holiner and Alberta Nichols, 1936. The chorus as written, checked bar by bar against Rod Stewart's record; where Rod sings it his own way, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-dark-eyes-d-minor",
+   "file": "songs/Dark Eyes (D minor).musicxml",
+   "title": "Dark Eyes (D minor)",
+   "kind": "MusicXML",
+   "sha1": "60b6fbdb7da42bd92d9f5b1852703b074bbd929a",
+   "addedAt": "2026-11-20T05:38:12Z",
+   "category": "contemporary",
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Dark Eyes",
+    "lead": "Ochi chyornye, the Russian romance: Yevhen Hrebinka's poem of 1843, sung to an old waltz tune; public domain. One verse as it is usually sung, checked against the record you sent."
    }
   },
   {
