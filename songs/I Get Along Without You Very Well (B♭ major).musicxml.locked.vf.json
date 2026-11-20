@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-i-get-along-without-you-very-well-b-major",
+ "title": "I Get Along Without You Very Well (B♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-20T05:25:55.000Z",
+ "updatedAt": "2026-11-20T05:32:14.000Z",
+ "units": {
+  "count": 64,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "I Get Along Without You Very Well",
+  "lead": "Hoagy Carmichael, 1939. The whole song as written, checked bar by bar against the record you sent; where the record phrases it differently, the written tune is kept."
+ }
+}

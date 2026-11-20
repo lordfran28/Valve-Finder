@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T05:01:10Z",
+ "generatedAt": "2026-11-20T05:32:23Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -5826,7 +5826,7 @@
    "file": "songs/Time After Time (C major).musicxml.locked",
    "title": "Time After Time (C major)",
    "kind": "MusicXML",
-   "sha1": "f1739da6525ec3836bd0416263f1d68faf65836b",
+   "sha1": "a987551762b4f973be121995ed415976e548c8fb",
    "addedAt": "2026-11-20T04:47:23Z",
    "locked": true,
    "category": "contemporary",
@@ -5844,7 +5844,7 @@
    "file": "songs/That Old Feeling (C major).musicxml.locked",
    "title": "That Old Feeling (C major)",
    "kind": "MusicXML",
-   "sha1": "722998d1867e8ab06de874c24b1444cf66b6b1fe",
+   "sha1": "f76325d503f78ec2430a1558d4b490eff24a7d51",
    "addedAt": "2026-11-20T04:50:14Z",
    "locked": true,
    "category": "contemporary",
@@ -5862,7 +5862,7 @@
    "file": "songs/A Nightingale Sang in Berkeley Square (E♭ major).musicxml.locked",
    "title": "A Nightingale Sang in Berkeley Square (E♭ major)",
    "kind": "MusicXML",
-   "sha1": "4f900ea675cae92cfa1b805bfe0bf1b561be446a",
+   "sha1": "2849ebf1c7e8a01db53eaa5e490673c5d83cf70e",
    "addedAt": "2026-11-20T05:00:46Z",
    "locked": true,
    "category": "contemporary",
@@ -5880,7 +5880,7 @@
    "file": "songs/Moonglow (G major).musicxml.locked",
    "title": "Moonglow (G major)",
    "kind": "MusicXML",
-   "sha1": "b62c4e4b6a67e4fd795ed2cafca2adabc8c3671c",
+   "sha1": "9b4997275e07a2459fd9d916ed08446b75c3a352",
    "addedAt": "2026-11-20T05:00:46Z",
    "locked": true,
    "category": "contemporary",
@@ -5898,7 +5898,7 @@
    "file": "songs/Thanks for the Memory (F major).musicxml.locked",
    "title": "Thanks for the Memory (F major)",
    "kind": "MusicXML",
-   "sha1": "73e2920a40796d28967afa022fd5a2b49ebce74c",
+   "sha1": "c2fb458d7805b060f43aad659b917568d7e6d3ed",
    "addedAt": "2026-11-20T05:00:46Z",
    "locked": true,
    "category": "contemporary",
@@ -5933,7 +5933,7 @@
    "file": "songs/That's All (C major).musicxml.locked",
    "title": "That's All (C major)",
    "kind": "MusicXML",
-   "sha1": "ea7134677e4eaefdc184182e15034f1c4cba22ba",
+   "sha1": "2d7ba183b97a24833acbce1b6af3c83681cf7153",
    "addedAt": "2026-11-20T05:00:47Z",
    "locked": true,
    "category": "contemporary",
@@ -5951,7 +5951,7 @@
    "file": "songs/When Your Lover Has Gone (G major).musicxml.locked",
    "title": "When Your Lover Has Gone (G major)",
    "kind": "MusicXML",
-   "sha1": "bf44fef48e3e1ecc8e1ade265be45a9b11c9e9e2",
+   "sha1": "109a77142d296fa6ed760c7586369fb683e56c5f",
    "addedAt": "2026-11-20T05:00:47Z",
    "locked": true,
    "category": "contemporary",
@@ -5979,6 +5979,96 @@
    "details": {
     "title": "I've Got a Crush on You",
     "lead": "George and Ira Gershwin, 1928; public domain now. The chorus as written, checked against Sinatra's record live at the Sands (1966)."
+   }
+  },
+  {
+   "id": "std-i-get-along-without-you-very-well-b-major",
+   "file": "songs/I Get Along Without You Very Well (B♭ major).musicxml.locked",
+   "title": "I Get Along Without You Very Well (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "dc740e32ae7756b6e894400f4550522b3bd57438",
+   "addedAt": "2026-11-20T05:25:55Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 64,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Get Along Without You Very Well",
+    "lead": "Hoagy Carmichael, 1939. The whole song as written, checked bar by bar against the record you sent; where the record phrases it differently, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-just-in-time-b-major",
+   "file": "songs/Just in Time (B♭ major).musicxml.locked",
+   "title": "Just in Time (B♭ major)",
+   "kind": "MusicXML",
+   "sha1": "f106ff4c66027c8e17077b19996ce1c38344d024",
+   "addedAt": "2026-11-20T05:25:55Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Just in Time",
+    "lead": "Jule Styne, Betty Comden and Adolph Green, 1956, from Bells Are Ringing. The chorus as written. Checked against Nina Simone's record, which follows it for the opening and then takes it her own way."
+   }
+  },
+  {
+   "id": "std-isn-t-it-romantic-e-major",
+   "file": "songs/Isn't It Romantic (E♭ major).musicxml.locked",
+   "title": "Isn't It Romantic (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "4fe1a7194cf992c7ffde8374e43cd83317325990",
+   "addedAt": "2026-11-20T05:30:37Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Isn't It Romantic",
+    "lead": "Richard Rodgers and Lorenz Hart, 1932. The chorus as written, checked bar by bar against Rod Stewart's record; where Rod sings it his own way, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-i-cover-the-waterfront-g-major",
+   "file": "songs/I Cover the Waterfront (G major).musicxml.locked",
+   "title": "I Cover the Waterfront (G major)",
+   "kind": "MusicXML",
+   "sha1": "5a1a241bf146bc2ef4e194a7c9011f3b2ec32e3b",
+   "addedAt": "2026-11-20T05:30:38Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Cover the Waterfront",
+    "lead": "Johnny Green and Edward Heyman, 1933. The chorus as written, checked bar by bar against Frank Sinatra's record; where he sings it his own way, the written tune is kept."
+   }
+  },
+  {
+   "id": "std-until-the-real-thing-comes-along-e-major",
+   "file": "songs/Until the Real Thing Comes Along (E♭ major).musicxml.locked",
+   "title": "Until the Real Thing Comes Along (E♭ major)",
+   "kind": "MusicXML",
+   "sha1": "68d693f510ac527e1d57f7854081e03de48aa389",
+   "addedAt": "2026-11-20T05:31:34Z",
+   "locked": true,
+   "category": "contemporary",
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Until the Real Thing Comes Along",
+    "lead": "Saul Chaplin, Sammy Cahn, Mann Holiner and Alberta Nichols, 1936. The chorus as written, checked bar by bar against Rod Stewart's record; where Rod sings it his own way, the written tune is kept."
    }
   },
   {
