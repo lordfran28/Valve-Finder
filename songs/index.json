@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-20T21:27:22Z",
+ "generatedAt": "2026-11-20T21:45:02Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7216,6 +7216,41 @@
      [
       "Form",
       "Intro; A, A, bridge, A; eight bars without voice; bridge, last A"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "mozart-concerto-23-adagio",
+   "file": "songs/Piano Concerto No. 23, Adagio, Mozart.musicxml",
+   "title": "Mozart – Piano Concerto No. 23, K. 488: Adagio",
+   "kind": "MusicXML",
+   "sha1": "b4acb7d284e2031d7770bb3167f33edb09e99bb1",
+   "addedAt": "2026-11-20T21:44:17Z",
+   "category": "classical",
+   "units": {
+    "count": 99,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Piano Concerto No. 23 in A major, K. 488: Adagio",
+    "lead": "The piano's melody through the whole movement, read from the score, an octave below the piano so it sits where the trumpet sings: concert E3 to E5. Where the piano drops very low, in bars 65, 66, 89 and 90, those few notes stay at the piano's pitch. The bars the orchestra plays alone are rests.",
+    "facts": [
+     [
+      "Piece",
+      "Wolfgang Amadeus Mozart, Piano Concerto No. 23 in A major, K. 488 (1786), second movement"
+     ],
+     [
+      "Line",
+      "The solo piano's right hand, its top voice, from the two-piano score (Kalmus)"
+     ],
+     [
+      "Key",
+      "F♯ minor concert, G♯ minor for the trumpet; 6/8, about 32 to the dotted quarter"
+     ],
+     [
+      "Ornaments",
+      "The turns in bars 47 and 79 are written out as grace notes; the long B in bar 50 is a trill"
      ]
     ]
    }
