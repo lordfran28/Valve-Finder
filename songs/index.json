@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-21T00:23:38Z",
+ "generatedAt": "2026-11-21T09:13:41Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7260,7 +7260,7 @@
    "file": "songs/Arrangements/Even the Nights Are Better.musicxml.locked",
    "title": "Even the Nights Are Better, after Air Supply",
    "kind": "MusicXML",
-   "sha1": "7e47c50b7494b07980909efdfd0d07df9644f4bf",
+   "sha1": "bc608d69089e6358c395d1696f281332943e8b2a",
    "addedAt": "2026-11-20T21:59:04Z",
    "locked": true,
    "category": "arrangements",
@@ -7270,7 +7270,7 @@
    },
    "details": {
     "title": "Even the Nights Are Better",
-    "lead": "Russell Hitchcock's singing on the Air Supply record, at its own pitch: concert F3 to E♭5. The verses are his voice alone. The choruses are sung as a three-part chord, and there the part follows the top voice of the chord, which is usually the tune but not always. The last chorus is a step higher, as on the record.",
+    "lead": "Russell Hitchcock's tune on the Air Supply record, at its own pitch: concert F3 to B♭4, written note by note from his voice. In the choruses he sings inside a three-part chord; the part keeps to his line, the middle voice (A♭ on “Even the nights”, C on “better”), not the harmony above it. The long low notes he lets sag are written at the note he starts on. The last chorus is a step higher, as on the record; there he sings over the choir, and the part keeps the tune.",
     "facts": [
      [
       "Song",
@@ -7278,15 +7278,15 @@
      ],
      [
       "Line",
-      "The vocal track, read note by note; the top voice in the choruses"
+      "Russell Hitchcock's voice, written by hand from the vocal track; his line through the choruses, not the top harmony"
      ],
      [
       "Key",
-      "E♭ concert, F for the trumpet; the last chorus a step up"
+      "C minor concert (D minor for the trumpet); the last chorus a step up"
      ],
      [
       "Form",
-      "Intro, verse, chorus twice, verse, chorus twice, instrumental, last chorus a step up"
+      "Intro, verse, before the chorus, chorus twice, verse, before the chorus, chorus twice, instrumental, before the chorus and choruses a step up"
      ]
     ]
    }
