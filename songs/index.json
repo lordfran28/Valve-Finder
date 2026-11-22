@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T08:44:43Z",
+ "generatedAt": "2026-11-22T08:52:46Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8675,6 +8675,50 @@
      [
       "Bars",
       "The record’s bars at about 63, from her first note; the piano intro is not written"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-it-was-almost-like-a-song",
+   "file": "songs/Arrangements/It Was Almost Like a Song.musicxml.locked",
+   "title": "It Was Almost Like a Song, as Johnny Hartman sings it",
+   "kind": "MusicXML",
+   "sha1": "976a83a921094be83d5813c3fc2d2aaa41959338",
+   "addedAt": "2026-11-22T08:52:09Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "It Was Almost Like a Song",
+    "lead": "It Was Almost Like a Song in B, the way Johnny Hartman sings it on his 1980 record, for trumpet an octave above his voice: concert E3 to C♯5 (F♯ to D♯ for the trumpet). The bars are the Fret Finder page’s, which follow his record, so the line goes with the guitar track there. He sings out of time and the bars stretch with him; the lights follow his timing. His turns, scoops and quick notes on the way down sit in small boxes over the note they belong to, to play or leave out.",
+    "facts": [
+     [
+      "Song",
+      "Archie Jordan and Hal David (1977)"
+     ],
+     [
+      "Line",
+      "Johnny Hartman’s, read from his record bar by bar, an octave up"
+     ],
+     [
+      "Key",
+      "B major concert (C♯ for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, A, A, bridge, A, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (iwals-guitar.mp3), 2:51"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page"
      ]
     ]
    }
