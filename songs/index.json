@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T18:34:24Z",
+ "generatedAt": "2026-11-22T18:40:20Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8992,7 +8992,7 @@
    "file": "songs/Arrangements/Schubert – Ave Maria, in G.musicxml.locked",
    "title": "Schubert – Ave Maria, in G, on the Fret Finder guitar",
    "kind": "MusicXML",
-   "sha1": "e9d268ae6f7715e1053eb1227e193d064cf770c1",
+   "sha1": "f48fbeb8e5d17e46f7d7c6527db152bb9650657b",
    "addedAt": "2026-11-22T17:31:38Z",
    "locked": true,
    "category": "arrangements",
