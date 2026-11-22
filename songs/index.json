@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T07:02:39Z",
+ "generatedAt": "2026-11-22T07:40:09Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8587,6 +8587,50 @@
      [
       "Bars",
       "The record’s bars at about 90; the intro and the instrumental are rests"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-goodbye-to-love",
+   "file": "songs/Arrangements/Goodbye to Love.musicxml.locked",
+   "title": "Goodbye to Love, as Karen Carpenter sings it, with Tony Peluso’s solos",
+   "kind": "MusicXML",
+   "sha1": "de62cf28499fbbbfb829201c0d33cb47b8889eea",
+   "addedAt": "2026-11-22T07:39:52Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 76,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Goodbye to Love",
+    "lead": "Karen Carpenter’s line in Goodbye to Love, note for note from the vocal track, set on the record’s own beats, about 78. B♭ major, and C major for the last lines and the ending, as on the record. Where she rests, the part plays Tony Peluso’s guitar: the middle solo, which is her verse melody and then a run up to D5, and the long solo at the end, until the record fades. Where the choir sings alone at the start of the ending, the part rests. Each note starts where it starts on the record (10._Goodbye_To_Love.mp3), so the part plays with it from the first note.",
+    "facts": [
+     [
+      "Song",
+      "Richard Carpenter and John Bettis; the Carpenters’ record, 1972"
+     ],
+     [
+      "Line",
+      "Karen Carpenter’s vocal, note for note from the record; Tony Peluso’s fuzz guitar where she rests"
+     ],
+     [
+      "Key",
+      "B♭ major, then C major (concert)"
+     ],
+     [
+      "Form",
+      "Verse (free), chorus, verse, chorus, guitar solo, bridge, ending: choir, then guitar solo"
+     ],
+     [
+      "Plays with",
+      "The record, 10._Goodbye_To_Love.mp3, 3:56"
+     ],
+     [
+      "Bars",
+      "The record’s bars at about 78; the choir bars of the ending are rests"
      ]
     ]
    }
