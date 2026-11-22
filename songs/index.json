@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-21T09:13:41Z",
+ "generatedAt": "2026-11-22T02:28:49Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7347,6 +7347,50 @@
      [
       "Key",
       "C minor concert, D minor for the trumpet"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-fly-me-to-the-moon",
+   "file": "songs/Arrangements/Fly Me to the Moon.musicxml.locked",
+   "title": "Fly Me to the Moon, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "2b7745c94f859daa304268973c5c5dd30d4302ac",
+   "addedAt": "2026-11-22T02:28:25Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 71,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Fly Me to the Moon",
+    "lead": "Bart Howard’s tune for trumpet, set on the bars of the Fret Finder guitar arrangement, so it plays with that guitar track bar for bar. The guitar follows Rod Stewart’s record a fourth down, in A minor, and so does this part: concert G3 to E5. The first chorus is in free time; the trumpet waits where the guitar runs. In the instrumental it plays the guitar’s own line with it, in the gaps of the bass. Where the record’s band and the book part ways, the part goes with the band: the end of each B falls straight to E on the downbeat, where the guitar has E on top; in the second B, over the held G9sus4, C stays instead of dropping to B; and at the end it climbs to E on “I” and comes down D, C, as Rod sings it. The outro has a closing line: C, B, A, B, D, settling on C.",
+    "facts": [
+     [
+      "Song",
+      "Bart Howard (1954)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, in the form and chords of Rod Stewart’s 2010 record; in the instrumental, the Fret Finder guitar’s line"
+     ],
+     [
+      "Key",
+      "A minor concert (B minor for the trumpet), a fourth below Rod’s"
+     ],
+     [
+      "Form",
+      "Intro and a chorus in free time, the band in, second chorus, instrumental, B again, A again, last B, outro in free time"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (fmtm-guitar.mp3), 2:50"
+     ],
+     [
+      "Bars",
+      "One ahead of the Fret Finder page, which counts the intro bar on its own"
      ]
     ]
    }
