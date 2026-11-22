@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T16:46:53Z",
+ "generatedAt": "2026-11-22T17:15:30Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8935,6 +8935,50 @@
      [
       "Plays with",
       "The guitar track on the Fret Finder page (ra-guitar.mp3)"
+     ],
+     [
+      "Bars",
+      "Numbered as on the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-handel-lascia-chio-pianga-c",
+   "file": "songs/Arrangements/Handel – Lascia ch’io pianga, in C.musicxml.locked",
+   "title": "Handel – Lascia ch’io pianga, in C, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "46bbbbda9fc906b83108205928e5f9dfe5844b2d",
+   "addedAt": "2026-11-22T17:15:02Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 80,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Handel – Lascia ch’io pianga, in C",
+    "lead": "Handel’s line for the trumpet a whole step under the D of the lead sheet, in C (D for the trumpet), concert C4 to D5, on the bars of the Fret Finder guitar arrangement in the same key, an octave above where the baritone sings it. It plays in that guitar track’s time, about 44 to the quarter, slowing at the end of each part. The first part comes twice, as Handel wrote it; the guitar plays the ritornello alone. The lead sheet in D stays as it is.",
+    "facts": [
+     [
+      "Song",
+      "George Frideric Handel, from Rinaldo (1711), words by Giacomo Rossi"
+     ],
+     [
+      "Line",
+      "The lead sheet’s line a whole step down, with a breath before the next phrase where a long note leads straight into it"
+     ],
+     [
+      "Key",
+      "C major concert (D major for the trumpet), the key of the Fret Finder guitar"
+     ],
+     [
+      "Form",
+      "Ritornello, first part, ritornello, middle part, first part again, ritornello"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (lp-guitar.mp3)"
      ],
      [
       "Bars",
