@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T18:01:01Z",
+ "generatedAt": "2026-11-22T18:02:41Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9207,6 +9207,42 @@
      [
       "Plays with",
       "The record (9_My_Funny_Valentine_-_Rod_Stewart.flac)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-s-wonderful-rod",
+   "file": "songs/Arrangements/'S Wonderful, after Rod Stewart.musicxml.locked",
+   "title": "'S Wonderful, as Rod Stewart sings it",
+   "kind": "MusicXML",
+   "sha1": "7f3e1b4bca901ee581d0ada08324b97861ac9471",
+   "addedAt": "2026-11-22T18:02:05Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 101,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "'S Wonderful, after Rod Stewart",
+    "lead": "Rod Stewart's line, note for note from the record, on the record's own beats (about 125), in D-flat major concert (E-flat for the trumpet). The slides into a note are the small boxes on top. It rests where the band plays alone.",
+    "facts": [
+     [
+      "Song",
+      "'S Wonderful, by George and Ira Gershwin (1927); Rod Stewart, The Great American Songbook 3 (2004)"
+     ],
+     [
+      "Line",
+      "The voice, read from the record's vocal track and written on eighths, the slides as small notes"
+     ],
+     [
+      "Key",
+      "in D-flat major concert (E-flat for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The record (7_S_Wonderful_-_Rod_Stewart.flac)"
      ]
     ]
    }
