@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T17:58:40Z",
+ "generatedAt": "2026-11-22T18:00:22Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9135,6 +9135,42 @@
      [
       "Plays with",
       "The record (For_Sentimental_Reasons_mixed.mp3)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-embraceable-you-rod",
+   "file": "songs/Arrangements/Embraceable You, after Rod Stewart.musicxml.locked",
+   "title": "Embraceable You, as Rod Stewart sings it",
+   "kind": "MusicXML",
+   "sha1": "a8455ce9bf79fa0fdb72a0a0bd58ca798c851373",
+   "addedAt": "2026-11-22T18:00:00Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 90,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Embraceable You, after Rod Stewart",
+    "lead": "Rod Stewart's line, note for note from the record, on the record's own beats (about 108), in B major concert (C-sharp for the trumpet). The slides into a note are the small boxes on top. It rests where the band plays alone.",
+    "facts": [
+     [
+      "Song",
+      "Embraceable You, by George and Ira Gershwin (1928); Rod Stewart, The Great American Songbook 3 (2004)"
+     ],
+     [
+      "Line",
+      "The voice, read from the record's vocal track and written on eighths, the slides as small notes"
+     ],
+     [
+      "Key",
+      "in B major concert (C-sharp for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The record (1_Embraceable_You_-_Rod_Stewart.flac)"
      ]
     ]
    }
