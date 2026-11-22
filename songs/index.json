@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:46:42Z",
+ "generatedAt": "2026-11-22T05:49:35Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8315,6 +8315,50 @@
      [
       "Bars",
       "The page numbers its four intro bars i1 to i4, so its bar 1 is bar 5 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-isnt-it-romantic",
+   "file": "songs/Arrangements/Isn’t It Romantic.musicxml.locked",
+   "title": "Isn’t It Romantic, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "521bb2c1d96d23706682a2bbda7abc9f93c56bfc",
+   "addedAt": "2026-11-22T05:49:20Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 90,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Isn’t It Romantic",
+    "lead": "The chorus for trumpet in D (E for the trumpet), concert A3 to E5, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record four semitones lower, about 105 and swung: the chorus, the second chorus, the second half again after his short interlude, and the last line three times. Rod starts the title an eighth late on C♯, and the line does too. The lead sheet has no verse, so over the free verse the trumpet plays a short line of its own, waits, and leads in. There is a breath before each pickup.",
+    "facts": [
+     [
+      "Song",
+      "Richard Rodgers and Lorenz Hart (1932)"
+     ],
+     [
+      "Line",
+      "The chorus from the lead sheet on the Fret Finder page’s chords; the verse line, the interlude fill and the tag are our own"
+     ],
+     [
+      "Key",
+      "D major concert (E for the trumpet), four semitones below Rod Stewart’s record"
+     ],
+     [
+      "Form",
+      "Verse, chorus, second chorus, interlude, the second half again, tag"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (iir-guitar.mp3), 3:49"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page"
      ]
     ]
    }
