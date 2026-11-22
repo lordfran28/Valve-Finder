@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:43:55Z",
+ "generatedAt": "2026-11-22T05:46:42Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8271,6 +8271,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-ill-get-by",
+   "file": "songs/Arrangements/I’ll Get By.musicxml.locked",
+   "title": "I’ll Get By, in B♭",
+   "kind": "MusicXML",
+   "sha1": "e3a8f98364af2ade037bd1ff30b4f77f3496e502",
+   "addedAt": "2026-11-22T05:46:26Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I’ll Get By",
+    "lead": "The tune for trumpet in B♭ (C for the trumpet), concert A3 to D5, about 84, set on the bars of the Fret Finder guitar arrangement and checked note by note against the page’s guide voice: the whole song, then the second half again, with a breath every four bars where a long note ends. A short line opens over the guitar’s E♭ major 7, E♭ minor 6 and the turn back, and it closes over B♭6 and E♭ minor 6 over B♭, G♭ falling to F. The song is from 1928, so it is free to use.",
+    "facts": [
+     [
+      "Song",
+      "Fred E. Ahlert and Roy Turk (1928)"
+     ],
+     [
+      "Line",
+      "The tune as the Fret Finder page’s guide voice sings it, on that page’s chords"
+     ],
+     [
+      "Key",
+      "B♭ major concert (C for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, A B A C, the second half again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (igb-guitar.mp3), 2:30"
+     ],
+     [
+      "Bars",
+      "The page numbers its four intro bars i1 to i4, so its bar 1 is bar 5 here"
      ]
     ]
    }
