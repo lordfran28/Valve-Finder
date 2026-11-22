@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:34:32Z",
+ "generatedAt": "2026-11-22T05:38:57Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8183,6 +8183,50 @@
      [
       "Bars",
       "The page numbers its three intro bars In1 to In3, so its bar 1 is bar 4 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-i-fall-in-love-too-easily",
+   "file": "songs/Arrangements/I Fall in Love Too Easily.musicxml.locked",
+   "title": "I Fall in Love Too Easily, after Johnny Hartman",
+   "kind": "MusicXML",
+   "sha1": "481faf427d8677c5ec7ab8912d34713393b3447f",
+   "addedAt": "2026-11-22T05:38:35Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Fall in Love Too Easily",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Johnny Hartman’s record in his key, B♭ (C for the trumpet), concert A3 to D♭5: the first half free, then the whole song in time at about 65, the second half again and a tag. It keeps his way with it where the page names his notes: A held for two bars, the line two beats behind the band after it, D left hanging over F6, his long F♯ over A6, G over A♭ over C, his last B♭ on top of A♭13. Over the guitar’s C minor 9 the turn takes B♭. It plays in the guitar track’s own beat times, so the free bars stretch with him, and it closes over G♭ major 7, landing on A, the major 7th of B♭.",
+    "facts": [
+     [
+      "Song",
+      "Jule Styne and Sammy Cahn (1944)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, with Hartman’s notes and timing where the Fret Finder page names them, on that page’s chords"
+     ],
+     [
+      "Key",
+      "B♭ major concert (C for the trumpet), Hartman’s key"
+     ],
+     [
+      "Form",
+      "Intro, the first half sung freely, the song in time, the second half again, tag, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ifilte-guitar.mp3), 2:27"
+     ],
+     [
+      "Bars",
+      "The page numbers its bars I1 and R1 to R7 before bar 1, so its bar 1 is bar 9 here"
      ]
     ]
    }
