@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T04:43:16Z",
+ "generatedAt": "2026-11-22T04:45:26Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7787,6 +7787,50 @@
      [
       "Bars",
       "The same numbers as the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-ill-be-seeing-you",
+   "file": "songs/Arrangements/I’ll Be Seeing You.musicxml.locked",
+   "title": "I’ll Be Seeing You, after Michael Bublé",
+   "kind": "MusicXML",
+   "sha1": "cacf3efae79f7fed2ad20e006350fed8971055c2",
+   "addedAt": "2026-11-22T04:45:09Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 72,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I’ll Be Seeing You",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Michael Bublé’s record in his key, D♭ (E♭ for the trumpet), concert C4 to D♭5. It plays in that guitar track’s time, about 90. It follows Bublé where he leaves the book: the A he adds before the bridge, the held A over G♭ minor 6, rests where he barely sings, F then E♭ in the second verse again, and his longer last eight that holds the last D♭ over the G♭ chords. In the interlude, where he rests, the trumpet has a line of its own over the falling minor chords, ending on the G♭ minor sigh. The intro’s last bars and the ending share a short line: B♭, A♭, then A and G♭ over G♭ minor.",
+    "facts": [
+     [
+      "Song",
+      "Sammy Fain and Irving Kahal (1938)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, as Michael Bublé sings it on the Fret Finder page’s chords; the interlude line is new"
+     ],
+     [
+      "Key",
+      "D♭ major concert (E♭ for the trumpet), Bublé’s key"
+     ],
+     [
+      "Form",
+      "Intro, verse, bridge, verse, last eight, interlude, verse, longer last eight, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ibsy-guitar.mp3), 3:18"
+     ],
+     [
+      "Bars",
+      "The ten intro bars come first, so bar 1 of the Fret Finder page is bar 11 here"
      ]
     ]
    }
