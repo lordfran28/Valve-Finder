@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T06:14:39Z",
+ "generatedAt": "2026-11-22T06:25:31Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8455,6 +8455,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page; the free verse bars take the guitar’s own beat counts"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-ive-never-been-in-love-before",
+   "file": "songs/Arrangements/I’ve Never Been in Love Before.musicxml.locked",
+   "title": "I’ve Never Been in Love Before, in A♭",
+   "kind": "MusicXML",
+   "sha1": "0645d7d6ccf2f193cb2fb5760ae7d53714d06c86",
+   "addedAt": "2026-11-22T06:25:14Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 118,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I’ve Never Been in Love Before",
+    "lead": "The tune for trumpet in A♭ (B♭ for the trumpet), concert A♭3 to F5, a slow ballad, set on the bars of the Fret Finder guitar arrangement, which follows the record a whole step down. That page counts the ballad in eighths, so each bar of the lead sheet takes two of its bars and the notes are written twice as long. A short line of our own opens it on the tune’s last phrase, then the whole song as the singer has it, held notes and all (the page calls its first half the verse), the trumpet solo from that page, the song’s second half again with the last line stretched, and the page’s closing line over the last three bars.",
+    "facts": [
+     [
+      "Song",
+      "Frank Loesser (1950)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, with the singer’s held and changed notes from the Fret Finder page; the solo and the closing line are that page’s trumpet part; the intro line is our own"
+     ],
+     [
+      "Key",
+      "A♭ major concert (B♭ for the trumpet), a whole step under the record"
+     ],
+     [
+      "Form",
+      "Intro, the song (verse and refrain on the page), trumpet solo, the second half again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (nb-full-guitar.mp3), 4:45"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page: its three intro bars, then its bars 1 to 115"
      ]
     ]
    }
