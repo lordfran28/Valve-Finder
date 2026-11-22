@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T14:54:34Z",
+ "generatedAt": "2026-11-22T16:39:51Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8851,6 +8851,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-faure-chanson-damour-e",
+   "file": "songs/Arrangements/Fauré – Chanson d’amour, in E.musicxml.locked",
+   "title": "Fauré – Chanson d’amour, in E, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "d5ef532caee30140c2d5ce1054a4e77fff8ef5c5",
+   "addedAt": "2026-11-22T16:39:15Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 84,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Fauré – Chanson d’amour, in E",
+    "lead": "Fauré’s line for the trumpet a half step under his F, in E (F♯ for the trumpet), concert C♯4 to D♯5, on the bars of the Fret Finder guitar arrangement in the same key. It plays in that guitar track’s time, which follows Yoonsung Choi’s recording, about 123. The first part (refrain, interlude, first verse, refrain, interlude) is written out twice, as the guitar plays it, so you can play it once and sing it once. Breaths come at the ends of the poem’s lines. The higher lead sheet in Fauré’s key stays under Art songs.",
+    "facts": [
+     [
+      "Song",
+      "Gabriel Fauré, Op. 27 No. 1 (1882), words by Armand Silvestre"
+     ],
+     [
+      "Line",
+      "The voice’s line from the score, a half step down, with breaths at the ends of the lines"
+     ],
+     [
+      "Key",
+      "E major concert (F♯ for the trumpet), the key of the Fret Finder guitar and of Choi’s recording"
+     ],
+     [
+      "Form",
+      "Intro, the first part twice, the second verse, the last refrain with its last line twice, the ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ce-guitar.mp3), 3:03"
+     ],
+     [
+      "Bars",
+      "Numbered as on the Fret Finder page: bars 33 to 62 are the first part again"
      ]
     ]
    }
