@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T18:40:20Z",
+ "generatedAt": "2026-11-22T19:33:36Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9315,6 +9315,50 @@
      [
       "Plays with",
       "The record (Cinema_Paradiso_Play_with_Me_n.6_-_Andrea_Giuffredi.mp3)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-what-a-difference-a-day-made",
+   "file": "songs/Arrangements/What a Difference a Day Made.musicxml.locked",
+   "title": "What a Difference a Day Made, after Dick Haymes, on the Fret Finder guitar (the long version)",
+   "kind": "MusicXML",
+   "sha1": "9d0504cd61738c221f4358c498602fc67b07866a",
+   "addedAt": "2026-11-22T19:32:59Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 74,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "What a Difference a Day Made",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement’s long version, in Dick Haymes’s key, D (E for the trumpet), going up to E♭ for the last sixteen bars, concert A3 to G5. It plays in that guitar track’s time, about 76. It joins the tune with the trumpet part already on that page: its intro on the title phrase, its short answers in his rests (each picks up what he last sang), its own A section, and the last line. The tune keeps his breaths where the guitar runs, a breath at the end of each sung line, and his C♯ over E major in the bridge.",
+    "facts": [
+     [
+      "Song",
+      "María Grever (1934), English words by Stanley Adams"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet on the Fret Finder page’s chords and form, with the page’s own trumpet part in his rests"
+     ],
+     [
+      "Key",
+      "D major concert (E for the trumpet), E♭ major from bar 54 (F for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, pickup, A, bridge, A, last part, the trumpet’s A, bridge, A and last part in E♭, the last line"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (wad-long-guitar.mp3), 3:56"
+     ],
+     [
+      "Bars",
+      "The four intro bars and the pickup come first, so bar 1 of the Fret Finder page is bar 6 here"
      ]
     ]
    }
