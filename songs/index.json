@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:24:55Z",
+ "generatedAt": "2026-11-22T05:27:47Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8051,6 +8051,50 @@
      [
       "Bars",
       "The page numbers its five intro bars Intro 1 to 5, so its bar 1 is bar 6 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-how-deep-is-the-ocean",
+   "file": "songs/Arrangements/How Deep Is the Ocean.musicxml.locked",
+   "title": "How Deep Is the Ocean, after Perry Como",
+   "kind": "MusicXML",
+   "sha1": "65544edeaefeee3dcdad85608309e93f334f61f5",
+   "addedAt": "2026-11-22T05:27:20Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 53,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "How Deep Is the Ocean",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Perry Como’s record: B♭ minor and D♭ (C minor and E♭ for the trumpet), about 78, then up a half step to D for the last section after the guitar’s interlude. Concert B♭3 to D♭5. It keeps the notes he sings where the page names them: his climb to F, the A♭ he holds over F minor (major 7), his G♭ over B7, his D♭ at the end, G and F♯ over C9, and where the guitar’s chords would rub the lead sheet’s note it takes the chord’s: F♭ over G diminished, D over A♭7♯11. It rests while the guitar plays alone, opens with the tune’s turn over the intro’s chords, and closes over D major 9 and G minor 6, B♭ falling to A.",
+    "facts": [
+     [
+      "Song",
+      "Irving Berlin (1932)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, with Perry Como’s notes where the Fret Finder page names them, on that page’s chords"
+     ],
+     [
+      "Key",
+      "B♭ minor and D♭ major concert, then D major (C minor and E♭, then E, for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, A B A C, guitar interlude, the last section up a half step, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (hd-full-guitar.mp3), 2:56"
+     ],
+     [
+      "Bars",
+      "The page numbers its three intro bars Intro 1 to 3, so its bar 1 is bar 4 here"
      ]
     ]
    }
