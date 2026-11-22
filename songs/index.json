@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:04:28Z",
+ "generatedAt": "2026-11-22T05:14:09Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7919,6 +7919,50 @@
      [
       "Bars",
       "The free first bar of the Fret Finder page is written as two bars here, so its bar 2 is bar 3 here; its two free ending bars are written out as five and three"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-but-not-for-me",
+   "file": "songs/Arrangements/But Not for Me.musicxml.locked",
+   "title": "But Not for Me, a two-beat swing in B♭",
+   "kind": "MusicXML",
+   "sha1": "b75ceadc6ce67df03617b6f60e153ed98e13f13f",
+   "addedAt": "2026-11-22T05:13:52Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 64,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "But Not for Me",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement in B♭ (C for the trumpet), a two-beat swing at about 120, concert B♭3 to D5. The A parts sit an octave above the middle and the last part, so the tune’s D rings clear of the guitar’s F7. It follows the singer on the record the page was made from: the long notes he stretches, so the middle starts two beats late, his E♭, G♭ and G at the start of the middle and the last part, D♭ over B♭ minor 6, and the last part’s chords coming in on beat 3. Two short lines of its own open the song over the guitar’s turn, and it ends with the tune’s first notes once more, hanging on D.",
+    "facts": [
+     [
+      "Song",
+      "George and Ira Gershwin (1930)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, as the singer on the Fret Finder page’s record phrases it, on that page’s chords"
+     ],
+     [
+      "Key",
+      "B♭ major concert (C for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, A, the middle, A, the last part, A again, the last part again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (bnfm-guitar.mp3), 2:13"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page"
      ]
     ]
    }
