@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T12:54:24Z",
+ "generatedAt": "2026-11-22T12:58:07Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8851,6 +8851,50 @@
      [
       "Bars",
       "The five intro bars come first, so bar 1 of the Fret Finder page is bar 6 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-where-or-when",
+   "file": "songs/Arrangements/Where or When.musicxml.locked",
+   "title": "Where or When, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "395b191837deff07b7a9c5b5ba39278f191f5cc3",
+   "addedAt": "2026-11-22T12:57:50Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 75,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Where or When",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, in the page’s key, D (E for the trumpet), concert A3 to E5. It plays in that guitar track’s time, about 96, and comes in with the voice on the first bar, as the record does. The A sections are the tune as written, with breaths where the singer takes them and his early C♯ in the second A. The last A climbs a step a bar to D, a breath before each “and”. In the instrumental the trumpet plays the guitar’s octave line with it. After the bridge and the last A again, it closes over the ending’s chords: G and B, D falling to C♯ over A7, D, and a short line down to F♯.",
+    "facts": [
+     [
+      "Song",
+      "Richard Rodgers and Lorenz Hart (1937)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, on the Fret Finder page’s chords and form; the instrumental is the guitar’s line, the ending is set for the trumpet"
+     ],
+     [
+      "Key",
+      "D major concert (E for the trumpet)"
+     ],
+     [
+      "Form",
+      "A A bridge A, the instrumental, bridge and last A again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (wow2-guitar.mp3), 3:13"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page"
      ]
     ]
    }
