@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T14:45:52Z",
+ "generatedAt": "2026-11-22T14:53:44Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8508,7 +8508,7 @@
    "file": "songs/Arrangements/Goodbye to Love.musicxml.locked",
    "title": "Goodbye to Love, as Karen Carpenter sings it, with Tony Peluso’s solos",
    "kind": "MusicXML",
-   "sha1": "1f61a2427d8d1eb87d1f9785ab8c1f488699d304",
+   "sha1": "e62bba65c3c8be878cd1a934062bcea3d6865ba4",
    "addedAt": "2026-11-22T07:39:52Z",
    "locked": true,
    "category": "arrangements",
