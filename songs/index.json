@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T14:53:44Z",
+ "generatedAt": "2026-11-22T14:54:34Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8464,7 +8464,7 @@
    "file": "songs/Arrangements/Close to You.musicxml.locked",
    "title": "Close to You, as Karen Carpenter sings it",
    "kind": "MusicXML",
-   "sha1": "d6fe5f57d18205567d2aff2d8ea671c73108af42",
+   "sha1": "1edf483bf0bd60483f5e97817a3bfb7fb2ac7b14",
    "addedAt": "2026-11-22T07:02:18Z",
    "locked": true,
    "category": "arrangements",
