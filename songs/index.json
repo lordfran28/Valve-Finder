@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:49:35Z",
+ "generatedAt": "2026-11-22T05:52:11Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8359,6 +8359,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-it-had-to-be-you",
+   "file": "songs/Arrangements/It Had to Be You.musicxml.locked",
+   "title": "It Had to Be You, in D♭",
+   "kind": "MusicXML",
+   "sha1": "8fb9b84b215c1d4fa13c3167e334ad417a13edd0",
+   "addedAt": "2026-11-22T05:51:53Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 70,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "It Had to Be You",
+    "lead": "The tune for trumpet in D♭ (E♭ for the trumpet), concert F3 to C5, slow, about 56, set on the bars of the Fret Finder guitar arrangement: the whole chorus, the trumpet solo over the first half of the second, then the tune again from bar 17 to the end. The intro line, the solo and the ending over G♭ minor 6 are the trumpet part from that page. The song is from 1924, so it is free to use.",
+    "facts": [
+     [
+      "Song",
+      "Isham Jones and Gus Kahn (1924)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet; the intro, the solo and the ending from the Fret Finder page’s trumpet part"
+     ],
+     [
+      "Key",
+      "D♭ major concert (E♭ for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, chorus, solo over the first half of the second chorus, its second half sung, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ihtby-guitar.mp3), 5:01"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page: four intro bars, then chorus 1, chorus 2 from bar 1 to 31, ending"
      ]
     ]
    }
