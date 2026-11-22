@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T04:48:42Z",
+ "generatedAt": "2026-11-22T05:04:28Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7875,6 +7875,50 @@
      [
       "Bars",
       "The two intro bars come first, so bar 1 of the Fret Finder page is bar 3 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-the-nearness-of-you",
+   "file": "songs/Arrangements/The Nearness of You.musicxml.locked",
+   "title": "The Nearness of You, after Johnny Hartman",
+   "kind": "MusicXML",
+   "sha1": "aa63fc5e419928841d7cacf2064f90869cbec47d",
+   "addedAt": "2026-11-22T05:04:11Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 62,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Nearness of You",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Johnny Hartman’s record in his key, C (D for the trumpet), concert F3 to E5, slow, about 52, in that guitar track’s time. Hartman’s band changes some of the lead sheet’s chords, and the trumpet takes the band’s notes where they differ: G sharp over E7 falling to G over A7, C sharp over A7 into the bridge, E flat over F7, and in the tag and the last eight the flat notes of E-flat minor 7, E-flat major 7, D-flat major 7 and A-flat major 9. It keeps his form: the tag after the last A, the bridge and the last A again, and his free ending, where the line rises through A-flat major 9 to the long G. It opens over the band’s E7♭9 with the tune’s own run in E minor, and closes over C major 9, rising from G to E.",
+    "facts": [
+     [
+      "Song",
+      "Hoagy Carmichael and Ned Washington (1937)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, as Johnny Hartman sings it on his record, on the Fret Finder page’s chords"
+     ],
+     [
+      "Key",
+      "C major concert (D for the trumpet), Hartman’s key"
+     ],
+     [
+      "Form",
+      "Intro, A, A, bridge, A with a tag, bridge, A, a free ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (nearness-guitar.mp3), 5:03"
+     ],
+     [
+      "Bars",
+      "The free first bar of the Fret Finder page is written as two bars here, so its bar 2 is bar 3 here; its two free ending bars are written out as five and three"
      ]
     ]
    }
