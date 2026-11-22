@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:17:30Z",
+ "generatedAt": "2026-11-22T05:24:55Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8007,6 +8007,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-everything-happens-to-me",
+   "file": "songs/Arrangements/Everything Happens to Me.musicxml.locked",
+   "title": "Everything Happens to Me, after Chet Baker",
+   "kind": "MusicXML",
+   "sha1": "71f1864ce91104d35747cf79ef0226660fb12117",
+   "addedAt": "2026-11-22T05:24:37Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 74,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Everything Happens to Me",
+    "lead": "The tune for trumpet in E (F♯ for the trumpet), concert G♯3 to F♯5, on the bars of the Fret Finder guitar arrangement, which follows Chet Baker’s record about 54 and loose. It plays the sung choruses with the notes Chet sings where the page names them: his B pickup and long G♯, his C over B7♭9, his climb into the bridge, the F he holds over E7♭9, his long E at the end of the last A, his A in the ending. Where the guitar’s chords would rub the lead sheet’s note, the line takes the chord’s note. Then the solo from the Fret Finder page, peaking on F♯5 (a half step above the F5 you have named), a rest while the guitar plays the bridge alone, the last A, and the page’s closing line down to G♯.",
+    "facts": [
+     [
+      "Song",
+      "Matt Dennis and Tom Adair (1940)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, with Chet Baker’s notes where the Fret Finder page names them, and the page’s trumpet solo"
+     ],
+     [
+      "Key",
+      "E major concert (F♯ for the trumpet), three semitones below Chet’s record"
+     ],
+     [
+      "Form",
+      "Intro, A A bridge A, trumpet solo, guitar alone, last A, slow ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (eh-full-guitar.mp3), 5:49"
+     ],
+     [
+      "Bars",
+      "The page numbers its five intro bars Intro 1 to 5, so its bar 1 is bar 6 here"
      ]
     ]
    }
