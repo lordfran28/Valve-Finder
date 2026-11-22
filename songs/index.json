@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:27:47Z",
+ "generatedAt": "2026-11-22T05:31:56Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8095,6 +8095,50 @@
      [
       "Bars",
       "The page numbers its three intro bars Intro 1 to 3, so its bar 1 is bar 4 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-i-cant-get-started",
+   "file": "songs/Arrangements/I Can’t Get Started.musicxml.locked",
+   "title": "I Can’t Get Started, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "c95df8d671a4ecae3ddfbeae87ccc6c6df07ff93",
+   "addedAt": "2026-11-22T05:31:39Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Can’t Get Started",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record a fifth lower, in A (B for the trumpet), about 84, concert A3 to E5. It sings the tune the way he does where the page names his notes: A where the guitar plays A6/9, G♯, G and F♯ over B7, his held E and B, his D♯ and G♯ over F♯9, C then B over E7, his ending on B falling to A. Where the guitar’s chords would rub the lead sheet’s note it takes the chord’s. The intro line, the solo over the guitar’s half triads and the last line are the trumpet part from the Fret Finder page.",
+    "facts": [
+     [
+      "Song",
+      "Vernon Duke and Ira Gershwin (1936)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, with Rod Stewart’s notes where the Fret Finder page names them, and the page’s trumpet part"
+     ],
+     [
+      "Key",
+      "A major concert (B for the trumpet), a fifth below Rod Stewart’s record"
+     ],
+     [
+      "Form",
+      "Intro, A A bridge A, trumpet solo, bridge and A again, tag, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (icgs-guitar.mp3), 3:18"
+     ],
+     [
+      "Bars",
+      "The page numbers its four intro bars Intro 1 to 4, so its bar 1 is bar 5 here; its last two bars (7 and 8 beats) are written as two bars each"
      ]
     ]
    }
