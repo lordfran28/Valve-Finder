@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T02:48:10Z",
+ "generatedAt": "2026-11-22T02:53:41Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7479,6 +7479,50 @@
      [
       "Bars",
       "The same numbers as the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-that-old-feeling",
+   "file": "songs/Arrangements/That Old Feeling.musicxml.locked",
+   "title": "That Old Feeling, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "4334611a01b0ec4afab0f82b6b26590b40cb9bdd",
+   "addedAt": "2026-11-22T02:53:25Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 79,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "That Old Feeling",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record three steps down, in D (E for the trumpet), concert D4 to E5. It plays in that guitar track’s time, about 108. Rod’s band plays its own chords, and the tune follows them where the book’s notes would rub: C♯ in the middle part where the band plays F♯ minor 7, as Rod sings it; the last phrase of each half waits for the band’s E6/9 and keeps to E against the suspended A; D falls to C♯ over the band’s F♯7♭9 at the end of each A. The record has Arturo Sandoval’s sixteen bars in E after the first chorus; here the trumpet plays its own, the tune’s first half and then a freer line over the middle part’s chords, falling back to D for Rod’s second half. The last word goes up a half step to E♭ with the band, and a short line closes the ending, moving by half steps with the chords, C♯ to D and F♯ to G.",
+    "facts": [
+     [
+      "Song",
+      "Sammy Fain and Lew Brown (1937)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, in the form and chords of Rod Stewart’s record; the solo and the closing line are new"
+     ],
+     [
+      "Key",
+      "D major concert (E for the trumpet); the solo in E (F♯), the ending in E♭ (F)"
+     ],
+     [
+      "Form",
+      "Chorus, up a step, the trumpet’s sixteen bars, the second half, ending a half step up"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (tof-guitar.mp3), 2:56"
+     ],
+     [
+      "Bars",
+      "The same numbers as the Fret Finder page; bar 1 is the two beats before the first full bar"
      ]
     ]
    }
