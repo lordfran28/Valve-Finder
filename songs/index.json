@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T17:31:54Z",
+ "generatedAt": "2026-11-22T17:52:07Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9027,6 +9027,42 @@
      [
       "Bars",
       "Numbered as on the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-long-long-time-ronstadt",
+   "file": "songs/Arrangements/Long Long Time, after Linda Ronstadt.musicxml.locked",
+   "title": "Long Long Time, as Linda Ronstadt sings it",
+   "kind": "MusicXML",
+   "sha1": "cde9e8b29f1ac723af0e7c25ae037e4ec707c36e",
+   "addedAt": "2026-11-22T17:51:42Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 95,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Long Long Time, after Linda Ronstadt",
+    "lead": "Linda Ronstadt’s line, note for note from the record, on the record’s own beats (about 90), in A major (B major for the trumpet), concert G#3 to D5. Her slides and turns into a note are the small boxes on top; the cries at the top of her phrases are left out. It rests where the band plays alone; a breath is taken off a long note before her high A.",
+    "facts": [
+     [
+      "Song",
+      "Long Long Time, by Gary White; Linda Ronstadt, Silk Purse (1970)"
+     ],
+     [
+      "Line",
+      "Her voice, read from the record’s vocal track and written on eighths, her slides as small notes"
+     ],
+     [
+      "Key",
+      "A major concert (B major for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The record (Linda_Ronstadt_-_Long_Long_Time.mp3)"
      ]
     ]
    }
