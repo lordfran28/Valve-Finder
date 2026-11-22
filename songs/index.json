@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T03:00:57Z",
+ "generatedAt": "2026-11-22T03:02:52Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7611,6 +7611,50 @@
      [
       "Bars",
       "The same numbers as the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-misty",
+   "file": "songs/Arrangements/Misty.musicxml.locked",
+   "title": "Misty, after Bing Crosby",
+   "kind": "MusicXML",
+   "sha1": "5001e1eab9ba93d5075827cd1d99972e5e061b10",
+   "addedAt": "2026-11-22T03:02:34Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Misty",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Bing Crosby’s record in his key, B (C♯ for the trumpet), concert E3 to C5. It plays in that guitar track’s time, about 68. It keeps Crosby’s ways with the tune: “Look at me” a little late each time, “hand” held on F♯ instead of the printed D♯, rests where he rests and the guitar answers, and the last word a bar late. The low D♯ of the rising triplets in each A is below the trumpet and is left out; the triplets start on the E. A short line leads in over the intro, and the ending comes down A, G, F♯, E, D♯, C♯ to A♯, the note the tune starts on.",
+    "facts": [
+     [
+      "Song",
+      "Erroll Garner, words by Johnny Burke (1954)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, as Bing Crosby phrases it on his record and on the Fret Finder page’s chords"
+     ],
+     [
+      "Key",
+      "B major concert (C♯ for the trumpet), Crosby’s key"
+     ],
+     [
+      "Form",
+      "Four-bar intro, A A B A, the last word a bar late, four-bar ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (misty-guitar.mp3), 2:29"
+     ],
+     [
+      "Bars",
+      "The four intro bars come first, so bar 1 of the Fret Finder page is bar 5 here"
      ]
     ]
    }
