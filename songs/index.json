@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T08:52:46Z",
+ "generatedAt": "2026-11-22T09:20:16Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8711,6 +8711,50 @@
      [
       "Form",
       "Intro, A, A, bridge, A, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (iwals-guitar.mp3), 2:51"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-it-was-almost-like-a-song-chorus",
+   "file": "songs/Arrangements/It Was Almost Like a Song, a chorus for trumpet.musicxml.locked",
+   "title": "It Was Almost Like a Song, a chorus for trumpet over the guitar",
+   "kind": "MusicXML",
+   "sha1": "1094125fce4ee75f91627841f02d8f7e82ebfd57",
+   "addedAt": "2026-11-22T09:19:49Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 39,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "It Was Almost Like a Song, a chorus for trumpet",
+    "lead": "A chorus for trumpet over the guitar track of It Was Almost Like a Song on Fret Finder, bar for bar with that page, in B (concert B3 to E5; C♯4 to F♯5 for the trumpet). Not the tune: our own line through its chords, the way a horn would take a chorus after the singer. It borrows the tune’s first notes in the intro and his falling line in the bridge, puts each chord’s 3rd or 7th on the strong beats, slides down a fret a chord through bar 13, climbs to its top E in the bridge, and in bar 22 holds B over the falling bass and lets it fall to A♯ with the guitar. It ends on the 3rd of B major 9.",
+    "facts": [
+     [
+      "Song",
+      "Archie Jordan and Hal David (1977)"
+     ],
+     [
+      "Line",
+      "Our own chorus over the Fret Finder arrangement’s chords"
+     ],
+     [
+      "Key",
+      "B major concert (C♯ for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, A, A, bridge, A, ending: the whole track once"
      ],
      [
       "Plays with",
