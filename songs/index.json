@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T02:40:18Z",
+ "generatedAt": "2026-11-22T02:48:10Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7435,6 +7435,50 @@
      [
       "Bars",
       "The four intro bars come first, so bar 1 of the Fret Finder page is bar 5 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-something-stupid",
+   "file": "songs/Arrangements/Something Stupid.musicxml.locked",
+   "title": "Something Stupid, after the Better Call Saul track",
+   "kind": "MusicXML",
+   "sha1": "78f39c836c3680df1367f1f4dfa0eba079b804fe",
+   "addedAt": "2026-11-22T02:47:54Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 148,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Something Stupid",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement of the Better Call Saul track, in E (F♯ for the trumpet), in the octave the men sing it: concert G3 to B4. It plays in that guitar track’s time, about 100. The record’s long intro is hummed; the trumpet waits, and near its end plays the song’s last line, “like I love you”, as a first look at the tune. It plays the hummed verse and the middle part, then every sung verse, the bridge and the three “I love you”s of the ending, and closes with a short line over the last chords: up to B, then G over the C chord and G♯ over the E. Where the band plays C before “and then I go”, the pickup is G, which the chord holds. It sits low, where the singer has it; the Octave setting moves it all up one for a brighter sound, with the middle part’s top B then at the top of the range.",
+    "facts": [
+     [
+      "Song",
+      "C. Carson Parks (1966)"
+     ],
+     [
+      "Line",
+      "The melody as Frank Sinatra sings it with Nancy (the upper of the two voices), in the form and chords of the Better Call Saul track"
+     ],
+     [
+      "Key",
+      "E major concert (F♯ for the trumpet), the record’s key"
+     ],
+     [
+      "Form",
+      "Intro, hummed verse and middle part, verse, interlude, second verse, bridge, last verse, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ss-guitar.mp3), 5:58"
+     ],
+     [
+      "Bars",
+      "The same numbers as the Fret Finder page"
      ]
     ]
    }
