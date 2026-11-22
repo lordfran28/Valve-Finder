@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:31:56Z",
+ "generatedAt": "2026-11-22T05:34:32Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8139,6 +8139,50 @@
      [
       "Bars",
       "The page numbers its four intro bars Intro 1 to 4, so its bar 1 is bar 5 here; its last two bars (7 and 8 beats) are written as two bars each"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-i-cover-the-waterfront",
+   "file": "songs/Arrangements/I Cover the Waterfront.musicxml.locked",
+   "title": "I Cover the Waterfront, after Frank Sinatra",
+   "kind": "MusicXML",
+   "sha1": "5768b556d55505ea38454e32591b00f1db84ec81",
+   "addedAt": "2026-11-22T05:34:09Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 45,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Cover the Waterfront",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Frank Sinatra’s record in his key, E (F♯ for the trumpet), about 67 and free at the start and end, concert B3 to E5. It keeps the notes he sings where the page names them: G♯ held over B6, his long B over E major 7 and E6, B over B7 in the bridge, B and C♯ on the third climb, E over the C7 before home, the tag’s high D, D♯ and E, his held E over D6/9. Over the guitar’s C♯7 the tune’s F♯ becomes E♯. A short line opens over E6/9 and A minor 6, and it closes over C major 7, F major 7 and A minor 6 over E, A falling to G♯.",
+    "facts": [
+     [
+      "Song",
+      "Johnny Green and Edward Heyman (1933)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, with Sinatra’s notes where the Fret Finder page names them, on that page’s chords"
+     ],
+     [
+      "Key",
+      "E major concert (F♯ for the trumpet), Sinatra’s key"
+     ],
+     [
+      "Form",
+      "Intro, verse (free), verse, bridge, verse, tag, coda"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (icw-guitar.mp3), 3:04"
+     ],
+     [
+      "Bars",
+      "The page numbers its three intro bars In1 to In3, so its bar 1 is bar 4 here"
      ]
     ]
    }
