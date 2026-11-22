@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T18:03:57Z",
+ "generatedAt": "2026-11-22T18:34:24Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9279,6 +9279,42 @@
      [
       "Plays with",
       "The record (Youve_got_a_Friend_By_James_Taylor.mp3)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-cinema-paradiso-giuffredi",
+   "file": "songs/Arrangements/Cinema Paradiso, after Andrea Giuffredi.musicxml.locked",
+   "title": "Cinema Paradiso, as Andrea Giuffredi plays it",
+   "kind": "MusicXML",
+   "sha1": "c75cdc7f5db763e5cd011d9976d77f220b8f7238",
+   "addedAt": "2026-11-22T18:34:00Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 43,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Cinema Paradiso, after Andrea Giuffredi",
+    "lead": "Andrea Giuffredi's trumpet, note for note from the record, on his own rubato: the love theme in A major concert (B for the trumpet), then, after the orchestra plays alone, the last part from G minor to B-flat major concert (C for the trumpet). The small box is his turn into a note.",
+    "facts": [
+     [
+      "Song",
+      "Cinema Paradiso: the love theme (Andrea Morricone) and the last part of the main theme (Ennio Morricone), 1988"
+     ],
+     [
+      "Line",
+      "Andrea Giuffredi's trumpet, read from the record's wind track and written bar by bar"
+     ],
+     [
+      "Key",
+      "A major, then B-flat major concert (B, then C for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The record (Cinema_Paradiso_Play_with_Me_n.6_-_Andrea_Giuffredi.mp3)"
      ]
     ]
    }
