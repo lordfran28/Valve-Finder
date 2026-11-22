@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T17:52:07Z",
+ "generatedAt": "2026-11-22T17:55:24Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9063,6 +9063,42 @@
      [
       "Plays with",
       "The record (Linda_Ronstadt_-_Long_Long_Time.mp3)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-rainy-days-and-mondays-carpenter",
+   "file": "songs/Arrangements/Rainy Days and Mondays, after Karen Carpenter.musicxml.locked",
+   "title": "Rainy Days and Mondays, as Karen Carpenter sings it",
+   "kind": "MusicXML",
+   "sha1": "69415979f9aa7fca9b43f765e7bd5fb3a5c8e18c",
+   "addedAt": "2026-11-22T17:55:06Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 67,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Rainy Days and Mondays, after Karen Carpenter",
+    "lead": "Karen Carpenter's line, note for note from the record, on the record's own beats (about 76), in E-flat (F for the trumpet), concert F3 to B-flat 4; the last part goes up to F (G for the trumpet). The introduction's held harmonica note is there too. Her slides into a note are the small boxes on top; her long notes are written as one note under her wide vibrato. It rests where the band plays alone, and breathes at the ends of her lines.",
+    "facts": [
+     [
+      "Song",
+      "Rainy Days and Mondays, by Roger Nichols and Paul Williams; the Carpenters, Carpenters (1971)"
+     ],
+     [
+      "Line",
+      "Her voice, read from the record's vocal track and written on eighths, her slides as small notes"
+     ],
+     [
+      "Key",
+      "E-flat major concert (F for the trumpet); from bar 53, F major (G for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The record (05._Rainy_Days_And_Mondays.mp3)"
      ]
     ]
    }
