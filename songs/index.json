@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T06:32:13Z",
+ "generatedAt": "2026-11-22T07:02:39Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8543,6 +8543,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page; bar 40 of the second chorus has five beats, as she holds one"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-close-to-you",
+   "file": "songs/Arrangements/Close to You.musicxml.locked",
+   "title": "Close to You, as Karen Carpenter sings it",
+   "kind": "MusicXML",
+   "sha1": "6f802fb5b8685eb95acd00d232c625f0cc53fd7b",
+   "addedAt": "2026-11-22T07:02:18Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 81,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Close to You",
+    "lead": "Karen Carpenter’s line in Close to You, taken note for note from the vocal track of the record and set on the record’s own beats, about 90: concert E3 to B♭4, in C, and in D♭ after the instrumental, as on the record. Where she rests, the voices behind her come in, and the part takes their line: the three “close to you” calls after the instrumental, and the “Wa-ah, close to you” of the ending, four times as the record fades. The part is timed to the record (They_Long_To_Be_Close_To_You.mp3), so it plays with it from the first beat.",
+    "facts": [
+     [
+      "Song",
+      "Burt Bacharach and Hal David (1963); the Carpenters’ record, 1970"
+     ],
+     [
+      "Line",
+      "Karen Carpenter’s vocal, note for note from the record; the voices’ calls where she rests"
+     ],
+     [
+      "Key",
+      "C major, then D♭ major after the instrumental (concert)"
+     ],
+     [
+      "Form",
+      "Intro, verse, verse, bridge, verse, instrumental, the voices’ “close to you”, bridge, verse, coda"
+     ],
+     [
+      "Plays with",
+      "The record, They_Long_To_Be_Close_To_You.mp3, 3:41"
+     ],
+     [
+      "Bars",
+      "The record’s bars at about 90; the intro and the instrumental are rests"
      ]
     ]
    }
