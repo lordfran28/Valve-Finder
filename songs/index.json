@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T04:41:35Z",
+ "generatedAt": "2026-11-22T04:43:16Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7739,6 +7739,50 @@
      [
       "Plays with",
       "The guitar track on the Fret Finder page (tat-guitar.mp3), 2:57"
+     ],
+     [
+      "Bars",
+      "The same numbers as the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-someone-to-watch-over-me",
+   "file": "songs/Arrangements/Someone to Watch Over Me.musicxml.locked",
+   "title": "Someone to Watch Over Me, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "4483c37735c8ad2e5142b4e2896290626ed7ee3f",
+   "addedAt": "2026-11-22T04:42:57Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 71,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Someone to Watch Over Me",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record six steps down, in B♭ (C for the trumpet), concert B♭3 to C5. It plays in that guitar track’s time, about 83. It keeps Rod’s breaths and his late way into the bridge. In the instrumental, where the guitar plays the strings’ line falling by half steps, the trumpet plays the A over it. A short line leads in over the intro, and Rod’s ending is followed as he sings it: “me” held on D over the D minor chord, the last phrase again, and the last word on B♭ over C7 before the band slides down to B♭6.",
+    "facts": [
+     [
+      "Song",
+      "George and Ira Gershwin (1926)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, in the form and chords of Rod Stewart’s record"
+     ],
+     [
+      "Key",
+      "B♭ major concert (C for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, A A bridge A, the tune over the strings, A bridge A, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (swom-guitar.mp3), 3:29"
      ],
      [
       "Bars",
