@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T07:40:09Z",
+ "generatedAt": "2026-11-22T08:06:57Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7624,50 +7624,6 @@
    }
   },
   {
-   "id": "arr-misty",
-   "file": "songs/Arrangements/Misty.musicxml.locked",
-   "title": "Misty, after Bing Crosby",
-   "kind": "MusicXML",
-   "sha1": "0eda6b8f1369b1f31dfc1665c56d0224059d6440",
-   "addedAt": "2026-11-22T03:02:34Z",
-   "locked": true,
-   "category": "arrangements",
-   "units": {
-    "count": 40,
-    "unit": "Bar"
-   },
-   "details": {
-    "title": "Misty",
-    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Bing Crosby’s record in his key, B (C♯ for the trumpet), concert E3 to C5. It plays in that guitar track’s time, about 68. It keeps Crosby’s ways with the tune: “Look at me” a little late each time, “hand” held on F♯ instead of the printed D♯, rests where he rests and the guitar answers, and the last word a bar late. The low D♯ of the rising triplets in each A is below the trumpet and is left out; the triplets start on the E. A short line leads in over the intro, and the ending comes down A, G, F♯, E, D♯, C♯ to A♯, the note the tune starts on.",
-    "facts": [
-     [
-      "Song",
-      "Erroll Garner, words by Johnny Burke (1954)"
-     ],
-     [
-      "Line",
-      "The tune from the lead sheet, as Bing Crosby phrases it on his record and on the Fret Finder page’s chords"
-     ],
-     [
-      "Key",
-      "B major concert (C♯ for the trumpet), Crosby’s key"
-     ],
-     [
-      "Form",
-      "Four-bar intro, A A B A, the last word a bar late, four-bar ending"
-     ],
-     [
-      "Plays with",
-      "The guitar track on the Fret Finder page (misty-guitar.mp3), 2:29"
-     ],
-     [
-      "Bars",
-      "The four intro bars come first, so bar 1 of the Fret Finder page is bar 5 here"
-     ]
-    ]
-   }
-  },
-  {
    "id": "arr-im-in-the-mood-for-love",
    "file": "songs/Arrangements/I’m in the Mood for Love.musicxml.locked",
    "title": "I’m in the Mood for Love, after Rod Stewart",
@@ -8631,6 +8587,94 @@
      [
       "Bars",
       "The record’s bars at about 78; the choir bars of the ending are rests"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-misty-flugelhorn",
+   "file": "songs/Arrangements/Misty, on flugelhorn.musicxml.locked",
+   "title": "Misty, as the flugelhorn plays it",
+   "kind": "MusicXML",
+   "sha1": "8252847fbb08a4b8ca39bfece85c72c390257351",
+   "addedAt": "2026-11-22T08:06:31Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Misty, on flugelhorn",
+    "lead": "The flugelhorn’s line in Misty, note for note from the wind track of the record, set on the record’s own beats, about 55: one chorus, A A B A, in E♭, concert F3 to F5. The tune is there under the ornaments, and the runs are written as played, in sixteenth sextuplets and thirty-seconds. Each note starts where it starts on the record (Misty_-_on_Flugelhorn.mp3), so the part plays with it from the pickup.",
+    "facts": [
+     [
+      "Song",
+      "Erroll Garner (1954), words by Johnny Burke"
+     ],
+     [
+      "Line",
+      "The flugelhorn on the record, note for note"
+     ],
+     [
+      "Key",
+      "E♭ major (concert)"
+     ],
+     [
+      "Form",
+      "Pickup, then one chorus: A A B A"
+     ],
+     [
+      "Plays with",
+      "The record, Misty_-_on_Flugelhorn.mp3, 2:25"
+     ],
+     [
+      "Bars",
+      "The record’s bars at about 55; the last note held"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-misty-ella",
+   "file": "songs/Arrangements/Misty, as Ella sings it.musicxml.locked",
+   "title": "Misty, as Ella Fitzgerald sings it",
+   "kind": "MusicXML",
+   "sha1": "edf019e3047df729cdc09026bb0471561571bf6b",
+   "addedAt": "2026-11-22T08:06:32Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 41,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Misty, as Ella sings it",
+    "lead": "Ella Fitzgerald’s line in Misty, note for note from her record with piano, set on the record’s own beats, about 63. The first A is in B♭; at its end she slides up a half step, and the rest is in B, as she sings it: her turns on the long notes, the low dips, the runs into the high notes, and her ending. Concert E3 to C♯5. Each note starts where it starts on the record (yt1s.com_-_Ella_Fitzgerald__Misty.mp3), so the part plays with it from her first note.",
+    "facts": [
+     [
+      "Song",
+      "Erroll Garner (1954), words by Johnny Burke"
+     ],
+     [
+      "Line",
+      "Ella Fitzgerald’s vocal, note for note from the record"
+     ],
+     [
+      "Key",
+      "B♭ major for the first A, then B major (concert)"
+     ],
+     [
+      "Form",
+      "Piano intro (rests), A in B♭, then A, bridge, A and ending in B"
+     ],
+     [
+      "Plays with",
+      "The record, yt1s.com_-_Ella_Fitzgerald__Misty.mp3, 2:55"
+     ],
+     [
+      "Bars",
+      "The record’s bars at about 63, from her first note; the piano intro is not written"
      ]
     ]
    }
