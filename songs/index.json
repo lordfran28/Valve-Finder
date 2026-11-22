@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T02:53:41Z",
+ "generatedAt": "2026-11-22T02:57:30Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7523,6 +7523,50 @@
      [
       "Bars",
       "The same numbers as the Fret Finder page; bar 1 is the two beats before the first full bar"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-there-will-never-be-another-you",
+   "file": "songs/Arrangements/There Will Never Be Another You.musicxml.locked",
+   "title": "There Will Never Be Another You, slow, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "fd0ec18e6b5c641e13ee0a0f2f767536f022b8b8",
+   "addedAt": "2026-11-22T02:57:14Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 77,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "There Will Never Be Another You",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement: slow, at about 72, in the record’s key, D♭ (E♭ for the trumpet), concert A♭3 to D♭5. It plays in that guitar track’s time. A short line over the last three intro chords leads in, on G♭ minor’s A and F. The verses are the tune as written, with breaths where the singer rests and the guitar runs. In the sixteen bars where the singer rests and the record’s piano carries the tune, the trumpet plays it with turns of its own. At the end of each second verse the F falls to E before the last D♭, as the singer does it. The tag sings the title line three times, holding F over the G♭ minor before the last D♭, and a short line closes over the last two chords.",
+    "facts": [
+     [
+      "Song",
+      "Harry Warren and Mack Gordon (1942)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, on the Fret Finder page’s chords and form; the solo turns, the tag and the closing line are new"
+     ],
+     [
+      "Key",
+      "D♭ major concert (E♭ for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, verse 1, verse 2, the solo, verse 2 again, tag, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (twnb-guitar.mp3), 4:24"
+     ],
+     [
+      "Bars",
+      "The four intro bars come first, so bar 1 of the Fret Finder page is bar 5 here"
      ]
     ]
    }
