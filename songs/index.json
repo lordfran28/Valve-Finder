@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T18:00:22Z",
+ "generatedAt": "2026-11-22T18:01:01Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9171,6 +9171,42 @@
      [
       "Plays with",
       "The record (1_Embraceable_You_-_Rod_Stewart.flac)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-my-funny-valentine-rod",
+   "file": "songs/Arrangements/My Funny Valentine, after Rod Stewart.musicxml.locked",
+   "title": "My Funny Valentine, as Rod Stewart sings it",
+   "kind": "MusicXML",
+   "sha1": "4c888d79f7fa64ea82f565a98641855bf43e18e4",
+   "addedAt": "2026-11-22T18:00:38Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 57,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My Funny Valentine, after Rod Stewart",
+    "lead": "Rod Stewart's line, note for note from the record, on the record's own beats (about 73), in E minor concert (F-sharp minor for the trumpet). The slides into a note are the small boxes on top. It rests where the band plays alone.",
+    "facts": [
+     [
+      "Song",
+      "My Funny Valentine, by Richard Rodgers and Lorenz Hart (1937); Rod Stewart, The Great American Songbook 4 (2005)"
+     ],
+     [
+      "Line",
+      "The voice, read from the record's vocal track and written on eighths, the slides as small notes"
+     ],
+     [
+      "Key",
+      "in E minor concert (F-sharp minor for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The record (9_My_Funny_Valentine_-_Rod_Stewart.flac)"
      ]
     ]
    }
