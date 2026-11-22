@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T17:15:30Z",
+ "generatedAt": "2026-11-22T17:31:54Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8979,6 +8979,50 @@
      [
       "Plays with",
       "The guitar track on the Fret Finder page (lp-guitar.mp3)"
+     ],
+     [
+      "Bars",
+      "Numbered as on the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-schubert-ave-maria-g",
+   "file": "songs/Arrangements/Schubert – Ave Maria, in G.musicxml.locked",
+   "title": "Schubert – Ave Maria, in G, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "e9d268ae6f7715e1053eb1227e193d064cf770c1",
+   "addedAt": "2026-11-22T17:31:38Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 43,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Schubert – Ave Maria, in G",
+    "lead": "Schubert’s line for the trumpet a minor third under his B♭, in G (A for the trumpet), concert D4 to D5, on the bars of the Fret Finder guitar arrangement in the same key, an octave above where the baritone sings it. All three verses are written out, the same notes each time, in the guitar track’s time, 44 to the quarter as Schubert marks it. Two breaths are added, at the commas after “Flehen” and “wild”; the dynamics are Schubert’s. The lead sheet in B♭ stays as it is.",
+    "facts": [
+     [
+      "Song",
+      "Franz Schubert, Ellens dritter Gesang, D 839 (1825), words by Adam Storck after Walter Scott"
+     ],
+     [
+      "Line",
+      "The voice’s line a minor third down, three verses, with a breath at the two commas of the long phrase"
+     ],
+     [
+      "Key",
+      "G major concert (A major for the trumpet), the key of the Fret Finder guitar"
+     ],
+     [
+      "Form",
+      "Two bars of introduction, three verses each with the two bars after it, two bars to end"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (av-guitar.mp3)"
      ],
      [
       "Bars",
