@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T17:55:24Z",
+ "generatedAt": "2026-11-22T17:58:40Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9099,6 +9099,42 @@
      [
       "Plays with",
       "The record (05._Rainy_Days_And_Mondays.mp3)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-for-sentimental-reasons-record",
+   "file": "songs/Arrangements/For Sentimental Reasons, from the record.musicxml.locked",
+   "title": "For Sentimental Reasons, as the record sings it",
+   "kind": "MusicXML",
+   "sha1": "244d2245790ef4ee7e19f38ef9093013e99cbdcf",
+   "addedAt": "2026-11-22T17:58:19Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 57,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "For Sentimental Reasons, from the record",
+    "lead": "The sung line, note for note from the record, on the record's own beats (about 81), in A-flat (B-flat for the trumpet), concert F3 to F5. The slides into a note are the small boxes on top. It rests where the band plays alone.",
+    "facts": [
+     [
+      "Song",
+      "For Sentimental Reasons, by Ivory \"Deek\" Watson and William Best (1945)"
+     ],
+     [
+      "Line",
+      "The voice, read from the record's vocal track and written on eighths, the slides as small notes"
+     ],
+     [
+      "Key",
+      "A-flat major concert (B-flat for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The record (For_Sentimental_Reasons_mixed.mp3)"
      ]
     ]
    }
