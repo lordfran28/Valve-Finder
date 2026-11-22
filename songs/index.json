@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T16:39:51Z",
+ "generatedAt": "2026-11-22T16:46:53Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8895,6 +8895,50 @@
      [
       "Bars",
       "Numbered as on the Fret Finder page: bars 33 to 62 are the first part again"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-faure-apres-un-reve-a-minor",
+   "file": "songs/Arrangements/Fauré – Après un rêve, in A minor.musicxml.locked",
+   "title": "Fauré – Après un rêve, in A minor, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "e884d08e0b573f09b02769acbf5e64b0f1ff1a07",
+   "addedAt": "2026-11-22T16:46:24Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Fauré – Après un rêve, in A minor",
+    "lead": "Fauré’s line for the trumpet a minor third under his C minor, in A minor (B minor for the trumpet), concert A3 to D5, on the bars of the Fret Finder guitar arrangement in the same key, an octave above where the baritone sings it. It plays in that guitar track’s time, about 54. Breaths come at the ends of the poem’s lines; the dynamics are Fauré’s. The lead sheet in Fauré’s C minor stays as it is.",
+    "facts": [
+     [
+      "Song",
+      "Gabriel Fauré, Op. 7 No. 1 (1877), words by Romain Bussine"
+     ],
+     [
+      "Line",
+      "The voice’s line from the score, a minor third down, with breaths at the ends of the lines"
+     ],
+     [
+      "Key",
+      "A minor concert (B minor for the trumpet), the key of the Fret Finder guitar"
+     ],
+     [
+      "Form",
+      "A bar of introduction, two verses, Hélas, Reviens"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ra-guitar.mp3)"
+     ],
+     [
+      "Bars",
+      "Numbered as on the Fret Finder page"
      ]
     ]
    }
