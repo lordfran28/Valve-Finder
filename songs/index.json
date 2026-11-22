@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T04:45:58Z",
+ "generatedAt": "2026-11-22T04:48:42Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7831,6 +7831,50 @@
      [
       "Bars",
       "The ten intro bars come first, so bar 1 of the Fret Finder page is bar 11 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-my-one-and-only-love",
+   "file": "songs/Arrangements/My One and Only Love.musicxml.locked",
+   "title": "My One and Only Love, after Johnny Hartman",
+   "kind": "MusicXML",
+   "sha1": "c67c452b2d383f76282fa6be291ea0de7e0caba0",
+   "addedAt": "2026-11-22T04:48:26Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 43,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "My One and Only Love",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Johnny Hartman’s record in his key, C (D for the trumpet), concert G3 to D5. It plays in that guitar track’s time, about 63, slowing at the end. It keeps Hartman’s ways: the long A let go before the guitar’s line, G held in the bridge where the guitar holds C♯ minor 7♭5 for him, and his slow ending, the last phrase stretched over the falling chords, C over the suspended G, F♯ and G before he lands on C, and C held into F minor 6 over C. A short line leads in, D, C, B, A♭ over the G chords, and the trumpet closes with C major 9 rising to its D.",
+    "facts": [
+     [
+      "Song",
+      "Guy Wood and Robert Mellin (1952)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, as Johnny Hartman sings it on his record with John Coltrane, on the Fret Finder page’s chords"
+     ],
+     [
+      "Key",
+      "C major concert (D for the trumpet), Hartman’s key"
+     ],
+     [
+      "Form",
+      "Two bars on G, A A bridge A, a slow ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (moaol-guitar.mp3), 2:52"
+     ],
+     [
+      "Bars",
+      "The two intro bars come first, so bar 1 of the Fret Finder page is bar 3 here"
      ]
     ]
    }
