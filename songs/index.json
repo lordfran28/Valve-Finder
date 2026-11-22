@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T06:05:01Z",
+ "generatedAt": "2026-11-22T06:14:39Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7189,7 +7189,7 @@
    "file": "songs/Arrangements/Till There Was You.musicxml.locked",
    "title": "Till There Was You, after Rod Stewart",
    "kind": "MusicXML",
-   "sha1": "24e1a95595fdee4bab5df5c6d859375ba8a85dc7",
+   "sha1": "c7fe77806efc29a24f75bc9923863a7f89694cbc",
    "addedAt": "2026-11-20T21:26:53Z",
    "locked": true,
    "category": "arrangements",
@@ -7199,23 +7199,31 @@
    },
    "details": {
     "title": "Till There Was You",
-    "lead": "Rod Stewart's singing on his record, an octave up for the trumpet and in his key, E. His phrasing is straightened, his slides left out. It runs from concert D♯4 to G5 (written E♯4 to A5); the G5 comes once, in the first bridge. The eight bars without him are left as rests.",
+    "lead": "Till There Was You for trumpet in C (D for the trumpet), concert B3 to E5, about 92, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record four semitones lower. The line is the song’s own melody from the lead sheet, set where Rod sings it: the intro plays the A’s last four bars, then three A’s and the bridge, a varied A where the record has no voice, the bridge again, and the last A with its high notes. A short closing line goes over the last chord. Going into the bridge the line takes B♭, the note of Rod’s C7. This replaces the earlier version, which followed his voice from the recording.",
     "facts": [
      [
       "Song",
-      "Meredith Willson, from The Music Man (1957)"
+      "Meredith Willson (1957)"
      ],
      [
       "Line",
-      "Rod Stewart's voice, read note by note from the vocal track and straightened"
+      "The melody from the lead sheet on the Fret Finder page’s chords; the varied A and the closing line are our own"
      ],
      [
       "Key",
-      "E concert, F♯ for the trumpet"
+      "C major concert (D for the trumpet), four semitones under Rod Stewart’s E"
      ],
      [
       "Form",
-      "Intro; A, A, bridge, A; eight bars without voice; bridge, last A"
+      "Intro (the A’s last four bars), A, A, bridge, A, A varied, bridge, A, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ttwy-guitar.mp3), 2:56"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page"
      ]
     ]
    }
