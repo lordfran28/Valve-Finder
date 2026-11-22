@@ -1275,13 +1275,30 @@ function startRun(ev, opts){
   /* resume() has to be called inside the tap itself, or phones keep the sound locked */
   var resumed = c.state === "running" ? Promise.resolve() : Promise.resolve(c.resume()).catch(function(){});
   var ready = Promise.race([Horn.want(c, hornNeeds(ev)), new Promise(function(res){ setTimeout(res, 6000); })]);
-  Promise.all([resumed, ready]).then(function(){
+  var sp = ev.speed || 1, slow = ev.recFrom != null && state.recBuf && Math.abs(sp - 1) > 0.005 && state.recURL, el = null;
+  var seeked = !slow ? Promise.resolve() : new Promise(function(res){
+    el = new Audio(); el.preload = "auto";
+    el.preservesPitch = el.mozPreservesPitch = el.webkitPreservesPitch = true;
+    el.addEventListener("loadedmetadata", function(){ el.playbackRate = sp; el.currentTime = Math.max(0, ev.recFrom); }, {once: true});
+    el.addEventListener("seeked", function(){ res(); }, {once: true});
+    el.addEventListener("error", function(){ el = null; res(); }, {once: true});
+    el.src = state.recURL; el.load();
+    setTimeout(res, 8000);
+  });
+  Promise.all([resumed, ready, seeked]).then(function(){
     if (run !== r) return;
     r.out = c.createGain(); r.out.gain.value = 1; r.out.connect(bus(c));
     var lead = Math.max(0.12, (c.baseLatency || 0) + (c.outputLatency || 0) + 0.06);
     r.t0 = c.currentTime + lead;
+    if (slow && el){
+      var a = el, stopAt = (ev.recTo - ev.recFrom)/sp;
+      a.playbackRate = sp;
+      var t1 = setTimeout(function(){ if (run === r) a.play().catch(function(){}); }, Math.max(0, (lead - (c.outputLatency || 0))*1000));
+      var t2 = setTimeout(function(){ a.pause(); }, (lead + stopAt)*1000);
+      r.live.push({stop: function(){ clearTimeout(t1); clearTimeout(t2); a.pause(); a.removeAttribute("src"); a.load(); }});
+    }
     /* the trumpet recording, started on the same clock so the fingerings light up as it plays */
-    if (ev.recFrom != null && state.recBuf){
+    else if (ev.recFrom != null && state.recBuf){
       var src = c.createBufferSource(), g = c.createGain();
       src.buffer = state.recBuf; g.gain.value = 1; src.connect(g); g.connect(c.destination);
       src.start(r.t0, Math.max(0, ev.recFrom), Math.max(0.1, ev.recTo - ev.recFrom));
@@ -1348,7 +1365,7 @@ function buildEvents(from, to){
   }
   return linkEvents(ev);
 }
-function playBars(from, to, opts){ startRun(buildEvents(from, to), opts); }
+function playBars(from, to, opts){ startRun(buildEvents(from, to), opts); if (run) run.range = {from: from, to: to, opts: opts}; }
 
 /* ---------- The trumpet recording ----------
    The isolated trumpet track stays on this device: it's somebody's recording, and the site is public.
@@ -1398,6 +1415,7 @@ function markTiming(){
       j++;
     });
   });
+  syncTempo();
   var has = !!(state.rec && (state.rec.timing || state.recName));
   $("recrow").hidden = !state.rec;
   $("recaddlab").textContent = state.recName ? "Use another recording" : "Add the trumpet recording";
@@ -1409,8 +1427,35 @@ function markTiming(){
   if (state.rec && state.rec.timing && !tm) recMsg("The recording was lined up with other settings (part, repeats or joined notes). Add it again to line it up with these.");
 }
 function recMsg(text, bad){ var m = $("recmsg"); m.textContent = text || ""; m.hidden = !text; m.className = "msg" + (bad ? " bad" : ""); }
+/* The recording's own tempo, from the notes lined up with it: written beats over the seconds they took
+   (the middle of many short stretches, so a held note or a rest left out of the record doesn't count). */
+function recTempo(tm){
+  var pts = [], off = 0, sl = [];
+  (state.bars || []).forEach(function(bar){
+    var j = bar.first;
+    bar.notes.forEach(function(n){ if (n.tied) return; var a = tm.at[j++]; if (a && !n.grace) pts.push([off + n.t, a[0]]); });
+    off += Math.max(bar.len || 0, 0.25);
+  });
+  for (var k = 0; k + 8 < pts.length; k++){
+    var dq = pts[k + 8][0] - pts[k][0], ds = pts[k + 8][1] - pts[k][1];
+    if (dq > 0 && ds > 0.05) sl.push(60*dq/ds);
+  }
+  if (!sl.length) return 0;
+  sl.sort(function(a, b){ return a - b; });
+  return clampTempo(Math.round(sl[sl.length >> 1]));
+}
+/* The tempo field slows or speeds the recording's time too: at the recording's own tempo it plays as recorded. */
+function speedNow(){
+  var tm = timingNow(), ref = tm ? recTempo(tm) : 0;
+  return ref ? clampTempo($("tempo").value)/ref : 1;
+}
+/* A part that follows a recording shows the recording's tempo, until the player sets one himself. */
+function syncTempo(){
+  var tm = timingNow(), ref = tm && !state.tempoOwn ? recTempo(tm) : 0;
+  if (ref) $("tempo").value = ref;
+}
 function buildTimed(from, to, tm, mode){
-  var ev = [], anns = annotations();
+  var ev = [], anns = annotations(), sp = speedNow();
   for (var b = from; b <= to; b++){
     var bar = state.bars[b], j = bar.first;
     bar.notes.forEach(function(n, ni){
@@ -1422,8 +1467,9 @@ function buildTimed(from, to, tm, mode){
   }
   if (!ev.length) return ev;
   var from0 = Math.max(0, ev[0].when - 0.25), end = 0;
-  ev.forEach(function(x){ x.when -= from0; end = Math.max(end, x.when + x.dur); });
+  ev.forEach(function(x){ x.when -= from0; end = Math.max(end, x.when + x.dur); x.when /= sp; x.dur /= sp; });
   linkEvents(ev);
+  ev.speed = sp;
   if (mode === "rec" || mode === "both"){ ev.recFrom = from0; ev.recTo = from0 + end + 0.4; }
   return ev;
 }
@@ -1549,11 +1595,15 @@ function alignNotes(notes, pt, quick){
   }
   return out;
 }
+function setRecURL(blob){
+  if (state.recURL) { try { URL.revokeObjectURL(state.recURL); } catch(e){} }
+  state.recURL = blob ? URL.createObjectURL(blob) : null;
+}
 function loadRecording(id){
-  state.recBuf = null; state.recName = null;
+  state.recBuf = null; state.recName = null; setRecURL(null);
   return RecDB.get(id).then(function(o){
     if (!o || !state.rec || state.rec.id !== id) return;
-    state.recName = o.name;
+    state.recName = o.name; setRecURL(new Blob([o.data], {type: o.type || ""}));
     var c = audio(); if (!c) return;
     return new Promise(function(res, rej){ var p = c.decodeAudioData(o.data.slice(0), res, rej); if (p && p.then) p.then(res, rej); }).then(function(b){ if (state.rec && state.rec.id === id) state.recBuf = b; });
   }).catch(function(){}).then(markTiming);
@@ -1567,7 +1617,7 @@ function addRecording(file){
     data = ab;
     return new Promise(function(res, rej){ var p = c.decodeAudioData(ab.slice(0), res, rej); if (p && p.then) p.then(res, rej); });
   }).then(function(buf){
-    state.recBuf = buf; state.recName = file.name;
+    state.recBuf = buf; state.recName = file.name; setRecURL(file);
     return RecDB.put({id: rec.id, name: file.name, type: file.type, data: data}).catch(function(){}).then(function(){
       return trackPitch(buf, function(p){ recMsg("Listening to " + file.name + "… " + Math.round(p*100) + "%"); });
     });
@@ -1622,7 +1672,7 @@ function defaultPart(score){
   return best;
 }
 function countUnits(score){ var p = score.parts[defaultPart(score)]; return {count: p.measures.length, unit: p.unit || "Bar"}; }
-function readSettings(){ return {part: state.part, pitch: $("pitch").value, oct: $("oct").value, tempo: clampTempo($("tempo").value), repeats: $("repeats").checked, join: $("join").checked, alts: $("alts").checked}; }
+function readSettings(){ return {part: state.part, pitch: $("pitch").value, oct: $("oct").value, tempo: clampTempo($("tempo").value), tempoOwn: state.tempoOwn ? true : undefined, repeats: $("repeats").checked, join: $("join").checked, alts: $("alts").checked}; }
 function applySettings(s){
   if (!s) return;
   if (typeof s.part === "number" && s.part >= 0 && s.part < state.score.parts.length){ state.part = s.part; $("part").value = String(s.part); }
@@ -1655,6 +1705,7 @@ function loadScore(score, settings){
   $("partfield").hidden = score.parts.length < 2;
   $("pitch").value = "auto"; $("oct").value = "0"; $("repeats").checked = true; $("join").checked = false; $("alts").checked = false;
   var tp = score.parts[pi].tempo; $("tempo").value = tp ? clampTempo(tp) : 100;
+  state.tempoOwn = !!(settings && settings.tempoOwn);
   applySettings(settings);
   if (!settings || settings.oct == null) $("oct").value = String(bestOctave(score.parts[state.part]));
   $("error").hidden = true;
@@ -2219,7 +2270,7 @@ function showRecord(rec){
       rec.category = o.category || rec.category; rec.order = o.order || rec.order; rec.details = o.details || rec.details;
       rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       Store.put(rec);
-      if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); applySettings(rec.settings); render(); renderDetails(rec); }
+      if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); state.tempoOwn = !!(rec.settings && rec.settings.tempoOwn); applySettings(rec.settings); render(); renderDetails(rec); }
     });
   }).catch(function(e){ var m = $("error"); m.textContent = e.user ? e.message : "This song's file couldn't be read."; m.hidden = false; });
 }
@@ -2250,7 +2301,7 @@ function openExample(){
   state.rec = null; state.tempNotes = {};
   setTitle("When the Saints Go Marching In", true);
   $("dangerzone").hidden = true; renderDetails(null);
-  state.recBuf = null; state.recName = null; recMsg("");
+  state.recBuf = null; state.recName = null; setRecURL(null); recMsg("");
   loadScore(parseScore(sampleXML()), null);
   setSave("example");
 }
@@ -2388,7 +2439,13 @@ $("part").addEventListener("change", function(){
   var now = parts[state.part];
   if (was && now && now.tempo && was.tempo && now.tempo !== was.tempo) $("tempo").value = clampTempo(now.tempo);
   render(); scheduleSave(); });
-$("tempo").addEventListener("change", function(){ $("tempo").value = clampTempo($("tempo").value); scheduleSave(); });
+$("tempo").addEventListener("change", function(){
+  $("tempo").value = clampTempo($("tempo").value); state.tempoOwn = true; scheduleSave();
+  /* a new tempo while it plays: it goes on from the bar it was in, at the new speed */
+  var r = run; if (!r || !r.range) return;
+  var b = r.lastEl ? parseInt(r.lastEl.getAttribute("data-b"), 10) : NaN;
+  playBars(isNaN(b) ? r.range.from : Math.max(r.range.from, b), r.range.to, r.range.opts);
+});
 $("title").addEventListener("change", function(){
   var rec = state.rec; if (!rec) return;
   var v = $("title").value.trim();
@@ -2431,7 +2488,7 @@ $("recfile").addEventListener("change", function(e){ var f = e.target.files && e
 $("hear").addEventListener("change", function(){ stopRun(); });
 $("recdrop").addEventListener("click", function(){
   var rec = state.rec; if (!rec) return;
-  stopRun(); RecDB.del(rec.id); state.recBuf = null; state.recName = null;
+  stopRun(); RecDB.del(rec.id); state.recBuf = null; state.recName = null; setRecURL(null);
   recMsg("The recording is gone from this device. Its timing stays with the song.");
   markTiming();
 });
