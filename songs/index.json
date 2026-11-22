@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T02:28:49Z",
+ "generatedAt": "2026-11-22T02:40:18Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7391,6 +7391,50 @@
      [
       "Bars",
       "One ahead of the Fret Finder page, which counts the intro bar on its own"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-for-all-we-know",
+   "file": "songs/Arrangements/For All We Know.musicxml.locked",
+   "title": "For All We Know, after Johnny Hartman",
+   "kind": "MusicXML",
+   "sha1": "56a4f4c77188389f0c908f3408cbf7b0aaeb2d66",
+   "addedAt": "2026-11-22T02:39:10Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 75,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "For All We Know",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Johnny Hartman’s record in his key, D♭ (E♭ for the trumpet), concert A♭3 to E♭5. It plays in that guitar track’s time, slow and loose, about 61. The trumpet answers the second half of Billy Taylor’s piano intro and comes in on its last beat, as Hartman does. Where Hartman’s band plays other chords than the book, the tune bends to them and keeps its notes: in the B section F and E♭ wait for the F7 and the A♭7, the D♭ before each climb is C over the band’s F minor 7, and in the second A the F holds over the B♭7. The record has a horn solo in the middle; here the trumpet takes it, sixteen bars built on the tune, with the 4th falling to the 3rd on the long suspended chords. After the last chorus it follows Hartman’s tag, leaning on G♭ and F before the last D♭, then plays a short line over Rod Stewart’s ending: down to E over the minor chord, and up to F as it opens into D♭ major.",
+    "facts": [
+     [
+      "Song",
+      "J. Fred Coots and Sam M. Lewis (1934)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, in the form and chords of Johnny Hartman’s record; the solo and the last line are new"
+     ],
+     [
+      "Key",
+      "D♭ major concert (E♭ for the trumpet), Hartman’s key"
+     ],
+     [
+      "Form",
+      "Piano intro, A B A C, a solo on A B, A C, Hartman’s tag, Rod Stewart’s ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (fawk-guitar.mp3), 5:14"
+     ],
+     [
+      "Bars",
+      "The four intro bars come first, so bar 1 of the Fret Finder page is bar 5 here"
      ]
     ]
    }
