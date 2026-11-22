@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T09:20:16Z",
+ "generatedAt": "2026-11-22T12:52:07Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8763,6 +8763,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-thats-all",
+   "file": "songs/Arrangements/That’s All.musicxml.locked",
+   "title": "That’s All, after Johnny Hartman, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "6409b3dd0a7bb159230645eed082245ad5c7f034",
+   "addedAt": "2026-11-22T12:51:47Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 57,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "That’s All",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Johnny Hartman’s record in his key, A♭ (B♭ for the trumpet), concert A♭3 to C5, an octave above him. It plays in that guitar track’s time, about 57. Over the intro’s one shape moving down two frets a bar, the trumpet plays the same three notes down with it, each chord’s 7th, 9th and 3rd, and then his two pickup notes. The choruses are the tune as written, the octave leaps of the bridge included. Where the record’s piano solo is cut, one bar turns to the bridge again. In the last A it waits with him while the guitar climbs, then takes his ending: D over E♭6 and the G he holds over A♭ major 9, A♭, and a short line down the minor iv to C.",
+    "facts": [
+     [
+      "Song",
+      "Bob Haymes and Alan Brandt (1952)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, on the Fret Finder page’s chords and form; the intro line, the ending after Hartman and the closing line are set for the trumpet"
+     ],
+     [
+      "Key",
+      "A♭ major concert (B♭ for the trumpet), Hartman’s key"
+     ],
+     [
+      "Form",
+      "Intro, A A bridge A, a bar of turn, bridge and last A again, tag"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (tha-guitar.mp3), 4:06"
+     ],
+     [
+      "Bars",
+      "The four intro bars come first, so bar 1 of the Fret Finder page is bar 5 here"
      ]
     ]
    }
