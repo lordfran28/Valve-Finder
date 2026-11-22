@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:52:11Z",
+ "generatedAt": "2026-11-22T06:05:01Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8403,6 +8403,50 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page: four intro bars, then chorus 1, chorus 2 from bar 1 to 31, ending"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-ive-got-a-crush-on-you",
+   "file": "songs/Arrangements/I’ve Got a Crush on You.musicxml.locked",
+   "title": "I’ve Got a Crush on You, after Sinatra at the Sands",
+   "kind": "MusicXML",
+   "sha1": "1be821df26f293a1fe7e39ab65197e5f122bafc2",
+   "addedAt": "2026-11-22T06:04:39Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 46,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I’ve Got a Crush on You",
+    "lead": "The refrain for trumpet in F (G for the trumpet), concert F3 to C5, slow, in a 12/8 feel at about 65, set on the bars of the Fret Finder guitar arrangement, which follows Sinatra’s recording live at the Sands (1966). A short line of our own opens it, built on the tune’s “I never had the least” figure. The lead sheet has no verse, so the trumpet rests under it: sing it, or let the guitar have it. Then the pickup, the refrain, and its last half again, ending down on the low F as Sinatra does. Where Basie’s band changes the harmony, the line takes the band’s notes: E♭ over G7♭13 and A♭ over C7♭13 as Sinatra sings them, B and C♯ over the bass walking up, G♯ over B diminished 7. The song is from 1928, so it is free to use in the US.",
+    "facts": [
+     [
+      "Song",
+      "George and Ira Gershwin (1928)"
+     ],
+     [
+      "Line",
+      "The refrain from the lead sheet, on the Fret Finder page’s chords; the intro line and the last two bars are our own"
+     ],
+     [
+      "Key",
+      "F major concert (G for the trumpet), Sinatra’s key"
+     ],
+     [
+      "Form",
+      "Intro, verse (guitar alone), pickup, refrain, its last half again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (crush-guitar.mp3), 2:43"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page; the free verse bars take the guitar’s own beat counts"
      ]
     ]
    }
