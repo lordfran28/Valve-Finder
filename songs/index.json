@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T05:38:57Z",
+ "generatedAt": "2026-11-22T05:43:55Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8227,6 +8227,50 @@
      [
       "Bars",
       "The page numbers its bars I1 and R1 to R7 before bar 1, so its bar 1 is bar 9 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-i-only-have-eyes-for-you",
+   "file": "songs/Arrangements/I Only Have Eyes for You.musicxml.locked",
+   "title": "I Only Have Eyes for You, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "739b399c89416c9f0efe927f4d81e41a2a4e21cc",
+   "addedAt": "2026-11-22T05:43:38Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 84,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Only Have Eyes for You",
+    "lead": "The tune for trumpet in A (B for the trumpet), concert A♯3 to E5, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record seven steps lower, about 108: the refrain from the lead sheet, A A bridge A, then 16 bars of solo, the end of the second A, the bridge and the last A again with the sheet’s own ending. Where the guitar’s chords would rub the sheet’s note, the line takes the chord’s (G♯ over B minor, E♭ over C minor 9, C♯ over F♯7♭9). The record has a trumpet solo; this one is our own line over its changes, not the record’s. A short line opens where the record’s strings come in, and it closes over the ringing A major 9.",
+    "facts": [
+     [
+      "Song",
+      "Harry Warren and Al Dubin (1934)"
+     ],
+     [
+      "Line",
+      "The refrain from the lead sheet on the Fret Finder page’s chords; the solo and the intro and closing lines are our own"
+     ],
+     [
+      "Key",
+      "A major concert (B for the trumpet), a fifth below Rod Stewart’s record"
+     ],
+     [
+      "Form",
+      "Intro, A A bridge A, solo, the end of the second A, bridge, last A, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (oheyes-guitar.mp3), 3:07"
+     ],
+     [
+      "Bars",
+      "Bar for bar with the Fret Finder page"
      ]
     ]
    }
