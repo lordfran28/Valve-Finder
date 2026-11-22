@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T18:02:41Z",
+ "generatedAt": "2026-11-22T18:03:57Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9243,6 +9243,42 @@
      [
       "Plays with",
       "The record (7_S_Wonderful_-_Rod_Stewart.flac)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-youve-got-a-friend-taylor",
+   "file": "songs/Arrangements/You've Got a Friend, after James Taylor.musicxml.locked",
+   "title": "You've Got a Friend, as James Taylor sings it",
+   "kind": "MusicXML",
+   "sha1": "aa46a015b0fbe066fdb3c153cea92643491e48a7",
+   "addedAt": "2026-11-22T18:03:31Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 101,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "You've Got a Friend, after James Taylor",
+    "lead": "James Taylor's line, note for note from the record, on the record's own beats (about 92), in A major concert (B for the trumpet), an octave above where he sings it. The slides into a note are the small boxes on top. It rests where the band plays alone.",
+    "facts": [
+     [
+      "Song",
+      "You've Got a Friend, by Carole King (1971); James Taylor, Mud Slide Slim and the Blue Horizon (1971)"
+     ],
+     [
+      "Line",
+      "The voice, read from the record's vocal track and written on eighths, the slides as small notes"
+     ],
+     [
+      "Key",
+      "in A major concert (B for the trumpet), an octave above where he sings it"
+     ],
+     [
+      "Plays with",
+      "The record (Youve_got_a_Friend_By_James_Taylor.mp3)"
      ]
     ]
    }
