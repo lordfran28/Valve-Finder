@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T14:45:04Z",
+ "generatedAt": "2026-11-22T14:45:52Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -8455,50 +8455,6 @@
      [
       "Bars",
       "Bar for bar with the Fret Finder page: its three intro bars, then its bars 1 to 115"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "arr-just-in-time",
-   "file": "songs/Arrangements/Just in Time.musicxml.locked",
-   "title": "Just in Time, after Nina Simone",
-   "kind": "MusicXML",
-   "sha1": "a01a9f62ada96106eb843070a761a862ecc564f1",
-   "addedAt": "2026-11-22T06:31:56Z",
-   "locked": true,
-   "category": "arrangements",
-   "units": {
-    "count": 119,
-    "unit": "Bar"
-   },
-   "details": {
-    "title": "Just in Time",
-    "lead": "Just in Time for trumpet in E♭ (F for the trumpet), concert B♭3 to G5, about 127, set on the bars of the Fret Finder guitar arrangement, which follows Nina Simone’s live record in her key. The chorus is the lead sheet’s tune, with her note wherever her chords move off it: C♭ over A♭ minor 6, D over F/A, A over A diminished 7. The solo is her piano solo, her lines from the Fret Finder page put back into one register; where she only strikes chords the trumpet rests. Then the last eight bars as she sings them, the chorus again, the last eight once more, and a closing line over her B♭ pedal. The tune goes up to G5 in the bridge.",
-    "facts": [
-     [
-      "Song",
-      "Jule Styne, Betty Comden and Adolph Green (1956)"
-     ],
-     [
-      "Line",
-      "The tune from the lead sheet, with Nina Simone’s notes where her chords differ; the solo is her piano lines; the intro and closing lines are our own"
-     ],
-     [
-      "Key",
-      "E♭ major concert (F for the trumpet), her key"
-     ],
-     [
-      "Form",
-      "Intro, chorus, her solo, the last eight bars, chorus again, the last eight again, ending"
-     ],
-     [
-      "Plays with",
-      "The guitar track on the Fret Finder page (jit-guitar.mp3), 3:49"
-     ],
-     [
-      "Bars",
-      "Bar for bar with the Fret Finder page; bar 40 of the second chorus has five beats, as she holds one"
      ]
     ]
    }
