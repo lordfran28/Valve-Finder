@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T03:03:16Z",
+ "generatedAt": "2026-11-22T04:39:01Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7655,6 +7655,50 @@
      [
       "Bars",
       "The four intro bars come first, so bar 1 of the Fret Finder page is bar 5 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-im-in-the-mood-for-love",
+   "file": "songs/Arrangements/I’m in the Mood for Love.musicxml.locked",
+   "title": "I’m in the Mood for Love, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "3f761b9067b17c44afd6152637eb069e5de9c65e",
+   "addedAt": "2026-11-22T04:38:40Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 66,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I’m in the Mood for Love",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record three half steps down, in D (E for the trumpet), concert C♯4 to E5. It plays in that guitar track’s time, about 87. It keeps Rod’s short phrases; C♯ holds over the band’s F diminished 7, where the book’s C would rub; and where the band moves to B7♭9 under the tune’s long D it lets the D go before the chord comes. The eight bars where the record’s horn plays the A while Rod rests are the trumpet’s too. A short line leads in, and the tag sets the last phrase over the band’s held A chords, lands on D and turns to G minor before the last F♯.",
+    "facts": [
+     [
+      "Song",
+      "Jimmy McHugh and Dorothy Fields (1935)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, in the form and chords of Rod Stewart’s record; the tag is new"
+     ],
+     [
+      "Key",
+      "D major concert (E for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro, A A bridge A, the horn’s A, bridge, A, tag"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (mood-guitar.mp3), 3:05"
+     ],
+     [
+      "Bars",
+      "The same numbers as the Fret Finder page"
      ]
     ]
    }
