@@ -233,6 +233,16 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 .play{display:inline-flex;align-items:center;gap:6px;font:600 1rem/1.2 var(--body);font-variant-caps:all-small-caps;letter-spacing:.07em;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:3px;padding:4px 11px;cursor:pointer}
 .notes{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .notecell{width:4.5rem;display:flex;flex-direction:column;gap:2px}
+/* decorations: small boxes on top of their note; a bar with any keeps the room above every note, so the notes stay in line */
+.graces{display:none;justify-content:space-between;align-items:flex-end;gap:2px}
+.withgr .graces{display:flex;min-height:2.55rem}
+.graces span{display:flex;gap:2px;min-width:0}
+.gpost{margin-left:auto}
+.note.grace{width:2.1rem;padding:3px 1px 4px;gap:1px;opacity:.92}
+.note.grace .name{font-size:1.12rem}
+.note.grace .valves{gap:2px;margin-top:0}
+.note.grace .v{width:8px;height:8px;border-width:1px}
+.notecell.lone{width:2.3rem;justify-content:flex-end}
 input[type=text].annot{width:100%;min-width:0;font:italic 500 .92rem/1.2 var(--body);color:var(--brass);background:transparent;border:0;border-bottom:1px dotted transparent;border-radius:0;padding:2px 1px 3px;text-align:center;
   opacity:0;transition:opacity .45s ease,border-color .45s ease}
 .notecell:hover input[type=text].annot,.notecell.reveal input[type=text].annot,input[type=text].annot:focus,input[type=text].annot.has{opacity:1}
@@ -594,7 +604,8 @@ function parsePart(partEl, name){
         var ties = kids(el, "tie").map(function(x){ return x.getAttribute("type"); });
         /* a fingering written in the file (a lip slur keeps the valves of its series) takes the place of the chart's */
         var fg = el.querySelector("notations technical fingering"), fgt = fg ? fg.textContent.trim().replace(/[-\s]/g, "") : "";
-        var note = {src:p, t:t, durQ:durQ, grace:grace, tied: ties.indexOf("stop")>=0 && !!held, lyric: readLyric(el), fing: /^(0|1?2?3?)$/.test(fgt) && fgt ? fgt : null};
+        var gEl = grace ? kid(el, "grace") : null;
+        var note = {src:p, t:t, durQ:durQ, grace:grace, after: !!(gEl && gEl.hasAttribute("steal-time-previous")), tied: ties.indexOf("stop")>=0 && !!held, lyric: readLyric(el), fing: /^(0|1?2?3?)$/.test(fgt) && fgt ? fgt : null};
         meas.notes.push(note); last = note;
         held = ties.indexOf("start")>=0 ? note : null;
         t += durQ;
@@ -873,7 +884,7 @@ function render(){
      in the same bar it disappears and the first note lasts longer; over a bar line it shows as held. */
   var join = $("join").checked, prev = null, boff = 0;
   seq.forEach(function(item, bi){
-    var m = item.m, notes = [], cells = [], sTok = [];
+    var m = item.m, notes = [], cells = [], sTok = [], boxes = [];
     m.notes.forEach(function(n, ni){
       var w = shiftPitch(n.src, off.dia, off.chrom), wm = midiOf(w), f = FING[wm] && n.fing ? n.fing : FING[wm];
       var at = boff + n.t, joined = join && !n.grace && !n.tied && prev && prev.wm === wm && at >= prev.start && at - prev.end <= 0.13;
@@ -894,18 +905,27 @@ function render(){
       var dots = f ? '<span class="valves" aria-hidden="true">' + [1,2,3].map(function(k){ return '<i class="v' + (f.indexOf(String(k))>=0 ? " on" : "") + '"></i>'; }).join("") + "</span>" : "";
       var aria = "Trumpet " + noteWords(w) + ", concert " + noteWords(cp) + ", " + lab + (extras.length ? ", " + extras.join(", ") : "") + (n.lyric ? ", sung " + n.lyric : "");
       var key = state.part + ":" + mIndex.get(m) + ":" + ni, ann = anns[key] || "";
-      cells.push('<div class="notecell"><button type="button" class="' + cls + '" data-b="' + bi + '" data-n="' + notes.length + '" aria-label="' + esc(aria) + '">' +
+      if (n.grace){
+        /* a decoration (scoop, passing note, turn): a small box on top of the note it belongs to */
+        aria = "Decoration " + (n.after ? "after the note" : "into the note") + ": trumpet " + noteWords(w) + ", concert " + noteWords(cp) + ", " + lab;
+        boxes.push({grace: true, after: !!n.after, t: n.t, html: '<button type="button" class="' + cls + ' grace" data-b="' + bi + '" data-n="' + notes.length + '" aria-label="' + esc(aria) + '">' +
+          '<span class="name">' + esc(w.step) + (w.alter ? '<span class="acc">' + accSym(w.alter) + "</span>" : "") + '<span class="oct">' + w.octave + "</span></span>" + dots + "</button>"});
+      } else {
+      boxes.push({grace: false, t: n.t, html: '<button type="button" class="' + cls + '" data-b="' + bi + '" data-n="' + notes.length + '" aria-label="' + esc(aria) + '">' +
         '<span class="concert">' + esc(cp.step + accSym(cp.alter) + cp.octave) + '</span>' +
         '<span class="name">' + esc(w.step) + (w.alter ? '<span class="acc">' + accSym(w.alter) + "</span>" : "") + '<span class="oct">' + w.octave + "</span></span>" +
         dots + '<span class="fing">' + esc(lab) + "</span>" +
         (extras.length ? '<span class="extra">' + esc(extras.join(" · ")) + "</span>" : "") +
         (n.lyric ? '<span class="lyr">' + esc(n.lyric) + "</span>" : "") + "</button>" +
-        '<input class="annot' + annClass(ann) + '" title="' + esc(ann) + '" type="text" list="techniques" maxlength="60" autocomplete="off" spellcheck="false" enterkeyhint="done" data-key="' + key + '" value="' + esc(ann) + '" aria-label="How to play ' + esc(noteWords(w)) + '"' + (locked ? " readonly" : "") + "></div>");
+        '<input class="annot' + annClass(ann) + '" title="' + esc(ann) + '" type="text" list="techniques" maxlength="60" autocomplete="off" spellcheck="false" enterkeyhint="done" data-key="' + key + '" value="' + esc(ann) + '" aria-label="How to play ' + esc(noteWords(w)) + '"' + (locked ? " readonly" : "") + ">"});
+      }
       var pushed = {t:n.t, durQ:n.durQ, tied:n.tied, grace:n.grace, concert:wm-2, key:key, vel:n.vel};
       notes.push(pushed);
-      sTok.push(n.tied ? "~" : f ? (f==="0" ? "0" : fingLabel(f)) : "?");
+      var tok = n.tied ? "~" : f ? (f==="0" ? "0" : fingLabel(f)) : "?";
+      sTok.push(n.grace ? "(" + tok + ")" : tok);
       if (!n.grace) prev = {wm: wm, start: (n.tied && prev) ? prev.start : at, end: at + n.durQ, bi: bi, note: pushed};
     });
+    cells = noteCells(boxes);
     boff += Math.max(m.len || 0, 0.25);
     bars.push({len:m.len, notes:notes, first:heard});
     notes.forEach(function(x){ if (!x.tied) heard++; });
@@ -919,7 +939,7 @@ function render(){
       (meta.length ? '<span class="bar-meta">' + esc(meta.join(" · ")) + "</span>" : "") + "</div>" +
       '<div class="barplays">' + (notes.length ? '<button type="button" class="btn barplay" data-play="' + bi + '" data-label="Play" aria-label="Play ' + unitL + " " + (bi+1) + '">Play</button>' : "") +
       (bi < seq.length - 1 ? '<button type="button" class="btn barplay" data-from="' + bi + '" data-label="Play from here" aria-label="Play from ' + unitL + " " + (bi+1) + ' to the end">Play from here</button>' : "") + "</div>" +
-      "</div>" + (cells.length ? '<div class="notes">' + cells.join("") + "</div>" : '<p class="rest">Rest</p>') + "</section>");
+      "</div>" + (cells.length ? '<div class="notes' + (boxes.some(function(x){ return x.grace; }) ? " withgr" : "") + '">' + cells.join("") + "</div>" : '<p class="rest">Rest</p>') + "</section>");
   });
   state.bars = bars;
   $("bars").innerHTML = html.join("");
@@ -930,6 +950,29 @@ function render(){
   $("jumps").hidden = !score.hasJumps;
   markTiming();
   prefetchHorn();
+}
+
+/* Each note's box, with its decorations (grace notes) in small boxes on top: one leading into a note sits
+   on that note at the left, one that follows a note (steal-time-previous) on that note at the right. */
+function noteCells(boxes){
+  var owner = boxes.map(function(){ return -1; });
+  boxes.forEach(function(x, i){
+    if (!x.grace) return;
+    var nx = -1, pv = -1, j;
+    for (j = i + 1; j < boxes.length; j++) if (!boxes[j].grace){ nx = j; break; }
+    for (j = i - 1; j >= 0; j--) if (!boxes[j].grace){ pv = j; break; }
+    var into = nx >= 0 && Math.abs(boxes[nx].t - x.t) < 1e-6;
+    owner[i] = x.after ? (pv >= 0 ? pv : nx) : (into || pv < 0 ? nx : pv);
+  });
+  var cells = [];
+  boxes.forEach(function(x, i){
+    if (x.grace && owner[i] >= 0) return;
+    var pre = [], post = [];
+    boxes.forEach(function(g, k){ if (owner[k] === i && g.grace) (k < i ? pre : post).push(g.html); });
+    var top = x.grace ? "" : '<div class="graces"><span class="gpre">' + pre.join("") + '</span><span class="gpost">' + post.join("") + "</span></div>";
+    cells.push('<div class="notecell' + (x.grace ? " lone" : "") + '">' + top + x.html + "</div>");
+  });
+  return cells;
 }
 
 /* ---------- Sound ----------
@@ -1281,6 +1324,10 @@ function buildEvents(from, to){
       var el = document.querySelector('.note[data-b="' + b + '"][data-n="' + ni + '"]');
       var dur = n.grace ? 0.09 : Math.max(0.09, n.durQ*spq);
       var when = off + n.t*spq;
+      if (n.grace){
+        var k = 1; for (var j = ni + 1; j < bar.notes.length && bar.notes[j].grace && bar.notes[j].t === n.t; j++) k++;
+        when = Math.max(0, when - 0.09*k);
+      }
       if (!isFinite(when) || !isFinite(dur)) return;
       if (n.tied && last){ last.dur = when + dur - last.when; return; }
       last = {midi:n.concert, when:when, dur:dur, el:el, fx:parseFx(anns[n.key]), vel:n.vel};
@@ -2365,7 +2412,7 @@ $("bars").addEventListener("click", function(e){
     var nx = state.bars[b].notes[ni + 1];
     for (var k = b + 1; !nx && k < state.bars.length; k++) nx = state.bars[k].notes[0];
     var cells = document.querySelectorAll(".notecell.reveal"); for (var i = 0; i < cells.length; i++) cells[i].classList.remove("reveal");
-    nb.parentNode.classList.add("reveal");
+    nb.closest(".notecell").classList.add("reveal");
     var fx = parseFx(annotations()[n.key]), one = [{midi:n.concert, when:0, dur:0.7, el:nb, fx:fx}];
     if (nx && (fx.slide || fx.slur)) one.push({midi:nx.concert, when:0.7, dur:0.6, el:null, fx:parseFx(annotations()[nx.key])});
     startRun(linkEvents(one), {});
