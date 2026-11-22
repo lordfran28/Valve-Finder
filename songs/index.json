@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T04:39:01Z",
+ "generatedAt": "2026-11-22T04:41:13Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7695,6 +7695,50 @@
      [
       "Plays with",
       "The guitar track on the Fret Finder page (mood-guitar.mp3), 3:05"
+     ],
+     [
+      "Bars",
+      "The same numbers as the Fret Finder page"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-time-after-time",
+   "file": "songs/Arrangements/Time After Time.musicxml.locked",
+   "title": "Time After Time, after Rod Stewart",
+   "kind": "MusicXML",
+   "sha1": "471a172aa960deba6fefcdfbc28df83ebba9f16a",
+   "addedAt": "2026-11-22T04:40:37Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 82,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Time After Time",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record five half steps down, in B (C♯ for the trumpet), concert A♯3 to D♯5. It plays in that guitar track’s time, about 112. Rod sings the verse freely before the band comes in; the trumpet waits through it and leads into the chorus as the band arrives. It keeps Rod’s breaths, letting the long B go before the F♯9 each time, and over the band’s G♯7 the tune’s B rises to B♯, the chord’s own third, before the C♯. Where the record’s trumpet plays the first half of the song and Rod rests, this one does too. The last part is longer, as Rod sings it, and ends on B.",
+    "facts": [
+     [
+      "Song",
+      "Jule Styne and Sammy Cahn (1947)"
+     ],
+     [
+      "Line",
+      "The chorus from the lead sheet, in the form and chords of Rod Stewart’s record"
+     ],
+     [
+      "Key",
+      "B major concert (C♯ for the trumpet)"
+     ],
+     [
+      "Form",
+      "Verse sung freely (the trumpet waits), chorus, the trumpet’s half, the second half and a longer ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (tat-guitar.mp3), 2:57"
      ],
      [
       "Bars",
