@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-22T19:33:36Z",
+ "generatedAt": "2026-11-23T07:26:04Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9359,6 +9359,50 @@
      [
       "Bars",
       "The four intro bars and the pickup come first, so bar 1 of the Fret Finder page is bar 6 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-youd-be-so-nice-to-come-home-to",
+   "file": "songs/Arrangements/You’d Be So Nice to Come Home To, on the Fret Finder guitar.musicxml.locked",
+   "title": "You’d Be So Nice to Come Home To, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "75700327f27ef30f753e31ab8778c4d6eac528d0",
+   "addedAt": "2026-11-23T07:25:38Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 105,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "You’d Be So Nice to Come Home To, on the Fret Finder guitar",
+    "lead": "The tune for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows a slow record in A minor, the lead sheet’s own key: concert A4 to E5 (B to F♯ for the trumpet). The record’s arranger stretches the song, so the lead sheet’s bars sit where the singer on that record puts them: a note lasts longer where he holds it, the pickups come where his do, and where the band’s chord comes half a bar early the note comes with it. The notes are the lead sheet’s. The long free intro and the instrumental, where the record has a horn solo, are the guitar’s; the trumpet comes back with the pickup. At the end it plays the record’s last horn line, as the guitar plays it on the page, and holds the C.",
+    "facts": [
+     [
+      "Song",
+      "Cole Porter (1942)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, on the Fret Finder page’s bars and chords; the last line is the record’s horn, as the page has it"
+     ],
+     [
+      "Key",
+      "A minor concert (B minor for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro (guitar), the song’s first half, its second half, instrumental (guitar), the second half again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (ybsn-guitar.mp3), 4:22"
+     ],
+     [
+      "Bars",
+      "The page’s intro is 20 bars, so bar 1 of the Fret Finder page is bar 21 here"
      ]
     ]
    }
