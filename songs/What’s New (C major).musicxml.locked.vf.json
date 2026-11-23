@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-what-s-new-c-major",
+ "title": "What’s New (C major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T14:19:49.000Z",
+ "updatedAt": "2026-11-23T14:19:49.000Z",
+ "units": {
+  "count": 33,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "What’s New",
+  "lead": "Bob Haggart, 1939, words by Johnny Burke. The chorus as it is written, both endings in their place, in C major: concert C4 to F5. Each A begins on a long C and slides down in triplets and eighths to a low E♭; the middle part is the same line a fourth higher, from F. Slow, about 72 a minute."
+ }
+}
