@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-the-way-you-look-tonight-f-major",
+ "title": "The Way You Look Tonight (F major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T14:21:51.000Z",
+ "updatedAt": "2026-11-23T14:21:51.000Z",
+ "units": {
+  "count": 67,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "The Way You Look Tonight",
+  "lead": "Jerome Kern, 1936, words by Dorothy Fields. The chorus as it is written, both endings in their place, in F major: concert D4 to F5. Whole notes C and F open each A, then the line climbs by step to the high F; the middle part moves to A♭ and D♭, on repeated C and E♭. Where the band fills, the trumpet rests a bar or two. About 120 a minute."
+ }
+}
