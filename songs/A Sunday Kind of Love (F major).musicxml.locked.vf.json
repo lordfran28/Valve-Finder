@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-a-sunday-kind-of-love-f-major",
+ "title": "A Sunday Kind of Love (F major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T18:22:10.000Z",
+ "updatedAt": "2026-11-23T18:22:10.000Z",
+ "units": {
+  "count": 33,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "A Sunday Kind of Love",
+  "lead": "Barbara Belle, Louis Prima, Anita Leonard and Stan Rhodes, 1946. The chorus as it is written, with the return to the sign and the coda in their place, in F major: concert B♭3 to E5. The pickup starts high on C and the A drops to the low C, then climbs in dotted rhythms back up to C; the middle part moves on G and A, up to E. In two, slow: about 80 quarter notes a minute."
+ }
+}

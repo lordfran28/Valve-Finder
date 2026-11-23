@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-a-ghost-of-a-chance-c-major",
+ "title": "A Ghost of a Chance (C major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T18:22:10.000Z",
+ "updatedAt": "2026-11-23T18:22:10.000Z",
+ "units": {
+  "count": 33,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "A Ghost of a Chance",
+  "lead": "Victor Young, 1932, words by Bing Crosby and Ned Washington. The chorus as it is written, with the return to the sign and the coda in their place, in C major: concert D4 to E5. Each A repeats G, steps up to B♭ and slides back by half steps through A and A♭, then rises to D and falls to E or C; the middle part climbs in triplets to A, B♭ and C. Slow, about 80 a minute."
+ }
+}
