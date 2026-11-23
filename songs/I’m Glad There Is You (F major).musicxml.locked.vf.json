@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-i-m-glad-there-is-you-f-major",
+ "title": "I’m Glad There Is You (F major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T10:20:52.000Z",
+ "updatedAt": "2026-11-23T10:20:52.000Z",
+ "units": {
+  "count": 36,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "I’m Glad There Is You",
+  "lead": "Jimmy Dorsey and Paul Madeira, 1941. The chorus as it is written, in F major: concert D4 to F5. Each A section starts on long notes that step down by half steps, E, E♭, D, before it lifts; the last one climbs to the high F and comes home. Slow, about 66 a minute."
+ }
+}
