@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-a-cottage-for-sale-e-major",
+ "title": "A Cottage for Sale (E♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T10:20:14.000Z",
+ "updatedAt": "2026-11-23T10:20:14.000Z",
+ "units": {
+  "count": 33,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 92,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "A Cottage for Sale",
+  "lead": "Willard Robison, 1930, words by Larry Conley. The chorus as it is written, with its last ending, in E♭ major: concert E♭4 to F5. Each line rises by step to a note tied over the beat, then falls back; the middle part sits high on D and E♭. In two, slow: about 92 quarter notes a minute."
+ }
+}

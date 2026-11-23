@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-more-than-you-know-e-major",
+ "title": "More Than You Know (E♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T10:20:14.000Z",
+ "updatedAt": "2026-11-23T10:20:14.000Z",
+ "units": {
+  "count": 34,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 76,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "More Than You Know",
+  "lead": "Vincent Youmans, 1929, words by William Rose and Edward Eliscu. The chorus as it is written, with its last ending, in E♭ major: concert D4 to G5. Each phrase climbs in triplets (B♭, B, C) to a held note; the middle part runs down in eighths. Slow, about 76 a minute."
+ }
+}
