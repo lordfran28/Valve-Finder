@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-23T07:26:04Z",
+ "generatedAt": "2026-11-23T08:27:51Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9403,6 +9403,46 @@
      [
       "Bars",
       "The page’s intro is 20 bars, so bar 1 of the Fret Finder page is bar 21 here"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-i-wish-you-love-ff",
+   "file": "songs/Arrangements/I Wish You Love, on the Fret Finder guitar.musicxml.locked",
+   "title": "I Wish You Love, on the Fret Finder guitar (after Rod Stewart)",
+   "kind": "MusicXML",
+   "sha1": "49c2cf7f8c610f2ef07e76dd7a0b3d390c990072",
+   "addedAt": "2026-11-23T08:27:20Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 81,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Wish You Love, on the Fret Finder guitar",
+    "lead": "The refrain for trumpet, set on the bars of the Fret Finder guitar arrangement, which follows Rod Stewart’s record a fifth below his key, in D♭: concert B♭3 to E♭5 (E♭ for the trumpet). The notes are the lead sheet’s, placed where Rod sings them, with a breath in the middle of every other bar. The free verse, the instrumental and Rod’s tag are the guitar’s. Where the guitar’s chord would rub the lead sheet’s note, the trumpet takes Rod’s note or the chord’s: A over E♭9 with A in the bass, D♭ with the guitar’s sus 4, F over G9♯11, B♭ over G♭6/9, and C until D♭ major 9 comes. In the last A Rod holds a bar longer, climbs to E♭ where the sheet has C, and comes home late; the trumpet goes with him.",
+    "facts": [
+     [
+      "Song",
+      "Charles Trenet (1942), English words by Albert Beach"
+     ],
+     [
+      "Line",
+      "The refrain from the lead sheet, on the Fret Finder page’s bars, placed where Rod sings it"
+     ],
+     [
+      "Key",
+      "D♭ major concert (E♭ for the trumpet)"
+     ],
+     [
+      "Form",
+      "Verse (guitar), A, A again, bridge, last A, instrumental (guitar), bridge again, last A again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (iwylr-guitar.mp3), 3:33"
      ]
     ]
    }
