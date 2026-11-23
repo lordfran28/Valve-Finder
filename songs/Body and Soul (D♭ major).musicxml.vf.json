@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "std-body-and-soul-d-major",
+ "title": "Body and Soul (D♭ major)",
+ "category": "contemporary",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-23T22:23:02.000Z",
+ "updatedAt": "2026-11-23T22:23:02.000Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Body and Soul",
+  "lead": "Johnny Green, 1930, words by Edward Heyman, Robert Sour and Frank Eyton. The chorus as it is written, both endings in their place and the return to the top and the coda written out, in D♭ major: concert A3 to E5. Each A rises in dotted rhythms from E♭ and F to B♭, then on to E♭; the middle part steps up a half step into D major, then down into C, and falls back into D♭. Slow, about 66 a minute."
+ }
+}
