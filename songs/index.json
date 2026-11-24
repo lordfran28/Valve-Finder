@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-23T22:23:52Z",
+ "generatedAt": "2026-11-24T03:16:53Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9640,6 +9640,40 @@
    "details": {
     "title": "Like Someone in Love",
     "lead": "Jimmy Van Heusen, 1944, words by Johnny Burke. The chorus as it is written, with its last ending, in C major: concert D4 to E5. Each A starts on four E’s, then turns up to A and back down; the B leans on C♯ and B, then holds a long low E, or D and D♯, before the line comes back. In two; the lead sheet marks it fast, here about 96 a minute."
+   }
+  },
+  {
+   "id": "shatrov-manchuria-waltz",
+   "file": "songs/Shatrov – On the Hills of Manchuria (F minor).musicxml",
+   "title": "Shatrov – On the Hills of Manchuria, waltz",
+   "kind": "MusicXML",
+   "sha1": "ef92d903e10bb6c259889e2ae0773157fa6c21da",
+   "addedAt": "2026-11-24T03:16:31Z",
+   "category": "classical",
+   "units": {
+    "count": 128,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Shatrov – On the Hills of Manchuria, waltz",
+    "lead": "Ilya Shatrov wrote it in 1906, a bandmaster back from the war with the regiment that was surrounded at Mukden. This is the melody of the Moscow edition (O. F. Knaub), every note as it is printed, in the edition’s key, F minor: concert A♭3 to A♭5, so the waltz sits high, around F5 to A♭5. The repeats are written out in playing order: the waltz twice, the passionate middle part twice, the waltz again, the playful part twice, then the coda. In the coda the soldiers’ tune is in the piano’s left hand; here it is an octave higher. You rest while the trains move off, and the last three notes are the top of the piano’s last chords, an octave lower. A waltz in one: about 160 quarter notes a minute."
+   }
+  },
+  {
+   "id": "shatrov-manchuria-intro",
+   "file": "songs/Shatrov – On the Hills of Manchuria, introduction (F minor).musicxml",
+   "title": "Shatrov – On the Hills of Manchuria, introduction",
+   "kind": "MusicXML",
+   "sha1": "acc9375557baf3963d212103ac82a49e42730f41",
+   "addedAt": "2026-11-24T03:16:31Z",
+   "category": "classical",
+   "units": {
+    "count": 9,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Shatrov – On the Hills of Manchuria, introduction",
+    "lead": "The opening of the introduction, Andante and sad, from the same Moscow edition: the waltz’s tune slowly, with its triplets, up to the held F. The rest of the introduction (the orphaned women talking, the soldiers talking, their anger) is piano writing with no single line for a trumpet, so it is left out. Slow: about 66 quarter notes a minute."
    }
   },
   {
