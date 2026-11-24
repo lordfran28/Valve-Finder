@@ -1,0 +1,146 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-44",
+ "title": "Arban – Ornament Study No. 44",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11055,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "p, slur",
+  "0:0:1": "slur",
+  "0:1:0": "slur",
+  "0:1:1": "slur",
+  "0:2:0": "slur",
+  "0:2:1": "slur",
+  "0:3:0": "dim, slur",
+  "0:4:0": "slur",
+  "0:4:1": "slur",
+  "0:5:0": "slur",
+  "0:5:2": "slur",
+  "0:5:3": "slur",
+  "0:5:4": "slur",
+  "0:5:5": "slur",
+  "0:6:0": "slur",
+  "0:6:1": "slur",
+  "0:7:0": "slur",
+  "0:8:0": "slur",
+  "0:8:2": "cre-, slur",
+  "0:9:0": "-scen-, slur",
+  "0:10:0": "-do",
+  "0:10:1": "slur",
+  "0:10:2": "poco, slur",
+  "0:11:0": "a poco, slur",
+  "0:12:0": "cresc, slur",
+  "0:12:2": "slur",
+  "0:13:0": "f, dim, slur",
+  "0:14:0": "slur",
+  "0:14:2": "slur",
+  "0:15:0": "dim, slur",
+  "0:16:0": "p, cresc, slur",
+  "0:16:2": "sf, slur",
+  "0:17:0": "dim, slur",
+  "0:18:0": "cresc, slur",
+  "0:18:2": "sf, slur",
+  "0:19:0": "dim, slur",
+  "0:20:0": "slur",
+  "0:20:1": "slur",
+  "0:20:2": "slur",
+  "0:20:3": "slur",
+  "0:20:4": "slur",
+  "0:21:0": "f, slur",
+  "0:21:1": "slur",
+  "0:22:0": "slur",
+  "0:22:1": "slur",
+  "0:22:2": "slur",
+  "0:22:3": "slur",
+  "0:22:4": "slur",
+  "0:22:5": "slur",
+  "0:22:6": "slur",
+  "0:23:0": "slur",
+  "0:23:1": "slur",
+  "0:23:3": "slur",
+  "0:24:0": "p, slur",
+  "0:24:1": "slur",
+  "0:25:0": "slur",
+  "0:25:1": "slur",
+  "0:26:0": "slur",
+  "0:26:1": "slur",
+  "0:27:0": "dim, slur",
+  "0:28:0": "slur",
+  "0:28:1": "slur",
+  "0:29:0": "slur",
+  "0:29:2": "slur",
+  "0:29:3": "slur",
+  "0:29:4": "slur",
+  "0:29:5": "slur",
+  "0:30:0": "slur",
+  "0:30:1": "slur",
+  "0:31:0": "rall., slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 44",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "106"
+   ],
+   [
+    "Tempo marking",
+    "Andante con spirito"
+   ],
+   [
+    "Layout",
+    "The appoggiaturas are written out here as the book prints them, the way they are played: each falls on the beat and takes half its note. The small notes after the long notes in bars 6, 21, 23 and 30 are a turn played at the end of the note. The figures 1 and 2 under the E naturals in bars 20 and 21 are the valves the book asks for there."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The simple appoggiatura",
+    "paragraphs": [
+     "The simple appoggiatura is a small note that is no part of the chord, and that nevertheless takes half the length of the note before which it stands (Example 8).",
+     "The appoggiatura can be placed above or below any note. When it is above, it can be a whole step or a half step away; when it is below, it must always be a half step away (Example 9).",
+     "In the music of the old masters there are a great many appoggiaturas that must take half the length of the note they come before; but today, so that everyone plays them alike, music is generally written as it is to be played, which is beyond question much better. (See Nos. 44 to 47.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
