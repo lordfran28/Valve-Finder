@@ -293,8 +293,12 @@ def main():
             units = side.get("units")
             if isinstance(units, dict) and isinstance(units.get("count"), int):
                 entry["units"] = {"count": units["count"], "unit": str(units.get("unit") or "Bar")}
-            # "Details on the piece": the encyclopedia entry shown at the foot of the song
-            if isinstance(side.get("details"), dict) and side["details"]:
+            # a heading the library puts above a run of songs: a book's section, the scales below the warm-ups
+            if isinstance(side.get("group"), str) and side["group"].strip():
+                entry["group"] = side["group"].strip()[:80]
+            # "Details on the piece": the encyclopedia entry shown at the foot of the song. A book's exercises carry
+            # long texts; the site reads those from the song's own .vf.json when it opens, so the list stays small.
+            if isinstance(side.get("details"), dict) and side["details"] and entry.get("category") not in ("arban", "clarke"):
                 entry["details"] = side["details"]
             songs.append(entry)
     songs.sort(key=lambda s: (str(s["addedAt"]), s["file"]))

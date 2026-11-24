@@ -1,0 +1,62 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-first-studies-no-46",
+ "title": "Arban – First Studies No. 46",
+ "category": "arban",
+ "group": "First Studies",
+ "order": 46,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 104,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 88,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Arban – First Studies No. 46",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "First Studies"
+   ],
+   [
+    "Page in the book",
+    "20"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Explanation of the first studies",
+    "paragraphs": [
+     "No. 1. Attack the sound saying the syllable tu, and hold it well, giving it all the brilliance and all the strength possible.",
+     "In no circumstances should the cheeks be puffed out. The lips must make no noise in the mouthpiece, as many people imagine. The sound forms by itself; one must only attack it well, stretching the lips so that it is at its proper pitch and not under it, for that would give an unpleasant, out-of-tune sound.",
+     "Nos. 7 and 8 show all the notes that are played with the same valves. Nos. 9 and 10, going through every key, are meant to complete the whole set of fingerings, so that the valve numbers no longer have to be marked under each note. So the first two lessons should be played for quite a long time, until the fingering of the instrument is well known.",
+     "From now on I shall mark only the fingerings that make something easier. In all the lessons up to No. 50, every sound must be attacked, and every note given its true value; all the first studies are written for that purpose."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

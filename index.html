@@ -167,6 +167,8 @@ button.addlink{border:0;background-color:transparent;margin:0}
   .cat{justify-content:space-between}
 }
 .songlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.songlist .grp{font-family:var(--display);font-size:1.2rem;color:var(--brass);margin:18px 2px 0;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.songlist .grp:first-child{margin-top:4px}
 .song{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:12px 14px;color:var(--ink);text-decoration:none}
 .song:hover{border-color:var(--brass)}
 .song-main{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
@@ -1865,7 +1867,7 @@ function isLocked(rec){ return !!(rec && rec.inArchive && !isOwner()); }
 var ghQueue = Promise.resolve();
 function enqueue(fn){ var p = ghQueue.then(fn, fn); ghQueue = p.catch(function(){}); return p; }
 /* category and details are written by hand in the songs folder; saving from the site keeps them as they are */
-function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, category: rec.category || undefined, order: rec.order || undefined, era: rec.era || undefined, year: rec.year || undefined, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null, details: rec.details || undefined}; }
+function sidecarOf(rec){ return {app: "Valve Finder", version: 2, id: rec.id, title: rec.title, category: rec.category || undefined, order: rec.order || undefined, group: rec.group || undefined, era: rec.era || undefined, year: rec.year || undefined, kind: rec.kind, addedAt: rec.addedAt, updatedAt: rec.updatedAt, units: rec.units || null, settings: rec.settings || null, notes: rec.notes || null, timing: rec.timing || null, details: rec.details || undefined}; }
 function safeName(t){ return String(t || "").replace(/[\\/:*?"<>|#%\u0000-\u001f]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80) || "Song"; }
 function pickPath(rec){
   var used = {};
@@ -2024,7 +2026,8 @@ function composerFirst(t){
 }
 function isOld(meta, title){ return !!(composerOf(title) || (meta && (meta.era === "classical" || (meta.year && meta.year < 1920)))); }
 /* Categories. A song's own is set in its .vf.json; a song without one goes by its title: a composer or an old piece is Classical. */
-var CATS = [{id: "classical", label: "Classical"}, {id: "contemporary", label: "Contemporary"}, {id: "anthems", label: "Anthems"}, {id: "arrangements", label: "Arrangements"}, {id: "warmup", label: "Warm-up"}];
+var CATS = [{id: "classical", label: "Classical"}, {id: "contemporary", label: "Contemporary"}, {id: "anthems", label: "Anthems"}, {id: "arrangements", label: "Arrangements"}, {id: "warmup", label: "Warm-up"}, {id: "arban", label: "Arban"}, {id: "clarke", label: "Clarke"}];
+var ORDERED = {warmup: 1, arban: 1, clarke: 1};
 var CAT_LABEL = {}; CATS.forEach(function(c){ CAT_LABEL[c.id] = c.label; });
 var libCat = (function(){ try { var c = localStorage.getItem("vf.cat"); return CAT_LABEL[c] ? c : "all"; } catch(e){ return "all"; } })();
 function catOf(x){
@@ -2062,18 +2065,22 @@ function renderLibrary(){
   Object.keys(cache).forEach(function(id){ if (!seen[id] && !(cache[id].dupOf && seen[cache[id].dupOf])) list.push({rec: cache[id], meta: cache[id]}); });
   list.forEach(function(x){ x.title = composerFirst(x.site && x.rec && !x.rec.dirty ? x.site.title : x.meta.title); x.key = sortKey(x.title); x.old = isOld(x.site || x.meta, x.title); x.cat = catOf(x);
     var ord = (x.site && x.site.order) || x.meta.order;
-    if (x.cat === "warmup") x.key = "\uffff" + ("0000" + (typeof ord === "number" ? ord : 9999)).slice(-4) + " " + x.key; });
+    x.group = (x.site && x.site.group) || x.meta.group || "";
+    if (ORDERED[x.cat]) x.key = "\uffff" + (ORDERED[x.cat] ? CATS.map(function(c){ return c.id; }).indexOf(x.cat) : 0) + ("00000" + (typeof ord === "number" ? ord : 99999)).slice(-5) + " " + x.key; });
   list.sort(function(a, b){ return a.key < b.key ? -1 : a.key > b.key ? 1 : 0; });
   var cat = renderCats(list);
   var q = sortKey($("search").value).split(" ").filter(Boolean);
   $("searchwrap").hidden = !list.length;
   var shown = list.filter(function(x){
     if (cat !== "all" && x.cat !== cat) return false;
-    var hay = x.key + " " + sortKey(String(x.meta.file || "").split("/").pop()) + " " + sortKey(CAT_LABEL[x.cat]);
+    var hay = x.key + " " + sortKey(String(x.meta.file || "").split("/").pop()) + " " + sortKey(CAT_LABEL[x.cat]) + " " + sortKey(x.group);
     return q.every(function(w){ return hay.indexOf(w) >= 0; });
   });
-  var owner = isOwner();
+  var owner = isOwner(), lastGroup = "";
   $("songlist").innerHTML = shown.map(function(x){
+    /* a book's sections, and the scales below the warm-ups, get a heading line */
+    var head = "";
+    if (x.group !== lastGroup){ if (x.group) head = '<li class="grp" role="presentation">' + esc(x.group) + "</li>"; lastGroup = x.group; }
     /* a song added on a device without the key stays on that device: say so, or it looks lost on the other devices */
     var st = x.rec && !x.rec.inArchive ? (owner ? ["warn", "Not on the site yet"] : ["plain", "Only on this device"]) : owner && x.rec && x.rec.dirty ? ["busy", "Saving"] : null;
     var u = x.meta.units, bits = [];
@@ -2087,7 +2094,7 @@ function renderLibrary(){
     if (pre){ who = pre[1]; lead = 0; }
     var name = who ? '<span class="composer">' + esc(x.title.slice(0, who.length)) + '</span>' + esc(x.title.slice(who.length))
       : lead ? '<span class="lead">' + esc(x.title.slice(0, lead)) + '</span>' + esc(x.title.slice(lead)) : esc(x.title);
-    return '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + name +
+    return head + '<li><a class="song" href="#song-' + esc(x.meta.id) + '"><span class="song-main"><span class="song-title">' + name +
       '</span><span class="song-meta">' + esc(bits.join(" · ")) + '</span></span>' + (st ? '<span class="status st-' + st[0] + '">' + st[1] + "</span>" : "") + "</a></li>";
   }).join("");
   $("empty").hidden = list.length > 0;
@@ -2125,6 +2132,7 @@ function syncLibrary(){
           if (!r.file) r.file = listed[id].file;
           if (listed[id].category) r.category = listed[id].category;
           if (listed[id].order) r.order = listed[id].order;
+          if (listed[id].group) r.group = listed[id].group;
           if (listed[id].details) r.details = listed[id].details;
           r.inArchive = true; return;
         }
@@ -2267,7 +2275,7 @@ function showRecord(rec){
     if (rec.inArchive && rec.file && !rec.dirty) fetchSidecar(rec.file).then(function(o){
       if (!o || rec.dirty || !(String(o.updatedAt || "") > String(rec.updatedAt || ""))) return;
       rec.title = o.title || rec.title; rec.era = o.era || rec.era; rec.year = o.year || rec.year; rec.settings = o.settings || null; rec.notes = o.notes || null; rec.timing = o.timing || null; rec.updatedAt = o.updatedAt;
-      rec.category = o.category || rec.category; rec.order = o.order || rec.order; rec.details = o.details || rec.details;
+      rec.category = o.category || rec.category; rec.order = o.order || rec.order; rec.group = o.group || rec.group; rec.details = o.details || rec.details;
       rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       Store.put(rec);
       if (state.rec === rec){ setTitle(rec.title, isLocked(rec)); state.tempoOwn = !!(rec.settings && rec.settings.tempoOwn); applySettings(rec.settings); render(); renderDetails(rec); }
@@ -2287,7 +2295,7 @@ function openSong(id){
     if (!m) throw userErr("This song isn't on the site anymore.");
     return Promise.all([fetchBytes(m.file).then(function(b){ return m.locked ? Sealed.open(b) : b; }), fetchSidecar(m.file)]).then(function(got){
       var o = got[1] || {};
-      var rec = {id: m.id, file: m.file, title: o.title || m.title, category: o.category || m.category, order: o.order || m.order, details: o.details || m.details, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
+      var rec = {id: m.id, file: m.file, title: o.title || m.title, category: o.category || m.category, order: o.order || m.order, group: o.group || m.group, details: o.details || m.details, era: o.era || m.era, year: o.year || m.year, fileName: m.file.split("/").pop(), kind: m.kind, addedAt: o.addedAt || m.addedAt, updatedAt: o.updatedAt || m.addedAt,
                  units: null, settings: o.settings || null, notes: o.notes || null, timing: o.timing || null, data: bytesToB64(got[0]), inArchive: true, dirty: false, archivedAt: new Date().toISOString()};
       rec.sideSaved = JSON.stringify(Object.assign({}, sidecarOf(rec), {updatedAt: null}));
       cache[rec.id] = rec;
