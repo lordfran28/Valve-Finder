@@ -1,0 +1,181 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-38",
+ "title": "Arban – Ornament Study No. 38",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11049,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 48,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 88,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "accent",
+  "0:0:1": "slur",
+  "0:0:2": "slur",
+  "0:1:0": "accent",
+  "0:1:1": "slur",
+  "0:1:2": "slur",
+  "0:2:0": "accent",
+  "0:2:1": "slur",
+  "0:2:2": "slur",
+  "0:3:0": "accent",
+  "0:4:2": "slur",
+  "0:4:3": "slur",
+  "0:5:2": "slur",
+  "0:5:3": "slur",
+  "0:6:2": "slur",
+  "0:6:3": "slur",
+  "0:8:0": "accent",
+  "0:8:1": "slur",
+  "0:8:2": "slur",
+  "0:9:0": "accent",
+  "0:9:1": "slur",
+  "0:9:2": "slur",
+  "0:10:0": "accent",
+  "0:10:1": "slur",
+  "0:10:2": "slur",
+  "0:11:0": "accent",
+  "0:12:2": "slur",
+  "0:12:3": "slur",
+  "0:13:0": "slur",
+  "0:13:1": "slur",
+  "0:13:3": "staccato",
+  "0:13:4": "staccato",
+  "0:13:5": "staccato",
+  "0:14:0": "slur",
+  "0:14:2": "rall., slur",
+  "0:14:3": "slur",
+  "0:15:0": "slur",
+  "0:15:1": "slur",
+  "0:15:2": "slur",
+  "0:17:2": "slur",
+  "0:17:3": "slur",
+  "0:18:2": "slur",
+  "0:18:3": "slur",
+  "0:20:1": "slur",
+  "0:20:2": "slur",
+  "0:21:0": "slur",
+  "0:21:2": "slur",
+  "0:21:3": "slur",
+  "0:22:2": "slur",
+  "0:22:3": "slur",
+  "0:23:0": "cresc, slur",
+  "0:24:1": "slur",
+  "0:24:2": "slur",
+  "0:24:3": "slur",
+  "0:25:2": "slur",
+  "0:25:3": "slur",
+  "0:26:0": "slur",
+  "0:28:0": "slur",
+  "0:28:2": "slur",
+  "0:28:3": "slur",
+  "0:29:0": "slur",
+  "0:29:2": "slur",
+  "0:29:3": "slur",
+  "0:30:0": "slur",
+  "0:31:2": "fermata",
+  "0:32:0": "accent",
+  "0:32:1": "slur",
+  "0:32:2": "slur",
+  "0:33:0": "accent",
+  "0:33:1": "slur",
+  "0:33:2": "slur",
+  "0:34:0": "accent",
+  "0:34:1": "slur",
+  "0:34:2": "slur",
+  "0:35:0": "accent",
+  "0:36:2": "slur",
+  "0:36:3": "slur",
+  "0:37:2": "slur",
+  "0:37:3": "slur",
+  "0:38:2": "slur",
+  "0:38:3": "slur",
+  "0:40:0": "accent",
+  "0:40:1": "slur",
+  "0:40:2": "slur",
+  "0:41:0": "accent",
+  "0:41:1": "slur",
+  "0:41:2": "slur",
+  "0:42:0": "accent",
+  "0:42:1": "slur",
+  "0:42:2": "slur",
+  "0:43:0": "accent",
+  "0:44:2": "slur",
+  "0:44:3": "slur",
+  "0:45:0": "slur",
+  "0:45:1": "slur",
+  "0:45:3": "staccato",
+  "0:45:4": "staccato",
+  "0:45:5": "staccato",
+  "0:46:0": "slur",
+  "0:46:2": "rall., slur",
+  "0:46:3": "slur",
+  "0:47:0": "slur",
+  "0:47:1": "slur",
+  "0:47:2": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 38",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "104"
+   ],
+   [
+    "Tempo marking",
+    "Allegretto"
+   ],
+   [
+    "Layout",
+    "Each pair of small notes comes before the beat of its note. The book has 32 bars, with Fin at bar 16 and D.C. at the end: back to the start, ending at Fin. Written out here in playing order (48 bars)."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Double appoggiaturas",
+    "paragraphs": [
+     "There are two kinds of double appoggiatura. The first is made of two small notes that may start a third away from the note they go with, either going up or going down (Examples 5 and 6).",
+     "The double appoggiatura must not take its length from the note it goes with; on the contrary, it must come before it, as the second half of Example 6 shows.",
+     "The second kind of double appoggiatura is made of an upper and a lower appoggiatura, and must be played as the second half of Example 7 shows (Example 7).",
+     "These appoggiaturas must take their length from the beat before the note they go with. (See Nos. 36 to 43.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
