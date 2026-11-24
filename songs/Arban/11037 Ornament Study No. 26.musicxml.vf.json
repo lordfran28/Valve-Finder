@@ -1,0 +1,177 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-26",
+ "title": "Arban – Ornament Study No. 26",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11037,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 16,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "turn after",
+  "0:0:1": "slur",
+  "0:1:0": "turn after",
+  "0:2:0": "turn after ♯",
+  "0:2:1": "slur",
+  "0:3:0": "slur, turn after ♯",
+  "0:4:0": "turn after ♯",
+  "0:4:1": "slur",
+  "0:5:0": "turn after ♯",
+  "0:5:1": "slur",
+  "0:6:0": "turn after ♯",
+  "0:6:1": "slur",
+  "0:8:0": "slur, turn after ♮",
+  "0:8:1": "slur",
+  "0:8:2": "slur",
+  "0:9:0": "slur, turn after",
+  "0:10:0": "slur, turn after ♯",
+  "0:11:0": "slur, turn after ♯",
+  "0:12:0": "slur, turn after ♮",
+  "0:12:2": "slur",
+  "0:12:3": "slur",
+  "0:12:4": "slur",
+  "0:13:0": "slur, turn after ♯",
+  "0:14:0": "turn after ♯",
+  "0:14:1": "slur",
+  "0:15:0": "slur",
+  "1:0:1": "slur",
+  "1:0:2": "slur",
+  "1:0:3": "slur",
+  "1:0:4": "slur",
+  "1:0:6": "slur",
+  "1:1:1": "slur",
+  "1:1:2": "slur",
+  "1:1:3": "slur",
+  "1:1:4": "slur",
+  "1:2:1": "slur",
+  "1:2:2": "slur",
+  "1:2:3": "slur",
+  "1:2:4": "slur",
+  "1:2:6": "slur",
+  "1:3:1": "slur",
+  "1:3:2": "slur",
+  "1:3:3": "slur",
+  "1:3:4": "slur",
+  "1:4:1": "slur",
+  "1:4:2": "slur",
+  "1:4:3": "slur",
+  "1:4:4": "slur",
+  "1:4:6": "slur",
+  "1:5:1": "slur",
+  "1:5:2": "slur",
+  "1:5:3": "slur",
+  "1:5:4": "slur",
+  "1:5:6": "slur",
+  "1:6:1": "slur",
+  "1:6:2": "slur",
+  "1:6:3": "slur",
+  "1:6:4": "slur",
+  "1:6:6": "slur",
+  "1:8:0": "slur",
+  "1:8:1": "slur",
+  "1:8:2": "slur",
+  "1:8:3": "slur",
+  "1:8:4": "slur",
+  "1:8:6": "slur",
+  "1:8:7": "slur",
+  "1:9:0": "slur",
+  "1:9:1": "slur",
+  "1:9:2": "slur",
+  "1:9:3": "slur",
+  "1:9:4": "slur",
+  "1:10:0": "slur",
+  "1:10:1": "slur",
+  "1:10:2": "slur",
+  "1:10:3": "slur",
+  "1:10:4": "slur",
+  "1:11:0": "slur",
+  "1:11:1": "slur",
+  "1:11:2": "slur",
+  "1:11:3": "slur",
+  "1:11:4": "slur",
+  "1:12:0": "slur",
+  "1:12:1": "slur",
+  "1:12:2": "slur",
+  "1:12:3": "slur",
+  "1:12:4": "slur",
+  "1:12:7": "slur",
+  "1:12:8": "slur",
+  "1:12:9": "slur",
+  "1:13:0": "slur",
+  "1:13:1": "slur",
+  "1:13:2": "slur",
+  "1:13:3": "slur",
+  "1:13:4": "slur",
+  "1:14:1": "slur",
+  "1:14:2": "slur",
+  "1:14:3": "slur",
+  "1:14:4": "slur",
+  "1:14:6": "slur",
+  "1:15:0": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 26",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "100"
+   ],
+   [
+    "Tempo marking",
+    "Andante"
+   ],
+   [
+    "Layout",
+    "Printed on two staves like No. 24, here with the turn sign after the note: the note is held, and the turn comes on its second beat. Choose \"Cornet, as written\" or \"Cornet, as played\". In bar 9 the upper staff prints a dot after the half note C, which would make the bar a beat too long; the lower staff plays it as a half note, and so it is written here. The figures 1 and 2 under the E in bar 1 of the lower staff are the valves the book asks for there."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The turn (gruppetto)",
+    "paragraphs": [
+     "The first twenty-three studies of this part are written only to prepare the pupil for the gruppetto, which, as everyone knows, means surrounding any note of a chord with appoggiaturas. These studies must be played slowly, so that the lips and the fingers learn to move perfectly together. For that, give the lower or upper appoggiatura as much length as the note they turn around.",
+     "There are two kinds of four-note gruppetto. The first is marked as in Example 1. You can see that the first loop of the sign is in the air, which shows that the first appoggiatura must be the upper one. The lower appoggiatura must always be a half step from the note it goes with; it is marked by an accidental placed under the sign. As for the upper appoggiatura, it may be a whole step or a half step, according to the key of the piece.",
+     "The second gruppetto is marked as in Example 2. You can see that the first loop of the sign is at the bottom, which shows that the first appoggiatura must be the lower one.",
+     "That, at least, is how it ought to be written; but unhappily composers today neglect these details and nearly always leave them to the taste of the player. (For this kind of ornament, see Nos. 24 to 31.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
