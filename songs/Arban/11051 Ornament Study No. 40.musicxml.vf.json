@@ -1,0 +1,143 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-40",
+ "title": "Arban – Ornament Study No. 40",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11051,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 21,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:1:0": "slur",
+  "0:1:1": "slur",
+  "0:1:2": "slur",
+  "0:1:5": "slur",
+  "0:1:6": "slur",
+  "0:1:7": "slur",
+  "0:2:0": "slur",
+  "0:3:0": "slur",
+  "0:3:1": "slur",
+  "0:3:4": "slur",
+  "0:3:5": "slur",
+  "0:3:6": "slur",
+  "0:4:0": "slur",
+  "0:4:1": "slur",
+  "0:5:0": "slur",
+  "0:5:1": "slur",
+  "0:5:2": "slur",
+  "0:5:5": "slur",
+  "0:5:6": "slur",
+  "0:5:7": "slur",
+  "0:6:0": "slur",
+  "0:7:0": "slur",
+  "0:7:1": "slur",
+  "0:7:2": "slur",
+  "0:8:0": "slur",
+  "0:8:1": "slur",
+  "0:9:0": "slur",
+  "0:9:1": "slur",
+  "0:9:4": "slur",
+  "0:9:6": "slur",
+  "0:9:7": "slur",
+  "0:9:10": "slur",
+  "0:10:0": "slur",
+  "0:10:1": "slur",
+  "0:11:0": "slur",
+  "0:11:1": "slur",
+  "0:11:4": "slur",
+  "0:11:6": "slur",
+  "0:11:7": "slur",
+  "0:12:2": "slur",
+  "0:13:0": "slur",
+  "0:13:1": "slur",
+  "0:13:2": "slur",
+  "0:13:5": "slur",
+  "0:13:6": "slur",
+  "0:13:7": "slur",
+  "0:14:0": "slur",
+  "0:15:0": "slur",
+  "0:15:1": "slur",
+  "0:15:4": "slur",
+  "0:15:5": "slur",
+  "0:15:6": "slur",
+  "0:16:0": "slur",
+  "0:16:1": "slur",
+  "0:17:0": "slur",
+  "0:17:1": "slur",
+  "0:17:2": "slur",
+  "0:17:5": "slur",
+  "0:17:6": "slur",
+  "0:17:7": "slur",
+  "0:18:0": "slur",
+  "0:18:2": "cresc",
+  "0:19:0": "dim, slur",
+  "0:19:4": "rall., slur",
+  "0:19:5": "slur",
+  "0:19:6": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 40",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "105"
+   ],
+   [
+    "Tempo marking",
+    "Andante con spirito"
+   ],
+   [
+    "Layout",
+    "Each pair of small notes comes before the beat of its note; at the end of a bar they lead into the first note of the next. In bars 4 and 16 the book asks for 1 2 3 on the small B flat and 1 2 on the A that follows, so the first valve stays down through the ornament."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Double appoggiaturas",
+    "paragraphs": [
+     "There are two kinds of double appoggiatura. The first is made of two small notes that may start a third away from the note they go with, either going up or going down (Examples 5 and 6).",
+     "The double appoggiatura must not take its length from the note it goes with; on the contrary, it must come before it, as the second half of Example 6 shows.",
+     "The second kind of double appoggiatura is made of an upper and a lower appoggiatura, and must be played as the second half of Example 7 shows (Example 7).",
+     "These appoggiaturas must take their length from the beat before the note they go with. (See Nos. 36 to 43.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
