@@ -1,0 +1,62 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-minor-scales-no-77",
+ "title": "Arban – Minor Scales No. 77",
+ "category": "arban",
+ "group": "Minor Scales",
+ "order": 9008,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 8,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:6:3": "slur",
+  "0:7:0": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Minor Scales No. 77",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Minor Scales"
+   ],
+   [
+    "Page in the book",
+    "75"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Minor scales",
+    "paragraphs": [
+     "The minor scale is by nature less rich than the major, so I have given examples only on the tonic and on the dominant, to show what it can do."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
