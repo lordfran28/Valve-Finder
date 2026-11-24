@@ -23,10 +23,10 @@
   "alts": false
  },
  "notes": {
-  "0:0:0": "slur, accent",
-  "0:0:2": "slur, accent",
-  "0:1:0": "slur, accent",
-  "0:1:2": "slur, accent"
+  "0:0:0": "accent, slur",
+  "0:0:2": "accent, slur",
+  "0:1:0": "accent, slur",
+  "0:1:2": "accent, slur"
  },
  "timing": null,
  "details": {

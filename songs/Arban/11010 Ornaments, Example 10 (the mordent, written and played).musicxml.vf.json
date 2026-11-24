@@ -23,9 +23,9 @@
   "alts": false
  },
  "notes": {
-  "0:0:0": "slur, mordent",
-  "0:0:2": "slur, mordent",
-  "0:1:0": "slur, mordent",
+  "0:0:0": "mordent, slur",
+  "0:0:2": "mordent, slur",
+  "0:1:0": "mordent, slur",
   "0:2:0": "slur",
   "0:2:1": "slur",
   "0:2:2": "slur",

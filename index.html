@@ -245,6 +245,10 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 .note.grace .valves{gap:2px;margin-top:0}
 .note.grace .v{width:8px;height:8px;border-width:1px}
 .notecell.lone{width:2.3rem;justify-content:flex-end}
+/* more than two small boxes: the cell grows to hold them, the note keeps its width, so they never cover the next note's */
+.notecell.wide{width:auto;min-width:4.5rem}
+.notecell.wide>.note:not(.grace){width:4.5rem}
+.notecell.wide>input[type=text].annot{width:0;min-width:100%;text-align:left;padding-left:4px}
 input[type=text].annot{width:100%;min-width:0;font:italic 500 .92rem/1.2 var(--body);color:var(--brass);background:transparent;border:0;border-bottom:1px dotted transparent;border-radius:0;padding:2px 1px 3px;text-align:center;
   opacity:0;transition:opacity .45s ease,border-color .45s ease}
 .notecell:hover input[type=text].annot,.notecell.reveal input[type=text].annot,input[type=text].annot:focus,input[type=text].annot.has{opacity:1}
@@ -972,7 +976,7 @@ function noteCells(boxes){
     var pre = [], post = [];
     boxes.forEach(function(g, k){ if (owner[k] === i && g.grace) (k < i ? pre : post).push(g.html); });
     var top = x.grace ? "" : '<div class="graces"><span class="gpre">' + pre.join("") + '</span><span class="gpost">' + post.join("") + "</span></div>";
-    cells.push('<div class="notecell' + (x.grace ? " lone" : "") + '">' + top + x.html + "</div>");
+    cells.push('<div class="notecell' + (x.grace ? " lone" : pre.length + post.length > 2 ? " wide" : "") + '">' + top + x.html + "</div>");
   });
   return cells;
 }

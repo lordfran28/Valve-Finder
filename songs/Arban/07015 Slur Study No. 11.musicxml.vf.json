@@ -23,8 +23,8 @@
   "alts": false
  },
  "notes": {
-  "0:0:0": "slur, cresc",
-  "0:1:0": "slur, cresc",
+  "0:0:0": "cresc, slur",
+  "0:1:0": "cresc, slur",
   "0:2:0": "slur",
   "0:3:0": "slur",
   "0:4:0": "slur",

@@ -26,9 +26,9 @@
   "0:0:0": "slur",
   "0:0:2": "slur",
   "0:1:0": "slur",
-  "0:2:0": "slur, accent",
-  "0:2:2": "slur, accent",
-  "0:3:0": "slur, accent"
+  "0:2:0": "accent, slur",
+  "0:2:2": "accent, slur",
+  "0:3:0": "accent, slur"
  },
  "timing": null,
  "details": {

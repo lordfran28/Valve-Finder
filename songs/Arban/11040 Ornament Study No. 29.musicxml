@@ -157,10 +157,10 @@
       <direction placement="above"><direction-type><words font-style="italic">Allegretto</words></direction-type></direction>
       <direction placement="above"><direction-type><metronome><beat-unit>quarter</beat-unit><per-minute>96</per-minute></metronome></direction-type><sound tempo="96"/></direction>
       <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>D</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
     </measure>
@@ -176,10 +176,10 @@
     </measure>
     <measure number="3">
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>natural</accidental></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>natural</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
     </measure>
@@ -197,10 +197,10 @@
       <note><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type><accidental>natural</accidental></note>
       <note><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type><accidental>flat</accidental></note>
       <note><pitch><step>D</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
     </measure>
     <measure number="6">
       <note><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
@@ -211,10 +211,10 @@
     </measure>
     <measure number="7">
       <note><pitch><step>A</step><octave>4</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>G</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
       <note><pitch><step>F</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
       <note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
@@ -232,49 +232,49 @@
     </measure>
     <measure number="9">
       <note><pitch><step>G</step><octave>4</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>G</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>G</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>G</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>G</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
       <note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
     </measure>
     <measure number="10">
       <note><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>192</duration><voice>1</voice><type>half</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>G</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>E</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>G</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>E</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>D</step><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
     </measure>
     <measure number="11">
       <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>D</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
       <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
     </measure>
     <measure number="12">
       <note><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>G</step><octave>5</octave></pitch><duration>72</duration><voice>1</voice><type>eighth</type><dot/></note>
       <note><pitch><step>F</step><octave>5</octave></pitch><duration>24</duration><voice>1</voice><type>16th</type></note>
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
     </measure>
     <measure number="13">
       <note><pitch><step>D</step><alter>-1</alter><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>half</type><accidental>flat</accidental></note>
-      <note><grace slash="yes"/><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>D</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>D</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>A</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type><accidental>flat</accidental></note>
     </measure>
@@ -286,19 +286,19 @@
     </measure>
     <measure number="15">
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>natural</accidental></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>natural</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>F</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
     </measure>
     <measure number="16">
       <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>D</step><alter>-1</alter><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type><accidental>flat</accidental></note>
       <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
       <note><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
@@ -307,10 +307,10 @@
     </measure>
     <measure number="17">
       <note><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>D</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
     </measure>
@@ -326,10 +326,10 @@
     </measure>
     <measure number="19">
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>natural</accidental></note>
-      <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>natural</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
       <note><pitch><step>C</step><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
     </measure>
@@ -347,10 +347,10 @@
       <note><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type><accidental>natural</accidental></note>
       <note><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type><accidental>flat</accidental></note>
       <note><pitch><step>D</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>D</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
     </measure>
     <measure number="22">
       <note><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
@@ -361,10 +361,10 @@
     </measure>
     <measure number="23">
       <note><pitch><step>A</step><octave>4</octave></pitch><duration>192</duration><voice>1</voice><type>half</type></note>
-      <note><grace slash="yes"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
-      <note><grace slash="yes"/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
-      <note><grace slash="yes"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
+      <note><grace steal-time-previous="25"/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><voice>1</voice><type>16th</type><accidental>sharp</accidental></note>
+      <note><grace steal-time-previous="25"/><pitch><step>A</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>G</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
       <note><pitch><step>F</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
       <note><pitch><step>F</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
