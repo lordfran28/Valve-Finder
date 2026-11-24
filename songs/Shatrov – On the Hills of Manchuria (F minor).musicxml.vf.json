@@ -1,0 +1,29 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "shatrov-manchuria-waltz",
+ "title": "Shatrov – On the Hills of Manchuria, waltz",
+ "category": "classical",
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T03:16:31.000Z",
+ "updatedAt": "2026-11-24T03:16:31.000Z",
+ "units": {
+  "count": 128,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 160,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Shatrov – On the Hills of Manchuria, waltz",
+  "lead": "Ilya Shatrov wrote it in 1906, a bandmaster back from the war with the regiment that was surrounded at Mukden. This is the melody of the Moscow edition (O. F. Knaub), every note as it is printed, in the edition’s key, F minor: concert A♭3 to A♭5, so the waltz sits high, around F5 to A♭5. The repeats are written out in playing order: the waltz twice, the passionate middle part twice, the waltz again, the playful part twice, then the coda. In the coda the soldiers’ tune is in the piano’s left hand; here it is an octave higher. You rest while the trains move off, and the last three notes are the top of the piano’s last chords, an octave lower. A waltz in one: about 160 quarter notes a minute."
+ }
+}
