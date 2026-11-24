@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-24T03:16:53Z",
+ "generatedAt": "2026-11-24T06:02:20Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9675,6 +9675,756 @@
     "title": "Shatrov – On the Hills of Manchuria, introduction",
     "lead": "The opening of the introduction, Andante and sad, from the same Moscow edition: the waltz’s tune slowly, with its triplets, up to the held F. The rest of the introduction (the orphaned women talking, the soldiers talking, their anger) is piano writing with no single line for a trumpet, so it is left out. Slow: about 66 quarter notes a minute."
    }
+  },
+  {
+   "id": "arban-first-studies-no-1",
+   "file": "songs/Arban/0001 First Studies No. 1.musicxml",
+   "title": "Arban – First Studies No. 1",
+   "kind": "MusicXML",
+   "sha1": "a453ecbe3f7552458045db9afd541252cb94fb5a",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 1,
+   "units": {
+    "count": 19,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-2",
+   "file": "songs/Arban/0002 First Studies No. 2.musicxml",
+   "title": "Arban – First Studies No. 2",
+   "kind": "MusicXML",
+   "sha1": "2dc4c151f450cddb97e8330d6edf52cba84bcd76",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 2,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-3",
+   "file": "songs/Arban/0003 First Studies No. 3.musicxml",
+   "title": "Arban – First Studies No. 3",
+   "kind": "MusicXML",
+   "sha1": "9a9b7bfc940529d2aa8749c347b26db07f87cded",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-4",
+   "file": "songs/Arban/0004 First Studies No. 4.musicxml",
+   "title": "Arban – First Studies No. 4",
+   "kind": "MusicXML",
+   "sha1": "845abb7751ecd7f0512f652971e93374c2f4b3c1",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 4,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-5",
+   "file": "songs/Arban/0005 First Studies No. 5.musicxml",
+   "title": "Arban – First Studies No. 5",
+   "kind": "MusicXML",
+   "sha1": "01c396006e754de46bb9ec3fb8ee19108abe076f",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-6",
+   "file": "songs/Arban/0006 First Studies No. 6.musicxml",
+   "title": "Arban – First Studies No. 6",
+   "kind": "MusicXML",
+   "sha1": "1cb0917ecfd0c2a3049b7c03a3436c4f87721334",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-7",
+   "file": "songs/Arban/0007 First Studies No. 7.musicxml",
+   "title": "Arban – First Studies No. 7",
+   "kind": "MusicXML",
+   "sha1": "b7e5bc640911fe416d8c15212726f695cac6d5ba",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 7,
+   "units": {
+    "count": 64,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-8",
+   "file": "songs/Arban/0008 First Studies No. 8.musicxml",
+   "title": "Arban – First Studies No. 8",
+   "kind": "MusicXML",
+   "sha1": "01e0bbbd3f8c496925add9329dc2030e274e175b",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 8,
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-9",
+   "file": "songs/Arban/0009 First Studies No. 9.musicxml",
+   "title": "Arban – First Studies No. 9",
+   "kind": "MusicXML",
+   "sha1": "f6d5b208a5751d432d0ab30db8a0764cf4de8cce",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 9,
+   "units": {
+    "count": 108,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-10",
+   "file": "songs/Arban/0010 First Studies No. 10.musicxml",
+   "title": "Arban – First Studies No. 10",
+   "kind": "MusicXML",
+   "sha1": "66fa9b458a3e91117d7da34919d9f7c123c9d1d4",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 10,
+   "units": {
+    "count": 108,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-11",
+   "file": "songs/Arban/0011 First Studies No. 11.musicxml",
+   "title": "Arban – First Studies No. 11",
+   "kind": "MusicXML",
+   "sha1": "3d6bf41ebc2bec642fd7467fd03ea9b547c20d98",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 11,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-12",
+   "file": "songs/Arban/0012 First Studies No. 12.musicxml",
+   "title": "Arban – First Studies No. 12",
+   "kind": "MusicXML",
+   "sha1": "63f355ab03722d05f9585fbd1a5dea038f2359e2",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 12,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-13",
+   "file": "songs/Arban/0013 First Studies No. 13.musicxml",
+   "title": "Arban – First Studies No. 13",
+   "kind": "MusicXML",
+   "sha1": "4050d3ea8dca7bbdf36633e0421d15bc8b545a1f",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 13,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-14",
+   "file": "songs/Arban/0014 First Studies No. 14.musicxml",
+   "title": "Arban – First Studies No. 14",
+   "kind": "MusicXML",
+   "sha1": "de84d11e9e4fa07dfe04133dda08db6670e1e243",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 14,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-15",
+   "file": "songs/Arban/0015 First Studies No. 15.musicxml",
+   "title": "Arban – First Studies No. 15",
+   "kind": "MusicXML",
+   "sha1": "273f098d1f15efbedb0df432d828a6fcc1c1aa4d",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 15,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-16",
+   "file": "songs/Arban/0016 First Studies No. 16.musicxml",
+   "title": "Arban – First Studies No. 16",
+   "kind": "MusicXML",
+   "sha1": "e3747bac40a63e1273bc26fa278a9d91864a1a8b",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 16,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-17",
+   "file": "songs/Arban/0017 First Studies No. 17.musicxml",
+   "title": "Arban – First Studies No. 17",
+   "kind": "MusicXML",
+   "sha1": "f57700e69b1d793c2b44c44497310876a5d64043",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 17,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-18",
+   "file": "songs/Arban/0018 First Studies No. 18.musicxml",
+   "title": "Arban – First Studies No. 18",
+   "kind": "MusicXML",
+   "sha1": "4cef36bf521d025ae285321b91c87578cd220fad",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 18,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-19",
+   "file": "songs/Arban/0019 First Studies No. 19.musicxml",
+   "title": "Arban – First Studies No. 19",
+   "kind": "MusicXML",
+   "sha1": "942af35720dd03b74b3b0cd9ce000089e1045d54",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 19,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-20",
+   "file": "songs/Arban/0020 First Studies No. 20.musicxml",
+   "title": "Arban – First Studies No. 20",
+   "kind": "MusicXML",
+   "sha1": "095086a5374423184d701657568d6c72923157d1",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 20,
+   "units": {
+    "count": 22,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-21",
+   "file": "songs/Arban/0021 First Studies No. 21.musicxml",
+   "title": "Arban – First Studies No. 21",
+   "kind": "MusicXML",
+   "sha1": "74e35c57fc0d9ceac5045cbbc462ed3ccffd6824",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 21,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-22",
+   "file": "songs/Arban/0022 First Studies No. 22.musicxml",
+   "title": "Arban – First Studies No. 22",
+   "kind": "MusicXML",
+   "sha1": "228174af976d0e73087fd1522db19978613e69b9",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 22,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-23",
+   "file": "songs/Arban/0023 First Studies No. 23.musicxml",
+   "title": "Arban – First Studies No. 23",
+   "kind": "MusicXML",
+   "sha1": "89fcf60ceceb0259f2b45ca550229568b0b201de",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 23,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-24",
+   "file": "songs/Arban/0024 First Studies No. 24.musicxml",
+   "title": "Arban – First Studies No. 24",
+   "kind": "MusicXML",
+   "sha1": "49dba6dad80f168b8f6ebda847456d2b1d541028",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 24,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-25",
+   "file": "songs/Arban/0025 First Studies No. 25.musicxml",
+   "title": "Arban – First Studies No. 25",
+   "kind": "MusicXML",
+   "sha1": "994a6f10ce0bc50b55a37dfd90f1c710853a63d2",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 25,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-26",
+   "file": "songs/Arban/0026 First Studies No. 26.musicxml",
+   "title": "Arban – First Studies No. 26",
+   "kind": "MusicXML",
+   "sha1": "42c507624828237d62d4a4490fef30ac466c62bf",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 26,
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-27",
+   "file": "songs/Arban/0027 First Studies No. 27.musicxml",
+   "title": "Arban – First Studies No. 27",
+   "kind": "MusicXML",
+   "sha1": "ecc37c7d8714ceed12a2bb45c2e77d025650d8f9",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 27,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-28",
+   "file": "songs/Arban/0028 First Studies No. 28.musicxml",
+   "title": "Arban – First Studies No. 28",
+   "kind": "MusicXML",
+   "sha1": "88db258b4c878ad05a8eee5d86ca9704d0629589",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 28,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-29",
+   "file": "songs/Arban/0029 First Studies No. 29.musicxml",
+   "title": "Arban – First Studies No. 29",
+   "kind": "MusicXML",
+   "sha1": "481826d795a4cdf98598e0db77174102c6bc1736",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 29,
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-30",
+   "file": "songs/Arban/0030 First Studies No. 30.musicxml",
+   "title": "Arban – First Studies No. 30",
+   "kind": "MusicXML",
+   "sha1": "393cee1f65d36dd3866f2ca8f8e2dd3e47ba76f5",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 30,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-31",
+   "file": "songs/Arban/0031 First Studies No. 31.musicxml",
+   "title": "Arban – First Studies No. 31",
+   "kind": "MusicXML",
+   "sha1": "ca1eb8f002a18606372456e65a11ba64e7163a72",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 31,
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-32",
+   "file": "songs/Arban/0032 First Studies No. 32.musicxml",
+   "title": "Arban – First Studies No. 32",
+   "kind": "MusicXML",
+   "sha1": "244110d493aca5a3faa83f297781a5b157f663a9",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 32,
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-33",
+   "file": "songs/Arban/0033 First Studies No. 33.musicxml",
+   "title": "Arban – First Studies No. 33",
+   "kind": "MusicXML",
+   "sha1": "53e5bbaebeccb23e641f8bd1a1a1b9a9c959de6a",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 33,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-34",
+   "file": "songs/Arban/0034 First Studies No. 34.musicxml",
+   "title": "Arban – First Studies No. 34",
+   "kind": "MusicXML",
+   "sha1": "4164d4bad64ba64c1d8ee0093dcfaf6fc398d58e",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 34,
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-35",
+   "file": "songs/Arban/0035 First Studies No. 35.musicxml",
+   "title": "Arban – First Studies No. 35",
+   "kind": "MusicXML",
+   "sha1": "e469fb78919f493c50b4ef737607a9bcebe6893e",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 35,
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-36",
+   "file": "songs/Arban/0036 First Studies No. 36.musicxml",
+   "title": "Arban – First Studies No. 36",
+   "kind": "MusicXML",
+   "sha1": "1b7a90ea2dcdae48ba1c8a9ec47fa08651caf983",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 36,
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-37",
+   "file": "songs/Arban/0037 First Studies No. 37.musicxml",
+   "title": "Arban – First Studies No. 37",
+   "kind": "MusicXML",
+   "sha1": "3f54a953901042addb355d5365cf067e7cdf9e45",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 37,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-38",
+   "file": "songs/Arban/0038 First Studies No. 38.musicxml",
+   "title": "Arban – First Studies No. 38",
+   "kind": "MusicXML",
+   "sha1": "ed71563b694f77781afbf412841f48126489118d",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 38,
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-39",
+   "file": "songs/Arban/0039 First Studies No. 39.musicxml",
+   "title": "Arban – First Studies No. 39",
+   "kind": "MusicXML",
+   "sha1": "bfd560c46fa38de3c6b28052a47d3fe142008afc",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 39,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-40",
+   "file": "songs/Arban/0040 First Studies No. 40.musicxml",
+   "title": "Arban – First Studies No. 40",
+   "kind": "MusicXML",
+   "sha1": "834eb0e34b1222bca9fccdc61a6101af3a55bd52",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 40,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-41",
+   "file": "songs/Arban/0041 First Studies No. 41.musicxml",
+   "title": "Arban – First Studies No. 41",
+   "kind": "MusicXML",
+   "sha1": "05798743c14441ae0ba548178894ed423e5b82e4",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 41,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-42",
+   "file": "songs/Arban/0042 First Studies No. 42.musicxml",
+   "title": "Arban – First Studies No. 42",
+   "kind": "MusicXML",
+   "sha1": "b722c5fc519bc6ef3a21f9c6d7ccbb57483fe437",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 42,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-43",
+   "file": "songs/Arban/0043 First Studies No. 43.musicxml",
+   "title": "Arban – First Studies No. 43",
+   "kind": "MusicXML",
+   "sha1": "3391f9cd8a5d67723a3f1b11bd3007e5b1e06d80",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 43,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-44",
+   "file": "songs/Arban/0044 First Studies No. 44.musicxml",
+   "title": "Arban – First Studies No. 44",
+   "kind": "MusicXML",
+   "sha1": "4bcd88928555e38f43d89d3dfe942c6f036c9c89",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 44,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-45",
+   "file": "songs/Arban/0045 First Studies No. 45.musicxml",
+   "title": "Arban – First Studies No. 45",
+   "kind": "MusicXML",
+   "sha1": "b2085216e95d0de38434870e5f3ad13d7673c568",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 45,
+   "units": {
+    "count": 8,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-46",
+   "file": "songs/Arban/0046 First Studies No. 46.musicxml",
+   "title": "Arban – First Studies No. 46",
+   "kind": "MusicXML",
+   "sha1": "20062a9f70b06c81dfa77137e87cd911f7cb16ac",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 46,
+   "units": {
+    "count": 104,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-47",
+   "file": "songs/Arban/0047 First Studies No. 47.musicxml",
+   "title": "Arban – First Studies No. 47",
+   "kind": "MusicXML",
+   "sha1": "17c6672ecd700d7ba7fbf9f95ec15a9be9ee3fde",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 47,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-48",
+   "file": "songs/Arban/0048 First Studies No. 48.musicxml",
+   "title": "Arban – First Studies No. 48",
+   "kind": "MusicXML",
+   "sha1": "fbfca1aee8fe4a17306ce40bd3767e1cd56ef16e",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 48,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-49",
+   "file": "songs/Arban/0049 First Studies No. 49.musicxml",
+   "title": "Arban – First Studies No. 49",
+   "kind": "MusicXML",
+   "sha1": "ebeb84bbab66d287b26bd172d0a6ab3bb3226291",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 49,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
+  },
+  {
+   "id": "arban-first-studies-no-50",
+   "file": "songs/Arban/0050 First Studies No. 50.musicxml",
+   "title": "Arban – First Studies No. 50",
+   "kind": "MusicXML",
+   "sha1": "79780f1afd612ff802e74081a8bab3e9ce85dc4c",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 50,
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "group": "First Studies"
   },
   {
    "id": "removed-fcdc0bd880dc",
