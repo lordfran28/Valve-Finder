@@ -1,11 +1,11 @@
 {
  "app": "Valve Finder",
  "version": 2,
- "id": "arban-slurs-example-3-a-study-by-gallay-played-with-the-valves",
- "title": "Arban – Slurs: Example 3, a study by Gallay played with the valves",
+ "id": "arban-slurs-example-4-the-same-study-played-with-the-lips",
+ "title": "Arban – Slurs, Example 4 (the same study played with the lips)",
  "category": "arban",
  "group": "Slurs",
- "order": 7003,
+ "order": 7004,
  "kind": "MusicXML",
  "addedAt": "2026-11-24T05:00:00Z",
  "updatedAt": "2026-11-24T05:00:00Z",
@@ -52,7 +52,7 @@
  },
  "timing": null,
  "details": {
-  "title": "Arban – Slurs: Example 3, a study by Gallay played with the valves",
+  "title": "Arban – Slurs, Example 4 (the same study played with the lips)",
   "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
   "facts": [
    [
@@ -69,7 +69,7 @@
    ],
    [
     "Layout",
-    "In the book this example sits inside the text. Each group of three is a triplet, slurred."
+    "In the book this example sits inside the text, as the execrable effect of playing the study with the lips."
    ]
   ],
   "sections": [

@@ -1,11 +1,11 @@
 {
  "app": "Valve Finder",
  "version": 2,
- "id": "arban-slurs-example-1-the-turn-with-a-third",
- "title": "Arban – Slurs: Example 1, the turn with a third",
+ "id": "arban-slurs-example-2-the-turn-with-a-second",
+ "title": "Arban – Slurs, Example 2 (the turn with a second)",
  "category": "arban",
  "group": "Slurs",
- "order": 7001,
+ "order": 7002,
  "kind": "MusicXML",
  "addedAt": "2026-11-24T05:00:00Z",
  "updatedAt": "2026-11-24T05:00:00Z",
@@ -36,7 +36,7 @@
  },
  "timing": null,
  "details": {
-  "title": "Arban – Slurs: Example 1, the turn with a third",
+  "title": "Arban – Slurs, Example 2 (the turn with a second)",
   "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
   "facts": [
    [
@@ -53,7 +53,7 @@
    ],
    [
     "Layout",
-    "In the book this example sits inside the text, as the wrong way to play the turn."
+    "In the book this example sits inside the text, as the only proper way to play the turn."
    ]
   ],
   "sections": [

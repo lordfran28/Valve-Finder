@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="4.0">
-  <work><work-title>Arban – Slurs: Example 4, the same study played with the lips</work-title></work>
+  <work><work-title>Arban – Slurs, Example 4 (the same study played with the lips)</work-title></work>
   <identification><creator type="composer">Jean-Baptiste Arban</creator><encoding><software>Valve Finder</software></encoding></identification>
   <part-list><score-part id="P1"><part-name>Cornet in B♭</part-name></score-part></part-list>
   <part id="P1">

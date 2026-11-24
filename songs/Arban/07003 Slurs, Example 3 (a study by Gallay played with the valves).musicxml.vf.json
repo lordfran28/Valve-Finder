@@ -1,16 +1,16 @@
 {
  "app": "Valve Finder",
  "version": 2,
- "id": "arban-slurs-example-2-the-turn-with-a-second",
- "title": "Arban – Slurs: Example 2, the turn with a second",
+ "id": "arban-slurs-example-3-a-study-by-gallay-played-with-the-valves",
+ "title": "Arban – Slurs, Example 3 (a study by Gallay played with the valves)",
  "category": "arban",
  "group": "Slurs",
- "order": 7002,
+ "order": 7003,
  "kind": "MusicXML",
  "addedAt": "2026-11-24T05:00:00Z",
  "updatedAt": "2026-11-24T05:00:00Z",
  "units": {
-  "count": 2,
+  "count": 5,
   "unit": "Bar"
  },
  "settings": {
@@ -23,20 +23,36 @@
   "alts": false
  },
  "notes": {
-  "0:0:0": "slur",
   "0:0:1": "slur",
   "0:0:2": "slur",
-  "0:0:3": "slur",
   "0:0:4": "slur",
+  "0:0:5": "slur",
   "0:1:0": "slur",
   "0:1:1": "slur",
-  "0:1:2": "slur",
   "0:1:3": "slur",
-  "0:1:4": "slur"
+  "0:1:4": "slur",
+  "0:1:6": "slur",
+  "0:1:7": "slur",
+  "0:1:9": "slur",
+  "0:1:10": "slur",
+  "0:2:1": "slur",
+  "0:2:2": "slur",
+  "0:2:4": "slur",
+  "0:2:5": "slur",
+  "0:2:7": "slur",
+  "0:2:8": "slur",
+  "0:3:0": "slur",
+  "0:3:1": "slur",
+  "0:3:3": "slur",
+  "0:3:4": "slur",
+  "0:3:6": "slur",
+  "0:3:7": "slur",
+  "0:3:9": "slur",
+  "0:3:10": "slur"
  },
  "timing": null,
  "details": {
-  "title": "Arban – Slurs: Example 2, the turn with a second",
+  "title": "Arban – Slurs, Example 3 (a study by Gallay played with the valves)",
   "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
   "facts": [
    [
@@ -49,11 +65,11 @@
    ],
    [
     "Page in the book",
-    "37"
+    "38"
    ],
    [
     "Layout",
-    "In the book this example sits inside the text, as the only proper way to play the turn."
+    "In the book this example sits inside the text. Each group of three is a triplet, slurred."
    ]
   ],
   "sections": [
