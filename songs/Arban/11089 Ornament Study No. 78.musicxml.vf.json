@@ -1,0 +1,111 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-78",
+ "title": "Arban – Ornament Study No. 78",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11089,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 20,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "trill, slur",
+  "0:0:1": "slur",
+  "0:1:0": "trill, slur",
+  "0:1:1": "slur",
+  "0:2:0": "trill, slur",
+  "0:2:1": "slur",
+  "0:3:0": "trill, slur",
+  "0:3:1": "slur",
+  "0:4:0": "trill, slur",
+  "0:4:1": "slur",
+  "0:5:0": "trill, slur",
+  "0:5:1": "slur",
+  "0:6:0": "trill, slur",
+  "0:6:1": "slur",
+  "0:7:0": "trill, slur",
+  "0:7:1": "slur",
+  "0:8:0": "trill, slur",
+  "0:8:1": "slur",
+  "0:9:0": "trill, slur",
+  "0:9:1": "slur",
+  "0:10:0": "trill, slur",
+  "0:10:1": "slur",
+  "0:11:0": "trill, slur",
+  "0:11:1": "slur",
+  "0:12:0": "trill, slur",
+  "0:12:1": "slur",
+  "0:13:0": "trill, slur",
+  "0:13:1": "slur",
+  "0:14:0": "trill, slur",
+  "0:14:1": "slur",
+  "0:15:0": "trill, slur",
+  "0:15:1": "slur",
+  "0:16:0": "trill, slur",
+  "0:16:1": "slur",
+  "0:17:0": "trill, slur",
+  "0:17:1": "slur",
+  "0:18:0": "trill, slur",
+  "0:18:1": "slur",
+  "0:19:0": "trill, slur",
+  "0:19:1": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 78",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "118"
+   ],
+   [
+    "Layout",
+    "Each bar trills on one note, closes with the note below it and back, and leaps to the next: up from D to F and back down. The book prints no tempo for this study. In the last bar it prints the small A below the B without a sharp."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The trill",
+    "paragraphs": [
+     "On valve instruments the trill is the hardest of all the ornaments. Only the half-step trill is really bearable. Whole-step trills can be made, but take care to press the valves down evenly, so that each beat is quite distinct.",
+     "So first work patiently, and without hurrying, at studies Nos. 60 to 67, until each sound comes out cleanly. Later you can play the studies on the trill, following the fingerings shown exactly. (See Nos. 68 to 80.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
