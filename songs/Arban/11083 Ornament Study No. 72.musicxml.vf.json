@@ -1,0 +1,155 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-72",
+ "title": "Arban – Ornament Study No. 72",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11083,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 28,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 60,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "slur",
+  "0:0:1": "slur",
+  "0:0:2": "slur",
+  "0:0:3": "trill, slur",
+  "0:0:4": "slur",
+  "0:0:5": "slur",
+  "0:2:0": "slur",
+  "0:2:1": "slur",
+  "0:2:2": "slur",
+  "0:2:3": "trill, slur",
+  "0:2:4": "slur",
+  "0:2:5": "slur",
+  "0:4:0": "slur",
+  "0:4:1": "slur",
+  "0:4:2": "slur",
+  "0:4:3": "trill, slur",
+  "0:4:4": "slur",
+  "0:4:5": "slur",
+  "0:6:0": "slur",
+  "0:6:1": "slur",
+  "0:6:2": "slur",
+  "0:6:3": "trill, slur",
+  "0:6:4": "slur",
+  "0:6:5": "slur",
+  "0:8:0": "slur",
+  "0:8:1": "slur",
+  "0:8:2": "slur",
+  "0:8:3": "trill, slur",
+  "0:8:4": "slur",
+  "0:8:5": "slur",
+  "0:10:0": "slur",
+  "0:10:1": "slur",
+  "0:10:2": "slur",
+  "0:10:3": "trill, slur",
+  "0:10:4": "slur",
+  "0:10:5": "slur",
+  "0:12:0": "slur",
+  "0:12:1": "slur",
+  "0:12:2": "slur",
+  "0:12:3": "trill, slur",
+  "0:12:4": "slur",
+  "0:12:5": "slur",
+  "0:14:0": "slur",
+  "0:14:1": "slur",
+  "0:14:2": "slur",
+  "0:14:3": "trill, slur",
+  "0:14:4": "slur",
+  "0:14:5": "slur",
+  "0:16:0": "slur",
+  "0:16:1": "slur",
+  "0:16:2": "slur",
+  "0:16:3": "trill, slur",
+  "0:16:4": "slur",
+  "0:16:5": "slur",
+  "0:18:0": "slur",
+  "0:18:1": "slur",
+  "0:18:2": "slur",
+  "0:18:3": "trill, slur",
+  "0:18:4": "slur",
+  "0:18:5": "slur",
+  "0:20:0": "slur",
+  "0:20:1": "slur",
+  "0:20:2": "slur",
+  "0:20:3": "trill, slur",
+  "0:20:4": "slur",
+  "0:20:5": "slur",
+  "0:22:0": "slur",
+  "0:22:1": "slur",
+  "0:22:2": "slur",
+  "0:22:3": "trill, slur",
+  "0:22:4": "slur",
+  "0:22:5": "slur",
+  "0:24:0": "slur",
+  "0:24:1": "slur",
+  "0:24:2": "slur",
+  "0:24:3": "trill, slur",
+  "0:24:4": "slur",
+  "0:24:5": "slur",
+  "0:26:0": "slur",
+  "0:26:1": "slur",
+  "0:26:2": "slur",
+  "0:26:3": "trill, slur",
+  "0:26:4": "slur",
+  "0:26:5": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 72",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "116"
+   ],
+   [
+    "Layout",
+    "The book prints no tempo for these studies. Each trill begins with three small notes from below and ends with three, then falls a step: up the C major scale to D and back. The valves are the book's: in bars 5 and 21, F with 1, G with 1 3 and A with 3 before the trill, and F with 1, A with 1 2 and G open after it; in bar 27, E with 3."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The trill",
+    "paragraphs": [
+     "On valve instruments the trill is the hardest of all the ornaments. Only the half-step trill is really bearable. Whole-step trills can be made, but take care to press the valves down evenly, so that each beat is quite distinct.",
+     "So first work patiently, and without hurrying, at studies Nos. 60 to 67, until each sound comes out cleanly. Later you can play the studies on the trill, following the fingerings shown exactly. (See Nos. 68 to 80.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

@@ -248,6 +248,7 @@ textarea.titleinput:not([readonly]):hover{border-color:var(--line)}
 /* more than two small boxes: the cell grows to hold them, the note keeps its width, so they never cover the next note's */
 .notecell.wide{width:auto;min-width:4.5rem}
 .notecell.wide>.note:not(.grace){width:4.5rem}
+.notecell.wide .gpre:not(:empty)+.gpost:not(:empty){margin-left:10px}
 .notecell.wide>input[type=text].annot{width:0;min-width:100%;text-align:left;padding-left:4px}
 input[type=text].annot{width:100%;min-width:0;font:italic 500 .92rem/1.2 var(--body);color:var(--brass);background:transparent;border:0;border-bottom:1px dotted transparent;border-radius:0;padding:2px 1px 3px;text-align:center;
   opacity:0;transition:opacity .45s ease,border-color .45s ease}
