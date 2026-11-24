@@ -1,0 +1,135 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-56",
+ "title": "Arban – Ornament Study No. 56",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11067,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 35,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 66,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:1:0": "slur",
+  "0:1:3": "slur",
+  "0:2:0": "slur",
+  "0:2:3": "slur",
+  "0:3:1": "slur",
+  "0:3:4": "slur",
+  "0:4:0": "slur",
+  "0:4:1": "slur",
+  "0:4:2": "slur",
+  "0:5:0": "slur",
+  "0:5:2": "accent",
+  "0:5:3": "slur",
+  "0:6:0": "slur",
+  "0:6:3": "slur",
+  "0:7:0": "slur",
+  "0:7:1": "slur",
+  "0:8:0": "slur",
+  "0:10:0": "slur",
+  "0:10:1": "slur",
+  "0:12:0": "slur",
+  "0:12:1": "slur",
+  "0:14:0": "slur",
+  "0:14:1": "slur",
+  "0:15:0": "slur",
+  "0:15:2": "slur",
+  "0:15:3": "slur",
+  "0:15:4": "slur",
+  "0:15:5": "slur",
+  "0:15:6": "slur",
+  "0:16:0": "slur",
+  "0:18:0": "slur",
+  "0:18:1": "slur",
+  "0:19:0": "slur",
+  "0:19:1": "slur",
+  "0:20:0": "slur",
+  "0:20:2": "slur",
+  "0:20:3": "slur",
+  "0:22:0": "slur",
+  "0:22:4": "slur",
+  "0:23:0": "slur",
+  "0:23:2": "slur",
+  "0:24:0": "slur",
+  "0:24:3": "slur",
+  "0:25:0": "slur",
+  "0:27:0": "slur",
+  "0:27:3": "slur",
+  "0:28:0": "slur",
+  "0:28:3": "slur",
+  "0:29:1": "slur",
+  "0:29:4": "slur",
+  "0:30:0": "slur",
+  "0:30:1": "slur",
+  "0:30:2": "slur",
+  "0:31:0": "slur",
+  "0:31:2": "accent",
+  "0:31:3": "slur",
+  "0:32:0": "slur",
+  "0:32:3": "slur",
+  "0:33:0": "slur",
+  "0:33:1": "slur",
+  "0:34:0": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 56",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "110"
+   ],
+   [
+    "Tempo marking",
+    "Andante"
+   ],
+   [
+    "Layout",
+    "Each small note is the note before it, sounded again and carried to the next note by sliding the sound. The book has Fin after bar 8 and D.C. at the end: back to the start, ending at Fin. Written out here in playing order. Before Fin the book prints a half note C, a beat short of its bar; that beat is left silent the first time. Each part begins with a G before its first bar line, so here each part's G is its own short bar. The small notes after the F in bar 16 are a quick figure at the end of the note."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The portamento",
+    "paragraphs": [
+     "The portamento is a small note that is, in fact, only the repetition of some note that you want to carry to another by sliding the sound. Do not overuse this kind of ornament, for it would become bad taste; used sparingly it can be very effective. But I much prefer the carried sound, without the help of the small note. (See Nos. 55 to 59.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
