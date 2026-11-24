@@ -1,0 +1,112 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-49",
+ "title": "Arban – Ornament Study No. 49",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11060,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 60,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "slur",
+  "0:0:4": "slur",
+  "0:1:0": "slur",
+  "0:2:3": "slur",
+  "0:3:0": "slur",
+  "0:4:0": "slur",
+  "0:4:4": "slur",
+  "0:5:0": "slur",
+  "0:6:0": "slur",
+  "0:7:1": "staccato",
+  "0:8:0": "slur",
+  "0:8:4": "slur",
+  "0:9:0": "slur",
+  "0:10:1": "slur",
+  "0:10:2": "slur",
+  "0:10:5": "slur",
+  "0:10:6": "slur",
+  "0:11:1": "slur",
+  "0:11:2": "slur",
+  "0:12:0": "slur",
+  "0:12:4": "slur",
+  "0:13:0": "slur",
+  "0:14:3": "slur",
+  "0:15:1": "slur",
+  "0:15:4": "slur",
+  "0:16:3": "slur",
+  "0:18:3": "slur",
+  "0:20:3": "slur",
+  "0:22:3": "slur",
+  "0:24:0": "slur",
+  "0:24:4": "slur",
+  "0:25:0": "slur",
+  "0:26:3": "slur",
+  "0:27:0": "slur",
+  "0:28:0": "slur",
+  "0:28:4": "slur",
+  "0:29:0": "slur",
+  "0:30:3": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 49",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "108"
+   ],
+   [
+    "Tempo marking",
+    "Allegro moderato"
+   ],
+   [
+    "Layout",
+    "Each small note is crossed through: it takes its time from its own note and is played quickly, on the beat. The figures 1 2 3 under the small B flat in bar 21 are the valves the book asks for there, so that the A flat after it needs only the first valve lifted."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The short appoggiatura, or small note",
+    "paragraphs": [
+     "The small note takes its length from the very note it goes with. It is used mostly in rather quick movements. Lean on it as you attack it, so as to give it a little more strength than the note that follows. When it is above, it can be a whole step or a half step from the note it goes with; when it is below, it is always a half step away. (See Nos. 48 to 54.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

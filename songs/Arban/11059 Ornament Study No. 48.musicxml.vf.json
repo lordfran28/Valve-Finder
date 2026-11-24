@@ -1,0 +1,118 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-48",
+ "title": "Arban – Ornament Study No. 48",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11059,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 25,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:1:0": "slur",
+  "0:1:2": "staccato",
+  "0:1:3": "slur",
+  "0:1:5": "staccato",
+  "0:2:0": "slur",
+  "0:2:2": "staccato",
+  "0:2:3": "accent",
+  "0:3:0": "slur",
+  "0:3:5": "accent",
+  "0:4:0": "slur",
+  "0:4:5": "accent",
+  "0:4:6": "staccato",
+  "0:5:0": "slur",
+  "0:5:3": "slur",
+  "0:6:0": "slur",
+  "0:7:0": "slur",
+  "0:8:1": "slur",
+  "0:9:0": "slur",
+  "0:9:1": "staccato",
+  "0:9:3": "slur",
+  "0:10:0": "slur",
+  "0:11:0": "slur",
+  "0:12:1": "slur",
+  "0:13:1": "slur",
+  "0:13:4": "slur",
+  "0:14:2": "accent",
+  "0:15:0": "slur",
+  "0:16:0": "cresc, slur",
+  "0:17:0": "slur",
+  "0:17:2": "staccato",
+  "0:17:3": "slur",
+  "0:18:0": "slur",
+  "0:18:2": "staccato",
+  "0:18:3": "accent",
+  "0:19:0": "slur",
+  "0:19:5": "accent",
+  "0:20:0": "slur",
+  "0:20:5": "staccato",
+  "0:20:6": "staccato",
+  "0:21:0": "slur",
+  "0:21:3": "slur",
+  "0:22:0": "slur",
+  "0:23:0": "slur",
+  "0:24:1": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 48",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "108"
+   ],
+   [
+    "Tempo marking",
+    "Allegro poco andantino"
+   ],
+   [
+    "Layout",
+    "Each small note is crossed through: it takes its time from its own note and is played quickly, on the beat. On the first eighth of bar 8 the book prints a G under the B; one of the two is played, and the B is written here."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The short appoggiatura, or small note",
+    "paragraphs": [
+     "The small note takes its length from the very note it goes with. It is used mostly in rather quick movements. Lean on it as you attack it, so as to give it a little more strength than the note that follows. When it is above, it can be a whole step or a half step from the note it goes with; when it is below, it is always a half step away. (See Nos. 48 to 54.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
