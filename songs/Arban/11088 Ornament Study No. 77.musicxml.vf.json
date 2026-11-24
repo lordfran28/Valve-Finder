@@ -10,7 +10,7 @@
  "addedAt": "2026-11-24T05:00:00Z",
  "updatedAt": "2026-11-24T05:00:00Z",
  "units": {
-  "count": 32,
+  "count": 48,
   "unit": "Bar"
  },
  "settings": {
@@ -96,7 +96,54 @@
   "0:29:1": "trill, rall., slur",
   "0:29:2": "slur",
   "0:30:1": "trill, slur",
-  "0:30:2": "slur"
+  "0:30:2": "slur",
+  "0:32:0": "slur",
+  "0:32:1": "slur",
+  "0:32:2": "slur",
+  "0:32:3": "trill, slur",
+  "0:32:4": "slur",
+  "0:33:0": "slur",
+  "0:34:0": "slur",
+  "0:34:1": "slur",
+  "0:34:2": "slur",
+  "0:34:3": "trill, slur",
+  "0:34:4": "slur",
+  "0:35:0": "slur",
+  "0:36:0": "slur",
+  "0:36:1": "slur",
+  "0:36:2": "slur",
+  "0:36:3": "trill, slur",
+  "0:36:4": "slur",
+  "0:37:0": "slur",
+  "0:38:0": "slur",
+  "0:38:1": "slur",
+  "0:38:2": "slur",
+  "0:38:3": "trill, slur",
+  "0:38:4": "slur",
+  "0:40:0": "slur",
+  "0:40:1": "slur",
+  "0:40:2": "slur",
+  "0:40:3": "trill, slur",
+  "0:40:4": "slur",
+  "0:41:0": "slur",
+  "0:42:0": "slur",
+  "0:42:1": "slur",
+  "0:42:2": "slur",
+  "0:42:3": "trill, slur",
+  "0:42:4": "slur",
+  "0:43:0": "slur",
+  "0:44:0": "slur",
+  "0:44:1": "slur",
+  "0:44:2": "slur",
+  "0:44:3": "trill, slur",
+  "0:44:4": "slur",
+  "0:45:0": "rall., slur",
+  "0:46:0": "slur",
+  "0:46:1": "slur",
+  "0:46:2": "slur",
+  "0:46:3": "trill, slur",
+  "0:46:4": "slur",
+  "0:46:5": "slur"
  },
  "timing": null,
  "details": {
@@ -121,7 +168,7 @@
    ],
    [
     "Layout",
-    "Most trills begin with three small notes and close with two. In bars 5 and 21 the book prints the valves under the small notes before the trill: F sharp with 1 2 3, G with 1 3, A with 3. They hold for the whole trill, so that it stays in one series of the horn and the lips do the work."
+    "Most trills begin with three small notes and close with two. After the slowing in bars 30 and 31 the first part comes back at the first speed, and ends in F. In bars 5, 21, 37 and 47 the book prints the valves under the small notes before the trill: F sharp with 1 2 3, G with 1 3, A with 3. They hold for the whole trill, so that it stays in one series of the horn and the lips do the work."
    ]
   ],
   "sections": [
