@@ -1,0 +1,70 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-major-scales-no-59",
+ "title": "Arban – Major Scales No. 59",
+ "category": "arban",
+ "group": "Major Scales",
+ "order": 8062,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 20,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:1:0": "slur",
+  "0:3:0": "slur",
+  "0:5:0": "slur",
+  "0:7:0": "slur",
+  "0:9:0": "slur",
+  "0:11:0": "slur",
+  "0:13:0": "slur",
+  "0:15:0": "slur",
+  "0:17:0": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Major Scales No. 59",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Major Scales"
+   ],
+   [
+    "Page in the book",
+    "72"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Major scales",
+    "paragraphs": [
+     "The study of scales has always been much neglected in works of this kind. Most of them give a few examples and leave the pupil to find in himself whatever the method leaves out. What comes of it? Very few artists know how to play a scale correctly.",
+     "Yet scales must be worked at, and worked at steadily. Knowing how much this kind of study matters, I have treated this part at great length, and in every key. This work gives a perfectly even sound, and playing that is smooth and correct."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
