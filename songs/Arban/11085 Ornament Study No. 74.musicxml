@@ -116,7 +116,7 @@
       <note><grace slash="yes"/><pitch><step>B</step><octave>4</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><grace slash="yes"/><pitch><step>C</step><octave>5</octave></pitch><voice>1</voice><type>16th</type></note>
       <note><pitch><step>B</step><octave>4</octave></pitch><duration>96</duration><voice>1</voice><type>quarter</type></note>
-      <note><pitch><step>A</step><alter>1</alter><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type><accidental>natural</accidental></note>
       <note><pitch><step>G</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>eighth</type></note>
     </measure>
     <measure number="18">
