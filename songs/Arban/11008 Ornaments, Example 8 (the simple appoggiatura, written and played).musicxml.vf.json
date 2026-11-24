@@ -1,0 +1,78 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornaments-example-8-the-simple-appoggiatura-written-and-played",
+ "title": "Arban – Ornaments, Example 8 (the simple appoggiatura, written and played)",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11008,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 4,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 60,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "slur",
+  "0:0:2": "slur",
+  "0:1:0": "slur",
+  "0:2:0": "slur, accent",
+  "0:2:2": "slur, accent",
+  "0:3:0": "slur, accent"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornaments, Example 8 (the simple appoggiatura, written and played)",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "89"
+   ],
+   [
+    "Layout",
+    "The first two bars as written, the small note in front of a half note; the last two its effect, as printed: the small note takes half the length of the note and is accented."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The simple appoggiatura",
+    "paragraphs": [
+     "The simple appoggiatura is a small note that is no part of the chord, and that nevertheless takes half the length of the note before which it stands (Example 8).",
+     "The appoggiatura can be placed above or below any note. When it is above, it can be a whole step or a half step away; when it is below, it must always be a half step away (Example 9).",
+     "In the music of the old masters there are a great many appoggiaturas that must take half the length of the note they come before; but today, so that everyone plays them alike, music is generally written as it is to be played, which is beyond question much better. (See Nos. 44 to 47.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornaments-example-6-the-double-appoggiatura-going-down-written-and-played",
+ "title": "Arban – Ornaments, Example 6 (the double appoggiatura going down, written and played)",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11006,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 8,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 60,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "staccato",
+  "0:0:1": "slur",
+  "0:0:2": "slur",
+  "0:0:4": "staccato",
+  "0:1:0": "staccato",
+  "0:1:1": "slur",
+  "0:1:2": "slur",
+  "0:1:4": "staccato",
+  "0:2:0": "staccato",
+  "0:2:1": "slur",
+  "0:2:2": "slur",
+  "0:2:3": "staccato",
+  "0:2:4": "staccato",
+  "0:4:0": "slur",
+  "0:4:1": "slur",
+  "0:4:2": "slur",
+  "0:5:0": "slur",
+  "0:5:1": "slur",
+  "0:5:2": "slur",
+  "0:6:0": "slur",
+  "0:6:1": "slur",
+  "0:6:2": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornaments, Example 6 (the double appoggiatura going down, written and played)",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "89"
+   ],
+   [
+    "Layout",
+    "The first four bars as written, the last four as the book shows them played: the two small notes take their length from the note before."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Double appoggiaturas",
+    "paragraphs": [
+     "There are two kinds of double appoggiatura. The first is made of two small notes that may start a third away from the note they go with, either going up or going down (Examples 5 and 6).",
+     "The double appoggiatura must not take its length from the note it goes with; on the contrary, it must come before it, as the second half of Example 6 shows.",
+     "The second kind of double appoggiatura is made of an upper and a lower appoggiatura, and must be played as the second half of Example 7 shows (Example 7).",
+     "These appoggiaturas must take their length from the beat before the note they go with. (See Nos. 36 to 43.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

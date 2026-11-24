@@ -1,0 +1,85 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornaments-example-4-the-small-group-going-down",
+ "title": "Arban – Ornaments, Example 4 (the small group going down)",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11004,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 2,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 56,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "slur",
+  "0:0:1": "slur",
+  "0:0:2": "slur",
+  "0:0:4": "slur",
+  "0:0:5": "slur",
+  "0:1:0": "slur",
+  "0:1:1": "slur",
+  "0:1:2": "slur",
+  "0:1:4": "slur",
+  "0:1:5": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornaments, Example 4 (the small group going down)",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "88"
+   ],
+   [
+    "Tempo marking",
+    "Andante"
+   ],
+   [
+    "Layout",
+    "As written. Below it the book shows it played: the three small notes are moved back before the beat, so that the main note falls on the beat."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The three-note turn, or small group",
+    "paragraphs": [
+     "There are two kinds of small group: the first goes up, the second goes down. In both cases they can be made of a minor or a diminished third, but never of a major third. They are written as in Examples 3 and 4, but they must be played as the book shows below them: the small notes come before the beat.",
+     "You can see that this ornament must not be taken from the note it goes with, but from the beat before it. It must be played very lightly, while attacking the first appoggiatura well. (For this kind of ornament, see Nos. 32 to 35.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
