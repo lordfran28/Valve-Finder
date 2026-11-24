@@ -1,0 +1,64 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-dotted-eighths-no-16",
+ "title": "Arban – Dotted Eighths No. 16",
+ "category": "arban",
+ "group": "Dotted Eighths and Sixteenths",
+ "order": 4004,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 49,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 76,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Arban – Dotted Eighths No. 16",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Dotted Eighths and Sixteenths"
+   ],
+   [
+    "Page in the book",
+    "27"
+   ],
+   [
+    "Tempo marking",
+    "Allegro"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Studies in dotted eighths followed by sixteenths",
+    "paragraphs": [
+     "In these studies the dotted eighth must be held for its whole value; take care not to put a rest in place of the dot.",
+     "Play it tu, tu tu, holding the dotted note, and not as if a rest stood between the dotted note and the sixteenth."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

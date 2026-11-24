@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-24T06:02:20Z",
+ "generatedAt": "2026-11-24T06:34:16Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -9677,14 +9677,29 @@
    }
   },
   {
+   "id": "arban-fingering-chart",
+   "file": "songs/Arban/01001 Fingering Chart.musicxml",
+   "title": "Arban – Fingering Chart",
+   "kind": "MusicXML",
+   "sha1": "b68cbabd07cf2918a73483c335f7e97e4e218418",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 1001,
+   "units": {
+    "count": 31,
+    "unit": "Bar"
+   },
+   "group": "Fingering Chart"
+  },
+  {
    "id": "arban-first-studies-no-1",
-   "file": "songs/Arban/0001 First Studies No. 1.musicxml",
+   "file": "songs/Arban/02001 First Studies No. 1.musicxml",
    "title": "Arban – First Studies No. 1",
    "kind": "MusicXML",
    "sha1": "a453ecbe3f7552458045db9afd541252cb94fb5a",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 1,
+   "order": 2001,
    "units": {
     "count": 19,
     "unit": "Bar"
@@ -9693,13 +9708,13 @@
   },
   {
    "id": "arban-first-studies-no-2",
-   "file": "songs/Arban/0002 First Studies No. 2.musicxml",
+   "file": "songs/Arban/02002 First Studies No. 2.musicxml",
    "title": "Arban – First Studies No. 2",
    "kind": "MusicXML",
    "sha1": "2dc4c151f450cddb97e8330d6edf52cba84bcd76",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 2,
+   "order": 2002,
    "units": {
     "count": 16,
     "unit": "Bar"
@@ -9708,13 +9723,13 @@
   },
   {
    "id": "arban-first-studies-no-3",
-   "file": "songs/Arban/0003 First Studies No. 3.musicxml",
+   "file": "songs/Arban/02003 First Studies No. 3.musicxml",
    "title": "Arban – First Studies No. 3",
    "kind": "MusicXML",
    "sha1": "9a9b7bfc940529d2aa8749c347b26db07f87cded",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 3,
+   "order": 2003,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9723,13 +9738,13 @@
   },
   {
    "id": "arban-first-studies-no-4",
-   "file": "songs/Arban/0004 First Studies No. 4.musicxml",
+   "file": "songs/Arban/02004 First Studies No. 4.musicxml",
    "title": "Arban – First Studies No. 4",
    "kind": "MusicXML",
    "sha1": "845abb7751ecd7f0512f652971e93374c2f4b3c1",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 4,
+   "order": 2004,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9738,13 +9753,13 @@
   },
   {
    "id": "arban-first-studies-no-5",
-   "file": "songs/Arban/0005 First Studies No. 5.musicxml",
+   "file": "songs/Arban/02005 First Studies No. 5.musicxml",
    "title": "Arban – First Studies No. 5",
    "kind": "MusicXML",
    "sha1": "01c396006e754de46bb9ec3fb8ee19108abe076f",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 5,
+   "order": 2005,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9753,13 +9768,13 @@
   },
   {
    "id": "arban-first-studies-no-6",
-   "file": "songs/Arban/0006 First Studies No. 6.musicxml",
+   "file": "songs/Arban/02006 First Studies No. 6.musicxml",
    "title": "Arban – First Studies No. 6",
    "kind": "MusicXML",
    "sha1": "1cb0917ecfd0c2a3049b7c03a3436c4f87721334",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 6,
+   "order": 2006,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9768,13 +9783,13 @@
   },
   {
    "id": "arban-first-studies-no-7",
-   "file": "songs/Arban/0007 First Studies No. 7.musicxml",
+   "file": "songs/Arban/02007 First Studies No. 7.musicxml",
    "title": "Arban – First Studies No. 7",
    "kind": "MusicXML",
    "sha1": "b7e5bc640911fe416d8c15212726f695cac6d5ba",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 7,
+   "order": 2007,
    "units": {
     "count": 64,
     "unit": "Bar"
@@ -9783,13 +9798,13 @@
   },
   {
    "id": "arban-first-studies-no-8",
-   "file": "songs/Arban/0008 First Studies No. 8.musicxml",
+   "file": "songs/Arban/02008 First Studies No. 8.musicxml",
    "title": "Arban – First Studies No. 8",
    "kind": "MusicXML",
    "sha1": "01e0bbbd3f8c496925add9329dc2030e274e175b",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 8,
+   "order": 2008,
    "units": {
     "count": 48,
     "unit": "Bar"
@@ -9798,13 +9813,13 @@
   },
   {
    "id": "arban-first-studies-no-9",
-   "file": "songs/Arban/0009 First Studies No. 9.musicxml",
+   "file": "songs/Arban/02009 First Studies No. 9.musicxml",
    "title": "Arban – First Studies No. 9",
    "kind": "MusicXML",
    "sha1": "f6d5b208a5751d432d0ab30db8a0764cf4de8cce",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 9,
+   "order": 2009,
    "units": {
     "count": 108,
     "unit": "Bar"
@@ -9813,13 +9828,13 @@
   },
   {
    "id": "arban-first-studies-no-10",
-   "file": "songs/Arban/0010 First Studies No. 10.musicxml",
+   "file": "songs/Arban/02010 First Studies No. 10.musicxml",
    "title": "Arban – First Studies No. 10",
    "kind": "MusicXML",
    "sha1": "66fa9b458a3e91117d7da34919d9f7c123c9d1d4",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 10,
+   "order": 2010,
    "units": {
     "count": 108,
     "unit": "Bar"
@@ -9828,13 +9843,13 @@
   },
   {
    "id": "arban-first-studies-no-11",
-   "file": "songs/Arban/0011 First Studies No. 11.musicxml",
+   "file": "songs/Arban/02011 First Studies No. 11.musicxml",
    "title": "Arban – First Studies No. 11",
    "kind": "MusicXML",
    "sha1": "3d6bf41ebc2bec642fd7467fd03ea9b547c20d98",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 11,
+   "order": 2011,
    "units": {
     "count": 16,
     "unit": "Bar"
@@ -9843,13 +9858,13 @@
   },
   {
    "id": "arban-first-studies-no-12",
-   "file": "songs/Arban/0012 First Studies No. 12.musicxml",
+   "file": "songs/Arban/02012 First Studies No. 12.musicxml",
    "title": "Arban – First Studies No. 12",
    "kind": "MusicXML",
    "sha1": "63f355ab03722d05f9585fbd1a5dea038f2359e2",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 12,
+   "order": 2012,
    "units": {
     "count": 16,
     "unit": "Bar"
@@ -9858,13 +9873,13 @@
   },
   {
    "id": "arban-first-studies-no-13",
-   "file": "songs/Arban/0013 First Studies No. 13.musicxml",
+   "file": "songs/Arban/02013 First Studies No. 13.musicxml",
    "title": "Arban – First Studies No. 13",
    "kind": "MusicXML",
    "sha1": "4050d3ea8dca7bbdf36633e0421d15bc8b545a1f",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 13,
+   "order": 2013,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9873,13 +9888,13 @@
   },
   {
    "id": "arban-first-studies-no-14",
-   "file": "songs/Arban/0014 First Studies No. 14.musicxml",
+   "file": "songs/Arban/02014 First Studies No. 14.musicxml",
    "title": "Arban – First Studies No. 14",
    "kind": "MusicXML",
    "sha1": "de84d11e9e4fa07dfe04133dda08db6670e1e243",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 14,
+   "order": 2014,
    "units": {
     "count": 16,
     "unit": "Bar"
@@ -9888,13 +9903,13 @@
   },
   {
    "id": "arban-first-studies-no-15",
-   "file": "songs/Arban/0015 First Studies No. 15.musicxml",
+   "file": "songs/Arban/02015 First Studies No. 15.musicxml",
    "title": "Arban – First Studies No. 15",
    "kind": "MusicXML",
    "sha1": "273f098d1f15efbedb0df432d828a6fcc1c1aa4d",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 15,
+   "order": 2015,
    "units": {
     "count": 16,
     "unit": "Bar"
@@ -9903,13 +9918,13 @@
   },
   {
    "id": "arban-first-studies-no-16",
-   "file": "songs/Arban/0016 First Studies No. 16.musicxml",
+   "file": "songs/Arban/02016 First Studies No. 16.musicxml",
    "title": "Arban – First Studies No. 16",
    "kind": "MusicXML",
    "sha1": "e3747bac40a63e1273bc26fa278a9d91864a1a8b",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 16,
+   "order": 2016,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9918,13 +9933,13 @@
   },
   {
    "id": "arban-first-studies-no-17",
-   "file": "songs/Arban/0017 First Studies No. 17.musicxml",
+   "file": "songs/Arban/02017 First Studies No. 17.musicxml",
    "title": "Arban – First Studies No. 17",
    "kind": "MusicXML",
    "sha1": "f57700e69b1d793c2b44c44497310876a5d64043",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 17,
+   "order": 2017,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9933,13 +9948,13 @@
   },
   {
    "id": "arban-first-studies-no-18",
-   "file": "songs/Arban/0018 First Studies No. 18.musicxml",
+   "file": "songs/Arban/02018 First Studies No. 18.musicxml",
    "title": "Arban – First Studies No. 18",
    "kind": "MusicXML",
    "sha1": "4cef36bf521d025ae285321b91c87578cd220fad",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 18,
+   "order": 2018,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9948,13 +9963,13 @@
   },
   {
    "id": "arban-first-studies-no-19",
-   "file": "songs/Arban/0019 First Studies No. 19.musicxml",
+   "file": "songs/Arban/02019 First Studies No. 19.musicxml",
    "title": "Arban – First Studies No. 19",
    "kind": "MusicXML",
    "sha1": "942af35720dd03b74b3b0cd9ce000089e1045d54",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 19,
+   "order": 2019,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9963,13 +9978,13 @@
   },
   {
    "id": "arban-first-studies-no-20",
-   "file": "songs/Arban/0020 First Studies No. 20.musicxml",
+   "file": "songs/Arban/02020 First Studies No. 20.musicxml",
    "title": "Arban – First Studies No. 20",
    "kind": "MusicXML",
    "sha1": "095086a5374423184d701657568d6c72923157d1",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 20,
+   "order": 2020,
    "units": {
     "count": 22,
     "unit": "Bar"
@@ -9978,13 +9993,13 @@
   },
   {
    "id": "arban-first-studies-no-21",
-   "file": "songs/Arban/0021 First Studies No. 21.musicxml",
+   "file": "songs/Arban/02021 First Studies No. 21.musicxml",
    "title": "Arban – First Studies No. 21",
    "kind": "MusicXML",
    "sha1": "74e35c57fc0d9ceac5045cbbc462ed3ccffd6824",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 21,
+   "order": 2021,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -9993,13 +10008,13 @@
   },
   {
    "id": "arban-first-studies-no-22",
-   "file": "songs/Arban/0022 First Studies No. 22.musicxml",
+   "file": "songs/Arban/02022 First Studies No. 22.musicxml",
    "title": "Arban – First Studies No. 22",
    "kind": "MusicXML",
    "sha1": "228174af976d0e73087fd1522db19978613e69b9",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 22,
+   "order": 2022,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -10008,13 +10023,13 @@
   },
   {
    "id": "arban-first-studies-no-23",
-   "file": "songs/Arban/0023 First Studies No. 23.musicxml",
+   "file": "songs/Arban/02023 First Studies No. 23.musicxml",
    "title": "Arban – First Studies No. 23",
    "kind": "MusicXML",
    "sha1": "89fcf60ceceb0259f2b45ca550229568b0b201de",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 23,
+   "order": 2023,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -10023,13 +10038,13 @@
   },
   {
    "id": "arban-first-studies-no-24",
-   "file": "songs/Arban/0024 First Studies No. 24.musicxml",
+   "file": "songs/Arban/02024 First Studies No. 24.musicxml",
    "title": "Arban – First Studies No. 24",
    "kind": "MusicXML",
    "sha1": "49dba6dad80f168b8f6ebda847456d2b1d541028",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 24,
+   "order": 2024,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -10038,13 +10053,13 @@
   },
   {
    "id": "arban-first-studies-no-25",
-   "file": "songs/Arban/0025 First Studies No. 25.musicxml",
+   "file": "songs/Arban/02025 First Studies No. 25.musicxml",
    "title": "Arban – First Studies No. 25",
    "kind": "MusicXML",
    "sha1": "994a6f10ce0bc50b55a37dfd90f1c710853a63d2",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 25,
+   "order": 2025,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -10053,13 +10068,13 @@
   },
   {
    "id": "arban-first-studies-no-26",
-   "file": "songs/Arban/0026 First Studies No. 26.musicxml",
+   "file": "songs/Arban/02026 First Studies No. 26.musicxml",
    "title": "Arban – First Studies No. 26",
    "kind": "MusicXML",
    "sha1": "42c507624828237d62d4a4490fef30ac466c62bf",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 26,
+   "order": 2026,
    "units": {
     "count": 40,
     "unit": "Bar"
@@ -10068,13 +10083,13 @@
   },
   {
    "id": "arban-first-studies-no-27",
-   "file": "songs/Arban/0027 First Studies No. 27.musicxml",
+   "file": "songs/Arban/02027 First Studies No. 27.musicxml",
    "title": "Arban – First Studies No. 27",
    "kind": "MusicXML",
    "sha1": "ecc37c7d8714ceed12a2bb45c2e77d025650d8f9",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 27,
+   "order": 2027,
    "units": {
     "count": 32,
     "unit": "Bar"
@@ -10083,13 +10098,13 @@
   },
   {
    "id": "arban-first-studies-no-28",
-   "file": "songs/Arban/0028 First Studies No. 28.musicxml",
+   "file": "songs/Arban/02028 First Studies No. 28.musicxml",
    "title": "Arban – First Studies No. 28",
    "kind": "MusicXML",
    "sha1": "88db258b4c878ad05a8eee5d86ca9704d0629589",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 28,
+   "order": 2028,
    "units": {
     "count": 16,
     "unit": "Bar"
@@ -10098,13 +10113,13 @@
   },
   {
    "id": "arban-first-studies-no-29",
-   "file": "songs/Arban/0029 First Studies No. 29.musicxml",
+   "file": "songs/Arban/02029 First Studies No. 29.musicxml",
    "title": "Arban – First Studies No. 29",
    "kind": "MusicXML",
    "sha1": "481826d795a4cdf98598e0db77174102c6bc1736",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 29,
+   "order": 2029,
    "units": {
     "count": 20,
     "unit": "Bar"
@@ -10113,13 +10128,13 @@
   },
   {
    "id": "arban-first-studies-no-30",
-   "file": "songs/Arban/0030 First Studies No. 30.musicxml",
+   "file": "songs/Arban/02030 First Studies No. 30.musicxml",
    "title": "Arban – First Studies No. 30",
    "kind": "MusicXML",
    "sha1": "393cee1f65d36dd3866f2ca8f8e2dd3e47ba76f5",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 30,
+   "order": 2030,
    "units": {
     "count": 16,
     "unit": "Bar"
@@ -10128,13 +10143,13 @@
   },
   {
    "id": "arban-first-studies-no-31",
-   "file": "songs/Arban/0031 First Studies No. 31.musicxml",
+   "file": "songs/Arban/02031 First Studies No. 31.musicxml",
    "title": "Arban – First Studies No. 31",
    "kind": "MusicXML",
    "sha1": "ca1eb8f002a18606372456e65a11ba64e7163a72",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 31,
+   "order": 2031,
    "units": {
     "count": 20,
     "unit": "Bar"
@@ -10143,13 +10158,13 @@
   },
   {
    "id": "arban-first-studies-no-32",
-   "file": "songs/Arban/0032 First Studies No. 32.musicxml",
+   "file": "songs/Arban/02032 First Studies No. 32.musicxml",
    "title": "Arban – First Studies No. 32",
    "kind": "MusicXML",
    "sha1": "244110d493aca5a3faa83f297781a5b157f663a9",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 32,
+   "order": 2032,
    "units": {
     "count": 20,
     "unit": "Bar"
@@ -10158,13 +10173,13 @@
   },
   {
    "id": "arban-first-studies-no-33",
-   "file": "songs/Arban/0033 First Studies No. 33.musicxml",
+   "file": "songs/Arban/02033 First Studies No. 33.musicxml",
    "title": "Arban – First Studies No. 33",
    "kind": "MusicXML",
    "sha1": "53e5bbaebeccb23e641f8bd1a1a1b9a9c959de6a",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 33,
+   "order": 2033,
    "units": {
     "count": 24,
     "unit": "Bar"
@@ -10173,13 +10188,13 @@
   },
   {
    "id": "arban-first-studies-no-34",
-   "file": "songs/Arban/0034 First Studies No. 34.musicxml",
+   "file": "songs/Arban/02034 First Studies No. 34.musicxml",
    "title": "Arban – First Studies No. 34",
    "kind": "MusicXML",
    "sha1": "4164d4bad64ba64c1d8ee0093dcfaf6fc398d58e",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 34,
+   "order": 2034,
    "units": {
     "count": 20,
     "unit": "Bar"
@@ -10188,13 +10203,13 @@
   },
   {
    "id": "arban-first-studies-no-35",
-   "file": "songs/Arban/0035 First Studies No. 35.musicxml",
+   "file": "songs/Arban/02035 First Studies No. 35.musicxml",
    "title": "Arban – First Studies No. 35",
    "kind": "MusicXML",
    "sha1": "e469fb78919f493c50b4ef737607a9bcebe6893e",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 35,
+   "order": 2035,
    "units": {
     "count": 20,
     "unit": "Bar"
@@ -10203,13 +10218,13 @@
   },
   {
    "id": "arban-first-studies-no-36",
-   "file": "songs/Arban/0036 First Studies No. 36.musicxml",
+   "file": "songs/Arban/02036 First Studies No. 36.musicxml",
    "title": "Arban – First Studies No. 36",
    "kind": "MusicXML",
    "sha1": "1b7a90ea2dcdae48ba1c8a9ec47fa08651caf983",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 36,
+   "order": 2036,
    "units": {
     "count": 28,
     "unit": "Bar"
@@ -10218,13 +10233,13 @@
   },
   {
    "id": "arban-first-studies-no-37",
-   "file": "songs/Arban/0037 First Studies No. 37.musicxml",
+   "file": "songs/Arban/02037 First Studies No. 37.musicxml",
    "title": "Arban – First Studies No. 37",
    "kind": "MusicXML",
    "sha1": "3f54a953901042addb355d5365cf067e7cdf9e45",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 37,
+   "order": 2037,
    "units": {
     "count": 32,
     "unit": "Bar"
@@ -10233,13 +10248,13 @@
   },
   {
    "id": "arban-first-studies-no-38",
-   "file": "songs/Arban/0038 First Studies No. 38.musicxml",
+   "file": "songs/Arban/02038 First Studies No. 38.musicxml",
    "title": "Arban – First Studies No. 38",
    "kind": "MusicXML",
    "sha1": "ed71563b694f77781afbf412841f48126489118d",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 38,
+   "order": 2038,
    "units": {
     "count": 40,
     "unit": "Bar"
@@ -10248,13 +10263,13 @@
   },
   {
    "id": "arban-first-studies-no-39",
-   "file": "songs/Arban/0039 First Studies No. 39.musicxml",
+   "file": "songs/Arban/02039 First Studies No. 39.musicxml",
    "title": "Arban – First Studies No. 39",
    "kind": "MusicXML",
    "sha1": "bfd560c46fa38de3c6b28052a47d3fe142008afc",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 39,
+   "order": 2039,
    "units": {
     "count": 32,
     "unit": "Bar"
@@ -10263,13 +10278,13 @@
   },
   {
    "id": "arban-first-studies-no-40",
-   "file": "songs/Arban/0040 First Studies No. 40.musicxml",
+   "file": "songs/Arban/02040 First Studies No. 40.musicxml",
    "title": "Arban – First Studies No. 40",
    "kind": "MusicXML",
    "sha1": "834eb0e34b1222bca9fccdc61a6101af3a55bd52",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 40,
+   "order": 2040,
    "units": {
     "count": 32,
     "unit": "Bar"
@@ -10278,13 +10293,13 @@
   },
   {
    "id": "arban-first-studies-no-41",
-   "file": "songs/Arban/0041 First Studies No. 41.musicxml",
+   "file": "songs/Arban/02041 First Studies No. 41.musicxml",
    "title": "Arban – First Studies No. 41",
    "kind": "MusicXML",
    "sha1": "05798743c14441ae0ba548178894ed423e5b82e4",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 41,
+   "order": 2041,
    "units": {
     "count": 8,
     "unit": "Bar"
@@ -10293,13 +10308,13 @@
   },
   {
    "id": "arban-first-studies-no-42",
-   "file": "songs/Arban/0042 First Studies No. 42.musicxml",
+   "file": "songs/Arban/02042 First Studies No. 42.musicxml",
    "title": "Arban – First Studies No. 42",
    "kind": "MusicXML",
    "sha1": "b722c5fc519bc6ef3a21f9c6d7ccbb57483fe437",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 42,
+   "order": 2042,
    "units": {
     "count": 8,
     "unit": "Bar"
@@ -10308,13 +10323,13 @@
   },
   {
    "id": "arban-first-studies-no-43",
-   "file": "songs/Arban/0043 First Studies No. 43.musicxml",
+   "file": "songs/Arban/02043 First Studies No. 43.musicxml",
    "title": "Arban – First Studies No. 43",
    "kind": "MusicXML",
    "sha1": "3391f9cd8a5d67723a3f1b11bd3007e5b1e06d80",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 43,
+   "order": 2043,
    "units": {
     "count": 8,
     "unit": "Bar"
@@ -10323,13 +10338,13 @@
   },
   {
    "id": "arban-first-studies-no-44",
-   "file": "songs/Arban/0044 First Studies No. 44.musicxml",
+   "file": "songs/Arban/02044 First Studies No. 44.musicxml",
    "title": "Arban – First Studies No. 44",
    "kind": "MusicXML",
    "sha1": "4bcd88928555e38f43d89d3dfe942c6f036c9c89",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 44,
+   "order": 2044,
    "units": {
     "count": 8,
     "unit": "Bar"
@@ -10338,13 +10353,13 @@
   },
   {
    "id": "arban-first-studies-no-45",
-   "file": "songs/Arban/0045 First Studies No. 45.musicxml",
+   "file": "songs/Arban/02045 First Studies No. 45.musicxml",
    "title": "Arban – First Studies No. 45",
    "kind": "MusicXML",
    "sha1": "b2085216e95d0de38434870e5f3ad13d7673c568",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 45,
+   "order": 2045,
    "units": {
     "count": 8,
     "unit": "Bar"
@@ -10353,13 +10368,13 @@
   },
   {
    "id": "arban-first-studies-no-46",
-   "file": "songs/Arban/0046 First Studies No. 46.musicxml",
+   "file": "songs/Arban/02046 First Studies No. 46.musicxml",
    "title": "Arban – First Studies No. 46",
    "kind": "MusicXML",
    "sha1": "20062a9f70b06c81dfa77137e87cd911f7cb16ac",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 46,
+   "order": 2046,
    "units": {
     "count": 104,
     "unit": "Bar"
@@ -10368,13 +10383,13 @@
   },
   {
    "id": "arban-first-studies-no-47",
-   "file": "songs/Arban/0047 First Studies No. 47.musicxml",
+   "file": "songs/Arban/02047 First Studies No. 47.musicxml",
    "title": "Arban – First Studies No. 47",
    "kind": "MusicXML",
    "sha1": "17c6672ecd700d7ba7fbf9f95ec15a9be9ee3fde",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 47,
+   "order": 2047,
    "units": {
     "count": 32,
     "unit": "Bar"
@@ -10383,13 +10398,13 @@
   },
   {
    "id": "arban-first-studies-no-48",
-   "file": "songs/Arban/0048 First Studies No. 48.musicxml",
+   "file": "songs/Arban/02048 First Studies No. 48.musicxml",
    "title": "Arban – First Studies No. 48",
    "kind": "MusicXML",
    "sha1": "fbfca1aee8fe4a17306ce40bd3767e1cd56ef16e",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 48,
+   "order": 2048,
    "units": {
     "count": 32,
     "unit": "Bar"
@@ -10398,13 +10413,13 @@
   },
   {
    "id": "arban-first-studies-no-49",
-   "file": "songs/Arban/0049 First Studies No. 49.musicxml",
+   "file": "songs/Arban/02049 First Studies No. 49.musicxml",
    "title": "Arban – First Studies No. 49",
    "kind": "MusicXML",
    "sha1": "ebeb84bbab66d287b26bd172d0a6ab3bb3226291",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 49,
+   "order": 2049,
    "units": {
     "count": 32,
     "unit": "Bar"
@@ -10413,13 +10428,13 @@
   },
   {
    "id": "arban-first-studies-no-50",
-   "file": "songs/Arban/0050 First Studies No. 50.musicxml",
+   "file": "songs/Arban/02050 First Studies No. 50.musicxml",
    "title": "Arban – First Studies No. 50",
    "kind": "MusicXML",
    "sha1": "79780f1afd612ff802e74081a8bab3e9ce85dc4c",
    "addedAt": "2026-11-24T05:00:00Z",
    "category": "arban",
-   "order": 50,
+   "order": 2050,
    "units": {
     "count": 40,
     "unit": "Bar"
@@ -10427,1454 +10442,575 @@
    "group": "First Studies"
   },
   {
-   "id": "removed-fcdc0bd880dc",
-   "file": "songs/Can't Get Started, Back Up Trumpet Rod S.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "fcdc0bd880dc3404f5c6a576365ff49db8fe1f17",
-   "addedAt": "2026-11-19T11:33:47Z",
-   "removed": true
-  },
-  {
-   "id": "removed-51612c62a637",
-   "file": "songs/Arturo S Autumn Leaves (G minor).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
-   "addedAt": "2026-11-19T11:28:16Z",
-   "removed": true
-  },
-  {
-   "id": "removed-8198bc37d286",
-   "file": "songs/It Never Entered My Mind (D major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "8198bc37d2864740b8bbe6b19397628a642698d3",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-a83a6bfd370d",
-   "file": "songs/Iv Got You Under My Skin (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "a83a6bfd370db9ff8dbd26e40dd451f9b45a24db",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-8c69291f7cc1",
-   "file": "songs/Long Ago and Far Away (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "8c69291f7cc1b78c22c1df547addcafffc4de7ea",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-b985620348a8",
-   "file": "songs/Max P September in the Rain (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "b985620348a854008504183f13530e90976a86e3",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-cb88195b5ee0",
-   "file": "songs/Miles D My Funny Valentine (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "cb88195b5ee0aebf2891d85d69c721485adf5c53",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-a843cba5d74c",
-   "file": "songs/My Funny Valentine (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "a843cba5d74cbd267a3b4347c6d2141a536bcdce",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-382d6ca7d4e6",
-   "file": "songs/Nearness of You (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "382d6ca7d4e62c2e69c0d4261574f1c0d86d4c6c",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-b09e49d900c6",
-   "file": "songs/Nevertheless (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "b09e49d900c6cf71393631fb9440558d77cfeed8",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-0dd5cc2e05a4",
-   "file": "songs/Night and Day (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "0dd5cc2e05a41797b9db07d34f71cee4593ef527",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-883e9b4477d7",
-   "file": "songs/Our Love Is Here to Stay (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "883e9b4477d74044844b420a149ead0f38f5126b",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-eaf078a14035",
-   "file": "songs/Rudy V Alone Together (F minor).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "eaf078a14035682b6bca1c22f93235a494416bcd",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-6a1b10787d4d",
-   "file": "songs/September in the Rain (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "6a1b10787d4d2e20d30d86cd9a334858b72cabb7",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-8e5b939fec68",
-   "file": "songs/Someone to Watch Over Me (D♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "8e5b939fec68d7a9289dcd21043026efc864da4f",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-f2418c687c7a",
-   "file": "songs/Stardust (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "f2418c687c7a5fbe63e213cc40db3eadbcf45930",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-369943d662d3",
-   "file": "songs/The Nearness of You (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "369943d662d3ba71590f0b29d4dd7378c51baf8a",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-00b245446c0b",
-   "file": "songs/The Very Thought of You (A♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "00b245446c0b927a9c9599b538e1b4477e9d3dc0",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-687ba3dbe728",
-   "file": "songs/There Will Never Be Another You (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "687ba3dbe72857fa55ee13df45fc807dcf9786a2",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-43daa4436789",
-   "file": "songs/Till There Was You (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "43daa44367899efec30c98a1456682ca87d54862",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-1370ddd06979",
-   "file": "songs/When I Fall in Love (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "1370ddd069794dc5b7ae5a010f40e364f62d2392",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-2b7b1f57485a",
-   "file": "songs/You'll Never Know (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "2b7b1f57485a55cb95904dbef65f72567b3c37c0",
-   "addedAt": "2026-11-19T11:24:28Z",
-   "removed": true
-  },
-  {
-   "id": "removed-6099dc07d387",
-   "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "6099dc07d387f98179e564b8b754448f37d8c0bf",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-0554d6b18d0a",
-   "file": "songs/Chet B It Never Entered My Mind (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "0554d6b18d0a265e96601d263dc0e6f24754689a",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-41d3caa93947",
-   "file": "songs/Chris B Ave Maria (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "41d3caa939477b3c9910cad6f0358b6252222f0d",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-ab4a2104617f",
-   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-81c7845c2672",
-   "file": "songs/Clifford B Embraceable You (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "81c7845c26723ddf6c850c927fdd6a40b0a66fbd",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-1a7c2b50fd3a",
-   "file": "songs/Clifford B Stardust (D♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "1a7c2b50fd3a6e1a72bcb8a68d9cfeb226434361",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-e4ba701d6b05",
-   "file": "songs/Clifford B Where or When (G major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "e4ba701d6b05ba8941ad957a18a2ada12b0810d3",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-bcd480e20dc9",
-   "file": "songs/Desafinado (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "bcd480e20dc91dd5b4da675ed1e7739a038b250e",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-cb2e4c55a25c",
-   "file": "songs/Duke E Don't Get Around Much Anymore (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "cb2e4c55a25c17ba6b037ddeb927ac35143a9e58",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-25fbdfbab6b8",
-   "file": "songs/Everytime We Say Goodbye (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "25fbdfbab6b8fc959392620c84f7c045b39d620a",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-be333838624a",
-   "file": "songs/Everytime We Say Goodbye (G major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "be333838624a14958b7dc0cf2b3068fd83a2a0cd",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-9841c2c8e8b1",
-   "file": "songs/Glad to Be Unhappy (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "9841c2c8e8b1c8906c3837160fee1cbe52edac48",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-03370c73c0fc",
-   "file": "songs/Herb a Someone to Watch Over Me (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "03370c73c0fcfa157651daba0401be0cac20731b",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-c8ecabf68616",
-   "file": "songs/I Can`t Get Started (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "c8ecabf68616b5b8e484b5bf07bb32f0227c5b15",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-7ea57b900cfb",
-   "file": "songs/I Fall in Love Too Easily (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "7ea57b900cfbb07b3b2e8f6d2cf51e30b1785436",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-f68942887e9c",
-   "file": "songs/I Only Have Eyes for You (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "f68942887e9c9e57056c543558c37b8975a4b8f6",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-fb6cd4f07ff0",
-   "file": "songs/I'm in the Mood for Love (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "fb6cd4f07ff006218fcc616f4bd6d34add383fa2",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-ca6faa6b639f",
-   "file": "songs/If (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "ca6faa6b639f75a5355789e012d7a19723412dd5",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-86fdfca0adc1",
-   "file": "songs/In the Wee Small Hours (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "86fdfca0adc18d91cce9da3ef88b699e85a003c3",
-   "addedAt": "2026-11-19T11:15:54Z",
-   "removed": true
-  },
-  {
-   "id": "removed-6afd02bc861e",
-   "file": "songs/A Kiss to Build a Dream On (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "6afd02bc861eaea60a061f7cce3f19bfde0224ed",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-1e29eb1a599f",
-   "file": "songs/Call Me Irresponsible (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "1e29eb1a599f34af14ae26564a033defcf833f21",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-9dfc2ec64833",
-   "file": "songs/It Had to Be You (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "9dfc2ec648334058f79d342999f73a2c316fa3fd",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-a7b1bd81380c",
-   "file": "songs/Misty (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "a7b1bd81380cee19b033ac9b64884c049f405f3e",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-5a0814e518cf",
-   "file": "songs/Moon River (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "5a0814e518cf09858cfd69b0f49c9dcc6ad39515",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-8a08ce6cc178",
-   "file": "songs/Nothing's Gonna Change My Love for You (B major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "8a08ce6cc17839adc3a778a2dbc318d717f80056",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-7c2e6c6d9e0b",
-   "file": "songs/Strangers in the Night (F major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "7c2e6c6d9e0b1f34abc022c652dea56526028fc6",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-ad4a53d903b8",
-   "file": "songs/Unforgettable (G major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "ad4a53d903b85ac812e2575e7cc18d71a04f7cfb",
-   "addedAt": "2026-11-19T11:04:21Z",
-   "removed": true
-  },
-  {
-   "id": "removed-c1c9a90ba42a",
-   "file": "songs/Close to You (G major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "c1c9a90ba42afc3144609d1782cd692fffb0faaa",
-   "addedAt": "2026-11-19T10:54:04Z",
-   "removed": true
-  },
-  {
-   "id": "removed-f6183bcd3eb5",
-   "file": "songs/Arturo S Aprés Un Reve (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-a2b86d9a9361",
-   "file": "songs/Arturo S Pavane (D minor).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "a2b86d9a9361fc82720dc0ab26f49ebc3c18c9a5",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-a3a09bd6f9aa",
-   "file": "songs/Chet B You Don´t Know What Love Is (F minor).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "a3a09bd6f9aa7d7f29d3932c6b13e14cc1699b60",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-4c81fb2f978d",
-   "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-94d8fb9ed5c3",
-   "file": "songs/Embraceable You (E♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "94d8fb9ed5c3030c7e9e0f6234ac8faab5f74cf8",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-a15499e6ca46",
-   "file": "songs/For All We Know (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "a15499e6ca4607fd72b80d683bf1d868cb52ed5d",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-95d13321a574",
-   "file": "songs/Jackie G I'll Be Seeing You Db major.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "95d13321a574953ecfa71e24e4b5e3b1da4ac4c8",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-86f0e524ef08",
-   "file": "songs/My One And Only Love Baritone ColtraneHartman.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "86f0e524ef08a39bfbbc619c0988f058a9f9bcb7",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-b38e9f4c2d25",
-   "file": "songs/Stardust (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "b38e9f4c2d25f207bfd1e0f2f09c9a56f57dbd2d",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-7fcedf0aca9d",
-   "file": "songs/When You Wish Upon a Star (B♭ major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "7fcedf0aca9d420def0f28c2a5927b3d8ca80d26",
-   "addedAt": "2026-11-02T05:45:53Z",
-   "removed": true
-  },
-  {
-   "id": "removed-c1761caa55e3",
-   "file": "songs/How Deep Is the Ocean (C minor).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "c1761caa55e327d1efecb57a5984029b8a9ae2d7",
-   "addedAt": "2026-11-02T05:26:24Z",
-   "removed": true
-  },
-  {
-   "id": "removed-64c90a29b089",
-   "file": "songs/I Cant Get Started (C major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "64c90a29b08951a6eb8c2057a3ffb03508119c2f",
-   "addedAt": "2026-11-02T05:25:01Z",
-   "removed": true
-  },
-  {
-   "id": "removed-bf922f904408",
-   "file": "songs/Chet B What a Difference a Day Makes (D major).mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "bf922f904408c1753e099b1cef17a4c265ecd824",
-   "addedAt": "2026-11-02T05:22:16Z",
-   "removed": true
-  },
-  {
-   "id": "removed-55a8b216902c",
-   "file": "songs/The Nearness of You, Frank Sinatra.musicxml",
-   "title": "",
+   "id": "arban-syncopation-no-1",
+   "file": "songs/Arban/03001 Syncopation No. 1.musicxml",
+   "title": "Arban – Syncopation No. 1",
    "kind": "MusicXML",
-   "sha1": "55a8b216902c9bcc664ef623da8bc191b1b86aff",
-   "addedAt": "2026-11-02T03:45:34Z",
-   "removed": true
+   "sha1": "32e8237a2d70f714fd4adccbceb9584b408dd7ce",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3001,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
   },
   {
-   "id": "removed-98fd2b73d742",
-   "file": "songs/BeeGees Love So Right Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "98fd2b73d7427c64f35777af403338aa15e9c8b3",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-c9e959668a97",
-   "file": "songs/Carpenters Goodbye To Love Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "c9e959668a97d51af4f1894c674b32b7b82bdb6a",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-f4bcf98ceb3a",
-   "file": "songs/Darlene Z Have Your Way Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "f4bcf98ceb3abd0920532e1c6d7b725c5c0b9a11",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-74710939bd9f",
-   "file": "songs/Luis M Contigo Aprendi Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "74710939bd9f10565362172c8839bf28456e213f",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-213ebb73b81b",
-   "file": "songs/Luis M Nos Hizo Falta Tiempo VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "213ebb73b81bbed08a5c76b36cf17da0ff7b184d",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-183a8c327364",
-   "file": "songs/Luis M Somos Novios Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "183a8c327364b1171bd84da5d0edef572cfc88c4",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-024844acde42",
-   "file": "songs/Quiet Nights of Quiet Stars Corcovado voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "024844acde422e6b8a9b9f7a7a7d21a36ca0f3ad",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-d07de4050337",
-   "file": "songs/Rod S A Nightingale Sang in Berkeley Square VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "d07de40503376271931a60559e075431b7f3e4b6",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-2c73e70168c7",
-   "file": "songs/Rod S For All We Know VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "2c73e70168c7b094569e74951cb3dc04802e164f",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-4b67153bc782",
-   "file": "songs/Rod S I Can't Get Started VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "4b67153bc7820fe81efa79adcd48f52d79c1cd75",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-be3243a7cdbc",
-   "file": "songs/Rod S I'll Be Seeing You VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "be3243a7cdbcef732431e2ad7123002f9c1910c5",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-1e17c1dd04ce",
-   "file": "songs/Rod S Isn't It Romantic VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "1e17c1dd04ce860b89dcd973214831295999faff",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-7b570d2864d5",
-   "file": "songs/Rod S It Had To Be You VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "7b570d2864d5596f92159e4b070c2f801d477049",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-90147e00df44",
-   "file": "songs/Rod S Moonglow VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "90147e00df44a190d691364f6c8d5afb2d7c9aca",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-9078f1ff4b26",
-   "file": "songs/Rod S My One and Only Love VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "9078f1ff4b26ae4cb9a9e2470fb51cb853352b17",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-39f2248f0820",
-   "file": "songs/Rod S Night and Day VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "39f2248f0820bd1b6b00af86554fe30a4d9c7bd6",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-4ac422a22fda",
-   "file": "songs/Rod S Our Love Is Here To Stay VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "4ac422a22fda8d6d83726ee79837c43bfbb97111",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-196634b06afb",
-   "file": "songs/Rod S September in the Rain VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "196634b06afb46aeee27b8eaf088d4407cdebd04",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-26330c69d647",
-   "file": "songs/Rod S Stardust VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "26330c69d6475846d48f81fa299f9ceae9794387",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-24666546c7df",
-   "file": "songs/Rod S That's All VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "24666546c7dfceb27bf20bdbcc627aa2626278f1",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-504f70685b2e",
-   "file": "songs/Rod S The Very Thought of You VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "504f70685b2e3c032b03e0c9392f3f3d58cf7825",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-346c9660715d",
-   "file": "songs/Rod S Until The Real Thing Comes Along voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "346c9660715d9638e139283863fa3f3b3acf4b94",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-64e5da6c5861",
-   "file": "songs/They Can't Take That Away from Me VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "64e5da6c58616cc550c94002683e60dc96292c0f",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-7495823725d1",
-   "file": "songs/Xvorostovsky I Loved You Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "7495823725d1cf0daeb28d3606abd46a753285a3",
-   "addedAt": "2026-11-02T01:54:59Z",
-   "removed": true
-  },
-  {
-   "id": "removed-0b0cd2f5ba32",
-   "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "0b0cd2f5ba32a610f16089c3db9b7054ef3ad35f",
-   "addedAt": "2026-11-02T01:13:02Z",
-   "removed": true
-  },
-  {
-   "id": "removed-df2deb8449da",
-   "file": "songs/Rod S Only Have Eyes For You.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "df2deb8449dac86970fdda41a7b05a62ae9ecdcf",
-   "addedAt": "2026-11-02T01:09:42Z",
-   "removed": true
-  },
-  {
-   "id": "removed-af29489870c2",
-   "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "af29489870c29bac4bab6decf48dd6e745336519",
-   "addedAt": "2026-11-02T00:59:23Z",
-   "removed": true
-  },
-  {
-   "id": "removed-663916760526",
-   "file": "songs/Kat E Just Like Starting Over Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "6639167605262a628469cad057eb740694f7981c",
-   "addedAt": "2026-11-02T00:59:01Z",
-   "removed": true
-  },
-  {
-   "id": "removed-fd975a3922a1",
-   "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "fd975a3922a1a037723d2c1635a4051991c220e4",
-   "addedAt": "2026-11-02T00:58:22Z",
-   "removed": true
-  },
-  {
-   "id": "removed-8450df5c740a",
-   "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "8450df5c740a60d149a2cfcf369739b587d12075",
-   "addedAt": "2026-11-02T00:57:39Z",
-   "removed": true
-  },
-  {
-   "id": "removed-10c970648b97",
-   "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "10c970648b97abf44ddd9fe35e2a30334994114e",
-   "addedAt": "2026-11-02T00:54:45Z",
-   "removed": true
-  },
-  {
-   "id": "removed-1b40abfd9685",
-   "file": "songs/Rod S 'Till There Was You Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "1b40abfd96852b4e7755e12cbbaa0b5c2d1059ec",
-   "addedAt": "2026-11-02T00:52:38Z",
-   "removed": true
-  },
-  {
-   "id": "removed-e572c50bfa5c",
-   "file": "songs/Beatles All You Need Is Love Voice.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "e572c50bfa5c917132ad10d34272eeb9a6421345",
-   "addedAt": "2026-11-02T00:46:58Z",
-   "removed": true
-  },
-  {
-   "id": "removed-038140b15da7",
-   "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
-   "addedAt": "2026-11-02T00:46:35Z",
-   "removed": true
-  },
-  {
-   "id": "removed-09b76d355fef",
-   "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "09b76d355fefa0dc5fbcedfcd7dbbea6f34bf862",
-   "addedAt": "2026-11-02T00:43:46Z",
-   "removed": true
-  },
-  {
-   "id": "removed-66608b585108",
-   "file": "songs/Miles D Someday My Prince Will Come.mid",
-   "title": "",
-   "kind": "MIDI",
-   "sha1": "66608b5851085ddcbc25bdcdd39e9a971977949f",
-   "addedAt": "2026-11-02T00:38:08Z",
-   "removed": true
-  },
-  {
-   "id": "removed-56387e867756",
-   "file": "songs/Someday My Prince Will Come, Miles Davis.musicxml",
-   "title": "",
+   "id": "arban-syncopation-no-2",
+   "file": "songs/Arban/03002 Syncopation No. 2.musicxml",
+   "title": "Arban – Syncopation No. 2",
    "kind": "MusicXML",
-   "sha1": "56387e8677569d56825c6e9331d365bd789c688e",
-   "addedAt": "2026-11-02T00:37:31Z",
-   "removed": true
+   "sha1": "585366d1dbe865fe418908aa5d07f08d3177de68",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3002,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
   },
   {
-   "id": "removed-fca6c507a0e4",
-   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
-   "title": "",
+   "id": "arban-syncopation-no-3",
+   "file": "songs/Arban/03003 Syncopation No. 3.musicxml",
+   "title": "Arban – Syncopation No. 3",
    "kind": "MusicXML",
-   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
-   "addedAt": "2026-11-01T07:14:35Z",
-   "removed": true
+   "sha1": "12ef6665636944fa9796695262addddda463f40a",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3003,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-4",
+   "file": "songs/Arban/03004 Syncopation No. 4.musicxml",
+   "title": "Arban – Syncopation No. 4",
+   "kind": "MusicXML",
+   "sha1": "2a142a6427dc887863ca2f179836d684185197ad",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3004,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-5",
+   "file": "songs/Arban/03005 Syncopation No. 5.musicxml",
+   "title": "Arban – Syncopation No. 5",
+   "kind": "MusicXML",
+   "sha1": "6f56391421cc47ebb93d864b37e9425493d054e0",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3005,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-6",
+   "file": "songs/Arban/03006 Syncopation No. 6.musicxml",
+   "title": "Arban – Syncopation No. 6",
+   "kind": "MusicXML",
+   "sha1": "42685ab91dd9a0e5aec79ff1b994c58cbeef868a",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3006,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-7",
+   "file": "songs/Arban/03007 Syncopation No. 7.musicxml",
+   "title": "Arban – Syncopation No. 7",
+   "kind": "MusicXML",
+   "sha1": "2a9dcb2f11be1897f6eef6885483d526f315b9bf",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3007,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-8",
+   "file": "songs/Arban/03008 Syncopation No. 8.musicxml",
+   "title": "Arban – Syncopation No. 8",
+   "kind": "MusicXML",
+   "sha1": "ca2c9e123372777ef2dd4069143adc37f6e47824",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3008,
+   "units": {
+    "count": 25,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-9",
+   "file": "songs/Arban/03009 Syncopation No. 9.musicxml",
+   "title": "Arban – Syncopation No. 9",
+   "kind": "MusicXML",
+   "sha1": "c8d59743c485c69ae6f9c49dac3e1045aa2a7c7d",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3009,
+   "units": {
+    "count": 25,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-10",
+   "file": "songs/Arban/03010 Syncopation No. 10.musicxml",
+   "title": "Arban – Syncopation No. 10",
+   "kind": "MusicXML",
+   "sha1": "59d556a4a2a54b2890434e3ee05b8e44d5c0fc2d",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3010,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-11",
+   "file": "songs/Arban/03011 Syncopation No. 11.musicxml",
+   "title": "Arban – Syncopation No. 11",
+   "kind": "MusicXML",
+   "sha1": "b6199eec92b1c57a6fe4b0cc9c1f5189fb29710f",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3011,
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-syncopation-no-12",
+   "file": "songs/Arban/03012 Syncopation No. 12.musicxml",
+   "title": "Arban – Syncopation No. 12",
+   "kind": "MusicXML",
+   "sha1": "f8b796e6cfcbed9cdf1e09a373d6da396a1c09fd",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 3012,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Syncopation"
+  },
+  {
+   "id": "arban-dotted-eighths-no-13",
+   "file": "songs/Arban/04001 Dotted Eighths No. 13.musicxml",
+   "title": "Arban – Dotted Eighths No. 13",
+   "kind": "MusicXML",
+   "sha1": "0ecf30f2400e070903a931a461ca3ab3936b02a9",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 4001,
+   "units": {
+    "count": 16,
+    "unit": "Bar"
+   },
+   "group": "Dotted Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-dotted-eighths-no-14",
+   "file": "songs/Arban/04002 Dotted Eighths No. 14.musicxml",
+   "title": "Arban – Dotted Eighths No. 14",
+   "kind": "MusicXML",
+   "sha1": "f1ccecbe9f82aa228c99f9c45119708024e43138",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 4002,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Dotted Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-dotted-eighths-no-15",
+   "file": "songs/Arban/04003 Dotted Eighths No. 15.musicxml",
+   "title": "Arban – Dotted Eighths No. 15",
+   "kind": "MusicXML",
+   "sha1": "b7485dbf1e2a82420e037318798974da3f649d79",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 4003,
+   "units": {
+    "count": 56,
+    "unit": "Bar"
+   },
+   "group": "Dotted Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-dotted-eighths-no-16",
+   "file": "songs/Arban/04004 Dotted Eighths No. 16.musicxml",
+   "title": "Arban – Dotted Eighths No. 16",
+   "kind": "MusicXML",
+   "sha1": "a3f2fe184aeab2b76cce59432c5e3c288960de59",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 4004,
+   "units": {
+    "count": 49,
+    "unit": "Bar"
+   },
+   "group": "Dotted Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-dotted-eighths-no-17",
+   "file": "songs/Arban/04005 Dotted Eighths No. 17.musicxml",
+   "title": "Arban – Dotted Eighths No. 17",
+   "kind": "MusicXML",
+   "sha1": "f8a591e0f343a3699bd021b873d269fb31b0ff2e",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 4005,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Dotted Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-dotted-eighths-no-18",
+   "file": "songs/Arban/04006 Dotted Eighths No. 18.musicxml",
+   "title": "Arban – Dotted Eighths No. 18",
+   "kind": "MusicXML",
+   "sha1": "e0a9c33ab9d2ff0e1dde86e3c9a9ab73fa820e8f",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 4006,
+   "units": {
+    "count": 33,
+    "unit": "Bar"
+   },
+   "group": "Dotted Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-19",
+   "file": "songs/Arban/05001 Eighths and Sixteenths No. 19.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 19",
+   "kind": "MusicXML",
+   "sha1": "6e5ad1eb09f583b8998cf3e9e3aa94ac797dc7af",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5001,
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-20",
+   "file": "songs/Arban/05002 Eighths and Sixteenths No. 20.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 20",
+   "kind": "MusicXML",
+   "sha1": "9307b7f0938f64fbd193d1dbd197a88cf1347aa4",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5002,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-21",
+   "file": "songs/Arban/05003 Eighths and Sixteenths No. 21.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 21",
+   "kind": "MusicXML",
+   "sha1": "fe2427f3ebb06a944206eb1a0e2bddf51f7aa843",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5003,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-22",
+   "file": "songs/Arban/05004 Eighths and Sixteenths No. 22.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 22",
+   "kind": "MusicXML",
+   "sha1": "5ec6be7810e4a0b3dbe966c2e1cab64d881879e2",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5004,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-23",
+   "file": "songs/Arban/05005 Eighths and Sixteenths No. 23.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 23",
+   "kind": "MusicXML",
+   "sha1": "bc35cb9805ff93d57fdd273af600b0cec49cc432",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5005,
+   "units": {
+    "count": 25,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-24",
+   "file": "songs/Arban/05006 Eighths and Sixteenths No. 24.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 24",
+   "kind": "MusicXML",
+   "sha1": "0936e4e154aa46ea96833b2c86b7d20b443f0d5f",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5006,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-25",
+   "file": "songs/Arban/05007 Eighths and Sixteenths No. 25.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 25",
+   "kind": "MusicXML",
+   "sha1": "abe15985fa499f391610658d57993f61d9a93471",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5007,
+   "units": {
+    "count": 36,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-26",
+   "file": "songs/Arban/05008 Eighths and Sixteenths No. 26.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 26",
+   "kind": "MusicXML",
+   "sha1": "f109d504801e8b30da8130cfffbd01fd982f1181",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5008,
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-eighths-and-sixteenths-no-27",
+   "file": "songs/Arban/05009 Eighths and Sixteenths No. 27.musicxml",
+   "title": "Arban – Eighths and Sixteenths No. 27",
+   "kind": "MusicXML",
+   "sha1": "e51c6b6604f7a9bd54bb2b4ecd89b5c2cd818441",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 5009,
+   "units": {
+    "count": 36,
+    "unit": "Bar"
+   },
+   "group": "Eighths and Sixteenths"
+  },
+  {
+   "id": "arban-6-8-study-no-28",
+   "file": "songs/Arban/06001 6-8 Study No. 28.musicxml",
+   "title": "Arban – 6/8 Study No. 28",
+   "kind": "MusicXML",
+   "sha1": "090bc458dad88f152bcef3ff0f238150ad7cb32f",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6001,
+   "units": {
+    "count": 32,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-29",
+   "file": "songs/Arban/06002 6-8 Study No. 29.musicxml",
+   "title": "Arban – 6/8 Study No. 29",
+   "kind": "MusicXML",
+   "sha1": "b97ff86075ccf7234281ca08367f151ffe4ba983",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6002,
+   "units": {
+    "count": 36,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-30",
+   "file": "songs/Arban/06003 6-8 Study No. 30.musicxml",
+   "title": "Arban – 6/8 Study No. 30",
+   "kind": "MusicXML",
+   "sha1": "7028b8c1033d1b6092111ed4ce4f337ab84acdaa",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6003,
+   "units": {
+    "count": 41,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-31",
+   "file": "songs/Arban/06004 6-8 Study No. 31.musicxml",
+   "title": "Arban – 6/8 Study No. 31",
+   "kind": "MusicXML",
+   "sha1": "041ac58b9b0bf3688a7346e004c118b18e163b8a",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6004,
+   "units": {
+    "count": 37,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-32",
+   "file": "songs/Arban/06005 6-8 Study No. 32.musicxml",
+   "title": "Arban – 6/8 Study No. 32",
+   "kind": "MusicXML",
+   "sha1": "98fe40e24e3c4fc9cba264715974a1bc92c25abc",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6005,
+   "units": {
+    "count": 48,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-33",
+   "file": "songs/Arban/06006 6-8 Study No. 33.musicxml",
+   "title": "Arban – 6/8 Study No. 33",
+   "kind": "MusicXML",
+   "sha1": "718ef147e162824771771c6d1d0965b7bbd0ed01",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6006,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-34",
+   "file": "songs/Arban/06007 6-8 Study No. 34.musicxml",
+   "title": "Arban – 6/8 Study No. 34",
+   "kind": "MusicXML",
+   "sha1": "c25ea5b3f93e663e69360c4c668ba8e2d5b3ec92",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6007,
+   "units": {
+    "count": 28,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-35",
+   "file": "songs/Arban/06008 6-8 Study No. 35.musicxml",
+   "title": "Arban – 6/8 Study No. 35",
+   "kind": "MusicXML",
+   "sha1": "b1492f6b950419e0e045d2979459c26824af3943",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6008,
+   "units": {
+    "count": 24,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-36",
+   "file": "songs/Arban/06009 6-8 Study No. 36.musicxml",
+   "title": "Arban – 6/8 Study No. 36",
+   "kind": "MusicXML",
+   "sha1": "664523b203f506c8489b31ea5986670b1c6e22e7",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6009,
+   "units": {
+    "count": 40,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-37",
+   "file": "songs/Arban/06010 6-8 Study No. 37.musicxml",
+   "title": "Arban – 6/8 Study No. 37",
+   "kind": "MusicXML",
+   "sha1": "1bc2eafd6f217921597ca37d07a0c76f3987f85a",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6010,
+   "units": {
+    "count": 36,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
+  },
+  {
+   "id": "arban-6-8-study-no-38",
+   "file": "songs/Arban/06011 6-8 Study No. 38.musicxml",
+   "title": "Arban – 6/8 Study No. 38",
+   "kind": "MusicXML",
+   "sha1": "877d9fcfb2875ad681abbb81028b4517bf0fb8be",
+   "addedAt": "2026-11-24T05:00:00Z",
+   "category": "arban",
+   "order": 6011,
+   "units": {
+    "count": 20,
+    "unit": "Bar"
+   },
+   "group": "Studies in 6/8"
   }
  ],
- "removed": [
-  {
-   "file": "songs/Can't Get Started, Back Up Trumpet Rod S.mid",
-   "sha1": "fcdc0bd880dc3404f5c6a576365ff49db8fe1f17",
-   "at": "2026-11-19T11:33:47Z"
-  },
-  {
-   "file": "songs/Arturo S Autumn Leaves (G minor).mid",
-   "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
-   "at": "2026-11-19T11:28:16Z"
-  },
-  {
-   "file": "songs/It Never Entered My Mind (D major).mid",
-   "sha1": "8198bc37d2864740b8bbe6b19397628a642698d3",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Iv Got You Under My Skin (C major).mid",
-   "sha1": "a83a6bfd370db9ff8dbd26e40dd451f9b45a24db",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Long Ago and Far Away (E♭ major).mid",
-   "sha1": "8c69291f7cc1b78c22c1df547addcafffc4de7ea",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Max P September in the Rain (E♭ major).mid",
-   "sha1": "b985620348a854008504183f13530e90976a86e3",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Miles D My Funny Valentine (E♭ major).mid",
-   "sha1": "cb88195b5ee0aebf2891d85d69c721485adf5c53",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/My Funny Valentine (F major).mid",
-   "sha1": "a843cba5d74cbd267a3b4347c6d2141a536bcdce",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Nearness of You (E♭ major).mid",
-   "sha1": "382d6ca7d4e62c2e69c0d4261574f1c0d86d4c6c",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Nevertheless (E♭ major).mid",
-   "sha1": "b09e49d900c6cf71393631fb9440558d77cfeed8",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Night and Day (F major).mid",
-   "sha1": "0dd5cc2e05a41797b9db07d34f71cee4593ef527",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Our Love Is Here to Stay (F major).mid",
-   "sha1": "883e9b4477d74044844b420a149ead0f38f5126b",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Rudy V Alone Together (F minor).mid",
-   "sha1": "eaf078a14035682b6bca1c22f93235a494416bcd",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/September in the Rain (E♭ major).mid",
-   "sha1": "6a1b10787d4d2e20d30d86cd9a334858b72cabb7",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Someone to Watch Over Me (D♭ major).mid",
-   "sha1": "8e5b939fec68d7a9289dcd21043026efc864da4f",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Stardust (F major).mid",
-   "sha1": "f2418c687c7a5fbe63e213cc40db3eadbcf45930",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/The Nearness of You (E♭ major).mid",
-   "sha1": "369943d662d3ba71590f0b29d4dd7378c51baf8a",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/The Very Thought of You (A♭ major).mid",
-   "sha1": "00b245446c0b927a9c9599b538e1b4477e9d3dc0",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/There Will Never Be Another You (E♭ major).mid",
-   "sha1": "687ba3dbe72857fa55ee13df45fc807dcf9786a2",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Till There Was You (B♭ major).mid",
-   "sha1": "43daa44367899efec30c98a1456682ca87d54862",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/When I Fall in Love (F major).mid",
-   "sha1": "1370ddd069794dc5b7ae5a010f40e364f62d2392",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/You'll Never Know (B♭ major).mid",
-   "sha1": "2b7b1f57485a55cb95904dbef65f72567b3c37c0",
-   "at": "2026-11-19T11:24:28Z"
-  },
-  {
-   "file": "songs/Chet B Every Time We Say Goodbye (F major).mid",
-   "sha1": "6099dc07d387f98179e564b8b754448f37d8c0bf",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Chet B It Never Entered My Mind (F major).mid",
-   "sha1": "0554d6b18d0a265e96601d263dc0e6f24754689a",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Chris B Ave Maria (B♭ major).mid",
-   "sha1": "41d3caa939477b3c9910cad6f0358b6252222f0d",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Chris B Cinema Paradiso (B♭ major).mid",
-   "sha1": "ab4a2104617fbb0508aadfbeb0d337753b2d65af",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Clifford B Embraceable You (E♭ major).mid",
-   "sha1": "81c7845c26723ddf6c850c927fdd6a40b0a66fbd",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Clifford B Stardust (D♭ major).mid",
-   "sha1": "1a7c2b50fd3a6e1a72bcb8a68d9cfeb226434361",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Clifford B Where or When (G major).mid",
-   "sha1": "e4ba701d6b05ba8941ad957a18a2ada12b0810d3",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Desafinado (F major).mid",
-   "sha1": "bcd480e20dc91dd5b4da675ed1e7739a038b250e",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Duke E Don't Get Around Much Anymore (C major).mid",
-   "sha1": "cb2e4c55a25c17ba6b037ddeb927ac35143a9e58",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Everytime We Say Goodbye (F major).mid",
-   "sha1": "25fbdfbab6b8fc959392620c84f7c045b39d620a",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Everytime We Say Goodbye (G major).mid",
-   "sha1": "be333838624a14958b7dc0cf2b3068fd83a2a0cd",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Glad to Be Unhappy (F major).mid",
-   "sha1": "9841c2c8e8b1c8906c3837160fee1cbe52edac48",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/Herb a Someone to Watch Over Me (E♭ major).mid",
-   "sha1": "03370c73c0fcfa157651daba0401be0cac20731b",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/I Can`t Get Started (C major).mid",
-   "sha1": "c8ecabf68616b5b8e484b5bf07bb32f0227c5b15",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/I Fall in Love Too Easily (F major).mid",
-   "sha1": "7ea57b900cfbb07b3b2e8f6d2cf51e30b1785436",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/I Only Have Eyes for You (C major).mid",
-   "sha1": "f68942887e9c9e57056c543558c37b8975a4b8f6",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/I'm in the Mood for Love (C major).mid",
-   "sha1": "fb6cd4f07ff006218fcc616f4bd6d34add383fa2",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/If (F major).mid",
-   "sha1": "ca6faa6b639f75a5355789e012d7a19723412dd5",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/In the Wee Small Hours (E♭ major).mid",
-   "sha1": "86fdfca0adc18d91cce9da3ef88b699e85a003c3",
-   "at": "2026-11-19T11:15:54Z"
-  },
-  {
-   "file": "songs/A Kiss to Build a Dream On (C major).mid",
-   "sha1": "6afd02bc861eaea60a061f7cce3f19bfde0224ed",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/Call Me Irresponsible (F major).mid",
-   "sha1": "1e29eb1a599f34af14ae26564a033defcf833f21",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/It Had to Be You (F major).mid",
-   "sha1": "9dfc2ec648334058f79d342999f73a2c316fa3fd",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/Misty (E♭ major).mid",
-   "sha1": "a7b1bd81380cee19b033ac9b64884c049f405f3e",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/Moon River (B♭ major).mid",
-   "sha1": "5a0814e518cf09858cfd69b0f49c9dcc6ad39515",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/Nothing's Gonna Change My Love for You (B major).mid",
-   "sha1": "8a08ce6cc17839adc3a778a2dbc318d717f80056",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/Strangers in the Night (F major).mid",
-   "sha1": "7c2e6c6d9e0b1f34abc022c652dea56526028fc6",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/Unforgettable (G major).mid",
-   "sha1": "ad4a53d903b85ac812e2575e7cc18d71a04f7cfb",
-   "at": "2026-11-19T11:04:21Z"
-  },
-  {
-   "file": "songs/Close to You (G major).mid",
-   "sha1": "c1c9a90ba42afc3144609d1782cd692fffb0faaa",
-   "at": "2026-11-19T10:54:04Z"
-  },
-  {
-   "file": "songs/Arturo S Aprés Un Reve (E♭ major).mid",
-   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Arturo S Aprés un Reve Eb major.mid",
-   "sha1": "f6183bcd3eb533a5d87f2e7072c3993281906c96",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Arturo S Autumn Leaves G minor.mid",
-   "sha1": "51612c62a637a41b05f939bc75ce069f6b1a7e8a",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Arturo S Pavane (D minor).mid",
-   "sha1": "a2b86d9a9361fc82720dc0ab26f49ebc3c18c9a5",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Chet B You Don´t Know What Love Is (F minor).mid",
-   "sha1": "a3a09bd6f9aa7d7f29d3932c6b13e14cc1699b60",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Chet B You'd Be So Nice to Come Home To (C major).mid",
-   "sha1": "4c81fb2f978d7144978a11d27de3d1c328df21ab",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Embraceable You (E♭ major).mid",
-   "sha1": "94d8fb9ed5c3030c7e9e0f6234ac8faab5f74cf8",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/For All We Know (B♭ major).mid",
-   "sha1": "a15499e6ca4607fd72b80d683bf1d868cb52ed5d",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Jackie G I'll Be Seeing You Db major.mid",
-   "sha1": "95d13321a574953ecfa71e24e4b5e3b1da4ac4c8",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/My One And Only Love Baritone ColtraneHartman.mid",
-   "sha1": "86f0e524ef08a39bfbbc619c0988f058a9f9bcb7",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/Stardust (C major).mid",
-   "sha1": "b38e9f4c2d25f207bfd1e0f2f09c9a56f57dbd2d",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/When You Wish Upon a Star (B♭ major).mid",
-   "sha1": "7fcedf0aca9d420def0f28c2a5927b3d8ca80d26",
-   "at": "2026-11-02T05:45:53Z"
-  },
-  {
-   "file": "songs/How Deep Is the Ocean (C minor).mid",
-   "sha1": "c1761caa55e327d1efecb57a5984029b8a9ae2d7",
-   "at": "2026-11-02T05:26:24Z"
-  },
-  {
-   "file": "songs/I Cant Get Started (C major).mid",
-   "sha1": "64c90a29b08951a6eb8c2057a3ffb03508119c2f",
-   "at": "2026-11-02T05:25:01Z"
-  },
-  {
-   "file": "songs/Chet B What a Difference a Day Makes (D major).mid",
-   "sha1": "bf922f904408c1753e099b1cef17a4c265ecd824",
-   "at": "2026-11-02T05:22:16Z"
-  },
-  {
-   "file": "songs/The Nearness of You, Frank Sinatra.musicxml",
-   "sha1": "55a8b216902c9bcc664ef623da8bc191b1b86aff",
-   "at": "2026-11-02T03:45:34Z"
-  },
-  {
-   "file": "songs/BeeGees Love So Right Voice.mid",
-   "sha1": "98fd2b73d7427c64f35777af403338aa15e9c8b3",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Carpenters Goodbye To Love Voice.mid",
-   "sha1": "c9e959668a97d51af4f1894c674b32b7b82bdb6a",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Darlene Z Have Your Way Voice.mid",
-   "sha1": "f4bcf98ceb3abd0920532e1c6d7b725c5c0b9a11",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Luis M Contigo Aprendi Voice.mid",
-   "sha1": "74710939bd9f10565362172c8839bf28456e213f",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Luis M Nos Hizo Falta Tiempo VoiceTrumpet.mid",
-   "sha1": "213ebb73b81bbed08a5c76b36cf17da0ff7b184d",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Luis M Somos Novios Voice.mid",
-   "sha1": "183a8c327364b1171bd84da5d0edef572cfc88c4",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Quiet Nights of Quiet Stars Corcovado voice.mid",
-   "sha1": "024844acde422e6b8a9b9f7a7a7d21a36ca0f3ad",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S A Nightingale Sang in Berkeley Square VoiceTrumpet.mid",
-   "sha1": "d07de40503376271931a60559e075431b7f3e4b6",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S For All We Know VoiceTrumpet.mid",
-   "sha1": "2c73e70168c7b094569e74951cb3dc04802e164f",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S I Can't Get Started VoiceTrumpet.mid",
-   "sha1": "4b67153bc7820fe81efa79adcd48f52d79c1cd75",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S I'll Be Seeing You VoiceTrumpet.mid",
-   "sha1": "be3243a7cdbcef732431e2ad7123002f9c1910c5",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S Isn't It Romantic VoiceTrumpet.mid",
-   "sha1": "1e17c1dd04ce860b89dcd973214831295999faff",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S It Had To Be You VoiceTrumpet.mid",
-   "sha1": "7b570d2864d5596f92159e4b070c2f801d477049",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S Moonglow VoiceTrumpet.mid",
-   "sha1": "90147e00df44a190d691364f6c8d5afb2d7c9aca",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S My One and Only Love VoiceTrumpet.mid",
-   "sha1": "9078f1ff4b26ae4cb9a9e2470fb51cb853352b17",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S Night and Day VoiceTrumpet.mid",
-   "sha1": "39f2248f0820bd1b6b00af86554fe30a4d9c7bd6",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S Our Love Is Here To Stay VoiceTrumpet.mid",
-   "sha1": "4ac422a22fda8d6d83726ee79837c43bfbb97111",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S September in the Rain VoiceTrumpet.mid",
-   "sha1": "196634b06afb46aeee27b8eaf088d4407cdebd04",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S Stardust VoiceTrumpet.mid",
-   "sha1": "26330c69d6475846d48f81fa299f9ceae9794387",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S That's All VoiceTrumpet.mid",
-   "sha1": "24666546c7dfceb27bf20bdbcc627aa2626278f1",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S The Very Thought of You VoiceTrumpet.mid",
-   "sha1": "504f70685b2e3c032b03e0c9392f3f3d58cf7825",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Rod S Until The Real Thing Comes Along voice.mid",
-   "sha1": "346c9660715d9638e139283863fa3f3b3acf4b94",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/They Can't Take That Away from Me VoiceTrumpet.mid",
-   "sha1": "64e5da6c58616cc550c94002683e60dc96292c0f",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Xvorostovsky I Loved You Voice.mid",
-   "sha1": "7495823725d1cf0daeb28d3606abd46a753285a3",
-   "at": "2026-11-02T01:54:59Z"
-  },
-  {
-   "file": "songs/Jerry V Pretend You Don't See Her Voice.mid",
-   "sha1": "0b0cd2f5ba32a610f16089c3db9b7054ef3ad35f",
-   "at": "2026-11-02T01:13:02Z"
-  },
-  {
-   "file": "songs/Rod S Only Have Eyes For You.mid",
-   "sha1": "df2deb8449dac86970fdda41a7b05a62ae9ecdcf",
-   "at": "2026-11-02T01:09:42Z"
-  },
-  {
-   "file": "songs/Rod S Fly Me to the Moon VoiceTrumpet.mid",
-   "sha1": "af29489870c29bac4bab6decf48dd6e745336519",
-   "at": "2026-11-02T00:59:23Z"
-  },
-  {
-   "file": "songs/Kat E Just Like Starting Over Voice.mid",
-   "sha1": "6639167605262a628469cad057eb740694f7981c",
-   "at": "2026-11-02T00:59:01Z"
-  },
-  {
-   "file": "songs/Rod S Don't Get Around Much Anymore VoiceTrumpet.mid",
-   "sha1": "fd975a3922a1a037723d2c1635a4051991c220e4",
-   "at": "2026-11-02T00:58:22Z"
-  },
-  {
-   "file": "songs/Rod S Embraceable You VoiceTrumpet.mid",
-   "sha1": "8450df5c740a60d149a2cfcf369739b587d12075",
-   "at": "2026-11-02T00:57:39Z"
-  },
-  {
-   "file": "songs/Rod S But Not For Me VoiceTrumpet.mid",
-   "sha1": "10c970648b97abf44ddd9fe35e2a30334994114e",
-   "at": "2026-11-02T00:54:45Z"
-  },
-  {
-   "file": "songs/Rod S 'Till There Was You Voice.mid",
-   "sha1": "1b40abfd96852b4e7755e12cbbaa0b5c2d1059ec",
-   "at": "2026-11-02T00:52:38Z"
-  },
-  {
-   "file": "songs/Beatles All You Need Is Love Voice.mid",
-   "sha1": "e572c50bfa5c917132ad10d34272eeb9a6421345",
-   "at": "2026-11-02T00:46:58Z"
-  },
-  {
-   "file": "songs/Rod S What A Difference A Day Made VoiceTrumpet.mid",
-   "sha1": "038140b15da7b549a0d09aba67ee55a82fb5b23b",
-   "at": "2026-11-02T00:46:35Z"
-  },
-  {
-   "file": "songs/Mitch M Song For A Summer Night Trumpet.mid",
-   "sha1": "09b76d355fefa0dc5fbcedfcd7dbbea6f34bf862",
-   "at": "2026-11-02T00:43:46Z"
-  },
-  {
-   "file": "songs/Miles D Someday My Prince Will Come.mid",
-   "sha1": "66608b5851085ddcbc25bdcdd39e9a971977949f",
-   "at": "2026-11-02T00:38:08Z"
-  },
-  {
-   "file": "songs/Someday My Prince Will Come, Miles Davis.musicxml",
-   "sha1": "56387e8677569d56825c6e9331d365bd789c688e",
-   "at": "2026-11-02T00:37:31Z"
-  },
-  {
-   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz.musicxml",
-   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
-   "at": "2026-11-01T07:14:35Z"
-  },
-  {
-   "file": "songs/Chet Baker - Almost blue-wind-A minor-57bpm-441hz 2.musicxml",
-   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
-   "at": "2026-11-01T07:12:23Z"
-  },
-  {
-   "file": "songs/Almost Blue, Chet Baker.musicxml",
-   "sha1": "fca6c507a0e4349edb021b9eeab0900b6a8c7993",
-   "at": "2026-11-01T06:49:15Z"
-  }
- ]
+ "removed": []
 }

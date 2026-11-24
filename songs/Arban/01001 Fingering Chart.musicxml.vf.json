@@ -1,0 +1,170 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-fingering-chart",
+ "title": "Arban – Fingering Chart",
+ "category": "arban",
+ "group": "Fingering Chart",
+ "order": 1001,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 31,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "1:5:0": "too low (trop bas)",
+  "2:5:0": "too low (trop bas)",
+  "3:5:0": "too low (trop bas)",
+  "4:5:0": "too low (trop bas)",
+  "5:5:0": "too low (trop bas)",
+  "6:5:0": "too low (trop bas)",
+  "7:5:0": "too low (trop bas)"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Fingering Chart",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Fingering Chart"
+   ],
+   [
+    "Page in the book",
+    "2"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Foreword",
+    "paragraphs": [
+     "It may seem strange, or unnecessary, to come forward in defence of the cornet today, now that the instrument has proved itself in the orchestra and as a solo instrument; now that it is no less indispensable to the composer, nor less loved by the public, than the flute, the clarinet and even the violin; now, in short, that it has won for good the high rank its beautiful tone, its perfect mechanism and its immense resources give it.",
+     "But it was not always so. The cornet had humbler beginnings, and not many years ago the public met it with lofty indifference, while the sacred battalion of routine disputed its qualities and tried to ban its use. This happens, besides, at the birth of every new invention, however excellent; the saxhorn and the saxophone, younger instruments than the cornet, have given fresh and striking proof of it.",
+     "The first musicians who played the cornet were, for the most part, horn players and trumpeters. Each brought to it the stamp of his tastes, his gifts and his habits, and I need hardly add that playing born of elements as incomplete as they were mixed left much to be desired for a long time, and for a fairly long period offered the sad sight of gaps, failures and the most shocking faults.",
+     "Little by little things changed for the better; players appeared who truly deserved the name of artists. Yet however brilliant these individuals were, they could not escape the flaw of their origin: the complete lack of unity and direction. Some were admired for extreme agility, others applauded for the expression of their playing; some were known for their lips, others for their ease in the high register, others again for the brilliance or size of their sound. It was, if I may put it so, the reign of the specialists; but not one of the fashionable cornet players of that time seems to have thought of gathering, or set out to acquire, the sum of qualities that alone make great artists.",
+     "That is the point I wanted to stress and to bring particularly to the reader's attention. Today everyone recognises how insufficient the old virtuosos were, and how insufficient their teaching. What is wanted is a way of playing, a methodical teaching. It is not enough to sing well or to play the difficult passages well; one must do both equally well. In a word, the cornet, like the flute, the clarinet, the violin and the voice, must have that fine style and that great school whose precious trust and sound traditions a few teachers, and the Conservatoire in particular, have kept.",
+     "That is the aim I have never stopped pursuing in a career that is already long; and if many brilliant successes, before the most competent judges and the most demanding listeners (1), give me the right to believe that I have come fairly close to it, I shall not be presumptuous in taking up with confidence the delicate task of passing on to others the fruit of the deepest study and the most constant practice. I have been teaching for a long time already, and this book is in a way only the summary of an experience long acquired and improved every day.",
+     "My explanations will be as short and as clear as possible, for I want to teach the pupil, not frighten him. Long pages of text are not always read, and it is far better to replace them with exercises and examples. These are the riches I believed I could never pile up enough, the springs I believed I could never draw from with too generous a hand, as will be seen, besides, from the size of this volume; for in it, I believe, will be found the answer to every difficulty and every problem.",
+     "I have taken constant care to compose melodic studies, and in general to make the study of the instrument as pleasant as possible; in a word, to lead the pupil, without his losing heart, to the furthest limits of technique, feeling and the style that must mark the new school.",
+     "J. B. Arban.",
+     "(1) The results I have obtained in France, Germany and England plead the cause of the cornet victoriously and show that it can compete with the best-loved instruments. In 1848 I was heard at a concert of the Société des Concerts du Conservatoire, where I played the famous flute air composed by Boehm on a Swiss theme, in which, as is well known, the most tangled difficulties are heaped up at will. From that day, I can say, the cornet took its place beside the classical instruments. It was in this piece that I first let the flute's tonguing be heard in double staccato, as well as triple staccato, which I was the first to apply to the cornet."
+    ]
+   },
+   {
+    "heading": "Range of the cornet and the saxhorn",
+    "paragraphs": [
+     "As the fingering chart shows, instruments with three descending valves have a chromatic range of two and a half octaves, which for the cornet as for the saxhorn runs from the F sharp below the staff to the high C above it. But not everyone can move easily over the whole of this range.",
+     "So when writing for these instruments, even a solo, one must not go to the very limits of the scale shown on the chart. Bandmasters generally make the instruments climb into regions that are too high. As a result the player loses the instrument's beautiful quality of sound and ends by missing the simplest things, even when playing in the middle register. To prevent this, one should practise the instrument steadily over its whole range, and dwell especially on the chapter devoted to the study of the various intervals.",
+     "The easiest range runs from low C up to G above the staff. One can quite easily go up to B flat, but B natural and C should be used only very rarely.",
+     "As for the notes below C, they present no great difficulty, though some players have a great deal of trouble making them come out fully; these notes are nevertheless very beautiful when one has them well in hand."
+    ]
+   },
+   {
+    "heading": "The cornet in C",
+    "paragraphs": [
+     "It is indispensable to play the cornet in C and in B natural as well as the cornet in B flat, for they can be of great service in orchestras, above all when one is called on to play trumpet parts. As a solo instrument the cornet in C is among the most brilliant, and its tone is even more refined than that of the B flat cornet. In theatres devoted to opera it is indispensable, because transposing becomes much easier on it than on the B flat cornet, and above all because of the sureness with which the highest notes can be reached.",
+     "If the orchestra plays in B natural or in E major, play the cornet in B natural. If the orchestra plays in C or in F, take the cornet in C. As for the cornet in A, it suits the keys I have just named for the orchestra rather badly, and its use would in general only create difficulties."
+    ]
+   },
+   {
+    "heading": "Second fingering chart",
+    "paragraphs": [
+     "There is a way of obtaining the F natural below the staff, and at the same time of making easier certain passages that cannot be played with the fingerings shown on the first chart. To do so, pull the third valve slide out by a half step, so that it gives a length of two whole steps instead of the step and a half it usually has. Then use the following fingering, which, besides, is much used in Germany.",
+     "For the F natural to be quite in tune, one must at the same time pull the main tuning slide out a little, as I shall explain in the next chapter.",
+     "Examples of trills that cannot be played with the ordinary fingering, and that can easily be obtained with the fingering of the second chart.",
+     "These means should be used only in exceptional cases; I give them here only to make all the instrument's resources well known."
+    ]
+   },
+   {
+    "heading": "Use of the tuning slide",
+    "paragraphs": [
+     "A well-made cornet should be built so that the thumb of the left hand can go into the ring of the tuning slide, to open and close it at will without the help of the right hand. In this way one can tune while playing. Everyone knows that when one starts to play the instrument, being cold, is a little too flat. Only after a few bars does it rise as it warms up, and that in extraordinary proportions.",
+     "The tuning slide must also be used to correct the notes that are by their nature too sharp. Each valve is tuned to be used on its own; when several are added together the slides are necessarily too short, and the tuning suffers. Here is an example. Suppose that on the B flat cornet you put in a crook, and that it is the crook of G: the instrument is then lowered by a step and a half. To play in tune with this new crook, you must of course pull out the slide of each valve a good deal.",
+     "Something similar happens every time you use the third valve on any instrument. So when you press the third valve on a B flat cornet, you lower it by a step and a half; it is exactly as if you had put your instrument in G, since the slides of each valve act like crooks added to the instrument.",
+     "In that case, then, one would have to pull out the slides of the first and second valves to use them together with the third; but as that cannot be done, it becomes necessary to make up for it by the device shown below, that is, to make up for the missing length of tubing by pulling out the tuning slide with the thumb of the left hand. Without this precaution all the following notes would be too sharp.",
+     "It is not hard to bring these notes down with the lips, but at the cost of the quality of the sound. So in slow movements it is better, to keep the full brilliance of the sound, to use the tuning slide as a compensator."
+    ]
+   },
+   {
+    "heading": "Placing the mouthpiece on the lips",
+    "paragraphs": [
+     "The mouthpiece should be placed in the middle of the mouth, two thirds on the lower lip and one third on the upper lip; at least that is the position I have adopted for myself and that I believe to be the best.",
+     "Horn players generally place the mouthpiece two thirds on the upper lip and one third on the lower, which is just the opposite of what I have described for the cornet. But it must not be forgotten that there are great differences in the shape of the instrument as in the way of holding it, and what may suit the horn very well has a bad effect with the cornet. So what should one want in the position of the cornet? That it be quite level. Well, if one placed the mouthpiece as is usual for the horn, the instrument would tend to drop, as if one were playing the clarinet.",
+     "There are teachers in the habit of changing the mouthpiece position of every pupil who comes to them. I have rarely seen this system succeed. To my knowledge several players who already had remarkable talent tried what we call at the Conservatoire the orthopaedic system, which consists of straightening out badly placed mouthpieces. I must say that these same players, after losing several years working uselessly by this system, were obliged to go back to placing their mouthpiece in its first position, for none had obtained good results, and some could no longer play at all.",
+     "From this I conclude that when a player has begun badly he should only try to improve, not to move his mouthpiece, above all if he already plays fairly well; for there is no lack of virtuosos who play perfectly and even have a very beautiful sound while placing the mouthpiece to the side, and even in the corners of the mouth. All one can do is guard against this fault. In short, to sum up, there is no absolute rule for placing the mouthpiece, for everything depends on the shape of the mouth and the evenness of the teeth.",
+     "Once the mouthpiece is placed, it must not be moved again, either to go up or to come down; these results must be obtained through the flexibility of the lips. It would be impossible to play certain passages if one had to move the mouthpiece to take a low note quickly after a high one.",
+     "To make the high notes come out, a certain pressure on the lips is needed, so as to give them a tension in proportion to the height of the note one wants. The lips being stretched in this way, the vibrations become shorter, and so the sounds higher.",
+     "To come down, on the contrary, press the mouthpiece more lightly, so as to give the air a wider passage; the vibrations being then slower because the muscles relax, one obtains low sounds in keeping with how far the lips are opened.",
+     "One must never push the lips forward; on the contrary, draw back the corners of the mouth. In this way one gets a much more open sound. When the lips begin to tire, one must never force the sound;",
+     "play more softly then, for when one plays loud the lips swell and it becomes impossible to make a note come out. One must stop playing when the muscles begin to go numb; it would be madness to go on, since stiff lips might follow, and they could last a very long time."
+    ]
+   },
+   {
+    "heading": "How to attack the sound",
+    "paragraphs": [
+     "It must not be forgotten that the expression \"stroke of the tongue\" (coup de langue) is only a conventional term. The tongue in fact strikes no blow: instead of striking, it makes, on the contrary, a movement backwards. It only does the work of a valve.",
+     "One must understand this effect well before placing the mouthpiece on the lips. The tongue should be placed against the teeth of the upper jaw, so that the mouth is closed tight. At the moment the tongue draws back, the column of air pressing on it rushes violently into the mouthpiece and produces the sound.",
+     "Saying the syllable tu sets the attack of the sound. This syllable can be said more or less gently, according to how much force you want to give your attack. When a note has a lengthened dot (a wedge) over it, it means the sound must be very short; you must then say the syllable tu very dryly. When, on the contrary, there is only a dot, you must say the syllable more gently, so that the sounds, though detached, join well with one another. When dots are placed over a run of notes with a slur over them, you must always start the first note with a very soft tu, and then put the syllable du in its place, because this syllable, while sounding each note, joins them perfectly to one another. (This is what is called tonguing within the sound.)",
+     "There are only these three ways of attacking, that is, of separating the sounds; later I shall make the other articulations known. For the moment only the single tongue needs to be learnt and studied, for the success of good playing depends entirely on this starting point.",
+     "As I said above, the way of attacking the sound shows at once whether your style is good or bad. The first part of this method is given over entirely to this kind of study; I shall go on to slurs only when the pupil knows perfectly how to attack and place the sound."
+    ]
+   },
+   {
+    "heading": "How to breathe",
+    "paragraphs": [
+     "Once the mouthpiece is on the lips, the mouth should open a little at the sides, and the tongue draw back to let the air into the lungs. The belly must not swell; on the contrary, it should rise as the chest fills with the in-breath.",
+     "The tongue should then move forward against the teeth of the upper jaw, so as to close the mouth tight, like a valve whose job is to hold the column of air in the lungs.",
+     "At the moment the tongue draws back, the air that pressed on it rushes into the instrument and sets off the vibrations that make the sound. The belly should then go gently back to its first position, following the shrinking of the chest as the air in the lungs grows less.",
+     "The breath must be measured to the length of the passages to be played: the longer a passage, the more one must breathe in. In short phrases, too strong a breath, taken too often, causes a choking feeling from the weight of the column of air pressing too heavily on the lungs. So one must learn early to manage the breath well, so as to reach the end of a long phrase with the sound still at its full power and firmness."
+    ]
+   },
+   {
+    "heading": "On style: faults to avoid",
+    "paragraphs": [
+     "The first thing to attend to is placing the sound well. That is the starting point of all good playing, and a musician whose sound starts badly will never be a good artist.",
+     "In piano as in forte, the attack of the sound must be frank, clean and immediate. In attacking one must always say the syllable tu, and not the syllable doua, as a great many players are in the habit of doing. That articulation makes the sound start from below the note and gives it a thick, unpleasant start.",
+     "After placing the sound, the player must above all set himself to acquire a good style. I do not mean here that supreme quality which is the summit of art and which so few virtuosos have, even among the most famous and skilful, but simply a humbler quality without which all progress would stop and every result come to nothing. Naturalness, correctness, playing the music as it is written, phrasing in the character and feeling of the piece: these are merits the pupil should certainly always strive for, but he must hope to reach them only after strictly binding himself to keep the note values. The opposite fault is so common, above all among regimental musicians, that I think I should go over the abuses it can lead to, and show how to guard against them.",
+     "For example, in a bar of 2/4 made of four eighth notes, which must be played as evenly as possible, saying tu tu tu tu, players usually find a way to lengthen and crush the fourth eighth, saying ta ta ta tâ, da. If in the same rhythm a piece begins with an eighth note as an upbeat, too much weight is given to that first note, which in fact is worth no more than the others. It must be played like this, separating each note, tu, tu tu tu tu, tu, instead of lengthening the first, tâ, da ta ta tâ, da.",
+     "In 6/8 the same mistakes are made. The sixth eighth of each bar is lengthened, and one is lucky if the six eighths are not played hopping. They must be played tu tu tu tu tu tu, all even, instead of ta ta tâ da ta tâ; other players even play them as if they were dotted eighths followed by sixteenths: tâ dede tâ dede.",
+     "From all this the reader can see how much bad articulation can affect the playing. We must not hide from ourselves that the tongue is to brass instruments roughly what the bow is to the violin: if you articulate unevenly, you pass on to the notes coming out of the instrument the syllables said in an uneven, limping way, and the faults of rhythm they contain.",
+     "In accompaniments, too, the off-beats are sometimes played in a detestable way. In 3/4, each note must be played as evenly as possible, without lengthening or shortening either of the two notes that make up this kind of accompaniment: rest, tu, tu; not, as is the habit, rest, tâ, da with the second note cut short. In 6/8 there is likewise a bad way of playing the off-beats, which is to make the first note of the off-beat sound like a sixteenth, instead of giving the same value to the two notes that make it up. Play eighth rest, tu tu, both even; not with the first shortened, te-ta.",
+     "In playing syncopations there is also, as a rule, a serious fault, above all in the regiments: making the second half of the syncopated note heard.",
+     "A syncopation must be rendered, but its ending must not be heard any more than if, instead of a syncopation, it were a note struck on the strong beat. Play it saying tu tu tu tu tu tu, one clean attack for each note, and not ta ta-a ta-a ta-a ta, swelling in the middle of each.",
+     "There is no reason why the middle of a syncopated note should be heard louder than the attack of that same note. What matters is to make its starting point heard clearly, and to hold the note for its whole value without swelling it in the middle.",
+     "The following example, an eighth and two sixteenths, must be played with mechanical evenness, saying the syllables without hurrying: tu tutu tu tutu. Note too that the first eighth must be separated from the two sixteenths, as if there were a sixteenth rest between them; and not, as is the habit, dragging on the first note and tonguing badly. Later you will learn how to play the same passages in double tonguing, but first the tongue must be trained to say every kind of rhythm very lightly without using that kind of articulation.",
+     "Besides the faults of rhythm just pointed out, there are many others; almost all come from misguided ambition, doubtful taste and an unfortunate leaning toward exaggeration. Many players imagine they show feeling when they swell the notes in jerks and overdo a trembling made with the throat, which lets an unpleasant \"oo oo\" be heard.",
+     "The wavering of the sound (vibrato) is obtained on the cornet in the same way as on the violin, by a slight movement of the right hand. This effect gives great feeling, but beware of overdoing it, for using it too often would become a serious fault.",
+     "The same goes for the portamento preceded by a grace note. There are players who cannot play four notes without putting in one or two portamentos; that is a deplorable manner which should be pointed out, as should the abuse of the turn.",
+     "In ending this section, where I have gone over the most striking and most frequent faults a bad style breeds (showing how to remedy them), I promise to come back to this subject firmly whenever the occasion arises. Bad habits are generally too deeply rooted in musicians who play brass instruments to give way after a single warning, and one cannot make war on them hard enough."
+    ]
+   },
+   {
+    "heading": "The chart",
+    "paragraphs": [
+     "Harmonics of the instrument for each of the seven lengths obtained on instruments with three descending valves. Open: no valve. The 2nd valve lowers a half step. The 1st valve lowers a whole step. The 1st and 2nd valves lower a step and a half, or the 3rd alone. The 2nd and 3rd valves lower two whole steps. The 1st and 3rd valves lower two and a half steps. The 1st, 2nd and 3rd valves lower three whole steps. The notes marked \"too low\" (trop bas) are out of tune and are not used. The last line is the chromatic scale these give."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

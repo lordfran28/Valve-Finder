@@ -1,0 +1,81 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-eighths-and-sixteenths-no-24",
+ "title": "Arban – Eighths and Sixteenths No. 24",
+ "category": "arban",
+ "group": "Eighths and Sixteenths",
+ "order": 5006,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "tu",
+  "0:0:1": "tu",
+  "0:0:2": "tu",
+  "0:0:3": "tu",
+  "0:0:4": "tu",
+  "0:0:5": "tu",
+  "0:1:0": "tu",
+  "0:1:1": "tu",
+  "0:1:2": "accent, tu",
+  "0:3:0": "staccato",
+  "0:3:1": "staccato",
+  "0:3:2": "staccato",
+  "0:3:3": "staccato",
+  "0:7:0": "staccato",
+  "0:7:1": "staccato",
+  "0:7:2": "accent",
+  "0:13:0": "staccato",
+  "0:13:1": "staccato",
+  "0:13:2": "accent",
+  "0:25:2": "accent"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Eighths and Sixteenths No. 24",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Eighths and Sixteenths"
+   ],
+   [
+    "Page in the book",
+    "30"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Studies made of eighths followed by sixteenths",
+    "paragraphs": [
+     "To give these studies more lightness, the first eighth must be attacked more dryly than its value shows: play it like a sixteenth, keeping a silence between it and the two sixteenths that follow.",
+     "The same holds when an eighth comes after the sixteenths instead of before them."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

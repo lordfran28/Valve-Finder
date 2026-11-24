@@ -1,0 +1,63 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-6-8-study-no-29",
+ "title": "Arban – 6/8 Study No. 29",
+ "category": "arban",
+ "group": "Studies in 6/8",
+ "order": 6002,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 36,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 120,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": null,
+ "timing": null,
+ "details": {
+  "title": "Arban – 6/8 Study No. 29",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Studies in 6/8"
+   ],
+   [
+    "Page in the book",
+    "32"
+   ],
+   [
+    "Tempo marking",
+    "Allegro"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Studies in 6/8",
+    "paragraphs": [
+     "In 6/8 the eighths must be played well separated and given equal value. So one must never drag on the third eighth of each beat. Dotted eighths, and eighths followed by sixteenths, are played in this rhythm following the same rules as in 2/4."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}

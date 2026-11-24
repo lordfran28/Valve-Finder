@@ -1,0 +1,74 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-syncopation-no-10",
+ "title": "Arban – Syncopation No. 10",
+ "category": "arban",
+ "group": "Syncopation",
+ "order": 3010,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 32,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 80,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "staccato",
+  "0:0:1": "accent",
+  "0:0:2": "staccato",
+  "0:0:3": "staccato",
+  "0:0:4": "accent",
+  "0:0:5": "staccato",
+  "0:1:0": "staccato",
+  "0:1:1": "accent",
+  "0:1:2": "staccato"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Syncopation No. 10",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Syncopation"
+   ],
+   [
+    "Page in the book",
+    "24"
+   ],
+   [
+    "Tempo marking",
+    "Allegro"
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "Syncopation",
+    "paragraphs": [
+     "A syncopation is a note that is placed on the weak beat instead of the strong one. It must be held for its whole value, making its starting point well felt; but in no case must the second part of its value be heard as a jolt.",
+     "Play it with one attack for each note, tu tu tu tu tu tu, and not ta, ta-a, ta-a, ta-a, ta, ta."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
