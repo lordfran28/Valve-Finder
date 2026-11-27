@@ -6,7 +6,7 @@
  "category": "classical",
  "kind": "MIDI",
  "addedAt": "2026-10-31T06:02:42Z",
- "updatedAt": "2026-11-11T23:31:09.127Z",
+ "updatedAt": "2026-11-27T00:53:02.118Z",
  "units": {
   "count": 48,
   "unit": "Bar"
@@ -15,7 +15,8 @@
   "part": 0,
   "pitch": "auto",
   "oct": "-1",
-  "tempo": 80,
+  "tempo": 70,
+  "tempoOwn": true,
   "repeats": true,
   "join": false,
   "alts": true
