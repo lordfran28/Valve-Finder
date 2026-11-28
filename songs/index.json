@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-28T09:20:07Z",
+ "generatedAt": "2026-11-28T09:23:16Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -15317,6 +15317,42 @@
      [
       "Plays with",
       "The guitar track on the Fret Finder page (tvt-guitar.mp3), 4:33"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-pretend-you-dont-see-her",
+   "file": "songs/Arrangements/Pretend You Don’t See Her, on the Fret Finder guitar.musicxml.locked",
+   "title": "Pretend You Don’t See Her, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "5d7ef1e5477b523298c92f013f379f568a55ba48",
+   "addedAt": "2026-11-28T09:23:10Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 53,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "Pretend You Don’t See Her, on the Fret Finder guitar",
+    "lead": "The singer’s line, read by machine from the record’s separated voice and set on the bars of the Fret Finder page, which brings the song down to E minor, then F minor for the last verse; an octave up for the trumpet, concert B3 to E-flat 5. The time is his, slow and free. This one has not been checked by ear note for note: where a note looks wrong against the words, trust the record.",
+    "facts": [
+     [
+      "Song",
+      "Steve Allen (1957); Jerry Vale’s record"
+     ],
+     [
+      "Line",
+      "The voice, read from the record and written on sixteenths"
+     ],
+     [
+      "Key",
+      "E minor, then F minor concert (F-sharp minor, then G minor for the trumpet)"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (pretend-guitar.mp3), 2:47"
      ]
     ]
    }
