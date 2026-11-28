@@ -1,0 +1,167 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-80",
+ "title": "Arban – Ornament Study No. 80",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11091,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 33,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 72,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "trill, slur",
+  "0:0:1": "slur",
+  "0:1:0": "trill, slur",
+  "0:1:1": "slur",
+  "0:1:3": "trill, slur",
+  "0:1:4": "slur",
+  "0:2:1": "trill, slur",
+  "0:2:2": "slur",
+  "0:3:0": "trill, slur",
+  "0:3:1": "slur",
+  "0:3:3": "trill, slur",
+  "0:3:4": "slur",
+  "0:4:1": "trill, slur",
+  "0:4:2": "slur",
+  "0:5:0": "trill, slur",
+  "0:5:1": "slur",
+  "0:5:3": "trill, slur",
+  "0:5:4": "slur",
+  "0:6:1": "trill, slur",
+  "0:6:2": "slur",
+  "0:7:0": "trill, slur",
+  "0:7:1": "slur",
+  "0:7:3": "trill, slur",
+  "0:7:4": "slur",
+  "0:8:1": "trill, slur",
+  "0:8:2": "slur",
+  "0:9:0": "trill, slur",
+  "0:9:1": "slur",
+  "0:9:3": "trill, slur",
+  "0:9:4": "slur",
+  "0:10:1": "trill, slur",
+  "0:10:2": "slur",
+  "0:11:0": "trill, slur",
+  "0:11:1": "slur",
+  "0:11:3": "slur",
+  "0:11:4": "slur",
+  "0:12:1": "trill, slur",
+  "0:12:2": "slur",
+  "0:13:0": "trill, slur",
+  "0:13:1": "slur",
+  "0:13:3": "trill, slur",
+  "0:13:4": "slur",
+  "0:14:1": "trill, slur",
+  "0:14:2": "slur",
+  "0:15:0": "trill, slur",
+  "0:15:1": "slur",
+  "0:15:3": "trill, slur",
+  "0:15:4": "slur",
+  "0:16:1": "trill, slur",
+  "0:16:2": "slur",
+  "0:17:0": "trill, slur",
+  "0:17:1": "slur",
+  "0:17:3": "trill, slur",
+  "0:17:4": "slur",
+  "0:18:1": "trill, slur",
+  "0:18:2": "slur",
+  "0:19:0": "trill, slur",
+  "0:19:1": "slur",
+  "0:19:3": "trill, slur",
+  "0:19:4": "slur",
+  "0:20:1": "trill, slur",
+  "0:20:2": "slur",
+  "0:21:0": "trill, slur",
+  "0:21:1": "slur",
+  "0:21:3": "trill, slur",
+  "0:21:4": "slur",
+  "0:22:1": "trill, slur",
+  "0:22:2": "slur",
+  "0:23:0": "trill, slur",
+  "0:23:1": "slur",
+  "0:23:3": "trill, slur",
+  "0:23:4": "slur",
+  "0:24:1": "trill, trill ♮, slur",
+  "0:24:2": "slur",
+  "0:25:0": "trill, slur",
+  "0:25:1": "slur",
+  "0:25:3": "trill, slur",
+  "0:25:4": "slur",
+  "0:26:1": "trill, slur",
+  "0:26:2": "slur",
+  "0:27:0": "trill, slur",
+  "0:27:1": "slur",
+  "0:27:3": "trill, slur",
+  "0:27:4": "slur",
+  "0:28:1": "trill, slur",
+  "0:28:2": "slur",
+  "0:29:0": "trill, slur",
+  "0:29:1": "slur",
+  "0:29:3": "trill, slur",
+  "0:29:4": "slur",
+  "0:30:1": "trill, slur",
+  "0:30:2": "slur",
+  "0:31:0": "trill, slur",
+  "0:31:1": "slur",
+  "0:31:3": "trill, slur",
+  "0:31:4": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 80",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "119"
+   ],
+   [
+    "Layout",
+    "Each trilled quarter closes with two small notes, the note below and the note, and the single notes between step down, as in the study before. The book prints no tempo for this study. In bar 11 the book prints the small notes after the C but no tr over it. In bar 24 a natural stands under the tr over the A: the trill is with B natural. The book prints the valves under some notes and they hold for the trill: 3 under the small G of bar 24, 1 2 3 under the small F sharp of bar 25, 3 under the A of bar 31, and 1 3 under the G, 1 2 under its small F sharp and 1 3 under its small G in bar 31. The B of bar 27 and the G of bar 31 carry naturals in the book though the small notes before them are sharp."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The trill",
+    "paragraphs": [
+     "On valve instruments the trill is the hardest of all the ornaments. Only the half-step trill is really bearable. Whole-step trills can be made, but take care to press the valves down evenly, so that each beat is quite distinct.",
+     "So first work patiently, and without hurrying, at studies Nos. 60 to 67, until each sound comes out cleanly. Later you can play the studies on the trill, following the fingerings shown exactly. (See Nos. 68 to 80.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
