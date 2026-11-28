@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-28T10:38:34Z",
+ "generatedAt": "2026-11-28T11:20:51Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -7304,17 +7304,17 @@
    "file": "songs/Arrangements/Anna German, F minor.musicxml.locked",
    "title": "Город влюблённых людей, after Anna German",
    "kind": "MusicXML",
-   "sha1": "151e48af24c73e0cf82efbce129e6b7049d27967",
+   "sha1": "231370cd5f2722fc47a5ac0b1f5dd308fb020d73",
    "addedAt": "2026-11-20T22:08:17Z",
    "locked": true,
    "category": "arrangements",
    "units": {
-    "count": 111,
+    "count": 125,
     "unit": "Bar"
    },
    "details": {
-    "title": "Город влюблённых людей",
-    "lead": "Anna German's singing on the record, at her own pitch and in her key, F minor: concert G3 to E♭5, where the trumpet sings. She sings freely around the beat; the notes here sit on the nearest straight values, and playback follows her own timing on the record.",
+    "title": "Anna German, F minor",
+    "lead": "Anna German’s singing on the record, at her own pitch and in her key, F minor: concert G3 to E-flat 5, where the trumpet sings. Read from her separated voice and set on the record’s bars, written on eighths with no slides or grace notes, so it reads straight through. She sings freely around the beat; playback follows her timing.",
     "facts": [
      [
       "Song",
@@ -7322,11 +7322,15 @@
      ],
      [
       "Line",
-      "Anna German's voice, read note by note from the vocal track"
+      "Her voice, read from the record and written plainly on eighths"
      ],
      [
       "Key",
       "F minor concert, G minor for the trumpet"
+     ],
+     [
+      "Plays with",
+      "The record’s vocal mix (vocals_mixed_2.mp3)"
      ]
     ]
    }
@@ -7336,25 +7340,29 @@
    "file": "songs/Arrangements/Maria, C minor.musicxml.locked",
    "title": "Maria, the sung line",
    "kind": "MusicXML",
-   "sha1": "4d0c00aa5eaa3088e1a19d8aba4fe50885ecbddf",
+   "sha1": "b56dc17f485e0c6a3dbf406668e0ab8dd332ffae",
    "addedAt": "2026-11-20T22:08:58Z",
    "locked": true,
    "category": "arrangements",
    "units": {
-    "count": 84,
+    "count": 86,
     "unit": "Bar"
    },
    "details": {
-    "title": "Maria",
-    "lead": "The singing on the record, at her own pitch and in her key, C minor: concert F3 to B♭4. The notes sit on straight values; playback follows her own timing on the record.",
+    "title": "Maria, C minor",
+    "lead": "The singing on the record, at her own pitch and in her key, C minor: concert F3 to B-flat 4. Read from her separated voice and set on the record’s bars, written on eighths with no slides or grace notes, so it reads straight through. Playback follows her own timing on the record.",
     "facts": [
      [
       "Line",
-      "The singer's voice, read note by note from the vocal track"
+      "The singer’s voice, read from the record and written plainly on eighths"
      ],
      [
       "Key",
       "C minor concert, D minor for the trumpet"
+     ],
+     [
+      "Plays with",
+      "The record’s vocal mix (vocals_mixed.mp3)"
      ]
     ]
    }
@@ -8464,7 +8472,7 @@
    "file": "songs/Arrangements/Close to You.musicxml.locked",
    "title": "Close to You, as Karen Carpenter sings it",
    "kind": "MusicXML",
-   "sha1": "986daf5c156875e8615ec0a3d1da407829854592",
+   "sha1": "790ce9aa337d49f4c82fe3890c303980bd9ea7db",
    "addedAt": "2026-11-22T07:02:18Z",
    "locked": true,
    "category": "arrangements",
@@ -8596,7 +8604,7 @@
    "file": "songs/Arrangements/Misty, as Ella sings it.musicxml.locked",
    "title": "Misty, as Ella Fitzgerald sings it",
    "kind": "MusicXML",
-   "sha1": "1acbde71fc16261e1c5395fe90fb4ecf2e0ff534",
+   "sha1": "fbb94d053dfb8534a385882ae0d2de8144c40c01",
    "addedAt": "2026-11-22T08:06:32Z",
    "locked": true,
    "category": "arrangements",
@@ -9036,7 +9044,7 @@
    "file": "songs/Arrangements/Long Long Time, after Linda Ronstadt.musicxml.locked",
    "title": "Long Long Time, as Linda Ronstadt sings it",
    "kind": "MusicXML",
-   "sha1": "88db37df7f12351fdff1aaac0e2c6db20dd9c151",
+   "sha1": "cc17b72e2175ae953d9bb651c87d567224dc7322",
    "addedAt": "2026-11-22T17:51:42Z",
    "locked": true,
    "category": "arrangements",
@@ -9072,7 +9080,7 @@
    "file": "songs/Arrangements/Rainy Days and Mondays, after Karen Carpenter.musicxml.locked",
    "title": "Rainy Days and Mondays, as Karen Carpenter sings it",
    "kind": "MusicXML",
-   "sha1": "a8d722e2523a33b969468a594f0d6770a5481ba8",
+   "sha1": "3af36c9afc0ceb3810204cb44f7c542595afeab2",
    "addedAt": "2026-11-22T17:55:06Z",
    "locked": true,
    "category": "arrangements",
@@ -9108,7 +9116,7 @@
    "file": "songs/Arrangements/For Sentimental Reasons, from the record.musicxml.locked",
    "title": "For Sentimental Reasons, as the record sings it",
    "kind": "MusicXML",
-   "sha1": "d1679b45c730f4e4ef5ee6160411c41700e29fc1",
+   "sha1": "bf8b73ebceec9799c3a0d5c47a4b056450f7ae47",
    "addedAt": "2026-11-22T17:58:19Z",
    "locked": true,
    "category": "arrangements",
@@ -9144,7 +9152,7 @@
    "file": "songs/Arrangements/Embraceable You, after Rod Stewart.musicxml.locked",
    "title": "Embraceable You, as Rod Stewart sings it",
    "kind": "MusicXML",
-   "sha1": "ad87b256dd58176f6b5e75b7d4cc2f7c090e73cc",
+   "sha1": "1d9cf3c7c3e48b4d01d724d0a2619baa18944c6a",
    "addedAt": "2026-11-22T18:00:00Z",
    "locked": true,
    "category": "arrangements",
@@ -9180,7 +9188,7 @@
    "file": "songs/Arrangements/My Funny Valentine, after Rod Stewart.musicxml.locked",
    "title": "My Funny Valentine, as Rod Stewart sings it",
    "kind": "MusicXML",
-   "sha1": "b2e46a02ae50d599b826d9acfd811b4156943cb2",
+   "sha1": "cebce067e97f64531b144bf82a5b52c8e7b7096e",
    "addedAt": "2026-11-22T18:00:38Z",
    "locked": true,
    "category": "arrangements",
@@ -9216,7 +9224,7 @@
    "file": "songs/Arrangements/'S Wonderful, after Rod Stewart.musicxml.locked",
    "title": "'S Wonderful, as Rod Stewart sings it",
    "kind": "MusicXML",
-   "sha1": "f8f6b55a5b9eb6ace47bb129fa6b74432ce35c66",
+   "sha1": "cea555572544046ef63a876cfb3901b8a19aa618",
    "addedAt": "2026-11-22T18:02:05Z",
    "locked": true,
    "category": "arrangements",
@@ -9252,7 +9260,7 @@
    "file": "songs/Arrangements/You've Got a Friend, after James Taylor.musicxml.locked",
    "title": "You've Got a Friend, as James Taylor sings it",
    "kind": "MusicXML",
-   "sha1": "ddd7a4b0fcebe02dd75227ab9c7358f580afa0de",
+   "sha1": "a7b2b856edba1454981158b0e195d9bd59528105",
    "addedAt": "2026-11-22T18:03:31Z",
    "locked": true,
    "category": "arrangements",
@@ -15326,7 +15334,7 @@
    "file": "songs/Arrangements/Pretend You Don’t See Her, on the Fret Finder guitar.musicxml.locked",
    "title": "Pretend You Don’t See Her, on the Fret Finder guitar",
    "kind": "MusicXML",
-   "sha1": "099dde4724eb51211eacf2756a35233e4d7da7bc",
+   "sha1": "60d133194d62dc17d5f8c2026efc19e25713aff4",
    "addedAt": "2026-11-28T09:23:10Z",
    "locked": true,
    "category": "arrangements",

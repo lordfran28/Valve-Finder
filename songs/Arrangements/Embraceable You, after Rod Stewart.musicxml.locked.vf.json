@@ -6,7 +6,7 @@
  "category": "arrangements",
  "kind": "MusicXML",
  "addedAt": "2026-11-22T18:00:00Z",
- "updatedAt": "2026-11-28T10:37:57.000Z",
+ "updatedAt": "2026-11-28T11:20:24.000Z",
  "units": {
   "count": 90,
   "unit": "Bar"
@@ -169,7 +169,7 @@
    ],
    [
     34.243,
-    1.844
+    1.573
    ],
    [
     36.107,
@@ -601,7 +601,7 @@
    ],
    [
     133.381,
-    1.615
+    1.344
    ],
    [
     135.016,
@@ -868,7 +868,7 @@
     0.529
    ]
   ],
-  "madeAt": "2026-11-28T10:37:57.000Z"
+  "madeAt": "2026-11-28T11:20:24.000Z"
  },
  "details": {
   "title": "Embraceable You, after Rod Stewart",

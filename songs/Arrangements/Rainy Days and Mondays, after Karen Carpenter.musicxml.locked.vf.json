@@ -6,7 +6,7 @@
  "category": "arrangements",
  "kind": "MusicXML",
  "addedAt": "2026-11-22T17:55:06Z",
- "updatedAt": "2026-11-28T10:37:58.000Z",
+ "updatedAt": "2026-11-28T11:20:25.000Z",
  "units": {
   "count": 67,
   "unit": "Bar"
@@ -521,7 +521,7 @@
    ],
    [
     191.456,
-    1.43
+    1.147
    ],
    [
     192.906,
@@ -548,7 +548,7 @@
     8.585
    ]
   ],
-  "madeAt": "2026-11-28T10:37:58.000Z"
+  "madeAt": "2026-11-28T11:20:25.000Z"
  },
  "details": {
   "title": "Rainy Days and Mondays, after Karen Carpenter",
