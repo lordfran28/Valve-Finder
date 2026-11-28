@@ -1,6 +1,6 @@
 {
  "app": "Valve Finder",
- "generatedAt": "2026-11-28T06:56:40Z",
+ "generatedAt": "2026-11-28T09:20:07Z",
  "songs": [
   {
    "id": "badinerie-bach-orchestral-suite-no-2",
@@ -15240,6 +15240,86 @@
     "unit": "Bar"
    },
    "group": "Ornaments"
+  },
+  {
+   "id": "arr-i-get-along-without-you-very-well",
+   "file": "songs/Arrangements/I Get Along Without You Very Well, on the Fret Finder guitar.musicxml.locked",
+   "title": "I Get Along Without You Very Well, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "47e2490cee6d11d4a43f97fed93da8a3934343f3",
+   "addedAt": "2026-11-28T09:19:47Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 128,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "I Get Along Without You Very Well, on the Fret Finder guitar",
+    "lead": "The tune for trumpet, on the bars of the Fret Finder page, which copies the record’s guitar note for note. The notes are the lead sheet’s, in A-flat, the record’s key: concert B-flat 3 to C5 (C to D for the trumpet); each sits where the singer sings it, so the time is hers, very free. The record opens with her own introduction over chords of her own, not the tune: the trumpet rests there and comes in with the song’s first line, slow, in long notes.",
+    "facts": [
+     [
+      "Song",
+      "Hoagy Carmichael (1939), after a poem by Jane Brown Thompson"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, placed on the singer’s timing from the record"
+     ],
+     [
+      "Key",
+      "A-flat major concert (B-flat for the trumpet)"
+     ],
+     [
+      "Form",
+      "Her free introduction (guitar alone here), the song, the last part again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (igaw-guitar.mp3), 3:22"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "arr-the-very-thought-of-you",
+   "file": "songs/Arrangements/The Very Thought of You, on the Fret Finder guitar.musicxml.locked",
+   "title": "The Very Thought of You, on the Fret Finder guitar",
+   "kind": "MusicXML",
+   "sha1": "d846e13caa044536aa5fa719e180dff230d6c805",
+   "addedAt": "2026-11-28T09:19:47Z",
+   "locked": true,
+   "category": "arrangements",
+   "units": {
+    "count": 83,
+    "unit": "Bar"
+   },
+   "details": {
+    "title": "The Very Thought of You, on the Fret Finder guitar",
+    "lead": "The tune for trumpet, on the bars of the Fret Finder guitar arrangement, which follows Stacey Kent’s live record brought down to A-flat: concert C4 to E-flat 5 (D to F for the trumpet). The notes are the lead sheet’s; each sits where she sings it, so the time is hers, rubato, and the long notes last as long as she holds them. The intro and the piano solo are the guitar’s: the trumpet rests. After the solo she sings the second half again and holds the last A-flat.",
+    "facts": [
+     [
+      "Song",
+      "Ray Noble (1934)"
+     ],
+     [
+      "Line",
+      "The tune from the lead sheet, placed on the singer’s timing from the record"
+     ],
+     [
+      "Key",
+      "A-flat major concert (B-flat for the trumpet)"
+     ],
+     [
+      "Form",
+      "Intro (guitar), the song, piano solo (guitar), the second half again, ending"
+     ],
+     [
+      "Plays with",
+      "The guitar track on the Fret Finder page (tvt-guitar.mp3), 4:33"
+     ]
+    ]
+   }
   },
   {
    "id": "removed-fcdc0bd880dc",
