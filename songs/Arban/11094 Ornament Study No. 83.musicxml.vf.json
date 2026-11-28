@@ -1,0 +1,192 @@
+{
+ "app": "Valve Finder",
+ "version": 2,
+ "id": "arban-ornament-study-no-83",
+ "title": "Arban – Ornament Study No. 83",
+ "category": "arban",
+ "group": "Ornaments",
+ "order": 11094,
+ "kind": "MusicXML",
+ "addedAt": "2026-11-24T05:00:00Z",
+ "updatedAt": "2026-11-24T05:00:00Z",
+ "units": {
+  "count": 24,
+  "unit": "Bar"
+ },
+ "settings": {
+  "part": 0,
+  "pitch": "auto",
+  "oct": "0",
+  "tempo": 92,
+  "repeats": true,
+  "join": false,
+  "alts": false
+ },
+ "notes": {
+  "0:0:0": "mordent, slur",
+  "0:1:0": "mordent, slur",
+  "0:2:0": "mordent, slur",
+  "0:3:0": "accent, slur",
+  "0:4:0": "mordent, slur",
+  "0:5:0": "mordent, slur",
+  "0:6:0": "mordent, slur",
+  "0:8:0": "mordent, slur",
+  "0:9:0": "mordent, slur",
+  "0:10:0": "mordent, slur",
+  "0:11:0": "slur",
+  "0:12:0": "mordent, slur",
+  "0:13:0": "mordent, slur",
+  "0:14:0": "mordent, slur",
+  "0:15:0": "slur",
+  "0:16:0": "mordent, slur",
+  "0:17:0": "mordent, slur",
+  "0:18:0": "mordent, slur",
+  "0:19:0": "accent, slur",
+  "0:20:0": "mordent, slur",
+  "0:21:0": "mordent, slur",
+  "0:22:0": "mordent, slur",
+  "1:0:0": "slur",
+  "1:0:1": "slur",
+  "1:0:2": "slur",
+  "1:0:3": "slur",
+  "1:0:4": "slur",
+  "1:1:0": "slur",
+  "1:1:1": "slur",
+  "1:1:2": "slur",
+  "1:1:3": "slur",
+  "1:1:4": "slur",
+  "1:2:0": "slur",
+  "1:2:1": "slur",
+  "1:2:2": "slur",
+  "1:2:3": "slur",
+  "1:2:4": "slur",
+  "1:3:0": "accent, slur",
+  "1:4:0": "slur",
+  "1:4:1": "slur",
+  "1:4:2": "slur",
+  "1:4:3": "slur",
+  "1:4:4": "slur",
+  "1:5:0": "slur",
+  "1:5:1": "slur",
+  "1:5:2": "slur",
+  "1:5:3": "slur",
+  "1:5:4": "slur",
+  "1:6:0": "slur",
+  "1:6:1": "slur",
+  "1:6:2": "slur",
+  "1:6:3": "slur",
+  "1:6:4": "slur",
+  "1:8:0": "slur",
+  "1:8:1": "slur",
+  "1:8:2": "slur",
+  "1:8:3": "slur",
+  "1:8:4": "slur",
+  "1:9:0": "slur",
+  "1:9:1": "slur",
+  "1:9:2": "slur",
+  "1:9:3": "slur",
+  "1:9:4": "slur",
+  "1:10:0": "slur",
+  "1:10:1": "slur",
+  "1:10:2": "slur",
+  "1:10:3": "slur",
+  "1:10:4": "slur",
+  "1:11:0": "slur",
+  "1:12:0": "slur",
+  "1:12:1": "slur",
+  "1:12:2": "slur",
+  "1:12:3": "slur",
+  "1:12:4": "slur",
+  "1:13:0": "slur",
+  "1:13:1": "slur",
+  "1:13:2": "slur",
+  "1:13:3": "slur",
+  "1:13:4": "slur",
+  "1:14:0": "slur",
+  "1:14:1": "slur",
+  "1:14:2": "slur",
+  "1:14:3": "slur",
+  "1:14:4": "slur",
+  "1:15:0": "slur",
+  "1:16:0": "slur",
+  "1:16:1": "slur",
+  "1:16:2": "slur",
+  "1:16:3": "slur",
+  "1:16:4": "slur",
+  "1:17:0": "slur",
+  "1:17:1": "slur",
+  "1:17:2": "slur",
+  "1:17:3": "slur",
+  "1:17:4": "slur",
+  "1:18:0": "slur",
+  "1:18:1": "slur",
+  "1:18:2": "slur",
+  "1:18:3": "slur",
+  "1:18:4": "slur",
+  "1:19:0": "accent, slur",
+  "1:20:0": "slur",
+  "1:20:1": "slur",
+  "1:20:2": "slur",
+  "1:20:3": "slur",
+  "1:20:4": "slur",
+  "1:21:0": "slur",
+  "1:21:1": "slur",
+  "1:21:2": "slur",
+  "1:21:3": "slur",
+  "1:21:4": "slur",
+  "1:22:0": "slur",
+  "1:22:1": "slur",
+  "1:22:2": "slur",
+  "1:22:3": "slur",
+  "1:22:4": "slur"
+ },
+ "timing": null,
+ "details": {
+  "title": "Arban – Ornament Study No. 83",
+  "lead": "From Arban's Grande méthode complète de cornet à pistons et de saxhorn, first edition, 1864. The notes are the cornet part as printed, in written pitch for the B♭ cornet. Below: the book's own words, translated from the French.",
+  "facts": [
+   [
+    "Book",
+    "Arban, Grande méthode complète de cornet à pistons et de saxhorn, first edition (Paris: Léon Escudier, 1864)"
+   ],
+   [
+    "Section",
+    "Ornaments"
+   ],
+   [
+    "Page in the book",
+    "121"
+   ],
+   [
+    "Tempo marking",
+    "Allegretto moderato"
+   ],
+   [
+    "Layout",
+    "Printed on two staves: above, the mordent as it is written, a dotted eighth with the sign and the sixteenth after it; below, as it is played, five quick notes (the note, the note above, the note, the note above, the note) and then the sixteenth. Choose \"Cornet, as written\" or \"Cornet, as played\". The book has 16 bars with Fin at bar 8 and D.C. at the end: back to the start, ending at Fin. Written out here in playing order (24 bars). The book prints 1 2 under the E of bars 3 and 14 on the played staff: the valves for that E; they hold for the mordent."
+   ]
+  ],
+  "sections": [
+   {
+    "heading": "The mordent",
+    "paragraphs": [
+     "The mordent is nothing but a hurried trill; it needs neither preparation nor resolution. It is marked with a short wavy sign; Example 10 shows the sign and its effect.",
+     "The mordent of several beats is nearly impossible on the cornet à pistons. So keep to the mordent of a single beat, which is far easier and very graceful (Example 11).",
+     "The mordent takes its length from the very note it belongs to. (See Nos. 81 to 88.)"
+    ]
+   },
+   {
+    "heading": "A word on all of these",
+    "paragraphs": [
+     "Since all the lessons on ornaments were written to serve as studies, I have brought together, on purpose and in abundance, every kind of ornament. But take great care not to overuse them so in practice, for that would be in the worst of taste."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "title": "IMSLP: Grande méthode complète de cornet à pistons (Arban), first edition, Paris 1864",
+    "url": "https://imslp.org/wiki/Grande_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons_(Arban,_Jean-Baptiste)"
+   }
+  ]
+ }
+}
